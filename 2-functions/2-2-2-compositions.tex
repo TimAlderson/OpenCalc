@@ -1,0 +1,60 @@
+\subsection{Combining Two Functions}
+Let $f$ and $g$ be two functions.
+Then we can form new functions by adding, subtracting, multiplying, or dividing.
+These new functions, $f+g$, $f-g$, $fg$ and $f/g$, are defined in the usual way.
+
+\begin{formulabox}[Operations on Functions]
+$$(f+g)(x)=f(x)+g(x)\qquad \qquad (f-g)(x)=f(x)-g(x)$$
+$$(fg)(x)=f(x)g(x)\qquad \qquad \left(\frac{f}{g}\right)(x)=\frac{f(x)}{g(x)}$$
+\end{formulabox}
+
+Suppose $D_f$ is the domain of $f$ and $D_g$ is the domain of $g$.
+Then the domains of $f+g$, $f-g$ and $fg$ are the same and are equal to the intersection $D_f\cap D_g$ (that is, everything that is in \ifont{common} to both the domain of $f$ and the domain of $g$).
+Since division by zero is \ifont{not allowed}, the domain of $f/g$ is $\{x\in D_f\cap D_g:g(x)\neq 0\}$.
+
+Another way to combine two functions $f$ and $g$ together is a procedure called composition.
+
+\begin{formulabox}[Function Composition]
+Given two functions $f$ and $g$, the \ffont{composition} of $f$ and $g$, denoted by $f\circ g$, is defined as:
+$$(f\circ g)(x)=f(g(x)).$$
+\end{formulabox}
+
+The domain of $f\circ g$ is $\{x\in D_g:g(x)\in D_f\}$, that is, it contains all values $x$ in the domain of $g$ such that $g(x)$ is in the domain of $f$.
+
+\begin{example}{Domain of a Composition}{DomainofaComposition}
+Let $f(x)=x^2$ and $g(x)=\sqrt x$.
+Find the domain of $f\circ g$.
+\end{example}
+
+\begin{solution}
+The domain of $f$ is $D_f=\{x\in\R\}$. 
+The domain of $g$ is $D_g=\{x\in\R:x\geq 0\}$.
+The function $(f\circ g)(x)=f(g(x))$ is:
+$$f(g(x))=\left(\sqrt x\right)^2=x.$$
+Typically, $h(x)=x$ would have a domain of $\{x\in\R\}$, but since it came from a {\bf composed function}, we must consider $g(x)$ when looking at the domain of $f(g(x))$. 
+Thus, the domain of $f\circ g$ is $\{x\in\R:x\geq 0\}$.
+\end{solution}
+
+\begin{example}{Combining Two Functions}{CombiningTwoFunctions}
+Let $f(x)=x^2+3$ and $g(x)=x-2$.
+Find $f+g$, $f-g$, $fg$, $f/g$, $f\circ g$ and $g\circ f$.
+Also, determine the domains of these new functions.
+\end{example}
+
+\begin{solution} 
+For $f+g$ we have:
+$$(f+g)(x)=f(x)+g(x)=(x^2+3)+(x-2)=x^2+x+1.$$
+For $f-g$ we have:
+$$(f-g)(x)=f(x)-g(x)=(x^2+3)-(x-2)=x^2+3-x+2=x^2-x+5.$$
+For $fg$ we have:
+$$(fg)(x)=f(x)\cdot g(x)=(x^2+3)(x-2)=x^3-2x^2+3x-6.$$
+For $f/g$ we have:
+$$\left(\frac{f}{g}\right)(x)=\frac{f(x)}{g(x)}=\frac{x^2+3}{x-2}.$$
+For $f\circ g$ we have:
+$$(f\circ g)(x)=f(g(x))=f(x-2)=(x-2)^2+3=x^2-4x+7.$$
+For $g\circ f$ we have:
+$$(g\circ f)(x)=g(f(x))=g(x^2+3)=(x^2+3)-2=x^2+1.$$
+The domains of $f+g$, $f-g$, $fg$, $f\circ g$ and $g\circ f$ is $\{x\in\mathbb{R}\}$, while the domain of $f/g$ is $\{x\in\mathbb{R}\,:\,x\neq 2\}$.
+\end{solution}
+
+As in the above problem, $f\circ g$ and $g\circ f$ are generally different functions.
