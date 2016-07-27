@@ -1,0 +1,8 @@
+\newcommand{\booktitle}{Calculus}
+\newcommand{\booksubtitle}{Early Transcendentals}
+\newcommand{\booksubject}{CALCULUS}
+\newcommand{\bookauthor}{David Guichard, Gregory Hartman, Et al. }
+
+\newcommand{\version}{2016}
+\newcommand{\revision}{A}
+

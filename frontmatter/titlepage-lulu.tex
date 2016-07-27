@@ -1,0 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%Background colour
+\newpagecolor{titlemainbgcolour}
+\thispagestyle{empty}
+\setlength{\parskip}{0pt}
+
+{\tikz[overlay,remember picture]
+	\fill[lyryxcolour]
+	([yshift=3cm]current page.north west) rectangle 
+	([yshift=-2.7cm] current page.north east);}
+\begin{tikzpicture}[overlay,remember picture,scale=0.5]
+	\draw [line width=5.75,color=white,yshift=1.065cm,xshift=0.5cm]
+	(0,0.05) -- (0,3.77) %L
+	(1.48,2.92) -- (1.48,1.8) to [out=275,in=180] (2.3,1.08) to [out=0,in=265] (3.1,1.8) -- (3.1,2.92) %main curve of first Y
+	(3.1,1.8) -- (3.1,0.9) to [out=265,in=359] (2.09,0.26) %lower curve of first Y
+	(4.54,0.85) -- (4.54,1.9) to [out=89,in=178] (5.57,2.7) %R
+	(6.8,2.92) -- (6.8,1.8) to [out=275,in=180] (7.62,1.08) to [out=0,in=265] (8.42,1.8) -- (8.42,2.92) %main curve of second Y
+	(8.42,1.8) -- (8.42,0.9) to [out=265,in=359] (7.41,0.26) %lower curve of second Y
+	(9.7,2.8) -- (12.02,0.17) %NW-SE arm of X
+	(9.7,1.4) -- (11.65,3.65); %SW-NE arm of X
+	% 'Lyryx with Open Texts' in banner on title page
+	\node [color=white] at ([xshift=-15cm,yshift=-2.135cm]current page.north east) {\fontsize{40}{40}\selectfont \textbf{with Open Texts}};
+	% Main Lyryx logo with website address (on back cover)
+	\node at ([xshift=8.5in,yshift=2in]current page.west) {\includegraphics{images/graphic-logo.eps}};
+	% Lyryx icons in banner of back cover
+	% Left icon with 'adapted open text'
+	\node at ([xshift=4in,yshift=10.8in]current page.west) {\includegraphics[scale=.22]{images/component-book.eps}};
+	\node[componentnode] at ([xshift=3.86in,yshift=9.6in]current page.west) {ADAPTED\\OPEN TEXT};
+	% Mid-left icon with 'formative online assessment'
+	\node at ([xshift=7in,yshift=10.8in]current page.west) {\includegraphics[scale=.22]{images/component-assess.eps}};
+	\node[componentnode] at ([xshift=7in,yshift=9.6in]current page.west) {FORMATIVE ONLINE\\ASSESSMENT};
+	% Mid-right icon with 'course supplements'
+	\node at ([xshift=10in,yshift=10.8in]current page.west) {\includegraphics[scale=.22]{images/component-supplement.eps}};
+	\node[componentnode] at ([xshift=10in,yshift=9.6in]current page.west) {COURSE\\SUPPLEMENTS};
+	% Right icon with 'course logistics & support'
+	\node at ([xshift=13in,yshift=10.8in]current page.west) {\includegraphics[scale=.22]{images/component-support.eps}};
+	\node[componentnode] at ([xshift=13in,yshift=9.6in]current page.west) {COURSE LOGISTICS\\\& SUPPORT};
+	%
+	% Use the following node if this is a SAMPLE TEXT
+	\node[sampletextcolour] at ([xshift=8.7in,yshift=5in]current page.south) {\textbf{\fontsize{40}{50}\selectfont TEXTBOOK SAMPLE}};
+\end{tikzpicture}
+
+\vspace{4em}
+\begin{center}
+\textbf{
+	\fontsize{58}{50}\selectfont {\textcolor{titletextcolour}{\booksubject}}\\
+	\fontsize{34}{36}\selectfont {\textcolor{subtitletextcolour}{\booksubtitle}}\\ [.7\baselineskip]
+	\fontsize{23}{12}\selectfont {\textcolor{subtitletextcolour}{An Open Text}}\\ [.5\baselineskip]
+	\fontsize{21}{15}\selectfont {\textcolor{subtitletextcolour}{by \bookauthor}}
+}
+\end{center}
+
+\vspace{3em}
+\begin{titlemainbox}
+	\begin{center}
+	\textcolor{white}{
+		\fontsize{16pt}{18pt}\selectfont{\textbf{Adapted by Lyryx for}}\\ [.5\baselineskip]
+		\fontsize{22pt}{22pt}\selectfont{\textbf{\courseName}}\\ [.3\baselineskip]
+		\fontsize{15pt}{18pt}\selectfont{\textbf{at}}\\ [.9\baselineskip]
+		\fontsize{30pt}{30pt}\selectfont{\textbf{\institution}}}\\ [.5\baselineskip]
+	\end{center}
+\end{titlemainbox}
+
+\vfill
+
+% Copyright
+\begin{center*}
+	{\fontsize{12pt}{12pt}\selectfont \textcolor{cctextcolour}{\textbf{Creative Commons License (CC BY-NC-SA)}}}
+\end{center*}
+
+\setlength{\parskip}{\baselineskip}
+\afterpage{\restorepagecolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

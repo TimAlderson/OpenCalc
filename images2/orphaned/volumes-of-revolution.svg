@@ -1,0 +1,3253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1208.9419"
+   height="513.72217"
+   id="svg30585"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="surface-area-1.eps">
+  <defs
+     id="defs30587">
+    <marker
+       id="Arrow"
+       refX="2.52"
+       refY="2.25"
+       markerUnits="strokeWidth"
+       markerWidth="6"
+       markerHeight="4.5"
+       orient="auto">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 2.52,2.25 0,4.5 6,2.25 0,0 z"
+         id="path10" />
+    </marker>
+    <marker
+       id="marker31590"
+       refX="2.52"
+       refY="2.25"
+       markerUnits="strokeWidth"
+       markerWidth="6"
+       markerHeight="4.5"
+       orient="auto">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 2.52,2.25 0,4.5 6,2.25 0,0 z"
+         id="path31592" />
+    </marker>
+    <clipPath
+       id="cp1-6-8-9-36">
+      <polygon
+         points="1,1 1,185 299,185 299,1 "
+         id="polygon9-3-3-3-2" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-0-6-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon33-4-9-6-9" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-3-1-3">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon40-9-7-4-7" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-1-2-6">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon47-3-3-2-3" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-0-1-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon54-9-3-8-1" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-2-4-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon61-8-7-8-5" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-2-0-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon68-7-2-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-1-9-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon75-6-3-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-8-4-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon82-4-0-7-48" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-5-2-8">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon89-1-8-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-5-6-8">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon96-6-0-8-3" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-9-4-87">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon103-6-4-9-50" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-9-8-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon110-4-5-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-9-0-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon117-9-2-9-15" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-6-2-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon124-3-8-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-5-8-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon131-6-52-6-24" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-4-7-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon138-0-3-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-8-9-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon145-0-1-8-9" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-87-6-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon152-6-4-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-3-4-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon159-4-2-7-96" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-5-8-91">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon166-0-9-1-3" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-0-8-0">
+      <polygon
+         points="-1.5898,-1.39692 -1.5898,13.6031 7.4102,13.6031 7.4102,-1.39692 "
+         id="polygon173-8-5-6-6" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-48-0-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon180-0-2-2-3" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-3-5-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon187-6-1-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-2-1-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon194-9-9-1-5" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-0-0-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon201-3-4-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-1-4-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon208-7-9-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-3-7-0">
+      <polygon
+         points="-1.95306,-1.39692 -1.95306,13.6031 7.04694,13.6031 7.04694,-1.39692 "
+         id="polygon215-2-0-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-3-5-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon222-7-6-7-9" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-43-5-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon229-3-1-2-4" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-7-4-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon236-1-7-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-8-5-5">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon243-3-0-0-3" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-45-8-4">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon250-2-6-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-8-4-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon257-3-7-9-54" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-9-2-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon264-5-0-9-1" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-1-8-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon271-7-2-0-6" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-2-3-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon278-9-4-5-7" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-3-4-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon285-1-3-4-5" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-7-8-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon292-7-5-4-1" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-4-8-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon299-8-1-7-2" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-0-1-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon306-1-3-9-0" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-1-2-1">
+      <polygon
+         points="-1.22653,-1.42705 -1.22653,13.573 7.77347,13.573 7.77347,-1.42705 "
+         id="polygon313-2-9-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-7-9-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon320-2-7-0-3" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-6-6-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon327-1-1-7-3" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-7-5-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon334-7-9-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-5-9-87">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon341-5-82-1-9" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-1-5-0">
+      <polygon
+         points="-1.22653,-1.45717 -1.22653,13.5428 8.77347,13.5428 8.77347,-1.45717 "
+         id="polygon348-1-39-2-5" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-5-4-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon355-1-4-3-2" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-9-1-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon362-5-2-1-2" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-8-9-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon369-2-5-7-3" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-0-8-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon376-8-4-7-7" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-3-8-0">
+      <polygon
+         points="-1.22653,-1.48729 -1.22653,13.5127 7.77347,13.5127 7.77347,-1.48729 "
+         id="polygon383-9-41-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-0-9-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon390-4-5-1-8" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-7-3-9">
+      <polygon
+         points="1,1 1,185 299,185 299,1 "
+         id="polygon9-3-7-6-3" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-4-4-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon33-4-1-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-2-5-9">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon40-9-38-1-1" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-8-0-2">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon47-3-4-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-57-2-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon54-9-8-8-8" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-7-8-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon61-8-8-9-8" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-4-5-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon68-7-1-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-7-1-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon75-6-9-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-15-0-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon82-4-7-0-8" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-0-9-6">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon89-1-25-8-7" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-59-9-3">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon96-6-3-4-3" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-3-1-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon103-6-8-7-7" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-7-1-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon110-4-6-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-6-1-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon117-9-25-5-4" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-8-0-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon124-3-9-8-7" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-03-7-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon131-6-95-3-3" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-01-0-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon138-0-51-9-6" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-9-5-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon145-0-08-1-5" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-3-6-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon152-6-0-1-6" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-6-9-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon159-4-6-5-9" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-4-3-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon166-0-7-1-6" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-05-3-3">
+      <polygon
+         points="-1.5898,-1.39692 -1.5898,13.6031 7.4102,13.6031 7.4102,-1.39692 "
+         id="polygon173-8-7-6-3" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-2-7-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon180-0-49-0-9" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-43-3-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon187-6-9-0-6" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-0-7-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon194-9-48-1-5" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-23-2-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon201-3-3-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-3-1-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon208-7-97-0-7" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-1-2-1">
+      <polygon
+         points="-1.95306,-1.39692 -1.95306,13.6031 7.04694,13.6031 7.04694,-1.39692 "
+         id="polygon215-2-23-3-7" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-1-4-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon222-7-1-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-9-3-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon229-3-95-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-3-3-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon236-1-0-7-2" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-59-3-3">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon243-3-95-0-7" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-74-6-0">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon250-2-00-9-9" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-88-7-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon257-3-8-1-6" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-21-0-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon264-5-22-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-2-8-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon271-7-3-1-9" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-26-7-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon278-9-5-5-3" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-6-2-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon285-1-59-4-8" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-1-2-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon292-7-85-0-8" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-61-1-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon299-8-8-9-6" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-7-0-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon306-1-5-8-8" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-2-1-4">
+      <polygon
+         points="-1.22653,-1.42705 -1.22653,13.573 7.77347,13.573 7.77347,-1.42705 "
+         id="polygon313-2-0-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-70-2-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon320-2-5-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-4-5-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon327-1-3-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-0-7-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon334-7-6-9-5" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-06-2-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon341-5-83-8-1" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-72-7-7">
+      <polygon
+         points="-1.22653,-1.45717 -1.22653,13.5428 8.77347,13.5428 8.77347,-1.45717 "
+         id="polygon348-1-80-7-5" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-2-6-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon355-1-06-8-8" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-5-3-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon362-5-25-1-8" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-25-0-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon369-2-0-2-2" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-6-2-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon376-8-2-0-1" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-8-2-3">
+      <polygon
+         points="-1.22653,-1.48729 -1.22653,13.5127 7.77347,13.5127 7.77347,-1.48729 "
+         id="polygon383-9-9-2-2" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-5-7-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon390-4-51-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-3-6-1">
+      <polygon
+         points="1,1 1,185 299,185 299,1 "
+         id="polygon9-3-9-5-85" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-94-0-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon33-4-5-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-6-3-4">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon40-9-3-5-7" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-15-9-4">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon47-3-8-7-3" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-7-6-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon54-9-9-1-2" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-8-5-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon61-8-70-1-4" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-8-0-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon68-7-89-6-24" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-6-2-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon75-6-6-0-4" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-85-3-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon82-4-15-6-3" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-9-6-8">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon89-1-3-9-8" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-1-4-9">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon96-6-2-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-6-0-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon103-6-0-8-3" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-0-9-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon110-4-7-7-0" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-7-8-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon117-9-4-9-0" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-60-8-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon124-3-82-9-8" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-4-5-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon131-6-9-6-3" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-0-9-12">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon138-0-5-4-4" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-2-3-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon145-0-6-4-5" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-14-0-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon152-6-3-7-2" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-36-1-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon159-4-22-4-8" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-6-9-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon166-0-03-0-9" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-9-7-0">
+      <polygon
+         points="-1.5898,-1.39692 -1.5898,13.6031 7.4102,13.6031 7.4102,-1.39692 "
+         id="polygon173-8-1-8-0" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-42-4-67">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon180-0-1-2-4" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-7-8-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon187-6-6-3-6" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-73-6-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon194-9-0-3-4" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-7-3-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon201-3-8-4-61" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-0-7-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon208-7-8-6-4" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-4-4-1">
+      <polygon
+         points="-1.95306,-1.39692 -1.95306,13.6031 7.04694,13.6031 7.04694,-1.39692 "
+         id="polygon215-2-2-5-2" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-9-4-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon222-7-9-1-2" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-8-3-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon229-3-9-1-0" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-8-9-98">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon236-1-9-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-0-9-5">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon243-3-2-6-2" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-7-5-07">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon250-2-66-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-33-1-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon257-3-0-9-92" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-91-7-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon264-5-7-9-3" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-0-8-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon271-7-98-9-8" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-1-8-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon278-9-2-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-0-8-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon285-1-5-7-8" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-75-1-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon292-7-9-4-1" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-0-3-78">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon299-8-40-0-7" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-2-3-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon306-1-1-7-5" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-8-2-0">
+      <polygon
+         points="-1.22653,-1.42705 -1.22653,13.573 7.77347,13.573 7.77347,-1.42705 "
+         id="polygon313-2-23-3-8" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-5-8-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon320-2-3-3-3" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-7-9-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon327-1-9-3-6" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-4-1-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon334-7-0-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-0-5-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon341-5-81-6-1" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-7-3-74">
+      <polygon
+         points="-1.22653,-1.45717 -1.22653,13.5428 8.77347,13.5428 8.77347,-1.45717 "
+         id="polygon348-1-9-5-0" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-4-2-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon355-1-0-8-9" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-3-1-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon362-5-10-0-8" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-1-5-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon369-2-4-7-0" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-8-8-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon376-8-3-6-1" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-0-8-4">
+      <polygon
+         points="-1.22653,-1.48729 -1.22653,13.5127 7.77347,13.5127 7.77347,-1.48729 "
+         id="polygon383-9-2-0-3" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-1-1-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon390-4-9-6-2" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-5-4-6">
+      <polygon
+         points="1,1 1,185 299,185 299,1 "
+         id="polygon9-3-07-4-4" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-9-7-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon33-4-90-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-1-6-4">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon40-9-4-7-8" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-7-5-2">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon47-3-2-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-5-2-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon54-9-4-8-8" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-4-1-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon61-8-0-2-1" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-55-1-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon68-7-8-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-5-5-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon75-6-1-4-2" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-83-3-42">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon82-4-5-7-0" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-8-1-6">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon89-1-9-6-6" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-6-9-6">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon96-6-46-8-27" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-1-6-11">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon103-6-48-8-9" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-5-2-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon110-4-2-9-2" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-2-1-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon117-9-5-8-1" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-0-5-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon124-3-7-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-0-3-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon131-6-0-7-9" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-5-2-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon138-0-89-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-0-8-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon145-0-9-7-6" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-1-3-67">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon152-6-6-0-1" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-78-2-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon159-4-78-2-2" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-7-2-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon166-0-6-5-3" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-5-9-3">
+      <polygon
+         points="-1.5898,-1.39692 -1.5898,13.6031 7.4102,13.6031 7.4102,-1.39692 "
+         id="polygon173-8-52-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-8-5-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon180-0-20-4-6" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-9-8-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon187-6-2-9-1" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-20-5-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon194-9-8-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-8-3-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon201-3-0-1-3" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-82-7-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon208-7-7-6-4" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-75-2-7">
+      <polygon
+         points="-1.95306,-1.39692 -1.95306,13.6031 7.04694,13.6031 7.04694,-1.39692 "
+         id="polygon215-2-7-9-3" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-2-2-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon222-7-62-7-3" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-3-8-21">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon229-3-8-5-4" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-66-2-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon236-1-2-7-7" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-86-8-8">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon243-3-98-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-8-2-7">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon250-2-3-5-0" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-9-5-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon257-3-9-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-5-1-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon264-5-2-0-6" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-8-0-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon271-7-24-6-0" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-21-0-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon278-9-49-4-3" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-8-1-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon285-1-1-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-5-6-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon292-7-8-4-2" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-2-1-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon299-8-4-5-4" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-03-3-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon306-1-6-4-6" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-4-0-2">
+      <polygon
+         points="-1.22653,-1.42705 -1.22653,13.573 7.77347,13.573 7.77347,-1.42705 "
+         id="polygon313-2-6-7-4" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-4-1-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon320-2-9-5-22" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-2-5-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon327-1-60-8-9" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-77-5-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon334-7-1-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-8-3-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon341-5-2-5-5" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-16-9-2">
+      <polygon
+         points="-1.22653,-1.45717 -1.22653,13.5428 8.77347,13.5428 8.77347,-1.45717 "
+         id="polygon348-1-8-8-51" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-52-8-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon355-1-3-6-1" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-4-2-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon362-5-1-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-2-5-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon369-2-3-2-5" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-49-2-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon376-8-5-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-2-2-3">
+      <polygon
+         points="-1.22653,-1.48729 -1.22653,13.5127 7.77347,13.5127 7.77347,-1.48729 "
+         id="polygon383-9-1-7-4" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-06-1-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon390-4-1-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-0-2-5">
+      <polygon
+         points="1,1 1,185 299,185 299,1 "
+         id="polygon9-3-0-4-2" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-7-6-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon33-4-0-8-7" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-4-7-3">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon40-9-0-5-6" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-2-9-8">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon47-3-6-2-7" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-2-6-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon54-9-2-7-4" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-5-1-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon61-8-1-9-0" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-5-3-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon68-7-3-5-5" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-3-3-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon75-6-2-0-2" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-1-6-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon82-4-1-2-2" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-3-0-9">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon89-1-2-9-2" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-3-6-0">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon96-6-4-2-1" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-7-6-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon103-6-5-7-0" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-2-9-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon110-4-9-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-3-4-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon117-9-7-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-2-4-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon124-3-0-7-7" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-2-1-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon131-6-5-1-7" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-3-8-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon138-0-8-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-3-9-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon145-0-0-7-8" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-8-3-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon152-6-7-2-5" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-7-5-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon159-4-7-0-7" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-3-7-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon166-0-0-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-2-9-6">
+      <polygon
+         points="-1.5898,-1.39692 -1.5898,13.6031 7.4102,13.6031 7.4102,-1.39692 "
+         id="polygon173-8-9-2-0" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-4-2-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon180-0-4-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-4-1-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon187-6-4-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-7-7-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon194-9-4-2-6" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-2-3-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon201-3-5-9-1" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-8-1-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon208-7-1-9-3" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-7-8-4">
+      <polygon
+         points="-1.95306,-1.39692 -1.95306,13.6031 7.04694,13.6031 7.04694,-1.39692 "
+         id="polygon215-2-5-2-7" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-8-1-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon222-7-8-5-6" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-4-3-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon229-3-2-6-0" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-6-6-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon236-1-3-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-5-2-5">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon243-3-9-2-4" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-4-0-9">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon250-2-0-3-4" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-3-2-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon257-3-4-5-0" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-2-0-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon264-5-9-3-7" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-4-8-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon271-7-9-1-3" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-3-1-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon278-9-6-9-7" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-5-4-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon285-1-0-1-5" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-9-7-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon292-7-1-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-6-0-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon299-8-2-4-6" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-1-1-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon306-1-4-8-2" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-6-1-4">
+      <polygon
+         points="-1.22653,-1.42705 -1.22653,13.573 7.77347,13.573 7.77347,-1.42705 "
+         id="polygon313-2-2-9-6" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-1-1-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon320-2-8-2-3" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-3-5-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon327-1-6-6-2" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-2-1-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon334-7-5-4-1" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-2-3-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon341-5-8-3-4" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-5-8-9">
+      <polygon
+         points="-1.22653,-1.45717 -1.22653,13.5428 8.77347,13.5428 8.77347,-1.45717 "
+         id="polygon348-1-3-7-6" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-3-0-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon355-1-5-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-6-0-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon362-5-3-1-7" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-6-2-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon369-2-1-2-4" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-4-4-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon376-8-1-5-2" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-5-3-9">
+      <polygon
+         points="-1.22653,-1.48729 -1.22653,13.5127 7.77347,13.5127 7.77347,-1.48729 "
+         id="polygon383-9-4-6-0" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-8-8-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon390-4-2-1-8" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-38-2">
+      <polygon
+         points="299,185 299,1 1,1 1,185 "
+         id="polygon9-3-03-6" />
+    </clipPath>
+    <clipPath
+       id="cp2-0-0-2">
+      <polygon
+         points="299,185 299,1 1,1 1,185 "
+         id="polygon16-7-6-9" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-99-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon33-4-6-9" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-7-8">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon40-9-9-3" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-89-9">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon47-3-9-5" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-8-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon54-9-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-49-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon61-8-14-2" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-7-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon68-7-86-7" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-0-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon75-6-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-0-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon82-4-05-3" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-31-2">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon89-1-0-8" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-17-5">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon96-6-5-5" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-17-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon103-6-52-8" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-4-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon110-4-8-1" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-71-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon117-9-75-4" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-7-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon124-3-06-6" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-07-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon131-6-1-7" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-7-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon138-0-52-8" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-39-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon145-0-63-6" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-9-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon152-6-31-3" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-8-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon159-4-3-3" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-51-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon166-0-67-9" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-7-6">
+      <polygon
+         points="7.4102,13.6031 7.4102,-1.39692 -1.5898,-1.39692 -1.5898,13.6031 "
+         id="polygon173-8-4-1" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-9-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon180-0-7-9" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-91-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon187-6-0-3" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-1-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon194-9-08-1" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-1-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon201-3-1-2" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-2-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon208-7-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-12-7">
+      <polygon
+         points="7.04694,13.6031 7.04694,-1.39692 -1.95306,-1.39692 -1.95306,13.6031 "
+         id="polygon215-2-1-0" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-7-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon222-7-18-3" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-44-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon229-3-6-7" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-87-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon236-1-03-0" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-6-8">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon243-3-8-6" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-3-8">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon250-2-4-3" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-4-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon257-3-1-6" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-52-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon264-5-4-5" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-7-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon271-7-91-9" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-9-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon278-9-3-6" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-01-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon285-1-6-5" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-0-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon292-7-2-3" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-3-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon299-8-45-9" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-24-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon306-1-46-0" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-0-5">
+      <polygon
+         points="7.77347,13.573 7.77347,-1.42705 -1.22653,-1.42705 -1.22653,13.573 "
+         id="polygon313-2-1-9" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-6-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon320-2-74-1" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-36-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon327-1-4-5" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-73-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon334-7-07-8" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-3-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon341-5-0-4" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-2-1">
+      <polygon
+         points="8.77347,13.5428 8.77347,-1.45717 -1.22653,-1.45717 -1.22653,13.5428 "
+         id="polygon348-1-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-6-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon355-1-2-0" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-7-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon362-5-9-5" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-84-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon369-2-03-8" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-7-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon376-8-6-0" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-09-5">
+      <polygon
+         points="7.77347,13.5127 7.77347,-1.48729 -1.22653,-1.48729 -1.22653,13.5127 "
+         id="polygon383-9-18-3" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-6-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon390-4-3-3" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient3109-9">
+      <stop
+         offset="0"
+         style="stop-color:#b2c689;stop-opacity:1"
+         id="stop3111-9" />
+      <stop
+         offset="1"
+         style="stop-color:#decd87;stop-opacity:1"
+         id="stop3113-8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3079-8">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop3081-6" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop3083-9" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3092-6">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop3094-6" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop3096-2" />
+    </linearGradient>
+    <filter
+       id="filter4547-3"
+       color-interpolation-filters="sRGB"
+       height="1.3995123"
+       width="1.4168561"
+       y="-0.19975618"
+       x="-0.20842806">
+      <feGaussianBlur
+         stdDeviation="8.3585071"
+         id="feGaussianBlur4549-8" />
+    </filter>
+    <linearGradient
+       id="linearGradient41483">
+      <stop
+         offset="0"
+         style="stop-color:#b2c689;stop-opacity:1"
+         id="stop41485" />
+      <stop
+         offset="1"
+         style="stop-color:#decd87;stop-opacity:1"
+         id="stop41487" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient41490">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop41492" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop41494" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient41497">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop41499" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop41501" />
+    </linearGradient>
+    <filter
+       id="filter41503"
+       color-interpolation-filters="sRGB"
+       height="1.3995123"
+       width="1.4168561"
+       y="-0.19975618"
+       x="-0.20842806">
+      <feGaussianBlur
+         stdDeviation="8.3585071"
+         id="feGaussianBlur41505" />
+    </filter>
+    <linearGradient
+       id="linearGradient3109-9-6-6">
+      <stop
+         offset="0"
+         style="stop-color:#b2c689;stop-opacity:1"
+         id="stop3111-9-1-4" />
+      <stop
+         offset="1"
+         style="stop-color:#decd87;stop-opacity:1"
+         id="stop3113-8-7-5" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3079-8-19-6">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop3081-6-0-1" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop3083-9-3-5" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3092-6-1-1">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop3094-6-75-9" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop3096-2-3-6" />
+    </linearGradient>
+    <filter
+       id="filter4547-3-3-4"
+       color-interpolation-filters="sRGB"
+       height="1.3995123"
+       width="1.4168561"
+       y="-0.19975618"
+       x="-0.20842806">
+      <feGaussianBlur
+         stdDeviation="8.3585071"
+         id="feGaussianBlur4549-8-2-5" />
+    </filter>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1624538,0,0,0.41429038,-10447.593,-3706.8749)"
+       r="202.30038"
+       fy="7426.8867"
+       fx="7506.0542"
+       cy="7426.8867"
+       cx="7506.0542"
+       id="radialGradient11941"
+       xlink:href="#linearGradient11935"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient11935"
+       inkscape:collect="always">
+      <stop
+         id="stop11937"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop11939"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5068542,-5.1496323e-7,5.6765414e-7,0.7250493,-7749.8048,2072.207)"
+       r="84"
+       fy="7536.6211"
+       fx="15290"
+       cy="7536.6211"
+       cx="15290"
+       id="radialGradient11858"
+       xlink:href="#linearGradient11852"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient11852"
+       inkscape:collect="always">
+      <stop
+         id="stop11854"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop11856"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       r="37.173149"
+       fy="815.25702"
+       fx="2565.4138"
+       cy="815.25702"
+       cx="2565.4138"
+       gradientTransform="matrix(2.026997,2.7140593e-6,-3.1805094e-6,2.386875,-2263.3441,-1184.5377)"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient12326"
+       xlink:href="#linearGradient40311"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient40311"
+       inkscape:collect="always">
+      <stop
+         id="stop40313"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop40315"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       r="25.02339"
+       fy="848.31744"
+       fx="2500.6226"
+       cy="848.31744"
+       cx="2500.6226"
+       gradientTransform="matrix(1,0,0,9.3233938,371.32571,-7040.4947)"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient12323"
+       xlink:href="#linearGradient40321"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient40321"
+       inkscape:collect="always">
+      <stop
+         id="stop40323"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop40325"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       r="37.173149"
+       fy="815.25702"
+       fx="2565.4138"
+       cy="815.25702"
+       cx="2565.4138"
+       gradientTransform="matrix(2.026997,2.7140593e-6,-3.1805094e-6,2.386875,-2263.3441,-1184.5377)"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient12326-1"
+       xlink:href="#linearGradient40311-2"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient40311-2"
+       inkscape:collect="always">
+      <stop
+         id="stop40313-3"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop40315-3"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       r="25.02339"
+       fy="848.31744"
+       fx="2500.6226"
+       cy="848.31744"
+       cx="2500.6226"
+       gradientTransform="matrix(1,0,0,9.3233938,371.32571,-7040.4947)"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient12323-9"
+       xlink:href="#linearGradient40321-7"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient40321-7"
+       inkscape:collect="always">
+      <stop
+         id="stop40323-2"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop40325-3"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       y2="4840.2764"
+       x2="4895.8364"
+       y1="4941.4614"
+       x1="4895.8364"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient15162"
+       xlink:href="#linearGradient15028"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient15028"
+       inkscape:collect="always">
+      <stop
+         id="stop15030"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop15032"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       r="76.911835"
+       fy="3761.6843"
+       fx="203.07056"
+       cy="3761.6843"
+       cx="203.07056"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient15164"
+       xlink:href="#linearGradient21956-39-4"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient21956-39-4"
+       inkscape:collect="always">
+      <stop
+         id="stop21958-4-5"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop21960-8-6"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       gradientTransform="matrix(0.10866229,0.65648858,-0.54586,0.05464966,2190.5092,3403.5582)"
+       r="76.911835"
+       fy="3680.5708"
+       fx="199.12804"
+       cy="3680.5708"
+       cx="199.12804"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient15166"
+       xlink:href="#linearGradient21956-39-4"
+       inkscape:collect="always" />
+    <radialGradient
+       r="77.66713"
+       fy="4420.0967"
+       fx="1780.9049"
+       cy="4420.0967"
+       cx="1780.9049"
+       gradientTransform="matrix(0.39672652,1.2077994,-1.0490315,0.34457595,5717.3977,746.63632)"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient15168"
+       xlink:href="#linearGradient12337-3"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient12337-3">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop12339-2" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop12341-4" />
+    </linearGradient>
+    <linearGradient
+       y2="3374.5759"
+       x2="1893.4187"
+       y1="3512.158"
+       x1="1893.4187"
+       gradientTransform="translate(-538.5284,-1491.2602)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient15170"
+       xlink:href="#linearGradient21814-4"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient21814-4"
+       inkscape:collect="always">
+      <stop
+         id="stop21816-6"
+         offset="0"
+         style="stop-color:#f9f9f9;stop-opacity:1;" />
+      <stop
+         id="stop21818-3"
+         offset="1"
+         style="stop-color:#f9f9f9;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       gradientTransform="matrix(-0.65606709,1.5526308,-1.0267828,-0.03401402,4162.6817,3526.9994)"
+       r="76.891975"
+       fy="3718.4609"
+       fx="215.76961"
+       cy="3718.4609"
+       cx="215.76961"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient15172"
+       xlink:href="#linearGradient21744-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient21744-5"
+       inkscape:collect="always">
+      <stop
+         id="stop21746-28"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop21748-1"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.32"
+     inkscape:cx="851.93657"
+     inkscape:cy="316.70799"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="814"
+     inkscape:window-height="604"
+     inkscape:window-x="2019"
+     inkscape:window-y="175"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata30590">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2949.0427,233.95689)">
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect10494-1"
+       width="1208.9419"
+       height="513.72217"
+       x="-2949.0427"
+       y="-233.95689"
+       inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\solids-revolution-1.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       sodipodi:linespacing="120%"
+       id="text8877-3-30-2-3"
+       y="259.97379"
+       x="-2746.2986"
+       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#0044aa;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
+         y="259.97379"
+         x="-2746.2986"
+         id="tspan8879-25-2-0-15"
+         sodipodi:role="line">Right Circular Cylinder</tspan></text>
+    <g
+       transform="translate(-3298.2932,-1817.5886)"
+       id="g15083">
+      <g
+         id="g14414"
+         transform="matrix(0.40919637,0,0,0.94624447,-9.7494226,78.055184)"
+         style="stroke-width:3.21412253;stroke-miterlimit:4;stroke-dasharray:none">
+        <path
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccccccccc"
+           id="path21720-5"
+           d="m 1370.5266,1883.6341 c -68.5776,0.3354 -130.8734,-1.9135 -199.4303,-0.1666 -13.2807,1.1047 -26.9918,16.0343 -31.5742,26.9501 -10.6644,29.6207 -8.6091,64.3946 5.4135,92.8048 4.7383,8.463 15.4644,18.2378 26.411,16.9877 91.8454,1.4792 178.7451,0.3556 270.6017,0.666 45.0557,0.01 90.1113,0.015 135.1669,0.022 2.1407,-3.1408 -5.4732,-5.0025 -7.3383,-7.9132 -16.9474,-16.9576 -23.2156,-41.8728 -21.7043,-65.4692 0.01,-23.5588 12.4782,-49.696 32.5258,-63.1034 -2.2785,-4.1596 -15.4872,0.3309 -20.8313,-0.8088 -63.0802,0.01 -126.1603,0.021 -189.2405,0.031 l 0,-4e-4 z"
+           style="fill:#aade87;fill-opacity:1;stroke:none" />
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:url(#linearGradient15170);fill-opacity:1;stroke:none"
+           d="m 1370.5266,1883.6341 c -68.5776,0.3354 -137.1863,-0.7658 -205.7432,0.9807 -13.2807,1.1047 -20.6789,14.8866 -25.2613,25.8024 -10.6644,29.6207 -10.2351,64.012 3.7875,92.4222 4.7383,8.463 12.1166,18.4291 23.0632,17.179 91.8454,1.4792 183.7189,0.5469 275.5755,0.8573 45.0557,0.01 90.1113,0.015 135.1669,0.022 2.1407,-3.1408 -5.4732,-5.0025 -7.3383,-7.9132 -16.9474,-16.9576 -23.2156,-41.8728 -21.7043,-65.4692 0.01,-23.5588 9.5699,-48.6815 29.6175,-62.0889 -2.2785,-4.1596 -12.5789,-0.6836 -17.923,-1.8233 -63.0802,0.01 -126.1603,0.021 -189.2405,0.031 z"
+           id="path21812-2" />
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#aade87;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.30628681;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path21693-2"
+           sodipodi:cx="203.07056"
+           sodipodi:cy="3761.6843"
+           sodipodi:rx="74.882271"
+           sodipodi:ry="74.882271"
+           d="m 277.95283,3761.6843 c 0,41.3564 -33.52594,74.8823 -74.88227,74.8823 -41.35634,0 -74.88227,-33.5259 -74.88227,-74.8823 0,-41.3563 33.52593,-74.8822 74.88227,-74.8822 41.35633,0 74.88227,33.5259 74.88227,74.8822 z"
+           transform="matrix(0.60057891,0,0,0.92757472,1471.3406,-1536.9114)"
+           inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+           inkscape:export-xdpi="150"
+           inkscape:export-ydpi="150" />
+        <path
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc"
+           id="path21695-17"
+           d="m 1175.8756,2021.6473 417.0712,0.1435"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:3.21412253;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cc"
+           id="path21695-5-4"
+           d="m 1174.246,1882.873 419.008,0"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:3.21412253;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <path
+           inkscape:export-ydpi="150"
+           inkscape:export-xdpi="150"
+           inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+           transform="matrix(0.60057891,0,0,0.92757472,1471.3406,-1536.9114)"
+           d="m 277.95283,3761.6843 c 0,41.3564 -33.52594,74.8823 -74.88227,74.8823 -41.35634,0 -74.88227,-33.5259 -74.88227,-74.8823 0,-41.3563 33.52593,-74.8822 74.88227,-74.8822 41.35633,0 74.88227,33.5259 74.88227,74.8822 z"
+           sodipodi:ry="74.882271"
+           sodipodi:rx="74.882271"
+           sodipodi:cy="3761.6843"
+           sodipodi:cx="203.07056"
+           id="path21742-8"
+           style="color:#000000;fill:url(#radialGradient15172);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.30628681;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:type="arc" />
+        <path
+           sodipodi:open="true"
+           sodipodi:end="4.7173788"
+           sodipodi:start="1.5860717"
+           sodipodi:type="arc"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:4.30628681;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path21693-5-3"
+           sodipodi:cx="203.07056"
+           sodipodi:cy="3761.6843"
+           sodipodi:rx="74.882271"
+           sodipodi:ry="74.882271"
+           d="m 201.92675,3836.5579 c -41.35151,-0.6317 -74.36144,-34.6659 -73.72973,-76.0174 0.62712,-41.0511 34.19182,-73.9424 75.24718,-73.7375"
+           transform="matrix(0.60057891,0,0,0.92757472,1054.1675,-1536.9114)"
+           inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+           inkscape:export-xdpi="150"
+           inkscape:export-ydpi="150" />
+        <path
+           sodipodi:open="true"
+           sodipodi:end="4.7083822"
+           sodipodi:start="1.5576051"
+           inkscape:export-ydpi="150"
+           inkscape:export-xdpi="150"
+           inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+           transform="matrix(-0.60057891,0,0,0.92757472,1297.0837,-1537.3015)"
+           d="m 204.05832,3836.5601 c -41.35274,0.5455 -75.31799,-32.5353 -75.86352,-73.888 -0.54552,-41.3528 32.53526,-75.318 73.888,-75.8635 0.22923,-0 0.45847,-0 0.68772,-0.01"
+           sodipodi:ry="74.882271"
+           sodipodi:rx="74.882271"
+           sodipodi:cy="3761.6843"
+           sodipodi:cx="203.07056"
+           id="path22041-0"
+           style="opacity:0.53174594;color:#000000;fill:none;stroke:#000000;stroke-width:4.30628681;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4.30628671, 12.91886013;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:type="arc" />
+      </g>
+      <g
+         id="g14566-1"
+         transform="translate(-686.19296,-50.402511)">
+        <g
+           id="g14428-3">
+          <text
+             sodipodi:linespacing="120%"
+             id="text3006-2-0-5-4-8-6"
+             y="2003.5959"
+             x="1387.78"
+             style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+             xml:space="preserve"><tspan
+               y="2003.5959"
+               x="1387.78"
+               id="tspan3008-6-7-7-2-0-3"
+               sodipodi:role="line">x</tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3010-0-4-9-1-7-0"
+             y="1894.5149"
+             x="1083.6295"
+             style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+             xml:space="preserve"><tspan
+               y="1894.5149"
+               x="1083.6295"
+               id="tspan3012-6-7-0-9-2-1"
+               sodipodi:role="line">y</tspan></text>
+          <g
+             id="g14561-9">
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.50000012;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1097.8115,2071.5073 0,-191.7013"
+               id="path3004-6-9-4-4-5-5-0"
+               sodipodi:nodetypes="cc" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1088.8115,2033.1906 18,0"
+               id="path3014-9-2-5-0-1-3-0-4" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1089.0144,1918.1401 18,0"
+               id="path3014-2-1-7-5-4-1-8-2" />
+          </g>
+          <g
+             transform="translate(0,2.83655)"
+             id="g14531-9">
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1328.0492,1963.8201 0,18"
+               id="path3014-9-0-0-2-3-0-8" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1385.539,1963.8201 0,18"
+               id="path3014-8-4-8-3-3-8-2" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1396.6738,1972.8201 -69.3027,0"
+               id="path3004-1-3-8-9-8-4-0"
+               sodipodi:nodetypes="cc" />
+            <path
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc"
+               id="path39794"
+               d="m 1138.1291,1972.1962 -55.2062,0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.49999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       style="stroke:#ff0000"
+       transform="matrix(0.41582531,0,0,0.41582531,-2295.4286,-752.95622)"
+       id="g15474-4">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:3.60728407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path15470-4"
+         sodipodi:cx="3744.0913"
+         sodipodi:cy="4288.3579"
+         sodipodi:rx="17.599449"
+         sodipodi:ry="51.26796"
+         d="m 3761.1075,4301.4473 c -2.4816,27.3761 -12.1118,43.7085 -21.5096,36.4795 -9.3977,-7.2291 -15.0044,-35.2821 -12.5228,-62.6583 2.4816,-27.3761 12.1118,-43.7085 21.5096,-36.4795 4.1282,3.1756 7.7193,10.6146 10.1043,20.931"
+         transform="translate(-3522.4928,-2740.3443)"
+         sodipodi:start="0.25817121"
+         sodipodi:end="5.6904981"
+         sodipodi:open="true" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:3.60728407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 3750.7868,4311.1226 9.7562,-9.7562 6.3604,11.0166"
+         id="path15472-6"
+         transform="translate(-3522.4928,-2740.3443)" />
+    </g>
+    <g
+       transform="translate(-3296.4365,-1835.5957)"
+       id="g15405">
+      <g
+         transform="translate(0,-222.82732)"
+         id="g15228">
+        <g
+           id="g15230"
+           transform="matrix(0.79738114,0,0,0.79738114,-631.78189,423.16994)">
+          <path
+             sodipodi:type="arc"
+             style="color:#000000;fill:#c6e9af;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.80430222;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path15232"
+             sodipodi:cx="1810.0651"
+             sodipodi:cy="4451.7271"
+             sodipodi:rx="77.66713"
+             sodipodi:ry="77.66713"
+             d="m 1887.7322,4451.7271 c 0,42.8943 -34.7728,77.6671 -77.6671,77.6671 -42.8944,0 -77.6672,-34.7728 -77.6672,-77.6671 0,-0.022 0,-0.045 10e-5,-0.067"
+             transform="matrix(1.3901279,0,0,-1.3901279,-494.17902,8099.4382)"
+             sodipodi:start="0"
+             sodipodi:end="3.1424546"
+             sodipodi:open="true" />
+        </g>
+        <g
+           id="g15236"
+           transform="translate(-261.3251,-28.161746)">
+          <g
+             id="g15238">
+            <text
+               sodipodi:linespacing="120%"
+               id="text15240"
+               y="2003.5959"
+               x="1387.78"
+               style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+               xml:space="preserve"><tspan
+                 y="2003.5959"
+                 x="1387.78"
+                 id="tspan15242"
+                 sodipodi:role="line">x</tspan></text>
+            <text
+               sodipodi:linespacing="120%"
+               id="text15244"
+               y="1894.5149"
+               x="1083.6295"
+               style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+               xml:space="preserve"><tspan
+                 y="1894.5149"
+                 x="1083.6295"
+                 id="tspan15246"
+                 sodipodi:role="line">y</tspan></text>
+            <g
+               id="g15248">
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.50000012;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1097.8115,2071.5073 0,-191.7013"
+                 id="path15250"
+                 sodipodi:nodetypes="cc" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1088.8115,2033.1906 18,0"
+                 id="path15252" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1089.0144,1918.1401 18,0"
+                 id="path15254" />
+            </g>
+            <g
+               transform="translate(0,2.83655)"
+               id="g15256">
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1155.58,1963.8201 0,18"
+                 id="path15258" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1213.0698,1963.8201 0,18"
+                 id="path15260" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1270.5595,1963.8201 0,18"
+                 id="path15262" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1328.0492,1963.8201 0,18"
+                 id="path15264" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1385.539,1963.8201 0,18"
+                 id="path15266" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1396.1068,1972.8201 -312.598,0"
+                 id="path15268"
+                 sodipodi:nodetypes="cc" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text
+       sodipodi:linespacing="120%"
+       id="text8877-3-30-2-3-5"
+       y="260.2045"
+       x="-2313.4448"
+       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#0044aa;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
+         y="260.2045"
+         x="-2313.4448"
+         id="tspan8879-25-2-0-15-3"
+         sodipodi:role="line">Solid Sphere</tspan></text>
+    <g
+       transform="translate(-3296.4365,-1839.8294)"
+       id="g15111">
+      <g
+         id="g14450"
+         transform="matrix(0.79738114,0,0,0.79738114,-631.78189,423.16994)">
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#aade87;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path12333-7"
+           sodipodi:cx="1810.0651"
+           sodipodi:cy="4451.7271"
+           sodipodi:rx="77.66713"
+           sodipodi:ry="77.66713"
+           d="m 1887.7322,4451.7271 c 0,42.8943 -34.7728,77.6671 -77.6671,77.6671 -42.8944,0 -77.6672,-34.7728 -77.6672,-77.6671 0,-42.8944 34.7728,-77.6672 77.6672,-77.6672 42.8943,0 77.6671,34.7728 77.6671,77.6672 z"
+           transform="matrix(1.3901279,0,0,1.3901279,-494.17902,-4276.8058)" />
+        <path
+           transform="matrix(1.3901279,0,0,1.3901279,-494.17902,-4276.8058)"
+           d="m 1887.7322,4451.7271 c 0,42.8943 -34.7728,77.6671 -77.6671,77.6671 -42.8944,0 -77.6672,-34.7728 -77.6672,-77.6671 0,-42.8944 34.7728,-77.6672 77.6672,-77.6672 42.8943,0 77.6671,34.7728 77.6671,77.6672 z"
+           sodipodi:ry="77.66713"
+           sodipodi:rx="77.66713"
+           sodipodi:cy="4451.7271"
+           sodipodi:cx="1810.0651"
+           id="path12335-4"
+           style="color:#000000;fill:url(#radialGradient15168);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.80430222;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:type="arc" />
+      </g>
+      <g
+         id="g14566-1-2"
+         transform="translate(-261.3251,-28.161746)">
+        <g
+           id="g14428-3-9">
+          <text
+             sodipodi:linespacing="120%"
+             id="text3006-2-0-5-4-8-6-5"
+             y="2003.5959"
+             x="1387.78"
+             style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+             xml:space="preserve"><tspan
+               y="2003.5959"
+               x="1387.78"
+               id="tspan3008-6-7-7-2-0-3-9"
+               sodipodi:role="line">x</tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3010-0-4-9-1-7-0-4"
+             y="1894.5149"
+             x="1083.6295"
+             style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+             xml:space="preserve"><tspan
+               y="1894.5149"
+               x="1083.6295"
+               id="tspan3012-6-7-0-9-2-1-5"
+               sodipodi:role="line">y</tspan></text>
+          <g
+             id="g14561-9-0">
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.50000012;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1097.8115,2071.5073 0,-191.7013"
+               id="path3004-6-9-4-4-5-5-0-5"
+               sodipodi:nodetypes="cc" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1088.8115,2033.1906 18,0"
+               id="path3014-9-2-5-0-1-3-0-4-8" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1089.0144,1918.1401 18,0"
+               id="path3014-2-1-7-5-4-1-8-2-8" />
+          </g>
+          <g
+             transform="translate(0,2.83655)"
+             id="g14531-9-0">
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1155.58,1963.8201 0,18"
+               id="path3014-17-7-7-0-5-3-1" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1328.0492,1963.8201 0,18"
+               id="path3014-9-0-0-2-3-0-8-2" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1385.539,1963.8201 0,18"
+               id="path3014-8-4-8-3-3-8-2-2" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1396.6771,1972.8201 -69.0133,0"
+               id="path3004-1-3-8-9-8-4-0-7"
+               sodipodi:nodetypes="cc" />
+            <path
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc"
+               id="path39798"
+               d="m 1154.7215,1972.8201 -71.7905,0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       style="stroke:#ff0000"
+       transform="matrix(0.41582531,0,0,0.41582531,-1889.1528,-752.95622)"
+       id="g15474-6">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:3.60728407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path15470-8"
+         sodipodi:cx="3744.0913"
+         sodipodi:cy="4288.3579"
+         sodipodi:rx="17.599449"
+         sodipodi:ry="51.26796"
+         d="m 3761.1075,4301.4473 c -2.4816,27.3761 -12.1118,43.7085 -21.5096,36.4795 -9.3977,-7.2291 -15.0044,-35.2821 -12.5228,-62.6583 2.4816,-27.3761 12.1118,-43.7085 21.5096,-36.4795 4.1282,3.1756 7.7193,10.6146 10.1043,20.931"
+         transform="translate(-3522.4928,-2740.3443)"
+         sodipodi:start="0.25817121"
+         sodipodi:end="5.6904981"
+         sodipodi:open="true" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:3.60728407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 3750.7868,4311.1226 9.7562,-9.7562 6.3604,11.0166"
+         id="path15472-2"
+         transform="translate(-3522.4928,-2740.3443)" />
+    </g>
+    <g
+       transform="translate(-3295.9688,-1835.5957)"
+       id="g15384">
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:#c6e9af;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 1297.9306,1724.8549 172.6024,-59.2476 0,58.7065"
+         id="path15340" />
+      <g
+         transform="translate(0,-236.60079)"
+         id="g15270">
+        <g
+           id="g15292"
+           transform="translate(142.69702,-14.388271)">
+          <g
+             id="g15294">
+            <text
+               sodipodi:linespacing="120%"
+               id="text15296"
+               y="2003.5959"
+               x="1387.78"
+               style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+               xml:space="preserve"><tspan
+                 y="2003.5959"
+                 x="1387.78"
+                 id="tspan15298"
+                 sodipodi:role="line">x</tspan></text>
+            <text
+               sodipodi:linespacing="120%"
+               id="text15300"
+               y="1894.5149"
+               x="1083.6295"
+               style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+               xml:space="preserve"><tspan
+                 y="1894.5149"
+                 x="1083.6295"
+                 id="tspan15302"
+                 sodipodi:role="line">y</tspan></text>
+            <g
+               id="g15304">
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.50000012;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1097.8115,2071.5073 0,-191.7013"
+                 id="path15306"
+                 sodipodi:nodetypes="cc" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1088.8115,2033.1906 18,0"
+                 id="path15308" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1089.0144,1918.1401 18,0"
+                 id="path15310" />
+            </g>
+            <g
+               transform="translate(0,2.83655)"
+               id="g15312">
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1155.58,1963.8201 0,18"
+                 id="path15314" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1213.0698,1963.8201 0,18"
+                 id="path15316" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1270.5595,1963.8201 0,18"
+                 id="path15318" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1328.0492,1963.8201 0,18"
+                 id="path15320" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1385.539,1963.8201 0,18"
+                 id="path15322" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1396.1068,1972.8201 -312.598,0"
+                 id="path15324"
+                 sodipodi:nodetypes="cc" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text
+       sodipodi:linespacing="120%"
+       id="text8877-3-30-2-3-6"
+       y="258.84341"
+       x="-1881.4081"
+       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#0044aa;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       xml:space="preserve"
+       inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150"><tspan
+         y="258.84341"
+         x="-1881.4081"
+         id="tspan8879-25-2-0-15-6"
+         sodipodi:role="line">Solid Cone</tspan></text>
+    <g
+       transform="translate(-3295.9688,-1853.6029)"
+       id="g15133">
+      <g
+         id="g15066"
+         transform="translate(0,-189.00277)">
+        <path
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccc"
+           transform="translate(-3522.4928,-2740.3443)"
+           id="path15023"
+           d="m 4964.1026,4841.6739 c -45.8649,15.6144 -95.6165,31.5599 -141.1992,48.024 -0.8125,3.3764 10.0006,4.4057 12.1617,6.0622 43.2899,15.2872 89.4456,30.739 132.8421,45.7011 3.321,-0.5096 -3.6355,-5.4549 -4.785,-6.5533 -10.3142,-11.5593 -16.0003,-27.2348 -15.5108,-42.8268 -1.1024,-17.7121 9.107,-38.5851 21.0999,-51.5972 0.8031,-0.7956 -3.3913,0.9373 -4.6087,1.19 z"
+           style="fill:#aade87;fill-opacity:1;stroke:none" />
+        <path
+           inkscape:connector-curvature="0"
+           transform="translate(-3522.4928,-2740.3443)"
+           style="fill:url(#linearGradient15162);fill-opacity:1;stroke:none"
+           d="m 4964.1026,4841.6739 c -45.8649,15.6144 -95.6165,31.5599 -141.1992,48.024 -0.8125,3.3764 10.0006,4.4057 12.1617,6.0622 43.2899,15.2872 89.4456,30.739 132.8421,45.7011 3.321,-0.5096 -3.6355,-5.4549 -4.785,-6.5533 -10.3142,-11.5593 -16.0003,-27.2348 -15.5108,-42.8268 -1.1024,-17.7121 9.107,-38.5851 21.0999,-51.5972 0.8031,-0.7956 -3.3913,0.9373 -4.6087,1.19 z"
+           id="path15026"
+           sodipodi:nodetypes="cccccccc" />
+        <path
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccc"
+           d="m 1465.1223,2208.0007 -167.1685,-57.5949 166.1327,-57.5949"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path14999" />
+        <g
+           transform="translate(119.57724,108.3472)"
+           id="g14993">
+          <path
+             sodipodi:type="arc"
+             style="color:#000000;fill:#aade87;fill-opacity:1;stroke:#333333;stroke-width:2.93679452;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path21836-9"
+             sodipodi:cx="203.07056"
+             sodipodi:cy="3761.6843"
+             sodipodi:rx="74.882271"
+             sodipodi:ry="74.882271"
+             d="m 277.95283,3761.6843 c 0,41.3564 -33.52594,74.8823 -74.88227,74.8823 -41.35634,0 -74.88227,-33.5259 -74.88227,-74.8823 0,-41.3563 33.52593,-74.8822 74.88227,-74.8822 41.35633,0 74.88227,33.5259 74.88227,74.8822 z"
+             transform="matrix(0.60057891,0,0,0.77222314,1228.4548,-862.93573)"
+             inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+             inkscape:export-xdpi="150"
+             inkscape:export-ydpi="150" />
+          <path
+             inkscape:export-ydpi="150"
+             inkscape:export-xdpi="150"
+             inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+             transform="matrix(0.60057891,0,0,0.77222314,1228.4548,-862.93573)"
+             d="m 277.95283,3761.6843 c 0,41.3564 -33.52594,74.8823 -74.88227,74.8823 -41.35634,0 -74.88227,-33.5259 -74.88227,-74.8823 0,-41.3563 33.52593,-74.8822 74.88227,-74.8822 41.35633,0 74.88227,33.5259 74.88227,74.8822 z"
+             sodipodi:ry="74.882271"
+             sodipodi:rx="74.882271"
+             sodipodi:cy="3761.6843"
+             sodipodi:cx="203.07056"
+             id="path21954-7"
+             style="color:#000000;fill:url(#radialGradient15164);fill-opacity:1;stroke:#000000;stroke-width:2.93679452;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             sodipodi:type="arc" />
+          <path
+             sodipodi:type="arc"
+             style="color:#000000;fill:url(#radialGradient15166);fill-opacity:1;stroke:#000000;stroke-width:2.93679452;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+             id="path15042"
+             sodipodi:cx="203.07056"
+             sodipodi:cy="3761.6843"
+             sodipodi:rx="74.882271"
+             sodipodi:ry="74.882271"
+             d="m 277.95283,3761.6843 c 0,41.3564 -33.52594,74.8823 -74.88227,74.8823 -41.35634,0 -74.88227,-33.5259 -74.88227,-74.8823 0,-41.3563 33.52593,-74.8822 74.88227,-74.8822 41.35633,0 74.88227,33.5259 74.88227,74.8822 z"
+             transform="matrix(0.60057891,0,0,0.77222314,1228.4548,-862.93573)"
+             inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\area-table.png"
+             inkscape:export-xdpi="150"
+             inkscape:export-ydpi="150" />
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none"
+           d="m 4964.1026,4841.6739 c -45.8649,15.6144 -95.6165,31.5599 -141.1992,48.024 -0.8125,3.3764 10.0006,4.4057 12.1617,6.0622 43.2899,15.2872 89.4456,30.739 132.8421,45.7011 3.321,-0.5096 -3.6355,-5.4549 -4.785,-6.5533 -10.3142,-11.5593 -16.0003,-27.2348 -15.5108,-42.8268 -1.1024,-17.7121 9.107,-38.5851 21.0999,-51.5972 0.8031,-0.7956 -3.3913,0.9373 -4.6087,1.19 z"
+           id="path15038"
+           transform="translate(-3522.4928,-2740.3443)"
+           sodipodi:nodetypes="cccccccc" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path15040"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 1465.1223,2208.0007 -167.1685,-57.5949 166.1327,-57.5949"
+           sodipodi:nodetypes="ccc" />
+      </g>
+      <g
+         id="g14566-1-0"
+         transform="translate(142.69702,-14.388271)">
+        <g
+           id="g14428-3-1">
+          <text
+             sodipodi:linespacing="120%"
+             id="text3006-2-0-5-4-8-6-8"
+             y="2003.5959"
+             x="1387.78"
+             style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+             xml:space="preserve"><tspan
+               y="2003.5959"
+               x="1387.78"
+               id="tspan3008-6-7-7-2-0-3-4"
+               sodipodi:role="line">x</tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3010-0-4-9-1-7-0-8"
+             y="1894.5149"
+             x="1083.6295"
+             style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+             xml:space="preserve"><tspan
+               y="1894.5149"
+               x="1083.6295"
+               id="tspan3012-6-7-0-9-2-1-6"
+               sodipodi:role="line">y</tspan></text>
+          <g
+             id="g14561-9-09">
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.50000012;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1097.8115,2071.5073 0,-191.7013"
+               id="path3004-6-9-4-4-5-5-0-3"
+               sodipodi:nodetypes="cc" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1088.8115,2033.1906 18,0"
+               id="path3014-9-2-5-0-1-3-0-4-0" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1089.0144,1918.1401 18,0"
+               id="path3014-2-1-7-5-4-1-8-2-0" />
+          </g>
+          <g
+             transform="translate(0,2.83655)"
+             id="g14531-9-8">
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1155.58,1963.8201 0,18"
+               id="path3014-17-7-7-0-5-3-7" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1328.0492,1963.8201 0,18"
+               id="path3014-9-0-0-2-3-0-8-5" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1385.539,1963.8201 0,18"
+               id="path3014-8-4-8-3-3-8-2-6" />
+            <path
+               inkscape:connector-curvature="0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               d="m 1396.6925,1972.8201 -68.4917,0"
+               id="path3004-1-3-8-9-8-4-0-5"
+               sodipodi:nodetypes="cc" />
+            <path
+               inkscape:connector-curvature="0"
+               sodipodi:nodetypes="cc"
+               id="path39796"
+               d="m 1156.3748,1972.8201 -73.4398,0"
+               style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(-3298.2932,-1835.5957)"
+       id="g15427">
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:#c6e9af;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 3991.7694,4464.6581 0,-65.4699 172.6024,0 0,65.7404"
+         id="path15338"
+         transform="translate(-3522.4928,-2740.3443)" />
+      <g
+         transform="translate(0,-200.58655)"
+         id="g15174">
+        <g
+           id="g15194"
+           transform="translate(-686.19296,-50.402511)">
+          <g
+             id="g15196">
+            <text
+               sodipodi:linespacing="120%"
+               id="text15198"
+               y="2003.5959"
+               x="1387.78"
+               style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+               xml:space="preserve"><tspan
+                 y="2003.5959"
+                 x="1387.78"
+                 id="tspan15200"
+                 sodipodi:role="line">x</tspan></text>
+            <text
+               sodipodi:linespacing="120%"
+               id="text15202"
+               y="1894.5149"
+               x="1083.6295"
+               style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+               xml:space="preserve"><tspan
+                 y="1894.5149"
+                 x="1083.6295"
+                 id="tspan15204"
+                 sodipodi:role="line">y</tspan></text>
+            <g
+               id="g15206">
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.50000012;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1097.8115,2071.5073 0,-191.7013"
+                 id="path15208"
+                 sodipodi:nodetypes="cc" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1088.8115,2033.1906 18,0"
+                 id="path15210" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1089.0144,1918.1401 18,0"
+                 id="path15212" />
+            </g>
+            <g
+               transform="translate(0,2.83655)"
+               id="g15214">
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1155.58,1963.8201 0,18"
+                 id="path15216" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1213.0698,1963.8201 0,18"
+                 id="path15218" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1270.5595,1963.8201 0,18"
+                 id="path15220" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1328.0492,1963.8201 0,18"
+                 id="path15222" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1385.539,1963.8201 0,18"
+                 id="path15224" />
+              <path
+                 inkscape:connector-curvature="0"
+                 style="color:#000000;fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                 d="m 1396.1068,1972.8201 -312.598,0"
+                 id="path15226"
+                 sodipodi:nodetypes="cc" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       style="stroke:#ff0000"
+       transform="matrix(0.41582531,0,0,0.41582531,-2721.1833,-752.95622)"
+       id="g15474">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:3.60728407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path15470"
+         sodipodi:cx="3744.0913"
+         sodipodi:cy="4288.3579"
+         sodipodi:rx="17.599449"
+         sodipodi:ry="51.26796"
+         d="m 3761.1075,4301.4473 c -2.4816,27.3761 -12.1118,43.7085 -21.5096,36.4795 -9.3977,-7.2291 -15.0044,-35.2821 -12.5228,-62.6583 2.4816,-27.3761 12.1118,-43.7085 21.5096,-36.4795 4.1282,3.1756 7.7193,10.6146 10.1043,20.931"
+         transform="translate(-3522.4928,-2740.3443)"
+         sodipodi:start="0.25817121"
+         sodipodi:end="5.6904981"
+         sodipodi:open="true" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:3.60728407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 3750.7868,4311.1226 9.7562,-9.7562 6.3604,11.0166"
+         id="path15472"
+         transform="translate(-3522.4928,-2740.3443)" />
+    </g>
+  </g>
+</svg>

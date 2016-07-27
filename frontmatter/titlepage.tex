@@ -1,0 +1,53 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%Background colour
+\newpagecolor{titlemainbgcolour}
+\thispagestyle{empty}
+\setlength{\parskip}{0pt}
+
+\ifthenelse{\equal{\detokenize{print-cover}}{\jobname}}{
+	{\tikz[overlay,remember picture]
+		\fill[lyryxcolour]
+		([yshift=3cm]current page.north west) rectangle 
+		([yshift=-2.35cm] current page.north east);}
+}{
+	{\tikz[overlay,remember picture]
+		\fill[lyryxcolour]
+		([yshift=3cm]current page.north west) rectangle 
+		([yshift=-1.5cm] current page.north east);}
+}
+
+
+\vspace{3.5em}
+\begin{center}
+\textbf{
+	\fontsize{58}{50}\selectfont {\textcolor{titletextcolour}{\booksubject}}\\
+	\fontsize{34}{36}\selectfont {\textcolor{subtitletextcolour}{\booksubtitle}}\\ [.7\baselineskip]
+	\fontsize{23}{12}\selectfont {\textcolor{subtitletextcolour}{An Open Text}}\\ [.5\baselineskip]
+	\fontsize{21}{15}\selectfont {\textcolor{subtitletextcolour}{by \bookauthor}}
+}
+\end{center}
+
+\vspace{3em}
+\begin{titlemainbox}
+	\begin{center}
+	\textcolor{white}{
+		\fontsize{16pt}{18pt}\selectfont{\textbf{Adapted for}}\\ [.5\baselineskip]
+		\fontsize{22pt}{22pt}\selectfont{\textbf{\courseName}}\\ [.3\baselineskip]
+		\fontsize{18pt}{18pt}\selectfont{\textbf{\courseCode\,\,--\,\,\courseSession\,\,--\,\,\courseSection}}\\ [.3\baselineskip]
+		\fontsize{15pt}{18pt}\selectfont{\textbf{at}}\\ [.9\baselineskip]
+		\fontsize{30pt}{30pt}\selectfont{\textbf{\institution}}}\\ [.5\baselineskip]
+	\end{center}
+\end{titlemainbox}
+
+\vfill
+
+% Copyright
+\begin{center*}
+	%{\fontsize{12pt}{12pt}\selectfont \textcolor{cctextcolour}{\textbf{Creative Commons License (CC BY-NC-SA)}}}
+	{\fontsize{12pt}{12pt}\selectfont \textcolor{subtitletextcolour}{\textbf{Creative Commons License (CC BY-NC-SA)}}}
+\end{center*}
+
+\setlength{\parskip}{\baselineskip}
+\afterpage{\restorepagecolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

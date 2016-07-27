@@ -1,0 +1,2622 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1872.281"
+   height="371.43121"
+   id="svg30585"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="watermelon-3.eps">
+  <defs
+     id="defs30587">
+    <marker
+       id="Arrow"
+       refX="2.52"
+       refY="2.25"
+       markerUnits="strokeWidth"
+       markerWidth="6"
+       markerHeight="4.5"
+       orient="auto">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 2.52,2.25 0,4.5 6,2.25 0,0 z"
+         id="path10" />
+    </marker>
+    <marker
+       id="marker31590"
+       refX="2.52"
+       refY="2.25"
+       markerUnits="strokeWidth"
+       markerWidth="6"
+       markerHeight="4.5"
+       orient="auto">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 2.52,2.25 0,4.5 6,2.25 0,0 z"
+         id="path31592" />
+    </marker>
+    <clipPath
+       id="cp1-6-8-9-36">
+      <polygon
+         points="299,185 299,1 1,1 1,185 "
+         id="polygon9-3-3-3-2" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-0-6-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon33-4-9-6-9" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-3-1-3">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon40-9-7-4-7" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-1-2-6">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon47-3-3-2-3" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-0-1-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon54-9-3-8-1" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-2-4-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon61-8-7-8-5" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-2-0-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon68-7-2-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-1-9-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon75-6-3-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-8-4-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon82-4-0-7-48" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-5-2-8">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon89-1-8-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-5-6-8">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon96-6-0-8-3" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-9-4-87">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon103-6-4-9-50" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-9-8-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon110-4-5-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-9-0-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon117-9-2-9-15" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-6-2-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon124-3-8-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-5-8-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon131-6-52-6-24" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-4-7-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon138-0-3-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-8-9-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon145-0-1-8-9" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-87-6-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon152-6-4-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-3-4-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon159-4-2-7-96" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-5-8-91">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon166-0-9-1-3" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-0-8-0">
+      <polygon
+         points="7.4102,13.6031 7.4102,-1.39692 -1.5898,-1.39692 -1.5898,13.6031 "
+         id="polygon173-8-5-6-6" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-48-0-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon180-0-2-2-3" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-3-5-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon187-6-1-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-2-1-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon194-9-9-1-5" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-0-0-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon201-3-4-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-1-4-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon208-7-9-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-3-7-0">
+      <polygon
+         points="7.04694,13.6031 7.04694,-1.39692 -1.95306,-1.39692 -1.95306,13.6031 "
+         id="polygon215-2-0-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-3-5-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon222-7-6-7-9" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-43-5-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon229-3-1-2-4" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-7-4-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon236-1-7-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-8-5-5">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon243-3-0-0-3" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-45-8-4">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon250-2-6-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-8-4-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon257-3-7-9-54" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-9-2-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon264-5-0-9-1" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-1-8-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon271-7-2-0-6" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-2-3-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon278-9-4-5-7" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-3-4-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon285-1-3-4-5" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-7-8-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon292-7-5-4-1" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-4-8-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon299-8-1-7-2" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-0-1-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon306-1-3-9-0" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-1-2-1">
+      <polygon
+         points="7.77347,13.573 7.77347,-1.42705 -1.22653,-1.42705 -1.22653,13.573 "
+         id="polygon313-2-9-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-7-9-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon320-2-7-0-3" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-6-6-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon327-1-1-7-3" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-7-5-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon334-7-9-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-5-9-87">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon341-5-82-1-9" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-1-5-0">
+      <polygon
+         points="8.77347,13.5428 8.77347,-1.45717 -1.22653,-1.45717 -1.22653,13.5428 "
+         id="polygon348-1-39-2-5" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-5-4-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon355-1-4-3-2" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-9-1-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon362-5-2-1-2" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-8-9-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon369-2-5-7-3" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-0-8-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon376-8-4-7-7" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-3-8-0">
+      <polygon
+         points="7.77347,13.5127 7.77347,-1.48729 -1.22653,-1.48729 -1.22653,13.5127 "
+         id="polygon383-9-41-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-0-9-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon390-4-5-1-8" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-7-3-9">
+      <polygon
+         points="299,185 299,1 1,1 1,185 "
+         id="polygon9-3-7-6-3" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-4-4-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon33-4-1-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-2-5-9">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon40-9-38-1-1" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-8-0-2">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon47-3-4-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-57-2-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon54-9-8-8-8" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-7-8-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon61-8-8-9-8" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-4-5-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon68-7-1-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-7-1-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon75-6-9-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-15-0-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon82-4-7-0-8" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-0-9-6">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon89-1-25-8-7" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-59-9-3">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon96-6-3-4-3" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-3-1-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon103-6-8-7-7" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-7-1-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon110-4-6-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-6-1-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon117-9-25-5-4" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-8-0-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon124-3-9-8-7" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-03-7-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon131-6-95-3-3" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-01-0-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon138-0-51-9-6" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-9-5-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon145-0-08-1-5" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-3-6-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon152-6-0-1-6" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-6-9-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon159-4-6-5-9" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-4-3-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon166-0-7-1-6" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-05-3-3">
+      <polygon
+         points="7.4102,13.6031 7.4102,-1.39692 -1.5898,-1.39692 -1.5898,13.6031 "
+         id="polygon173-8-7-6-3" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-2-7-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon180-0-49-0-9" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-43-3-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon187-6-9-0-6" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-0-7-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon194-9-48-1-5" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-23-2-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon201-3-3-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-3-1-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon208-7-97-0-7" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-1-2-1">
+      <polygon
+         points="7.04694,13.6031 7.04694,-1.39692 -1.95306,-1.39692 -1.95306,13.6031 "
+         id="polygon215-2-23-3-7" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-1-4-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon222-7-1-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-9-3-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon229-3-95-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-3-3-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon236-1-0-7-2" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-59-3-3">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon243-3-95-0-7" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-74-6-0">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon250-2-00-9-9" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-88-7-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon257-3-8-1-6" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-21-0-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon264-5-22-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-2-8-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon271-7-3-1-9" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-26-7-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon278-9-5-5-3" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-6-2-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon285-1-59-4-8" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-1-2-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon292-7-85-0-8" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-61-1-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon299-8-8-9-6" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-7-0-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon306-1-5-8-8" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-2-1-4">
+      <polygon
+         points="7.77347,13.573 7.77347,-1.42705 -1.22653,-1.42705 -1.22653,13.573 "
+         id="polygon313-2-0-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-70-2-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon320-2-5-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-4-5-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon327-1-3-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-0-7-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon334-7-6-9-5" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-06-2-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon341-5-83-8-1" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-72-7-7">
+      <polygon
+         points="8.77347,13.5428 8.77347,-1.45717 -1.22653,-1.45717 -1.22653,13.5428 "
+         id="polygon348-1-80-7-5" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-2-6-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon355-1-06-8-8" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-5-3-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon362-5-25-1-8" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-25-0-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon369-2-0-2-2" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-6-2-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon376-8-2-0-1" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-8-2-3">
+      <polygon
+         points="7.77347,13.5127 7.77347,-1.48729 -1.22653,-1.48729 -1.22653,13.5127 "
+         id="polygon383-9-9-2-2" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-5-7-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon390-4-51-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-3-6-1">
+      <polygon
+         points="299,185 299,1 1,1 1,185 "
+         id="polygon9-3-9-5-85" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-94-0-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon33-4-5-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-6-3-4">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon40-9-3-5-7" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-15-9-4">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon47-3-8-7-3" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-7-6-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon54-9-9-1-2" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-8-5-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon61-8-70-1-4" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-8-0-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon68-7-89-6-24" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-6-2-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon75-6-6-0-4" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-85-3-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon82-4-15-6-3" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-9-6-8">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon89-1-3-9-8" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-1-4-9">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon96-6-2-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-6-0-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon103-6-0-8-3" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-0-9-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon110-4-7-7-0" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-7-8-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon117-9-4-9-0" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-60-8-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon124-3-82-9-8" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-4-5-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon131-6-9-6-3" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-0-9-12">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon138-0-5-4-4" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-2-3-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon145-0-6-4-5" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-14-0-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon152-6-3-7-2" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-36-1-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon159-4-22-4-8" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-6-9-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon166-0-03-0-9" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-9-7-0">
+      <polygon
+         points="7.4102,13.6031 7.4102,-1.39692 -1.5898,-1.39692 -1.5898,13.6031 "
+         id="polygon173-8-1-8-0" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-42-4-67">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon180-0-1-2-4" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-7-8-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon187-6-6-3-6" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-73-6-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon194-9-0-3-4" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-7-3-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon201-3-8-4-61" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-0-7-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon208-7-8-6-4" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-4-4-1">
+      <polygon
+         points="7.04694,13.6031 7.04694,-1.39692 -1.95306,-1.39692 -1.95306,13.6031 "
+         id="polygon215-2-2-5-2" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-9-4-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon222-7-9-1-2" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-8-3-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon229-3-9-1-0" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-8-9-98">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon236-1-9-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-0-9-5">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon243-3-2-6-2" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-7-5-07">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon250-2-66-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-33-1-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon257-3-0-9-92" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-91-7-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon264-5-7-9-3" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-0-8-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon271-7-98-9-8" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-1-8-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon278-9-2-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-0-8-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon285-1-5-7-8" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-75-1-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon292-7-9-4-1" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-0-3-78">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon299-8-40-0-7" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-2-3-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon306-1-1-7-5" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-8-2-0">
+      <polygon
+         points="7.77347,13.573 7.77347,-1.42705 -1.22653,-1.42705 -1.22653,13.573 "
+         id="polygon313-2-23-3-8" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-5-8-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon320-2-3-3-3" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-7-9-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon327-1-9-3-6" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-4-1-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon334-7-0-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-0-5-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon341-5-81-6-1" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-7-3-74">
+      <polygon
+         points="8.77347,13.5428 8.77347,-1.45717 -1.22653,-1.45717 -1.22653,13.5428 "
+         id="polygon348-1-9-5-0" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-4-2-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon355-1-0-8-9" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-3-1-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon362-5-10-0-8" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-1-5-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon369-2-4-7-0" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-8-8-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon376-8-3-6-1" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-0-8-4">
+      <polygon
+         points="7.77347,13.5127 7.77347,-1.48729 -1.22653,-1.48729 -1.22653,13.5127 "
+         id="polygon383-9-2-0-3" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-1-1-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon390-4-9-6-2" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-5-4-6">
+      <polygon
+         points="299,185 299,1 1,1 1,185 "
+         id="polygon9-3-07-4-4" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-9-7-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon33-4-90-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-1-6-4">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon40-9-4-7-8" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-7-5-2">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon47-3-2-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-5-2-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon54-9-4-8-8" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-4-1-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon61-8-0-2-1" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-55-1-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon68-7-8-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-5-5-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon75-6-1-4-2" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-83-3-42">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon82-4-5-7-0" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-8-1-6">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon89-1-9-6-6" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-6-9-6">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon96-6-46-8-27" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-1-6-11">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon103-6-48-8-9" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-5-2-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon110-4-2-9-2" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-2-1-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon117-9-5-8-1" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-0-5-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon124-3-7-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-0-3-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon131-6-0-7-9" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-5-2-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon138-0-89-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-0-8-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon145-0-9-7-6" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-1-3-67">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon152-6-6-0-1" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-78-2-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon159-4-78-2-2" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-7-2-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon166-0-6-5-3" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-5-9-3">
+      <polygon
+         points="7.4102,13.6031 7.4102,-1.39692 -1.5898,-1.39692 -1.5898,13.6031 "
+         id="polygon173-8-52-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-8-5-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon180-0-20-4-6" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-9-8-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon187-6-2-9-1" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-20-5-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon194-9-8-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-8-3-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon201-3-0-1-3" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-82-7-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon208-7-7-6-4" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-75-2-7">
+      <polygon
+         points="7.04694,13.6031 7.04694,-1.39692 -1.95306,-1.39692 -1.95306,13.6031 "
+         id="polygon215-2-7-9-3" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-2-2-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon222-7-62-7-3" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-3-8-21">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon229-3-8-5-4" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-66-2-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon236-1-2-7-7" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-86-8-8">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon243-3-98-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-8-2-7">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon250-2-3-5-0" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-9-5-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon257-3-9-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-5-1-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon264-5-2-0-6" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-8-0-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon271-7-24-6-0" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-21-0-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon278-9-49-4-3" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-8-1-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon285-1-1-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-5-6-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon292-7-8-4-2" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-2-1-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon299-8-4-5-4" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-03-3-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon306-1-6-4-6" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-4-0-2">
+      <polygon
+         points="7.77347,13.573 7.77347,-1.42705 -1.22653,-1.42705 -1.22653,13.573 "
+         id="polygon313-2-6-7-4" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-4-1-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon320-2-9-5-22" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-2-5-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon327-1-60-8-9" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-77-5-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon334-7-1-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-8-3-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon341-5-2-5-5" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-16-9-2">
+      <polygon
+         points="8.77347,13.5428 8.77347,-1.45717 -1.22653,-1.45717 -1.22653,13.5428 "
+         id="polygon348-1-8-8-51" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-52-8-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon355-1-3-6-1" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-4-2-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon362-5-1-5-1" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-2-5-6">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon369-2-3-2-5" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-49-2-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon376-8-5-4-0" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-2-2-3">
+      <polygon
+         points="7.77347,13.5127 7.77347,-1.48729 -1.22653,-1.48729 -1.22653,13.5127 "
+         id="polygon383-9-1-7-4" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-06-1-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon390-4-1-8-4" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-0-2-5">
+      <polygon
+         points="299,185 299,1 1,1 1,185 "
+         id="polygon9-3-0-4-2" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-7-6-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon33-4-0-8-7" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-4-7-3">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon40-9-0-5-6" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-2-9-8">
+      <polygon
+         points="16,13.6031 16,-1.39692 0,-1.39692 0,13.6031 "
+         id="polygon47-3-6-2-7" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-2-6-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon54-9-2-7-4" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-5-1-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon61-8-1-9-0" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-5-3-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon68-7-3-5-5" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-3-3-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon75-6-2-0-2" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-1-6-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon82-4-1-2-2" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-3-0-9">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon89-1-2-9-2" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-3-6-0">
+      <polygon
+         points="16.6367,13.6031 16.6367,-1.39692 -1.36327,-1.39692 -1.36327,13.6031 "
+         id="polygon96-6-4-2-1" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-7-6-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon103-6-5-7-0" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-2-9-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon110-4-9-9-4" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-3-4-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon117-9-7-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-2-4-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon124-3-0-7-7" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-2-1-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon131-6-5-1-7" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-3-8-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon138-0-8-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-3-9-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon145-0-0-7-8" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-8-3-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon152-6-7-2-5" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-7-5-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon159-4-7-0-7" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-3-7-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon166-0-0-4-9" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-2-9-6">
+      <polygon
+         points="7.4102,13.6031 7.4102,-1.39692 -1.5898,-1.39692 -1.5898,13.6031 "
+         id="polygon173-8-9-2-0" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-4-2-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon180-0-4-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-4-1-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon187-6-4-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-7-7-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon194-9-4-2-6" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-2-3-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon201-3-5-9-1" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-8-1-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon208-7-1-9-3" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-7-8-4">
+      <polygon
+         points="7.04694,13.6031 7.04694,-1.39692 -1.95306,-1.39692 -1.95306,13.6031 "
+         id="polygon215-2-5-2-7" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-8-1-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon222-7-8-5-6" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-4-3-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon229-3-2-6-0" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-6-6-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon236-1-3-3-5" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-5-2-5">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon243-3-9-2-4" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-4-0-9">
+      <polygon
+         points="16.7735,13.6332 16.7735,-1.3668 -1.22653,-1.3668 -1.22653,13.6332 "
+         id="polygon250-2-0-3-4" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-3-2-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon257-3-4-5-0" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-2-0-9">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon264-5-9-3-7" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-4-8-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon271-7-9-1-3" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-3-1-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon278-9-6-9-7" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-5-4-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon285-1-0-1-5" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-9-7-3">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon292-7-1-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-6-0-2">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon299-8-2-4-6" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-1-1-4">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon306-1-4-8-2" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-6-1-4">
+      <polygon
+         points="7.77347,13.573 7.77347,-1.42705 -1.22653,-1.42705 -1.22653,13.573 "
+         id="polygon313-2-2-9-6" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-1-1-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon320-2-8-2-3" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-3-5-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon327-1-6-6-2" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-2-1-7">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon334-7-5-4-1" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-2-3-1">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon341-5-8-3-4" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-5-8-9">
+      <polygon
+         points="8.77347,13.5428 8.77347,-1.45717 -1.22653,-1.45717 -1.22653,13.5428 "
+         id="polygon348-1-3-7-6" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-3-0-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon355-1-5-3-9" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-6-0-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon362-5-3-1-7" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-6-2-8">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon369-2-1-2-4" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-4-4-0">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon376-8-1-5-2" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-5-3-9">
+      <polygon
+         points="7.77347,13.5127 7.77347,-1.48729 -1.22653,-1.48729 -1.22653,13.5127 "
+         id="polygon383-9-4-6-0" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-8-8-5">
+      <polygon
+         points="300,186 300,1 0,1 0,186 "
+         id="polygon390-4-2-1-8" />
+    </clipPath>
+    <clipPath
+       id="cp1-6-38-2">
+      <polygon
+         points="1,1 1,185 299,185 299,1 "
+         id="polygon9-3-03-6" />
+    </clipPath>
+    <clipPath
+       id="cp2-0-0-2">
+      <polygon
+         points="1,1 1,185 299,185 299,1 "
+         id="polygon16-7-6-9" />
+    </clipPath>
+    <clipPath
+       id="cp3-8-99-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon33-4-6-9" />
+    </clipPath>
+    <clipPath
+       id="cp4-5-7-8">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon40-9-9-3" />
+    </clipPath>
+    <clipPath
+       id="cp5-1-89-9">
+      <polygon
+         points="0,-1.39692 0,13.6031 16,13.6031 16,-1.39692 "
+         id="polygon47-3-9-5" />
+    </clipPath>
+    <clipPath
+       id="cp6-2-8-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon54-9-0-0" />
+    </clipPath>
+    <clipPath
+       id="cp7-8-49-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon61-8-14-2" />
+    </clipPath>
+    <clipPath
+       id="cp8-3-7-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon68-7-86-7" />
+    </clipPath>
+    <clipPath
+       id="cp9-9-0-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon75-6-0-5" />
+    </clipPath>
+    <clipPath
+       id="cp10-8-0-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon82-4-05-3" />
+    </clipPath>
+    <clipPath
+       id="cp11-6-31-2">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon89-1-0-8" />
+    </clipPath>
+    <clipPath
+       id="cp12-0-17-5">
+      <polygon
+         points="-1.36327,-1.39692 -1.36327,13.6031 16.6367,13.6031 16.6367,-1.39692 "
+         id="polygon96-6-5-5" />
+    </clipPath>
+    <clipPath
+       id="cp13-4-17-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon103-6-52-8" />
+    </clipPath>
+    <clipPath
+       id="cp14-3-4-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon110-4-8-1" />
+    </clipPath>
+    <clipPath
+       id="cp15-8-71-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon117-9-75-4" />
+    </clipPath>
+    <clipPath
+       id="cp16-1-7-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon124-3-06-6" />
+    </clipPath>
+    <clipPath
+       id="cp17-0-07-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon131-6-1-7" />
+    </clipPath>
+    <clipPath
+       id="cp18-9-7-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon138-0-52-8" />
+    </clipPath>
+    <clipPath
+       id="cp19-5-39-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon145-0-63-6" />
+    </clipPath>
+    <clipPath
+       id="cp20-8-9-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon152-6-31-3" />
+    </clipPath>
+    <clipPath
+       id="cp21-2-8-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon159-4-3-3" />
+    </clipPath>
+    <clipPath
+       id="cp22-6-51-5">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon166-0-67-9" />
+    </clipPath>
+    <clipPath
+       id="cp23-2-7-6">
+      <polygon
+         points="-1.5898,-1.39692 -1.5898,13.6031 7.4102,13.6031 7.4102,-1.39692 "
+         id="polygon173-8-4-1" />
+    </clipPath>
+    <clipPath
+       id="cp24-5-9-1">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon180-0-7-9" />
+    </clipPath>
+    <clipPath
+       id="cp25-8-91-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon187-6-0-3" />
+    </clipPath>
+    <clipPath
+       id="cp26-1-1-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon194-9-08-1" />
+    </clipPath>
+    <clipPath
+       id="cp27-9-1-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon201-3-1-2" />
+    </clipPath>
+    <clipPath
+       id="cp28-7-2-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon208-7-3-0" />
+    </clipPath>
+    <clipPath
+       id="cp29-4-12-7">
+      <polygon
+         points="-1.95306,-1.39692 -1.95306,13.6031 7.04694,13.6031 7.04694,-1.39692 "
+         id="polygon215-2-1-0" />
+    </clipPath>
+    <clipPath
+       id="cp30-8-7-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon222-7-18-3" />
+    </clipPath>
+    <clipPath
+       id="cp31-1-44-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon229-3-6-7" />
+    </clipPath>
+    <clipPath
+       id="cp32-4-87-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon236-1-03-0" />
+    </clipPath>
+    <clipPath
+       id="cp33-3-6-8">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon243-3-8-6" />
+    </clipPath>
+    <clipPath
+       id="cp34-1-3-8">
+      <polygon
+         points="-1.22653,-1.3668 -1.22653,13.6332 16.7735,13.6332 16.7735,-1.3668 "
+         id="polygon250-2-4-3" />
+    </clipPath>
+    <clipPath
+       id="cp35-4-4-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon257-3-1-6" />
+    </clipPath>
+    <clipPath
+       id="cp36-9-52-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon264-5-4-5" />
+    </clipPath>
+    <clipPath
+       id="cp37-2-7-3">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon271-7-91-9" />
+    </clipPath>
+    <clipPath
+       id="cp38-8-9-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon278-9-3-6" />
+    </clipPath>
+    <clipPath
+       id="cp39-6-01-0">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon285-1-6-5" />
+    </clipPath>
+    <clipPath
+       id="cp40-5-0-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon292-7-2-3" />
+    </clipPath>
+    <clipPath
+       id="cp41-6-3-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon299-8-45-9" />
+    </clipPath>
+    <clipPath
+       id="cp42-2-24-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon306-1-46-0" />
+    </clipPath>
+    <clipPath
+       id="cp43-3-0-5">
+      <polygon
+         points="-1.22653,-1.42705 -1.22653,13.573 7.77347,13.573 7.77347,-1.42705 "
+         id="polygon313-2-1-9" />
+    </clipPath>
+    <clipPath
+       id="cp44-4-6-9">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon320-2-74-1" />
+    </clipPath>
+    <clipPath
+       id="cp45-6-36-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon327-1-4-5" />
+    </clipPath>
+    <clipPath
+       id="cp46-2-73-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon334-7-07-8" />
+    </clipPath>
+    <clipPath
+       id="cp47-1-3-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon341-5-0-4" />
+    </clipPath>
+    <clipPath
+       id="cp48-7-2-1">
+      <polygon
+         points="-1.22653,-1.45717 -1.22653,13.5428 8.77347,13.5428 8.77347,-1.45717 "
+         id="polygon348-1-7-1" />
+    </clipPath>
+    <clipPath
+       id="cp49-5-6-7">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon355-1-2-0" />
+    </clipPath>
+    <clipPath
+       id="cp50-4-7-2">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon362-5-9-5" />
+    </clipPath>
+    <clipPath
+       id="cp51-8-84-6">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon369-2-03-8" />
+    </clipPath>
+    <clipPath
+       id="cp52-4-7-8">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon376-8-6-0" />
+    </clipPath>
+    <clipPath
+       id="cp53-0-09-5">
+      <polygon
+         points="-1.22653,-1.48729 -1.22653,13.5127 7.77347,13.5127 7.77347,-1.48729 "
+         id="polygon383-9-18-3" />
+    </clipPath>
+    <clipPath
+       id="cp54-7-6-4">
+      <polygon
+         points="0,1 0,186 300,186 300,1 "
+         id="polygon390-4-3-3" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient3109-9">
+      <stop
+         offset="0"
+         style="stop-color:#b2c689;stop-opacity:1"
+         id="stop3111-9" />
+      <stop
+         offset="1"
+         style="stop-color:#decd87;stop-opacity:1"
+         id="stop3113-8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3079-8">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop3081-6" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop3083-9" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3092-6">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop3094-6" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop3096-2" />
+    </linearGradient>
+    <filter
+       id="filter4547-3"
+       color-interpolation-filters="sRGB"
+       height="1.3995123"
+       width="1.4168561"
+       y="-0.19975618"
+       x="-0.20842806">
+      <feGaussianBlur
+         stdDeviation="8.3585071"
+         id="feGaussianBlur4549-8" />
+    </filter>
+    <linearGradient
+       id="linearGradient41483">
+      <stop
+         offset="0"
+         style="stop-color:#b2c689;stop-opacity:1"
+         id="stop41485" />
+      <stop
+         offset="1"
+         style="stop-color:#decd87;stop-opacity:1"
+         id="stop41487" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient41490">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop41492" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop41494" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient41497">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop41499" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop41501" />
+    </linearGradient>
+    <filter
+       id="filter41503"
+       color-interpolation-filters="sRGB"
+       height="1.3995123"
+       width="1.4168561"
+       y="-0.19975618"
+       x="-0.20842806">
+      <feGaussianBlur
+         stdDeviation="8.3585071"
+         id="feGaussianBlur41505" />
+    </filter>
+    <linearGradient
+       id="linearGradient3109-9-6-6">
+      <stop
+         offset="0"
+         style="stop-color:#b2c689;stop-opacity:1"
+         id="stop3111-9-1-4" />
+      <stop
+         offset="1"
+         style="stop-color:#decd87;stop-opacity:1"
+         id="stop3113-8-7-5" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3079-8-19-6">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop3081-6-0-1" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop3083-9-3-5" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3092-6-1-1">
+      <stop
+         offset="0"
+         style="stop-color:#7fa347;stop-opacity:1"
+         id="stop3094-6-75-9" />
+      <stop
+         offset="1"
+         style="stop-color:#7fa347;stop-opacity:0"
+         id="stop3096-2-3-6" />
+    </linearGradient>
+    <filter
+       id="filter4547-3-3-4"
+       color-interpolation-filters="sRGB"
+       height="1.3995123"
+       width="1.4168561"
+       y="-0.19975618"
+       x="-0.20842806">
+      <feGaussianBlur
+         stdDeviation="8.3585071"
+         id="feGaussianBlur4549-8-2-5" />
+    </filter>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1624538,0,0,0.41429038,-10447.593,-3706.8749)"
+       r="202.30038"
+       fy="7426.8867"
+       fx="7506.0542"
+       cy="7426.8867"
+       cx="7506.0542"
+       id="radialGradient11941"
+       xlink:href="#linearGradient11935"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient11935"
+       inkscape:collect="always">
+      <stop
+         id="stop11937"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop11939"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5068542,-5.1496323e-7,5.6765414e-7,0.7250493,-7749.8048,2072.207)"
+       r="84"
+       fy="7536.6211"
+       fx="15290"
+       cy="7536.6211"
+       cx="15290"
+       id="radialGradient11858"
+       xlink:href="#linearGradient11852"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient11852"
+       inkscape:collect="always">
+      <stop
+         id="stop11854"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop11856"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0;" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.32"
+     inkscape:cx="967.17289"
+     inkscape:cy="278.43221"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="814"
+     inkscape:window-height="604"
+     inkscape:window-x="2126"
+     inkscape:window-y="196"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata30590">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2823.3125,857.21198)">
+    <g
+       id="g15230-2-2-1-3"
+       transform="matrix(1.7441798,0,0,-0.79738114,-6091.6453,816.91455)">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#8dd35f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.33721244;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path15232-3-7-7-74"
+         sodipodi:cx="1810.0651"
+         sodipodi:cy="4451.7271"
+         sodipodi:rx="77.66713"
+         sodipodi:ry="77.66713"
+         d="m 1887.7322,4451.7271 c 0,42.8943 -34.7728,77.6671 -77.6671,77.6671 -42.8944,0 -77.6672,-34.7728 -77.6672,-77.6671 0,-0.022 0,-0.045 10e-5,-0.067"
+         transform="matrix(1.3882782,0,0,-2.6068015,-480.4242,13468.141)"
+         sodipodi:start="0"
+         sodipodi:end="3.1424546"
+         sodipodi:open="true" />
+    </g>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect10494-1-1-9-3"
+       width="573.01556"
+       height="370.87878"
+       x="-2800.3091"
+       y="-856.65955"
+       inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\shells-1.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <g
+       id="g15230-2-4-8"
+       transform="matrix(3.734534,0,0,0.79738114,-10295.818,-2024.9873)">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccc"
+         id="path15232-3-8-0"
+         d="m 1887.7322,4451.7271 c 0,42.6506 -77.6532,77.6637 -77.6532,77.6637 0,0 -0.05,-77.8588 -0.05,-77.8588"
+         style="color:#000000;fill:#aade87;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.90034854;stroke-miterlimit:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="matrix(1.3882782,0,0,-2.6068015,-480.4242,13468.141)" />
+    </g>
+    <g
+       style="stroke:#ff0000;stroke-width:4.58648729;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="matrix(0,-0.6557073,-0.65248742,0,-1766.6309,-629.66685)"
+       id="g15474-4-9-8-8">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:4.58648729;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path15470-4-2-2-8"
+         sodipodi:cx="3744.0913"
+         sodipodi:cy="4288.3579"
+         sodipodi:rx="17.599449"
+         sodipodi:ry="51.26796"
+         d="m 3761.1075,4301.4473 c -2.4816,27.3761 -12.1118,43.7085 -21.5096,36.4795 -9.3977,-7.2291 -15.0044,-35.2821 -12.5228,-62.6583 2.4816,-27.3761 12.1118,-43.7085 21.5096,-36.4795 4.1282,3.1756 7.7193,10.6146 10.1043,20.931"
+         transform="translate(-3522.4928,-2740.3443)"
+         sodipodi:start="0.25817121"
+         sodipodi:end="5.6904981"
+         sodipodi:open="true" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:4.58648729;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 3750.7868,4311.1226 9.7562,-9.7562 6.3604,11.0166"
+         id="path15472-6-1-4-0"
+         transform="translate(-3522.4928,-2740.3443)" />
+    </g>
+    <text
+       sodipodi:linespacing="120%"
+       id="text15240-2-5-6"
+       y="-517.4574"
+       x="-2252.7271"
+       style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+       xml:space="preserve"><tspan
+         y="-517.4574"
+         x="-2252.7271"
+         id="tspan15242-3-5-8"
+         sodipodi:role="line">x</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       id="path15250-9-1-1"
+       d="m -2769.804,-502.10995 0,-336.0257"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       id="path15268-5-7-9"
+       d="m -2243.4315,-538.50955 -579.8673,0"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <g
+       transform="translate(-16203.529,-10456.171)"
+       id="g12471-1-1-8"
+       style="fill:#000000;stroke:#ff0000">
+      <g
+         id="g12473-7-1-9"
+         transform="matrix(0.03934949,0,0,0.03934949,12990.278,9604.3899)"
+         style="fill:#000000;stroke:#ff0000">
+        <g
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           stroke-miterlimit="10.433"
+           xml:space="preserve"
+           transform="matrix(22.279459,0,0,-22.279459,-3898.9052,12663.5)"
+           id="g12475-4-5-7"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:#000000;stroke:#ff0000;stroke-width:25.41329002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"><path
+             inkscape:connector-curvature="0"
+             id="path12477-0-2-2"
+             d="m 1151.3,365.93 h 4.3 c 1,0 1.5,0 1.5,0.99 0,0.55 -0.5,0.55 -1.4,0.55 h -4.1 l 1,5.68 c 0.2,1.05 0.9,4.58 1.2,5.18 0.5,0.94 1.3,1.69 2.4,1.69 0.2,0 1.5,0 2.4,-0.89 -2.2,-0.2 -2.7,-1.95 -2.7,-2.69 0,-1.15 0.9,-1.75 1.9,-1.75 1.3,0 2.7,1.1 2.7,2.99 0,2.29 -2.3,3.44 -4.3,3.44 -1.7,0 -4.9,-0.9 -6.4,-5.83 -0.3,-1.05 -0.4,-1.54 -1.6,-7.82 h -3.4 c -1,0 -1.5,0 -1.5,-0.95 0,-0.59 0.4,-0.59 1.4,-0.59 h 3.2 l -3.7,-19.68 c -0.9,-4.83 -1.7,-9.37 -4.3,-9.37 -0.2,0 -1.5,0 -2.4,0.9 2.3,0.15 2.7,1.94 2.7,2.69 0,1.15 -0.9,1.74 -1.8,1.74 -1.3,0 -2.8,-1.09 -2.8,-2.98 0,-2.25 2.2,-3.44 4.3,-3.44 2.7,0 4.7,2.94 5.6,4.83 1.6,3.14 2.7,9.17 2.8,9.51 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12479-9-7-2"
+             d="m 1179.5,334.04 0,0.03 0,0.03 0,0.01 0,0.02 0,0.01 0,0.02 0,0.02 0,0.01 0,0.02 -0.1,0.02 0,0.03 0,0.02 0,0.02 0,0.03 0,0.03 -0.1,0.03 0,0.03 0,0.04 0,0.02 -0.1,0.02 0,0.02 0,0.02 0,0.02 0,0.03 0,0.02 -0.1,0.02 0,0.03 0,0.02 0,0.03 -0.1,0.03 0,0.03 0,0.03 0,0.03 -0.1,0.03 0,0.03 0,0.03 -0.1,0.04 0,0.03 0,0.04 -0.1,0.03 0,0.04 -0.1,0.04 c -6.2,6.28 -7.8,15.69 -7.8,23.31 0,8.67 1.9,17.34 8,23.57 0.7,0.59 0.7,0.69 0.7,0.84 0,0.35 -0.2,0.5 -0.5,0.5 -0.5,0 -5,-3.39 -7.9,-9.72 -2.6,-5.47 -3.2,-11 -3.2,-15.19 0,-3.88 0.6,-9.91 3.3,-15.54 3,-6.12 7.3,-9.36 7.8,-9.36 0.3,0 0.5,0.15 0.5,0.49 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12481-4-6-8"
+             d="m 1198.6,361.04 0.1,0.13 0,0.15 0,0.17 0.1,0.18 0,0.19 0.1,0.21 0.1,0.21 0,0.23 0.1,0.23 0.1,0.24 0.1,0.25 0.1,0.24 0.1,0.25 0.1,0.25 0.2,0.25 0.1,0.25 0.2,0.24 0.1,0.24 0.2,0.23 0.2,0.22 0.1,0.22 0.2,0.2 0.2,0.19 0.3,0.18 0.2,0.16 0.2,0.14 0.2,0.07 0.1,0.06 0.1,0.05 0.2,0.05 0.1,0.05 0.1,0.04 0.2,0.03 0.1,0.03 0.2,0.02 0.1,0.02 0.2,0.01 0.2,0 c 0.2,0 1.4,0 2.5,-0.65 -1.4,-0.25 -2.4,-1.49 -2.4,-2.68 0,-0.8 0.5,-1.75 1.9,-1.75 1.1,0 2.7,0.9 2.7,2.89 0,2.59 -3,3.29 -4.7,3.29 -2.9,0 -4.6,-2.64 -5.2,-3.79 -1.3,3.29 -4,3.79 -5.4,3.79 -5.2,0 -8,-6.43 -8,-7.67 0,-0.5 0.5,-0.5 0.6,-0.5 0.4,0 0.5,0.1 0.6,0.54 1.7,5.29 5,6.53 6.7,6.53 1,0 2.7,-0.45 2.7,-3.33 0,-1.55 -0.8,-4.89 -2.7,-11.86 -0.8,-3.09 -2.5,-5.18 -4.7,-5.18 -0.3,0 -1.5,0 -2.5,0.65 1.2,0.25 2.3,1.29 2.3,2.69 0,1.34 -1.1,1.74 -1.8,1.74 -1.5,0 -2.8,-1.3 -2.8,-2.89 0,-2.29 2.5,-3.29 4.7,-3.29 3.3,0 5.1,3.49 5.3,3.79 0.6,-1.85 2.4,-3.79 5.3,-3.79 5.2,0 8,6.43 8,7.68 0,0.49 -0.4,0.49 -0.6,0.49 -0.4,0 -0.5,-0.2 -0.6,-0.55 -1.7,-5.33 -5.1,-6.52 -6.7,-6.52 -1.9,0 -2.7,1.59 -2.7,3.29 0,1.09 0.3,2.19 0.8,4.38 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12483-8-1-2"
+             d="m 1225.4,358.45 0,0.37 0,0.39 0,0.39 0,0.41 -0.1,0.84 0,0.88 -0.1,0.92 -0.1,0.94 -0.2,0.98 -0.1,1 -0.2,1.02 -0.2,1.04 -0.3,1.05 -0.3,1.06 -0.4,1.06 -0.4,1.07 -0.2,0.53 -0.2,0.54 -0.2,0.53 -0.3,0.53 c -3,6.12 -7.3,9.36 -7.8,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 1,-1.15 4.9,-4.92 7.7,-12.85 7.7,-23.26 0,-8.52 -1.8,-17.28 -8,-23.56 -0.7,-0.6 -0.7,-0.69 -0.7,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 5,3.38 8,9.71 2.5,5.48 3.1,11.01 3.1,15.19 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /></g>      </g>
+      <g
+         id="g12485-8-4-8"
+         transform="matrix(0.03934949,0,0,0.03934949,12989.621,9603.9831)"
+         style="fill:#000000;stroke:#ff0000">
+        <g
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           stroke-miterlimit="10.433"
+           xml:space="preserve"
+           transform="matrix(22.279459,0,0,-22.279459,-3898.9052,12663.5)"
+           id="g12487-2-2-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:#000000;stroke:#ff0000;stroke-width:25.41329002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"><path
+             inkscape:connector-curvature="0"
+             id="path12489-4-3-0"
+             d="m 1151.3,365.93 h 4.3 c 1,0 1.5,0 1.5,0.99 0,0.55 -0.5,0.55 -1.4,0.55 h -4.1 l 1,5.68 c 0.2,1.05 0.9,4.58 1.2,5.18 0.5,0.94 1.3,1.69 2.4,1.69 0.2,0 1.5,0 2.4,-0.89 -2.2,-0.2 -2.7,-1.95 -2.7,-2.69 0,-1.15 0.9,-1.75 1.9,-1.75 1.3,0 2.7,1.1 2.7,2.99 0,2.29 -2.3,3.44 -4.3,3.44 -1.7,0 -4.9,-0.9 -6.4,-5.83 -0.3,-1.05 -0.4,-1.54 -1.6,-7.82 h -3.4 c -1,0 -1.5,0 -1.5,-0.95 0,-0.59 0.4,-0.59 1.4,-0.59 h 3.2 l -3.7,-19.68 c -0.9,-4.83 -1.7,-9.37 -4.3,-9.37 -0.2,0 -1.5,0 -2.4,0.9 2.3,0.15 2.7,1.94 2.7,2.69 0,1.15 -0.9,1.74 -1.8,1.74 -1.3,0 -2.8,-1.09 -2.8,-2.98 0,-2.25 2.2,-3.44 4.3,-3.44 2.7,0 4.7,2.94 5.6,4.83 1.6,3.14 2.7,9.17 2.8,9.51 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12491-5-2-7"
+             d="m 1179.5,334.04 0,0.03 0,0.03 0,0.01 0,0.02 0,0.01 0,0.02 0,0.02 0,0.01 0,0.02 -0.1,0.02 0,0.03 0,0.02 0,0.02 0,0.03 0,0.03 -0.1,0.03 0,0.03 0,0.04 0,0.02 -0.1,0.02 0,0.02 0,0.02 0,0.02 0,0.03 0,0.02 -0.1,0.02 0,0.03 0,0.02 0,0.03 -0.1,0.03 0,0.03 0,0.03 0,0.03 -0.1,0.03 0,0.03 0,0.03 -0.1,0.04 0,0.03 0,0.04 -0.1,0.03 0,0.04 -0.1,0.04 c -6.2,6.28 -7.8,15.69 -7.8,23.31 0,8.67 1.9,17.34 8,23.57 0.7,0.59 0.7,0.69 0.7,0.84 0,0.35 -0.2,0.5 -0.5,0.5 -0.5,0 -5,-3.39 -7.9,-9.72 -2.6,-5.47 -3.2,-11 -3.2,-15.19 0,-3.88 0.6,-9.91 3.3,-15.54 3,-6.12 7.3,-9.36 7.8,-9.36 0.3,0 0.5,0.15 0.5,0.49 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12493-5-2-8"
+             d="m 1198.6,361.04 0.1,0.13 0,0.15 0,0.17 0.1,0.18 0,0.19 0.1,0.21 0.1,0.21 0,0.23 0.1,0.23 0.1,0.24 0.1,0.25 0.1,0.24 0.1,0.25 0.1,0.25 0.2,0.25 0.1,0.25 0.2,0.24 0.1,0.24 0.2,0.23 0.2,0.22 0.1,0.22 0.2,0.2 0.2,0.19 0.3,0.18 0.2,0.16 0.2,0.14 0.2,0.07 0.1,0.06 0.1,0.05 0.2,0.05 0.1,0.05 0.1,0.04 0.2,0.03 0.1,0.03 0.2,0.02 0.1,0.02 0.2,0.01 0.2,0 c 0.2,0 1.4,0 2.5,-0.65 -1.4,-0.25 -2.4,-1.49 -2.4,-2.68 0,-0.8 0.5,-1.75 1.9,-1.75 1.1,0 2.7,0.9 2.7,2.89 0,2.59 -3,3.29 -4.7,3.29 -2.9,0 -4.6,-2.64 -5.2,-3.79 -1.3,3.29 -4,3.79 -5.4,3.79 -5.2,0 -8,-6.43 -8,-7.67 0,-0.5 0.5,-0.5 0.6,-0.5 0.4,0 0.5,0.1 0.6,0.54 1.7,5.29 5,6.53 6.7,6.53 1,0 2.7,-0.45 2.7,-3.33 0,-1.55 -0.8,-4.89 -2.7,-11.86 -0.8,-3.09 -2.5,-5.18 -4.7,-5.18 -0.3,0 -1.5,0 -2.5,0.65 1.2,0.25 2.3,1.29 2.3,2.69 0,1.34 -1.1,1.74 -1.8,1.74 -1.5,0 -2.8,-1.3 -2.8,-2.89 0,-2.29 2.5,-3.29 4.7,-3.29 3.3,0 5.1,3.49 5.3,3.79 0.6,-1.85 2.4,-3.79 5.3,-3.79 5.2,0 8,6.43 8,7.68 0,0.49 -0.4,0.49 -0.6,0.49 -0.4,0 -0.5,-0.2 -0.6,-0.55 -1.7,-5.33 -5.1,-6.52 -6.7,-6.52 -1.9,0 -2.7,1.59 -2.7,3.29 0,1.09 0.3,2.19 0.8,4.38 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12495-1-1-1"
+             d="m 1225.4,358.45 0,0.37 0,0.39 0,0.39 0,0.41 -0.1,0.84 0,0.88 -0.1,0.92 -0.1,0.94 -0.2,0.98 -0.1,1 -0.2,1.02 -0.2,1.04 -0.3,1.05 -0.3,1.06 -0.4,1.06 -0.4,1.07 -0.2,0.53 -0.2,0.54 -0.2,0.53 -0.3,0.53 c -3,6.12 -7.3,9.36 -7.8,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 1,-1.15 4.9,-4.92 7.7,-12.85 7.7,-23.26 0,-8.52 -1.8,-17.28 -8,-23.56 -0.7,-0.6 -0.7,-0.69 -0.7,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 5,3.38 8,9.71 2.5,5.48 3.1,11.01 3.1,15.19 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /></g>      </g>
+    </g>
+    <text
+       sodipodi:linespacing="120%"
+       id="text15244-1-6-5"
+       y="-823.1366"
+       x="-2790.1538"
+       style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+       xml:space="preserve"><tspan
+         y="-823.1366"
+         x="-2790.1538"
+         id="tspan15246-9-8-8"
+         sodipodi:role="line">y</tspan></text>
+    <g
+       id="g15230-2-2-1-5"
+       transform="matrix(3.8474303,0,0,-0.79738114,-9317.7343,816.36222)">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:#8dd35f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.90034854;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path15232-3-7-7-7"
+         sodipodi:cx="1810.0651"
+         sodipodi:cy="4451.7271"
+         sodipodi:rx="77.66713"
+         sodipodi:ry="77.66713"
+         d="m 1887.7322,4451.7271 c 0,42.8943 -34.7728,77.6671 -77.6671,77.6671 -42.8944,0 -77.6672,-34.7728 -77.6672,-77.6671 0,-0.022 0,-0.045 10e-5,-0.067"
+         transform="matrix(1.3882782,0,0,-2.6068015,-480.4242,13468.141)"
+         sodipodi:start="0"
+         sodipodi:end="3.1424546"
+         sodipodi:open="true" />
+    </g>
+    <rect
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect10494-1-1-9-6"
+       width="1081.2485"
+       height="370.87878"
+       x="-2032.28"
+       y="-857.21198"
+       inkscape:export-filename="C:\Users\mscavers\Desktop\Math-253-Summer-2013\Mikes-Slides\9-July-25-2013\shells-2.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccc"
+       id="path11801"
+       d="m -1800.5641,-548.81857 c -51.9924,0.3428 -110.0118,2.8804 -161.9557,4.5855 -0.7467,5.3783 4.726,12.3499 8.6319,14.608 63.0497,22.3442 122.7761,21.0172 179.7079,26.0766 129.7034,9.5958 251.216,8.9283 381.161,7.6341 96.7776,-3.3222 202.5887,-7.3236 298.5027,-21.5544 20.9406,-3.9244 63.7958,-7.3727 65.4049,-25.6972 -9.7215,-2.7298 -26.1207,0.1431 -36.9299,-0.6691 -120.9336,-0.074 -241.9856,-0.79 -362.8452,-0.4637 -16.153,15.8292 -48.1487,18.2279 -69.3934,20.9987 -3.0039,4.1162 8.821,2.8406 5.0693,6.2172 -3.7162,-5.1947 14.5041,-7.8728 4.3272,-6.6752 -20.2185,-2.6756 -53.0982,-4.4791 -69.0969,-18.5361 -7.4699,-4.7884 -20.3526,-10.1237 -29.1249,-11.4419 -71.5137,0.02 -116.5149,5.3637 -188.0285,5.4587 l -25.4304,-0.5412 z"
+       style="fill:#aade87;fill-opacity:1;stroke:none" />
+    <g
+       id="g15230-2-4-1"
+       transform="matrix(3.734534,0,0,0.79738114,-9019.5563,-2025.5396)">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         id="path15232-3-8-8"
+         d="m 1887.7322,4451.7271 c -17.0904,54.7387 -56.9179,71.0891 -83.2247,83.1856"
+         style="color:#000000;fill:#aade87;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91385615;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="matrix(1.3882782,0,0,-2.6068015,-480.4242,13468.141)" />
+    </g>
+    <g
+       style="stroke:#ff0000;stroke-width:4.58648729;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="matrix(0,-0.6557073,-0.65248742,0,-490.36971,-630.21917)"
+       id="g15474-4-9-8-9">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:4.58648729;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path15470-4-2-2-2"
+         sodipodi:cx="3744.0913"
+         sodipodi:cy="4288.3579"
+         sodipodi:rx="17.599449"
+         sodipodi:ry="51.26796"
+         d="m 3761.1075,4301.4473 c -2.4816,27.3761 -12.1118,43.7085 -21.5096,36.4795 -9.3977,-7.2291 -15.0044,-35.2821 -12.5228,-62.6583 2.4816,-27.3761 12.1118,-43.7085 21.5096,-36.4795 4.1282,3.1756 7.7193,10.6146 10.1043,20.931"
+         transform="translate(-3522.4928,-2740.3443)"
+         sodipodi:start="0.25817121"
+         sodipodi:end="5.6904981"
+         sodipodi:open="true" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:none;stroke:#ff0000;stroke-width:4.58648729;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 3750.7868,4311.1226 9.7562,-9.7562 6.3604,11.0166"
+         id="path15472-6-1-4-7"
+         transform="translate(-3522.4928,-2740.3443)" />
+    </g>
+    <text
+       sodipodi:linespacing="120%"
+       id="text15240-2-5-9"
+       y="-518.00934"
+       x="-976.46521"
+       style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+       xml:space="preserve"><tspan
+         y="-518.00934"
+         x="-976.46521"
+         id="tspan15242-3-5-5"
+         sodipodi:role="line">x</tspan></text>
+    <g
+       transform="translate(-14927.267,-10456.723)"
+       id="g12471-1-1-1"
+       style="fill:#000000;stroke:#ff0000">
+      <g
+         id="g12473-7-1-2"
+         transform="matrix(0.03934949,0,0,0.03934949,12990.278,9604.3899)"
+         style="fill:#000000;stroke:#ff0000">
+        <g
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           stroke-miterlimit="10.433"
+           xml:space="preserve"
+           transform="matrix(22.279459,0,0,-22.279459,-3898.9052,12663.5)"
+           id="g12475-4-5-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:#000000;stroke:#ff0000;stroke-width:25.41329002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"><path
+             inkscape:connector-curvature="0"
+             id="path12477-0-2-3"
+             d="m 1151.3,365.93 h 4.3 c 1,0 1.5,0 1.5,0.99 0,0.55 -0.5,0.55 -1.4,0.55 h -4.1 l 1,5.68 c 0.2,1.05 0.9,4.58 1.2,5.18 0.5,0.94 1.3,1.69 2.4,1.69 0.2,0 1.5,0 2.4,-0.89 -2.2,-0.2 -2.7,-1.95 -2.7,-2.69 0,-1.15 0.9,-1.75 1.9,-1.75 1.3,0 2.7,1.1 2.7,2.99 0,2.29 -2.3,3.44 -4.3,3.44 -1.7,0 -4.9,-0.9 -6.4,-5.83 -0.3,-1.05 -0.4,-1.54 -1.6,-7.82 h -3.4 c -1,0 -1.5,0 -1.5,-0.95 0,-0.59 0.4,-0.59 1.4,-0.59 h 3.2 l -3.7,-19.68 c -0.9,-4.83 -1.7,-9.37 -4.3,-9.37 -0.2,0 -1.5,0 -2.4,0.9 2.3,0.15 2.7,1.94 2.7,2.69 0,1.15 -0.9,1.74 -1.8,1.74 -1.3,0 -2.8,-1.09 -2.8,-2.98 0,-2.25 2.2,-3.44 4.3,-3.44 2.7,0 4.7,2.94 5.6,4.83 1.6,3.14 2.7,9.17 2.8,9.51 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12479-9-7-4"
+             d="m 1179.5,334.04 0,0.03 0,0.03 0,0.01 0,0.02 0,0.01 0,0.02 0,0.02 0,0.01 0,0.02 -0.1,0.02 0,0.03 0,0.02 0,0.02 0,0.03 0,0.03 -0.1,0.03 0,0.03 0,0.04 0,0.02 -0.1,0.02 0,0.02 0,0.02 0,0.02 0,0.03 0,0.02 -0.1,0.02 0,0.03 0,0.02 0,0.03 -0.1,0.03 0,0.03 0,0.03 0,0.03 -0.1,0.03 0,0.03 0,0.03 -0.1,0.04 0,0.03 0,0.04 -0.1,0.03 0,0.04 -0.1,0.04 c -6.2,6.28 -7.8,15.69 -7.8,23.31 0,8.67 1.9,17.34 8,23.57 0.7,0.59 0.7,0.69 0.7,0.84 0,0.35 -0.2,0.5 -0.5,0.5 -0.5,0 -5,-3.39 -7.9,-9.72 -2.6,-5.47 -3.2,-11 -3.2,-15.19 0,-3.88 0.6,-9.91 3.3,-15.54 3,-6.12 7.3,-9.36 7.8,-9.36 0.3,0 0.5,0.15 0.5,0.49 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12481-4-6-1"
+             d="m 1198.6,361.04 0.1,0.13 0,0.15 0,0.17 0.1,0.18 0,0.19 0.1,0.21 0.1,0.21 0,0.23 0.1,0.23 0.1,0.24 0.1,0.25 0.1,0.24 0.1,0.25 0.1,0.25 0.2,0.25 0.1,0.25 0.2,0.24 0.1,0.24 0.2,0.23 0.2,0.22 0.1,0.22 0.2,0.2 0.2,0.19 0.3,0.18 0.2,0.16 0.2,0.14 0.2,0.07 0.1,0.06 0.1,0.05 0.2,0.05 0.1,0.05 0.1,0.04 0.2,0.03 0.1,0.03 0.2,0.02 0.1,0.02 0.2,0.01 0.2,0 c 0.2,0 1.4,0 2.5,-0.65 -1.4,-0.25 -2.4,-1.49 -2.4,-2.68 0,-0.8 0.5,-1.75 1.9,-1.75 1.1,0 2.7,0.9 2.7,2.89 0,2.59 -3,3.29 -4.7,3.29 -2.9,0 -4.6,-2.64 -5.2,-3.79 -1.3,3.29 -4,3.79 -5.4,3.79 -5.2,0 -8,-6.43 -8,-7.67 0,-0.5 0.5,-0.5 0.6,-0.5 0.4,0 0.5,0.1 0.6,0.54 1.7,5.29 5,6.53 6.7,6.53 1,0 2.7,-0.45 2.7,-3.33 0,-1.55 -0.8,-4.89 -2.7,-11.86 -0.8,-3.09 -2.5,-5.18 -4.7,-5.18 -0.3,0 -1.5,0 -2.5,0.65 1.2,0.25 2.3,1.29 2.3,2.69 0,1.34 -1.1,1.74 -1.8,1.74 -1.5,0 -2.8,-1.3 -2.8,-2.89 0,-2.29 2.5,-3.29 4.7,-3.29 3.3,0 5.1,3.49 5.3,3.79 0.6,-1.85 2.4,-3.79 5.3,-3.79 5.2,0 8,6.43 8,7.68 0,0.49 -0.4,0.49 -0.6,0.49 -0.4,0 -0.5,-0.2 -0.6,-0.55 -1.7,-5.33 -5.1,-6.52 -6.7,-6.52 -1.9,0 -2.7,1.59 -2.7,3.29 0,1.09 0.3,2.19 0.8,4.38 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12483-8-1-1"
+             d="m 1225.4,358.45 0,0.37 0,0.39 0,0.39 0,0.41 -0.1,0.84 0,0.88 -0.1,0.92 -0.1,0.94 -0.2,0.98 -0.1,1 -0.2,1.02 -0.2,1.04 -0.3,1.05 -0.3,1.06 -0.4,1.06 -0.4,1.07 -0.2,0.53 -0.2,0.54 -0.2,0.53 -0.3,0.53 c -3,6.12 -7.3,9.36 -7.8,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 1,-1.15 4.9,-4.92 7.7,-12.85 7.7,-23.26 0,-8.52 -1.8,-17.28 -8,-23.56 -0.7,-0.6 -0.7,-0.69 -0.7,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 5,3.38 8,9.71 2.5,5.48 3.1,11.01 3.1,15.19 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /></g>      </g>
+      <g
+         id="g12485-8-4-3"
+         transform="matrix(0.03934949,0,0,0.03934949,12989.621,9603.9831)"
+         style="fill:#000000;stroke:#ff0000">
+        <g
+           word-spacing="normal"
+           letter-spacing="normal"
+           font-size-adjust="none"
+           font-stretch="normal"
+           font-weight="normal"
+           font-variant="normal"
+           font-style="normal"
+           stroke-miterlimit="10.433"
+           xml:space="preserve"
+           transform="matrix(22.279459,0,0,-22.279459,-3898.9052,12663.5)"
+           id="g12487-2-2-8"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:#000000;stroke:#ff0000;stroke-width:25.41329002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"><path
+             inkscape:connector-curvature="0"
+             id="path12489-4-3-7"
+             d="m 1151.3,365.93 h 4.3 c 1,0 1.5,0 1.5,0.99 0,0.55 -0.5,0.55 -1.4,0.55 h -4.1 l 1,5.68 c 0.2,1.05 0.9,4.58 1.2,5.18 0.5,0.94 1.3,1.69 2.4,1.69 0.2,0 1.5,0 2.4,-0.89 -2.2,-0.2 -2.7,-1.95 -2.7,-2.69 0,-1.15 0.9,-1.75 1.9,-1.75 1.3,0 2.7,1.1 2.7,2.99 0,2.29 -2.3,3.44 -4.3,3.44 -1.7,0 -4.9,-0.9 -6.4,-5.83 -0.3,-1.05 -0.4,-1.54 -1.6,-7.82 h -3.4 c -1,0 -1.5,0 -1.5,-0.95 0,-0.59 0.4,-0.59 1.4,-0.59 h 3.2 l -3.7,-19.68 c -0.9,-4.83 -1.7,-9.37 -4.3,-9.37 -0.2,0 -1.5,0 -2.4,0.9 2.3,0.15 2.7,1.94 2.7,2.69 0,1.15 -0.9,1.74 -1.8,1.74 -1.3,0 -2.8,-1.09 -2.8,-2.98 0,-2.25 2.2,-3.44 4.3,-3.44 2.7,0 4.7,2.94 5.6,4.83 1.6,3.14 2.7,9.17 2.8,9.51 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12491-5-2-4"
+             d="m 1179.5,334.04 0,0.03 0,0.03 0,0.01 0,0.02 0,0.01 0,0.02 0,0.02 0,0.01 0,0.02 -0.1,0.02 0,0.03 0,0.02 0,0.02 0,0.03 0,0.03 -0.1,0.03 0,0.03 0,0.04 0,0.02 -0.1,0.02 0,0.02 0,0.02 0,0.02 0,0.03 0,0.02 -0.1,0.02 0,0.03 0,0.02 0,0.03 -0.1,0.03 0,0.03 0,0.03 0,0.03 -0.1,0.03 0,0.03 0,0.03 -0.1,0.04 0,0.03 0,0.04 -0.1,0.03 0,0.04 -0.1,0.04 c -6.2,6.28 -7.8,15.69 -7.8,23.31 0,8.67 1.9,17.34 8,23.57 0.7,0.59 0.7,0.69 0.7,0.84 0,0.35 -0.2,0.5 -0.5,0.5 -0.5,0 -5,-3.39 -7.9,-9.72 -2.6,-5.47 -3.2,-11 -3.2,-15.19 0,-3.88 0.6,-9.91 3.3,-15.54 3,-6.12 7.3,-9.36 7.8,-9.36 0.3,0 0.5,0.15 0.5,0.49 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12493-5-2-2"
+             d="m 1198.6,361.04 0.1,0.13 0,0.15 0,0.17 0.1,0.18 0,0.19 0.1,0.21 0.1,0.21 0,0.23 0.1,0.23 0.1,0.24 0.1,0.25 0.1,0.24 0.1,0.25 0.1,0.25 0.2,0.25 0.1,0.25 0.2,0.24 0.1,0.24 0.2,0.23 0.2,0.22 0.1,0.22 0.2,0.2 0.2,0.19 0.3,0.18 0.2,0.16 0.2,0.14 0.2,0.07 0.1,0.06 0.1,0.05 0.2,0.05 0.1,0.05 0.1,0.04 0.2,0.03 0.1,0.03 0.2,0.02 0.1,0.02 0.2,0.01 0.2,0 c 0.2,0 1.4,0 2.5,-0.65 -1.4,-0.25 -2.4,-1.49 -2.4,-2.68 0,-0.8 0.5,-1.75 1.9,-1.75 1.1,0 2.7,0.9 2.7,2.89 0,2.59 -3,3.29 -4.7,3.29 -2.9,0 -4.6,-2.64 -5.2,-3.79 -1.3,3.29 -4,3.79 -5.4,3.79 -5.2,0 -8,-6.43 -8,-7.67 0,-0.5 0.5,-0.5 0.6,-0.5 0.4,0 0.5,0.1 0.6,0.54 1.7,5.29 5,6.53 6.7,6.53 1,0 2.7,-0.45 2.7,-3.33 0,-1.55 -0.8,-4.89 -2.7,-11.86 -0.8,-3.09 -2.5,-5.18 -4.7,-5.18 -0.3,0 -1.5,0 -2.5,0.65 1.2,0.25 2.3,1.29 2.3,2.69 0,1.34 -1.1,1.74 -1.8,1.74 -1.5,0 -2.8,-1.3 -2.8,-2.89 0,-2.29 2.5,-3.29 4.7,-3.29 3.3,0 5.1,3.49 5.3,3.79 0.6,-1.85 2.4,-3.79 5.3,-3.79 5.2,0 8,6.43 8,7.68 0,0.49 -0.4,0.49 -0.6,0.49 -0.4,0 -0.5,-0.2 -0.6,-0.55 -1.7,-5.33 -5.1,-6.52 -6.7,-6.52 -1.9,0 -2.7,1.59 -2.7,3.29 0,1.09 0.3,2.19 0.8,4.38 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /><path
+             inkscape:connector-curvature="0"
+             id="path12495-1-1-7"
+             d="m 1225.4,358.45 0,0.37 0,0.39 0,0.39 0,0.41 -0.1,0.84 0,0.88 -0.1,0.92 -0.1,0.94 -0.2,0.98 -0.1,1 -0.2,1.02 -0.2,1.04 -0.3,1.05 -0.3,1.06 -0.4,1.06 -0.4,1.07 -0.2,0.53 -0.2,0.54 -0.2,0.53 -0.3,0.53 c -3,6.12 -7.3,9.36 -7.8,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 1,-1.15 4.9,-4.92 7.7,-12.85 7.7,-23.26 0,-8.52 -1.8,-17.28 -8,-23.56 -0.7,-0.6 -0.7,-0.69 -0.7,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 5,3.38 8,9.71 2.5,5.48 3.1,11.01 3.1,15.19 z"
+             style="fill:#000000;stroke:#ff0000;stroke-width:0" /></g>      </g>
+    </g>
+    <text
+       sodipodi:linespacing="120%"
+       id="text15244-1-6-7"
+       y="-823.68903"
+       x="-1513.892"
+       style="font-size:29.76207542px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:120.00000477%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cambria Math;-inkscape-font-specification:Cambria Math"
+       xml:space="preserve"><tspan
+         y="-823.68903"
+         x="-1513.892"
+         id="tspan15246-9-8-9"
+         sodipodi:role="line">y</tspan></text>
+    <g
+       id="g15230-2-4-1-0"
+       transform="matrix(-3.734534,0,0,0.79738114,6028.9596,-2026.5739)">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cc"
+         id="path15232-3-8-8-2"
+         d="m 1887.7322,4451.7271 c 0,42.6506 -85.7707,83.9219 -85.7707,83.9219"
+         style="color:#000000;fill:#aade87;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.91385615;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="matrix(1.3882782,0,0,-2.6068015,-480.4242,13468.141)" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccssscc"
+       id="path11799"
+       d="m -1573.8754,-696.72327 c 0.3848,52.894 -26.3091,121.135 -25.9222,174.029 22.6584,2.3329 81.2824,7.8953 104.8727,8.5541 151.7976,-0.4821 309.1199,-24.5116 460.8671,-26.9356 3.0944,-4.6645 -12.8968,-11.654 -17.2759,-14.6827 -116.12,-34.6949 -108.5165,-72.4512 -227.8575,-106.2213 -25.8768,-7.3224 -105.4238,-40.185 -161.7674,-46.5238 -18.7157,-2.1056 -39.727,-6.9359 -54.5585,-8.7849 -33.6015,-4.189 -47.7378,16.6314 -67.173,15.4714 l -11.1853,5.0938 z"
+       style="fill:#aade87;fill-opacity:1;stroke:none" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       id="path11797"
+       d="m -1572.5515,-694.46417 c -128.2193,50.2108 -244.5036,75.6806 -372.654,126.0928 -0.069,4.7636 -14.0433,31.2762 -10.3044,32.7327 126.6187,1.3394 277.0558,15.8751 403.6795,16.113 2.34,-16.8486 -10.4841,-56.0567 -9.8171,-73.5982 0,-34.6729 3.6347,-72.4065 3.6347,-107.0793 -2.98,-2.365 -11.1366,5.4599 -14.5387,5.739 z"
+       style="fill:#aade87;fill-opacity:1;stroke:none" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       id="path10165"
+       d="m -1963.015,-540.15917 c 2.8309,63.6635 934.2689,58.9144 933.5359,0"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       id="path15268-5-7-3"
+       d="m -965.7587,-539.06197 -62.3463,0"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       transform="matrix(0.77281821,0,0,1.1697229,-13311.886,-9508.4806)"
+       d="m 15374,7536.6211 c 0,11.598 -37.608,21 -84,21 -46.392,0 -84,-9.402 -84,-21 0,-11.598 37.608,-21 84,-21 46.392,0 84,9.402 84,21 z"
+       sodipodi:ry="21"
+       sodipodi:rx="84"
+       sodipodi:cy="7536.6211"
+       sodipodi:cx="15290"
+       id="path11828"
+       style="color:#000000;fill:url(#radialGradient11858);fill-opacity:1;stroke:none;stroke-width:3.8712163;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       id="path15250-9-1-4"
+       d="m -1493.5424,-690.06697 0,-149.4538"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <g
+       style="opacity:0.4557522"
+       id="g10644-3"
+       transform="matrix(1,0,0,1.2265497,991.8312,-2631.1341)">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccc"
+         style="fill:#aade87;fill-opacity:1;stroke:none"
+         d="m -2422.375,1585.3967 c -21.9489,11.402 -48.2315,14.2533 -72.3627,14.4543 -19.3567,-0.7206 -38.7844,-4.2859 -56.2588,-13.1087 -0.8137,32.3894 -0.5459,67.477 -0.6842,100.0639 0.3294,6.6854 -0.5146,13.6957 0.5138,20.187 19.6961,11.6506 43.6553,12.1409 65.9793,12.4595 21.0964,-1.0578 43.7653,-1.5177 62.4114,-12.4595 1.1492,-38.3159 0.5122,-77.1312 1.0051,-115.6387 -0.079,-0.7525 0.444,-2.8797 -1.1454,-2.4287 l 0.5415,-3.5291 z"
+         id="path17357-4-3-3-1" />
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:3.8712163;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path17286-5-6-1-6-8"
+         sodipodi:cx="15290"
+         sodipodi:cy="7536.6211"
+         sodipodi:rx="84"
+         sodipodi:ry="21"
+         d="m 15374,7536.6211 c 0,11.598 -37.608,21 -84,21 -46.392,0 -84,-9.402 -84,-21 0,0 0,0 0,0"
+         transform="matrix(0.77479857,0,0,0.79218794,-14333.939,-4266.5309)"
+         sodipodi:start="0"
+         sodipodi:end="3.1415927"
+         sodipodi:open="true" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -2422.1737,1704.2525 0,-119.2454"
+         id="path17310-0-0-8-8-6"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:3.01929283;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m -2552.3654,1704.2316 0,-119.3123"
+         id="path17310-6-1-8-5" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3.8712163;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path17286-4-9-1-9"
+       sodipodi:cx="15290"
+       sodipodi:cy="7536.6211"
+       sodipodi:rx="84"
+       sodipodi:ry="21"
+       d="m 15374,7536.6211 c 0,11.598 -37.608,21 -84,21 -46.392,0 -84,-9.402 -84,-21 0,-11.598 37.608,-21 84,-21 46.392,0 84,9.402 84,21 z"
+       transform="matrix(0.77281821,0,0,1.1697229,-13311.872,-9507.4259)" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3.00000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -1963.9841,-539.06187 -56.9287,0"
+       id="path11931"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:url(#radialGradient11941);fill-opacity:1;stroke:none"
+       d="m -1511.4067,-708.07557 c -56.937,17.751 -0.6824,-6.4784 -43.4949,2.2127 -31.11,6.3155 -143.4354,36.561 -175.5285,44.3845 -22.436,5.4693 -52.7507,12.9718 -84.0647,24.3638 -23.617,8.5918 -47.8024,20.9052 -69.605,27.7334 -0.08,4.4086 -76.8246,46.945 -72.4783,48.293 147.1883,1.2396 322.0645,14.6918 469.2587,14.912 2.7201,-15.5928 -12.1873,-51.8785 -11.4119,-68.1125 0,-32.0886 4.2252,-67.0097 4.2252,-99.0981 -3.4641,-2.1888 -12.9458,5.0529 -16.9006,5.3112 z"
+       id="path11933"
+       sodipodi:nodetypes="cssscccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccs"
+       id="path10165-2"
+       d="m -1427.8757,-582.45747 c 209.2824,3.1323 400.2589,18.7056 399.9268,45.3951 m -933.5359,0 c 1.2761,-28.6969 194.4763,-43.223 402.6851,-45.4241"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3, 9;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  </g>
+</svg>
