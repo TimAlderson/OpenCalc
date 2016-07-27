@@ -1,0 +1,966 @@
+\section{Taylor Series}\label{sec:taylorseries}
+
+
+In Section \ref{sec:powerseries}, we showed how certain functions can be represented by a power series function. In \ref{sec:taylorpolynomials}, we showed how we can approximate functions with polynomials, given that enough derivative information is available. In this section we combine these concepts: if a function $f(x)$ is infinitely differentiable, we show how to represent it with a power series function.
+
+
+
+\begin{definition}{Taylor and Maclaurin Series}{def:taylor_series}
+{Let $f(x)$ have derivatives of all orders at $x=c$.
+\index{Taylor Series!definition}\index{Maclaurin Series!definition}\index{Maclaurin Series|see{Taylor Series}}\index{series!Taylor}\index{series!Maclaurin}
+\begin{enumerate}
+	\item The {Taylor Series of $f(x)$, centered at $c$} is
+	$$\sum_{n=0}^\infty \frac{f\,^{(n)}(c)}{n!}(x-c)^n.$$
+	\item	Setting $c=0$ gives the {Maclaurin Series of $f(x)$}:
+	$$\sum_{n=0}^\infty \frac{f\,^{(n)}(0)}{n!}x^n.$$
+\end{enumerate}
+}
+\end{definition}
+
+
+
+
+
+The difference between a Taylor polynomial and a Taylor series is the former is a polynomial, containing only a finite number of terms, whereas the latter is a series, a summation of an infinite set of terms. When creating the Taylor polynomial of degree $n$ for a function $f(x)$ at $x=c$, we needed to evaluate $f$, and the first $n$ derivatives of $f$, at $x=c$. When creating the Taylor series of $f$, it helps to find a pattern that describes the $n^\text{th}$ derivative of $f$ at $x=c$. We demonstrate this in the next two examples.\\
+
+\begin{example}{The Maclaurin series of $f(x) = \cos x$}{ex_ts1}
+{Find the Maclaurin series of $f(x)=\cos x$.}
+\end{example}
+
+
+\begin{solution}
+{In Example \ref{exa:ex_taypoly4} we found the $8^\text{th}$ degree Maclaurin polynomial of $\cos x$. In doing so, we created the Table \ref{fig:ts1}.
+\mTable{.5}{The derivatives of $f(x)=\cos x$ evaluated at $x=0$.}{fig:ts1}{%
+\begin{tabular}{lll}
+$f(x) = \cos x $&$\Rightarrow $&$f(0) = 1$\\
+$\fp(x) = -\sin x $&$\Rightarrow $&$\fp(0) = 0$\\
+$\fp'(x) = -\cos x $&$\Rightarrow $&$\fp'(0) = -1$\\
+$\fp''(x) = \sin x $&$\Rightarrow $&$\fp''(0) = 0$\\
+$f\,^{(4)}(x) = \cos x $&$\Rightarrow $&$f\,^{(4)}(0) = 1$\\
+$f\,^{(5)}(x) = -\sin x $&$\Rightarrow $&$f\,^{(5)}(0) = 0$\\
+$f\,^{(6)}(x) = -\cos x $&$\Rightarrow $&$f\,^{(6)}(0) = -1$\\
+$f\,^{(7)}(x) = \sin x $&$\Rightarrow $&$f\,^{(7)}(0) = 0$\\
+$f\,^{(8)}(x) = \cos x $&$\Rightarrow $&$f\,^{(8)}(0) = 1$\\
+$f\,^{(9)}(x) = -\sin x $&$\Rightarrow $&$f\,^{(9)}(0) = 0$
+\end{tabular}
+}
+Notice how $f\,^{(n)}(0)=0$ when $n$ is odd,  $f\,^{(n)}(0)=1$ when $n$ is divisible by $4$, and $f\,^{(n)}(0)=-1$ when $n$ is even but not divisible by 4. Thus the Maclaurin series of $\cos x$ is
+$$1-\frac{x^2}2+\frac{x^4}{4!}-\frac{x^6}{6!}+\frac{x^8}{8!} - \cdots$$
+We can go further and write this as a summation. Since we only need the terms where the power of $x$ is even, we write the power series in terms of $x^{2n}$:
+$$\sum_{n=0}^\infty (-1)^{n}\frac{x^{2n}}{(2n)!}.$$
+}
+\end{solution}
+
+
+%
+\begin{example}{The Taylor series of $f(x)=\ln x$ at $x=1$}{ex_ts2}
+{Find the Taylor series of $f(x) = \ln x$ centered at $x=1$.}
+\end{example}
+
+
+\begin{solution}
+{Table \ref{fig:ts2} shows the $n^\text{th}$ derivative of $\ln x$ evaluated at $x=1$ for $n=0,\ldots,5$, along with an expression for the $n^\text{th}$ term: $$f\,^{(n)}(1) = (-1)^{n+1}(n-1)!\quad \text{for $n\geq 1$.}$$ Remember that this is what distinguishes Taylor series from Taylor polynomials; we are very interested in finding a pattern for the $n^\text{th}$ term, not just finding a finite set of coefficients for a polynomial.
+\mTable{.5}{Derivatives of $\ln x$ evaluated at $x=1$.}{fig:ts2}{%
+\begin{tabular}{lll}
+$f(x) = \ln x $&$\Rightarrow $&$f(1) = 0$\\
+$\fp(x) = 1/x $&$\Rightarrow $&$\fp(1) = 1$\\
+$\fp'(x) = -1/x^2 $&$\Rightarrow $&$\fp'(1) = -1$\\
+$\fp''(x) = 2/x^3 $&$\Rightarrow $&$\fp''(1) = 2$\\
+$f\,^{(4)}(x) = -6/x^4 $&$\Rightarrow $&$f\,^{(4)}(1) = -6$\\
+$f\,^{(5)}(x) = 24/x^5 $&$\Rightarrow $&$f\,^{(5)}(1) = 24$\\
+$\ \vdots $& &$\ \vdots$\\
+$f\,^{(n)}(x) = $ &$\Rightarrow$ & $f\,^{(n)}(1) = $\\
+$\ds \rule{0pt}{15pt}\frac{(-1)^{n+1}(n-1)!}{x^n} $ & & $(-1)^{n+1}(n-1)!$
+\end{tabular}
+}
+Since $f(1) = \ln 1 = 0$, we skip the first term and start the summation with $n=1$, giving the Taylor series for $\ln x$, centered at $x=1$, as 
+$$\sum_{n=1}^\infty (-1)^{n+1}(n-1)!\frac{1}{n!}(x-1)^n = \sum_{n=1}^\infty (-1)^{n+1}\frac{(x-1)^n}{n}. $$
+}
+\end{solution}
+
+
+
+
+%
+It is important to note that Definition \ref{def:taylor_series} defines a Taylor series given a function $f(x)$; however, we \emph{cannot} yet state that $f(x)$ \emph{is equal} to its Taylor series. We will find that ``most of the time'' they are equal, but we need to consider the conditions that allow us to conclude this.
+
+Theorem \ref{thm:taylorthm} states that the error between a function $f(x)$ and its $n^\text{th}$--degree Taylor polynomial $p_n(x)$ is $R_n(x)$, where
+$$ \big|R_n(x)\big| \leq \frac{\max\left|\,f\,^{(n+1)}(z)\right|}{(n+1)!}\big|(x-c)^{(n+1)}\big|.$$
+
+If $R_n(x)$ goes to 0 for each $x$ in an interval $I$ as $n$ approaches infinity, we conclude that the function is equal to its Taylor series expansion.
+
+
+\begin{theorem}{Function and Taylor Series Equality}{function_series_equality}
+{Let $f(x)$ have derivatives of all orders at $x=c$, let $R_n(x)$ be as stated in Theorem \ref{thm:taylorthm}, and let $I$ be an interval on which the Taylor series of $f(x)$ converges. 
+If $\ds\lim_{n\to\infty} R_n(x) = 0$ for all $x$ in $I$, then 
+\index{Taylor Series!equality with generating function}
+$$f(x) = \sum_{n=0}^\infty \frac{f\,^{(n)}(c)}{n!}(x-c)^n\ \text{ on $I$.}$$
+}
+\end{theorem}
+
+
+We demonstrate the use of this theorem in an example.\\
+
+
+\begin{example}{Establishing equality of a function and its Taylor series}{ex_ts3}
+{Show that $f(x) = \cos x$ is equal to its Maclaurin series, as found in Example \ref{ex_ts1}, for all $x$. 
+}
+\end{example}
+
+
+\begin{solution}
+{Given a value $x$, the magnitude of the error term $R_n(x)$ is bounded by
+$$ \big|R_n(x)\big| \leq \frac{\max\left|\,f\,^{(n+1)}(z)\right|}{(n+1)!}\big|x^{n+1}\big|.$$
+Since all derivatives of $\cos x$ are $\pm \sin x$ or $\pm\cos x$, whose magnitudes are bounded by $1$, we can state
+$$ \big|R_n(x)\big| \leq \frac{1}{(n+1)!}\big|x^{n+1}\big|$$
+which implies
+\begin{equation}
+ -\frac{|x^{n+1}|}{(n+1)!} \leq R_n(x) \leq\frac{|x^{n+1}|}{(n+1)!}.\label{eq:coseqtaylor}
+\end{equation}
+For any $x$, $\ds\lim_{n\to\infty} \frac{x^{n+1}}{(n+1)!} = 0$. Applying the Squeeze Theorem to Equation \eqref{eq:coseqtaylor}, we conclude that $\ds \lim_{n\to\infty} R_n(x) = 0$ for all $x$, and hence
+$$\cos x = \sum_{n=0}^\infty (-1)^{n}\frac{x^{2n}}{(2n)!}\quad \text{for all $x$}.$$
+}
+\end{solution}
+
+
+
+
+
+%
+It is natural to assume that a function is  equal to its Taylor series on the series' interval of convergence, but this is not the case. In order to properly establish equality, one must use Theorem \ref{thm:function_series_equality}. This is a bit disappointing, as we developed beautiful techniques for determining the interval of convergence of a power series, and proving that $R_n(x)\to 0$ can be cumbersome as it deals with high order derivatives of the function.
+
+There is good news. A function $f(x)$ that is equal to its Taylor series, centred at any point the domain of $f(x)$, is said to be an \textit{analytic function},\index{analytic function} and most, if not all, functions that we encounter within this course are analytic functions. Generally speaking, any function that one creates with elementary functions (polynomials, exponentials, trigonometric functions, etc.) that is not piecewise defined is probably analytic. For most functions, we assume the function is equal to its Taylor series on the series' interval of convergence and only use Theorem \ref{thm:function_series_equality} when we suspect something may not work as expected.
+
+We develop the Taylor series for one more important function, then give a table of the Taylor series for a number of common functions.\index{Binomial Series}\index{series!Binomial}\\
+
+\begin{example}{The Binomial Series}{ex_ts4}
+{Find the Maclaurin series of $f(x) = (1+x)^k$, $k\neq 0$.
+}
+\end{example}
+
+
+\begin{solution}
+{When $k$ is a positive integer, the Maclaurin series is finite. For instance, when $k=4$, we have 
+$$f(x) = (1+x)^4 = 1+4x+6x^2+4x^3+x^4.$$
+The coefficients of $x$ when $k$ is a positive integer are known as the \emph{binomial coefficients}, giving the series we are developing its name.
+
+When $k=1/2$, we have $f(x) = \sqrt{1+x}$. Knowing a series representation of this function would give a useful way of approximating $\sqrt{1.3}$, for instance.
+
+To develop the Maclaurin series for $f(x) = (1+x)^k$ for any value of $k\neq0$, we consider the derivatives of $f$ evaluated at $x=0$:
+
+%\noindent\hskip-30pt\begin{minipage}{1.3\linewidth}
+{\small{
+\begin{align*}
+f(x) &= (1+x)^k & f(0) &= 1\\
+\fp(x) &= k(1+x)^{k-1} & \fp(0) &=k\\
+\fp'(x) &= k(k-1)(1+x)^{k-2} & \fp'(0) &=k(k-1)\\
+\fp''(x) &= k(k-1)(k-2)(1+x)^{k-3} & \fp''(0) &=k(k-1)(k-2)\\
+&\vdots & &\vdots\\
+f\,^{(n)}(x) &= k(k-1)\cdots\big(k-(n-1)\big)(1+x)^{k-n} & f\,^{(n)}(0) &=k(k-1)\cdots\big(k-(n-1)\big)
+\end{align*}
+}}
+%\end{minipage}
+
+Thus the Maclaurin series for $f(x) = (1+x)^k$ is
+$$1+ k + \frac{k(k-1)}{2!} + \frac{k(k-1)(k-2)}{3!} + \ldots + \frac{k(k-1)\cdots\big(k-(n-1)\big)}{n!}+\ldots$$
+
+It is important to determine the interval of convergence of this series. With 
+$$a_n = \frac{k(k-1)\cdots\big(k-(n-1)\big)}{n!}x^n,$$
+we apply the Ratio Test:
+\begin{align*}
+\lim_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}&=\lim_{n\to\infty} \left|\frac{k(k-1)\cdots(k-n)}{(n+1)!}x^{n+1}\right|\Bigg/\left|\frac{k(k-1)\cdots\big(k-(n-1)\big)}{n!}x^n\right|\\
+		&=\lim_{n\to\infty} \left|\frac{k-n}{n}x\right|\\
+		&= |x|.
+\end{align*}
+
+The series converges absolutely when the limit of the Ratio Test is less than 1; therefore, we have absolute convergence when $|x|<1$. 
+
+While outside the scope of this text, the interval of convergence depends on the value of $k$. When $k>0$, the interval of convergence is $[-1,1]$. When $-1<k<0$, the interval of convergence is $[-1,1)$. If $k\leq -1$, the interval of convergence is $(-1,1)$.
+%When $x=1$, we can apply the Alternating Series Test and find the series converges. When $x=-1$, it can be shown (with some difficulty) that the series also converges. Therefore the interval of convergence is $[-1,1]$. We can apply Theorem \ref{thm:function_series_equality} to prove equality between $f(x)$ and the series (or apply the discussion following the theorem). 
+}
+\end{solution}
+
+
+
+
+
+%
+We learned that Taylor polynomials offer a way of approximating a ``difficult to compute'' function with a polynomial. Taylor series offer a way of exactly representing a function with a series. One probably can see the use of a good approximation; is there any use of representing a function exactly as a series? 
+
+While we should not overlook the mathematical beauty of Taylor series (which is reason enough to study them), there are practical uses as well. They provide a valuable tool for solving a variety of problems, including problems relating to integration and differential equations. 
+
+In Key Idea \ref{idea:common_taylor} (on the following page) we give  a table of the Taylor series of a number of common functions. We then give a theorem about the ``algebra of power series,'' that is, how we can combine power series to create power series of new functions. This allows us to find the Taylor series of functions like $f(x) = e^x\cos x$ by knowing the Taylor series of $e^x$ and $\cos x$.
+
+Before we investigate combining functions, consider the Taylor series for the arctangent function (see Key Idea \ref{idea:common_taylor}). Knowing that $\tan^{-1}(1) = \pi/4$, we can use this series to approximate the value of $\pi$:
+
+\begin{align*}
+\frac{\pi}4 &= \tan^{-1}(1) = 1-\frac13+\frac15-\frac17+\frac19-\cdots\\
+\pi &= 4\left(1-\frac13+\frac15-\frac17+\frac19-\cdots\right)
+\end{align*} 
+
+Unfortunately, this particular expansion of $\pi$ converges very slowly. The first 
+$ 100 $ terms approximate $\pi$ as $3.13159$, which is not particularly good.
+\clearpage
+
+
+\begin{formulabox}[\label{idea:common_taylor} Important Taylor Series Expansions ]
+{%\vskip10pt%
+\noindent\begin{tabular}{llc}
+\textbf{Function and Series} & \textbf{First Few Terms} & \parbox{50pt}{\centering\textbf{Interval of}\\\textbf{Convergence}} \\
+\rule{0pt}{25pt}$\ds e^x = \sum_{n=0}^\infty \frac{x^n}{n!}$ & $\ds 1+ x+\frac{x^2}{2!} + \frac{x^3}{3!}+\cdots$ & $(-\infty,\infty)$\\
+\rule{0pt}{25pt}$\ds \sin x = \sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{(2n+1)!}$ & $\ds x-\frac{x^3}{3!}+\frac{x^5}{5!} - \frac{x^7}{7!}+\cdots$ & $(-\infty,\infty)$\\
+\rule{0pt}{25pt}$\ds \cos x = \sum_{n=0}^\infty (-1)^n\frac{x^{2n}}{(2n)!}$ & $\ds 1-\frac{x^2}{2!}+\frac{x^4}{4!} - \frac{x^6}{6!} +\cdots$ & $(-\infty,\infty)$\\
+\rule{0pt}{25pt}$\ds \ln x = \sum_{n=1}^\infty(-1)^{n+1}\frac{(x-1)^n}{n}$ & $\ds (x-1)- \frac{(x-1)^2}{2} +\frac{(x-1)^3}{3}-\cdots$& $(0,2]$\\
+\rule{0pt}{25pt}$\ds \frac{1}{1-x} = \sum_{n=0}^\infty x^n$ &$\ds 1+x+x^2+x^3+\cdots$& $(-1,1)$\\
+\rule{0pt}{25pt}\small$\ds (1+x)^k=\sum_{n=0}^\infty \frac{k(k-1)\cdots\big(k-(n-1)\big)}{n!}x^n$ \normalsize& $\ds 1+kx+\frac{k(k-1)}{2!}x^2 + \cdots$ & $(-1,1)$\footnote{Convergence at $x=\pm1$ depends on the value of $k$.}\\
+\rule{0pt}{25pt}$\ds \tan^{-1}x = \sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{2n+1}$ & $\ds x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+\cdots$ & $[-1,1]$
+\end{tabular}\index{Taylor Series!common series}
+}
+\end{formulabox}
+
+
+
+\begin{theorem}{Algebra of Power Series}{series_alg}
+{Let $\ds f(x) = \sum_{n=0}^\infty a_nx^n$ and $\ds g(x) = \sum_{n=0}^\infty b_nx^n$ converge absolutely for $|x|<R$, and let $h(x)$ be continuous.
+\index{power series!algebra of} 
+\begin{enumerate}
+	\item $\ds f(x)\pm g(x) = \sum_{n=0}^\infty (a_n\pm b_n)x^n$ \quad for $|x|<R$.
+	\item	$\ds 	f(x)g(x) = \left(\sum_{n=0}^\infty a_nx^n\right)\left(\sum_{n=0}^\infty b_nx^n\right) = \sum_{n=0}^\infty\big(a_0b_n+a_1b_{n-1}+\ldots a_nb_0\big)x^n
+		$ for $|x|<R$.
+	%\item	$\begin{aligned}[t]
+	%f(x)g(x) &= \left(\sum_{n=0}^\infty a_nx^n\right)\left(\sum_{n=0}^\infty b_nx^n\right)\\
+	      %&= \sum_{n=0}^\infty\big(a_0b_n+a_1b_{n-1}+\ldots a_nb_0\big)x^n
+		%\end{aligned}$ for $|x|<R$.\hfill
+	
+	\item		$\ds f\big(h(x)\big) = \sum_{n=0}^\infty a_n\big(h(x)\big)^n$ \quad for $|h(x)|<R$.
+
+\end{enumerate}
+}
+\end{theorem}
+
+
+\begin{example}{Combining Taylor series}{ex_ts5}
+{Write out the first 3 terms of the Taylor Series for $f(x) = e^x\cos x$ using Key Idea \ref{idea:common_taylor} and Theorem \ref{thm:series_alg}.
+}
+\end{example}
+
+
+\begin{solution}
+{Key Idea \ref{idea:common_taylor} informs us that 
+$$e^x = 1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots\quad \text{and}\quad \cos x = 1-\frac{x^2}{2!}+\frac{x^4}{4!}+\cdots.$$
+Applying Theorem \ref{thm:series_alg}, we find that 
+\begin{align*}
+e^x\cos x &= \left(1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots\right)\left(1-\frac{x^2}{2!}+\frac{x^4}{4!}+\cdots\right).
+\intertext{Distribute the right hand expression across the left:}
+	&= 1\left(1-\frac{x^2}{2!}+\frac{x^4}{4!}+\cdots\right)+x\left(1-\frac{x^2}{2!}+\frac{x^4}{4!}+\cdots\right)+\frac{x^2}{2!}\left(1-\frac{x^2}{2!}+\frac{x^4}{4!}+\cdots\right)\\
+	&\phantom{=}+\frac{x^3}{3!}\left(1-\frac{x^2}{2!}+\frac{x^4}{4!}+\cdots\right) + \frac{x^4}{4!}\left(1-\frac{x^2}{2!}+\frac{x^4}{4!}+\cdots\right)+\cdots
+	\intertext{Distribute again and collect like terms.}
+	&= 1 + x -\frac{x^3}{3}-\frac{x^4}{6} - \frac{x^5}{30}+\frac{x^7}{630}+\cdots
+	\end{align*}
+While this process is a bit tedious, it is much faster than evaluating all the necessary derivatives of $e^x\cos x$ and computing the Taylor series directly.
+
+Because the series for $e^x$ and $\cos x$ both converge on $(-\infty,\infty)$, so does the series expansion for $e^x\cos x$. 
+}
+\end{solution}
+
+
+
+
+
+%
+
+\begin{example}{Creating new Taylor series}{ex_ts6}
+{Use Theorem \ref{thm:series_alg} to create series for $y=\sin(x^2)$ and $y=\ln (\sqrt{x})$. 
+}
+\end{example}
+
+
+\begin{solution}
+{Given that 
+$$\sin x = \sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{(2n+1)!} = x-\frac{x^3}{3!}+\frac{x^5}{5!} -\frac{x^7}{7!}+\cdots,$$
+we simply substitute $x^2$ for $x$ in the series, giving
+$$\sin (x^2) = \sum_{n=0}^\infty (-1)^n\frac{(x^2)^{2n+1}}{(2n+1)!} = x^2-\frac{x^6}{3!}+\frac{x^{10}}{5!} -\frac{x^{14}}{7!}\cdots.$$
+Since the Taylor series for $\sin x$ has an infinite radius of convergence, so does the Taylor series for $\sin(x^2)$.\\
+
+The Taylor expansion for $\ln x$ given in Key Idea \ref{idea:common_taylor} is centred at $x=1$, so we will centre the series for $\ln (\sqrt{x})$ at $x=1$ as well.
+With  $$\ln x = \sum_{n=1}^\infty(-1)^{n+1}\frac{(x-1)^n}{n} = (x-1)- \frac{(x-1)^2}{2} +\frac{(x-1)^3}{3}-\cdots,$$
+we substitute $\sqrt{x}$ for $x$ to obtain
+$$\ln (\sqrt{x}) = \sum_{n=1}^\infty(-1)^{n+1}\frac{(\sqrt{x}-1)^n}{n} = (\sqrt{x}-1)- \frac{(\sqrt{x}-1)^2}{2} +\frac{(\sqrt{x}-1)^3}{3}-\cdots.$$
+While this is not strictly a power series, it is a series that allows us to study the function $\ln(\sqrt{x})$. Since the interval of convergence of $\ln x$ is $(0,2]$, and the range of $\sqrt{x}$ on $(0,4]$ is $(0,2]$, the interval of convergence of this series expansion of $\ln(\sqrt{x})$ is $(0,4]$.
+{\textbf{Note:} In Example \ref{ex_ts6}, one could create a series for $\ln(\sqrt{x})$ by simply recognizing that $\ln(\sqrt{x}) = \ln (x^{1/2}) = 1/2\ln x$, and hence multiplying the Taylor series for $\ln x$ by $1/2$. This example was chosen to demonstrate other aspects of series, such as the fact that the interval of convergence changes.}
+}
+\end{solution}
+
+
+
+
+\begin{example}{Using Taylor series to evaluate definite integrals}{ex_ts7}
+{Use the Taylor series of $e^{-x^2}$ to evaluate $\ds \int_0^1e^{-x^2}\ dx$.
+}
+\end{example}
+
+
+\begin{solution}
+{We learned, when studying Numerical Integration, that $e^{-x^2}$ does not have an antiderivative expressible in terms of elementary functions. This means any definite integral of this function must have its value approximated, and not computed exactly.
+
+We can quickly write out the Taylor series for $e^{-x^2}$ using the Taylor series of $e^x$:
+\begin{align*}
+e^x &= \sum_{n=0}^\infty \frac{x^n}{n!} = 1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots
+\intertext{and so}
+e^{-x^2} &= \sum_{n=0}^\infty \frac{(-x^2)^n}{n!} \\
+				&= \sum_{n=0}^\infty (-1)^n\frac{x^{2n}}{n!}\\
+				&= 1-x^2+\frac{x^4}{2!}-\frac{x^6}{3!}+\cdots.
+\end{align*}
+We use Theorem \ref{thm:calc_power_series} to integrate:
+$$\int e^{-x^2}\ dx = C + x - \frac{x^3}{3}+\frac{x^5}{5\cdot2!}-\frac{x^7}{7\cdot3!}+\cdots +(-1)^n\frac{x^{2n+1}}{(2n+1)n!}+\cdots$$
+This \emph{is} the antiderivative of $e^{-x^2}$; while we can write it out as a series, we cannot write it out in terms of elementary functions. We can evaluate the definite integral $\ds \int_0^1e^{-x^2}\ dx$ using this antiderivative; substituting 1 and 0 for $x$ and subtracting gives
+$$\int_0^1e^{-x^2}\ dx = 1-\frac{1}{3}+\frac{1}{5\cdot 2!}-\frac{1}{7\cdot3!} + \frac{1}{9\cdot4!}\cdots.$$
+Summing the 5 terms shown above give the approximation of $0.74749.$ Since this is an alternating series, we can use the Alternating Series Approximation Theorem, (Theorem \ref{thm:alt_series_approx}), to determine how accurate this approximation is. The next term of the series is $ 1/(11\cdot5!) \approx 0.00075758$. Thus we know our approximation is within $0.00075758$ of the actual value of the integral. This is arguably much less work than using Simpson's Rule to approximate the value of the integral.
+}
+\end{solution}
+
+
+
+
+%
+
+\begin{example}{Using Taylor series to solve differential equations}{ex_ts8}
+{Solve the differential equation $y\primeskip'=2y$ in terms of a power series, and use the theory of Taylor series to recognize the solution in terms of an elementary function.
+}
+\end{example}
+
+
+\begin{solution}
+{We found the first $ 5 $ terms of the power series solution to this differential equation in Example \ref{ex_ps5} in Section \ref{sec:power_series}. These are:
+$$a_0=1,\quad a_1 = 2,\quad a_2 = \frac42=2,\quad a_3=\frac{8}{2\cdot3}=\frac43,\quad a_4=\frac{16}{2\cdot3\cdot4} = \frac23.$$
+We include the ``unsimplified'' expressions for the coefficients found in Example \ref{ex_ps5} as we are looking for a pattern. It can be shown that $a_n = 2^n/n!$. Thus the solution, written as a power series, is
+$$y = \sum_{n=0}^\infty \frac{2^n}{n!}x^n = \sum_{n=0}^\infty \frac{(2x)^n}{n!}.$$
+Using Key Idea \ref{idea:common_taylor} and Theorem \ref{thm:series_alg}, we recognize $f(x) = e^{2x}$:
+$$e^x = \sum_{n=0}^\infty \frac{x^n}{n!} \qquad \Rightarrow \qquad e^{2x} = \sum_{n=0}^\infty \frac{(2x)^n}{n!}.$$
+}
+\end{solution}
+
+
+
+
+
+\clearpage
+
+Finding a pattern in the coefficients that match the series expansion of a known function, such as those shown in Key Idea \ref{idea:common_taylor}, can be difficult. What if the coefficients in the previous example were given in their reduced form; how could we still recover the function $y=e^{2x}$?
+
+Suppose that all we know is that 
+$$a_0=1,\quad a_1=2,\quad a_2=2,\quad a_3=\frac43,\quad a_4=\frac23.$$
+Definition \ref{def:taylor_series} states that each term of the Taylor expansion of a function includes an $n!$. This allows us to say that
+$$a_2=2=\frac{b_2}{2!},\quad a_3 = \frac43=\frac{b_3}{3!},\quad \text{and}\quad a_4 = \frac23=\frac{b_4}{4!}$$
+for some values $b_2$, $b_3$ and $b_4$.
+Solving for these values, we see that $b_2=4$, $b_3 = 8$ and $b_4=16$. That is, we are recovering the pattern we had previously seen, allowing us to write 
+\begin{align*}
+f(x) = \sum_{n=0}^\infty a_nx^n &= \sum_{n=0}^\infty \frac{b_n}{n!}x^n \\
+			&= 1+2x+ \frac{4}{2!}x^2 + \frac{8}{3!}x^3+\frac{16}{4!}x^4 + \cdots
+\end{align*}
+From here it is easier to recognize that the series is describing an exponential function.
+
+There are simpler, more direct ways of solving the differential equation $y\primeskip' = 2y$. We applied power series techniques to this equation to demonstrate its utility, and went on to show how \emph{sometimes} we are able to recover the solution in terms of elementary functions using the theory of Taylor series. Most differential equations faced in real scientific and engineering situations are much more complicated than this one, but power series can offer a valuable tool in finding, or at least approximating, the solution.\\
+
+This chapter introduced sequences, which are ordered lists of numbers, followed by series, wherein we add up the terms of a sequence. We quickly saw that such sums do not always add up to ``infinity,'' but rather converge. We studied tests for convergence, then ended the chapter with a formal way of defining functions based on series. Such ``series--defined functions'' are a valuable tool in solving a number of different problems throughout science and engineering. 
+
+Coming in the next chapters are new ways of defining curves in the plane apart from using functions of the form $y=f(x)$. Curves created by these new methods can be beautiful, useful, and important. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%We have seen that some functions can be represented as series, which
+%may give valuable information about the function. So far, we have seen
+%only those examples that result from manipulation of our one
+%fundamental example, the geometric series. We would like to start with
+%a given function and produce a series to represent it, if possible.
+%
+%Suppose that $\ds f(x)=\sum_{n=0}^\infty a_nx^n$ on some interval of
+%convergence centered at 0. Then we know that we can compute derivatives of $f$ by
+%taking derivatives of the terms of the series. Let's look at the first
+%few in general:
+%\begin{align*}
+%  f'(x)&=\sum_{n=1}^\infty n a_n x^{n-1}=a_1 + 2a_2x+3a_3x^2+4a_4x^3+\cdots	\\
+%  f''(x)&=\sum_{n=2}^\infty n(n-1) a_n x^{n-2}=2a_2+3\cdot2a_3x
+%    +4\cdot3a_4x^2+\cdots	\\
+%  f'''(x)&=\sum_{n=3}^\infty n(n-1)(n-2) a_n x^{n-3}=3\cdot2a_3
+%    +4\cdot3\cdot2a_4x+\cdots	\\
+%\end{align*}
+%
+%By examining these it's not hard to discern the general pattern. The
+%$k$th derivative must be
+%\begin{align*}
+%  f^{(k)}(x)&=\sum_{n=k}^\infty n(n-1)(n-2)\cdots(n-k+1)a_nx^{n-k}	\\
+%  &=k(k-1)(k-2)\cdots(2)(1)a_k+(k+1)(k)\cdots(2)a_{k+1}x+{}	\\
+%  &\qquad {}+(k+2)(k+1)\cdots(3)a_{k+2}x^2+\cdots	\\
+%\end{align*}
+%We can express this more clearly by using factorial notation:
+%\[
+%  f^{(k)}(x)=\sum_{n=k}^\infty {n!\over (n-k)!}a_nx^{n-k}=
+%  k!a_k+(k+1)!a_{k+1}x+{(k+2)!\over 2!}a_{k+2}x^2+\cdots
+%\]
+%
+%We can solve for $a_n$ by substituting $x=0$ in the formula for $f^{(k)}(x)$:
+%\[f^{(k)}(0)=k!a_k+\sum_{n=k+1}^\infty {n!\over (n-k)!}a_n0^{n-k}=k!a_k,\]
+%\[a_k={f^{(k)}(0)\over k!}.\]
+%Note that the original series for $f$ yields $f(0)=a_0$.
+%
+%So if a function $f$ can be represented by a series, we can easily find such a series.
+%Given a function $f$, the series
+%\[\sum_{n=0}^\infty {f^{(n)}(0)\over n!}x^n\]
+%is called the \dfont{Maclaurin 
+%series} for $f$.
+%
+%\begin{example}{Maclaurin Series}{MacSeriesOne}
+%Find the Maclaurin series for $f(x)=1/(1-x)$.
+%\end{example}
+%\begin{solution}
+%We need to
+%compute the derivatives of $f$ (and hope to spot a pattern).
+%\begin{align*}
+%  f(x)&=(1-x)^{-1}	\\
+%  f'(x)&=(1-x)^{-2}	\\
+%  f''(x)&=2(1-x)^{-3}	\\
+%  f'''(x)&=6(1-x)^{-4}	\\
+%  f^{(4)}(x)&=4!(1-x)^{-5}	\\
+%  &\vdots	\\
+%  f^{(n)}(x)&=n!(1-x)^{-n-1}	\\
+%\end{align*}
+%
+%So
+%\[a_n={f^{(n)}(0)\over n!}={n!(1-0)^{-n-1}\over n!}=1\]
+%and the Maclaurin series is
+%\[\sum_{n=0}^\infty 1\cdot x^n=\sum_{n=0}^\infty x^n,\]
+%the geometric series.
+%\end{solution}
+%
+%A warning is in order here. Given a function $f$ we may be able to
+%compute the Maclaurin series, but that does not mean we have found a
+%series representation for $f$. We still need to know where the series
+%converges, and if, where it converges, it converges to $f(x)$. While
+%for most commonly encountered functions the Maclaurin series does
+%indeed converge to $f$ on some interval, this is not true of all
+%functions, so care is required.
+%
+%As a practical matter, if we are interested in using a series to
+%approximate a function, we will need some finite number of terms of
+%the series. Even for functions with messy derivatives we can compute
+%these using computer software like Sage. If we want to describe a series
+%completely, we would like to be able to write down a formula for a typical
+%term in the series. Fortunately, a few of the most important functions are very
+%easy.
+%
+%\begin{example}{Maclaurin Series}{MacSeriesTwo}
+%Find the Maclaurin series for $\sin x$.
+%\end{example}
+%\begin{solution}
+%Computing the first few derivatives is simple: $f'(x)=\cos x$, $f''(x)=-\sin x$,
+%$f'''(x)=-\cos x$, $\ds f^{(4)}(x)=\sin x$, and then the pattern
+%repeats. The values of the derivative when $x=0$ are:
+%1, 0, $-1$, 0, 1, 0, $-1$, 0,\dots, and so the Maclaurin series is
+%\[
+%  x-{x^3\over 3!}+{x^5\over 5!}-\cdots=
+%  \sum_{n=0}^\infty (-1)^n{x^{2n+1}\over (2n+1)!}.
+%\]
+%
+%We should always determine the radius of convergence:
+%\[
+%  \lim_{n\to\infty} {|x|^{2n+3}\over (2n+3)!}{(2n+1)!\over |x|^{2n+1}}
+%  =\lim_{n\to\infty} {|x|^2\over (2n+3)(2n+2)}=0,
+%\]
+%so the series converges for every $x$. Since it turns out that this
+%series does indeed converge to $\sin x$ everywhere, we have a series
+%representation for $\sin x$ for every $x$.
+%\end{solution}
+%
+%Sometimes the formula for the $n$th derivative of a function $f$ is
+%difficult to discover, but a combination of a known Maclaurin series
+%and some algebraic manipulation leads easily to the Maclaurin series
+%for $f$.
+%
+%\begin{example}{Maclaurin Series}{MacSeriesThree}
+%Find the Maclaurin series for $x\sin(-x)$.
+%\end{example}
+%\begin{solution}
+%To get from $\sin x$ to $x\sin(-x)$ we substitute $-x$ for $x$ and
+%then multiply by $x$. We can do the same thing to the series for $\sin
+%x$:
+%\[
+%  x\sum_{n=0}^\infty (-1)^n{(-x)^{2n+1}\over (2n+1)!}
+%  =x\sum_{n=0}^\infty (-1)^{n}(-1)^{2n+1}{x^{2n+1}\over (2n+1)!}
+%  =\sum_{n=0}^\infty (-1)^{n+1}{x^{2n+2}\over (2n+1)!}.
+%\]
+%\end{solution}
+%
+%As we have seen, a power series can be centered at a point
+%other than zero, and the method that produces the Maclaurin series can
+%also produce such series.
+%
+%\begin{example}{Taylor Series}{TaylorSeriesOne}
+%Find a series centered at $-2$ for $1/(1-x)$.
+%\end{example}
+%\begin{solution}
+%If the series is $\ds\sum_{n=0}^\infty a_n(x+2)^n$ then looking at the
+%$k$th derivative:
+%$$k!(1-x)^{-k-1}=\sum_{n=k}^\infty {n!\over (n-k)!}a_n(x+2)^{n-k}$$
+%and substituting $x=-2$ we get
+%$\ds k!3^{-k-1}=k!a_k$ and $\ds a_k=3^{-k-1}=1/3^{k+1}$, so the series is
+%$$\sum_{n=0}^\infty {(x+2)^n\over 3^{n+1}}.$$
+%\end{solution}
+%
+%Such a series is called the 
+%\dfont{Taylor series} for the function,
+%and the general term has the form
+%\[{f^{(n)}(a)\over n!}(x-a)^n.\]
+%
+%A Maclaurin series is simply a Taylor series with $a=0$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:taylorseries}}
+
+\begin{enumialphparenastyle}
+
+% % % % % % % % % % %
+\begin{ex}
+Key Idea \ref{idea:common_taylor} gives the $n^\text{th}$ term of the Taylor series of common functions. Verify the formula given in the Key Idea by finding the first few terms of the Taylor series of the given function and identifying a pattern.
+\begin{enumerate}
+\item {$f(x) = e^x$;\quad $c=0$
+}
+\item {$f(x) = \sin x$;\quad $c=0$
+}
+\item {$f(x) = 1/(1-x)$;\quad $c=0$
+}
+\item {$f(x) = \tan^{-1}x$;\quad $c=0$
+}
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item 
+{All derivatives of $e^x$ are $e^x$ which evaluate to 1 at $x=0$. 
+
+The Taylor series starts $1+x+\frac12x^2+\frac{1}{3!}x^3+\frac{1}{4!}x^4+\cdots$; 
+
+the Taylor series is $\ds \sum_{n=0}^\infty \frac{x^n}{n!}$
+}
+\item 
+{All derivatives of $\sin x$ are either $\pm\cos x$ or $\pm \sin x$, which evaluate to $\pm 1$ or $0$ at $x=0$. The Taylor series starts $0+x+0x^2-\frac16x^3+0x^4+\frac1{120}x^5$; 
+
+the Taylor series is $\ds \sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{(2n+1)!}$
+}
+\item 
+{The $n^\text{th}$ derivative of $1/(1-x)$ is $f\,^{(n)}(x) = (n)!/(1-x)^{n+1}$, which evaluates to $n!$ at $x=0$. 
+
+The Taylor series starts $1+x+x^2+x^3+\cdots$; 
+
+the Taylor series is $\ds \sum_{n=0}^\infty x^n$
+}
+\item 
+{The derivative of $\tan^{-1}x$ is $1/(1+x^2)$. Taking successive derivatives using the Quotient Rule, the derivatives of $\tan^{-1}x$ fall into two categories in terms of their evaluation at $x=0$. 
+
+When $n$ is even, $\ds f\,^{(n)}(x) = (-1)^{(n-1)/2}\frac{p(x)}{(1+x^2)^n}$, where $p(x)$ is a polynomial such that $p(0) = 0$. Hence $f\,^{(n)}(0) = 0$ when $n$ is even.
+
+When $n$ is odd, $\ds f\,^{(n)}(x) = (-1)^{(n-1)/2}\frac{p(x)}{(1+x^2)^n}$, where $p(x)$ is a polynomial such that $p(0) = (n-1)!$. Hence $f\,^{(n)}(0) = (-1)^{(n-1)/2}(n-1)!$ when $n$ is odd. (The unusual power of $(-1)$ is such that every other odd term is negative.)
+ 
+The Taylor series starts $x-\frac13x^3+\frac15x^5+\cdots$; by reindexing to only obtain odd powers of $x$, we get 
+
+the Taylor series is $\ds \sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{2n+1}$.
+}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+
+
+% % % % % % % % % % %
+\begin{ex}
+Find a formula for the $n^\text{th}$ term of the Taylor series of $f(x)$, centered at $c$, by finding the coefficients of the first few powers of $x$ and looking for a pattern. (The formulas for several of these are found in Key Idea \ref{idea:common_taylor}; show work verifying these formula.)
+\begin{enumerate}
+\item {$f(x) = \cos x$;\quad $c=\pi/2$
+}
+\item  {$f(x) = 1/x$;\quad $c=1$
+}
+\item {$f(x) = e^{-x}$;\quad $c=0$
+}
+\item {$f(x) = \ln(1+x)$;\quad $c=0$
+}
+\item {$f(x) = x/(x+1)$;\quad $c=1$
+}
+\item {$f(x) = \sin x$;\quad $c=\pi/4$
+}
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item 
+{The Taylor series starts $0-(x-\pi/2)+0x^2+\frac16(x-\pi/2)^3+0x^4-\frac1{120}(x-\pi/2)^5$; 
+
+the Taylor series is $\ds \sum_{n=0}^\infty (-1)^{n+1}\frac{(x-\pi/2)^{2n+1}}{(2n+1)!}$
+}
+\item
+{The Taylor series starts $1-(x-1)+(x-1)^2-(x-1)^3+(x-1)^4-(x-1)^5$; 
+
+the Taylor series is $\ds \sum_{n=0}^\infty (-1)^{n}(x-1)^n$
+}
+\item 
+{$f\,^{(n)}(x) = (-1)^ne^{-x}$; at $x=0$, $f\,^{(n)}(0)=-1$ when $n$ is odd and $f\,^{(n)}(0)=1$ when $n$ is even.
+
+The Taylor series starts $1-x+\frac12x^2-\frac1{3!}x^3+\cdots$; 
+
+the Taylor series is $\ds \sum_{n=0}^\infty (-1)^n\frac{x^n}{n!}$.
+}
+\item 
+{$f\,^{(n)}(x) = (-1)^{n+1}\frac{(n-1)!}{(1+x)^n}$; at $x=0$, $f\,^{(n)}(0)=(-1)^{n+1}(n-1)!$
+
+The Taylor series starts $x-\frac{x^2}2+\frac{x^3}3-\frac{x^4}4+\cdots$; 
+
+the Taylor series is $\ds \sum_{n=1}^\infty (-1)^{n+1}\frac{x^n}{n}$.
+}
+\item
+{$f\,^{(n)}(x) = (-1)^{n+1}\frac{n!}{(x+1)^{n+1}}$; at $x=1$, $f\,^{(n)}(1)=(-1)^{n+1}\frac{n!}{2^{n+1}}$
+
+The Taylor series starts $\frac12+\frac14(x-1)-\frac18(x-1)^2+\frac1{16}(x-1)^3\cdots$; 
+
+the Taylor series is $\ds \sum_{n=0}^\infty (-1)^{n+1}\frac{(x-1)^n}{2^{n+1}}$.
+}
+\item 
+{The derivatives of $\sin x$ are $\pm \cos x$ and $\pm \sin x$; at $x=\pi/4$, these derivatives evaluate to $\pm \sqrt{2}/2$. 
+
+The Taylor series starts $\frac{\sqrt{2}}2+\frac{\sqrt{2}}2(x-\pi/4) - \frac{\sqrt{2}}2\frac{(x-\pi/4)^2}{2}-\frac{\sqrt{2}}2\frac{(x-\pi/4)^3}{3!}+\frac{\sqrt{2}}2\frac{(x-\pi/4)^4}{4!}+\frac{\sqrt{2}}2\frac{(x-\pi/4)^5}{5!}\cdots$. Note how the signs are ``even, even, odd, odd, even, even, odd, odd,$\ldots$ We saw signs like these in Example \ref{ex_seq1} of Section \ref{sec:sequences}; one way of producing such signs is to raise $(-1)$ to a special quadratic power. While many possibilities exist, 
+one such quadratic is $(n+3)(n+4)/2$. 
+
+Thus the Taylor series is $\ds \sum_{n=0}^\infty (-1)^{\frac{(n+3)(n+4)}{2}}\frac{\sqrt2}{2}\frac{(x-\pi/4)^n}{n!}$.
+}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+% % % % % % % % % % %
+\begin{ex}
+Show that the Taylor series for $f(x)$, as given in Key Idea \ref{idea:common_taylor}, is equal to $f(x)$ by applying Theorem \ref{thm:function_series_equality}; that is, show $\ds \lim_{n\to\infty}R_n(x) =0$.
+\begin{enumerate}
+\item {$f(x) = \sin x$
+}
+\item {$f(x) = e^x$
+}
+\item {$f(x) = \ln x$
+}
+\item {$f(x) = 1/(1-x)$ (show equality only on $(-1,0)$)
+}
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item 
+{The following argument is essentially the same as that given for $f(x) = \cos x$ in Example \ref{ex_ts3}.
+
+Given a value $x$, the magnitude of the error term $R_n(x)$ is bounded by
+$$ \big|R_n(x)\big| \leq \frac{\max\left|\,f\,^{(n+1)}(z)\right|}{(n+1)!}\big|x^{(n+1)}\big|.$$
+Since all derivatives of $\sin x$ are $\pm \cos x$ or $\pm\sin x$, whose magnitudes are bounded by $1$, we can state
+$$ \big|R_n(x)\big| \leq \frac{1}{(n+1)!}\big|x^{(n+1)}\big|.$$
+For any $x$, $\ds\lim_{n\to\infty} \frac{x^{n+1}}{(n+1)!} = 0$. Thus by the Squeeze Theorem, we conclude that $\ds \lim_{n\to\infty} R_n(x) = 0$ for all $x$, and hence
+$$\sin x = \sum_{n=0}^\infty (-1)^{n}\frac{x^{2n+1}}{(2n+1)!}\quad \text{for all $x$}.$$
+}
+\item 
+{Given a value $x$, the magnitude of the error term $R_n(x)$ is bounded by
+$$ \big|R_n(x)\big| \leq \frac{\max\left|\,f\,^{(n+1)}(z)\right|}{(n+1)!}\big|x^{(n+1)}\big|,$$
+where $z$ is between $0$ and $x$. 
+
+If $x>0$, then $z<x$ and $f\,^{(n+1)}(z) =e^z<e^x$. If $x<0$, then $x<z<0$ and $f\,^{(n+1)}(z) =e^z<1$. So given a fixed $x$ value, let $M = \max\{e^x,1\}$; $f\,^{(n)}(z)<M.$ This allows us to state
+
+$$ \big|R_n(x)\big| \leq \frac{M}{(n+1)!}\big|x^{(n+1)}\big|.$$
+For any $x$, $\ds\lim_{n\to\infty} \frac{M}{(n+1)!}\big|x^{(n+1)}\big|= 0$. Thus by the Squeeze Theorem, we conclude that $\ds \lim_{n\to\infty} R_n(x) = 0$ for all $x$, and hence
+$$e^x = \sum_{n=0}^\infty \frac{x^{n}}{n!}\quad \text{for all $x$}.$$
+}
+\item 
+{Given a value $x$, the magnitude of the error term $R_n(x)$ is bounded by
+$$ \big|R_n(x)\big| \leq \frac{\max\left|\,f\,^{(n+1)}(z)\right|}{(n+1)!}\big|(x-1)^{(n+1)}\big|,$$
+where $z$ is between $1$ and $x$. 
+
+Note that $\big|f\,^{(n+1)}(x)\big| = \frac{n!}{x^{n+1}}$. 
+
+We consider the cases when $x>1$ and when $x<1$ separately.
+
+If $x>1$, then $1<z<x$ and $f\,^{(n+1)}(z) =\frac{n!}{z^{n+1}}<n!$. Thus
+$$ \big|R_n(x)\big| \leq \frac{n!}{(n+1)!}\big|(x-1)^{(n+1)}\big|= \frac{(x-1)^{n+1}}{n+1}.$$
+For a fixed $x$,
+$$\lim_{n\to\infty} \frac{(x-1)^{n+1}}{n+1}=0.$$
+
+
+If $0<x<1$, then $x<z<1$ and $f\,^{(n+1)}(z) =\frac{n!}{z^{n+1}}<\frac{n!}{x^{n+1}}$. Thus
+$$ \big|R_n(x)\big| \leq \frac{n!/x^{n+1}}{(n+1)!}\big|(x-1)^{(n+1)}\big| = \frac{x^{n+1}}{n+1}(1-x)^{n+1}.$$
+Since $0<x<1$, $x^{n+1}<1$ and $(1-x)^{n+1}<1$. We can then extend the inequality from above to state
+$$\big|R_n(x)\big| \leq \frac{x^{n+1}}{n+1}(1-x)^{n+1}<\frac1{n+1}.$$
+
+As $n\to\infty$, $1/(n+1)\to0$. Thus by the Squeeze Theorem, we conclude that $\ds \lim_{n\to\infty} R_n(x) = 0$ for all $x$, and hence
+$$\ln x = \sum_{n=1}^\infty (-1)^{n+1}\frac{(x-1)^{n}}{n}\quad \text{for all $0<x\leq 2$}.$$
+}
+\item 
+{Given a value $x$, the magnitude of the error term $R_n(x)$ is bounded by
+$$ \big|R_n(x)\big| \leq \frac{\max\left|\,f\,^{(n+1)}(z)\right|}{(n+1)!}\big|x^{(n+1)}\big|,$$
+where $z$ is between $0$ and $x$. 
+
+Note that $\big|f\,^{(n+1)}(x)\big| = \frac{(n+1)!}{(1-x)^{n+2}}$. 
+
+%We consider the cases when $x>0$ and when $x<0$ separately.
+
+If $0<x<1$, then $0<z<x$ and $f\,^{(n+1)}(z) =\frac{(n+1)!}{(1-z)^{n+2}}<\frac{(n+1)!}{(1-x)^{n+2}}$.
+Thus
+$$ \big|R_n(x)\big| \leq \frac{(n+1)!}{(1-x)^{n+2}}\frac{1}{(n+1)!}\big|x^{n+1}\big|= \frac{(x-1)^{n+1}}{n+1}.$$
+For a fixed $x$,
+$$\lim_{n\to\infty} \frac{(x-1)^{n+1}}{n+1}=0,$$
+hence
+$$\frac{1}{1-x} = \sum_{n=0}^\infty x^n \text{ on } (-1,0).$$
+ 
+%If $-1<x<0$, then $x<z<0$ and $f\,^{(n+1)}(z) =\frac{(n+1)!}{(1-z)^{n+2}}<(n+1)!$. 
+%Thus
+%$$ \big|R_n(x)\big| \leq \frac{(n+1)!}{(n+1)!}\big|x^{n+1}\big|= \big|x^{n+1}\big|.$$
+%For a fixed $x$,
+%$$\lim_{n\to\infty} \big|x^{n+1}\big|=0 \text{ as } |x|<1.$$
+
+
+
+%As $n\to\infty$, $1/(n+1)\to0$. Thus by the Squeeze Theorem, we conclude that $\ds \lim_{n\to\infty} R_n(x) = 0$ for all $x$, and hence
+%$$\ln x = \sum_{n=1}^\infty (-1)^{n+1}\frac{(x-1)^{n}}{n}\quad \text{for all $0<x\leq 2$}.$$
+}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+% % % % % % % % % % %
+\begin{ex}
+Use the Taylor series  given in Key Idea \ref{idea:common_taylor} to verify the given identity.
+\begin{enumerate}
+\item {$\cos(-x) = \cos x$
+}
+\item {$\sin(-x) = -\sin x$
+}
+\item {$\frac{d}{dx}\big(\sin x\big) = \cos x$
+}
+\item {$\frac{d}{dx}\big(\cos x\big) = -\sin x$
+}
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item 
+{Given $\ds \cos x = \sum_{n=0}^\infty (-1)^n\frac{x^{2n}}{(2n)!}$,
+
+$\ds\cos (-x) = \sum_{n=0}^\infty (-1)^n\frac{(-x)^{2n}}{(2n)!}=\sum_{n=0}^\infty (-1)^n\frac{x^{2n}}{(2n)!}=\cos x$, as all powers in the series are even.
+}
+\item 
+{Given $\ds \sin x = \sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{(2n+1)!}$,
+
+$\ds\sin (-x) = \sum_{n=0}^\infty (-1)^n\frac{(-x)^{2n+1}}{(2n+1)!}=\sum_{n=0}^\infty (-1)^n\frac{-x^{2n+1}}{(2n+1)!}=-\sin x$, as all powers in the series are odd.
+}
+\item 
+{Given $\ds \sin x = \sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{(2n+1)!}$,
+
+$\ds\frac{d}{dx}\big(\sin x\big)  = \frac{d}{dx}\left(\sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{(2n+1)!}\right)=\sum_{n=0}^\infty (-1)^n\frac{(2n+1)x^{2n}}{(2n+1)!}=\sum_{n=0}^\infty (-1)^n\frac{x^{2n}}{(2n)!}=\cos x$. (The summation still starts at $n=0$ as there was no constant term in the expansion of $\sin x$).
+}
+\item 
+{Given $\ds \cos x = \sum_{n=0}^\infty (-1)^n\frac{x^{2n}}{(2n)!}$,
+
+$\ds\frac{d}{dx}\big(\cos x\big)  = \frac{d}{dx}\left(\sum_{n=0}^\infty (-1)^n\frac{x^{2n}}{(2n)!}\right)=\sum_{n=1}^\infty (-1)^n\frac{(2n)x^{2n-1}}{(2n)!}=\sum_{n=1}^\infty (-1)^n\frac{x^{2n-1}}{(2n-1)!}$. We can re-index this summation to start at $n=0$ by replacing $n$ with $n+1$ in the summation:
+$$ \sum_{n=1}^\infty (-1)^n\frac{x^{2n-1}}{(2n-1)!} =\sum_{n=0}^\infty (-1)^{n+1}\frac{x^{2n+1}}{(2n+1)!}.$$
+
+Note that this series has the opposite sign of the Taylor series for $\sin x$; thus $\frac{d}{dx}(\cos x) = -\sin x$.
+}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+% % % % % % % % % % %
+\begin{ex}
+ Use the Taylor series  given in Key Idea \ref{idea:common_taylor} to create the Taylor series of the given functions.
+\begin{enumerate}
+\item {$f(x) = \cos \big(x^2\big)$
+}
+\item {$f(x) = e^{-x}$
+}
+\item {$f(x) = \sin\big(2x+3\big)$
+}
+\item {$f(x) = \tan^{-1}\big(x/2\big)$
+}
+\item {$f(x) = e^x\sin x$\quad (only find the first 4 terms)
+}
+\item {$f(x) = (1+x)^{1/2}\cos x$\quad (only find the first 4 terms)
+} 
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item 
+{$\ds \sum_{n=0}^\infty (-1)^n\frac{(x^2)^{2n}}{(2n)!} = \sum_{n=0}^\infty (-1)^n\frac{x^{4n}}{(2n)!}.$
+}
+\item 
+{$\ds \sum_{n=0}^\infty \frac{(-x)^n}{n!}.$
+}
+\item 
+{$\ds \sum_{n=0}^\infty (-1)^n\frac{(2x+3)^{2n+1}}{(2n+1)!}.$
+}
+\item 
+{$\ds \sum_{n=0}^\infty (-1)^n\frac{(x/2)^{2n+1}}{(2n+1)}.$
+}
+\item 
+{$\ds x+x^2+\frac{x^3}{3}-\frac{x^5}{30}$
+}
+\item 
+{$\ds 1+\frac x2-\frac{5x^2}{8}-\frac{3x^3}{16}$
+}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+% % % % % % % % % % %
+\begin{ex}
+Write out the first $ 5 $ terms of the Binomial series with the given $k$-value.
+\begin{enumerate}
+\item {$k=1/2$
+}
+\item {$k=-1/2$
+}
+\item {$k=1/3$
+}
+\item {$k=4$
+}
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item 
+{$\ds 1+\frac x2-\frac{x^2}{8}+\frac{x^3}{16}-\frac{5x^4}{128}$
+}
+\item 
+{$\ds 1-\frac x2+\frac{3x^2}{8}-\frac{5x^3}{16}+\frac{35x^4}{128}$
+}
+\item 
+{$\ds 1+\frac x3-\frac{x^2}{9}+\frac{5x^3}{81}-\frac{10x^4}{243}$
+}
+\item 
+{$\ds 1+4x+6x^2+4x^3+x^4$ (note the series is finite, and the formula still applies)
+}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+
+
+% % % % % % % % % % %
+\begin{ex}
+Approximate the value of the given definite integral by using the first $ 4 $ nonzero terms of the integrand's Taylor series. 
+\begin{enumerate}
+\item {$\ds \int_0^{\sqrt{\pi}} \sin \big(x^2\big)\ dx$
+}
+\item  {$\ds \int_0^{\pi^2/4} \cos \big(\sqrt{x}\big)\ dx$
+}
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item 
+{$\ds \int_0^{\sqrt{\pi}} \sin \big(x^2\big)\ dx \approx \int_0^{\sqrt{\pi}} \left(x^2-\frac{x^6}6+\frac{x^{10}}{120}-\frac{x^{14}}{5040}\right) dx = 0.8877$
+}
+\item
+{$\ds \int_0^{\pi^2/4} \cos \big(\sqrt{x}\big)\ dx \approx \int_0^{\pi^2/4} \left(1-\frac x2+\frac{x^2}{24}-\frac{x^3}{720}\right)\ dx = 1.1412$. (Actual answer: $\pi-2$)
+}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+
+
+
+
+\begin{ex}
+For each function, find either the Maclaurin series, or Taylor series centred
+at $a$ when $ a $ is specified, and the radius of convergence.
+
+\begin{enumerate}
+	\item $\cos x$
+	\item $\ds e^x$
+	\item $1/x$, $a=5$
+	\item $\ln x$, $a=1$
+	\item $\ln x$, $a=2$
+	\item $\ds 1/x^2$, $a=1$
+	\item $\ds 1/\sqrt{1-x}$
+	\item Find the first four terms of the Maclaurin series for $\tan
+	x$ (up to and including the $\ds x^3$ term).
+	\item Use a combination of Maclaurin series and algebraic
+	manipulation to find a series centered at zero for
+	$\ds x\cos (x^2)$.
+	\item Use a combination of Maclaurin series and algebraic
+	manipulation to find a series centered at zero for
+	$\ds xe^{-x}$.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item $\ds\sum_{n=0}^\infty (-1)^n x^{2n}/(2n)!$, $R=\infty$
+	\item $\ds\sum_{n=0}^\infty x^n/n!$, $R=\infty$
+	\item $\ds\sum_{n=0}^\infty (-1)^n{(x-5)^n\over 5^{n+1}}$, $R=5$
+	\item $\ds\sum_{n=1}^\infty (-1)^{n-1}{(x-1)^n\over n}$, $R=1$
+	\item $\ds\ln(2)+\sum_{n=1}^\infty (-1)^{n-1}{(x-2)^n\over n 2^n}$, $R=2$
+	\item $\ds\sum_{n=0}^\infty (-1)^n(n+1)(x-1)^n$, $R=1$
+	\item $\ds1+\sum_{n=1}^\infty {1\cdot3\cdot5\cdots(2n-1)\over
+		n!2^n} x^n=1+\sum_{n=1}^\infty {(2n-1)!\over 2^{2n-1}(n-1)!\,n!}x^n$, $R=1$
+	\item $\ds x+x^3/3$
+	\item $\ds\sum_{n=0}^\infty (-1)^n x^{4n+1}/(2n)!$
+	\item $\ds\sum_{n=0}^\infty (-1)^n x^{n+1}/n!$
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

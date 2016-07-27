@@ -1,0 +1,187 @@
+\section{Alternating Series}\label{sec:AlternatingSeries}
+
+Next we consider series with both positive and negative terms, but in
+a regular pattern: they alternate, as in the \dfont{alternating
+  harmonic series}:
+$$
+  \sum_{n=1}^\infty {(-1)^{n-1}\over n}=
+  {1\over1}+{-1\over2}+{1\over3}+{-1\over4}+\cdots=
+  {1\over1}-{1\over2}+{1\over3}-{1\over4}+\cdots.
+$$
+
+In this example the magnitude of the terms decrease, that is, 
+$\ds |a_n|$ forms a decreasing sequence, although this is not required in an
+alternating series. Recall that for a series with positive terms, if the limit
+of the terms is not zero, the series cannot converge; but even if the limit
+of the terms is zero, the series still may not converge. It turns out that for
+alternating series, the series converges exactly when the limit of the terms is zero.
+In Figure~\ref{fig:alternating harmonic series}, we illustrate what happens to
+the partial sums of the alternating harmonic series. Because the sizes of
+the terms $\ds a_n$ are decreasing, the odd partial sums $\ds s_1$, $\ds s_3$, $\ds s_5$,
+and so on, form a decreasing sequence that is bounded below by
+$\ds s_2$, so this sequence must converge.
+Likewise, the even partial sums $\ds s_2$, $\ds s_4$, $\ds s_6$,
+and so on, form an increasing sequence that is bounded above by
+$\ds s_1$, so this sequence also converges. Since all the even numbered
+partial sums are less than all the odd numbered ones, and since the
+``jumps'' (that is, the $\ds a_i$ terms) are getting smaller and smaller,
+the two sequences must converge to the same value, meaning the entire
+sequence of partial sums $\ds s_1,s_2,s_3,\ldots$ converges as well.
+
+\begin{figure}[H]
+\centerline{
+%\texonly
+\vbox{\beginpicture
+\normalgraphs
+%\ninepoint
+\setcoordinatesystem units <15truecm,1.5truecm>
+\setplotarea x from 0.25 to 1.1, y from -1 to 1
+\axis bottom shiftedto y=0 ticks withvalues {$1\over4$} / at 0.25 / /
+\axis bottom shiftedto y=0 ticks from 1 to 1 by 1 /
+\put {$1=s_1=a_1$} [tl] <-2pt,-9pt> at 1 0
+\put {$a_2=-{1\over 2}$} [b] <0pt,3pt> at 0.75 1
+\put {$s_2={1\over 2}$} [tr] <-3pt,-3pt> at 0.5 0
+\put {$a_3$} [t] <0pt,-3pt> at 0.667 -1
+\put {$s_3$} [tl] <3pt,-3pt> at 0.833 0
+\put {$a_4$} [b] <0pt,3pt> at 0.708 0.667
+\put {$s_4$} [tr] <-3pt,-3pt> at 0.583 0
+\put {$a_5$} [b] <0pt,2pt> at 0.683 -0.667
+\put {$s_5$} [tl] <3pt,-3pt> at 0.783 0
+\put {$a_6$} [b] <0pt,3pt> at 0.7 0.333
+\put {$s_6$} [tl] <1pt,-3pt> at 0.6167 0
+\putrule from 1 0 to 1 1
+%\putrule from 1 1 to 0.5 1
+\arrow <4pt> [0.35, 1] from 1 1 to 0.5 1
+\putrule from 0.5 1 to 0.5 -1
+%\putrule from 0.5 -1 to 0.833 -1
+\arrow <4pt> [0.35, 1] from 0.5 -1 to 0.833 -1
+\putrule from 0.833 -1 to 0.833 0.67
+%\putrule from 0.833 0.67 to 0.583 0.67
+\arrow <4pt> [0.35, 1] from 0.833 0.67 to 0.583 0.67
+\putrule from 0.583 0.67 to 0.583 -0.67
+%\putrule from 0.583 -0.67 to 0.783 -0.67
+\arrow <4pt> [0.35, 1] from 0.583 -0.67 to 0.783 -0.67
+\putrule from  0.783 -0.67 to  0.783 0.33
+%\putrule from  0.783 0.33 to 0.6167 0.33
+\arrow <4pt> [0.35, 1] from 0.783 0.33 to 0.6167 0.33
+\putrule from  0.6167 0.33 to  0.6167 0
+\endpicture}}
+%\endtexonly
+%\figrdef{fig:alternating harmonic series}
+%\htmlfigure{Sequences_series-alternating_harmonic.html}
+\caption{The alternating harmonic series.}
+\label{fig:alternating harmonic series}
+\end{figure}
+
+The same argument works for any alternating sequence with terms that decrease in absolute value.
+The alternating series test is worth calling a theorem.
+
+\begin{theorem}{Alternating Series Test}{AltSeriesTest}
+Suppose that $\ds\{a_n\}_{n=1}^\infty$ is a non-increasing
+sequence of positive numbers and $\ds\lim_{n\to\infty}a_n=0$. Then the
+alternating series $\ds\sum_{n=1}^\infty (-1)^{n-1} a_n$ converges.
+\end{theorem}
+\begin{proof}
+The odd-numbered partial sums, $\ds s_1, s_3, s_5,\ldots, s_{2k+1},\ldots$,
+form a non-increasing sequence, because
+$\ds s_{2k+3}=s_{2k+1}-a_{2k+2}+a_{2k+3}\le s_{2k+1}$, since
+$\ds a_{2k+2}\ge a_{2k+3}$. This sequence is bounded below by
+$\ds s_2$, so it must converge, to some value $L$.
+Likewise, the partial sums $\ds s_2, s_4, s_6,\ldots,s_{2k},\ldots$,
+form a non-decreasing sequence that is bounded above by
+$\ds s_1$, so this sequence also converges, to some value $M$.
+Since $\ds\lim_{n\to\infty} a_n=0$ and
+$\ds s_{2k+1}= s_{2k}+a_{2k+1}$,
+$$
+  L=\lim_{k\to\infty}s_{2k+1}=\lim_{k\to\infty}(s_{2k}+a_{2k+1})=
+  \lim_{k\to\infty}s_{2k}+\lim_{k\to\infty}a_{2k+1}=M+0=M,
+$$
+so $L=M$; the two sequences of partial sums converge to the same
+limit, and this means the entire sequence of partial sums also
+converges to $L$.
+\end{proof}
+
+Another useful fact is implicit in this discussion. Suppose that 
+$$L=\sum_{n=1}^\infty (-1)^{n-1} a_n$$
+and that we approximate $L$ by a finite part of this sum, say
+$$L\approx \sum_{n=1}^N (-1)^{n-1} a_n.$$
+Because the terms are decreasing in size, we know that the true value
+of $L$ must be between this approximation and the next one, that is,
+between 
+$$
+  \sum_{n=1}^N (-1)^{n-1} a_n \quad \hbox{and}\quad
+  \sum_{n=1}^{N+1} (-1)^{n-1} a_n.
+$$
+Depending on whether $N$ is odd or even, the second will be larger or
+smaller than the first.
+
+\begin{example}{}{}
+Approximate the sum of the alternating harmonic series to within 0.05.
+\end{example}
+\begin{solution}
+We need to go to the point at which the next term to be added
+or subtracted is $1/10$. Adding up the first nine and the first ten
+terms we get approximately $0.746$ and $0.646$. These are $1/10$
+apart, so the value halfway between them, 0.696, is within 0.05 of the correct value.
+\end{solution}
+
+We have considered alternating series with first index 1, and in which
+the first term is positive, but a little thought shows this is not
+crucial. The same test applies to any similar series, such as
+$\ds\sum_{n=0}^\infty (-1)^n a_n$, $\ds\sum_{n=1}^\infty (-1)^n a_n$, 
+$\ds\sum_{n=17}^\infty (-1)^n a_n$, etc.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:AlternatingSeries}}
+
+\begin{enumialphparenastyle}
+
+Determine whether the following series converge or diverge.
+
+\begin{multicols}{2}
+\begin{ex}
+$\ds\sum_{n=1}^\infty {(-1)^{n-1}\over 2n+5}$
+\begin{sol}
+converges
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=4}^\infty {(-1)^{n-1}\over \sqrt{n-3}}$
+\begin{sol}
+converges
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=1}^\infty (-1)^{n-1}{n\over 3n-2}$
+\begin{sol}
+diverges
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=1}^\infty (-1)^{n-1}{\ln n\over n}$
+\begin{sol}
+converges
+\end{sol}
+\end{ex}
+
+\end{multicols}
+
+\begin{ex}
+Approximate $\ds\sum_{n=1}^\infty (-1)^{n-1}{1\over n^3}$ to within 0.005.
+\begin{sol}
+$0.90$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Approximate $\ds\sum_{n=1}^\infty (-1)^{n-1}{1\over n^4}$ to within 0.005. 
+\begin{sol}
+$0.95$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

@@ -1,0 +1,434 @@
+\section{Substitution Rule}\label{sec:SubRule}
+Needless to say, most integration problems we will encounter will
+not be so simply. That is to say we will require more than the basic
+integration rules we have seen. Here's a slightly more complicated example: Find
+$$\int 2x\cos(x^2)\,dx.$$
+This is not a ``simple'' derivative, but a little thought reveals that
+it must have come from an application of the chain rule. Multiplied
+on the ``outside'' is $2x$, which is the derivative of the ``inside''
+function $\ds x^2$. Checking:
+$${d\over dx}\sin(x^2)  = \cos(x^2){d\over dx}x^2 = 2x\cos(x^2),$$
+so 
+$$\int 2x\cos(x^2)\,dx=\sin(x^2)+C .$$
+
+To summarize: If we suspect that a given function is the derivative of
+another via the chain rule, we let $u$ denote a likely candidate for
+the inner function, then translate the given function so that it is
+written entirely in terms of $u$, with no $x$ remaining in the
+expression. If we can integrate this new function of $u$, then the
+antiderivative of the original function is obtained by replacing $u$
+by the equivalent expression in $x$.
+
+\begin{theorem}{Substitution Rule for Indefinite Integrals}{SubstitutionRule}
+If $u=g(x)$ is a differentiable function whose range is an interval $I$ and $f$ is continuous on $I$, then
+$$\int f(g(x))g'(x)\,dx=\int f(u)\,du.$$
+\end{theorem}
+
+Even in simple cases you may prefer to use this mechanical procedure,
+since it often helps to avoid silly mistakes. For example, consider
+again this simple problem:
+$$\int 2x\cos(x^2)\,dx.$$
+Let $\ds u=x^2$, then $du/dx = 2x$ or $du = 2x\,dx$. Since we have exactly 
+$2x\,dx$ in the original integral, we can replace it by $du$:
+$$\int 2x\cos(x^2)\,dx=\int \cos u\,du=\sin u +C = \sin(x^2)+C.$$
+This is not the only way to do the algebra, and typically there are
+many paths to the correct answer. Another possibility, for example,
+is: Since $du/dx = 2x$, $dx=du/2x$, and then the integral becomes
+$$\int 2x\cos(x^2)\,dx=\int 2x\cos u\,{du\over 2x}=\int \cos u\,du.$$
+The important thing to remember is that you must eliminate all
+instances of the original variable $x$.
+
+\begin{example}{Substitution Rule}{SubstitutionRuleex}
+Evaluate $\ds\int(ax+b)^n\,dx$, assuming $a,b$ are
+constants, $a\not=0$, and $n$ is a positive integer.
+\end{example}
+
+\begin{solution} 
+We let $u=ax+b$ so $du=a\,dx$ or $dx=du/a$. Then
+$$
+  \int(ax+b)^n\,dx=\int {1\over a} u^n\,du={1\over a(n+1)}u^{n+1}+C=
+  {1\over a(n+1)}(ax+b)^{n+1}+C.
+$$
+\end{solution}
+
+\begin{example}{Substitution Rule}{SubstitutionRulex}
+Evaluate $\ds\int \sin(ax+b)\,dx$, assuming that $a$ and $b$ are
+constants and $a\not=0$.
+\end{example}
+
+\begin{solution} 
+Again we let $u=ax+b$ so $du=a\,dx$ or $dx=du/a$. Then
+$$
+  \int\sin(ax+b)\,dx=\int {1\over a} \sin u\,du={1\over a}(-\cos u)+C=
+-{1\over a}\cos(ax+b)+C.
+$$
+\end{solution}
+
+\begin{formulabox}[Strategy for Substitution Rule]
+A general strategy to follow is:
+\begin{enumerate}\setlength{\itemsep}{0 in}
+\item Choose a possible $u=u(x)$. \dfont{Tip:} Choose a substitution $u$ so that its derivate also appears in the integral (up to a constant).
+\item Calculate $du=u'(x)~dx$.
+\item Either replace $u'(x)~dx$ by $du$, or replace $dx$ by $\ds{\frac{du}{u'(x)}}$, and cancel.
+\item Write the rest of the integrand in terms of $u$. If this is not possible, the substitution will not work: You must go back to step 1.
+\item Find the indefinite integral. (Again, if this is not possible, try a different substitution, or a different method).
+\item Rewrite the result in terms of $x$.
+\end{enumerate}
+\end{formulabox}
+
+\begin{example}{Substitution}{Substitution}
+Evaluate the following integral: $\ds\int \frac{2x}{\sqrt{1-4x^2}}\,dx.$
+\end{example}
+
+\begin{solution} 
+We try the substitution:
+$$u=1-4x^2.$$
+Then,
+$$du=-8x~dx$$
+In the numerator we have $2x~dx$, so rewriting the differential gives:
+$$-\frac{1}{4}du=2x~dx.$$
+Then the integral is:
+\begin{eqnarray*}
+\int \frac{2x}{\sqrt{1-4x^2}}\,dx&=&\int \left(1-4x^2\right)^{-1/2}(2x~dx)\\
+\\
+&=&\int u^{-1/2}\left(-\frac{1}{4}du\right)\\
+\\
+&=&\left(\frac{-1}{4}\right)\frac{u^{1/2}}{1/2}+C\\
+\\
+&=&-\frac{\sqrt{1-4x^2}}{2}+C
+\end{eqnarray*}
+\end{solution}
+
+
+
+\begin{example}{Substitution}{Substitution}
+Evaluate the following integral: $\ds\int \sech^2(7t-3)\ dt$
+\end{example}
+
+\begin{solution} 
+ We employ substitution, with $u = 7t-3$ and $du = 7dt$. We have:
+$$ \int \sech^2 (7t-3)\ dt=  \frac17 \int \sech^2 (u)\ du= \frac17\tanh (u) + C = \frac17\tanh (7t-3) + C.$$
+\end{solution}
+
+
+
+
+
+\begin{example}{Substitution}{Substitution2}
+Evaluate the following integral: $\ds\int \cos x(\sin x)^5\,dx.$
+\end{example}
+
+\begin{solution} 
+In this question we will let $u=\sin x$.
+Then,
+$$du=\cos x~dx.$$
+Thus, the integral becomes:
+\begin{eqnarray*}
+\int \cos x(\sin x)^5\,dx&=&\int u^5\,du\\
+\\
+&=&\frac{u^6}{6}+C\\
+\\
+&=&\frac{(\sin x)^6}{6}+C
+\end{eqnarray*}
+\end{solution}
+
+\begin{example}{Substitution}{Substitution3}
+Evaluate the following integral:
+$\ds\int \frac{\cos(\sqrt x)}{\sqrt x}\,dx.$
+%\vspace{-0.5cm}
+\end{example}
+
+\begin{solution} 
+We use the substitution:
+$$u=x^{1/2}.$$
+Then,
+$$du=\frac{1}{2}x^{-1/2}dx.$$
+Rewriting the differential we get:
+$$2~du=\frac{1}{\sqrt x}~dx.$$
+The integral becomes:
+\begin{eqnarray*}
+\int \frac{\cos(\sqrt x)}{\sqrt x}\,dx&=&2\int \cos u\,du\\
+\\
+&=&2\sin u+C\\
+\\
+&=&2\sin(\sqrt x)+C
+\end{eqnarray*}
+\end{solution}
+
+\begin{example}{Substitution}{Substitution4}
+Evaluate the following integral:
+$\ds\int 2x^3\sqrt{x^2+1}\,dx.$
+%\vspace{-0.5cm}
+\end{example}
+
+\begin{solution} 
+This problem is a little bit different than the previous ones.
+It makes sense to let:
+$$u=x^2+1,$$
+then
+$$du=2x~dx.$$
+Making this substitution gives:
+\begin{eqnarray*}
+\int 2x^3\sqrt{x^2+1}\,dx&=&\int x^2\sqrt{x^2+1}(2x)\,dx\\
+\\
+&=&\int x^2u^{1/2}\,du\\
+\end{eqnarray*}
+This is a problem because our integrals can't have a mixture of two variables in them.
+Usually this means we chose our $u$ incorrectly.
+However, in this case we can eliminate the remaining $x$'s from our integral by using:
+$$u=x^2+1\quad\to\quad x^2=u-1.$$
+We get:
+\begin{eqnarray*}
+\int x^2u^{1/2}\,du&=&\int (u-1)u^{1/2}\,du\\
+\\
+&=&\int u^{3/2}-u^{1/2}\,du\\
+\\
+&=&\frac{2}{5}u^{5/2}-\frac{2}{3}u^{3/2}+C\\
+\\
+&=&\frac{2}{5}(x^2+1)^{5/2}-\frac{2}{3}(x^2+1)^{3/2}+C
+\end{eqnarray*}
+\end{solution}
+
+The next example shows how to use the Substitution Rule when dealing with definite integrals.
+
+\begin{example}{Substitution Rule}{SubstitutionRuledefex}
+Evaluate $\ds\int_2^4 x\sin(x^2)\,dx$. 
+\end{example}
+
+\begin{solution} 
+First we compute the
+antiderivative, then evaluate the integral.
+Let $\ds u=x^2$, so $du=2x\,dx$ or $x\,dx=du/2$. Then
+$$
+  \int x\sin(x^2)\,dx=\int {1\over 2} \sin u\,du={1\over 2}(-\cos u)+C=
+  -{1\over 2}\cos(x^2)+C.
+$$
+Now
+$$
+  \int_2^4 x\sin(x^2)\,dx=\left.-{1\over 2}\cos(x^2)\right|_2^4
+  =-{1\over 2}\cos(16)+{1\over 2}\cos(4).
+$$
+A somewhat neater alternative to this method is to change the original
+limits to match the variable $u$. Since $\ds u=x^2$, when $x=2$, $u=4$,
+and when $x=4$, $u=16$. So we can do this:
+$$
+  \int_2^4 x\sin(x^2)\,dx=
+  \int_4^{16} {1\over 2} \sin u\,du=\left.-{1\over 2}(\cos u)\right|_4^{16}
+  =-{1\over 2}\cos(16)+{1\over 2}\cos(4).
+$$
+An incorrect, and dangerous, alternative is something like this:
+$$
+  \int_2^4 x\sin(x^2)\,dx=\int_2^4 {1\over 2} \sin u\,du=
+  \left.-{1\over 2}\cos (u)\right|_2^4=
+  \left.-{1\over 2}\cos(x^2)\right|_2^4=-{1\over 2}\cos(16)+{1\over
+  2}\cos(4).
+$$
+This is incorrect because $\ds\int_2^4 {1\over 2} \sin u\,du$
+means that $u$ takes on values between 2 and 4, which is wrong. It
+is dangerous, because it is very easy to get to 
+the point $\ds\left.-{1\over 2}\cos (u)\right|_2^4$ and forget to substitute
+$\ds x^2$ back in for $u$, thus getting the incorrect answer
+$\ds -{1\over 2}\cos(4)+{1\over 2}\cos(2)$. An acceptable alternative is something like:
+$$ 
+  \int_2^4 x\sin(x^2)\,dx=\int_{x=2}^{x=4} {1\over 2} \sin u\,du=
+  \left.-{1\over 2}\cos (u)\right|_{x=2}^{x=4}=
+  \left.-{1\over 2}\cos(x^2)\right|_2^4=-{\cos(16)\over 2}+{\cos(4)\over2}.
+$$
+\end{solution}
+
+To summarize, we have the following.
+
+\begin{theorem}{Substitution Rule for Definite Integrals}{SubstitutionRuledef}
+If $g'$ is continuous on $[a,b]$ and $f$ is continuous on the range of $u=g(x)$, then
+$$\int_a^b f(g(x))g'(x)\,dx=\int_{g(a)}^{g(b)}f(u)\,du.$$
+\end{theorem}
+
+\begin{example}{Substitution Rule}{SubstitutionRuledef2}
+Evaluate $\ds\int_{1/4}^{1/2}{\cos(\pi t)\over\sin^2(\pi t)}\,dt$. 
+\end{example}
+
+\begin{solution} 
+Let $u=\sin(\pi t)$ so $du=\pi\cos(\pi t)\,dt$ or $du/\pi=\cos(\pi
+t)\,dt$.
+We change the limits to $\ds \sin(\pi/4)=\sqrt2/2$ and 
+$\sin(\pi/2)=1$.
+Then
+$$
+  \int_{1/4}^{1/2}{\cos(\pi t)\over\sin^2(\pi t)}\,dt=
+  \int_{\sqrt2/2}^{1}{1\over \pi}{1\over u^2}\,du=
+  \int_{\sqrt2/2}^{1} {1\over \pi}u^{-2}\,du=
+  \left.{1\over \pi}{u^{-1}\over -1}\right|_{\sqrt2/2}^{1}=
+  -{1\over\pi}+{\sqrt2\over\pi}.
+$$
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for Section \ref{sec:SubRule}}
+
+\begin{enumialphparenastyle}
+
+Find the following indefinite and definite integrals.
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int (1-t)^9\,dt$
+\begin{sol}
+ $\ds -(1-t)^{10}/10+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int (x^2+1)^2\,dx$
+\begin{sol}
+ $\ds x^5/5+2x^3/3+x+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int x(x^2+1)^{100}\,dx$
+\begin{sol}
+ $\ds (x^2+1)^{101}/202+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int {1\over\root 3 \of {1-5t}}\,dt$ 
+\begin{sol}
+ $\ds -3(1-5t)^{2/3}/10+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int \sin^3x\cos x\,dx$
+\begin{sol}
+ $\ds (\sin^4x)/4+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int x\sqrt{100-x^2}\,dx$
+\begin{sol}
+ $\ds -(100-x^2)^{3/2}/3+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int {x^2\over\sqrt{1-x^3}}\,dx$
+\begin{sol}
+ $\ds \ds -2\sqrt{1-x^3}/3+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int \cos(\pi t)\cos\bigl(\sin(\pi t)\bigr)\,dt$
+\begin{sol}
+ $\ds \sin(\sin\pi t)/\pi+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int {\sin x\over\cos^3 x}\,dx$
+\begin{sol}
+ $\ds \ds 1/(2\cos^2 x)=(1/2)\sec^2x+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int\tan x\,dx$
+\begin{sol}
+ $-\ln|\cos x|+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+  $\ds\int_0^\pi\sin^5(3x)\cos(3x)\,dx$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int\sec^2x\tan x\,dx$
+\begin{sol}
+ $\ds \tan^2(x)/2+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int_0^{\sqrt{\pi}/2} x\sec^2(x^2)\tan(x^2)\,dx$
+\begin{sol}
+ $1/4$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int {\sin(\tan x)\over\cos^2x}\,dx$
+\begin{sol}
+ $-\cos(\tan x)+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int_3^4 {1\over(3x-7)^2}\,dx$
+\begin{sol}
+ $1/10$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int_0^{\pi/6}(\cos^2x - \sin^2x)\,dx$
+\begin{sol}
+ $\ds \sqrt3/4$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int {6x\over(x^2 - 7)^{1/9}}\,dx$
+\begin{sol}
+ $\ds (27/8)(x^2-7)^{8/9}$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int_{-1}^1 (2x^3-1)(x^4-2x)^6\,dx$
+\begin{sol}
+ $\ds -(3^7+1)/14$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int_{-1}^1 \sin^7 x\,dx$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds\int f(x) f'(x)\,dx$ 
+\begin{sol}
+ $\ds f(x)^2/2$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

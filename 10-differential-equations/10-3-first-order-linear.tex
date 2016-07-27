@@ -1,0 +1,396 @@
+\section{First Order Linear Equations}{}{}\label{sec:first order linear}
+As you might guess, a first order linear differential equation has the form 
+$\ds y' + p(t)y = f(t)$. Not only is this closely related in form
+to the first order homogeneous linear equation, we can use what we
+know about solving homogeneous equations to solve the general linear
+equation. 
+
+Suppose that $y_1(t)$ and $y_2(t)$ are solutions to 
+$\ds y' + p(t)y = f(t)$. Let $\ds g(t)=y_1-y_2$. Then
+\begin{eqnarray*}
+ g'(t)+p(t)g(t)&=&y_1'-y_2'+p(t)(y_1-y_2)\cr
+&=&(y_1'+p(t)y_1)-(y_2'+p(t)y_2)\cr
+&=&f(t)-f(t)=0.
+\end{eqnarray*}
+In other words, $\ds g(t)=y_1-y_2$ is a solution to the homogeneous
+equation $\ds y' + p(t)y = 0$. Turning this around, any solution
+to the linear equation $\ds y' + p(t)y = f(t)$, call it $y_1$, can
+be written as $y_2+g(t)$, for some particular $y_2$ and some solution
+$g(t)$ of the homogeneous equation $\ds y' + p(t)y = 0$. Since we
+already know how to find all solutions of the homogeneous equation,
+finding just one solution to the equation $\ds y' + p(t)y = f(t)$
+will give us all of them.
+
+How might we find that one particular solution to $\ds y' + p(t)y
+= f(t)$? Again, it turns out that what we already know helps. We know
+that the general solution to the homogeneous equation
+$\ds y' + p(t)y = 0$ looks like $\ds Ae^{P(t)}$. We now make an
+inspired guess: Consider the function $\ds v(t)e^{P(t)}$, in which we
+have replaced the constant parameter $A$ with the function
+$v(t)$. This technique is called 
+\dfont{variation of parameters}.
+For
+convenience write this as $s(t)=v(t)h(t)$, where $\ds h(t)=e^{P(t)}$ 
+is a solution to the
+homogeneous equation. Now let's compute a bit with $s(t)$:
+\begin{eqnarray*}
+s'(t)+p(t)s(t)&=&v(t)h'(t)+v'(t)h(t)+p(t)v(t)h(t)\cr
+&=&v(t)(h'(t)+p(t)h(t)) + v'(t)h(t)\cr
+&=&v'(t)h(t).\end{eqnarray*}
+The last equality is true because $\ds h'(t)+p(t)h(t)=0$. Since $h(t)$
+is a solution to the homogeneous equation. We are hoping to find a
+function $s(t)$ so that $\ds s'(t)+p(t)s(t)=f(t)$; we will have such a
+function if we can arrange to have $\ds v'(t)h(t)=f(t)$, that is,
+$\ds v'(t)=f(t)/h(t)$. But this is as easy (or hard) as finding an
+anti-derivative of $\ds f(t)/h(t)$. Putting this all together, the
+general solution to $\ds y' + p(t)y = f(t)$ is
+$$v(t)h(t)+Ae^{P(t)} = v(t)e^{P(t)}+Ae^{P(t)}.$$
+\begin{example}{Solving an IVP}{Solving an IVP}\label{Solving an IVP}
+ Find the solution of the initial value problem
+$\ds y'+3y/t=t^2$, $y(1)=1/2$. 
+\end{example}
+
+\begin{solution}
+First we find the general solution;
+since we are interested in a solution with a given condition at $t=1$,
+we may assume $t>0$.
+We start by solving the homogeneous equation as usual; call the
+solution $g$:
+$$g=Ae^{-\int (3/t)\,dt}=Ae^{-3\ln t}=At^{-3}.$$
+Then as in the discussion, $\ds h(t)=t^{-3}$ and
+$\ds v'(t)=t^2/t^{-3}=t^5$, so $\ds v(t)=t^6/6$. We know that
+every solution to the equation looks like
+$$v(t)t^{-3}+At^{-3}={t^6\over6}t^{-3}+At^{-3}={t^3\over6}+At^{-3}.$$
+Finally we substitute to find $A$:
+\begin{eqnarray*}
+{1\over 2}&=&{(1)^3\over6}+A(1)^{-3}={1\over6}+A\cr
+A&=&{1\over 2}-{1\over6}={1\over3}.
+\end{eqnarray*}
+The solution is then
+$$y={t^3\over6}+{1\over3}t^{-3}.$$
+\end{solution}
+
+Another common method for solving such a differential equation is by means of an
+\dfont{integrating factor}. 
+
+\subsection*{Using an Integrating Factor}
+\label{sec:integrating-factor}
+
+Linear equations of the form $ y'+p(t)y=q(t) $ can always be solved by multiplying both sides of the equation
+with a specially chosen function called the \emph{integrating factor,} $ I(t)$.  It is
+defined by
+\begin{equation}
+I (t) = e^{\int p(t)\; dt}.
+  \label{eq:integrating-factor-defined}
+\end{equation}
+ It looks like we just pulled this definition
+of $I(t)$ out of a hat.  
+
+Multiply the equation by the integrating factor
+$I(t)$ to get
+\[
+I(t)\frac{d y}{d t}+p(t)I(t)y = I(t)q(t).
+\]
+By the chain rule the integrating factor satisfies
+\[
+\frac{ d }{d t}I(t) = \frac{d} {d t} e^{\int p(t)\; dt}
+= \underbrace{\frac{d} {d t} \left( \int p(t)\; dt\right)}_{=p(t)} ~\underbrace{e^{\int p(t)\; dt}_{}}_{=I(t)}
+= p(t)I(t).
+\]
+Therefore one has
+\begin{align*}
+  \frac{d }{d t}I(t)y
+  &= I(t)\frac{\; d }{\; d t}y +p(t)I(t)y \\
+  &= I(t)\Bigl\{\frac{d}{d t} y+p(t)y \Bigr\}\\
+  &= I(t)q(t).
+\end{align*}
+Integrating and then dividing by the integrating factor gives the solution
+\[
+y=\frac1{I(t)}\left(\int I(t)q(t)\,d t+C\right).
+\]
+In this derivation we have to divide by $I(t)$, but since $I(t)=e^{\int p(t)\; dt}$ and since
+exponentials never vanish we know that $I (t)\neq0$, so we can always divide by $I
+(t)$.
+
+
+% In the differential equation
+%$\ds y'+p(t)y=f(t)$, we note that if we multiply through by a function
+%$I(t)$ to get $\ds I(t)y'+I(t)p(t)y=I(t)f(t)$, the left hand side
+%looks like it could be a derivative computed by the product rule:
+%$${d\over dt}(I(t)y)=I(t)y'+I'(t)y.$$
+%Now if we could choose $I(t)$ so that $I'(t)=I(t)p(t)$, this would be
+%exactly the left hand side of the differential equation. But this is
+%just a first order homogeneous linear equation, and we know a solution
+%is $\ds I(t)=e^{Q(t)}$, where $\ds Q(t)=\int p\,dt$; note that 
+%$Q(t)=-P(t)$, where $P(t)$ appears in the variation of parameters
+%method and $P'(t)=-p$. Now the modified differential equation is 
+%\begin{eqnarray*}
+%e^{-P(t)}y'+e^{-P(t)}p(t)y&=&e^{-P(t)}f(t)\cr
+%{d\over dt}(e^{-P(t)}y)&=&e^{-P(t)}f(t).\cr
+%\end{eqnarray*}
+%Integrating both sides gives
+%\begin{eqnarray*}
+%e^{-P(t)}y&=&\int e^{-P(t)}f(t)\,dt\cr
+%y&=&e^{P(t)}\int e^{-P(t)}f(t)\,dt.\cr
+%\end{eqnarray*}
+If you look carefully, you will see that this is exactly the same
+solution we found by variation of parameters, because
+$\ds e^{-P(t)}q(t)=q(t)/h(t)$.
+
+Some people find it easier to remember how to use the integrating
+factor method, rather than variation of parameters. Since ultimately they
+require the same calculation, you should use whichever of the two methods
+appeals to you more strongly. 
+
+
+
+
+
+\begin{example}{}{sec:an-example}
+Find the general solution to the differential equation
+\[
+\frac{\; d y} {\; d x} = y + x.
+\]
+Then find the solution that satisfies \upshape
+\begin{equation}
+  y(2)=0.
+  \label{eq:example-linear-initial-condition}
+\end{equation}
+\end{example}
+
+
+\begin{solution}
+We first write the equation in the standard linear form
+\begin{equation}
+  \label{eq:diffeq-linear-example}
+  \frac{\; d y} {\; d x} - y = x,
+\end{equation}
+and then multiply by the integrating factor $I(x)$.  We could of course memorize
+the formula 
+\[
+I(x) = e^{\int p(x)\;dx}
+\]
+but the following procedure will always give us the integrating factor.
+
+Assuming that $I(x)$ is as yet unknown we multiply the differential
+equation~\eqref{eq:diffeq-linear-example} by $I$,
+\begin{equation}
+  I(x)\frac{\; d y} {\; d x} - I(x) y = I(x)x.
+  \label{eq:example-multiplied-with-m}
+\end{equation}
+If $I(x)$ is such that
+\begin{equation}
+  -I(x) = \frac{\; d I(x)} {\; d x},
+  \label{eq:integrating-factor-condition}
+\end{equation}
+then equation~\eqref{eq:example-multiplied-with-m} implies
+\[
+  I(x)\frac{\; d y} {\; d x} + \frac{\; d I(x)} {\; d x} y = I(x)x.
+\]
+The expression on the left is exactly what comes out of the product rule -- this is
+the point of multiplying with $I(x)$ and then insisting
+on~\eqref{eq:integrating-factor-condition}.  So, if $I(x)$
+satisfies~\eqref{eq:integrating-factor-condition}, then the differential equation for
+$y$ is equivalent with
+\[
+\frac{\; d I(x) y} {\; d x} = I(x) x.
+\]
+We can integrate this equation,
+\[
+I(x) y = \int I(x) x \;\; d x,
+\]
+and thus find the solution
+\begin{equation}
+  y(x) =  \frac{1} {I(x)}  \int I(x) x \;\; d x.
+  \label{eq:example-linear-almost-solved}
+\end{equation}
+All we have to do is find the integrating factor $I$.  This factor can be any
+function that satisfies~\eqref{eq:integrating-factor-condition}.
+Equation~\eqref{eq:integrating-factor-condition} is a differential equation for $I$,
+but it is separable, and we can easily solve it:
+\[
+\frac{\; d I} {\; d x} = -I \iff
+\frac{1} {I} \; d I = -\; d x \iff
+\ln|I| = -x +C.
+\]
+Since \textit{we only need one integrating factor} $I$ we are not interested in
+finding all solutions of~\eqref{eq:integrating-factor-condition}, and therefore we
+can choose the constant $C$.  The simplest choice is $C=0$, which leads to
+\[
+\ln |I| = -x \iff |I| = e^{-x} \iff I = \pm e^{-x}. 
+\]
+Again, we only need one integrating factor, so we may choose the $\pm$~sign: the simplest
+choice for $I$ here is
+\[
+m(x) = e^{-x}.
+\]
+With this choice of integrating factor we can now complete the calculation that led
+to~\eqref{eq:example-linear-almost-solved}.  The solution to the differential
+equation is
+\begin{align*}
+  y(x)
+  &= \frac{1} {I(x)}  \int I(x) x \;\; d x \\
+  &= \frac{1} {e^{-x}} \int e^{-x}x \;\; d x
+  &\text{\color{red}\sffamily\footnotesize%
+    (integrate by parts)}\\
+  &= e^{x} \Bigl\{-e^{-x}x - e^{-x} + C\Bigr\} \\
+  &= -x-1+Ce^x.
+\end{align*}
+This is the general solution.
+
+To find the solution that satisfies not just the differential equation, but also the
+``initial condition''~\eqref{eq:example-linear-initial-condition}, i.e.~$y(2)=0$, we
+compute $y(2)$ for the general solution,
+\[
+y(2) = -2-1+Ce^2 = -3 + Ce^2.
+\]
+The requirement $y(2) = 0$ then tells us that $C=3e^{-2}$.  The solution of the
+differential equation that satisfies the prescribed initial condition is therefore
+\[
+y(x) = -x-1+3e^{x-2}.
+\]
+\end{solution}
+
+
+
+\begin{example}
+Use the Integrating Factor method to solve the IVP in Example \ref{exa:Solving an IVP}
+\end{example}
+
+
+\begin{solution}
+Given $\ds y'+3y/t=t^2$, we have $ p(t) = \frac{3}{t} $, $ q(t) =  t^2 $, the integrating factor is $ I(t) = e^{\int(p(t)\; dt} $, and the solution to the differential equation is
+\[
+y=\frac{1}{I(t)}\int I(t)q(t)\; dt
+\] 
+where 
+\[
+I(t) = \ds e^{\int 3/t}=e^{3\ln |t|}=|t^3|=\pm t^3
+\]
+
+Again, we only need one integrating factor, so we may choose $ I(t)=t^3 $. So the general solution is
+
+\[
+y=\frac{1}{t^3}\int t^3\cdot t^2\; dt = \frac{1}{t^3}\int t^5\; dt = \frac{1}{t^3}\left(\frac{t^6}{6}+C\right) =\frac{t^3}{6}+\frac{C}{t^3} 
+\] 
+
+The initial value $ y(1)=\frac12 $ then gives $ C=\frac13 $, giving the same answer as before.
+ 
+\end{solution}
+
+%Using this method to solve the  the solution of the previous
+%example would look just a bit different: Starting with
+%$\ds y'+3y/t=t^2$, we recall that the integrating factor is
+%$I(t) = \ds e^{\int 3/t}=e^{3\ln t}=t^3$. Then we multiply through by the
+%integrating factor and solve:
+%\begin{eqnarray*}
+%t^3y'+t^3 3y/t&=&t^3t^2\cr
+%t^3y'+t^2 3y&=&t^5\cr
+%{d\over dt}(t^3 y)&=&t^5\cr
+%t^3 y&=&t^6/6\cr
+%y&=&t^3/6.
+%\end{eqnarray*}
+%This is the same answer, of course, and the problem is then finished
+%just as before.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:first order linear}}
+
+\begin{enumialphparenastyle}
+
+In the following exercises, find the general solution of the equation.
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' +4y=8$
+\begin{sol}
+ $\ds y=Ae^{-4t}+2$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y'-2y=6$
+\begin{sol}
+ $\ds y=Ae^{2t}-3$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' +ty=5t$
+\begin{sol}
+ $\ds y=Ae^{-(1/2)t^2}+5$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y'+e^ty=-2e^t$
+\begin{sol}
+ $\ds y=Ae^{-e^t}-2$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y'-y=t^2$
+\begin{sol}
+ $\ds y=Ae^{t}-t^2-2t-2$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds 2y' +y=t$
+\begin{sol}
+ $\ds y=Ae^{-t/2}+t-2$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds ty' -2y=1/t$, $t>0$
+\begin{sol}
+ $\ds y=At^2-{1\over3t}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds ty'+y=\sqrt{t}$, $t>0$
+\begin{sol}
+ $\ds y={c\over t}+{2\over3}\sqrt t$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y'\cos t+y\sin t=1$, $-\pi/2<t<\pi/2$
+\begin{sol}
+ $\ds y= A\cos t+\sin t$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' + y\sec t=\tan t$, $-\pi/2<t<\pi/2$
+\begin{sol}
+ $\ds y= {A\over\sec t+\tan t}+1-{t\over\sec t+\tan t}$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

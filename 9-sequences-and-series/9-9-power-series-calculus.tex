@@ -1,0 +1,105 @@
+\section{Calculus with Power Series}\label{sec:CalculuswithPowerSeries}
+
+We now know that some functions can be expressed as power series,
+which look like infinite polynomials. Since it is easy to find derivatives
+and integrals of polynomials, we might hope that we can take derivatives
+and integrals of power series in an analogous way. In fact we can, as stated
+in the following theorem, which we will not prove here.
+
+\begin{theorem}{}{}
+Suppose the power series $f(x)=\ds\sum_{n=0}^\infty a_n(x-a)^n$ has
+radius of convergence $R$. Then
+\begin{align*}
+  f'(x)&=\sum_{n=0}^\infty na_n(x-a)^{n-1},	\\
+  \int f(x)\,dx &= C+\sum_{n=0}^\infty {a_n\over n+1}(x-a)^{n+1},
+\end{align*}
+and these two series have radius of convergence $R$.
+\end{theorem}
+
+\begin{example}{}{}
+Find a power series representation of $\ln|1-x|$.
+\end{example}
+\begin{solution}
+Starting with the geometric series:
+\begin{align*}
+  {1\over 1-x} &= \sum_{n=0}^\infty x^n	\\
+  \int{1\over 1-x}\,dx &= -\ln|1-x| = \sum_{n=0}^\infty {1\over n+1}x^{n+1}	\\
+  \ln|1-x| &= \sum_{n=0}^\infty -{1\over n+1}x^{n+1}
+\end{align*}
+when $|x|<1$. The series does not converge when $x=1$ but does
+converge when $x=-1$ or $1-x=2$. The interval of convergence is
+$[-1,1)$, or $0<1-x\le2$.
+We can use this series to express $\ln(a)$ as a series
+when $0<a\le2$ by setting $x-1=a$. For example
+$$
+  \ln(3/2)=\ln\left(1-(-1/2)\right)=
+  \sum_{n=0}^\infty (-1)^n{1\over n+1}{1\over 2^{n+1}}.
+$$
+We can use this in turn to approximate $\ln(3/2)$:
+$$
+  \ln(3/2)\approx {1\over 2}-{1\over 8}+{1\over 24}-{1\over 64}
+  +{1\over 160}-{1\over 384}+{1\over 896}
+  ={909\over 2240}\approx 0.406
+.$$
+Because this is an alternating series with decreasing terms,
+we know that the true value is between $909/2240$ and
+$909/2240-1/2048=29053/71680\approx .4053$, so $0.4053\leq\ln(3/2)\leq 0.406$.
+\end{solution}
+
+With a bit of arithmetic, we can approximate values outside of the interval of convergence:
+
+\begin{example}{}{}
+Find an approximation for $\ln(9/4)$.
+\end{example}
+\begin{solution}
+We can use the approximation we just computed, plus some rules for logarithms:
+$$\ln(9/4)=\ln((3/2)^2)=2\ln(3/2)\approx 0.812,$$
+and using our bounds above,
+$$0.8106\leq \ln(9/4)\leq 0.812.$$
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:CalculuswithPowerSeries}}
+
+\begin{enumialphparenastyle}
+
+\begin{ex}
+Find a series representation for $\ln 2$.
+\begin{sol}
+the alternating harmonic series
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find a power series representation for $\ds 1/(1-x)^2$.
+\begin{sol}
+$\ds\sum_{n=0}^\infty (n+1)x^n$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find a power series representation for $\ds 2/(1-x)^3$.
+\begin{sol}
+$\ds\sum_{n=0}^\infty (n+1)(n+2)x^n$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find a power series representation for $\ds 1/(1-x)^3$.
+What is the radius of convergence?
+\begin{sol}
+$\ds\sum_{n=0}^\infty {(n+1)(n+2)\over 2}x^n$, $R=1$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find a power series representation for $\ds\int\ln(1-x)\,dx$.
+\begin{sol}
+$\ds C+\sum_{n=0}^\infty {-1\over (n+1)(n+2)}x^{n+2}$ 
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}
+\clearpage

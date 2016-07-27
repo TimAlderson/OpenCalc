@@ -1,0 +1,142 @@
+\section{Absolute Convergence}\label{sec:AbsoluteConvergence}
+
+Roughly speaking there are two ways for a series to converge: As in
+the case of $\sum 1/n^2$, the individual terms get small very quickly,
+so that the sum of all of them stays finite, or, as in the case of
+$\ds \sum (-1)^{n-1}/n$, the terms don't get small fast enough ($\sum 1/n$
+diverges), but a mixture of positive and negative terms provides
+enough cancellation to keep the sum finite. You might guess from what
+we've seen that if the terms get small fast enough that the sum of their
+absolute values converges, then the series will still converge regardless
+of which terms are actually positive or negative. 
+
+\begin{theorem}{Absolute Convergence}{AbsConvTheorem}
+If $\ds\sum_{n=0}^\infty |a_n|$ converges, then 
+$\ds\sum_{n=0}^\infty a_n$ converges.
+\end{theorem}
+\begin{proof}
+Note that $\ds 0\le a_n+|a_n|\le 2|a_n|$ so by the comparison test
+$\ds\sum_{n=0}^\infty (a_n+|a_n|)$ converges. Now
+$$
+  \sum_{n=0}^\infty (a_n+|a_n|) -\sum_{n=0}^\infty |a_n|
+  = \sum_{n=0}^\infty a_n+|a_n|-|a_n| = \sum_{n=0}^\infty a_n 
+$$
+converges by Theorem~\ref{thm:SeriesLinear}.
+\end{proof}
+
+So given a series $\sum a_n$ with both positive and negative terms,
+you should first ask whether $\sum |a_n|$ converges. This may be an
+easier question to answer, because we have tests that apply
+specifically to terms with non-negative terms. If $\sum |a_n|$
+converges then you know that $\sum a_n$ converges as well. If $\sum
+|a_n|$ diverges then it still may be true that $\sum a_n$
+converges, but you will need to use other techniques to decide.
+Intuitively this results says that it is (potentially) easier for
+$\sum a_n$ to converge than for $\sum |a_n|$ to converge, because terms
+may partially cancel in the first series. 
+
+If $\sum |a_n|$ converges we say that $\sum a_n$ converges \dfont{absolutely};
+to say that $\sum a_n$ converges absolutely is to say that the terms of the series
+get small (in absolute value) quickly enough to guarantee that the series converges,
+regardless of whether any of the terms cancel each other. If $\sum a_n$
+converges but $\sum |a_n|$ does not, we say that $\sum a_n$ converges
+\dfont{conditionally}. For
+example $\ds\sum_{n=1}^\infty (-1)^{n-1} {1\over n^2}$ converges
+absolutely, while $\ds\sum_{n=1}^\infty (-1)^{n-1} {1\over n}$
+converges conditionally.
+
+\begin{example}{}{}
+Does $\ds\sum_{n=2}^\infty {\sin n\over n^2}$ converge?
+\end{example}
+\begin{solution}
+In Example~\ref{exa:AbsSineOverNSquared} we saw that 
+$\ds\sum_{n=2}^\infty {|\sin n|\over n^2}$ converges, so the given
+series converges absolutely.
+\end{solution}
+
+\begin{example}{}{}
+Does $\ds\sum_{n=0}^\infty (-1)^{n}{3n+4\over 2n^2+3n+5}$ converge?
+\end{example}
+\begin{solution}
+Taking the absolute value, $\ds\sum_{n=0}^\infty {3n+4\over 2n^2+3n+5}$
+diverges by comparison to $\ds\sum_{n=1}^\infty {3\over 10n}$, so if
+the series converges it does so conditionally. It is true that
+$\ds\lim_{n\to\infty}(3n+4)/(2n^2+3n+5)=0$, so to apply the
+alternating series test we need to know whether the terms are
+decreasing.
+If we let $\ds f(x)=(3x+4)/(2x^2+3x+5)$ then 
+$\ds f'(x)=-(6x^2+16x-3)/(2x^2+3x+5)^2$, and it is not hard to see that
+this is negative for $x\ge1$, so the series is decreasing and by the
+alternating series test it converges.
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:AbsoluteConvergence}}
+
+\begin{enumialphparenastyle}
+
+Determine whether each series converges absolutely, converges
+conditionally, or diverges.
+
+\begin{multicols}{2}
+
+\begin{ex}
+$\ds\sum_{n=1}^\infty (-1)^{n-1}{1\over 2n^2+3n+5}$
+\begin{sol}
+converges absolutely
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=1}^\infty (-1)^{n-1}{3n^2+4\over 2n^2+3n+5}$
+\begin{sol}
+diverges
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=1}^\infty (-1)^{n-1}{\ln n\over n}$
+\begin{sol}
+converges conditionally
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=1}^\infty (-1)^{n-1} {\ln n\over n^3}$
+\begin{sol}
+converges absolutely
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=2}^\infty (-1)^n{1\over \ln n}$
+\begin{sol}
+converges conditionally
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=0}^\infty (-1)^{n} {3^n\over 2^n+5^n}$
+\begin{sol}
+converges absolutely
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=0}^\infty (-1)^{n} {3^n\over 2^n+3^n}$
+\begin{sol}
+diverges
+\end{sol}
+\end{ex}
+
+\begin{ex}
+$\ds\sum_{n=1}^\infty (-1)^{n-1} {\arctan n\over n}$
+\begin{sol}
+converges conditionally
+\end{sol}
+\end{ex}
+
+\end{multicols}
+
+\end{enumialphparenastyle}

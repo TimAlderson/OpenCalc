@@ -1,0 +1,230 @@
+\section{Second Order Linear Equations - Variation of Parameters}{}{}\label{sec:2nd order differential equations two} 
+The method of the last section works only when the function $f(t)$ in
+$\ds ay''+by'+cy=f(t)$ has a particularly nice form, namely,
+when the derivatives of $f$ look much like $f$ itself. In other cases
+we can try variation of parameters as we did in the first order case.
+
+Since as before
+$a\not=0$, we can always divide by $a$ to make the coefficient of
+$\ds y''$ equal to 1. Thus, to simplify the discussion, we assume $a=1$. 
+We know that the differential equation $\ds y''+by'+cy=0$
+has a general solution $\ds y=Ay_1+By_2$. As before, we guess a
+particular solution to $\ds y''+by'+cy=f(t)$; this time we use
+the guess $\ds y=u(t)y_1+v(t)y_2$. Compute the derivatives:
+\begin{eqnarray*}
+y'&=&u'y_1+uy'_1+v'y_2+vy'_2\cr
+y''&=&u''y_1+u'y'_1+u'y'_1+uy''_1+v''y_2+v'y'_2+v'y'_2+vy''_2.
+\end{eqnarray*}
+Now substituting:
+\begin{eqnarray*}
+y''+by'+cy&=&
+u''y_1+u'y'_1+u'y'_1+uy''_1+v''y_2+v'y'_2+v'y'_2+vy''_2\cr
+&&\qquad + bu'y_1+buy'_1+bv'y_2+bvy'_2+cuy_1+cvy_2\cr
+&=&(uy''_1+buy'_1+cuy_1)+(vy''_2+bvy'_2+cvy_2)\cr
+&&\qquad + b(u'y_1+v'y_2) + (u''y_1+u'y'_1+v''y_2+v'y'_2)+
+(u'y'_1+v'y'_2)\cr
+&=&0+0+ b(u'y_1+v'y_2) + (u''y_1+u'y'_1+v''y_2+v'y'_2)+
+(u'y'_1+v'y'_2).
+\end{eqnarray*}
+The first two terms in parentheses are zero because $y_1$ and $y_2$
+are solutions to the associated homogeneous equation. Now we engage in
+some wishful thinking. If $\ds u'y_1+v'y_2=0$, then we also have
+$\ds u''y_1+u'y'_1+v''y_2+v'y'_2=0$ by taking derivatives of both sides. This reduces the
+entire expression to $\ds u'y'_1+v'y'_2=0$. We want this
+to be $f(t)$, that is, we need 
+$\ds u'y'_1+v'y'_2=f(t)$.
+So we would very much like these equations to be true:
+\begin{eqnarray*}
+u'y_1+v'y_2&=&0\cr
+u'y'_1+v'y'_2&=&f(t).
+\end{eqnarray*}
+This is a system of two equations in the two unknowns $\ds u'$ and
+$\ds v'$, so we can solve as usual to get $\ds u'=g(t)$ and
+$\ds v'=h(t)$. Then we can find $u$ and $v$ by computing
+antiderivatives. This is of course the sticking point in the whole
+plan, since the antiderivatives may be impossible to
+find. Nevertheless, this sometimes works out and is worth a try.
+
+\begin{example}{Variation of Parameters}{Variation of Parameters}\label{Variation of Parameters}
+Consider the equation $\ds y''-5y'+6y=\sin t$. 
+Solve using variation of parameters. 
+\end{example}
+
+\begin{solution}
+The solution to the homogeneous equation is
+$\ds Ae^{2t}+Be^{3t}$, so the 
+simultaneous equations to be solved are
+\begin{eqnarray*}
+u'e^{2t}+v'e^{3t}&=&0\cr
+2u'e^{2t}+3v'e^{3t}&=&\sin t.
+\end{eqnarray*}
+If we multiply the first equation by 2 and subtract it from the second
+equation we get
+\begin{eqnarray*}
+v'e^{3t}&=&\sin t\cr
+v'&=&e^{-3t}\sin t\cr
+v&=&-{1\over 10}(3\sin t+\cos t)e^{-3t},
+\end{eqnarray*}
+using integration by parts. Then from the first equation:
+\begin{eqnarray*}
+u'&=&-e^{-2t}v'e^{3t}=-e^{-2t}e^{-3t}\sin(t)e^{3t}=-e^{-2t}\sin
+t\cr
+u&=&{1\over 5}(2\sin t+\cos t)e^{-2t}.
+\end{eqnarray*}
+Now the particular solution we seek is
+\begin{eqnarray*}
+ue^{2t}+ve^{3t}&=&{1\over 5}(2\sin t+\cos t)e^{-2t}e^{2t}
+-{1\over 10}(3\sin t+\cos t)e^{-3t}e^{3t}\cr
+&=&{1\over 5}(2\sin t+\cos t)-{1\over 10}(3\sin t+\cos t)\cr
+&=&{1\over 10}(\sin t+\cos t),
+\end{eqnarray*}
+and the solution to the differential equation is
+$\ds Ae^{2t}+Be^{3t}+(\sin t+\cos t)/10$. For comparison (and
+practice) you might want to solve this using the method of
+undetermined coefficients---both techniques should yield the same result.
+\end{solution}
+
+\begin{example}{Variation of Parameters}{Variation of Parameters 2}\label{Variation of Parameters 2}
+ The differential equation $\ds y''-5y'+6y=e^t\sin t$
+can be solved using the method of undetermined coefficients, though we
+have not seen any examples of such a solution. Again, we will solve it
+by variation of parameters.
+\end{example}
+
+\begin{solution}
+The equations to be solved are 
+\begin{eqnarray*}
+u'e^{2t}+v'e^{3t}&=&0\cr
+2u'e^{2t}+3v'e^{3t}&=&e^t\sin t.
+\end{eqnarray*}
+If we multiply the first equation by 2 and subtract it from the second
+equation we get
+\begin{eqnarray*}
+v'e^{3t}&=&e^t\sin t\cr
+v'&=&e^{-3t}e^t\sin t=e^{-2t}\sin t\cr
+v&=&-{1\over 5}(2\sin t+\cos t)e^{-2t}.
+\end{eqnarray*}
+Then substituting we get
+\begin{eqnarray*}
+u'&=&-e^{-2t}v'e^{3t}=-e^{-2t}e^{-2t}\sin(t)e^{3t}=-e^{-t}\sin
+t\cr
+u&=&{1\over 2}(\sin t+\cos t)e^{-t}.
+\end{eqnarray*}
+The particular solution is
+\begin{eqnarray*}
+ue^{2t}+ve^{3t}&=&{1\over 2}(\sin t+\cos t)e^{-t}e^{2t}
+-{1\over 5}(2\sin t+\cos t)e^{-2t}e^{3t}\cr
+&=&{1\over 2}(\sin t+\cos t)e^t-{1\over 5}(2\sin t+\cos t)e^t\cr
+&=&{1\over 10}(\sin t+3\cos t)e^t,
+\end{eqnarray*}
+and the solution to the differential equation is
+$\ds Ae^{2t}+Be^{3t}+e^t(\sin t+3\cos t)/10$.
+\end{solution}
+
+\begin{example}{Solving a DE}{Solving a DE}\label{Solving a DE}
+ The differential equation $\ds y'' -2y'+y=e^t/t^2$ is
+not of the form amenable to the method of undetermined
+coefficients. Solve it using variation of parameters.
+\end{example}
+
+\begin{solution}
+The solution to the homogeneous equation is
+$\ds Ae^t+Bte^t$ and so the simultaneous equations are
+\begin{eqnarray*}
+u'e^{t}+v'te^{t}&=&0\cr
+u'e^{t}+v'te^{t}+v'e^t&=&{e^t\over t^2}.
+\end{eqnarray*}
+Subtracting the equations gives
+\begin{eqnarray*}
+v'e^{t}&=&{e^t\over t^2}\cr
+v'&=&{1\over t^2}\cr
+v&=&-{1\over t}.
+\end{eqnarray*}
+Then substituting we get
+\begin{eqnarray*}
+u'e^t&=&-v'te^t=-{1\over t^2}te^t\cr
+u'&=&-{1\over t}\cr
+u&=&-\ln t.
+\end{eqnarray*}
+The solution is $\ds Ae^t+Bte^t-e^t\ln t-e^t$.
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:2nd order differential equations two}}
+
+\begin{enumialphparenastyle}
+
+Find the general solution to the differential equation using variation
+of parameters.
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y''+y=\tan x$
+\begin{sol}
+ $\ds A\sin(t)+B\cos(t)-\hfill\break\cos t\ln|\sec t+\tan t|$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y''+y=e^{2t}$
+\begin{sol}
+ $\ds A\sin(t)+B\cos(t)+{1\over5}e^{2t}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y''+4y=\sec x$
+\begin{sol}
+ $\ds A\sin(2t)+B\cos(2t)+\cos t-\sin t\cos t\ln|\sec t+\tan t|$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y''+4y=\tan x$
+\begin{sol}
+ $\ds A\sin(2t)+B\cos(2t)+{1\over2}\sin(2t)\sin^2(t)+
+{1\over2}\sin(2t)\ln|\cos t|-{t\over2}\cos(2t)+{1\over4}\sin(2t)\cos(2t)$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y''+y'-6y=t^2e^{2t}$
+\begin{sol}
+ $\ds Ae^{2t}+Be^{-3t}+{t^3\over15}e^{2t}-\left({t^2\over5}
+-{2t\over25}+{2\over125}\right){e^{2t}\over5}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y''-2y'+2y=e^{t}\tan(t)$
+\begin{sol}
+ $\ds Ae^{t}\sin t+Be^{t}\cos t-e^t\cos t\ln|\sec t+\tan t|$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y''-2y'+2y=\sin(t)\cos(t)$ (This is rather messy
+when done by variation of parameters; compare to undetermined coefficients.)
+\begin{sol}
+ $\ds Ae^{t}\sin t+Be^{t}\cos t-
+{1\over10}\cos t(\cos^3 t+3\sin^3 t-2\cos t-\sin t)+
+{1\over10}\sin t(\sin^3 t-3\cos^3 t-2\sin t+\cos t)=
+{1\over10}\cos(2t)-{1\over20}\sin(2t)$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

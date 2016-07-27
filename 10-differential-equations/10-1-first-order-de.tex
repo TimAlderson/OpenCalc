@@ -1,0 +1,821 @@
+\section{First Order Differential Equations}\label{sec:first order differential equations}
+We start by considering equations in which only the first derivative
+of the function appears. 
+
+\begin{definition}{First Order Differential Equation}{First Order Differential Equation}\label{First Order Differential Equation}
+A \deffont{first order differential equation} is an equation of
+the form $F(t, y, y')=0$.
+A solution of a first order differential equation is a
+function $f(t)$ that makes $\ds F(t,f(t),f'(t))=0$ for every value of $t$.
+\end{definition}
+
+Here, $F$ is a function of three
+variables which we label $t$, $y$, and $y'$. It is understood
+that $y' $ will explicitly appear in the equation although $t$
+and $y$ need not. The term ``first order'' means that the first
+derivative of $y$ appears, but no higher order derivatives do.
+
+\begin{example}{Newton's Law of Cooling}{Newton's Law of Cooling}\label{Newton's Law of Cooling}
+ The equation from Newton's law of cooling,
+$y'=k(y-T)$ is a first order
+differential equation; $F(t,y,y')=k(y-T)-y'$.
+\end{example}
+
+\begin{example}{A First Order Differential Equation}{A First Order Differential Equation}\label{A First Order Differential Equation}
+ $\ds y'=t^2+1$ is a first order differential
+equation; $\ds F(t,y,y')= y'-t^2-1$. All solutions to this
+equation are of the form $\ds t^3/3+t+C$. 
+\end{example}
+
+\begin{definition}{First Order Initial Value Problem}{First Order Initial Value Problem}\label{First Order Initial Value Problem}
+A \deffont{first order initial value problem} is a system of
+equations of the form
+$F(t, y, y')=0$, $y(t_0)=y_0$. Here $t_0 $ is a fixed time
+and $y_0$ is a number.
+A solution of an initial value problem is a solution $f(t)$ of
+the differential equation that also satisfies the 
+\deffont{initial condition} $f(t_0) = y_0$.
+\end{definition}
+
+\begin{example}{An Initial Value Problem}{An Initial Value Problem}\label{An Initial Value Problem}
+Verify that the initial value problem $\ds y'=t^2+1$, $y(1)=4$
+has solution $\ds f(t)=t^3/3+t+8/3$.
+\end{example}
+
+\begin{solution}
+Observe that $f'(t)=t^2+1$ and $f(1)=1^3/2+1+8/3=4$ as required.
+\end{solution}
+
+The general first order equation is too general, so
+we can't describe methods that will work on them all, or even a large
+portion of them. We can make progress with specific kinds of
+first order differential equations.
+For example, much can be said about equations of the form
+$\ds y' = \phi (t, y)$ where $\phi $
+is a function of the two variables $t$ and $y$.
+Under reasonable conditions on $\phi$, such an
+equation has a solution and the corresponding 
+initial value problem has a unique solution.
+However, in general, these equations can be very difficult or
+impossible to solve explicitly.
+
+A special case for which we do have a well defined method is that of separable differential equations.
+
+\subsection{Separable Differential Equations}
+
+
+
+
+\begin{definition}{Separable Differential Equations}{Separable Differential Equations}\label{Separable Differential Equations}
+A first order differential equation is 
+\deffont{separable} if it can be written in the form
+$$y' = f(t) g(y) \;\;\text{ or, }\;\;\frac{dy}{dt} = f(t) g(y).$$
+\end{definition}
+
+For example, the differential equation 
+\[
+  \frac{\; d y}{\; d x} = \sin(x) \bigl(1+y^2\bigr)
+\]
+is separable, and one has $F(x) = \sin x$ and $G(y) = 1+y^2$.
+On the other hand, the differential equation
+\[
+  \frac{\; d y}{\; d x} = x+y
+\]
+is not separable.
+
+
+The general approach to separable equations is as follows:
+
+Suppose we wish to solve $y' =
+f(t) g(y) $ where $f$ and $g$ are continuous functions. If $g(a)=0$
+for some $a$ then $y(t)=a$ is a constant solution of the equation,
+since in this case $y' = 0 = f(t)g(a)$.  For example, $y'
+=y^2 -1$ has constant solutions $y(t)=1$ and $y(t)=-1$.
+
+Such constant solutions to a differential equation are called \textit{equilibrium solutions}. To find the nonconstant solutions, we divide by $g(y)$ to get
+\begin{equation}
+  \label{eq:separated}
+  \frac{1}{ g(y)} \frac{\; d y}{\; d t} = f(t). 
+\end{equation}
+Next find a function $H(y)$ whose derivative with respect to $y$ is
+\begin{equation}\label{eq:separable-3}
+  H'(y) = \frac{1}{g(y)}
+  \quad\left(\text{solution: } H(y) = \int {\frac{dy}{g(y)}}.\right)
+\end{equation}
+Then the chain rule implies that the left hand side in (\ref{eq:separated}) can be written as
+\[
+  \frac{1}{ g(y)} \frac{\; d y}{\; d t} = H'(y) \frac{\; d y}{\; d t} =
+  \frac{\; d H(y)}{\; d t}.
+\]
+Thus \eqref{eq:separated} is equivalent with
+\[
+\frac{\; d H(y)}{\; d t} = f(t).
+\]
+In words: $H(y)$ is an antiderivative of $f(t)$, which means we can find $H(y)$
+by integrating $f(t)$:
+\begin{equation}
+  \label{eq:separable-solution}
+  H(y) = \int f(t) dt +C. 
+\end{equation}
+Once we have found the integral of $f(t)$ this gives us $y(t)$ in implicit form: the
+equation (\ref{eq:separable-solution}) gives us $y(t)$ as an \textit{implicit
+  function} of $t$.  To get $y(t)$ itself we must solve the equation
+(\ref{eq:separable-solution}) for $y(t)$.
+
+A quick way of organizing the calculation goes like this:
+\begin{quote}
+  To solve \( \ds \frac{dy}{ dt} = f(t)g(y)\) we first \textit{separate the
+    variables},
+  \[
+  \frac{d y}{g(y)} = f(t)\,d t,
+  \]
+  and then integrate,
+  \[
+  \int\frac{d y}{g(y)} = \int f(t)\, dt.
+  \]
+  The result is an implicit equation for the solution $y$ with one undetermined
+  integration constant.
+\end{quote}
+
+This technique is called \dfont{separation of variables}. 
+
+As we have seen so far, a differential equation typically has an infinite number of solutions. Such a solution is called a \dfont{general solution}.  A corresponding initial value problem will give rise to just one
+solution. Such a solution in which there are no unknown constants remaining is called a \dfont{particular solution}.
+
+
+\begin{example}{}{}
+Find all functions $y$ that are solutions to the differential equation 
+$$\frac{dy}{dt}= \frac{t}{y^2}.$$
+\end{example}
+
+
+\begin{solution}
+We begin by separating the variables and writing
+    $$
+    y^2 dy  = t\; dt.
+    $$
+Integrating both sides of the equation with respect to the independent
+    variable $t$ shows that
+    $$
+    \int y^2\frac{dy}{dt}~dt = \int t~dt.
+    $$
+Next, we notice that the left-hand side allows us to change
+    the variable of antidifferentiation\footnote{This is why we required that the left-hand side be written as a
+    product in which $dy/dt$ is one of the terms.} from $t$ to $y$.  In
+    particular,
+    $dy = \frac{dy}{dt}~dt$, so we now have
+    $$
+    \int y^2 ~dy = \int t~dt.
+    $$
+   This most recent equation says that two families of antiderivatives are
+    equal to one another.  Therefore, when we find representative
+    antiderivatives of both sides, we know they must differ by
+    arbitrary constant $C$.  Antidifferentiating and including the integration constant $C$ on the right, we find that
+    $$
+    \frac{y^3}{3} = \frac{t^2}{2} + C.
+    $$
+    Again, note that it is not necessary to include an arbitrary constant on both sides 
+    of the equation;  we know that $y^3/3$ and $t^2/2$ are in the same
+    family of antiderivatives and must therefore differ by a single
+    constant.
+
+Finally, we may now solve the last equation above for $y$ as a function of $t$, which gives
+    $$
+    y(t) = \sqrt[3]{\frac 32 \thinspace t^2 + 3C}.
+    $$
+    Of course, the term $3C$ on the right-hand side represents
+    3 times an unknown constant.  It is, therefore, still an unknown
+    constant, which we will rewrite as $C$.  We thus conclude that the funtion
+    $$
+    y(t) = \sqrt[3]{\frac 32 \thinspace t^2 + C}
+    $$
+is a solution to the original differential equation for any value of $C$.
+\end{solution}
+
+
+
+Notice that because this solution depends on the arbitrary constant $C$, we have found an infinite family of
+solutions.  This makes sense because we expect to find a unique solution that corresponds to any given
+ initial value.
+
+For example, if we want to solve the initial value problem
+$$
+  \frac{dy}{dt} = \frac{t}{y^2}, \
+  y(0) = 2,
+$$
+we know that the solution has the form $y(t) = \sqrt[3]{\frac32\thinspace
+  t^2 + C}$ for some constant $C$.  We therefore must find the appropriate
+value for $C$ that gives the initial value $y(0)=2$.  Hence,
+$$
+  2 = y(0)  \sqrt[3]{\frac 32 \thinspace 0^2 + C} = \sqrt[3]{C},
+  $$
+which shows that $C = 2^3 = 8$.  The solution to the initial value problem is then
+$$
+y(t) = \sqrt[3]{\frac32\thinspace t^2+8}.
+$$
+
+
+
+
+
+\begin{example}{Solving an IVP}{Solving an IVP}\label{Solving an IVP}
+ Solve the IVP: $\ds y' = 2t(25-y)$, $ y(0)= 20 $.
+\end{example}
+ 
+\begin{solution}
+We begin by finding the general solution to the differential equation. 
+This is almost identical to the previous example. As before, $y(t)=25$
+is a solution. If $y\not=25$,
+\begin{eqnarray}
+\int {1\over 25-y}\,dy &=& \int 2t\,dt\cr
+(-1)\ln|25-y| &=& t^2+C_0\cr
+\ln|25-y| &=& -t^2 - C_0 = -t^2 + C\cr
+|25-y| &=& e^{-t^2+C}=e^{-t^2} e^C\cr
+y-25 &=& \pm\, e^C e^{-t^2} \cr
+y &=& 25 \pm e^C e^{-t^2} =25+Ae^{-t^2}. \label{eqn:solveIVP}
+\end{eqnarray}
+As before, all solutions are represented by $\ds y=25+Ae^{-t^2}$,
+allowing $A$ to be zero.
+
+To solve the IVP, we let $ y= 20$, and $ t=0 $ in Equation \ref{eq:solveIVP} to get
+$$
+20=25+A
+$$
+which immediately gives $ A=-20 $. So the particular solution to the IVP is
+\[
+y=25-20e^{-t^2}
+\]
+\end{solution}
+
+
+One application often discussed when introducing Separable Equations is that of \textbf{mixing problems}.
+A typical mixing problems involves: A tank of fixed capacity; a completely mixed solution of some substance in the tank; a solution of a certain concentration entering the tank at a (usually) fixed rate; the solution immediately becomes completely stirred; and the mixture leaves at the other end at a (usually fixed) rate. We illustrate with an example.
+
+\begin{example}
+A tank contains 20 kg of salt dissolved in 5000 L of water.  Brine that contains 0.03 kg of salt per liter of water enters the tank at a rate of 25 L/min.  The solution is kept thoroughly mixed and drains from the tank at the same rate. {How much salt is in the tank after half an hour?}
+\end{example}
+
+
+\begin{solution}
+Let $y(t)$ denote the amount of salt (kg) in the tank after $t$ minutes.
+
+{Given: $y(0) =  {20.}$} {We want to know: $ {y(30).}$}
+
+ 
+\[
+\frac{d  y}{d t} = \textrm{(rate in) $-$ (rate out)}%
+\]
+
+
+\[
+\textrm{rate in} = \textrm{( {concentration in})( {rate of volume in})}%
+=\left( { {0.03\; \frac{\textrm{kg}}{\textrm{L}}}}\right)\left( { {25\; \frac{\textrm{L}}{\textrm{min}}}}\right)%
+ { = }  
+0.75\;\; \frac{\textrm{kg}}{\textrm{min}}%
+\]
+
+\[
+\textrm{rate out}%
+  = \textrm{( {concentration out})( {rate of volume out})}%
+=\left( { {\frac{y(t)}{5000}\; \frac{\textrm{kg}}{\textrm{L}}}}\right)\left( { {25\; \frac{\textrm{L}}{\textrm{min}}}}\right)%
+ =\frac{y(t)}{200} \;\; \frac{\textrm{kg}}{\textrm{min}}%
+\]
+
+Therefore we have 
+
+\[
+\frac{dy}{dt}= \frac{150 - y(t)}{200} 
+\]
+
+Separating variables we get
+
+\[
+\int \frac{1}{150-y} \; dy =\int \frac{1}{200}\; dt 
+\]
+
+which gives
+
+\[
+-\ln |150 - y| = t /200 {+ C}%
+\]
+ $ y(0) = 20 $,  so   $ C = {-\ln 130} $. Also observe that since $ y<150 (= 0.3\cdot 5000)$, so $ |150-y|=150-y$,  so after simplification we get
+
+
+\[
+y=150 - 130e^{-t/200}
+\]
+
+and therefore $ y(30)=150 - 130e^{-30/200} \approx 38.1 $kg.
+\end{solution}
+
+
+
+
+
+
+
+
+\begin{example}{}{}
+Solve the differential equation
+$$\frac{dy}{dt} =3y.$$
+\end{example}
+
+
+\begin{solution}
+Following the same strategy as in Example~\ref{Ex:7.4.1}, we have
+$$  \frac 1y \frac{dy}{dt} = 3. $$
+Integrating both sides with respect to $t$,
+$$  \int \frac 1y\frac{dy}{dt}~dt = \int 3~dt,$$
+and thus 
+$$ \int \frac 1y~dy =  \int 3~dt.$$
+Antidifferentiating and including the integration constant, we find that
+$$  \ln|y| = 3t + C_1$$
+where $ C_1 $ is an arbitrary constant. Finally, we need to solve for $y$.  Here, one point deserves careful
+attention.  By the definition of the natural logarithm function, it follows that
+$$
+|y| = e^{3t+C_1} = e^{3t}e^{C_1}.
+$$
+Since $C$ is an unknown constant, $e^C$ is as well, though we do know
+that it is positive (because $e^x$ is positive for any $x$).
+When we remove the absolute value in order to solve for $y$ we obtain 
+$$
+y = \pm e^{C_1} e^{3t}.
+$$
+As $ \pm e^{C_1} $ may be either positive or
+negative, we will denote this  by $C$ to obtain
+$$
+y(t) = Ce^{3t}.
+$$
+
+There is one technical point to make here.  Notice that $y=0$
+is an equilibrium  solution to this differential equation.  In solving
+the equation above, we begin by dividing both sides by $y$, which
+is not allowed if $y=0$.  To be perfectly careful, therefore, we will typically
+consider these equilibrium solutions separately.  In this case, notice that the final
+form of our solution captures the equilibrium solution by allowing
+$C=0$.
+\end{solution}
+
+
+\subsection{Exponential Growth and Decay}
+
+The differential equation in the previous example ($ y'=3y $) describes a quantity $ y $ whose rate of change is directly proportional to the quantity itself. Such a differential equation is said to model exponential growth. 
+
+
+
+
+
+
+\begin{example}{Population Growth and Radioactive Decay}{Population Growth and Radioactive Decay}\label{Population Growth and Radioactive Decay}
+Analyze the differential equation $y'=ky$.
+\end{example}
+
+\begin{solution}
+When $k>0$, this describes certain simple cases of (exponential) population growth:
+It says that the change in the population $y$ is proportional to the
+population. The underlying assumption is that each organism in the
+current population reproduces at a fixed rate, so the larger the
+population the more new organisms are produced. While this is too
+simple to model most real populations, it is useful in some cases over
+a limited time.  The parameter $ k $ is called the \textit{proportionality constant}. 
+When $k<0$, the differential equation describes a
+quantity that decreases in proportion to the current value (exponential decay); this can
+be used to model radioactive decay.
+
+The constant solution is $y(t)=0$; of course this will not be the
+solution to any interesting initial value problem. 
+For the non-constant solutions, we proceed much as before:
+\begin{eqnarray*}
+\int {1\over y}\,dy&=&\int k\,dt\cr
+\ln|y| &=& kt+C\cr
+|y| &=& e^{kt} e^C\cr
+y &=& \pm \,e^C e^{kt} \cr
+y&=& Ae^{kt}.
+\end{eqnarray*}
+Again, if we allow $A=0$ this includes the equilibrium solution, and we
+can simply say that $\ds y=Ae^{kt}$ is the general solution. With an
+initial value we can easily solve for $A$ to get the solution of the
+initial value problem. In particular, if the initial value is
+given for time $t=0$, $y(0)=y_0$, then $A=y_0$ and the solution
+is $\ds y= y_0 e^{kt}$.
+\end{solution}
+
+In general, the work in the previous example shows the following to hold true.
+
+\begin{formulabox}[\label{expDE} ]
+The solution of the initial value problem
+\[
+\frac{dy}{dt}=ky,\;\;\;\;y(0)=y_0
+\]
+is $ \ds y=y_0e^{kt} $
+\end{formulabox}
+
+
+\begin{example}{Global Population Growth}{}
+Assuming that the growth rate is proportional to population size,
+ use the fact the world population in 1900 is 1650 million and the 1910 is 1750
+ million to estimate population in the year 2000.
+\end{example}
+
+
+\begin{solution}
+Since growth rate is proportional to population, we 
+know that the population  $P(t)$ will be given by a function of the form:
+\[
+P=P_0e^{kt}
+\] 
+taking $t$ to be the number of years after 1900.  
+We are asked to find the population in the year 2000, in other words, find $P(100)$.  We know $P_0=1650$ (in millions), so 
+\begin{equation} \label{eq:pop}
+P=1650e^{kt}
+\end{equation}
+
+
+So we must solve for the growth constant $k$. In 1910, (when $t=10$) the population was 1750 (million), so  $ P(10)=1750 $:
+\[
+1750=1650e^{10k}
+\]
+which gives
+
+\[
+k=\frac{1}{10}\ln\left(\frac{175}{165}\right)
+\]
+Substituting into equation \ref{eq:pop} and simplifying gives 
+\[
+P=1650\left(\frac{175}{165}\right)^{\frac{t}{10}}
+\]
+
+Therefore, after 100 years, the population will be
+\[
+P(100)=1650\left(\frac{175}{165}\right)^{10}
+\approx 2972 \textrm{ million.}
+\]
+
+\end{solution}
+
+As mentioned previously, radioactive decay also follows an exponential model, $ y=y_0e^{kt} $ (where $ k<0 $). The   \textit{half-life} of a material  is the time required for half of a given amount to decay. That is, the time for which $ \frac12y_0 = y_0e^{kt} $. Solving for $ t $ gives $ t=-\frac{\ln(2)}{k} $.
+
+ \begin{formulabox}[\label{halflife}Half Life ]
+ Radioactive decay of a material with decay constant $ k$ is modelled by $ y=y_0e^{kt} $, and has a half-life of $ \ds -\frac{ln(2)}{k} $    
+ \end{formulabox} 
+
+
+\begin{example}{}{}
+The half-life of radium-226 is 1590 years.  A sample of radium has a mass of 100 mg.
+\begin{enumerate}
+\item Find a formula for the mass of radium after $ t $ years. 
+\item Find the mass after 1000 years.
+
+\item When will the mass be reduced to 30mg?
+\end{enumerate}
+
+\end{example}
+
+
+\begin{solution}
+\begin{enumerate}
+\item As this model is one of exponential decay, we know the formula for the mass after $t$ years will have the form:
+\[
+y=y_0e^{kt},
+\]
+where $k<0$. We are told $100$mg are initially present, so $ y_0=100$. To determine the decay constant, we use the given half-life with the formula in Key Idea \ref{halflife}:
+\[
+k =  -\frac{ln(2)}{1590}.
+\] 
+Therefore, after simplifications we have
+\[
+y=100e^{t\cdot -\frac{ln(2)}{1590}} = 100\cdot \left(\frac12\right)^\frac{t}{1590}.
+\]
+\item From part (a) we see that after $ 1000 $  years the amount remaining will be
+\[
+y(1000)=100\cdot \left(\frac12\right)^{\frac{1000}{1590}}\approx 64.67\textrm{mg}.
+\]
+ 
+\item  We wish to find $t$ when $y=30$, so we solve: $\ds 30=100\cdot \left(\frac12\right)^{\frac{t}{1590}}$. Dividing by $ 100 $, taking the natural logarithm of both sides, and solving for $ t $ gives
+\[
+\ln\left(\frac{3}{10}\right)= \frac{t}{1590} \ln\left(\frac12\right)
+\to\;t= 1590\cdot\frac{\ln\left(\frac{3}{10}\right)}{\ln\left(\frac12\right)}\approx 2762 \textrm{ years.}
+\]
+
+\end{enumerate}
+
+\end{solution}
+
+More generally, a quantity $y$ may grow (or shrink) with rate of change proportional to a difference $y-b$. Such is the case with Newton's Law of Cooling. 
+
+\begin{formulabox}[\label{NLC} Newton's Law of Cooling ]
+The rate of cooling of an object is directly proportional to the difference between the temperature $y(t)$ of the object and the ambient temperature $T$ ( i.e. the temperature $T$ of its surroundings.)
+  \[
+  \frac{dy}{dt}=k(y-T)
+  \]                  
+where $ k $ is called the cooling constant (in units of $ (\text{time})^{-1} $), and depends on the physical properties of the materials involved. This differential equation may be solved in the same manner as in Example \ref{exa:Population Growth and Radioactive Decay} to give
+\[
+y= T+y_0e^{kt}
+\]                   
+\end{formulabox}
+
+
+More generally, if $\frac{dy}{dt} = k(y-b) $ for some constant $ b $, then $ y=b+Ce^{kt} $, where $ C=y(0)$.
+
+
+\begin{example}{IVP for Newton's Law of Cooling}{IVP for Newton's Law of Cooling}\label{IVP for Newton's Law of Cooling}
+ Consider this specific example of an initial value problem
+for Newton's law of cooling: $y' = -2(y-25)$, $y(0)=40$.
+Discuss the solutions for this initial value problem.
+\end{example}
+
+\begin{solution}
+We first note the zero of the equation: If $y = 25$, the right hand side of the differential
+equation is zero, and so the constant function $y(t)=25$ is a solution
+to the differential equation. It is not a solution to the initial
+value problem, since $y(0)\neq 25$.  (The physical interpretation of
+this constant solution is that if a liquid is at the same temperature
+as its surroundings, then the liquid will stay at that temperature.)
+
+At this point we may appeal to the key idea \ref{Newton's Law of Cooling}, taking $ T=25 $, and $ k=-2 $ to solve the differential equation.  However, just for practice we will derive the result directly. 
+
+Separating variables, so long as $y\ne 25$,  we can rewrite the differential equation as
+\begin{eqnarray*}
+{dy\over dt}{1\over 25-y}&=&2\cr
+{1\over 25-y}\,dy&=&2\,dt,
+\end{eqnarray*}
+so 
+$$\int {1\over 25-y}\,dy = \int 2\,dt,$$
+We can calculate these anti-derivatives and 
+rearrange the results:
+\begin{eqnarray*}
+\int {1\over 25-y}\,dy &=& \int 2\,dt\cr
+(-1)\ln|25-y| &=& 2t+C_0\cr
+\ln|25-y| &=& -2t - C_0 = -2t + C_1\cr
+|25-y| &=& e^{-2t+C_1}=e^{-2t} e^{C_1}\cr
+y-25 &=& \pm\, e^{C_1} e^{-2t} \cr
+y &=& 25 \pm e^{C_1} e^{-2t} =25+Ce^{-2t}.
+\end{eqnarray*}
+Here $\ds C = \pm\, e^{C_1} = \pm\, e^{-C_0}$ 
+is some non-zero constant. Note that this agrees with the solution we would have obtained directly from Key Idea \ref{Newton's Law of Cooling}.
+
+Since we require $y(0)=40$, we substitute and solve for $C$:
+\begin{eqnarray*}
+40&=&25+Ce^0\cr
+15&=&C,
+\end{eqnarray*}
+and so $\ds y=25+15 e^{-2t}$ is a solution to the initial value
+problem. 
+
+Note that $y$ is never $ 25 $, so this makes sense for all values
+of $t$. However, if we allow $C=0$ we get the solution
+$y=25$ to the differential equation, which would be the solution to
+the initial value problem if we were to require $y(0)=25$. Thus, 
+$\ds y=25+Ce^{-2t}$ describes all solutions to the differential
+equation $\ds y' = 2(25-y)$, and all solutions to the associated
+initial value problems. 
+\end{solution}
+
+
+ 
+\begin{example}{}{}
+If an object takes $ 40 $ minutes to cool from $ 30 $ degrees to $ 24 $ degrees in a $ 20 $
+degree room, how long will it take the object to cool to $ 21 $ degrees?                                   
+\end{example}
+
+
+\begin{solution}
+From the above discussion we know that the model for the temperature $ y $, $ t $ minutes after the first temperature measurement is given by
+\[
+y=20+10e^{kt}.
+\]
+To solve for $ k $ we use the fact that $ y(40) =24$. Substituting $ t=40, $ and $ y=24 $ into the last equation, and simplifying gives
+\[
+24=20 10e^{40k}\;\;\to\;\; k= \ln\left[\left(\frac{2}{5}\right)^{\frac{1}{40}}\right]
+\]
+Therefore, 
+\[
+y=10e^{t\cdot \ln\left[\left(\frac{2}{5}\right)^{\frac{1}{40}}\right]}+20 =10e^{\ln\left[\left(\frac{2}{5}\right)^{\frac{t}{40}}\right]}+20=10\left(\frac{2}{5}\right)^{\frac{t}{40}}+20
+\]
+
+So when the temperature is $ 21 $ degrees, we have
+\[
+21=10\left(\frac{2}{5}\right)^{\frac{t}{40}}+20\Rightarrow 
+t= \frac{-40\ln(10)}{\ln\left( \frac{2}{5} \right)} \approx 100.52 \text{min.}
+\]
+Therefore, even though it took only $ 40 $ minutes to cool from $ 30 $ degrees to $ 24 $ degrees 
+(a difference of $ 6 $ degrees),  it will take over $ 100 $ minutes to cool to $ 21 $ degrees
+ (the last $ 3 $ degrees add more than an hour to the time required!).
+
+\end{solution}
+
+
+
+
+                                   
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:first order differential equations}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+\begin{ex}
+ Which of the following equations are separable?
+
+\begin{enumerate}
+	\item $\ds y' = \sin (ty)$
+	\item $\ds y' = e^t e^y $
+	\item $\ds yy' = t $
+	\item $\ds y' = (t^3 -t) \arcsin(y)$
+	\item $\ds y' = t^2 \ln y + 4t^3 \ln y $
+\end{enumerate}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Solve $\ds y' = 1/(1+t^2)$.
+\begin{sol}
+ $\ds y=\arctan t + C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Solve the initial value problem $y' = t^n$ with
+$y(0)=1$ and $n\ge 0$.
+\begin{sol}
+ $\ds y={t^{n+1}\over n+1}+1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Solve $y' = \ln t$. 
+\begin{sol}
+ $\ds y=t\ln t-t+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Identify the constant solutions (if any) of $y' =t\sin y$.
+\begin{sol}
+ $y=n\pi$, for any integer $n$.
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Identify the constant solutions (if any) of $\ds y'=te^y$.
+\begin{sol}
+ none
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Solve $y' = t/y$.
+\begin{sol}
+ $\ds y=\pm\sqrt{t^2+C}$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Solve $\ds y' = y^2 -1$.
+\begin{sol}
+ $\ds y=\pm 1$, $\ds y=(1+Ae^{2t})/(1-Ae^{2t})$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Solve $\ds y' = t/(y^3 - 5)$. You may leave
+your solution in implicit form: that is, you may stop once you have
+done the integration, without solving for $y$.
+\begin{sol}
+ $\ds y^4/4-5y=t^2/2+C$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Find a non-constant solution of the initial value problem 
+$y' = y^{1/3}$, $y(0)=0$, using
+ separation of variables. Note that the constant function $y(t)=0 $
+ also solves the initial value problem. This shows that an initial value
+ problem can have more than one solution.
+\begin{sol}
+ $\ds y=(2t/3)^{3/2}$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Solve the equation for Newton's law of cooling leaving $M$
+and $k$ unknown.
+\begin{sol}
+ $\ds y=M+Ae^{-kt}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ After 10 minutes in Jean-Luc's room, his tea has
+cooled to $40^\circ $ Celsius from $100^\circ$ Celsius. 
+The room temperature is $25^\circ$
+Celsius. How much longer will it take to cool to $35^\circ$?
+\begin{sol}
+ $\ds {10\ln(15/2)\over\ln 5}\approx 2.52$ minutes
+\end{sol}
+\end{ex} 
+
+
+%%%%%%%%%%
+\begin{ex}
+ Solve the \dfont{logistic equation} $y' = ky(M-y)$. (This is a somewhat more
+reasonable population model in most cases than the simpler
+$y'=ky$.) Sketch the
+graph of the solution to this equation when 
+$M=1000$, $k=0.002$, $y(0)=1$.
+\begin{sol}
+ $\ds y={M\over 1+Ae^{-Mkt}}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ Suppose that $y' = ky$, $y(0)=2$, and $y'(0)=3$. 
+What is $y$?
+\begin{sol}
+ $\ds y=2e^{3t/2}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ A radioactive substance obeys the equation
+$y' =ky$ where $k< 0 $ and $y$ is the mass of the
+substance at time $t$. Suppose that initially, the mass of the
+substance is $y(0)=M>0$. At what time does half of the mass remain?
+(This is known as the half life. Note that the half life depends on
+$k$ but not on $M$.)
+\begin{sol}
+ $\ds t=-{\ln 2\over k}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ Bismuth-210 has a half life of five days. If there is
+initially 600 milligrams, how much is left after 6 days? When will
+there be only 2 milligrams left?
+\begin{sol}
+ $\ds 600e^{-6\ln 2/5}\approx 261$ mg; $\ds {5\ln
+  300\over\ln2}\approx 41$ days
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ The half life of carbon-14 is 5730 years. If one starts
+with 100 milligrams of carbon-14, how much is left after 6000
+years? How long do we have to wait before there is less than 2
+milligrams?
+\begin{sol}
+ $\ds 100e^{-200\ln 2/191}\approx 48$ mg; $\ds {5730\ln
+  50\over\ln2}\approx 32339$ years
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ A certain species of bacteria doubles its population
+(or its mass)
+every hour in the lab. 
+The differential equation that models this phenomenon
+is $y' =ky$, where $k>0 $ and $y$
+is the population of bacteria at time $t$. What is $y$?
+\begin{sol}
+ $\ds y=y_0e^{t\ln 2}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ If a certain microbe doubles its population every 4
+hours and after 5 hours the total population has mass 500 grams,
+what was the initial mass?
+\begin{sol}
+ $\ds 500e^{-5\ln2/4}\approx 210$ g
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

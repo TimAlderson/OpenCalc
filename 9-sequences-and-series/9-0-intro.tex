@@ -1,0 +1,40 @@
+Consider the following sum:
+$${1\over2}+{1\over4}+{1\over8}+{1\over16}+\cdots+{1\over2^i}+\cdots$$
+The dots at the end indicate that the sum goes on forever. Does this
+make sense? Can we assign a numerical value to an infinite sum? While
+at first it may seem difficult or impossible, we have certainly done
+something similar when we talked about one quantity getting ``closer
+and closer'' to a fixed quantity. Here we could ask whether, as we add
+more and more terms, the sum gets closer and closer to some fixed
+value. That is, look at
+\begin{align*}
+\frac{1}{2}&=\frac{1}{2}	\\
+\frac{3}{4}&=\frac{1}{2}+\frac{1}{4}	\\
+\frac{7}{8}&=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}	\\
+\frac{15}{16}&=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}	\\
+\end{align*}
+and so on, and consider whether these values have a limit. It seems likely
+that they do, namely $1$. In fact, as we will see, it's not hard
+to show that 
+$${1\over2}+{1\over4}+{1\over8}+{1\over16}+\cdots+{1\over2^i}=
+{2^i-1\over2^i}=1-{1\over2^i}$$
+and then
+$$\lim_{i\to\infty} 1-{1\over2^i},$$
+which gets closer and closer to 1 as $i$ gets larger.
+
+There is a context in which we already implicitly accept this notion of infinite
+sum without really thinking of it as a sum: The representation of a real number as an infinite decimal. For example,
+$$0.3333\bar3 =
+{3\over10}+{3\over100}+{3\over1000}+{3\over10000}+\cdots=
+{1\over3},$$
+or likewise
+$$3.14159\ldots = 3+{1\over10}+{4\over100}+{1\over1000}+{5\over10000}+
+{9\over100000}+\cdots = \pi.$$
+An infinite sum is called a \dfont{series}, and is usually written using the same sigma notation that we encountered in Chapter~\ref{chap:Integration}. In this case, however, we use $\infty$ to indicate that there is no `last term'. The series we first examined can be written as
+\[\frac{1}{2}+\frac{1}{4}+\cdots+\frac{1}{2^i}=\sum_{i=1}^{\infty}\frac{1}{2^i}\]
+
+A related notion that will aid our investigations is that of a \dfont{sequence}. A sequence is just an ordered (possibly infinite) list of numbers. For example,
+\[1,\frac{1}{2},\frac{1}{3},\ldots,\frac{1}{n},\ldots\]
+We will begin by learning some useful facts about sequences.
+%The value of a series is the limit of a particular sequence, which we express as
+%$$\sum_{i=1}^\infty {1\over2^i}=\lim_{i\to\infty} {2^i-1\over2^i}.$$

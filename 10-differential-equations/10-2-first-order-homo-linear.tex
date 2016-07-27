@@ -1,0 +1,258 @@
+\section{First Order Homogeneous Linear Equations}\label{sec:first order homogeneous linear}
+A simple, but important and useful, type of separable equation is the
+\dfont{first order homogeneous linear equation}:
+
+\begin{definition}{First Order Homogeneous Linear Equation}{First Order Homogeneous Linear Equation}\label{First Order Homogeneous Linear Equation}
+A first order homogeneous linear differential equation
+is one of
+the form $\ds y' + p(t)y=0$
+or equivalently
+$\ds y' = -p(t)y$.
+\end{definition}
+
+``Homogeneous'' refers to the zero on the right side of the equation, provided that $y'$ and $y$ are on the left. ``Linear'' in this definition indicates that both $y'$ and $y$ appear independently and explicitly; we don't see $y'$ or $y$ to any power greater than 1, or multiplied by each other (i.e. $y'y$).
+
+\begin{example}{Linear Examples}{Linear Examples}\label{Linear Examples}
+ The equation $\ds y' = 2t(25-y)$ can be written
+$\ds y' + 2ty= 50t$. This is linear, but not homogeneous. The
+equation $\ds y'=ky$, or $\ds y'-ky=0$ is linear and
+homogeneous, with a particularly simple $p(t)=-k$.
+The equation $y'+y^2=0$ is homogeneous, but not linear.
+\end{example}
+
+Since first order homogeneous linear equations are separable, we can
+solve them in the usual way:
+\begin{eqnarray*}
+y' &=& -p(t)y\cr
+\int {1\over y}\,dy &=& \int -p(t)\,dt\cr
+\ln|y| &=& P(t)+C\cr
+y&=&\pm\,e^{P(t)}\cr
+y&=&Ae^{P(t)},
+\end{eqnarray*}
+where $P(t)$ is an anti-derivative of $-p(t)$. As in previous
+examples, if we allow $A=0$ we get the constant solution $y=0$.
+
+\begin{example}{Solving an IVP}{Solving an IVP}\label{Solving an IVP}
+ Solve the initial value problem 
+$$\ds y' + y\cos t =0,$$
+subject to $y(0)=1/2$ and $y(2)=1/2$.
+\end{example}
+
+\begin{solution}
+We start with
+$$P(t)=\int -\cos t\,dt = -\sin t,$$
+so the general solution to the differential equation is
+$$y=Ae^{-\sin t}.$$
+To compute $A$ we substitute:
+$$ {1\over 2} = Ae^{-\sin 0} = A,$$
+so the solutions is 
+$$ y = {1\over 2} e^{-\sin t}.$$
+For the second problem,
+\begin{eqnarray*}
+{1\over 2} &=& Ae^{-\sin 2}\cr
+A &=& {1\over 2}e^{\sin 2}
+\end{eqnarray*}
+so the solution is 
+$$ y = {1\over 2}e^{\sin 2}e^{-\sin t}.$$
+\vskip-15pt\end{solution}
+
+\begin{example}{}{}\label{}
+ Solve the initial value problem $ty'+3y=0$, $y(1)=2$,
+assuming $t>0$.
+\end{example}
+
+\begin{solution}
+We write the equation in standard form: $y'+3y/t=0$. Then
+$$P(t)=\int -{3\over t}\,dt=-3\ln t$$
+and 
+$$ y=Ae^{-3\ln t}=At^{-3}.$$
+Substituting to find $A$:
+$\ds 2=A(1)^{-3}=A$, so the solution is $\ds y=2t^{-3}$.
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:first order homogeneous linear}}
+
+\begin{enumialphparenastyle}
+
+Find the general solution of each equation in the following exercises.
+
+\begin{multicols}{2}
+%%%%%%%%%%
+\begin{ex}
+ $\ds y'+5y=0$
+\begin{sol}
+ $\ds y=Ae^{-5t}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y'-2y=0$
+\begin{sol}
+ $\ds y=Ae^{2t}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y'+{y\over 1+t^2}=0$
+\begin{sol}
+ $\ds y=Ae^{-\arctan t}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y'+t^2y=0$
+\begin{sol}
+ $\ds y=Ae^{-t^3/3}$
+\end{sol}
+\end{ex}
+
+\end{multicols}
+
+In the following exercises, solve the initial value problem.
+
+\begin{multicols}{2}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' + y=0$, $y(0)=4$
+\begin{sol}
+ $\ds y=4e^{-t}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' -3y=0$, $y(1)=-2$
+\begin{sol}
+ $\ds y=-2e^{3t-3}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' + y\sin t = 0$, $y(\pi)=1$
+\begin{sol}
+ $\ds y=e^{1+\cos t}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' +ye^t=0$, $y(0)=e$
+\begin{sol}
+ $\ds y=e^2e^{-e^t}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' +y\sqrt{1+t^4}=0$, $y(0)=0$
+\begin{sol}
+ $\ds y=0$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y' + y\cos(e^t)=0$, $y(0)=0$
+\begin{sol}
+ $\ds y=0$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds ty' - 2y = 0$, $y(1)=4$
+\begin{sol}
+ $\ds y=4t^2$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds t^2y' + y = 0$, $y(1)=-2$, $t>0$
+\begin{sol}
+ $\ds y=-2e^{(1/t)-1}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds t^3y' = 2y$, $y(1)=1$, $t>0$
+\begin{sol}
+ $\ds y=e^{1-t^{-2}}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds t^3y' = 2y$, $y(1)=0$, $t>0$
+\begin{sol}
+ $\ds y=0$
+\end{sol}
+\end{ex}
+
+\end{multicols}
+
+
+%%%%%%%%%%
+\begin{ex}
+ A function $y(t)$ is a solution of $\ds y' +
+ky=0$. Suppose that $y(0)=100$ and $y(2)=4$. Find $k$ and find $y(t)$.
+\begin{sol}
+ $k=\ln 5$, $\ds y=100e^{-t\ln 5}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ A function $y(t)$ is a solution of $\ds y' +
+t^ky=0$. Suppose that $y(0)=1$ and $y(1)=e^{-13}$. Find $k$ and find
+$y(t)$. 
+\begin{sol}
+ $k=-12/13$, $\ds y=\exp(-13 t^{1/13})$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ A bacterial culture grows at a rate proportional to its
+population. If the population is one million at $t=0$ and 1.5
+million at $t=1$ hour, find the population as a function of time.
+\begin{sol}
+ $\ds y=10^6e^{t\ln(3/2)}$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+ A radioactive element decays with a half-life of 6 years. If
+a mass of the element weighs ten pounds at $t=0$, find the amount of
+the element at time $t$.
+\begin{sol}
+ $\ds y=10e^{-t\ln(2)/6}$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

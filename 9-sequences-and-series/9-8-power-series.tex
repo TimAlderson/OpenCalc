@@ -1,0 +1,147 @@
+\section{Power Series}\label{sec:powerseries}
+
+Recall that the sum of a geometric series can be expressed using the simple formula:
+\[\sum_{n=0}^\infty kx^n = {k\over 1-x},\]
+if $|x|<1$, and that the series diverges when $|x|\ge 1$. At the time,
+we thought of $x$ as an unspecified constant, but we could just as
+well think of it as a variable, in which case the series
+\[\sum_{n=0}^\infty kx^n\]
+is a function, namely, the function $k/(1-x)$, as long as
+$|x|<1$: Looking at this from the opposite perspective, this means that
+the function $k/(1-x)$ can be represented as the sum of an infinite series. Why would this be useful?
+While $k/(1-x)$ is a reasonably easy function to deal with,
+the more complicated representation $\sum kx^n$ does have some advantages:
+it appears to be an infinite version of one of the
+simplest function types---a polynomial. Later on we will investigate some of the ways
+we can take advantage of this `infinite polynomial' representation, but first
+we should ask if other functions can even be represented this way.
+
+The geometric series has a special feature that makes it unlike a
+typical polynomial---the coefficients of the powers of $x$ are all the
+same, namely $k$. We will need to allow more general coefficients if
+we are to get anything other than the geometric series. 
+
+\begin{definition}{Power Series}{PowerSeriesDefinition}
+A power series is a series of the form 
+$$\ds\sum_{n=0}^\infty a_nx^n,$$ 
+where each $a_n$ is a real number.
+\end{definition}
+
+As we did in the section on sequences, we can think of the $a_n$ as being a function
+$a(n)$ defined on the non-negative integers. Note, however, that the $a_n$ do not depend
+on $x$.
+
+\begin{example}{}{}
+Determine whether the power series $\ds\sum_{n=1}^\infty {x^n\over n}$ converges.
+\end{example}
+\begin{solution}
+We can investigate convergence using the ratio test:
+\[
+  \lim_{n\to\infty} {|x|^{n+1}\over n+1}{n\over |x|^n}
+  =\lim_{n\to\infty} |x|{n\over n+1} =|x|.
+\]
+
+Thus when $|x|<1$ the series converges and when $|x|>1$ it diverges,
+leaving only two values in doubt. When $x=1$ the series is the
+harmonic series and diverges; when $x=-1$ it is the alternating
+harmonic series (actually the negative of the usual alternating
+harmonic series) and converges. Thus, we may think of 
+$\ds\sum_{n=1}^\infty {x^n\over n}$ as a function from the interval
+$[-1,1)$ to the real numbers.
+\end{solution}
+
+A bit of thought reveals that the ratio test applied to a power series
+will always have the same nice form. In general, we will compute
+\[
+  \lim_{n\to\infty} {|a_{n+1}||x|^{n+1}\over |a_n||x|^n}
+  =\lim_{n\to\infty} |x|{|a_{n+1}|\over |a_n|} =
+  |x|\lim_{n\to\infty} {|a_{n+1}|\over |a_n|} =L|x|,
+\]
+assuming that $\ds \lim |a_{n+1}|/|a_n|$ exists. Then the series
+converges if $L|x|<1$, that is, if $|x|<1/L$, and diverges if
+$|x|>1/L$. Only the two values $x=\pm1/L$ require further
+investigation. Thus the series will always define a function on
+the interval $(-1/L,1/L)$, that perhaps will extend to one or both
+endpoints as well. Two special cases deserve mention: if $L=0$ the
+limit is $0$ no matter what value $x$ takes, so the series converges
+for all $x$ and the function is defined for all real numbers. If
+$L=\infty$, then no matter what value $x$ takes the limit is infinite
+and the series converges only when $x=0$. The value $1/L$ is called
+the \dfont{radius of convergence} of the series, and the
+interval on which the series converges is the \dfont{interval of
+convergence}.
+
+We can  make these ideas a bit more general. Consider the series
+\[\ds\sum_{n=0}^{\infty}\frac{(x+2)^n}{3^n}\]
+This looks a lot like a power series, but with $(x+2)^n$ instead of $x^n$.
+Let's try to determine the values of $x$ for which it converges.
+This is just a geometric series, so it converges when
+\begin{align*}
+  |x+2|/3&<1	\\
+  |x+2|&<3	\\
+  -3 < x+2 &< 3	\\
+  -5<x&<1.	\\
+\end{align*}
+
+So the interval of convergence for this series is $(-5,1)$. The center
+of this interval is at $-2$, which is at distance 3 from the endpoints,
+so the radius of convergence is 3, and we say that the series is centered at $-2$.
+
+Interestingly, if we compute the sum of the series we get
+\[\ds\sum_{n=0}^{\infty}\left(\frac{x+2}{3}\right)^n=\frac{1}{1-\frac{x+2}{3}}=\frac{3}{1-x}.\]
+Multiplying both sides by 1/3 we obtain
+\[\sum_{n=0}^\infty {(x+2)^n\over 3^{n+1}}={1\over 1-x},\]
+which we recognize as being equal to
+\[\sum_{n=0}^{\infty}x^n,\]
+so we have two series with the same sum but different intervals of convergence.
+
+This leads to the following definition:
+
+\begin{definition}{Power Series}{PowerSeriesDefinition2}
+A power series centered at $c$ has the form
+$$\ds\sum_{n=0}^\infty a_n(x-c)^n,$$ 
+where $c$ and each $a_n$ are real numbers.
+\end{definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:powerseries}}
+
+\begin{enumialphparenastyle}
+
+\begin{ex}
+Find the radius and interval of convergence for each series.  In
+part c),
+do not attempt to determine whether the endpoints are in the
+interval of convergence.
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\item $\ds\sum_{n=0}^\infty n x^n$
+	\item $\ds\sum_{n=0}^\infty {x^n\over n!}$
+	\item $\ds\sum_{n=1}^\infty {n!\over n^n}(x-2)^n$
+	\item $\ds\sum_{n=1}^\infty {(n!)^2\over n^n}(x-2)^n$
+	\item $\ds\sum_{n=1}^\infty {(x+5)^n\over n(n+1)}$
+\end{enumerate}
+\end{multicols}
+\begin{sol}
+\begin{enumerate}
+	\item $R=1$, $I=(-1,1)$
+	\item $R=\infty$, $I=(-\infty,\infty)$
+	\item $R=e$, $I=(2-e,2+e)$
+	\item $R=0$, converges only when $x=2$
+	\item $R=1$, $I=[-6,-4]$
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find the radius of convergence for the series $\ds\sum_{n=1}^\infty {n!\over n^n}x^n$.
+\begin{sol}
+$R=e$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}
+
+\clearpage
