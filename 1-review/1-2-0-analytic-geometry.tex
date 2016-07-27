@@ -1,0 +1,318 @@
+\section{Analytic Geometry}\label{sec:AnalyticGeometry}
+
+In what follows, we use the notation $(x_1,y_1)$ to represent a point in
+the $(x,y)$ coordinate system, also called the $(x,y)$-plane.
+Previously, we used $(a,b)$ to represent
+an open interval. Notation often gets reused and abused in mathematics, 
+but thankfully, it is usually clear from the context what we mean.
+
+In the $(x,y)$ coordinate system we normally write the $x$-axis
+horizontally, with positive numbers to the right of the origin, and
+the $y$-axis vertically, with positive numbers above the origin.  That
+is, unless stated otherwise, we take ``rightward'' to be the positive
+$x$-direction and ``upward'' to be the positive $y$-direction.  In a
+purely mathematical situation, we normally choose the same scale for
+the $x$- and $y$-axes.  For example, the line joining the origin to
+the point $(a,a)$ makes an angle of 45${}^\circ$ with the $x$-axis
+(and also with the $y$-axis).
+
+In applications, often letters other than $x$ and $y$ are used, and
+often different scales are chosen in the horizontal and vertical
+directions.
+
+\begin{example}{Data Plot}{DataPlot}
+	Suppose you drop a coin from a window, and you want to study how 
+	its height above the ground changes from second to second.
+	It is natural to let the letter $t$ denote the time
+	(the number of seconds since the object was released) and to let the
+	letter $h$ denote the height.  For each $t$ (say, at one-second
+	intervals) you have a corresponding height $h$.  This information can
+	be tabulated, and then plotted on the $(t,h)$ coordinate plane, as
+	shown in figure~\ref{fig:data plot}.
+\end{example}
+
+\figure[!ht]
+\vbox{
+	$$\begin{array}{|r|ccccc|}
+	\hline
+	seconds & 0 & 1 & 2 & 3 & 4\\
+	\hline
+	meters & 80 & 75.1 & 60.4 & 35.9 & 1.6\\
+	\hline
+	\end{array}$$ 
+	
+	\centerline{\vbox{\beginpicture
+			\normalgraphs
+			%\ninepoint
+			\setcoordinatesystem units <2truecm,0.5truemm>
+			\setplotarea x from 0 to 4.2, y from 0 to 90
+			\axis left shiftedto x=0 ticks numbered from 20 to 80 by 20 /
+			\axis bottom shiftedto y=0 ticks numbered from 0 to 4 by 1 /
+			\put {$t$} [l] <3pt,0pt> at 4.2 0
+			\put {$h$} [l] <3pt,0pt> at 0 90
+			\setquadratic
+			\plot 0 80 1 75.1 2 60.4 3 35.9 4 1.6 /
+			\multiput {$\bullet$} at 0 80 1 75.1 2 60.4 3 35.9 4 1.6 /
+			\endpicture}}}
+\caption{A data plot, height versus time. \label{fig:data plot}}
+\endfigure
+
+We use the word ``quadrant'' for each of the four regions into which
+the plane is divided by the axes: the first quadrant is where points
+have both coordinates positive, or the ``northeast'' portion of the
+plot, and the second, third, and fourth quadrants are counted off
+counterclockwise, so the second quadrant is the northwest, the third
+is the southwest, and the fourth is the southeast.
+
+Suppose we have two points $A$ and $B$ in the $(x,y)$-plane.
+We often want to know the change in $x$-coordinate (also called the
+``horizontal distance'') in going from $A$ to $B$.  This is often
+written $\Delta x$, where the meaning of $\Delta$ (a capital delta in
+the Greek alphabet) is ``change in''. Thus, $\Delta x$ can be read as
+``change in $x$'' although it usually is read as ``delta $x$''. The
+point is that $\Delta x$ denotes a single number, and should not be
+interpreted as ``delta times $x$''. Similarly, the ``change in $y$'' is written $\Delta y$
+and represents the difference between the $y$-coordinates of the 
+two points. It is the vertical distance you have to move in going from $A$ to $B$.
+
+\begin{example}{Change in $x$ and $y$}{ChangeIn}\label{ChangeIn}
+	If $A=(2,1)$ and $B=(3,3)$ the change in $x$ is
+	$$\Delta x=3-2=1$$
+	while the change in $y$ is
+	$$\Delta y= 3-1=2.$$
+	\vspace{-0.5cm}
+\end{example}
+
+The general formulas for the change in $x$ and the change in $y$ 
+between a point $(x_1,y_1)$ and a point $(x_2,y_2)$ are:
+$$
+\Delta x=x_2-x_1,\qquad\qquad\Delta y=y_2-y_1.
+$$
+Note that either or both of these might be negative.
+
+% Input each subsection
+\input{1-review/1-2-1-lines}
+\input{1-review/1-2-2-distances-and-midpoints}
+\input{1-review/1-2-3-conics}
+		
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:AnalyticGeometry}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+\begin{ex}
+Find the equation of the line in the form $y=mx+b$:
+\begin{enumerate}
+	\item	through $(1,1)$ and $(-5, -3)$
+	\item	through $(-1,2)$ with slope $-2$
+	\item	through $(-1,1)$ and $(5, -3)$
+	\item	through $(2,5)$ and parallel to the line $3x+9y+6=0$
+	\item	with $x$-intercept 5 and perpendicular to the line $y=2x+4$
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	$(2/3)x+(1/3)$
+	\item	$y=-2x$
+	\item	$y=(-2/3)x+(1/3)$
+	\item	$y=-x/3+17/3$
+	\item	$y=-1/2x+5/2$
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Change the following equations to the form $y=mx+b$, graph the
+line, and find the $y$-intercept and $x$-intercept.
+\begin{enumerate}
+	\item	$y-2x=2$
+	\item	$x+y=6$
+	\item	$x=2y-1$
+	\item	$3=2y$
+	\item	$2x+3y+6=0$
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	$y=2x+2$, $2$, $-1$
+	\item	$y=-x+6$, $6$, $6$
+	\item	$y=x/2+1/2$, $1/2$, $-1$
+	\item	$y=3/2$, $y$-intercept: $3/2$, no $x$-intercept
+	\item	$y=(-2/3)x-2$, $-2$, $-3$
+\end{enumerate}
+\end{sol}
+\end{ex}
+ 
+%%%%%%%%%%
+\begin{ex}
+Determine whether the lines $3x+6y=7$ and $2x+4y=5$ are parallel.
+\begin{sol}
+Yes, the lines are parallel as they have the same slope of $-1/2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Suppose a triangle in the $(x,y)$-plane has vertices $(-1,0)$,
+$(1,0)$ and $(0,2)$.  Find the equations of the three lines that lie along
+ the sides of the triangle in $y=mx+b$ form.
+\begin{sol}
+$y=0$, $y=-2x+2$, $y=2x+2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Let $x$ stand for temperature in degrees Celsius (centigrade), and let
+$y$ stand for temperature in degrees Fahrenheit.  A temperature of $0^\circ$C
+corresponds to $32^\circ$F, and a temperature of
+$100^\circ$C corresponds to $212^\circ$F.  Find the
+equation of the line that relates temperature Fahrenheit $y$ to
+temperature Celsius $x$ in the form $y=mx+b$.  
+Graph the line, and find the point at which this line intersects $y=x$.
+What is the practical meaning of this point?
+\begin{sol}
+$y=(9/5)x+32$, $(-40,-40)$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+A car rental firm has the following charges for a certain type of car:
+\$25 per day with 100 free miles included, \$0.15 per mile for more than
+100 miles.  Suppose you want to rent a car for one day, and you know you'll
+use it for more than 100 miles.  What is the equation relating the cost
+$y$ to the number of miles $x$ that you drive the car?
+\begin{sol}
+$y=0.15x+10$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+A photocopy store advertises the following prices: 5c~per
+copy for the first 20 copies, 4c~per copy for the 21st through
+100th copy, and 3c~per copy after the 100th copy.  Let $x$ be the
+number of copies, and let $y$ be the total cost of photocopying.  (a)
+Graph the cost as $x$ goes from 0 to 200 copies.  (b) Find the
+equation in the form $y=mx+b$ that tells you the cost of making $x$
+copies when $x$ is more than 100.
+\begin{sol}
+$0.03x+1.2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Market research tells you that if you set the price of an item at
+\$1.50, you will be able to sell 5000 items; and for every 10 cents you
+lower the price below \$1.50 you will be able to sell another 1000 items.
+Let $x$ be the number of items you can sell, and let $P$ be the price of
+an item.  (a)~Express $P$ linearly in terms of $x$, in other words,
+express $P$ in the form $P=mx+b$.  (b)~Express $x$
+linearly in terms of $P$.
+\begin{sol}
+(a) $P=-0.0001x+2$\\
+(b) $x=-10000P+20000$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+An instructor gives a 100-point final exam, and decides that a score
+90 or above will be a grade of 4.0, a score of 40 or below will be a grade
+of 0.0, and between 40 and 90 the grading will be linear.  Let $x$ be
+the exam score, and let $y$ be the corresponding grade.  Find a formula
+of the form $y=mx+b$ which applies to scores $x$ between 40 and 90.
+\begin{sol}
+$(2/25)x-(16/5)$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Find the distance between the pairs of points:
+\begin{enumerate}
+	\item	$(-1,1)$ and $(1,1)$.
+	\item	$(5,3)$ and $(-7,-2)$.
+	\item	$(1,1)$ and the origin.
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	$2$
+	\item	$\sqrt{2}$
+	\item	$\sqrt{2}$
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Find the midpoint of the line segment joining the point $(20,-10)$ to the origin.
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Find the equation of the circle of radius 3 centered at:
+\begin{multicols}{2}
+\begin{enumerate}
+	\item	$(0,0)$
+	\item	$(5,6)$
+	\item	$(-5,-6)$
+	\item	$(0,3)$
+	\item	$(0,-3)$
+	\item	$(3,0)$
+\end{enumerate}
+\end{multicols}
+\begin{sol}
+\begin{enumerate}
+	\item	$x^2+y^2=9$
+	\item	$(x-5)^2+(y-6)^2=9$
+	\item	$(x+5)^2+(y+6)^2=9$
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+For each pair of points $A(x_1,y_1)$ and $B(x_2,y_2)$ find an equation of
+the circle with center at $A$ that goes through $B$.
+\begin{multicols}{2}
+\begin{enumerate}
+	\item	$A(2,0)$, $B(4,3)$
+	\item	$A(-2,3)$, $B(4,3)$
+\end{enumerate}
+\end{multicols}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Determine the type of conic and sketch it.
+\begin{enumerate}
+	\item	$x^2+y^2+10y=0$
+	\item	$9x^2-90x+y^2+81=0$
+	\item	$6x+y^2-8y=0$
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	circle
+	\item	ellipse
+	\item	horizontal parabola
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Find the standard equation of the circle passing through $(-2,1)$
+ and tangent to the line $3x-2y =6$ at the point $(4,3)$.  Sketch. 
+ (Hint: The line through the center of the circle and the point of tangency
+ is perpendicular to the tangent line.)
+\begin{sol}
+$(x+2/7)^2+(y-41/7)^2=1300/49$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

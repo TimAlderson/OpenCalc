@@ -1,0 +1,241 @@
+\subsection*{Velocity}\label{sec:Velocity}
+
+We started this section by saying, ``It is often useful to know
+how sensitive the value of $y$ is to small changes in $x$.'' We have
+seen one purely mathematical example of this, involving the function $f(x)=\sqrt{625-x^2}$. 
+Here is a more applied example.
+
+With careful measurement it might be possible to discover that the height of a
+dropped ball $t$ seconds after it is released is $\ds h(t)=h_0-kt^2$. 
+(Here $h_0$ is the initial height of the ball, when $t=0$,
+and $k$ is some number determined by the experiment.)  A natural
+question is then, ``How fast is the ball going at time $t$?'' We can
+certainly get a pretty good idea with a little simple arithmetic. To
+make the calculation more concrete, let's use units of meters and seconds and say that $\ds h_0=100$ meters and $k=4.9$.
+Suppose we're interested in the speed at $t=2$. We know that when
+$t=2$ the height is $100-4\cdot 4.9=80.4$ meters. A second later, at $t=3$,
+the height is $100-9\cdot 4.9=55.9$ meters. The change in height during that second is
+ $55.9-80.4=-24.5$ meters. The negative sign means the height has decreased, as we expect for a falling ball, and the number 24.5 is the average speed of the ball during the time interval, in meters per second.
+
+We might guess that 24.5 meters per second is not a terrible estimate of the speed at
+$t=2$, but certainly we can do better. At $t=2.5$ the height is
+$\ds 100-4.9(2.5)^2=69.375$ meters. During the half second from $t=2$ to $t=2.5$, the change in height is
+ $69.375-80.4=-11.025$ meters giving an average speed of 
+$11.025/(1/2)=22.05$ meters per second. This should be a better estimate
+of the speed at $t=2$. So it's clear now how to get better and better
+approximations: compute average speeds over shorter and shorter time
+intervals. Between $t=2$ and $t=2.01$, for example, the ball drops
+0.19649 meters in one hundredth of a second, at an average speed of
+19.649 meters per second.
+ 
+We still might reasonably ask for the precise speed at $t=2$ (the {\em instantaneous} speed)
+rather than just an approximation to it. For this, once again, we need a limit. Let's calculate
+the average speed during the time interval from $t=2$ to $t=2+\Delta t$ without specifying a particular value for $\Delta t$.
+The change in height during the time interval from $t=2$ to $t=2+\Delta t$ is
+\begin{align*}
+h(2+\Delta t)-h(2)
+&=(100-4.9(2+\Delta t)^2)-80.4\\
+&=100-4.9(4+4\Delta t+\Delta t^2)-80.4\\
+&=100-19.6-19.6\Delta t-4.9\Delta t^2-80.4\\
+&=-19.6\Delta t-4.9\Delta t^2\\
+&=-\Delta t(19.6+4.9\Delta t)
+\end{align*}
+The average speed during this time interval is then
+$$\frac{\Delta t(19.6+4.9\Delta t)}{\Delta t}=19.6+4.9\Delta t.$$
+
+When $\Delta t$ is very small, this is very close to 19.6. Indeed,
+$\lim_{\Delta x\to 0}(19.6+4.9\Delta t)=19.6$. So the exact speed at $t=2$ is 19.6 meters per second.
+
+At this stage we need to make a distinction between \textit{speed} and
+\textit{velocity}. Velocity is signed speed, that is, speed with a
+direction indicated by a sign (positive or negative). Our algebra
+above actually told us that the instantaneous velocity of the ball at $t=2$ is
+$-19.6$ meters per second. The number 19.6 is the speed and the
+negative sign indicates that the motion is directed downwards (the
+direction of decreasing height).
+
+In the language of the previous section, we might have started with
+$\ds f(x)=100-4.9x^2$ and asked for the slope of the tangent line at
+$x=2$. We would have answered that question by computing $$
+\lim_{\Delta x\to 0}\frac{f(2+\Delta x) - f(2)}{\Delta x}
+=\lim_{\Delta x\to 0}\frac{-19.6\Delta x-4.9\Delta x^2}{\Delta x}
+=-19.6-4.9\Delta x=19.6
+$$ 
+The algebra is the same. Thus, the velocity of the ball is the value
+of the derivative of a certain function, namely, of the function that
+gives the position of the ball.
+
+The upshot is that this problem, finding the velocity of the ball, is
+\ifont{exactly} the same problem mathematically as finding the slope
+of a curve. This may already be enough evidence to convince you that
+whenever some quantity is changing (the height of a curve or the
+height of a ball or the size of the economy or the distance of a space
+probe from earth or the population of the world) the \textit{rate} at which the
+quantity is changing can, in principle, be computed in exactly the
+same way, by finding a derivative.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for Section \ref{sec:Slope}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+\begin{ex}
+Draw the graph of the function $\ds y=f(x)=\sqrt{169-x^2}$ between $x=0$
+and $x=13$.  Find the slope $\Delta y/\Delta x$ of the chord between the
+points of the circle lying over (a) $x=12$ and $x=13$, (b) $x=12$ and
+$x=12.1$,  (c) $x=12$ and $x=12.01$, (d) $x=12$ and $x=12.001$.  Now use
+the geometry of tangent lines on a circle to find (e) the exact value of the
+derivative $f'(12)$.  Your answers to (a)--(d) should be getting closer and
+closer to your answer to (e).
+\begin{sol}
+$-5$, $-2.47106145$, $-2.4067927$, $-2.400676$, $-2.4$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Use geometry to find the derivative $f'(x)$ of the function
+$\ds f(x)=\sqrt{625-x^2}$ in the text for each of the following $x$: (a) 20,
+(b) 24, (c) $-7$, (d) $-15$.  Draw a graph of the upper semicircle, and
+draw the tangent line at each of these four points.
+\begin{sol}
+$-4/3$, $-24/7$, $7/24$, $3/4$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Draw the graph of the function $y=f(x)=1/x$ between $x=1/2$ and $x=4$.
+Find the slope of the chord between (a) $x=3$ and $x=3.1$, (b) $x=3$ and
+$x=3.01$, (c) $x=3$ and $x=3.001$.  Now use algebra to find a simple
+formula for the slope of the chord between $(3,f(3))$ and $(3+\Delta
+x,f(3+\Delta x))$.  Determine what happens when $\Delta x$ approaches 0.
+In your graph of $y=1/x$, draw the straight line through the point
+$(3,1/3)$ whose slope is this limiting value of the difference quotient as
+$\Delta x$ approaches 0.
+\begin{sol}
+$-0.107526881$, $-0.11074197$, $-0.1110741$, 
+$\ds{-1\over3(3+\Delta x)}\rightarrow {-1\over9}$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Find an algebraic expression for the difference quotient $\ds \bigl(f(1+\Delta
+x)-f(1)\bigr)/\Delta x$ when $\ds f(x)=x^2-(1/x)$.  Simplify the expression as
+much as possible.  Then determine what happens as $\Delta x$ approaches 0.
+That value is $f'(1)$.
+\begin{sol}
+$\ds{3+3\Delta x+\Delta x^2\over1+\Delta x}\rightarrow3$ 
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Draw the graph of $\ds y=f(x)=x^3$ between $x=0$ and $x=1.5$.  Find the slope
+of the chord between (a) $x=1$ and $x=1.1$, (b) $x=1$ and $x=1.001$, (c)
+$x=1$ and $x=1.00001$.  Then use algebra to find a simple formula for the
+slope of the chord between $1$ and $1+\Delta x$.  (Use the expansion
+$\ds (A+B)^3=A^3+3A^2B+3AB^2+B^3$.)  Determine what happens as $\Delta x$
+approaches 0, and in your graph of $\ds y=x^3$ draw the straight line through
+the point $(1,1)$ whose slope is equal to the value you just found.
+\begin{sol}
+$3.31$, $3.003001$, $3.0000$,\hfill\break
+ $3+3\Delta x+\Delta x^2\rightarrow3$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}\label{ex:derivative of a line}
+Find an algebraic expression for the difference quotient $(f(x+\Delta
+x)-f(x))/\Delta x$ when $f(x)=mx+b$.  Simplify the expression as
+much as possible.  Then determine what happens as $\Delta x$ approaches 0.
+That value is $f'(x)$.
+\begin{sol}
+$m$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+Sketch the unit circle.  Discuss the behavior of the slope
+of the tangent line at various angles around the circle.  Which
+trigonometric function gives the slope of the tangent line at an angle
+$\theta$?  Why? Hint: think in terms of ratios of sides of triangles.
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Sketch the parabola $\ds y=x^2$.  For what values of $x$ on the parabola
+is the slope of the tangent line positive?  Negative?  What do you notice
+about the graph at the point(s) where the sign of the slope changes from
+positive to negative and vice versa?
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+An object is traveling in a straight line so that its position (that
+is, distance from some fixed point) is
+given by this table:
+\begin{table}[!ht]
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+time (seconds)& 0& 1& 2& 3\\
+\hline
+distance (meters)& 0& 10& 25& 60\\
+\hline
+\end{tabular}
+\end{table}
+
+Find the average speed of the object during the following time
+intervals: $[0,1]$, $[0,2]$, $[0,3]$,
+$[1,2]$, $[1,3]$, $[2,3]$. If you had to guess the speed at
+$t=2$ just on the basis of these, what would you guess?
+\begin{sol}
+$10$, $25/2$, $20$, $15$, $25$, $35$.
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Let $\ds y=f(t)=t^2$, where $t$ is the time in seconds and $y$ is the distance
+in meters that an object falls on a certain airless planet.  Draw a graph
+of this function between $t=0$ and $t=3$.  Make a table of the average
+speed of the falling object between (a) 2 sec and 3 sec, (b) 2 sec and
+2.1 sec, (c) 2 sec and 2.01 sec, (d) 2 sec and 2.001 sec.  Then use algebra
+to find a simple formula for the average speed between time $2$ and time
+$2+
+\Delta t$.  (If you substitute $\Delta t=1,\>0.1,\>0.01,\>0.001$ in this
+formula you should again get the answers to parts (a)--(d).)  Next, in your
+formula for average speed (which should be in simplified form) determine
+what happens as $\Delta t$ approaches zero.  This is the instantaneous
+speed.  Finally, in your graph of $\ds y=t^2$ draw the straight line
+through the point $(2,4)$ whose slope is the instantaneous velocity you
+just computed; it should of course be the tangent line.
+\begin{sol}
+$5$, $4.1$, $4.01$, $4.001$, $4+\Delta t\rightarrow 4$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+If an object is dropped from an 80-meter high window, its height $y$ above
+the ground at time $t$ seconds is given by the formula $\ds y=f(t)=80-4.9t^2$.
+(Here we are neglecting air resistance; the graph of this function was
+shown in figure~\ref{fig:data plot}.)  Find the average velocity of
+the falling object between (a) 1 sec and 1.1 sec, (b) 1 sec and 1.01 sec,
+(c) 1 sec and 1.001 sec.  Now use algebra to find a simple formula for the
+average velocity of the falling object between 1 sec and $1+\Delta t$ sec.
+Determine what happens to this average velocity as $\Delta t$ approaches 0.
+That is the instantaneous velocity at time $t=1$ second (it will be negative,
+because the object is falling).
+\begin{sol}
+$-10.29$, $-9.849$, $-9.8049$, \hfill\break
+$-9.8-4.9\Delta t\rightarrow -9.8$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

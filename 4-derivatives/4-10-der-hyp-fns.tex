@@ -1,0 +1,119 @@
+% pathAPEXCalculus_Source/text/06_Hyperbolic_Functions.tex
+%c13ffb9  on Jun 15, 2015
+%@APEXCalculus APEXCalculus Updated files from Version 2.0 to Version 3.0.
+%1 contributor
+%RawBlameHistory     421 lines (353 sloc)  20.7 KB
+\section{Hyperbolic Functions}\label{sec:hyperbolic}
+
+This section defines the derivatives of the hyperbolic functions and describes some of their properties. Recall their definition.
+
+\begin{definition}{Hyperbolic Functions}{def:hyperbolic_functions} 
+{\noindent%
+\begin{minipage}{.5\specialboxlength}
+\begin{enumerate}
+\item		$\ds \cosh x = \frac{e^x+e^{-x}}2$\index{hyperbolic function!definition}
+\item		$\ds \sinh x = \frac{e^x-e^{-x}}2$
+\item		$\ds \tanh x = \frac{\sinh x}{\cosh x}$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}{.5\specialboxlength}
+\begin{enumerate}\addtocounter{enumi}{3}
+\item		$\ds \sech x = \frac{1}{\cosh x}$
+\item		$\ds \csch x = \frac{1}{\sinh x}$
+\item		$\ds \coth x = \frac{\cosh x}{\sinh x}$
+\end{enumerate}
+\end{minipage}
+}\\
+\end{definition}
+
+\begin{example}{Exploring properties of hyperbolic functions}{ex_hf1}
+\noindent Use Definition \ref{def:hyperbolic_functions} to rewrite the following expressions.
+\begin{enumerate}
+\item		$\frac{d}{dx}\big(\cosh x\big)$
+\item		$\frac{d}{dx}\big(\sinh x\big)$
+\item		$\frac{d}{dx}\big(\tanh x\big)$
+\end{enumerate}
+\end{example}
+
+\begin{solution}
+{
+\begin{enumerate}
+\item  \hfill$\begin{aligned}[t]
+	\frac{d}{dx}\big(\cosh x\big) &= \frac{d}{dx}\left(\frac{e^x+e^{-x}}2\right) \\
+					&= \frac{e^x-e^{-x}}2\\
+					&= \sinh x.
+	\end{aligned}\hfill$
+
+So $\frac{d}{dx}\big(\cosh x\big) = \sinh x.$
+	
+\item  \hfill$\begin{aligned}[t]
+	\frac{d}{dx}\big(\sinh x\big) &= \frac{d}{dx}\left(\frac{e^x-e^{-x}}2\right) \\
+					&= \frac{e^x+e^{-x}}2\\
+					&= \cosh x.
+	\end{aligned}\hfill$
+
+So $\frac{d}{dx}\big(\sinh x\big) = \cosh x.$
+	
+\item  \hfill$\begin{aligned}[t]
+	\frac{d}{dx}\big(\tanh x\big) &= \frac{d}{dx}\left(\frac{\sinh x}{\cosh x}\right) \\
+					&= \frac{\cosh x \cosh x - \sinh x \sinh x}{\cosh^2 x}\\
+					&= \frac{1}{\cosh^2 x}\\
+					&= \sech^2 x.
+	\end{aligned}\hfill$
+
+So $\frac{d}{dx}\big(\tanh x\big) = \sech^2 x.$	
+\end{enumerate}
+\vskip-\baselineskip
+}\\
+\end{solution}
+
+The following Key Idea summarizes the derivatives relating to hyperbolic functions. Each can be verified by referring back to Definition \ref{def:hyperbolic_functions}.
+\textbf{Derivatives}
+\begin{enumerate}
+\item $\frac{d}{dx}\big(\cosh x\big) = \sinh x$
+\item $\frac{d}{dx}\big(\sinh x\big) = \cosh x$
+\item $\frac{d}{dx}\big(\tanh x\big) = \sech^2 x$
+\item $\frac{d}{dx}\big(\sech x\big) = -\sech x\tanh x$
+\item $\frac{d}{dx}\big(\csch x\big) = -\csch x\coth x$
+\item $\frac{d}{dx}\big(\coth x\big) = -\csch^2x$
+\end{enumerate}
+
+
+%We practice using Key Idea \ref{idea:hyperbolic_identities}.\\
+
+%\example{ex_hf2}{Derivatives and integrals of hyperbolic functions}{
+%Evaluate the following derivatives and integrals.
+
+%\begin{minipage}[t]{.5\linewidth}
+%\begin{enumerate}
+%\item		$\ds\frac{d}{dx}\big(\cosh 2x\big)$
+%\item		$\ds\int \sech^2(7t-3)\ dt$
+%\end{enumerate}
+%\end{minipage}
+%\begin{minipage}[t]{.5\linewidth}
+%\begin{enumerate}\addtocounter{enumi}{2}
+%\item		$\ds \int_0^{\ln 2} \cosh x\ dx$
+%\end{enumerate}
+%\end{minipage}
+%}
+%{\begin{enumerate}
+%\item		Using the Chain Rule directly, we have $\frac{d}{dx} \big(\cosh 2x\big) = 2\sinh 2x$.
+%
+%Just to demonstrate that it works, let's also use the Basic Identity found in Key Idea \ref{idea:hyperbolic_identities}: $\cosh 2x = \cosh^2x+\sinh^2x$.
+%\begin{align*}\frac{d}{dx}\big(\cosh 2x\big) = \frac{d}{dx}\big(\cosh^2x+\sinh^2x\big) &= 2\cosh x\sinh x+ 2\sinh x\cosh x\\ &= 4\cosh x\sinh x.
+%\end{align*}
+%Using another Basic Identity, we can see that $4\cosh x\sinh x = 2\sinh 2x$. We get the same answer either way.
+
+%\item	  We employ substitution, with $u = 7t-3$ and $du = 7dt$. Applying Key Ideas \ref{idea:linearsub}  and \ref{idea:hyperbolic_identities} we have:
+%$$ \int \sech^2 (7t-3)\ dt = \frac17\tanh (7t-3) + C.$$
+%
+%\item		$$\int_0^{\ln 2} \cosh x\ dx = \sinh x\Big|_0^{\ln 2} = \sinh (\ln 2) - \sinh 0 = \sinh(\ln 2).$$
+%
+%We can simplify this last expression as $\sinh x$ is based on exponentials:
+%$$\sinh(\ln 2) = \frac{e^{\ln 2}-e^{-\ln 2}}2 = \frac{2-1/2}{2} = \frac34.$$
+%\end{enumerate}
+%\vskip-1.5\baselineskip
+
+
+
+

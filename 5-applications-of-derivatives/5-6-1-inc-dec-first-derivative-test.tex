@@ -1,0 +1,311 @@
+\subsection{Intervals of Increase/Decrease, and the First Derivative Test}\label{sec:FirstDer}
+The method of Section~\ref{subsec:LocalExtremaSubsection} for deciding whether there is a
+local maximum or minimum at a critical value is not always
+convenient. We can instead use information about the derivative
+$f'(x)$ to decide; since we have already had to compute the derivative
+to find the critical values, there is often relatively little extra
+work involved in this method.
+
+How can the derivative tell us whether there is a maximum, minimum, or
+neither at a point? Suppose that $f$ is differentiable at and around $x=a$, and suppose further that $a$ is a critical point of $f$. Then we have several possibilities:
+\begin{enumerate}
+\item	There is a local maximum at $x=a$. This happens if $f'(x)>0$ as we approach $x=a$ from the left (i.e. when $x$ is in the vicinity of $a$, and $x<a$) and $f'(x)<0$ as we move to the right of $x=a$ (i.e. when $x$ is in the vicinity of $a$, and $x>a$).
+\item	There is a local minimum at $x=a$. This happens if $f'(x)<0$ as we approach $x=a$ from the left (i.e. when $x$ is in the vicinity of $a$, and $x<a$) and $f'(x)>0$ as we move to the right of $x=a$ (i.e. when $x$ is in the vicinity of $a$, and $x>a$).
+\item	There is neither a local maximum or local minimum at $x=a$. If $f'(x)$ does not change from negative to positive, or from positive to negative, as we move from the left of $x=a$ to the right of $x=a$ (that is, $f'(x)$ is positive on both sides of $x=a$, or negative on both sides of $x=a$) then there is neither a maximum nor minimum when $x=a$.
+\end{enumerate}
+See the first graph in Figure~\ref{fig:max and min points}
+and the graph in Figure~\ref{fig:non extremum}
+for examples.
+
+\begin{example}{Local Maximum and Minimum}{localmaxandmin}
+Find all local maximum and minimum points for $f(x)=\sin x+\cos
+x$ using the first derivative test.  
+\end{example}
+
+\begin{solution} 
+The derivative is $f'(x)=\cos
+x-\sin x$ and from Example~\ref{max and min} the critical
+values we need to consider are $\pi/4$ and $5\pi/4$.
+
+We analyze the graphs of $\sin x$ and $\cos x$.
+Just to the left of $\pi/4$ the cosine is larger than the
+  sine, so $f'(x)$ is positive; just to the right the cosine is
+  smaller than the sine, so $f'(x)$ is negative. This means there is a
+  local maximum at $\pi/4$. Just to the left of $5\pi/4$ the cosine is
+  smaller than the sine, and to the right the cosine is larger than
+  the sine. This means that the derivative $f'(x)$ is negative to the
+  left and positive to the right, so $f$ has a local minimum at
+  $5\pi/4$.
+\end{solution}
+
+The above observations have obvious intuitive appeal as
+you examine the graphs in Figures~\ref{fig:max and min points} and \ref{fig:non extremum}. We can extend these ideas
+further and then formulate and prove a theorem: If the graph of $f$ is
+increasing before (i.e., to the left of) $x=a$ and decreasing after (i.e.,
+to the right of) $x=a,$ then there is a local maximum at $x=a.$ If the graph
+of $f$ is decreasing before $x=a$ and increasing after $x=a,$ then there is
+a local minimum at $x=a.$ If the graph of $f$ is consistently increasing on
+either side of $x=a$ or consistently decreasing on either side of $x=a,$
+then there is neither a local maximum nor a local minimum at $x=a.$ We can
+prove the following theorem using the Mean Value Theorem.
+
+\begin{theorem}{Intervals of Increase and Decrease}{IntervalsIncDecTheorem}
+If $f^{\prime }\left( x\right) >0$ for every $x$ in an interval, then $f$ is
+increasing on that interval.
+
+If $f^{\prime }\left( x\right) <0$ for every $x$ in an interval, then $f$ is
+decreasing on that interval.
+\end{theorem}
+\begin{proof}
+We will prove the increasing case. The proof of the decreasing case
+is similar. Suppose that $f^{\prime }\left( x\right) >0$ on an interval $I.$
+Then $f$ is differentiable, and hence also, continuous on $I.$ If $x_{1}$
+and $x_{2}$ are any two numbers in $I$ and $x_{1}<x_{2},$ then $f$ is
+continuous on $\left[ x_{1},x_{2}\right] $ and differentiable on $\left(
+x_{1},x_{2}\right) .$ By the Mean Value Theorem, there is some $c$ in $%
+\left( x_{1},x_{2}\right) $ such that 
+\begin{equation*}
+f^{\prime }\left( c\right) =\frac{f\left( x_{2}\right) -f\left( x_{1}\right) 
+}{x_{2}-x_{1}}.
+\end{equation*}%
+But $c$ must be in $I,$ and thus, since $f^{\prime }\left( x\right) >0$ for
+every $x$ in $I,$ $f^{\prime }\left( c\right) >0$. Also, since $x_{1}<x_{2},$
+we have $x_{2}-x_{1}>0.$ Therefore, both the left hand side and the
+denominator of the right hand side are positive. It follows that the
+numerator of the right hand must be positive. That is, $f\left( x_{2}\right)
+-f\left( x_{1}\right) >0,$ or in other words, $f\left( x_{1}\right) <f\left(
+x_{2}\right) .$ This shows that between $x_{1}$ and $x_{2}$ in $I,$ the
+larger one, $x_{2},$ necessarily has the larger function value, $f\left(
+x_{2}\right) ,$ and the smaller one, $x_{1},$ necessarily have the smaller
+function value, $f\left( x_{1}\right) .$ This means that $f$ is increasing
+on $I$.
+\end{proof}
+
+\begin{example}{Local Minimum and Maximum}{LocalMaxMinExample}
+Consider the function $f\left( x\right) =x^{4}-2x^{2}.$ Find
+where $f$ is increasing and where $f$ is decreasing. Use this information to
+find the local maximum and minimum points of $f$.
+\end{example}
+\begin{solution}
+We compute $f^{\prime }\left( x\right) $ and analyze its sign. 
+\begin{equation*}
+f^{\prime }\left( x\right) =4x^{3}-4x=4x\left( x^{2}-1\right) =4x\left(
+x-1\right) \left( x+1\right) .
+\end{equation*}%
+The solution of the inequality $f^{\prime }\left( x\right) >0$ is $\left(
+-1,0\right) \cup \left( 1,\infty \right) $. So, $f$ is increasing on the
+interval $\left( -1,0\right) $ and on the interval $\left( 1,\infty \right)
+. $ The solution of the inequality $f^{\prime }\left( x\right) <0$ is $%
+\left( -\infty ,-1\right) \cup \left( 0,1\right) .$ So, $f$ is decreasing on
+the interval $\left( -\infty ,-1\right) $ and on the interval $\left(
+0,1\right) .$ Therefore, at the critical points $-1,$ $0$ and $1,$
+respectively, $f$ has a local minimum, a local maximum and a local minimum.
+\end{solution}
+
+%\figure[!ht]
+%\vbox{\beginpicture
+%\normalgraphs
+%%\ninepoint
+%\setcoordinatesystem units <1.5truecm,1.5truecm>
+%\setplotarea x from 0 to 6.28, y from -1 to 1
+%\axis left shiftedto x=0 /
+%\axis bottom shiftedto y=0 ticks withvalues {${\pi\over4}$}
+%      {$5\pi\over4$} / at 0.7853981635 3.926990818 / /
+%\setquadratic
+%\plot
+%0.000 0.000 
+%0.063 0.063 0.126 0.125 0.188 0.187 0.251 0.249 
+%0.314 0.309 0.377 0.368 0.440 0.426 0.503 0.482 0.565 0.536 
+%0.628 0.588 0.691 0.637 0.754 0.685 0.817 0.729 0.880 0.771 
+%0.942 0.809 1.005 0.844 1.068 0.876 1.131 0.905 1.194 0.930 
+%1.257 0.951 1.319 0.969 1.382 0.982 1.445 0.992 1.508 0.998 
+%1.571 1.000 1.634 0.998 1.696 0.992 1.759 0.982 1.822 0.969 
+%1.885 0.951 1.948 0.930 2.011 0.905 2.073 0.876 2.136 0.844 
+%2.199 0.809 2.262 0.771 2.325 0.729 2.388 0.685 2.450 0.637 
+%2.513 0.588 2.576 0.536 2.639 0.482 2.702 0.426 2.765 0.368 
+%2.827 0.309 2.890 0.249 2.953 0.187 3.016 0.125 3.079 0.063 
+%3.142 0.000 3.204 -0.063 3.267 -0.125 3.330 -0.187 3.393 -0.249 
+%3.456 -0.309 3.519 -0.368 3.581 -0.426 3.644 -0.482 3.707 -0.536 
+%3.770 -0.588 3.833 -0.637 3.896 -0.685 3.958 -0.729 4.021 -0.771 
+%4.084 -0.809 4.147 -0.844 4.210 -0.876 4.273 -0.905 4.335 -0.930 
+%4.398 -0.951 4.461 -0.969 4.524 -0.982 4.587 -0.992 4.650 -0.998 
+%4.712 -1.000 4.775 -0.998 4.838 -0.992 4.901 -0.982 4.964 -0.969 
+%5.027 -0.951 5.089 -0.930 5.152 -0.905 5.215 -0.876 5.278 -0.844 
+%5.341 -0.809 5.404 -0.771 5.466 -0.729 5.529 -0.685 5.592 -0.637 
+%5.655 -0.588 5.718 -0.536 5.781 -0.482 5.843 -0.426 5.906 -0.368 
+%5.969 -0.309 6.032 -0.249 6.095 -0.187 6.158 -0.125 6.220 -0.063 
+%6.283 0.000 /
+%\plot
+%0.000 1.000 0.063 0.998 0.126 0.992 0.188 0.982 0.251 0.969 
+%0.314 0.951 0.377 0.930 0.440 0.905 0.503 0.876 0.565 0.844 
+%0.628 0.809 0.691 0.771 0.754 0.729 0.817 0.685 0.880 0.637 
+%0.942 0.588 1.005 0.536 1.068 0.482 1.131 0.426 1.194 0.368 
+%1.257 0.309 1.319 0.249 1.382 0.187 1.445 0.125 1.508 0.063 
+%1.571 0.000 1.634 -0.063 1.696 -0.125 1.759 -0.187 1.822 -0.249 
+%1.885 -0.309 1.948 -0.368 2.011 -0.426 2.073 -0.482 2.136 -0.536 
+%2.199 -0.588 2.262 -0.637 2.325 -0.685 2.388 -0.729 2.450 -0.771 
+%2.513 -0.809 2.576 -0.844 2.639 -0.876 2.702 -0.905 2.765 -0.930 
+%2.827 -0.951 2.890 -0.969 2.953 -0.982 3.016 -0.992 3.079 -0.998 
+%3.142 -1.000 3.204 -0.998 3.267 -0.992 3.330 -0.982 3.393 -0.969 
+%3.456 -0.951 3.519 -0.930 3.581 -0.905 3.644 -0.876 3.707 -0.844 
+%3.770 -0.809 3.833 -0.771 3.896 -0.729 3.958 -0.685 4.021 -0.637 
+%4.084 -0.588 4.147 -0.536 4.210 -0.482 4.273 -0.426 4.335 -0.368 
+%4.398 -0.309 4.461 -0.249 4.524 -0.187 4.587 -0.125 4.650 -0.063 
+%4.712 0.000 4.775 0.063 4.838 0.125 4.901 0.187 4.964 0.249 
+%5.027 0.309 5.089 0.368 5.152 0.426 5.215 0.482 5.278 0.536 
+%5.341 0.588 5.404 0.637 5.466 0.685 5.529 0.729 5.592 0.771 
+%5.655 0.809 5.718 0.844 5.781 0.876 5.843 0.905 5.906 0.930 
+%5.969 0.951 6.032 0.969 6.095 0.982 6.158 0.992 6.220 0.998 
+%6.283 1.000 /
+%\endpicture}
+%\label{fig:sin and cos}
+%\caption{The sine and cosine.}
+%\endfigure
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:FirstDer}}
+
+\begin{enumialphparenastyle}
+
+Find all critical points and identify them as local maximum points, local minimum points, or neither.
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y=x^2-x$ 
+\begin{sol}
+ min at $x=1/2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y=2+3x-x^3$ 
+\begin{sol}
+ min at $x=-1$, max at $x=1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y=x^3-9x^2+24x$
+\begin{sol}
+ max at $x=2$, min at $x=4$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y=x^4-2x^2+3$ 
+\begin{sol}
+ min at $x=\pm 1$, max at $x=0$.
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y=3x^4-4x^3$
+\begin{sol}
+ min at $x=1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y=(x^2-1)/x$
+\begin{sol}
+ none
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds y=3x^2-(1/x^2)$ 
+\begin{sol}
+ none
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $y=\cos(2x)-x$ 
+\begin{sol}
+ min at $x=7\pi/12+k\pi$, max at $x=-\pi/12+k\pi$, for integer $k$.
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+$\ds f(x) = (5-x)/(x+2)$
+\begin{sol}
+ none
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds f(x) = |x^2 - 121|$
+\begin{sol}
+ max at $x=0$, min at $x=\pm 11$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds f(x) = x^3/(x+1)$
+\begin{sol}
+ min at $x=-3/2$, neither at $x=0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%%
+%\begin{ex}
+% $\ds f(x)= \cases{x^2 \sin(1/x)  & $x\neq 0$ \cr
+% 0  & $x=0$\cr}$
+
+%%%%%%%%%%
+\begin{ex}
+ $\ds f(x) = \sin ^2 x$
+\begin{sol}
+ min at $n\pi$, max at $\pi/2+n\pi$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Find the maxima and minima of $f(x)=\sec x$.
+\begin{sol}
+ min at $2n\pi$, max at $(2n+1)\pi$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+  Let $\ds f(\theta) = \cos^2(\theta) -
+ 2\sin(\theta)$.  Find the intervals where $f$ is increasing and the
+ intervals where $f$ is decreasing in $[0,2\pi]$.  Use this
+ information to classify the critical points of $f$ as either local
+ maximums, local minimums, or neither.
+\begin{sol}
+ min at $\pi/2+2n\pi$, max at $3\pi/2+2n\pi$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Let $r>0$. Find the local
+maxima and minima of the function $\ds f(x)
+=\sqrt{r^2 -x^2 }$ on its domain $[-r,r]$.
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+ Let $\ds f(x) =a x^2 + bx + c$ with $a\neq 0$. Show that $f$
+has exactly one critical point using the first derivative test. Give
+conditions on $a$ and $b$ which guarantee that the critical point will
+be a maximum. It is possible to see this without using calculus at
+all; explain.
+\end{ex}
+
+\end{enumialphparenastyle}

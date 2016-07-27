@@ -1,0 +1,85 @@
+\subsection{Trigonometric Identities}
+There are numerous trigonometric identities, including those relating to shift/periodicity, Pythagoras type identities, double-angle formulas, half-angle formulas and addition formulas.
+We list these below.
+
+\begin{enumerate}
+\item[1.] \dfont{Shifts and periodicity}
+$$\begin{array}{|rcl|rcl|rcl|}
+\hline
+~&~&~&~&~&~&~&~&~\\
+\ds{\sin (\theta + 2\pi)} & = & \ds{\sin \theta} &
+\ds{\cos (\theta + 2\pi)} &= & \ds{\cos \theta} &
+\ds{\tan (\theta + 2\pi)} &= & \ds{\tan \theta} \\
+~&~&~&~&~&~&~&~&~\\
+\hline
+~&~&~&~&~&~&~&~&~\\
+\ds{\sin (\theta + \pi)} &= & \ds{-\sin \theta} &
+\ds{\cos (\theta + \pi)} &= & \ds{-\cos \theta} &
+\ds{\tan (\theta + \pi)} &= & \ds{\tan \theta} \\
+~&~&~&~&~&~&~&~&~\\
+\hline
+~&~&~&~&~&~&~&~&~\\
+\ds{\sin (-\theta)} &= & \ds{-\sin \theta} & 
+\ds{\cos (-\theta)} &= & \ds{\cos \theta} & 
+\ds{\tan (-\theta)} &= & \ds{-\tan \theta}  \\
+~&~&~&~&~&~&~&~&~\\
+\hline
+~&~&~&~&~&~&~&~&~\\
+\ds{\sin \left(\frac{\pi}{2}-\theta\right)} &=&  \ds{\cos \theta} &
+\ds{\cos \left(\frac{\pi}{2}-\theta\right)} &=&  \ds{\sin \theta} &
+\ds{\tan \left(\frac{\pi}{2}-\theta\right)} &= & \ds{\cot \theta}\\
+~&~&~&~&~&~&~&~&~\\
+\hline
+\end{array}$$
+\end{enumerate}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item[2.] \dfont{Pythagoras type formulas}
+\begin{itemize}
+	\item  $\sin ^2 \theta + \cos ^2 \theta = 1$
+	\item $\tan^2 \theta + 1 = \sec^2 \theta$
+	\item $1 + \cot ^2 \theta = \csc^2 \theta$
+\end{itemize}
+
+\item[3.] \dfont{Double-angle formulas}
+\begin{itemize}
+	\item $\sin(2\theta) = 2\sin\theta\cos\theta$
+	\item $\begin{array}{rcl}
+  \cos(2\theta) &= &\cos^2\theta - \sin^2\theta\\
+ ~ &= &2\cos^2\theta - 1\\
+~  &= &1-2\sin^2\theta.\\
+\end{array}$
+\end{itemize}
+
+\item[4.] \dfont{Half-angle formulas}
+\begin{itemize}
+	\item $\ds{\cos^2\theta = \frac{1+\cos(2\theta)}{2}}$
+	\item $\ds{\sin^2\theta = \frac{1-\cos(2\theta)}{2}}$
+\end{itemize}
+
+\item[5.] \dfont{Addition formulas}
+\begin{itemize}
+	\item $\sin(\theta+\phi) = \sin\theta\cos\phi + \cos\theta\sin\phi$
+	\item $\cos(\theta+\phi) = \cos\theta\cos\phi - \sin\theta\sin\phi$
+	\item $\ds{\tan(\theta+\phi) = \frac{\tan\theta + \tan\phi}{1 - \tan\theta\tan\phi}}$
+	\item	$\sin(\theta-\phi) = \sin\theta\cos\phi - \cos\theta\sin\phi$
+	\item	$\cos(\theta-\phi) = \cos\theta\cos\phi + \sin\theta\sin\phi$
+\end{itemize}
+\end{enumerate}
+\end{multicols}
+
+\begin{example}{Double Angle}{DoubleAngle}
+Find all values of $x$ with $0\leq x\leq \pi$ such that $\sin 2x=\sin x$.
+\end{example}
+
+\begin{solution} 
+Using the double-angle formula $\sin 2x = 2\sin x\cos x$ we have:
+$$2\sin x\cos x = \sin x$$
+$$2\sin x\cos x- \sin x = 0$$
+$$\sin x(2\cos x - 1)=0$$
+Thus, either $\sin x=0$ or $\cos x = 1/2$.
+For the first case when $\sin x = 0$, we get $x=0$ or $x=\pi$.
+For the second case when $\cos x=1/2$, we get $x=\pi/3$ (use the special triangles and CAST rule to get this).
+Thus, we have three solutions: $x=0$, $x=\pi/3$, $x=\pi$.
+\end{solution}

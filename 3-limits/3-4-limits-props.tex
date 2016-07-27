@@ -1,0 +1,544 @@
+\section{Computing Limits: Limit Laws}\label{sec:ComputingLimitsAlg}
+\subsection*{Properties of limits}
+
+
+In Section \ref{sec:LimitsWorkingDefn} we explored the concept of the limit without a strict definition, meaning we could only make approximations. In the previous section we gave the definition of the limit and demonstrated how to use it to verify our approximations were correct. Thus far, our method of finding a limit is 1) make a really good approximation either graphically or numerically, and 2) verify our approximation is correct using a $\epsilon$-$\delta$ proof.
+
+Recognizing that $\epsilon$-$\delta$ proofs are cumbersome, this section gives a series of theorems which allow us to find limits much more quickly and intuitively. \\
+%\vskip \baselineskip
+
+Suppose that $\lim_{x\to 2} f(x)=2$ and $\lim_{x\to 2} g(x) = 3$. What is $\lim_{x\to 2}(f(x)+g(x))$? Intuition tells us that the limit should be $ 5 $, as we expect limits to behave in a nice way. The following theorem states that already established limits do behave nicely.
+
+%\enlargethispage{4\baselineskip}
+
+\begin{theorem}{Basic Limit Properties}{limit_algebra}
+{
+Let $a$, $c$, $L$ and $K$ be real numbers, let $n$ be a positive integer, and let $f$ and $g$ be functions with the following limits: \index{limit!properties}
+$$\lim_{x\to a}f(x) = L \text{\ and\ } \lim_{x\to a} g(x) = K.$$
+The following limits hold.
+\begin{enumerate}
+\item \parbox{160pt}{Constants:} $\displaystyle \lim_{x\to a} c = c$
+\item	\parbox{160pt}{Identity }						$\displaystyle \lim_{x\to a} x = a$
+\item	\parbox{160pt}{Sum/Difference Rules:} $\displaystyle \lim_{x\to a}(f(x)\pm g(x)) = L\pm K$
+\item	\parbox{160pt}{Scalar Multiple Rule:}	$\displaystyle \lim_{x\to a} c\cdot f(x) = cL$
+\item	\parbox{160pt}{Limit Product Rule:}	$\displaystyle \lim_{x\to a} f(x)\cdot g(x) = LK$
+\item	\parbox{160pt}{Limit Quotient Rule:} $\displaystyle \lim_{x\to a} f(x)/g(x) = L/K$, ($K\neq 0)$
+\item	\parbox{160pt}{Limit Power Rule:} 	$\displaystyle \lim_{x\to a} f(x)^n = L^n$
+\item	\parbox{160pt}{Continuity of Roots:}		\parbox[t]{185pt}{$\displaystyle \lim_{x\to a} \sqrt[n]{f(x)} = \sqrt[n]{L}$}% \qquad \small (if $n$ is even then $L$ must be greater than 0; when $n$ is odd, it is true for all $L$.)}
+\item	\parbox{80pt}{Compositions:} \parbox[t]{240pt}{Adjust our previously given limit assumptions to: $$\lim_{x\to a}g(x) = L \text{\ and\ } \lim_{x\to L} f(x) = f(L).$$ Then $\ds \lim_{x\to c}f(g(x)) = f(L)$.}
+\end{enumerate}
+}
+\end{theorem}
+
+
+
+
+We make a note about Property \#8: when $n$ is even, $L$ must be greater than 0. If $n$ is odd, then the statement is true for all $L$.
+
+Regarding Property \#9, note the special form of the condition on $f$: it is not enough to
+know that $\ds\lim_{x\to L}f(x) = M$, though it is a bit tricky to see
+why. We have included an example in the exercise section to illustrate this tricky
+point for those who are interested. As we shall eventually see, many of the most familiar functions do have this property, so this result can therefore be applied. 
+
+Roughly speaking, these rules say that to compute the limit of an algebraic expression, it is enough to compute the limits of the ``innermost bits'' and then combine these limits. This often means that it is possible to simply plug in a value for the variable, since
+$\ds \lim_{x\to a} x =a$.
+
+\begin{example}{Limit Properties}{LimitProperties}
+Compute $\ds\lim_{x\to 1}{x^2-3x+5\over x-2}$.
+\end{example}
+
+\begin{solution} 
+ If we apply the theorem in all its gory detail, we get
+\begin{eqnarray*}
+\lim_{x\to 1}{x^2-3x+5\over x-2}&=&
+{\ds\lim_{x\to 1}(x^2-3x+5)\over \ds\lim_{x\to1}(x-2)}\cr
+\\
+&=&{(\ds\lim_{x\to 1}x^2)-(\ds\lim_{x\to1}3x)+(\ds\lim_{x\to1}5)\over 
+  (\ds\lim_{x\to1}x)-(\ds\lim_{x\to1}2)}\cr
+\\
+&=&{(\ds\lim_{x\to 1}x)^2-3(\ds\lim_{x\to1}x)+5\over (\ds\lim_{x\to1}x)-2}\cr
+\\
+&=&{1^2-3\cdot1+5\over 1-2}\cr
+\\
+&=&{1-3+5\over -1} = -3
+\end{eqnarray*}
+\end{solution}
+ 
+
+
+\begin{example}{Using basic limit properties}{ex_basic_limit_1}{
+Let $$\lim_{x\to 2} f(x)=2,\quad\lim_{x\to 2} g(x) = 3\quad \text{\ and \ }\quad p(x) = 3x^2-5x+7.$$ Find the following limits:
+
+\noindent\begin{minipage}[t]{.5\textwidth}
+\begin{enumerate}
+\item		$\ds \lim_{x\to 2} \big(f(x) + g(x)\big)$
+\item		$\ds \lim_{x\to 2} \big(5f(x) + g(x)^2\big)$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+\begin{enumerate}\addtocounter{enumi}{2}
+\item		$\ds \lim_{x\to 2} p(x)$
+\end{enumerate}
+\end{minipage}}
+\end{example}
+
+
+\begin{solution}
+{\begin{enumerate}
+\item		Using the Sum/Difference rule, we know that $\ds \lim_{x\to 2} \big(f(x) + g(x)\big) = 2+3 =5$.
+\item		Using the Scalar Multiple and Sum/Difference rules, we find that $\ds \lim_{x\to 2} \big(5f(x) + g(x)^2\big) = 5\cdot 2 + 3^2 = 19.$
+\item		Here we combine the Power, Scalar Multiple, Sum/Difference and Constant Rules. We show quite a few steps, but in general these can be omitted:
+				\begin{align*}
+				\lim_{x\to 2} p(x) &= \lim_{x\to 2} (3x^2-5x+7) \\
+				&= \lim_{x\to 2} 3x^2-\lim_{x\to 2} 5x+\lim_{x\to 2}7 \\
+				 &= 3\cdot 2^2 - 5\cdot 2+7 \\
+				 &= 9
+				\end{align*}
+\end{enumerate}
+}
+\end{solution}
+
+
+
+%
+Part 3 of the previous example demonstrates how the limit of a quadratic polynomial can be determined using the properties of Theorem \ref{thm:limit_algebra}. Not only that, recognize that $$\lim_{x\to 2} p(x) = 9 = p(2);$$ i.e., the limit at $ 2 $ was found just by plugging $ 2 $ into the function. This holds true for all polynomials, and also for rational functions (which are quotients of polynomials), as stated in the following theorem.
+
+
+\begin{theorem}{Limits of Polynomial and Rational Functions}{poly_rat}
+{Let $p(x)$ and $q(x)$ be polynomials and $c$ a real number. Then:
+\begin{enumerate}
+\item	$\ds \lim_{x\to c} p(x) = p(c)$
+\item	$\ds \lim_{x\to c} \frac{p(x)}{q(x)} = \frac{p(c)}{q(c)}$, where $q(c) \neq 0$.
+\end{enumerate}
+}
+\end{theorem}
+
+\begin{example}{Finding a limit of a rational function}{ex_limit_rat}
+{
+Using Theorem \ref{thm:poly_rat}, find $$\lim_{x\to -1} \frac{3x^2-5x+1}{x^4-x^2+3}.$$}
+\end{example}
+
+
+\begin{solution}
+{Using Theorem \ref{thm:poly_rat}, we can quickly state that 
+	\begin{align*} \lim_{x\to -1}\frac{3x^2-5x+1}{x^4-x^2+3} &= \frac{3(-1)^2-5(-1)+1}{(-1)^4-(-1)^2+3} \\
+												&= \frac{9}{3} =3.
+	\end{align*}
+}
+\end{solution}
+
+
+
+
+It was likely frustrating in Example \ref{exa:ex_compute_lim2} to do a lot of work to prove that $$\lim_{x\to 2} x^2 = 4$$ as it seemed fairly obvious. The previous theorems state that many functions behave in such an ``obvious'' fashion, as demonstrated by the rational function in Example \ref{exa:ex_limit_rat}. 
+
+Polynomial and rational functions are not the only functions to behave in such a predictable way. The following theorem gives a list of functions whose behavior is particularly ``nice'' in terms of limits. In the next section, we will give a formal name to these functions that behave ``nicely.''
+
+
+\begin{theorem}{Special Limits}{lim_continuous}{%
+Let $c$ be a real number in the domain of the given function and let $n$ be a positive integer. The following limits hold: 
+
+\noindent\begin{minipage}[t]{.33\textwidth}
+\begin{enumerate}
+\item		$\ds \lim_{x\to c} \sin x = \sin c$
+\item		$\ds \lim_{x\to c} \cos x = \cos c$
+\item		$\ds \lim_{x\to c} \tan x = \tan c$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[t]{.33\textwidth}
+\begin{enumerate}\addtocounter{enumi}{3}
+\item		$\ds \lim_{x\to c} \csc x = \csc c$
+\item		$\ds \lim_{x\to c} \sec x = \sec c$
+\item		$\ds \lim_{x\to c} \cot x = \cot c$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[t]{.33\textwidth}
+\begin{enumerate}\addtocounter{enumi}{6}
+\item		$\ds \lim_{x\to c} a^x = a^c$ ($a>0$)
+\item		$\ds \lim_{x\to c} \ln x = \ln c$
+\item		$\ds \lim_{x\to c} \sqrt[n]{x} = \sqrt[n]{c}$\end{enumerate}
+\end{minipage}
+}
+\end{theorem}
+
+
+
+\begin{example}{Evaluating limits analytically}{ex_limit_1}{
+Evaluate the following limits. 
+
+\noindent\begin{minipage}[t]{.5\textwidth}
+\begin{enumerate}
+\item		$\ds \lim_{x\to \pi} \cos x$
+\item		$\ds \lim_{x\to 3} (\sec^2x - \tan^2 x)$
+\item		$\ds \lim_{x\to \pi/2} \cos x\sin x$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+\begin{enumerate}\addtocounter{enumi}{3}
+\item		$\ds \lim_{x\to 1} e^{\ln x}$
+\item		$\ds \lim_{x\to 0} \frac{\sin x}{x}$
+\end{enumerate}
+\end{minipage}
+}
+\end{example}
+
+
+\begin{solution}
+{
+\begin{enumerate}
+\item		This is a straightforward application of Theorem \ref{thm:lim_continuous}. $\ds \lim_{x\to \pi} \cos x = \cos \pi = -1$.
+\item		We can approach this in at least two ways. First, by directly applying Theorem \ref{thm:lim_continuous}, we have:
+				$$\lim_{x\to 3} (\sec^2x - \tan^2 x) = \sec^23-\tan^23.$$ Using the Pythagorean Theorem, this last expression is 1; therefore $$\lim_{x\to 3} (\sec^2x - \tan^2 x) = 1.$$
+				
+				We can also use the Pythagorean Theorem from the start. $$\lim_{x\to 3} (\sec^2x - \tan^2 x) = \lim_{x\to 3} 1 = 1,$$ using the Constant limit rule. Either way, we find the limit is 1.
+				
+\item		Applying the Product limit rule of Theorem \ref{thm:limit_algebra} and Theorem \ref{thm:lim_continuous} gives $$\ds \lim_{x\to \pi/2} \cos x\sin x = \cos (\pi/2)\sin(\pi/2) = 0\cdot 1 = 0.$$
+
+\item		Again, we can approach this in two ways. First, we can use the exponential/logarithmic identity that $e^{\ln x} = x$ and evaluate $\ds \lim_{x\to 1} e^{\ln x} = \lim_{x\to 1} x = 1.$ 
+
+We can also use the Composition limit rule of Theorem \ref{thm:limit_algebra}. Using Theorem \ref{thm:lim_continuous}, we have $\ds \lim_{x\to 1}\ln x = \ln 1 = 0$. Applying the Composition rule, $$\ds \lim_{x\to 1} e^{\ln x} = \lim_{x\to 0} e^x = e^0 = 1.$$ Both approaches are valid, giving the same result.
+
+\item		We encountered this limit in Section \ref{sec:LimitsWorkingDefn}. Applying our theorems, we attempt to find the limit as $$\lim_{x\to 0}\frac{\sin x}{x}\rightarrow \frac{\sin 0}{0} \rightarrow \raisebox{8pt}{\text{``\ }}\frac{0}{0}\raisebox{8pt}{\text{\ ''}}.$$ This, of course, violates a condition of Theorem \ref{thm:limit_algebra}, as the limit of the denominator is not allowed to be 0. Therefore, we are still unable to evaluate this limit with tools we currently have at hand.
+\end{enumerate}
+}
+\end{solution}
+
+
+Our final theorem for this section will be motivated by the following example.\\
+
+
+\begin{example}{Using algebra to evaluate a limit}{ex_limit_onept}
+{
+Evaluate the following limit: $$\lim_{x\to 1}\frac{x^2-1}{x-1}.$$
+}
+\end{example}
+
+
+\begin{solution}
+{We begin by attempting to apply Theorem \ref{thm:lim_continuous} and substituting $ 1 $ for $x$ in the quotient. This gives:
+		$$\lim_{x\to 1}\frac{x^2-1}{x-1} = \frac{1^2-1}{1-1} = \raisebox{8pt}{\text{``\ }}\frac{0}{0}\raisebox{8pt}{\text{\ ''}},$$ and indeterminate form. We cannot apply the theorem.
+
+\mfigure{.6}{Graphing $f$ in Example \ref{exa:ex_limit_onept} to understand a limit.}{fig:limitxplus1}{\begin{tikzpicture}
+\begin{axis}[,minor x tick num=1,axis y line=middle,axis x line=middle,ymin=-.1,ymax=3.2,xmin=-.1,xmax=2.2,name=myplot]
+\addplot [{\colorone},smooth,thick] coordinates {(0,1) (2,3)};
+\fill[white,draw=black,thick] (axis cs:1,2) circle (1.5pt);
+%\draw[thin,dashed,{\colortwo}] (axis cs:0,1.5) -- (axis cs:2.25,1.5);
+%\draw[thin,dashed,{\colortwo}] (axis cs:0,2.5) -- (axis cs:6.25,2.5);
+%\draw (axis cs:-.1,1.75) node [right]{\tiny$\left.\rule{0pt}{7.5pt}\right\}\epsilon = .5$};
+%\draw (axis cs:-.1,2.25) node [right]{\tiny$\left.\rule{0pt}{7.5pt}\right\}\epsilon = .5$};
+%\fill[{\colortwo}] (axis cs:2.25,1.5) circle (1pt);
+%\fill[{\colortwo}] (axis cs:6.25,2.5) circle (1pt);
+%\draw (axis cs:4,1) node [text width = 80pt,align=center] {\footnotesize Choose $\epsilon>0$. Then ...};
+\end{axis}
+%\fill[{\colortwo}] (1,1) circle (1pt);
+\node [right] at (myplot.right of origin) { $x$};
+\node [above] at (myplot.above origin) {$y$};
+\end{tikzpicture}}
+		
+		By graphing the function, as in Figure \ref{fig:limitxplus1}, we see that the function seems to be linear, implying that the limit should be easy to evaluate. Recognize that the numerator of our quotient can be factored:
+		$$\frac{x^2-1}{x-1} = \frac{(x-1)(x+1)}{x-1}.$$
+		The function is not defined when $x=1$, but for all other $x$, $$\frac{x^2-1}{x-1} = \frac{(x-1)(x+1)}{x-1} = \frac{\hbox{\sout{$(x-1)$}}(x+1)}{\hbox{\sout{$x-1$}}}= x+1.$$
+		Clearly $\ds \lim_{x\to 1}x+1 = 2$. Recall that when considering limits, we are not concerned with the value of the function at 1, only the value the function approaches as $x$ approaches 1. Since $(x^2-1)/(x-1)$ and $x+1$ are the same at all points except $x=1$, they both approach the same value as $x$ approaches 1. Therefore we can conclude that $$\lim_{x\to 1}\frac{x^2-1}{x-1}=2.$$
+}
+\end{solution}
+
+
+
+The key to the above example is that the functions $y=(x^2-1)/(x-1)$ and $y=x+1$ are identical except at $x=1$. Since limits describe a value the function is approaching, not the value the function actually attains, the limits of the two functions are always equal.
+
+\begin{theorem}{Limits of Functions Equal At All But One Point}{limit_allbut1}
+{Let $g(x) = f(x)$ for all $x$ in an open interval, except possibly at $c$, and let $\ds \lim_{x\to c} g(x) = L$ for some real number $L$. Then $$\lim_{x\to c}f(x) = L.$$}
+\end{theorem}
+
+The Fundamental Theorem of Algebra tells us that when dealing with a rational function of the form $g(x)/f(x)$ and directly evaluating the limit $\ds \lim_{x\to c} \frac{g(x)}{f(x)}$ returns ``$ 0/0 $'', % $\ds\raisebox{8pt}{\text{``\ }}\frac{0}{0}\raisebox{8pt}{\text{\ ''}}$, 
+then $(x-c)$ is a factor of both $g(x)$ and $f(x)$. One can then use algebra to factor this term out, cancel, then apply Theorem \ref{thm:limit_allbut1}. We demonstrate this once more.\\
+
+\begin{example}{Evaluating a limit using Theorem \ref{thm:limit_allbut1}}{ex_limit_allbut1}
+{Evaluate $\ds \lim_{x\to 3} \frac{x^3-2 x^2-5 x+6}{2 x^3+3 x^2-32 x+15}$.}
+\end{example}
+
+
+\begin{solution}
+{We begin by applying Theorem \ref{thm:lim_continuous} and substituting 3 for $x$. This returns the familiar indeterminate form of ``0/0''. %\zerooverzero. 
+Since the numerator and denominator are each polynomials, we know that $(x-3)$ is factor of each. Using whatever method is most comfortable to you, factor out $(x-3)$ from each (using polynomial division, synthetic division, a computer algebra system, etc.). We find that $$\frac{x^3-2 x^2-5 x+6}{2 x^3+3 x^2-32 x+15} = \frac{(x-3)(x^2+x-2)}{(x-3)(2 x^2+9 x-5)}.$$ We can cancel the $(x-3)$ terms as long as $x\neq 3$. Using Theorem \ref{thm:limit_allbut1} we conclude:
+		\begin{align*}
+		\lim_{x\to 3} \frac{x^3-2 x^2-5 x+6}{2 x^3+3 x^2-32 x+15} &= \lim_{x\to 3}\frac{(x-3)(x^2+x-2)}{(x-3)(2 x^2+9 x-5)} \\
+																															&=	\lim_{x\to 3} \frac{(x^2+x-2)}{(2 x^2+9 x-5)}\\
+																															&= \frac{10}{40} = \frac14.
+		\end{align*}
+}
+\end{solution}
+
+\begin{example}{Left and Right Limit}{leftright}
+Evaluate $\ds\lim_{x\to 0}{x\over|x|}$.
+\end{example}
+
+\begin{solution} 
+The function $f(x)=x/|x|$ is undefined at 0; when $x>0$, $|x|=x$ and
+so $f(x)=1$; when $x<0$, $|x|=-x$ and $f(x)=-1$. Thus
+$$\ds \lim_{x\to 0^-}{x\over|x|}=\lim_{x\to 0^-}-1=-1$$
+while 
+$$\ds \lim_{x\to 0^+}{x\over|x|}=\lim_{x\to 0^+}1=1.$$
+The limit of $f(x)$ must be equal to both the left and right limits; since they are
+different, the limit $\ds \lim_{x\to 0}{x\over|x|}$ does not exist.
+\end{solution}
+
+Another of the most common algebraic tricks is called \textit{rationalization}. 
+Rationalizing makes use of the difference of squares formula $(a-b)(a+b)=a^2-b^2$.
+Here is an example.
+
+\begin{example}{Rationalizing}{Rationalizing}
+Compute $\ds\lim_{x\to-1} {\sqrt{x+5}-2\over x+1}$.
+\end{example}
+
+\begin{solution} 
+\begin{eqnarray*}
+\lim_{x\to-1} {\sqrt{x+5}-2\over x+1}&=&
+\lim_{x\to-1} {\sqrt{x+5}-2\over x+1}\cdot{\sqrt{x+5}+2\over \sqrt{x+5}+2}\cr
+\\
+&=&\lim_{x\to-1} {x+5-4\over (x+1)(\sqrt{x+5}+2)}\cr
+\\
+&=&\lim_{x\to-1} {x+1\over (x+1)(\sqrt{x+5}+2)}\cr
+\\
+&=&\lim_{x\to-1} {1\over \sqrt{x+5}+2}={1\over4}
+\end{eqnarray*}
+At the very last step we have used the last two parts of Theorem  \ref{limit_algebra}.
+\end{solution}
+																															
+
+
+We end this section by revisiting a limit first seen in Section \ref{sec:LimitsWorkingDefn}, a limit of a difference quotient. Let $f(x) = -1.5x^2+11.5x$; we approximated the limit $\ds \lim_{h\to 0}\frac{f(1+h)-f(1)}{h}\approx 8.5.$ We formally evaluate this limit in the following example.\\
+
+\begin{example}{Evaluating the limit of a difference quotient}{ex_limit_diffquot}{
+Let $f(x) = -1.5x^2+11.5x$; find $\ds \lim_{h\to 0}\frac{f(1+h)-f(1)}{h}.$}
+\end{example}
+
+
+\begin{solution}
+{Since $f$ is a polynomial, our first attempt should be to employ Theorem \ref{thm:lim_continuous} and substitute 0 for $h$. However, we see that this gives us ``$0/0$.'' %\zerooverzero.
+ Knowing that we have a rational function hints that some algebra will help. Consider the following steps:
+		\begin{align*}
+		\lim_{h\to 0}\frac{f(1+h)-f(1)}{h} 	&= 	\lim_{h\to 0}\frac{-1.5(1+h)^2 + 11.5(1+h) - \left(-1.5(1)^2+11.5(1)\right)}{h} \\
+																				&=	\lim_{h\to 0}\frac{-1.5(1+2h+h^2) + 11.5+11.5h - 10}{h}\\
+																				&=	\lim_{h\to 0}\frac{-1.5h^2 +8.5h}{h}\\
+																				&= 	\lim_{h\to 0}\frac{h(-1.5h+8.5)}h\\
+																				&=	\lim_{h\to 0}(-1.5h+8.5) \quad (\text{\small using Theorem \ref{thm:limit_allbut1}, as $h\neq 0$}) \\
+																				&= 	8.5 \quad (\text{\small using Theorem \ref{thm:lim_continuous}})
+		\end{align*}																		
+This matches our previous approximation.
+}
+\end{solution}
+
+
+
+This section contains several valuable tools for evaluating limits. One of the main results of this section is Theorem \ref{thm:lim_continuous}; it states that many functions that we use regularly behave in a very nice, predictable way.
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:ComputingLimitsAlg}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+% % % % % % % % % % %
+\begin{ex}
+{Explain in your own words, without using $\epsilon$-$\delta$ formality, why $\ds \lim_{x\to c} b = b$.}
+
+\begin{sol}
+{Answers will vary.
+}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+% % % % % % % % % % %
+\begin{ex}
+{Explain in your own words, without using $\epsilon$-$\delta$ formality, why $\ds \lim_{x\to c} x = c$.}
+
+\begin{sol}
+{Answers will vary.
+}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+% % % % % % % % % % %
+\begin{ex}
+{What does the text mean when it says that certain functions' ``behavior is `nice' in terms of limits''? What, in particular, is ``nice''?}
+
+\begin{sol}
+{Answers will vary.
+}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+
+% % % % % % % % % % %
+\begin{ex}
+Using:
+
+\begin{tabular}{lll}
+$\ds \lim_{x\to9}f(x) = 6$ & \quad\quad &$\ds \lim_{x\to6} f(x) = 9$\\
+$\ds \lim_{x\to9}g(x) = 3$ &  & $\ds \lim_{x\to6} g(x) = 3$
+\end{tabular}
+
+\noindent evaluate the following limits, where possible. If it is not possible to know, state so.
+\begin{enumerate}
+\item {$\ds \lim_{x\to9}(f(x)+g(x))$}
+\item  {$\ds \lim_{x\to9}(3f(x)/g(x))$}
+\item {$\ds \lim_{x\to9}\left(\frac{f(x)-2g(x)}{g(x)}\right)$}
+\item {$\ds \lim_{x\to6}\left(\frac{f(x)}{3-g(x)}\right)$}
+\item  {$\ds \lim_{x\to9}g\big(f(x)\big)$} 
+\item {$\ds \lim_{x\to6}f\big(g(x)\big)$}
+\item {$\ds \lim_{x\to6}g\big(f(f(x))\big)$}
+\item {$\ds \lim_{x\to6}f(x)g(x)-f\,^2(x)+g^2(x)$}
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item 
+{9}
+\item
+{6}
+\item
+{0}
+\item 
+{Limit does not exist.}
+\item
+{3}
+\item 
+{Not possible to know.}
+\item 
+{3}
+\item 
+{$-45$}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+
+% % % % % % % % % % %
+\begin{ex}
+\noindent Using:
+
+\begin{tabular}{lll}
+$\ds \lim_{x\to1}f(x) = 2$ & \quad\quad &$\ds \lim_{x\to10} f(x) = 1$\\
+$\ds \lim_{x\to1}g(x) = 0$ &  & $\ds \lim_{x\to10} g(x) = \pi$
+\end{tabular}
+
+\noindent evaluate the limits given, where possible. If it is not possible to know, state so.
+\begin{enumerate}
+\item {$\ds \lim_{x\to1}f(x)^{g(x)}$}
+
+\item {$\ds \lim_{x\to10}\cos \big(g(x)\big)$}
+
+\item {$\ds \lim_{x\to1}f(x)g(x)$}
+
+\item {$\ds \lim_{x\to1}g\big(5f(x)\big)$}
+
+\end{enumerate}
+
+\begin{sol}
+\begin{enumerate}
+\item {$1$}
+\item {$-1$}
+\item {$0$}
+\item {$\pi$}
+\end{enumerate}
+\end{sol}
+
+\end{ex}
+% % % % % % % % % % % %
+
+
+
+\begin{ex}
+Compute the limits. If a limit does not exist, explain why.
+\begin{multicols}{2}
+\begin{enumerate}
+	\item	$\ds \lim_{x\to 3}{x^2+x-12\over x-3}$
+	\item	$\ds \lim_{x\to 1}{x^2+x-12\over x-3}$
+	\item	$\ds \lim_{x\to -4}{x^2+x-12\over x-3}$
+	\item {$\ds \lim_{x\to\pi}\frac{3x+1}{1-x}$}
+	\item {$\ds \lim_{x\to\pi}\frac{x^2+3x+5}{5x^2-2x-3}$}
+	
+	\item {$\ds \lim_{x\to\pi}\left(\frac{x-3}{x-5}\right)^7$}
+
+	\item {$\ds \lim_{x\to\pi/4}\cos x\sin x$}
+	
+	\item {$\ds \lim_{x\to0}\ln x$}
+
+	\item  {$\ds \lim_{x\to3}4^{x^3-8x}$}
+
+	\item	$\ds \lim_{x\to 2} {x^2+x-12\over x-2}$
+	\item	$\ds \lim_{x\to 1} {\sqrt{x+8}-3\over x-1}$
+	\item	$\ds \lim_{x\to 0^+} \sqrt{{1\over x}+2} - \sqrt{1\over x}$
+	\item	$\ds\lim _{x\to 2} 3$
+	\item	$\ds\lim _{x\to 4 } 3x^3 - 5x $
+	\item	$\ds \lim _{x\to 0 } {4x - 5x^2\over x-1}$
+	\item	$\ds\lim _{x\to 1 } {x^2 -1 \over x-1 }$
+	\item	$\ds\lim _{x\to 0^ + } {\sqrt{2-x^2 }\over x}$
+	\item	$\ds\lim _{x\to 0^ + } {\sqrt{2-x^2}\over x+1}$
+	\item	$\ds\lim _{x\to a } {x^3 -a^3\over x-a}$
+	\item	$\ds\lim _{x\to 2 } (x^2 +4)^3$
+\end{enumerate}
+\end{multicols}
+\begin{sol}
+\begin{multicols}{2}
+\begin{enumerate}
+	\item	7
+	\item	5
+	\item	0
+	\item {$\frac{3\pi+1}{1-\pi}$}
+	\item {$\frac{\pi^2+3\pi+5}{5\pi^2-2\pi-3} \approx 0.6064$}
+	\item 	{$-0.000000015\approx 0$}
+	\item {$1/2$}
+	\item 	{Limit does not exist}
+	\item 	{$64$}
+	\item	undefined
+	\item	$1/6$
+	\item	0
+	\item	3
+	\item	172
+	\item	0
+	\item	2
+	\item	does not exist
+	\item	$\ds \sqrt2$
+	\item	$\ds 3a^2$
+	\item	512
+\end{enumerate}
+\end{multicols}
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Let $f(x)=\left\{ 
+\begin{array}{cc}
+1 & \text{if }x\neq 0 \\ 
+0 & \text{if }x=0%
+\end{array}%
+\right.$ and $g(x)=0$. What are the values of $
+L=\lim_{x\to 0}g(x)$ and $M=\lim_{x\to L}f(x)$? Is it true that $\lim_{x\to	0}f(g(x))=M$? What are some noteworthy differences
+between this example and part \# 9 of Theorem~\ref{thm:limit_algebra}?
+\begin{sol}
+	$L=0$ and $M=1.$ No.
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}
+
+\clearpage

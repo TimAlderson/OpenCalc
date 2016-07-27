@@ -1,0 +1,19 @@
+\subsection{Vertical Asymptotes}\label{subsec:VerticalAsymptotes}
+The line $x=a$ is called a \dfont{vertical asymptote} of $f(x)$ if \ifont{at least one} of the following is true:
+$$\lim_{x\to a}f(x)=\infty\qquad\lim_{x\to a^-}f(x)=\infty\qquad\lim_{x\to a^+}f(x)=\infty$$
+$$\lim_{x\to a}f(x)=-\infty\qquad\lim_{x\to a^-}f(x)=-\infty\qquad\lim_{x\to a^+}f(x)=-\infty$$ 
+
+\begin{example}{Vertical Asymptotes}{VerticalAsymptotes}
+Find the vertical asymptotes of
+$\ds f(x)=\frac{2x}{x-4}$.
+%\vspace{-0.5cm}
+\end{example}
+
+\begin{solution} 
+In the definition of vertical asymptotes we need a certain limit to be $\pm\infty$.
+Candidates would be to consider values not in the domain of $f(x)$, such as $a=4$.
+As $x$ approaches $4$ but is larger than $4$ then $x-4$ is a small positive number and $2x$ is close to $8$, so the quotient $2x/(x-4)$ is a large positive number.
+Thus we see that
+$$\lim_{x\to 4^+}\frac{2x}{x-4}=\infty.$$
+Thus, at least one of the conditions in the definition above is satisfied. Therefore $x=4$ is a vertical asymptote.
+\end{solution}

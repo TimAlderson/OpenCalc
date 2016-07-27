@@ -1,0 +1,214 @@
+\section{Computing Limits: Algebraically}\label{sec:ComputingLimitsAlg}
+\subsection*{Properties of limits}
+With reference to Theorem \ref{thm:LimitProduct}, we can derive 
+a handful of theorems to give us the tools to compute many limits
+without explicitly working with the precise definition of a limit.
+
+\begin{theorem}{Limit Properties}{PropertiesLimits}
+ Suppose that $ L, M $ and $ k $ are real numbers where  $\ds \lim_{x\to a}f(x)=L$ and $\ds \lim_{x\to a}g(x)=M$. Then
+\begin{itemize}
+\item[Constant Multiple Rule] $\ds\lim_{x\to a} kf(x) =\ds k\lim_{x\to a}f(x)=kL$
+\item $\ds\lim_{x\to a} (f(x)+g(x)) = \ds\lim_{x\to a}f(x)+\lim_{x\to a}g(x)=L+M$
+\item $\ds\lim_{x\to a} (f(x)-g(x)) = \ds\lim_{x\to a}f(x)-\lim_{x\to a}g(x)=L-M$
+\item $\ds\lim_{x\to a} (f(x)g(x)) = \ds\lim_{x\to a}f(x)\cdot\lim_{x\to a}g(x)=LM$
+\item $\ds\lim_{x\to a} \frac{f(x)}{g(x)} = \ds\frac{\ds\lim_{x\to a}f(x)}{\ds\lim_{x\to a}g(x)}=\frac{L}{M},\hbox{ if $M$ is not 0}$
+\end{itemize}
+\end{theorem}
+
+Roughly speaking, these rules say that to compute the limit of an
+algebraic expression, it is enough to compute the limits of the
+``innermost bits'' and then combine these limits. This often means
+that it is possible to simply plug in a value for the variable, since
+$\ds \lim_{x\to a} x =a$.
+
+\begin{example}{Limit Properties}{LimitProperties}
+Compute $\ds\lim_{x\to 1}{x^2-3x+5\over x-2}$.
+\end{example}
+
+\begin{solution} 
+ If we apply the theorem in all its gory detail, we get
+\begin{eqnarray*}
+\lim_{x\to 1}{x^2-3x+5\over x-2}&=&
+{\ds\lim_{x\to 1}(x^2-3x+5)\over \ds\lim_{x\to1}(x-2)}\cr
+\\
+&=&{(\ds\lim_{x\to 1}x^2)-(\ds\lim_{x\to1}3x)+(\ds\lim_{x\to1}5)\over 
+  (\ds\lim_{x\to1}x)-(\ds\lim_{x\to1}2)}\cr
+\\
+&=&{(\ds\lim_{x\to 1}x)^2-3(\ds\lim_{x\to1}x)+5\over (\ds\lim_{x\to1}x)-2}\cr
+\\
+&=&{1^2-3\cdot1+5\over 1-2}\cr
+\\
+&=&{1-3+5\over -1} = -3
+\end{eqnarray*}
+\end{solution}
+ 
+It is worth commenting on the trivial limit $\ds \lim_{x\to1}5$. From one
+point of view this might seem meaningless, as the number 5 can't
+``approach'' any value, since it is simply a fixed number. However, 5 can,
+and should, be interpreted here as the function that has value 5
+everywhere, $f(x)=5$, with graph a horizontal line. From this point of
+view it makes sense to ask what happens to the values of the function (height of the graph)
+as $x$ approaches 1.
+
+We're primarily interested in limits
+that aren't so easy, namely, limits in which a denominator approaches
+zero. There are a handful of algebraic tricks that work on many of
+these limits.
+
+\begin{example}{Zero Denominator}{zerodenominator}
+Compute $\ds\lim_{x\to1}{x^2+2x-3\over x-1}$.
+\end{example}
+
+\begin{solution} 
+ We can't simply plug in $x=1$ because that makes the denominator
+ zero.  However:
+\begin{eqnarray*}
+\lim_{x\to1}{x^2+2x-3\over x-1}&=&\lim_{x\to1}{(x-1)(x+3)\over x-1}\cr
+\\
+&=&\lim_{x\to1}(x+3)=4\
+\end{eqnarray*}
+\end{solution}
+
+The technique used to solve the previous example can be referred to as \ifont{factor and cancel}.
+Its validity comes from the fact that we are allowed to cancel $x-1$ from the numerator and denominator.
+Remember in Calculus that we have to make sure we don't cancel zeros, so we require $x-1\neq 0$ in order
+to cancel it. But looking back at the definition of a limit using $x\to 1$, the key point for this example
+is that we are taking values of $x$ close to $1$ but \ifont{not} equal to $1$. This is
+exactly what we wanted ($x\neq 1$) in order to cancel this common factor.
+
+While Theorem~\ref{thm:PropertiesLimits} is very helpful, we
+need a bit more to work easily with limits. Since the theorem applies
+when some limits are already known, we need to know the behavior of
+some functions that cannot themselves be constructed from the simple
+arithmetic operations of the theorem, such as $\ds\sqrt{x}$. Also,
+there is one other extraordinarily useful way to put functions
+together: composition. If $f(x)$ and
+$g(x)$ are functions, we can form two functions by composition:
+$f(g(x))$ and $g(f(x))$. For example, if $\ds f(x)=\sqrt{x}$ and $\ds
+\ds g(x)=x^2+5$, then $\ds f(g(x))=\sqrt{x^2+5}$ and $\ds
+g(f(x))=(\sqrt{x})^2+5=x+5$.  Here is a companion to
+Theorem~\ref{thm:PropertiesLimits} for composition:
+
+\begin{theorem}{Limit of Composition}{LimitComposition}
+Suppose that $\ds \lim_{x\to a}g(x)=L$ and $\ds \lim_{x\to L}f(x)=f(L)$. Then
+$$\lim_{x\to a} f(g(x)) = f(L).$$
+\end{theorem}
+
+Note the special form of the condition on $f$: it is not enough to
+know that $\ds\lim_{x\to L}f(x) = M$, though it is a bit tricky to see
+why. We have included an example in the exercise section to illustrate this tricky
+point for those who are interested. Many of the most familiar functions do have this property, and
+this theorem can therefore be applied. For example:
+
+\begin{theorem}{Continuity of Roots}{ContinuityRoots}
+ Suppose that $n$ is a positive integer. Then
+$$\lim_{x\to a}\root n\of{x} = \root n\of{a},$$
+provided that $a$ is positive if $n$ is even.
+\end{theorem}
+
+This theorem is not too difficult to prove from the definition of limit.
+
+Another of the most common algebraic tricks is called \ifont{rationalization}. 
+Rationalizing makes use of the difference of squares formula $(a-b)(a+b)=a^2-b^2$.
+Here is an example.
+
+\begin{example}{Rationalizing}{Rationalizing}
+Compute $\ds\lim_{x\to-1} {\sqrt{x+5}-2\over x+1}$.
+\end{example}
+
+\begin{solution} 
+\begin{eqnarray*}
+\lim_{x\to-1} {\sqrt{x+5}-2\over x+1}&=&
+\lim_{x\to-1} {\sqrt{x+5}-2\over x+1}\cdot{\sqrt{x+5}+2\over \sqrt{x+5}+2}\cr
+\\
+&=&\lim_{x\to-1} {x+5-4\over (x+1)(\sqrt{x+5}+2)}\cr
+\\
+&=&\lim_{x\to-1} {x+1\over (x+1)(\sqrt{x+5}+2)}\cr
+\\
+&=&\lim_{x\to-1} {1\over \sqrt{x+5}+2}={1\over4}
+\end{eqnarray*}
+At the very last step we have used Theorems~\ref{thm:LimitComposition} and \ref{thm:ContinuityRoots}.
+\end{solution}
+
+\begin{example}{Left and Right Limit}{leftright}
+Evaluate $\ds\lim_{x\to 0}{x\over|x|}$.
+\end{example}
+
+\begin{solution} 
+The function $f(x)=x/|x|$ is undefined at 0; when $x>0$, $|x|=x$ and
+so $f(x)=1$; when $x<0$, $|x|=-x$ and $f(x)=-1$. Thus
+$$\ds \lim_{x\to 0^-}{x\over|x|}=\lim_{x\to 0^-}-1=-1$$
+while 
+$$\ds \lim_{x\to 0^+}{x\over|x|}=\lim_{x\to 0^+}1=1.$$
+The limit of $f(x)$ must be equal to both the left and right limits; since they are
+different, the limit $\ds \lim_{x\to 0}{x\over|x|}$ does not exist.
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:ComputingLimitsAlg}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+\begin{ex}
+Compute the limits. If a limit does not exist, explain why.
+\begin{multicols}{2}
+\begin{enumerate}
+	\item	$\ds \lim_{x\to 3}{x^2+x-12\over x-3}$
+	\item	$\ds \lim_{x\to 1}{x^2+x-12\over x-3}$
+	\item	$\ds \lim_{x\to -4}{x^2+x-12\over x-3}$
+	\item	$\ds \lim_{x\to 2} {x^2+x-12\over x-2}$
+	\item	$\ds \lim_{x\to 1} {\sqrt{x+8}-3\over x-1}$
+	\item	$\ds \lim_{x\to 0^+} \sqrt{{1\over x}+2} - \sqrt{1\over x}$
+	\item	$\ds\lim _{x\to 2} 3$
+	\item	$\ds\lim _{x\to 4 } 3x^3 - 5x $
+	\item	$\ds \lim _{x\to 0 } {4x - 5x^2\over x-1}$
+	\item	$\ds\lim _{x\to 1 } {x^2 -1 \over x-1 }$
+	\item	$\ds\lim _{x\to 0^ + } {\sqrt{2-x^2 }\over x}$
+	\item	$\ds\lim _{x\to 0^ + } {\sqrt{2-x^2}\over x+1}$
+	\item	$\ds\lim _{x\to a } {x^3 -a^3\over x-a}$
+	\item	$\ds\lim _{x\to 2 } (x^2 +4)^3$
+\end{enumerate}
+\end{multicols}
+\begin{sol}
+\begin{multicols}{2}
+\begin{enumerate}
+	\item	7
+	\item	5
+	\item	0
+	\item	undefined
+	\item	$1/6$
+	\item	0
+	\item	3
+	\item	172
+	\item	0
+	\item	2
+	\item	does not exist
+	\item	$\ds \sqrt2$
+	\item	$\ds 3a^2$
+	\item	512
+\end{enumerate}
+\end{multicols}
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Let $f(x)=\left\{ 
+\begin{array}{cc}
+1 & \text{if }x\neq 0 \\ 
+0 & \text{if }x=0%
+\end{array}%
+\right.$ and $g(x)=0$. What are the values of $
+L=\lim_{x\to 0}g(x)$ and $M=\lim_{x\to L}f(x)$? Is it true that $\lim_{x\to	0}f(g(x))=M$? What are some noteworthy differences
+between this example and Theorem~\ref{thm:LimitComposition}?
+\begin{sol}
+	$L=0$ and $M=1.$ No.
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}
+
+\clearpage

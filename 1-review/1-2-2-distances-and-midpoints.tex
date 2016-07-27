@@ -1,0 +1,70 @@
+\subsection{Distance between Two Points and Midpoints}\label{sec:DistanceAndMidpoints}
+Given two points $(x_1,y_1)$ and $(x_2,y_2)$, recall that their
+horizontal distance from one another is $\Delta x=x_2-x_1$ and their
+vertical distance from one another is $\Delta y=y_2-y_1$. Actually,
+the word ``distance'' normally denotes ``positive distance''. $\Delta
+x$ and $\Delta y$ are {\it signed\/} distances, but this is clear from
+context. The (positive) distance from one point to the other
+is the length of the hypotenuse of a right triangle with legs $|\Delta
+x|$ and $|\Delta y|$, as shown in figure~\ref{fig:distance between
+points}.  The Pythagorean Theorem states that the distance between
+the two points is the square root of the sum of the squares of the
+horizontal and vertical sides:
+
+\figure[!ht]
+\centerline{\vbox{\beginpicture
+\normalgraphs
+%\ninepoint
+\setcoordinatesystem units <0.5truein,0.5truein>
+\setplotarea x from 0 to 3, y from 0 to 2
+\putrule from 0 0 to 3 0
+\putrule from 3 0 to 3 2
+\plot 0 0 3 2 /
+\put {$(x_1,y_1)$} [r] <-5pt,0pt> at 0 0
+\put {$(x_2,y_2)$} [l] <5pt,0pt> at 3 2
+\put {$\Delta x$} [t] <0pt,-5pt> at 1.5 0
+\put {$\Delta y$} [l] <5pt,0pt> at 3 1
+\endpicture}}
+\caption{Distance between two points (here, $\Delta x$ and $\Delta y$ are positive). \label{fig:distance between points}}
+\endfigure
+
+\begin{formulabox}[Distance Formula]
+The distance between points $(x_1,y_1)$ and $(x_2,y_2)$ is
+$$\hbox{distance}=\sqrt{(\Delta x)^2+(\Delta y)^2}=\sqrt{(x_2-x_1)^2+ (y_2-y_1)^2}.$$
+\end{formulabox}
+
+\bigskip
+
+\begin{example}{Distance Between Two Points}{DistanceExample}
+The distance, $d$, between points $A(2,1)$ and $B(3,3)$ is 
+$$d=\sqrt{(3-2)^2+(3-1)^2}=\sqrt{5}.$$
+\vspace{-1cm}
+\end{example}
+
+As a special case of the distance formula, suppose we want to know the
+distance of a point $(x,y)$ to the origin.  According to the distance
+formula, this is $$\sqrt{(x-0)^2+(y-0)^2}=\sqrt{x^2+y^2}.$$
+A point $(x,y)$ is at a distance $r$ from the origin if and only if
+$\sqrt{x^2+y^2}=r$, or, if we square both sides: $x^2+y^2=r^2$.  As illustrated
+in the next section, this is the equation of the circle of radius, $r$, centered at the origin.
+
+Furthermore, given two points we can determine the \dfont{midpoint} of the line segment joining the two points.\\
+
+\begin{formulabox}[Midpoint Formula]
+The midpoint of the line segment joining two points $(x_1,y_1)$ and 
+$(x_2,y_2)$ is the point with coordinates:
+$$\hbox{midpoint}=\left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}\right).$$
+\end{formulabox}
+
+\bigskip
+
+\begin{example}{Midpoint of a Line Segment}{Midpoint}
+Find the midpoint of the line segment joining the given points: $(1,0)$ and $(5,-2)$.
+\end{example}
+
+\begin{solution} 
+Using the \ifont{midpoint formula} on $(x_1,y_1)=(1,0)$ and $(x_2,y_2)=(5,-2)$ we get:
+$$\left(\frac{(1)+(5)}{2},\frac{(0)+(-2)}{2}\right)=(3,-1).$$
+Thus, the midpoint of the line segment occurs at $(3,-1)$.
+\end{solution}
+

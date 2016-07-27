@@ -1,0 +1,74 @@
+\subsection{The Quadratic Formula and Completing the Square}
+The technique of \dfont{completing the square} allows us to solve quadratic equations and also to determine the center of a circle/ellipse or the vertex of a parabola.
+
+The main idea behind completing the square is to turn:
+$$ ax^2 + bx + c$$
+into
+$$a(x - h)^2 + k.$$
+One way to complete the square is to use the following formula:
+$$ax^2+bx+c=a\left(x+\frac{b}{2a}\right)^2-\frac{b^2}{4a^2}+c.$$
+But this formula is a bit complicated, so some students prefer following the steps outlined in the next example. \\
+
+\begin{example}{Completing the Square}{CompletingSquare}
+Solve $2x^2+12x-32=0$ by completing the square.
+\end{example}
+
+\begin{solution}
+In this instance, we will \ifont{not} divide by $2$ first (usually you would) in order to demonstrate what you should do when the `$a$' value is not $1$.
+
+\bigskip
+
+\begin{tabular}{rl}
+$2x^2+12x-32=0$ & Start with original equation.\\
+\\
+$2x^2+12x=32$ & Move the number over to the other side.\\
+\\
+$2(x^2+6x)=32$ & Factor out the $a$ from the $ax^2+bx$ expression.\\
+\\
+$6~~\to~~\frac{6}{2}=3~~\to~~3^2=\dfont{9}$ & Take the number in front of $x$, \\
+	&  \dfont{divide by $2$}, \\
+	&  then \dfont{square} it.\\
+\\
+$\ifont{2}(x^2+6x+\dfont{9})=32+\ifont{2}\cdot\dfont{9}$ & Add the result to both sides, \\
+	&  taking $a=2$ into account.\\
+\\
+$2(x+3)^2=50$ & Factor the resulting perfect square trinomial.\\
+\\
+~ & \ifont{You have now completed the square!}\\
+\\
+$(x+3)^2=25~~\to~~x=2 \mbox{ or } x=-8$ & To solve for $x$, simply divide by $a=2$ \\
+	& and take square roots.\\
+\end{tabular}
+\end{solution}
+
+Suppose we want to solve for $x$ in the quadratic
+equation $ax^2+bx+c=0$, where $a\neq 0$.
+The solution(s) to this equation are given by the \dfont{quadratic formula}.\\
+
+\begin{formulabox}[The Quadratic Formula]
+The solutions to $ax^2+bx+c=0$ (with $a\neq 0$) are $\ds{x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}}$.
+\end{formulabox}
+
+\begin{proof}
+To prove the quadratic formula we use the technique of \ifont{completing 
+the square}. The general technique involves taking an expression of the 
+form $x^2+rx$ and trying to find a number we can add so that we end up 
+with a perfect square (that is, $(x+n)^2$). It turns out if you add $(r/2)^2$ 
+then you can factor it as a perfect square.
+
+For example, suppose we want to solve for $x$ in the equation $ax^2+bx+c=0$, where $a\neq 0$.
+Then we can move $c$ to the other side and divide by $a$ (remember, $a\neq 0$ so we can divide by it) to get
+$$x^2+\frac{b}{a}x=-\frac{c}{a}.$$
+To write the left side as a perfect square we use what was mentioned previously.
+We have $r=(b/a)$ in this case, so we must add $(r/2)^2=(b/2a)^2$ to both sides
+$$x^2+\frac{b}{a}x+\left(\frac{b}{2a}\right)^2=-\frac{c}{a}+\left(\frac{b}{2a}\right)^2.$$
+We know that the left side can be factored as a perfect square
+$$\left(x+\frac{b}{2a}\right)^2=-\frac{c}{a}+\left(\frac{b}{2a}\right)^2.$$
+The right side simplifies by using the exponent rules and finding a common denominator
+$$\left(x+\frac{b}{2a}\right)^2=\frac{-4ac+b^2}{4a^2}.$$
+Taking the square root we get
+$$x+\frac{b}{2a}=\pm\sqrt{\frac{-4ac+b^2}{4a^2}},$$
+which can be rearranged as
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.$$
+In essence, the quadratic formula is just completing the square.
+\end{proof}

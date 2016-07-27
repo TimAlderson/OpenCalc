@@ -1,0 +1,423 @@
+\section{The Chain Rule}\label{sec:ChainRule}
+Let $h(x)=\sqrt{625-x^2}$.
+The rules stated previously do not allow us to find $h'(x)$.
+However, $h(x)$ is a composition of two functions.
+Let $f(x)=\sqrt x$ and $g(x)=625-x^2$.
+Then we see that 
+$$h(x)=(f\circ g)(x).$$
+From our rules we know that $f'(x)=\frac{1}{2}x^{-1/2}$ and $g'(x)=-2x$, thus it would be convenient to have a rule which allows us to differentiate $f\circ g$ in terms of $f'$ and $g'$.
+This gives rise to the chain rule.
+
+\begin{formulabox}[The Chain Rule]
+If $g$ is differentiable at $x$ and $f$ is differentiable at $g(x)$, then the composite function $h=f\circ g$ [recall $f\circ g$ is defined as $f(g(x))$] is differentiable at $x$ and $h'(x)$ is given by:
+$$h'(x)=f'(g(x))\cdot g'(x).$$
+\end{formulabox}
+
+The chain rule has a particularly simple expression if we use the
+Leibniz notation for the derivative. The quantity $f'(g(x))$ is the
+derivative of $f$ with $x$ replaced by $g$; this can be written 
+$df/dg$. As usual, $g'(x)=dg/dx$. Then the chain rule becomes
+$${df\over dx} = {df\over dg}{dg\over dx}.$$
+This looks like trivial arithmetic, but it is not: $dg/dx$ is not a
+fraction, that is, not literal division, but a single symbol that
+means $g'(x)$. Nevertheless, it turns out that what looks like trivial
+arithmetic, and is therefore easy to remember, is really true.
+
+It will take a bit of practice to make the use of the chain rule come
+naturally---it is more complicated than the earlier differentiation
+rules we have seen.
+
+\begin{example}{Chain Rule}{ChainRule}
+Compute the derivative of $\ds \sqrt{625-x^2}$.
+\end{example}
+
+\begin{solution} 
+ We already know that the
+answer is $\ds -x/\sqrt{625-x^2}$, computed directly from the limit. In
+the context of the chain rule, we have $\ds f(x)=\sqrt{x}$,
+$\ds g(x)=625-x^2$. We know that $\ds f'(x)=(1/2)x^{-1/2}$, so $\ds f'(g(x))=
+(1/2)(625-x^2)^{-1/2}$. Note that this is a two step computation:
+first compute $f'(x)$, then replace $x$ by $g(x)$. Since $g'(x)=-2x$
+we have
+$$f'(g(x))g'(x)={1\over 2\sqrt{625-x^2}}(-2x)={-x\over
+    \sqrt{625-x^2}}.
+$$
+\end{solution}
+
+\begin{example}{Chain Rule}{ChainRule2}
+Compute the derivative of $\ds 1/\sqrt{625-x^2}$.
+\end{example}
+
+\begin{solution} 
+This is a quotient with
+a constant numerator, so we could use the quotient rule, but it is
+simpler to use the chain rule. The function is $\ds (625-x^2)^{-1/2}$, the
+composition of $\ds f(x)=x^{-1/2}$ and $\ds g(x)=625-x^2$. We compute
+$\ds f'(x)=(-1/2)x^{-3/2}$ using the power rule, and then
+$$f'(g(x))g'(x)={-1\over 2(625-x^2)^{3/2}}(-2x)={x\over (625-x^2)^{3/2}}.$$
+\end{solution}
+
+In practice, of course, you will need to use more than one of the
+rules we have developed to compute the derivative of a complicated
+function.
+
+\begin{example}{Derivative of Quotient}{DerivativeQuotient}
+Compute the derivative of $$f(x)={x^2-1\over x\sqrt{x^2+1}}.$$
+\vspace{-0.5cm}
+\end{example}
+
+\begin{solution} 
+The ``last'' operation here is division, so to get started we need to
+use the quotient rule first. This gives
+\begin{eqnarray*}
+f'(x)&=&{(x^2-1)'x\sqrt{x^2+1}-(x^2-1)(x\sqrt{x^2+1})'\over
+x^2(x^2+1)}\cr
+&=&{2x^2\sqrt{x^2+1}-(x^2-1)(x\sqrt{x^2+1})'\over
+x^2(x^2+1)}.\cr
+\end{eqnarray*}
+Now we need to compute the derivative of $\ds x\sqrt{x^2+1}$. This is a
+product, so we use the product rule:
+$${d\over dx}x\sqrt{x^2+1}=x{d\over dx}\sqrt{x^2+1}+\sqrt{x^2+1}.$$
+Finally, we use the chain rule:
+$${d\over dx}\sqrt{x^2+1}={d\over dx}(x^2+1)^{1/2}=
+{1\over 2}(x^2+1)^{-1/2}(2x)={x\over \sqrt{x^2+1}}.$$
+And putting it all together:
+\begin{eqnarray*}
+f'(x)&=&{2x^2\sqrt{x^2+1}-(x^2-1)(x\sqrt{x^2+1})'\over
+x^2(x^2+1)}.\cr
+&=&{2x^2\sqrt{x^2+1}-(x^2-1)\left(x{\ds{x\over \sqrt{x^2+1}}}
++\sqrt{x^2+1}\right)\over
+x^2(x^2+1)}.\cr
+\end{eqnarray*}
+This can be simplified of course, but we have done all the calculus,
+so that only algebra is left.
+\end{solution}
+
+\begin{example}{Chain of Composition}{ChainComposition}
+Compute the derivative of $\ds \sqrt{1+\sqrt{1+\sqrt{x}}}$. 
+\end{example}
+
+\begin{solution} 
+Here we have a
+more complicated chain of compositions, so we use the chain rule
+twice.
+At the outermost ``layer'' we have the function
+$\ds g(x)=1+\sqrt{1+\sqrt{x}}$ plugged into $\ds f(x)=\sqrt{x}$, so applying
+the chain rule once gives 
+$${d\over dx}\sqrt{1+\sqrt{1+\sqrt{x}}}=
+{1\over 2}\left(1+\sqrt{1+\sqrt{x}}\right)^{-1/2}{d\over dx}
+\left(1+\sqrt{1+\sqrt{x}}\right).$$
+Now we need the derivative of $\ds \sqrt{1+\sqrt{x}}$. Using the chain
+rule again:
+$${d\over dx}\sqrt{1+\sqrt{x}}={1\over
+  2}\left(1+\sqrt{x}\right)^{-1/2}{1\over 2}x^{-1/2}.$$
+So the original derivative is 
+\begin{eqnarray*}
+{d\over dx}\sqrt{1+\sqrt{1+\sqrt{x}}}&=&
+{1\over 2}\left(1+\sqrt{1+\sqrt{x}}\right)^{-1/2}
+{1\over
+  2}\left(1+\sqrt{x}\right)^{-1/2}{1\over 2}x^{-1/2}.\cr
+&=&{1\over 8 \sqrt{x}\sqrt{1+\sqrt{x}}\sqrt{1+\sqrt{1+\sqrt{x}}}}
+\end{eqnarray*}
+\end{solution}
+
+Using the chain rule, the power rule, and the product rule, it is
+possible to avoid using the quotient rule entirely.
+
+\begin{example}{Derivative of Quotient without Quotient Rule}{DerivativeQuotientWithoutQuotientRule}
+Compute the derivative of $\ds f(x)={x^3\over x^2+1}$.
+\end{example}
+
+\begin{solution} 
+Write 
+$\ds f(x)=x^3(x^2+1)^{-1}$, then
+\begin{eqnarray*}
+f'(x)&=&x^3{d\over dx}(x^2+1)^{-1}+3x^2(x^2+1)^{-1}\cr
+\\
+&=&x^3(-1)(x^2+1)^{-2}(2x)+3x^2(x^2+1)^{-1}\cr
+\\
+&=&-2x^4(x^2+1)^{-2}+3x^2(x^2+1)^{-1}\cr
+\\
+&=&{-2x^4\over (x^2+1)^{2}}+{3x^2\over x^2+1}\cr
+\\
+&=&{-2x^4\over (x^2+1)^{2}}+{3x^2(x^2+1)\over (x^2+1)^{2}}\cr
+\\
+&=&{-2x^4+3x^4+3x^2\over (x^2+1)^{2}}={x^4+3x^2\over (x^2+1)^{2}}
+\end{eqnarray*}
+Note that we already had the derivative on the second line; all the
+rest is simplification. It is easier to get to this answer by using
+the quotient rule, so there's a trade off: more work for fewer
+memorized formulas.
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for Section \ref{sec:ChainRule}}
+
+\begin{enumialphparenastyle}
+
+Find the derivatives of the functions. For extra practice, and to
+check your answers, do some of these in more than one way if
+possible. 
+
+\begin{ex}  $\ds x^4-3x^3+(1/2)x^2+7x-\pi$
+\begin{sol} 
+$\ds 4x^3-9x^2+x+7$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds x^3-2x^2+4\sqrt{x}$
+\begin{sol} 
+$\ds 3x^2-4x+2/\sqrt{x}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (x^2+1)^3$
+\begin{sol} 
+$\ds 6(x^2+1)^2x$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds x\sqrt{169-x^2}$
+\begin{sol} 
+$\ds \sqrt{169-x^2}-x^2/\sqrt{169-x^2}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (x^2-4x+5)\sqrt{25-x^2}$
+\begin{sol} 
+$\ds  (2x-4)\sqrt{25-x^2}-$\hfill\break$(x^2-4x+5)x/\sqrt{25-x^2}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds \sqrt{r^2-x^2}$, $r$ is a constant
+\begin{sol} 
+$\ds -x/\sqrt{r^2-x^2}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds \sqrt{1+x^4}$
+\begin{sol} 
+$\ds 2x^3/\sqrt{1+x^4}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds {1\over\sqrt{5-\sqrt{x}}}$.
+\begin{sol} 
+$\ds{1\over 4\sqrt{x}(5-\sqrt{x})^{3/2}}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (1+3x)^2$
+\begin{sol} 
+$\ds  6+18x$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds{(x^2+x+1)\over(1-x)}$
+\begin{sol} 
+$\ds {2 x + 1\over1 - x }+{x^2  + x + 1\over(1 - x)^2}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds{\sqrt{25-x^2}\over x}$
+\begin{sol} 
+$\ds  -1/\sqrt{25-x^2}-\sqrt{25-x^2}/x^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds\sqrt{{169\over x}-x}$
+\begin{sol} 
+$\ds{1\over2}\left({-169\over x^2}-1\right)\Big/\sqrt{{169\over x}-x}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds \sqrt{x^3-x^2-(1/x)}$
+\begin{sol} 
+$ \ds{3x^2-2x+1/x^2\over 2\sqrt{x^3-x^2-(1/x)}}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds 100/(100-x^2)^{3/2}$
+\begin{sol} 
+$ \ds{300 x \over(100-x^2)^{5/2}}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds {\root 3 \of{x+x^3}}$
+\begin{sol} 
+$ \ds{ 1 + 3 x^2\over3(x+x^3)^{2/3}}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds \sqrt{(x^2+1)^2+\sqrt{1+(x^2+1)^2}}$
+\begin{sol} 
+$\ds \left(4x(x^2+1)+{4x^3+4x\over2\sqrt{1+(x^2+1)^2}}\right)\Big/$\hfill\break$2\sqrt{(x^2+1)^2+\sqrt{1+(x^2+1)^2}}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (x+8)^5$
+\begin{sol} 
+$\ds 5(x+8)^4$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (4-x)^3$
+\begin{sol} 
+$\ds -3(4-x)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (x^2+5)^3$
+\begin{sol} 
+$\ds 6x(x^2+5)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (6-2x^2)^3$
+\begin{sol} 
+$\ds -12x(6-2x^2)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (1-4x^3)^{-2}$
+\begin{sol} 
+$\ds 24x^2(1-4x^3)^{-3}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds 5(x+1-1/x)$
+\begin{sol} 
+$\ds 5+5/x^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds 4(2x^2-x+3)^{-2}$
+\begin{sol} 
+$\ds -8(4x-1)(2x^2-x+3)^{-3}$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds {1\over 1+1/x}$
+\begin{sol} 
+$\ds 1/(x+1)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds {-3\over 4x^2-2x+1}$
+\begin{sol} 
+$\ds 3(8x-2)/(4x^2-2x+1)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (x^2+1)(5-2x)/2$
+\begin{sol} 
+$\ds -3x^2+5x-1$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (3x^2+1)(2x-4)^3$
+\begin{sol} 
+$\ds 6x(2x-4)^3+6(3x^2+1)(2x-4)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds{x+1\over x-1}$
+\begin{sol} 
+$\ds -2/(x-1)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds{x^2-1\over x^2+1}$
+\begin{sol} 
+$\ds 4x/(x^2+1)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds{(x-1)(x-2)\over x-3}$
+\begin{sol} 
+$\ds (x^2-6x+7)/(x-3)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds{2x^{-1}-x^{-2}\over 3x^{-1}-4x^{-2}}$
+\begin{sol} 
+$\ds -5/(3x-4)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds 3(x^2+1)(2x^2-1)(2x+3)$
+\begin{sol} 
+$\ds 60x^4+72x^3+18x^2+18x-6$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds{1\over (2x+1)(x-3)}$
+\begin{sol} 
+$\ds (5-4x)/((2x+1)^2(x-3)^2)$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds ((2x+1)^{-1}+3)^{-1}$
+\begin{sol} 
+$\ds 1/(2(2+3x)^2)$
+\end{sol}
+\end{ex}
+
+\begin{ex}  $\ds (2x+1)^3(x^2+1)^2$
+\begin{sol} 
+$\ds 56x^6+72x^5+110x^4+100x^3+60x^2+28x+6$
+\end{sol}
+\end{ex}
+
+\begin{ex}   Find an equation for the tangent line to 
+$\ds f(x) = (x-2)^{1/3}/(x^3 + 4x - 1)^2$ at $x=1$.
+\begin{sol} 
+$y=23x/96-29/96$
+\end{sol}
+\end{ex}
+
+\begin{ex}  Find an equation for the tangent line to $\ds y=9x^{-2}$ at $(3,1)$.
+\begin{sol} 
+$y=3-2x/3$
+\end{sol}
+\end{ex}
+
+\begin{ex}  Find an equation for the tangent line to $\ds (x^2-4x+5)\sqrt{25-x^2}$ 
+at $(3,8)$.
+\begin{sol} 
+$y=13x/2-23/2$
+\end{sol}
+\end{ex}
+
+\begin{ex}  Find an equation for the tangent line to $\ds \ds{(x^2+x+1)\over(1-x)}$ 
+at $(2,-7)$.
+\begin{sol} 
+$y=2x-11$
+\end{sol}
+\end{ex}
+
+\begin{ex}  Find an equation for the tangent line to 
+$\ds \sqrt{(x^2+1)^2+\sqrt{1+(x^2+1)^2}}$
+at $\ds (1,\sqrt{4+\sqrt{5}})$.
+\begin{sol} 
+$\ds y={20+2\sqrt5\over5\sqrt{4+\sqrt5}}\,x+{3\sqrt5\over5\sqrt{4+\sqrt5}}$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Let $y=f(x)$ and $x=g(t)$. If $g(1)=2$, $f(2)=3$, $g'(1)=4$ and $f'(2)=5$, find the derivative of $f\circ g$ at 1.
+\begin{sol}
+	$(f(g(1)))'=20$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Express the derivative of $g(x)=x^2f(x^2)$ in terms of $f$ and the derivative of $f$.
+\begin{sol}
+	$g'(x)=2x(f(x^2)+x^2f'(x^2))$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

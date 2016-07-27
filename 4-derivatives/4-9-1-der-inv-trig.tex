@@ -1,0 +1,189 @@
+\subsection{Derivatives of Inverse Trigonometric Functions}
+
+We can apply the technique used to find the derivative of $f^{-1}$ above to find the derivatives of the inverse trigonometric functions.
+
+In the following examples we will derive the formulae for the derivative of the inverse sine, inverse cosine and inverse tangent. The other three inverse trigonometric functions have been left as exercises at the end of this section.
+
+\begin{example}{Derivative of Inverse Sine}{DerInvSine}
+Find the derivative of $\sin^{-1}(x)$.
+\end{example}
+\begin{solution}
+ Adopting the notation in Theorem \ref{thm:deriv_inverse_functions}, let $g(x) = \arcsin x$ and $f(x) = \sin x$. Thus $\fp(x) = \cos x$. Applying the theorem, we have 
+			\begin{align*}
+			g\primeskip'(x) &= \frac{1}{\fp(g(x))} \\
+						&= \frac{1}{\cos(\arcsin x)}.
+			\end{align*}
+			
+Alternatively, we could use the technique in the justification of Theorem \ref{thm:deriv_inverse_functions}. Write $y=\sin^{-1}(x)$, so $x=\sin(y)$ and $-\pi/2\leq y\leq \pi/2$, and differentiate both sides with respect to $x$ using the chain rule.
+\begin{align*}
+\ds\frac{d}{dx}x&=\frac{d}{dx}\sin(y)	\\
+1&=\cos(y)\frac{dy}{dx}	\\
+1&=\cos\left(\sin^{-1}(x)\right)\frac{dy}{dx}	\\
+\frac{dy}{dx}&=\frac{1}{\cos\left(\sin^{-1}(x)\right)}
+\end{align*}
+
+Although correct, this formula is cumbersome to use, and hardly enlightening. It can be simplified significantly with a bit of trigonometry. We have   $y =\sin^{-1}(x)$, so $\sin(\theta)=x$, and we wish to find $ \cos(y) $ in order to simplify our expression above. Construct a right angle triangle with angle $y$, opposite side length $x$ and hypotenuse $ 1 $.  The Pythagorean  Theorem gives an adjacent side length of $\sqrt{1-x^2}$.
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[thick]
+\draw(0,0) -- (90:2cm) node[midway,left]{$x$} -- (0:4cm) node[midway,above right]{{$1$}} -- (0,0);
+
+\node at (2,-.5) {{$\sqrt{1-x^2}$}};
+
+%\draw[fill=lightgray, thick] (0,0) -- (0:0.8cm) arc (0:90:0.8cm) node at (45:0.5cm) {$\gamma$} -- cycle;
+\draw[fill=lightgray, thick] (4,0) -- ++(180:0.8cm) arc (180:180-atan2(4,2):0.8cm) node at ($(167:0.6cm)+(4,0)$) {$y$} -- cycle;
+%\draw[fill=lightgray, thick] (0,2) -- ++(-90:0.8cm) arc (-90:-90+atan2(2,4):0.8cm) node at ($(-60:0.5cm)+(0,2)$) {$\beta$} -- cycle;
+\end{tikzpicture}
+
+\caption{\label{fig:inverse3}A right triangle defined by $y=\sin ^{-1}(\frac{x}{1})$ with the length of the third leg found using the Pythagorean Theorem.}
+\end{figure}
+
+
+So, reading from the triangle we have $\cos\left(\sin^{-1}(x)\right)=\cos(y)=\sqrt{1-x^2}$. Note that we choose the non-negative square root $\sqrt{1-x^2}$ since $\cos(\theta)\geq 0$ when $-\pi/2\leq\theta\leq\pi/2$ (the range of $ \arcsin(x) $).
+
+Finally, the derivative of inverse sine is
+\[\left(\sin^{-1}(x)\right)'=\frac{1}{\sqrt{1-x^2}}\]
+\end{solution}
+
+\begin{example}{Derivative of Inverse Cosine}{DerInvCosine}
+Find the derivative of $\cos^{-1}(x)$.
+\end{example}
+\begin{solution}
+Let $y=\cos^{-1}(x)$, so $\cos(y)=x$ and $0\leq y\leq \pi$. Next we differentiate implicitly:
+\begin{align*}
+\frac{d}{dx}\left(\cos y\right)&=\frac{d}{dx}\left(x\right)	\\
+-\sin y\cdot\frac{dy}{dx}&=1	\\
+\frac{dy}{dx}&=-\frac{1}{\sin y}
+\end{align*}
+
+ Since $\cos y=x$, we construct a triangle with angle $y$, adjacent side length $x$ and hypotenuse $1$. 
+ 
+ \begin{figure}
+ \centering
+ \begin{tikzpicture}[thick]
+ \draw(0,0) -- (90:2cm) node[midway,left]{$\sqrt{1-x^2}$} -- (0:4cm) node[midway,above right]{{$1$}} -- (0,0);
+ 
+ \node at (2,-.5){$x$} ;
+ 
+ %\draw[fill=lightgray, thick] (0,0) -- (0:0.8cm) arc (0:90:0.8cm) node at (45:0.5cm) {$\gamma$} -- cycle;
+ \draw[fill=lightgray, thick] (4,0) -- ++(180:0.8cm) arc (180:180-atan2(4,2):0.8cm) node at ($(167:0.6cm)+(4,0)$) {$y$} -- cycle;
+ %\draw[fill=lightgray, thick] (0,2) -- ++(-90:0.8cm) arc (-90:-90+atan2(2,4):0.8cm) node at ($(-60:0.5cm)+(0,2)$) {$\beta$} -- cycle;
+ \end{tikzpicture}
+ 
+ \caption{\label{fig:inverse3}A right triangle defined by $y=\cos ^{-1}(\frac{x}{1})$ with the length of the third leg found using the Pythagorean Theorem.}
+ \end{figure}
+ 
+ 
+ Solving for the opposite side length using Pythagorean Theorem we obtain $\sqrt{1-x^2}$. Using this triangle we can see that $\sin y=\sqrt{1-x^2}$ ($0\leq y\leq \pi$). Substituting this into the equation for $dy/dx$, we find that
+\[\frac{d}{dx}\left(y\right)=\frac{d}{dx}\left(\cos^{-1}(x)\right)=\frac{-1}{\sqrt{1-x^2}}\].
+\end{solution}
+
+In the following example we explore an alternate method of finding the derivative.
+
+\begin{example}{Derivative of Inverse Tangent}{DerInvTangent}
+Find the derivative of $\tan^{-1}(x)$.
+\end{example}
+\begin{solution}
+We begin with $\tan\left(\tan^{-1}(x)\right)=x$. Taking the derivative using the Chain Rule we obtain
+\[\sec^2\left(\tan^{-1}(x)\right)\cdot\frac{d}{dx}\left(\tan^{-1}(x)\right)=1,\]
+which we rearrange to obtain
+\[\frac{d}{dx}\left(\tan^{-1}(x)\right)=\frac{1}{\sec^2\left(\tan^{-1}(x)\right)}.\]
+
+Let $\tan^{-1}(x)=\theta$, then $\tan(\theta)=x$. We construct a triangle with angle $\theta$, adjacent side $1$ and opposite side $x$. The hypotenuse is $\sqrt{1+x^2}$ using Pythagorean theorem.
+
+ \begin{figure}
+ \centering
+ \begin{tikzpicture}[thick]
+ \draw(0,0) -- (90:2cm) node[midway,left]{$x$} -- (0:4cm) node[midway,above right]{{$\sqrt{1+x^2}$}} -- (0,0);
+ 
+ \node at (2,-.5){$1$} ;
+ 
+ %\draw[fill=lightgray, thick] (0,0) -- (0:0.8cm) arc (0:90:0.8cm) node at (45:0.5cm) {$\gamma$} -- cycle;
+ \draw[fill=lightgray, thick] (4,0) -- ++(180:0.8cm) arc (180:180-atan2(4,2):0.8cm) node at ($(167:0.6cm)+(4,0)$) {$\theta$} -- cycle;
+ %\draw[fill=lightgray, thick] (0,2) -- ++(-90:0.8cm) arc (-90:-90+atan2(2,4):0.8cm) node at ($(-60:0.5cm)+(0,2)$) {$\beta$} -- cycle;
+ \end{tikzpicture}
+ 
+ \caption{\label{fig:inverse3}A right triangle defined by $\theta=\tan ^{-1}(\frac{x}{1})$ with the length of the third leg found using the Pythagorean Theorem.}
+ \end{figure}
+
+ Then $\sec^2\left(\tan^{-1}(x)\right)=\sec^2(\theta)=\left(\sec(\theta)\right)^2=\left(\sqrt{1+x^2}\right)^2=1+x^2$. Recall that $\sec(x)=1/\cos(x)$. Finally, the derivative is
+\[\frac{d}{dx}\left(\tan^{-1}(x)\right)=\frac{1}{1+x^2}.\]
+\end{solution}
+
+
+
+
+Using similar techniques, we can find the derivatives of the remaining inverse trigonometric functions.\\
+
+\begin{theorem}{Derivatives of Inverse Trigonometric Functions}{deriv_inverse_trig}
+{The inverse trigonometric functions are differentiable on all open sets contained in their domains (as listed in Figure \ref{fig:domain_trig}) and their derivatives are as follows:\\
+
+\noindent	\begin{minipage}{.5\textwidth}\small
+	\begin{enumerate}
+	\item		$\ds \frac{d}{dx}\big(\sin^{-1}(x)\big) = \frac{1}{\sqrt{1-x^2}}$ 
+	\item		$\ds \frac{d}{dx}\big(\sec^{-1}(x)\big) = \frac{1}{ x \sqrt{x^2-1}}$
+	\item		$\ds \frac{d}{dx}\big(\tan^{-1}(x)\big) = \frac{1}{1+x^2}$
+	\end{enumerate}
+	\end{minipage}
+	\begin{minipage}{.5\textwidth}\small
+	\begin{enumerate}\addtocounter{enumi}{3}
+	\item		$\ds \frac{d}{dx}\big(\cos^{-1}(x)\big) = -\frac{1}{\sqrt{1-x^2}}$ 
+	\item		$\ds \frac{d}{dx}\big(\csc^{-1}(x)\big) = -\frac{1}{ x \sqrt{x^2-1}}$
+	\item		$\ds \frac{d}{dx}\big(\cot^{-1}(x)\big) = -\frac{1}{1+x^2}$
+	\end{enumerate}\index{derivative!inverse trig.}
+	\normalsize
+	\end{minipage}
+}			
+
+
+\end{theorem}
+
+Note how the last three derivatives are merely the opposites of the first three, respectively. Because of this, the first three are used almost exclusively throughout this text.\\
+
+
+\subsection{Glossary of Derivatives of Elementary Functions}
+
+In this chapter we have defined the derivative, given rules to facilitate its computation, and given the derivatives of a number of standard functions. We restate the most important of these in the following theorem, intended to be a reference for further work.
+
+\begin{theorem}{Glossary of Derivatives of Elementary Functions}{deriv_glossary}
+Let $u$ and $v$ be differentiable functions, and let $a$, $c$ and $n$ be real numbers, $a>0$, $n\neq 0$. \\
+\noindent%
+
+	\begin{minipage}{.5\textwidth}
+	\begin{enumerate}
+	\item		$\frac{d}{dx}\big(cu\big) = cu'$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(u\cdot v\big) = uv'+u'v$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(u(v)\big) = u'(v)v'$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(x\big) = 1$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(e^x\big) = e^x$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\ln x\big) = \frac{1}{x}$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\sin x\big) = \cos x$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\csc x\big) = -\csc x\cot x$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\tan x\big) = \sec^2x$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\sin^{-1}x\big) = \frac{1}{\sqrt{1-x^2}}$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\csc^{-1}x\big) = -\frac{1}{|x|\sqrt{x^2-1}}$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\tan^{-1}x\big) = \frac{1}{1+x^2}$\addtocounter{enumi}{1}
+	\end{enumerate}
+%\normalsize
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+	\begin{enumerate}\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(u\pm v\big) = u'\pm v'$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\frac uv\big) = \frac{u'v-uv'}{v^2}$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(c\big) = 0$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(x^n\big) = nx^{n-1}$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(a^x\big) = \ln a\cdot a^x$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\log_a x\big) = \frac{1}{\ln a}\cdot\frac{1}{x}$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\cos x\big) = -\sin x$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\sec x\big) = \sec x\tan x$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\cot x\big) = -\csc^2x$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\cos^{-1}x\big) = -\frac{1}{\sqrt{1-x^2}}$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\sec^{-1}x\big) = \frac{1}{|x|\sqrt{x^2-1}}$\addtocounter{enumi}{1}
+	\item		$\frac{d}{dx}\big(\cot^{-1}x\big) = -\frac{1}{1+x^2}$
+	\end{enumerate}
+\normalsize
+\end{minipage}
+
+\end{theorem}

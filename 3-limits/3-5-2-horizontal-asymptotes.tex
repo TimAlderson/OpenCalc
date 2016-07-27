@@ -1,0 +1,22 @@
+\subsection{Horizontal Asymptotes}\label{subsec:HorizontalAsymptotes}
+The line $y=L$ is a \dfont{horizontal asymptote} of $f(x)$ if either
+$$\lim_{x\to\infty}f(x)=L\qquad\mbox{or}\qquad\lim_{x\to-\infty}f(x)=L.$$
+
+\begin{example}{Horizontal Asymptotes}{HorizontalAsymptotes}
+Find the horizontal asymptotes of $\ds f(x)=\frac{|x|}{x}$.
+\end{example}
+
+\begin{solution} 
+We must compute two infinite limits.
+First,
+$$\lim_{x\to\infty}\frac{|x|}{x}.$$
+Notice that for $x$ arbitrarily large that $x>0$, so that $|x|=x$.
+In particular, for $x$ in the interval $(0,\infty)$ we have
+$$\lim_{x\to\infty}\frac{|x|}{x}=\lim_{x\to\infty}\frac{x}{x}=1.$$
+Second, we must compute
+$$\lim_{x\to-\infty}\frac{|x|}{x}.$$
+Notice that for $x$ arbitrarily large negative that $x<0$, so that $|x|=-x$.
+In particular, for $x$ in the interval $(-\infty,0)$ we have
+$$\lim_{x\to -\infty}\frac{|x|}{x}=\lim_{x\to -\infty}\frac{-x}{x}=-1.$$
+Therefore there are two horizontal asymptotes, namely, $y=1$ and $y=-1$.
+\end{solution}

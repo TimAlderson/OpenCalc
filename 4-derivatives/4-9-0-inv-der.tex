@@ -1,0 +1,115 @@
+\section{Derivatives of Inverse Functions}\label{sec:DerivativesofInverse}
+Suppose we wanted to find the \ifont{derivative of the inverse}, but do not have an actual formula for the inverse function?
+Then we can use the following derivative formula for the inverse evaluated at $a$.
+
+%\begin{formulabox}[Derivative of $f^{-1}(x)$]
+%Given an invertible function $f(x)$, the derivative of its inverse function $f^{-1}(x)$ evaluated at $x=a$ is:
+%$$\left[f^{-1}\right]'(a)=\frac{1}{f'\left[ f^{-1}(a) \right]}$$
+%\end{formulabox}
+
+\begin{theorem}{Derivatives of Inverse Functions}{deriv_inverse_functions}
+{Let $f$ be differentiable and one to one on an open interval $I$, where $\fp(x) \neq 0$ for all $x$ in $I$, let $J$ be the range of $f$ on $I$, let $g$ be the inverse function of $f$, and let $f(a) = b$ for some $a$ in $I$. Then $g$ is a differentiable function on $J$, and in particular,
+	
+%	\begin{center}
+\hskip-7pt	\begin{tabular}{ccc}
+	1. $\ds \left(f\primeskip^{-1}\right)'(b)=g\primeskip'(b) = \frac{1}{\fp(a)}$ &\hskip 4pt and \hskip 4pt&  2. $\ds \left(f\primeskip^{-1}\right)'(x)=g\primeskip'(x) = \frac{1}{\fp(g(x))}$
+	\end{tabular}
+%	\end{center}
+}
+\end{theorem}
+
+
+To see why this is true, start with the function $y=f^{-1}(x)$.
+Write this as $x=f(y)$  and differentiate both sides implicitly with respect to $x$ using the chain rule:
+$$1=f'(y)\cdot \frac{dy}{dx}.$$
+Thus,
+$$\frac{dy}{dx}=\frac{1}{f'(y)},$$
+but $y=f^{-1}(x)$, thus,
+$$\left[f^{-1}\right]'(x)=\frac{1}{f'\left[ f^{-1}(x) \right]}.$$
+At the point $x=a$ this becomes:
+$$\left[f^{-1}\right]'(a)=\frac{1}{f'\left[ f^{-1}(a) \right]}$$
+
+In Section \ref{sec:DerivativeExpLog}, we saw that $\ds \frac{d}{dx}\big(\ln x\big) = \frac{1}{x}$. We can justify that now using Theorem \ref{thm:deriv_inverse_functions}, as shown in the example.\\
+
+\begin{example}{Finding the derivative of $y=\ln x$}{ex_deriv_lnx}
+{
+Use Theorem \ref{thm:deriv_inverse_functions} to compute $\ds \frac{d}{dx}\big(\ln x\big)$.}
+{View $y= \ln x$ as the inverse of $y = e^x$. Therefore, using our standard notation, let $f(x) = e^x$ and $g(x) = \ln x$. We wish to find $g\primeskip'(x)$. Theorem \ref{thm:deriv_inverse_functions} gives:
+		\begin{align*}
+		g\primeskip'(x) &= \frac{1}{\fp(g(x))} \\
+					&=	\frac{1}{e^{\ln x}}\rule{0pt}{15pt} \\
+					&= \frac{1}{x}.\rule{0pt}{17pt}
+		\end{align*}
+\vskip-\baselineskip
+}
+\end{example}
+
+
+
+\begin{example}{Derivatives of Inverse Functions}{DerivativesInverseFunctions}
+Suppose $f(x)=x^5+2x^3+7x+1$.
+Find $\left[f^{-1}\right]'(1)$.
+\end{example}
+
+\begin{solution} 
+First we should show that $f^{-1}$ exists (i.e. that $f$ is one-to-one). In this case the derivative $f'(x)=5x^4+6x^2+7$ is strictly greater than 0 for all $x$, so $f$ is strictly increasing and thus one-to-one.
+
+It's difficult to find the inverse of $f(x)$ (and then take the derivative).
+Thus, we use the above formula evaluated at $1$:
+$$\left[f^{-1}\right]'(1)=\frac{1}{f'\left[ f^{-1}(1) \right]}.$$
+Note that to use this formula we need to know what $f^{-1}(1)$ is, and the derivative $f'(x)$.
+To find $f^{-1}(1)$ we make a table of values (plugging in $x=-3,-2,-1,0,1,2,3$ into $f(x)$) and see what value of $x$ gives $1$.
+We omit the table and simply observe that $f(0)=1$.
+Thus, 
+$$f^{-1}(1)=0.$$
+Now we have:
+$$\left[f^{-1}\right]'(1)=\frac{1}{f'\left( 0 \right)}.$$
+And so, $f'(0)=7$.
+Therefore, $$\left[f^{-1}\right]'(1)=\frac{1}{7}.$$
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Subsections to include
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{4-derivatives/4-9-1-der-inv-trig}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:DerivativesofInverse}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+\begin{ex} 
+	Given $f(x)=1+\ln(x-2)$, first show that $f^{-1}$ exists, then compute $\left[f^{-1}\right]'(1)$.
+\begin{sol}
+	$1$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+The \dfont{inverse cotangent function}, denoted by $\cot^{-1}(x)$, is defined to be the inverse of the restricted cotangent function: $\cot (x)$, $0<x<\pi$. Find the derivative of $\cot^{-1}(x)$.
+\end{ex}
+
+\begin{ex}
+The \dfont{inverse secant function}, denoted by $\sec^{-1}(x)$, is defined to be the inverse of the restricted secant function: $\sec(x)$, $x\in[0,\pi/2)\cup[\pi,3\pi/2)$. Find the derivative of $\sec^{-1}(x)$.
+\end{ex}
+
+\begin{ex}
+The \dfont{inverse cosecant function}, denoted by $\csc^{-1}(x)$, is defined to be the inverse of the restricted cosecant function: $\csc(x)$, $x\in(0,\pi/2]\cup(\pi,3\pi/2]$. Find the derivative of $\csc^{-1}(x)$.
+\end{ex}
+
+\begin{ex}
+Suppose $f(x)=x^3+4x+2$. Find the slope of the tangent line to the graph of $g(x)=xf^{-1}(x)$ at the point where $x=7$.
+\end{ex}
+
+\begin{ex}
+Find the derivatives of $\sin^{-1}(x)+\cos^{-1}(x)$ and $(x^2+1)\tan^{-1}(x)$.
+\end{ex}
+
+\begin{ex}
+Differentiate $y=\sin^{-1}(x^2)$ and $y=\tan^{-1}(3x)$.
+\end{ex}
+
+\end{enumialphparenastyle}

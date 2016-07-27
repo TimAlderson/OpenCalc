@@ -1,0 +1,305 @@
+\section{The Derivative Function}\label{sec:TheDerivativeFunction}
+In Section \ref{sec:Slope}, we have seen how to create, or derive, a new function $f'(x)$ from a
+function $f(x)$, and that this new function carries important
+information. In one example we saw that $f'(x)$ tells us how steep the
+graph of $f(x)$ is; in another we saw that $f'(x)$ tells us the velocity
+of an object if $f(x)$ tells us the  position of the object at time
+$x$. As we said earlier, this same mathematical idea is useful
+whenever $f(x)$ represents some changing quantity and we want to know
+something about how it changes, or roughly, the ``rate'' at which it
+changes. Most functions encountered in practice are built up from a
+small collection of ``primitive'' functions in a few simple ways, for
+example, by adding or multiplying functions together to get new, more
+complicated functions. To make good use of the information provided by
+$f'(x)$ we need to be able to compute it for a variety of such functions.
+
+We will begin to use different notations for the derivative of a
+function. While initially confusing, each is often useful so it is
+worth maintaining multiple versions of the same thing.
+
+Consider again the function $\ds f(x)=\sqrt{625-x^2}$.
+We have computed the derivative $\ds f'(x)=-x/\sqrt{625-x^2}$, and have
+already noted that if we use the alternate notation
+$\ds y=\sqrt{625-x^2}$ then we might write $\ds y'=-x/\sqrt{625-x^2}$.
+Another notation is quite different, and in time it will become clear
+why it is often a useful one. Recall that to compute the the
+derivative of $f$ we computed 
+$$
+\lim_{\Delta x\to0} {\sqrt{625-(7+\Delta x)^2} - 24\over \Delta x}.
+$$
+The denominator here measures a distance in the $x$ direction,
+sometimes called the ``run'', and the numerator measures a distance in
+the $y$ direction, sometimes called the ``rise,'' and ``rise over
+run'' is the slope of a line. Recall that sometimes such a numerator is
+abbreviated $\Delta y$, exchanging brevity for a more detailed
+expression. So in general, we define a derivative by the following equation.
+
+\begin{definition}{Defnition of Derivative}{DerDefn}
+The derivative of $y=f(x)$ with respect to $x$ is
+$$y'=\lim_{\Delta x\to0} {\Delta y\over \Delta x}.$$
+Some textbooks use $h$ in place of $\Delta x$ in the definition of
+derivative: $$f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}.$$ 
+\end{definition}
+
+To recall the form of the limit, we sometimes say instead that
+$$
+{dy\over dx}=\lim_{\Delta x\to0} {\Delta y\over \Delta x}.
+$$ 
+In other words, $dy/dx$ is another notation for the derivative, and
+it reminds us that it is related to an actual slope between two
+points. This notation is called \dfont{Leibniz notation}, 
+after Gottfried Leibniz, who developed the fundamentals
+of calculus independently, at about the same time that Isaac Newton
+did.  Again, since we often use $f$ and $f(x)$ to mean the original
+function, we sometimes use $df/dx$ and $df(x)/dx$ to refer to the
+derivative. If the function $f(x)$ is written out in full we often
+write the last of these something like this
+$$f'(x)={d\over dx}\sqrt{625-x^2}$$
+with the function written to the side, instead of trying to fit it into
+the numerator.
+
+\begin{example}{Derivative of $y=t^2$}{Derivative1}
+Find the derivative of $\ds y=f(t)=t^2$.
+\end{example}
+
+\begin{solution} 
+We compute 
+\[ \begin{array}{rll}
+y' &=& \ds\lim_{\Delta t\to0}\ds\frac{\Delta y}{\Delta t}  \\
+\\
+	&=&\ds\lim_{\Delta t\to0}\ds\frac{(t+\Delta t)^2-t^2}{\Delta t} \\
+	\\
+&=&\ds\lim_{\Delta t\to0}\ds\frac{t^2+2t\Delta t+\Delta t^2-t^2}{\Delta t} \\
+\\
+&=&\ds\lim_{\Delta t\to0}\ds\frac{2t\Delta t+\Delta t^2}{\Delta t} \\
+\\
+&=&\ds\lim_{\Delta t\to0} 2t+\Delta t=2t. \\
+\end{array}\]
+\end{solution}
+
+Remember that $\Delta t$ is a single quantity, not a ``$\Delta$''
+times a ``$t$'', and so $\ds \Delta t^2$ is $\ds (\Delta t)^2$ not 
+$\ds \Delta (t^2)$.
+Doing the same example using the second formula for the derivative with $h$ in place of $\Delta t$ gives the following.
+Note that we compute $f(t+h)$ by substituting $t+h$ in place of $t$ everywhere we see $t$ in the expression $f(t)$,
+\textit{while making no other changes} (at least initially). For example, if $f(t)=t+\sqrt{(t+3)^2-t}$ then $f(t+h)=(t+h)+\sqrt{((t+h)+3)^2-(t+h)}=t+h+\sqrt{(t+h+3)^2-t-h}$.
+
+\begin{example}{Derivative of $y=t^2$}{Derivative1b}
+Find the derivative of $\ds y=f(t)=t^2$.
+\end{example}
+
+\begin{solution} 
+We compute 
+\[ \begin{array}{rll}
+f'(t) &=& \ds\lim_{h\to0}\ds\frac{f(t+h)-f(t)}{h}  \\
+\\
+	&=&\ds\lim_{h\to0}\ds\frac{(t+h)^2-t^2}{h} \\
+	\\
+&=&\ds\lim_{h\to0}\ds\frac{t^2+2th+h^2-t^2}{h} \\
+\\
+&=&\ds\lim_{h\to0}\ds\frac{2th+h^2}{h} \\
+\\
+&=&\ds\lim_{h\to0} 2t+h=2t. \\
+\end{array}\]
+\end{solution}
+
+\begin{example}{Derivative}{Derivative2}
+Find the derivative of $y=f(x)=1/x$.
+\end{example}
+
+\begin{solution} 
+The computation:
+\begin{eqnarray*}
+y' &=& \lim_{\Delta x\to0}{\Delta y\over\Delta x}\cr
+\\
+&=&\lim_{\Delta x\to0}{ {1\over x+\Delta x} - {1\over x}\over \Delta
+  x}\cr
+\\
+&=&\lim_{\Delta x\to0}{ {x\over x(x+\Delta x)} - 
+{x+\Delta x\over x(x+\Delta x)}\over \Delta x}\cr
+\\
+&=&\lim_{\Delta x\to0}{ {x-(x+\Delta x)\over x(x+\Delta x)}\over \Delta x}\cr
+\\
+&=&\lim_{\Delta x\to0} {x-x-\Delta x\over x(x+\Delta x)\Delta x}\cr
+\\
+&=&\lim_{\Delta x\to0} {-\Delta x\over x(x+\Delta x)\Delta x}\cr
+\\
+&=&\lim_{\Delta x\to0} {-1\over x(x+\Delta x)}={-1\over x^2}\cr
+\end{eqnarray*}
+\end{solution}
+
+{\bf Note:}  If you happen to know some ``derivative formulas'' from
+an earlier course, for the time being you should pretend that you do
+not know them.
+In examples like the ones above and the exercises below, you are required
+to know how to find the derivative formula starting from basic principles.
+We will later develop some formulas so that we do not always need to
+do such computations, but we will continue to need to know how to do
+the more involved computations.
+
+To recap, given any function $f$ and any number $x$ in the domain of $f$, we define
+$f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}$ wherever this limit exists, and we call
+the number $f'(x)$ the derivative of $f$ at $x$. Geometrically, $f'(x)$ is the slope of
+the tangent line to the graph of $f$ at the point $(x,f(x))$.  The following
+symbols also represent the derivative:
+$$f'(x)=y'=\frac{dy}{dx}=\frac{df}{dx}=\frac{d}{dx}f(x).$$ The symbol
+$d/dx$ is called a differential operator which means to take the
+derivative of the function $f(x)$ with respect to the variable $x$.
+
+In the next example we emphasize the geometrical interpretation of derivative.
+
+\begin{example}{Geometrical Interpretation of Derivative}{GeometricalInterpretationDerivative}
+Consider the function $f(x)$ given by the graph below.
+Verify that the graph of $f'(x)$ is indeed the derivative of $f(x)$ by analyzing slopes of tangent lines to the graph at different points.
+$$\includegraphics[width=2.5in]{images/deriv1}$$
+\end{example}
+
+\begin{solution} 
+We must think about the tangent lines to the graph of $f$, because the slopes
+of these lines are the values of $f'(x)$.
+
+We start by checking the graph of $f$ for horizontal tangent lines, since horizontal
+lines have a slope of 0. We find that the tangent line is horizontal at the points
+where $x$ has the values -1.9 and 1.8 (approximately). At each of these values of $x$,
+we must have $f'(x)=0$, which means that the graph of $f'$ has an $x$-intercept (a point
+where the graph intersects the $x$-axis). 
+
+Note that horizontal tangent lines have a slope of zero and these
+occur approximately at the points $(-1.9,-3.2)$ and $(1.8,3.2)$ of the
+graph.  Therefore $f'(x)$ will cross the $x$-axis when $x=-1.9$ and
+$x=1.8$.  
+
+Analyzing the slope of the tangent line of $f(x)$ at $x=0$ gives
+approximately $3.0$, thus, $f'(0)=3.0$.  Similarly, analyzing the
+slope of the tangent lines of $f(x)$ at $x=1$ and $x=-1$ give
+approximately $2.0$ for both, thus, $f'(1)=f'(-1)=2.0$.
+\end{solution}
+
+In the next example we verify that the slope of a straight line is $m$.
+
+\begin{example}{Derivative of a Linear Function}{DerivativeLinearFunction}
+Let $m,b$ be any two real numbers.
+Determine $f'(x)$ if $f(x)=mx+b$.
+\end{example}
+
+\begin{solution} 
+By the definition of derivative (using $h$ in place of $\Delta x$) we have,
+$$f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=\lim_{h\to 0}\frac{(m(x+h)+b)-(mx+b)}{h}$$
+$$=\lim_{h\to 0}\frac{mh}{h}=\lim_{h\to 0}m=m.$$
+
+This is not surprising. We know that $f'(x)$ always represents the slope of a tangent
+line to the graph of $f$. In this example, since the graph of $f$ is a straight line $y=mx+b$
+already, every tangent line is the same line $y=mx+b$. Since this line has a slope of $m$,
+we must have $f'(x)=m$.
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Subsections to include
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{4-derivatives/4-3-1-differentiable}
+\input{4-derivatives/4-3-2-second-other-derivatives}
+\input{4-derivatives/4-3-3-velocities}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for Section \ref{sec:TheDerivativeFunction}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+\begin{ex} 
+Find the derivatives of the following functions.
+\begin{enumerate}
+	\item	$\ds y=f(x)=\sqrt{169-x^2}$
+	\item	$\ds y=f(t)=80-4.9t^2$
+	\item	$\ds y=f(x)=x^2-(1/x)$
+	\item	$\ds y=f(x)=ax^2+bx+c$, where $a$, $b$, and $c$ are constants.
+	\item	$\ds y=f(x)=x^3$
+	\item	$\ds y=f(x)=2/\sqrt{2x+1}$
+	\item	$y=g(t)=(2t-1)/(t+2)$
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	$\ds -x/\sqrt{169-x^2}$
+	\item	$-9.8t$
+	\item	$\ds 2x+1/x^2$
+	\item	$2ax+b$
+	\item	$\ds 3x^2$
+	\item	$\ds -2/(2x+1)^{3/2}$
+	\item	$\ds 5/(t+2)^2$
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Shown is the graph of a function $f(x)$. Sketch the graph of $f'(x)$
+by estimating the derivative at a number of points in the interval:
+estimate the derivative at regular intervals from one end of the
+interval to the other, and also at ``special'' points, as when the
+derivative is zero. Make sure you indicate any places where the
+derivative does not exist.
+$$\vbox{\beginpicture
+\normalgraphs
+\setcoordinatesystem units <4.5truecm,4.5truecm>
+\setplotarea x from -1 to 1, y from 0 to 1.6
+\axis left ticks numbered from 0.2 to 1.6 by 0.2 /
+\axis left shiftedto x=0 /
+\axis bottom ticks numbered from -1 to 1 by 0.2 /
+\setquadratic
+\plot -0.900 0.800 -0.810 1.003 -0.720 1.148 -0.630 1.242 -0.540 1.291 
+-0.450 1.301 -0.360 1.280 -0.270 1.232 -0.180 1.166 -0.090 1.086 
+0.000 1.000 0.090 0.914 0.180 0.834 0.270 0.768 0.360 0.720 
+0.450 0.699 0.540 0.709 0.630 0.758 0.720 0.852 0.810 0.997 
+0.900 1.200  /
+\linethickness 0.1truept
+\axis left ticks in andacross from 0.1 to 1.6 by 0.1 /
+\axis bottom ticks in andacross from -1 to 1 by 0.1 /
+\endpicture}$$
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Shown is the graph of a function $f(x)$. Sketch the graph of $f'(x)$
+by estimating the derivative at a number of points in the interval:
+estimate the derivative at regular intervals from one end of the
+interval to the other, and also at ``special'' points, as when the
+derivative is zero. Make sure you indicate any places where the
+derivative does not exist.
+$$\vbox{\beginpicture
+\normalgraphs
+\setcoordinatesystem units <1.8truecm,1.8truecm>
+\setplotarea x from 0 to 5, y from 0 to 4
+\axis left ticks numbered from 0 to 4 by 1 /
+\axis bottom ticks numbered from 0 to 5 by 1 /
+\plot 0 0 2 2 /
+\setquadratic
+\plot 2.000 2.000 2.135 1.747 2.270 1.531 2.405 1.351 2.540 1.209 
+2.675 1.103 2.810 1.034 2.945 1.002 3.080 1.007 3.215 1.049 
+3.350 1.128 3.485 1.244 3.620 1.396 3.755 1.586 3.890 1.812 
+4.025 2.075 4.160 2.375 4.295 2.712 4.430 3.086 4.565 3.497 
+4.700 3.945  /
+\linethickness 0.1truept
+\axis left ticks in andacross from 0.2 to 4 by 0.2 /
+\axis bottom ticks in andacross from 0.2 to 5 by 0.2 /
+\endpicture}$$
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Find an equation for the tangent line to the graph of $\ds f(x)=5-x-3x^2$ at the point $x=2$
+\begin{sol}
+	$y=-13x+17$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Find a value for $a$ so that the graph of $\ds f(x)=x^2+ax-3$ has a horizontal tangent line at $x=4$.
+\begin{sol}
+	$-8$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

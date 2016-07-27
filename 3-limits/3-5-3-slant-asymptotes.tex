@@ -1,0 +1,47 @@
+\subsection{Slant Asymptotes}\label{subsec:SlantAsymptotes}
+Some functions may have slant (or {\it oblique}) asymptotes, which are neither vertical nor horizontal. If
+\[\ds\lim_{x\to\infty}\left[f(x)-(mx+b)\right]=0\]
+then the straight line $y=mx+b$ is a \dfont{slant asymptote} to $f(x)$. Visually, the vertical distance between $f(x)$ and $y=mx+b$ is decreasing towards 0 and the curves do not intersect or cross at any point as $x$ approaches infinity. Similarly when $x\to-\infty$.
+
+\begin{example}{Slant Asymptote in a Rational Function}{SlantAsymptRationalFunction}
+Find the slant asymptotes of $\ds f(x)=\frac{-3x^2+4}{x-1}$.
+\end{example}
+\begin{solution}
+Note that this function has no horizontal asymptotes since $f(x)\to-\infty$ as $x\to\infty$ and $f(x)\to\infty$ as $x\to-\infty$.
+
+In rational functions, slant asymptotes occur when the degree in the numerator is one greater than in the denominator. We use long division to rearrange the function:
+\[\ds\frac{-3x^2+4}{x-1}=-3x-3+\frac{1}{x-1}.\]
+The part we're interested in is the resulting polynomial $-3x-3$. This is the line $y=mx+b$ we were seeking, where $m=-3$ and $b=-3$. Notice that
+\[\ds\lim_{x\to\infty}\frac{-3x^2+4}{x-1}-(-3x-3)=\lim_{x\to\infty}\frac{1}{x-1}=0\]
+and
+\[\ds\lim_{x\to-\infty}\frac{-3x^2+4}{x-1}-(-3x-3)=\lim_{x\to-\infty}\frac{1}{x-1}=0.\]
+Thus, $y=-3x-3$ is a slant asymptote of $f(x)$.
+\end{solution}
+
+Although rational functions are the most common type of function we encounter with slant asymptotes, there are other types of functions we can consider that present an interesting challenge.
+
+\begin{example}{Slant Asymptote}{SlantOtherFunction}
+Show that $y=2x+4$ is a slant asymptote of $f(x)=2x-3^x+4$.
+\end{example}
+\begin{solution}
+This is because  
+\[\lim_{x\to -\infty}[f(x)-(2x+4)]=\lim_{x\to -\infty}(-3^x)=0.\]
+\end{solution}
+
+We note that $\lim_{x\to \infty}[f(x)-(2x+4)]=\lim_{x\to \infty}(-3^x)=-\infty$.
+So, the vertical distance between $%
+y=f(x)$ and the line $y=2x+4$ decreases toward 0 only when $%
+x\to -\infty $ and not when $x\to \infty$. The graph of $f$
+approaches the slant asymptote $y=2x+4$ only at the far left and not at the
+far right. One might ask if $y=f(x)$ approaches a slant
+asymptote when $x\to \infty$. The answer turns out to be no, but we
+will need to know something about the relative growth rates of the
+exponential functions and linear functions in order to prove this.
+Specifically, one can prove that when the base is greater than 1 the
+exponential functions grows faster than any power function as $x\to
+\infty$. This can be phrased like this: For any $a>1$ and any $n>0$,%
+\begin{equation*}
+\lim_{x\to \infty}\frac{a^x}{x^n}=\infty \text{ and }%
+\lim_{x\to \infty}\frac{x^n}{a^x}=0.
+\end{equation*}%
+These facts are most easily proved with the aim of something called the L'H\^{o}pital's Rule.

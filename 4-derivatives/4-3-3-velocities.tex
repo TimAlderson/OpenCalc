@@ -1,0 +1,24 @@
+\subsection{Velocities}
+Suppose $f(t)$ is a position function of an object, representing the displacement of the object from the origin at time $t$.
+In terms of derivatives, the \dfont{velocity of an object is:}
+$$v(a)=f'(a)$$
+The change of velocity with respect to time is called the \dfont{acceleration} and can be found as follows:
+$$a(t)=v'(t)=f''(t).$$
+Acceleration is the derivative of the velocity function and the second derivative of the position function.
+
+\begin{example}{Position, Velocity and Acceleration}{PositionFunction}
+Suppose the position function of an object is $f(t)=t^2~metres$ at $t$ seconds.
+Find the velocity and acceleration of the object at time $t=1s$.
+\end{example}
+
+\begin{solution} 
+By the definition of velocity and acceleration we need to compute $f'(t)$ and $f''(t)$.
+Using the definition of derivative, we have,
+$$f'(t)=\lim_{h\to 0}\frac{(t+h)^2-t^2}{h}=\lim_{h\to 0}\frac{2th+h^2}{h}=\lim_{h\to 0}(2t+h)=2t.$$
+Therefore, $v(t)=f'(t)=2t$.
+Thus, the velocity at time $t=1$ is $v(1)=2~m/s$.
+We now have that the acceleration at time $t$ is:
+$$a(t)=f''(t)=\lim_{h\to 0}\frac{2(t+h)-2t}{h}=\lim_{h\to 0}\frac{2h}{h}=2.$$
+Therefore, $a(t)=2$.
+Substituting $t=1$ into the function $a(t)$ gives $a(1)=2~m/s^2$.
+\end{solution}

@@ -1,0 +1,116 @@
+\subsection{Differentials}\label{sec:differentials}
+Very much related to linear approximations are the {\em differentials} $dx$ and $dy$, used not to approximate values of $f$, but instead the change (or rise) in the values of $f$.
+
+\begin{definition}{Differentials dx and dy}{dx}
+Let $y=f(x)$ be a differentiable function. We define a new
+  independent variable $dx$, and a new dependent variable
+  $dy=f'(x)\,dx$. Notice that $dy$ is a function both of $x$ (since
+  $f'(x)$ is a function of $x$) and of $dx$.  We call both $dx$ and
+  $dy$ \deffont{differentials}.  
+\end{definition}
+
+Now fix a point $a$ and let $\Delta x =x-a$ and $\Delta y= f(x)-f(a)$.
+If $x$ is near $a$ then $\Delta x$ is clearly small. If we set $dx=\Delta x$ then we obtain
+\[ dy = f'(a)\,dx \approx \frac{\Delta y}{\Delta x}\Delta x = \Delta y.\]
+Thus, $dy$ can be used to approximate $\Delta y$, the actual change in
+the function $f$ between $a$ and $x$. This is exactly the
+approximation given by the tangent line:
+\[ dy = f'(a)(x-a) = f'(a)(x-a)+f(a)-f(a)=L(x)-f(a).\]
+While $L(x)$ approximates $f(x)$, $dy$ approximates how $f(x)$ has
+changed from $f(a)$.
+Figure~\ref{fig:differentials} illustrates the relationships.
+
+\figure[!ht]
+\centerline{\vbox{\beginpicture
+\normalgraphs
+%\sevenpoint
+\setcoordinatesystem units <2truecm,2truecm>
+\setplotarea x from 0 to 4.5, y from 0 to 2.5
+\axis left /
+\axis bottom ticks withvalues {$a$} {$x$} / at 1 3 / /
+\plot 0.500 0.707 0.588 0.766 0.675 0.822 0.762 0.873 0.850 0.922 
+0.938 0.968 1.025 1.012 1.112 1.055 1.200 1.095 1.288 1.135 
+1.375 1.173 1.462 1.209 1.550 1.245 1.638 1.280 1.725 1.313 
+1.812 1.346 1.900 1.378 1.988 1.410 2.075 1.440 2.162 1.471 
+2.250 1.500 2.338 1.529 2.425 1.557 2.512 1.585 2.600 1.612 
+2.688 1.639 2.775 1.666 2.862 1.692 2.950 1.718 3.038 1.743 
+3.125 1.768 3.212 1.792 3.300 1.817 3.388 1.841 3.475 1.864 
+3.562 1.887 3.650 1.910 3.738 1.933 3.825 1.956 3.912 1.978 
+4.000 2.000 /
+\setlinear
+\plot 1 1 3 2 3 1 1 1 /
+\betweenarrows {$dx=\Delta x$} from 1 0.8 to 3 0.8
+\betweenarrows {$\Delta y$} from 3.2 1 to 3.2 1.73
+\betweenarrows {$dy$} from 3.6 1 to 3.6 2
+\setdashes <2pt>
+\putrule from 3 2 to 3.6 2
+\putrule from 3 1 to 3.6 1
+\putrule from 3 1.73 to 3.2 1.73
+\endpicture}}
+\caption{Differentials.\label{fig:differentials}}
+\endfigure
+
+Here is a concrete example.
+
+\begin{example}{Rise of Natural Logarithm}{rise of natural logarithm}
+Approximate the rise of $f(x)=\ln x$ from $x=1$ to $x=1.1$, using linear approximation.
+\end{example}
+
+\begin{solution}
+Note that $\ln (1.1)$ is not readily calculated (without a calculator) hence why we wish to use linear approximation to approximate $f(1.1)-f(1)$.
+
+We fix $a=1$ and as above we have $\Delta x=x-1$ and $\Delta y=f(x)-f(1)=\ln x$, and obtain
+\[ dy=f'(1)dx\approx \frac{\Delta y}{\Delta x}\Delta x=\Delta y. \]
+But $f'(x)=1/x$ and thus $f'(1)=1/1=1$, we obtain in this case
+\[ dy=dx\approx\Delta y. \]
+Finally for $x=1.1$, we can easily approximate the rise of $f$ as
+\[ f(1.1)-f(1)=\Delta y\approx dy=1.1-1=0.1. \]
+The correct value of $\ln (1.1)=\ln 1$ is 0.0953\ldots and thus we were relatively close.
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:differentials}}
+
+\begin{enumialphparenastyle}
+	
+%%%%%%%%%%
+\begin{ex} 
+Let $\ds f(x) = x^4$. If $a=1$ and $dx= \Delta x =1/2$, 
+what are $\Delta y$ and $dy$?
+\begin{sol}
+	$\Delta y=65/16$, $dy=2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Let $\ds f(x) = \sqrt{x}$. If $a=1$ and $dx= \Delta x
+=1/10$, what are $\Delta y$ and $dy$?
+\begin{sol}
+	$\ds \Delta y=\sqrt{11/10}-1$, $dy=0.05$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Let $f(x) = \sin (2x)$. If $a=\pi$ and $dx= \Delta x
+=\pi/100$, what are $\Delta y$ and $dy$?
+\begin{sol}
+	$\ds \Delta y=\sin(\pi/50)$, $dy=\pi/50$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Use differentials to estimate the amount of paint needed to
+ apply a coat of paint 0.02 cm thick to a sphere with diameter $40$
+ meters. (Recall that the volume of a sphere of radius $r$ is $V
+ =(4/3)\pi r^3$. Notice that you are given that $dr=0.02$.)
+\begin{sol}
+	$dV=8\pi/25$
+\end{sol}
+\end{ex}
+
+\end{enumialphparenastyle}

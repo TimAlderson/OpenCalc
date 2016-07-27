@@ -1,0 +1,266 @@
+\subsection{Absolute Extrema}\label{subsec:AbsoluteExtremaSubsection}
+
+Absolute extrema are also commonly referred to as
+\dfont{global extrema}. Unlike local extrema, which are
+only ``extreme" relative to points ``close to'' them, an
+absolute (or global) extrema is ``extreme" relative to \emph{all}
+other points in the interval under consideration.
+
+\begin{definition}{Absolute Maxima and Minima}{AbsMaxMinDef}
+	A real-valued function $f$ has an \deffont{absolute maximum}
+	on an interval $I$ at $x_0$ if $f(x_0)$ is the largest value
+	of $f$ on $I$; in other words, $f(x_0)\geq f(x)$ for all $x$
+	in the domain of $f$ that are in $I$.
+	
+	\medskip
+	A real-valued function $f$ has an \deffont{absolute minimum}
+	on an interval $I$ at $x_0$ if $f(x_0)$ is the smallest value
+	of $f$ on $I$; in other words, $f(x_0)\leq f(x)$ for all $x$
+	in the domain of $f$ that are in $I$.
+\end{definition}
+
+\begin{example}{Absolute Extrema}{AbsoluteExtremaExamples}
+	Consider the function $f(x)=x^2$ on the interval $(-\infty,\infty)$.
+	This parabola has an absolute minimum at $x=0$.
+	However, it does not have an absolute maximum.
+	
+	\medskip
+	Consider the function $f(x)=|x|$ on the interval $[-1,2]$.
+	This graph looks like a check mark. It has an absolute minimum
+	at $x=0$ and an absolute maximum at $x=2$.
+	
+	\medskip
+	Consider the function $f(x)=\cos x$ on the interval $[0,\pi]$.
+	It has an absolute minimum at $x=\pi$ and an absolute maximum at $x=0$.
+	
+	\medskip
+	Consider the function $f(x)=e^x$ on any interval $[a,b]$,
+	where $a<b$. Since this exponential function is increasing,
+	it has an absolute minimum at $x=a$ and an absolute maximum at $x=b$.
+\end{example}
+
+Like Fermat's Theorem, the following theorem has an intuitive appeal.
+However, unlike Fermat's Theorem, the proof relies on a more advanced
+concept called \textbf{compactness}, which will only be covered in a course
+typically entitled Analysis. So, we will be content with understanding the
+statement of the theorem.
+
+\begin{theorem}{Extreme-Value Theorem}{ExtremeValueTheorem}
+	If a function $f$ is continuous on a closed interval $[a,b]$,
+	then $f$ has both an absolute maximum and an absolute minimum on $[a,b]$.
+\end{theorem}
+
+Although this theorem tells us that an absolute extremum exists, it
+does not tell us what it is or how to find it.
+
+Note that if an absolute extremum is inside the interval (i.e. not
+an endpoint), then it must also be a local extremum. This immediately
+tells us that to find the absolute extrema of a function on an interval,
+we need only examine the local extrema inside the interval, and the
+endpoints of the interval.
+
+We can devise a method for finding absolute extrema for a function $f$ on a closed interval $[a,b]$:
+
+\begin{enumerate}
+	\item Verify the function is continuous on $[a,b]$.
+	\item Find the derivative and determine all critical values of $f$ that are in $[a,b]$.
+	\item Evaluate the function at the critical values found in Step 2 and the end points of the interval.
+	\item Identify the absolute extrema.
+\end{enumerate}
+
+Why must a function be continuous on a closed interval in order to
+use this theorem? Consider the following example.
+
+\begin{example}{Absolute Extrema of a $1/x$}{AbsExtReciprocal}
+	Find any absolute extrema for $f(x)=1/x$ on the interval $[-1,1]$.
+\end{example}
+\begin{solution}
+	The function $f$ is not continuous at $x=0$. Since $0\in [-1,1]$,
+	$f$ is not continous on the closed interval:
+	\begin{align*}
+		\lim_{x\to 0^+}f(x)&=+\infty	\\
+		\lim_{x\to 0^-}f(x)&=-\infty\, ,
+	\end{align*}
+	so we are \emph{unable} to apply the Extreme-Value Theorem. Therefore,
+	$f(x)=1/x$ does not have an absolute maximum or an absolute minimum on $[-1,1]$.
+\end{solution}
+
+However, if we consider the same function on an interval where it is
+continuous, the theorem will apply. This is illustrated in the following example.
+
+\begin{example}{Absolute Extrema of a $1/x$}{AbsExtReciprocal}
+	Find any absolute extrema for $f(x)=1/x$ on the interval $[1,2]$.
+\end{example}
+\begin{solution}
+	The function $f$ is continous on the interval, so we can apply the
+	Extreme-Value Theorem. We begin with taking the derivative to be
+	$f'(x)=-1/x^2$ which has a critical value at $x=0$, but since this
+	critical value is not in $[1,2]$ we ignore it. The only points where
+	an extrema can occur are the endpoints of the interval. To find the
+	maximum or minimum we can simply evaluate the function: $f(1)=1$ and
+	$f(2)=1/2$, so the absolute maximum is at $x=1$ and the absolute minimum is at $x=2$.
+\end{solution}
+
+Why must an interval be closed in order to use the above theorem? Recall
+the difference between open and
+closed intervals. Consider a function $f$ on the open interval $(0,1)$.
+If we choose successive values of $x$ moving closer and closer to $1$,
+what happens? Since 1 is not included in the interval we will not attain
+exactly the value of 1. Suppose we reach a value of 0.9999 --- is it
+possible to get closer to 1? Yes: There are infinitely many real numbers
+between 0.9999 and 1. In fact, any conceivable real number close to 1
+will have infinitely many real numbers between itself and 1. Now, suppose
+$f$ is decreasing on $(0,1)$: As we approach 1, $f$ will continue to
+decrease, even if the difference between successive values of $f$ is
+slight. Similarly if $f$ is increasing on $(0,1)$.
+
+Consider a few more examples:
+
+\begin{example}{Determining Absolute Extrema}{AbsExtOne}
+	Determine the absolute extrema of $f(x)=x^3-x^2+1$ on the interval $[-1,2]$.
+\end{example}
+\begin{solution}
+	First, notice $f$ is continuous on the closed interval $[-1,2]$, so
+	we're able to use Theorem~\ref{thm:ExtremeValueTheorem} to determine
+	the absolute extrema. The derivative is $f'(x)=3x^2-2x$, and the critical
+	values are $x=0,2/3$ which are both in the interval $[-1,2]$. In order
+	to find the absolute extrema, we must consider all critical values that
+	lie within the interval (that is, in $(-1,2)$) \emph{and} the endpoints of the interval.
+	\begin{align*}
+		f(-1)&=(-1)^3-(-1)^2+1=-1	\\
+		f(0)&=(0)^3-(0)^2+1=1	\\
+		f(2/3)&=(2/3)^3-(2/3)^2+1=23/27	\\
+		f(2)&=(2)^3-(2)^2+1=5
+	\end{align*}
+	
+	The absolute maximum is at (2,5) and the absolute minimum is at (-1,-1).
+\end{solution}
+
+\begin{example}{Determining Absolute Extrema}{AbsExtOne}
+	Determine the absolute extrema of $f(x)=-9/x-x+10$ on the interval $[2,6]$.
+\end{example}
+\begin{solution}
+	First, notice $f$ is continuous on the closed interval $[2,6]$,
+	so we're able to use Theorem~\ref{thm:ExtremeValueTheorem} to 
+	determine the absolute extrema. The function is not continuous
+	at $x=0$, but we can ignore this fact since 0 is not in $[2,6]$.
+	The derivative is $f'(x)=9/x^2-1$, and the critical values are
+	$x=\pm 3$, but only $x=+3$ is in the interval. In order to find
+	the absolute extrema, we must consider all critical values that
+	lie within the interval \emph{and} the endpoints of the interval.
+	\begin{align*}
+		f(2)&=-9/(2)-(2)+10=7/2=3.5	\\
+		f(3)&=-9/(3)-(3)+10=4	\\
+		f(6)&=-9/(6)-(6)+10=5/2=2.5
+	\end{align*}
+	
+	The absolute maximum is at (3,4) and the absolute minimum is at (6,2.5).
+\end{solution}
+
+When we are trying to find the absolute extrema of a function on an
+open interval, we cannot use the Extreme Value Theorem. However, if
+the function is continuous on the interval, many of the same ideas apply.
+In particular, if an absolute extremum exists, it must also be a local extremum.
+In addition to checking values at the local extrema, we must check the behaviour
+of the function as it approaches the ends of the interval.
+
+Some examples to illustrate this method.
+
+\begin{example}{Extrema of Secant}{SecantExtrema}
+	Find the extrema of $\sec(x)$ on $(-\pi/2,\pi/2)$.
+\end{example}
+\begin{solution}
+	Notice $\sec(x)$ is continuous on $(-\pi/2,\pi/2)$ and has one local minimum at 0. Also
+	\[\lim_{x\to(-\pi/2)^+}\sec(x)=\lim_{x\to(\pi/2)^-}\sec(x)=+\infty\, ,\]
+	so $\sec(x)$ has no absolute maximum, but the point $(0,1)$ is the absolute minimum.
+\end{solution}
+
+A similar approach can be used for infinite intervals.
+
+\begin{example}{Extrema of $\frac{x^2}{x^2+1}$}{ExtofRationalFraction}
+	Find the extrema of $\ds\frac{x^2}{x^2+1}$ on $(-\infty,\infty)$.
+\end{example}
+\begin{solution}
+	Since $x^2+1\neq 0$ for all $x$ in $(-\infty,\infty)$ the function is continuous on this interval. This function has only one critical value at $x=0$, which is the local minimum and also the absolute minimum. Now, $\lim_{x\to\pm\infty}\frac{x^2}{x^2+1}=1$, so the function does not have an absolute maximum: It continues to increase towards 1, but does not attain this exact value. 
+\end{solution}
+
+
+\Opensolutionfile{solutions}[ex]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Exercises for \ref{subsec:AbsoluteExtremaSubsection}}
+
+\begin{enumialphparenastyle}
+
+\begin{ex}
+	Find the absolute extrema for $f(x)=-\frac{x+4}{x-4}$ on $[0,3]$.
+	\begin{sol}
+		Absolute maximum $(3,7)$; Absolute minimum $(0,1)$. 
+	\end{sol}
+\end{ex}
+
+\begin{ex}
+	Find the absolute extrema for $f(x)=-\frac{x+4}{x-4}$ on $[0,3]$.
+	\begin{sol}
+		Absolute maximum $(3,7)$; Absolute minimum $(0,1)$. 
+	\end{sol}
+\end{ex}
+
+\begin{ex}
+	Find the absolute extrema for $f(x)=\csc(x)$ on $[0,\pi]$.
+	\begin{sol}
+		Absolute minimum $(\pi/2,1)$; No absolute maximum.
+	\end{sol}
+\end{ex}
+
+\begin{ex}
+	Find the absolute extrema for $f(x)=\ln(x)/x^2$ on $[1,4]$.
+	\begin{sol}
+		Absolute minimum $(1,0)$; Absolute maximum $(e^{1/2},\frac{1}{2e})$.
+	\end{sol}
+\end{ex}
+
+\begin{ex}
+	Find the absolute extrema for $f(x)=x\sqrt{1-x^2}$ on $[-1,1]$.
+	\begin{sol}
+		Absolute minimum $(1,0)$; Absolute maximum $(e^{1/2},\frac{1}{2e})$.
+	\end{sol}
+\end{ex}
+
+\begin{ex}
+	Find the absolute extrema for $f(x)=xe^{-x^2/32}$ on $[0,2]$.
+	\begin{sol}
+		Absolute minimum $(0,0)$; Absolute maximum $(2,2e^{1/8})$.
+	\end{sol}
+\end{ex}
+
+\begin{ex}
+	Find the absolute extrema for $f(x)=x-\tan^{-1}(2x)$ on $[0,2]$.
+	\begin{sol}
+		Absolute minimum $(1/2,\frac{2-\pi}{4})$; Absolute maximum $(2,2-\tan^{-1}(4))$.
+	\end{sol}
+\end{ex}
+
+\begin{ex}
+	Find the absolute extrema for $f(x)=\frac{x}{x^2+1}$.
+	\begin{sol}
+		Absolute maximum $(1,1/2)$; Absolute minimum $(-1,-1/2)$. 
+	\end{sol}
+\end{ex}
+
+For the following exercises, sketch a potential graph of a continuous function on the closed interval $[0,4]$ with the given properties.
+
+\begin{multicols}{2}
+	\begin{ex}
+		Absolute minimum at 0, absolute maximum at 2, local minimum at 3.
+	\end{ex}
+	
+	\begin{ex}
+		Absolute maximum at 1, absolute minimum at 2, local maximum at 3.
+	\end{ex}
+	
+	\begin{ex}
+		Absolute minimum at 4, absolute maximum at 1, local minimum at 2, local maxima at 1 and 3.
+	\end{ex}
+\end{multicols}
+
+\end{enumialphparenastyle}

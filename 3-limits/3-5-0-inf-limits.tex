@@ -1,0 +1,248 @@
+\section{Infinite Limits and Limits at Infinity}\label{sec:InfLimits}
+We occasionally want to know what happens to some quantity
+when a variable gets very large or ``goes to infinity''.
+
+\begin{example}{Limit at Infinity}{LimitInfinity}
+What happens to the function $\ds \cos(1/x)$ as $x$ goes to infinity? It
+seems clear that as $x$ gets larger and larger, $1/x$ gets closer and
+closer to zero, so $\cos(1/x)$ should be getting closer and closer to 
+$\cos(0)=1$.
+\end{example}
+
+As with ordinary limits, this concept of ``limit at infinity'' can be
+made precise. Roughly, we want $\ds \lim_{x\to \infty}f(x)=L$ to mean that
+we can make $f(x)$ as close as we want to $L$ by making $x$ large
+enough.
+
+\begin{definition}{Limit at Infinity (Formal Definition)}{LimitAtInfinity}
+If $f$ is a function, we say that $\ds \lim_{x\to
+  \infty}f(x)=L$ if for every $\epsilon>0$ there is an $N > 0$ so that
+  whenever $x>N$, $|f(x)-L|<\epsilon$.
+We may similarly define $\ds \lim_{x\to-\infty}f(x)=L$.
+\end{definition}
+
+We include this definition for completeness, but we will not explore it in
+detail. Suffice it to say that such limits behave in much the same way
+that ordinary limits do; in particular there is a direct analog of 
+Theorem~\ref{thm:PropertiesLimits}.
+
+\begin{example}{Limit at Infinity}{LimitInfinity2}
+Compute $\ds\lim_{x\to \infty}{2x^2-3x+7\over x^2+47x+1}$.
+\end{example}
+
+\begin{solution} 
+As $x$ goes to infinity both the numerator and denominator go to
+infinity. We divide the numerator and
+denominator by $\ds x^2$:
+$$\lim_{x\to \infty}{2x^2-3x+7\over x^2+47x+1}=
+\lim_{x\to \infty}{2-\ds{3\over x}+\ds{7\over x^2}\over
+1+\ds{47\over x}+\ds{1\over x^2}}.$$
+Now as $x$ approaches infinity, all the quotients with some power of
+$x$ in the denominator approach zero, leaving 2 in the numerator and 1
+in the denominator, so the limit again is 2.
+\end{solution}
+
+In the previous example, we \ifont{divided by the highest power of $x$ that occurs in the denominator} in order to evaluate the limit.
+We illustrate another technique similar to this.
+
+\begin{example}{Limit at Infinity}{LimitInfinity3}
+Compute the following limit:
+$$\lim_{x\to\infty}\frac{2x^2+3}{5x^2+x}.$$
+\vspace{-0.5cm}
+\end{example}
+
+\begin{solution} 
+As $x$ becomes large, both the numerator and denominator become large, so it isn't clear what happens to their ratio. The highest power of $x$ in the denominator is $x^2$, therefore we will divide every term in both the numerator and denominator by $x^2$ as follows:
+$$\lim_{x\to\infty}\frac{2x^2+3}{5x^2+x}=\lim_{x\to\infty}\frac{2+3/x^2}{5+1/x}.$$
+Most of the limit rules from last lecture also apply to infinite limits, so we can write this as:
+$$=\frac{\ds{\lim_{x\to\infty}2+3\lim_{x\to\infty}\frac{1}{x^2}}}{\ds{\lim_{x\to\infty}5+\lim_{x\to\infty}\frac{1}{x}}}=\frac{2+3(0)}{5+0}=\frac{2}{5}.$$
+Note that we used the theorem above to get that $\ds{\lim_{x\to\infty}\frac{1}{x}=0}$ and $\ds{\lim_{x\to\infty}\frac{1}{x^2}=0}$.
+
+A shortcut technique is to analyze only the \ifont{leading terms} of the numerator and denominator. A leading term is a term that has the highest power of $x$. If there are multiple terms with the same exponent, you must include all of them.\\
+\ifont{Top:} The leading term is $2x^2$.\\
+\ifont{Bottom:} The leading term is $5x^2$.\\
+Now only looking at leading terms and ignoring the other terms we get:
+$$\lim_{x\to\infty}\frac{2x^2+3}{5x^2+x}=\lim_{x\to\infty}\frac{2x^2}{5x^2}=\frac{2}{5}.$$
+\end{solution}
+
+We next look at limits whose value is infinity (or minus infinity).
+
+\begin{definition}{Infinite Limit (Useable Definition)}{Infinite Limit}
+In general, we will write
+$$\lim_{x\to a}f(x)=\infty$$
+if we can make the value of $f(x)$ arbitrarily large by taking $x$ to be sufficiently close to $a$ (on either side of $a$) but not equal to $a$.
+Similarly, we will write
+$$\lim_{x\to a}f(x)=-\infty$$
+if we can make the value of $f(x)$ arbitrarily large and \blue{negative} by taking $x$ to be sufficiently close to $a$ (on either side of $a$) but not equal to $a$.
+\end{definition}
+
+This definition can be modified for one-sided limits as well as limits with $x\to a$ replaced by $x\to\infty$ or $x\to-\infty$.
+
+\begin{example}{Limit at Infinity}{LimitInfinity4}
+Compute the following limit: $\ds\lim_{x\to\infty}(x^3-x).$
+\end{example}
+
+\begin{solution} 
+One might be tempted to write:
+$$\lim_{x\to\infty}x^3-\lim_{x\to\infty}x=\infty-\infty,$$
+however, we do not know what $\infty-\infty$ is, as $\infty$ is not a real number and so cannot be treated like one.
+We instead write:
+$$\lim_{x\to\infty}(x^3-x)=\lim_{x\to\infty}x(x^2-1).$$
+As $x$ becomes arbitrarily large, then both $x$ and $x^2-1$ become arbitrarily large, and hence their product $x(x^2-1)$ will also become arbitrarily large. Thus we see that
+$$\lim_{x\to\infty}(x^3-x)=\infty.$$
+\end{solution}
+
+\begin{example}{Limit at Infinity and Basic Functions}{LimitInfinity5}
+We can easily evaluate the following limits by observation:
+\[ \begin{array}{ll}
+1.~\ds\lim_{x\to \infty} \frac{6}{\sqrt{x^3}}=0 & \qquad 2.~\ds\lim_{x\to -\infty} x-x^2=-\infty \\
+\\
+3.~\ds\lim_{x\to \infty}x^3+x=\infty            & \qquad 4.~\ds\lim_{x\to \infty} \cos(x)=\mbox{DNE} \\
+\\
+5.~\ds\lim_{x\to \infty} e^x=\infty             & \qquad 6.~\ds\lim_{x\to -\infty} e^x=0 \\
+\\
+7.~\ds\lim_{x\to 0^+} \ln x=-\infty             & \qquad 8.~\ds\lim_{x\to 0} \cos(1/x)=\mbox{DNE} \\
+\end{array} \]
+\end{example}
+
+Often, the shorthand notation $\ds\frac{1}{0^+}=+\infty$ and $\ds\frac{1}{0^-}=-\infty$ is used to represent the following two limits respectively:
+$$\lim_{x\to 0^+}\frac{1}{x}=+\infty\qquad\mbox{and}\qquad\lim_{x\to 0^-}\frac{1}{x}=-\infty.$$
+Using the above convention we can compute the following limits.
+
+\begin{example}{Limit at Infinity and Basic Functions}{LimitInfinity6}
+Compute $\ds{\lim_{x\to 0^+} e^{1/x}}$, $\ds{\lim_{x\to 0^-} e^{1/x}}$ and $\ds{\lim_{x\to 0} e^{1/x}}$.
+\end{example}
+
+\begin{solution} 
+We have:
+$$\lim_{x\to 0^+} e^{\frac{1}{x}}=e^{\frac{1}{0^+}}=e^{+\infty}=\infty.$$
+$$\lim_{x\to 0^-} e^{\frac{1}{x}}=e^{\frac{1}{0^-}}=e^{-\infty}=0.$$
+Thus, as left-hand limit $\neq$ right-hand limit, 
+$$\lim_{x\to 0} e^{\frac{1}{x}}=\mbox{DNE}.$$
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Subsections to include
+\input{3-limits/3-5-1-vertical-asymptotes}
+\input{3-limits/3-5-2-horizontal-asymptotes}
+\input{3-limits/3-5-3-slant-asymptotes}
+\input{3-limits/3-5-4-end-behaviour-growth-rate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:InfLimits}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+\begin{ex}
+Compute the following limits.
+\begin{multicols}{3}
+\begin{enumerate}
+	\item	$\ds\lim_{x\to \infty} \sqrt{x^2+x}-\sqrt{x^2-x}$
+	\item	$\ds\lim_{x\to\infty} {e^x + e^{-x}\over e^x -e^{-x}}$
+	\item	$\ds\lim_{t\to1^+}{(1/t)-1\over t^2-2t+1}$
+	\item	$\ds\lim_{t\to\infty}{t+5-2/t-1/t^3\over 3t+12-1/t^2}$
+	\item	$\ds\lim_{y\to\infty}{\sqrt{y+1}+\sqrt{y-1}\over y}$
+	\item	$\ds\lim_{x\to 0^+}{3+x^{-1/2}+x^{-1}\over 2+4x^{-1/2}}$
+	\item	$\ds\lim_{x\to\infty}{x+x^{1/2}+x^{1/3}\over x^{2/3}+x^{1/4}}$
+	\item	$\ds\lim_{t\to\infty}{1-\sqrt{t\over t+1}\over 2-\sqrt{4t+1\over t+2}}$
+	\item	$\ds\lim_{t\to\infty}{1-{t\over t-1}\over 1-\sqrt{t\over t-1}}$
+	\item	$\ds\lim_{x\to-\infty}{x+x^{-1}\over 1+\sqrt{1-x}}$
+	\item	$\ds\lim_{x\to1^+}{\sqrt{x}\over x-1}$
+	\item	$\ds\lim_{x\to\infty}{x^{-1}+x^{-1/2}\over x+x^{-1/2}}$
+	\item	$\ds\lim_{x\to\infty}{x+x^{-2}\over 2x+x^{-2}}$
+	\item	$\ds\lim_{x\to\infty}{5+x^{-1}\over 1+2x^{-1}}$
+	\item	$\ds\lim_{x\to\infty}{4x\over\sqrt{2x^2+1}}$
+	\item	$\ds\lim_{x\to\infty}{(x+5)\left({1\over 2x}+{1\over x+2}\right)}$
+	\item	$\ds\lim_{x\to0^+}{(x+5)\left({1\over 2x}+{1\over x+2}\right)}$
+	\item	$\ds\lim_{x\to2}{x^3-6x-2\over x^3-4x}$
+\end{enumerate}
+\end{multicols}
+\begin{sol}
+\begin{multicols}{3}
+\begin{enumerate}
+	\item	$1$
+	\item	$1$
+	\item	$-\infty$
+	\item	$1/3$
+	\item	$0$
+	\item	$\infty$
+	\item	$\infty$
+	\item	$2/7$
+	\item	$2$
+	\item	$-\infty$
+	\item	$\infty$
+	\item	$0$
+	\item	$1/2$
+	\item	$5$
+	\item	$\ds 2\sqrt2$
+	\item	$3/2$
+	\item	$\infty$
+	\item	does not exist
+\end{enumerate}
+\end{multicols}
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex} 
+The function $\ds f(x) = {x\over\sqrt{x^2+1}}$ has two horizontal asymptotes.  Find them and give a rough sketch of $f$ with its horizontal asymptotes. 
+\begin{sol}
+$y=1$ and $y=-1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Find the vertical asymptotes of $\ds f(x)=\frac{\ln x}{x-2}$.
+\begin{sol}
+	$x=0$ and $x=2$.
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Suppose that a falling object reaches velocity $v(t)=50(1-e^{-t/5})$ at time $t$, where distance is measured in $m$ and time $s$. What is the object's terminal velocity, i.e. the value of $v(t)$ as $t$ goes to infinity?
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}
+Find the slant asymptote of $f(x)=\dfrac{x^2+x+6}{x-3}$.
+\begin{sol}
+	$y=x+4$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex}
+	Compute the following limits.
+	\begin{enumerate}
+		\item	$\ds\lim_{x\to -\infty}(2x^3-x)$
+		\item	$\ds\lim_{x\to \infty}\tan^{-1}(e^x)$
+		\item	$\ds\lim_{x\to -\infty}\tan^{-1}(e^x)$
+		\item	$\ds\lim_{x\to \infty}\dfrac{e^x+x^4}{x^3+5\ln x}$
+		\item	$\ds\lim_{x\to \infty}\dfrac{2^x+5(3^x)}{3(2^x)-3^x}$
+		\item	$\ds\lim_{x\to -\infty}\dfrac{2^x+5(3^x)}{3(2^x)-3^x}$
+		\item	$\ds\lim_{x\to 0^{+}}\sqrt{x}\ln x$ [Hint: Let $t=1/x$]
+	\end{enumerate}
+	\begin{sol}
+		\begin{enumerate}
+			\item	$-\infty$
+			\item	$\pi/2$
+			\item	0
+			\item	$\infty$
+			\item	$-5$
+			\item	1/3
+			\item	0
+		\end{enumerate}
+	\end{sol}
+\end{ex}
+
+
+\end{enumialphparenastyle}

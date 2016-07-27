@@ -1,0 +1,35 @@
+\section{Linear and Higher Order Approximations}\label{sec:Approx}
+When we define the derivative $f^{\prime
+}\left( x\right) $ as the rate of change of $f\left( x\right) $ with respect
+to $x,$ we notice that in relation to the graph of $f,$ the derivative is
+the slope of the tangent line, which (loosely speaking) is the line that just
+grazes the graph. But what precisely do we mean by this? In short,
+\textbf{the tangent line approximates the graph near the point of contact}. The
+definition of the derivative $f^{\prime }\left( a\right) $ guarantees this
+when it exists: By taking $x$ sufficiently close to $a$ but not equal to $a,$%
+\begin{equation*}
+\frac{f\left( x\right) -f\left( a\right) }{x-a}\approx f^{\prime }\left(
+a\right) ,
+\end{equation*}%
+and consequently,%
+\begin{equation*}
+f\left( x\right) \approx f^{\prime }\left( a\right) \left( x-a\right)
++f\left( a\right) .
+\end{equation*}%
+The left hand side gives us the $y$-value of the function $y=f\left(
+x\right) $ and the right hand side gives us the $y$-value $y=f^{\prime
+}\left( a\right) \left( x-a\right) +f\left( a\right) $ for the tangent line
+to the graph of $f$ at the point $\left( a,f\left( a\right) \right) .$
+
+In this section we will explore how to apply this idea to approximate some
+values of $f$, some changes in the values of $f$, and also the roots of $f.$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Subsections to include
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{5-applications-of-derivatives/5-4-1-linear-approximations}
+\input{5-applications-of-derivatives/5-4-2-differentials}
+\input{5-applications-of-derivatives/5-4-3-taylor-polynomials}
+\input{5-applications-of-derivatives/5-4-4-newtons-method}
+
+% Exercises for each subsection are in the separate files

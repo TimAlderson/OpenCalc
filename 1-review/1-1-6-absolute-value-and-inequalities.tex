@@ -1,0 +1,90 @@
+\subsection{Solving Inequalities that Contain Absolute Values}
+We start by solving an equality that contains an absolute value.
+To do so, we recall that if $a\geq 0$ then the solution to 
+$|x|=a$ is $x=\pm a$. In cases where we are not sure if the right 
+side is positive or negative, we must perform a check at the end. \\
+
+\begin{example}{Absolute Value Equality}{AbsoluteValueEquality}
+Solve for $x$ in $|2x+3|=2-x$.
+\end{example}
+
+\begin{solution} 
+This means that either:
+\[\begin{array}{ccc}
+	2x+3=+(2-x) & \mbox{\ifont{or}} & 2x+3=-(2-x)\\
+	2x+3=2-x & \mbox{\ifont{or}} & 2x+3=-2+x\\
+	3x=-1 & \mbox{\ifont{or}} & x=-5\\
+	x=-1/3 & \mbox{\ifont{or}} & x=-5\\
+\end{array}\]
+Since we do not know if the right side $``a=2-x"$ is positive or negative, we must perform a check of our answers omit any that are incorrect.
+
+If $x=-1/3$, then we have $LS=|2(-1/3)+3|=|-2/3+3|=|7/3|=7/3$ and $RS=2-(-1/3)=7/3$.
+In this case $LS=RS$, so $x=-1/3$ is a solution.
+
+If $x=-5$, then we have $LS=|2(-5)+3|=|-10+3|=|-7|=7$ and $RS=2-(-5)=2+5=7$.
+In this case $LS=RS$, so $x=-5$ is a solution.
+\end{solution}
+
+We next look at absolute values and inequalities. \\
+
+\begin{example}{Absolute Value Inequality}{AbsoluteValueInequality}
+Solve $|x-5|<7$.
+\end{example}
+
+\begin{solution} 
+This simply means $-7<x-5<7$.
+Adding $5$ to each gives $-2<x<12$.
+Therefore the solution is the interval $(-2,12)$.
+\end{solution}
+
+In some questions you must be careful when multiplying by a negative number as in the next problem. \\
+
+\begin{example}{Absolute Value Inequality}{AbsoluteValueInequality2}
+Solve $|2-z|<7$.
+\end{example}
+
+\begin{solution} 
+This simply means $-7<2-z<7$.
+Subtracting $2$ gives: $-9<-z<5$.
+Now multiplying by $-1$ gives: $9>z>-5$. \ifont{Remember to reverse the inequality signs!}
+We can rearrange this as $-5<z<9$.
+Therefore the solution is the interval $(-5,9)$.
+\end{solution}
+
+\bigskip
+
+\begin{example}{Absolute Value Inequality}{AbsoluteValueInequality3}
+Solve $|2-z|\geq 7$.
+\end{example}
+
+\begin{solution} 
+Recall that for $a>0$, $|x|\geq a$ means $x\leq -a$ or $x\geq a$.
+Thus, either $2-z\leq -7$ \ifont{or} $2-z\geq 7$.
+Either $9\leq z$ \ifont{or} $-5 \geq z$.
+Either $z\geq 9$ \ifont{or} $z \leq -5$.
+In interval notation, either $z$ is in $[9,\infty)$ \ifont{or} $z$ is in $(-\infty,-5]$.
+All together, we get our solution to be: $(-\infty,-5]\cup [9,\infty)$.
+\end{solution}
+
+In the previous two examples the \ifont{only} difference is that one had $<$ in 
+the question and the other had $\geq$. Combining the two solutions gives the 
+\ifont{entire} real number line! \\
+
+\begin{example}{Absolute Value Inequality}{AbsoluteValueInequality4}
+Solve $0<|x-5|\leq 7$.
+\end{example}
+
+\begin{solution} 
+We split this into two cases.
+
+(1) For $0<|x-5|$ note that we always have that an absolute value is positive or zero (i.e., $0\leq |x-5|$ is always true).
+So, for this part, we need to avoid $0=|x-5|$ from occurring. 
+Thus, $x$ \ifont{cannot} be $5$, that is, $x\neq 5$.
+
+(2) For $|x-5|\leq 7$, we have $-7\leq x-5\leq 7$.
+Adding $5$ to each gives $-2\leq x\leq 12$.
+Therefore the solution to $|x-5|\leq 7$ is the interval $[-2,12]$.
+
+To combine (1) and (2) we need combine $x\neq 5$ with $x\in[-2,12]$.
+Omitting $5$ from the interval $[-2,12]$ gives our solution to be: $[-2,5)\cup(5,12]$.
+\end{solution}

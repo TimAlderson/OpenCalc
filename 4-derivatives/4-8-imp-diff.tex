@@ -1,0 +1,444 @@
+\section{Implicit Differentiation}\label{sec:ImplicitDiff}
+As we have seen, there is a close relationship 
+between the derivatives of $\ds e^x$ and $\ln x$ because these functions
+are inverses. Rather than relying on pictures for our understanding,
+we would like to be able to exploit this relationship
+computationally.  In fact this technique can help us find derivatives
+in many situations, not just when we seek the derivative of an inverse
+function. 
+
+We will begin by illustrating the technique to find what we already
+know, the derivative of $\ln x$. Let's write $y=\ln x$ and then
+$\ds x=e^{\ln x}=e^y$, that is, $\ds x=e^y$. We say that this equation
+defines the function $y=\ln x$ 
+implicitly because while it is not an explicit expression $y=\ldots$, it is true
+that if $\ds x=e^y$ then $y$ is in fact the natural logarithm
+function. Now, for the time being, pretend that all we know of $y$ is
+that $\ds x=e^y$; what can we say about derivatives? We can take the
+derivative of both sides of the equation:
+$$\frac{d}{dx}x=\frac{d}{dx}e^y.$$
+Then using the chain rule on the right hand side:
+$$1 = \left(\frac{d}{dx}y\right) e^y = y'e^y.$$
+Then we can solve for $y'$:
+$$y'=\frac{1}{e^y} = \frac{1}{x}.$$
+There is one little difficulty here. To use the chain rule to compute 
+$\ds d/dx(e^y)=y'e^y$ we need to know that the function $y$ {\it has} a
+derivative. All we have shown is that {\it if} it has a derivative
+then that derivative must be $1/x$. When using this method we will
+always have to assume that the desired derivative exists, but
+fortunately this is a safe assumption for most such problems. 
+ 
+The example $y=\ln x$ involved an inverse function defined implicitly,
+but other functions can be defined implicitly, and sometimes a single
+equation can be used to implicitly define more than one
+function. 
+
+Here's a familiar example.
+
+\begin{example}{Derivative of Circle Equation}{impcircles}
+The equation $\ds r^2=x^2+y^2$
+describes a circle of radius $r$. The circle is not a function
+$y=f(x)$ because for some values of $x$ there are two corresponding
+values of $y$. If we want to work with a function, we can break the
+circle into two pieces, the upper and lower semicircles, each of which
+is a function. Let's call these $y=U(x)$ and $y=L(x)$; in fact this is
+a fairly simple example, and it's possible to give explicit
+expressions for these: $\ds U(x)=\sqrt{r^2-x^2\ }$ and
+$\ds L(x)=-\sqrt{r^2-x^2\ }$.  But it's somewhat easier, and quite useful,
+to view both functions as given implicitly by $\ds r^2=x^2+y^2$: both
+$\ds r^2=x^2+U(x)^2$ and $\ds r^2=x^2+L(x)^2$ are true, and we can think of 
+$\ds r^2=x^2+y^2$ as defining both $U(x)$ and $L(x)$.
+
+Now we can take the derivative of both sides as before, remembering
+that $y$ is not simply a variable but a function---in this case, $y$
+is either $U(x)$ or $L(x)$ but we're not yet specifying which one.
+When we take the derivative we just have to remember to apply the
+chain rule where $y$ appears.
+\begin{eqnarray*}
+\frac{d}{dx}r^2&=&\frac{d}{dx}(x^2+y^2)\\
+0&=&2x+2yy'\\
+y'&=&\frac{-2x}{2y}=-\frac{x}{y}
+\end{eqnarray*}
+Now we have an expression for $y'$, but it contains $y$ as well as
+$x$. This means that if we want to compute $y'$ for some particular
+value of $x$ we'll have to know or compute $y$ at that value of $x$ as
+well. It is at this point that we will need to know whether $y$ is
+$U(x)$ or $L(x)$. Occasionally it will turn out that we can avoid
+explicit use of $U(x)$ or $L(x)$ by the nature of the problem. 
+\end{example}
+
+\begin{example}{Slope of the Circle}{SlopeCircle}
+Find the slope of the circle $\ds 4=x^2+y^2$ at the point
+$\ds (1,-\sqrt{3})$. 
+\end{example}
+
+\begin{solution} 
+Since we know both the $x$ and $y$ coordinates of the
+point of interest, we do not need to explicitly recognize that this
+point is on $L(x)$, and we do not need to use $L(x)$ to compute
+$y$ -- but we could. Using the calculation of $y'$ from above, 
+$$y'=-\frac{x}{y}=-\frac{1}{-\sqrt{3}}=\frac{1}{\sqrt{3}}.$$
+It is instructive to compare this approach to others.
+
+We might have recognized at the start that $\ds (1,-\sqrt{3})$ is on the
+function $\ds y=L(x)=-\sqrt{4-x^2}$. We could then take the derivative of
+$L(x)$, using the power rule and the chain rule, to get
+$$L'(x)=-{1\over 2}(4-x^2)^{-1/2}(-2x)={x\over\sqrt{4-x^2}}.$$
+Then we could compute $\ds L'(1)=1/\sqrt{3}$ by substituting $x=1$.
+
+Alternately, we could realize that the point is on $L(x)$, but use the
+fact that $y'=-x/y$. Since the point is on $L(x)$ we can replace $y$
+by $L(x)$ to get
+$$y'=-\frac{x}{L(x)}=-\frac{x}{\sqrt{4-x^2}},$$
+without computing the derivative of $L(x)$ explicitly. Then we
+substitute $x=1$ and get the same answer as before.
+\end{solution}
+
+In the case of the circle it is possible to find the functions $U(x)$
+and $L(x)$ explicitly, but there are potential advantages to using
+implicit differentiation anyway. In some cases it is more difficult or
+impossible to find an explicit formula for $y$ and implicit
+differentiation is the only way to find the derivative.
+
+\begin{example}{Derivative of Function defined Implicitly}{FunctionDefinedImplicitly}
+Find the derivative of any function defined implicitly by 
+$\ds yx^2+y^2=x$. 
+\end{example}
+
+\begin{solution} 
+We treat $y$ as an unspecified function and use the
+chain rule:
+\begin{eqnarray*}
+\frac{d}{dx}(yx^2+y^2)&=&\frac{d}{dx}x\\
+(y\cdot 2x+y'\cdot x^2)+2yy'&=1\\
+y'\cdot x^2+2yy'&=&-y\cdot 2x\\
+y'&=&\frac{-2xy}{x^2+2y}
+\end{eqnarray*}
+\end{solution}
+
+\begin{example}{Derivative of Function defined Implicitly}{FunctionDefinedImplicitly2}
+Find the derivative of any function defined implicitly by 
+$\ds yx^2+e^y=x$. 
+\end{example}
+
+\begin{solution} 
+We treat $y$ as an unspecified function and use the
+chain rule:
+\begin{eqnarray*}
+\frac{d}{dx}(yx^2+e^y)&=&\frac{d}{dx}x\\
+(y\cdot 2x+y'\cdot x^2)+y'e^y &=& 1\\
+y'x^2+y'e^y&=& 1-2xy\\
+y'(x^2+e^y)&=& 1-2xy\\
+y'&=&\frac{1-2xy}{x^2+e^y}
+\end{eqnarray*}
+\end{solution}
+
+You might think that the step in which we solve for $y'$ could
+sometimes be difficult---after all, we're using implicit
+differentiation here because we can't solve the equation
+$\ds yx^2+e^y=x$ for $y$, so maybe after taking the derivative we get
+something that is hard to solve for $y'$. In fact, {\it this never
+  happens.} All occurrences $y'$ come from applying the chain rule,
+and whenever the chain rule is used it deposits a single $y'$
+multiplied by some other expression. So it will always be possible to
+group the terms containing $y'$ together and factor out the $y'$, just
+as in the previous example. If you ever get anything more difficult
+you have made a mistake and should fix it before trying to continue.
+
+It is sometimes the case that a situation leads naturally to an
+equation that defines a function implicitly. 
+
+\begin{example}{Equation and Derivative of Ellipse}{Ellipse}
+Discuss the equation and derivative of the ellispe.
+\end{example}
+
+\begin{solution} 
+Consider all the points $(x,y)$ that have the property that
+the distance from $(x,y)$ to $\ds (x_1,y_1)$ plus the distance 
+from $(x,y)$ to $\ds (x_2,y_2)$ is $2a$ ($a$ is some constant). These
+points form an ellipse, which like a circle is not a function but can be
+viewed as two functions pasted together. Since we know how to write
+down the distance between two points, we can write down an implicit
+equation for the ellipse:
+$$\sqrt{(x-x_1)^2+(y-y_1)^2}+\sqrt{(x-x_2)^2+(y-y_2)^2}=2a.$$
+Then we can use implicit differentiation to find the slope of the
+ellipse at any point, though the computation is rather messy.
+\end{solution}
+
+\begin{example}{Derivative of Function defined Implicitly}{FunctionDefinedImplicitly3}
+Find $\ds\frac{dy}{dx}$ by implicit differentiation if
+$$2x^3+x^2y-y^9=3x+4.$$
+\vspace{-0.5cm}
+\end{example}
+
+\begin{solution} 
+Differentiating both sides with respect to $x$ gives:
+$$6x^2+\left(2xy+x^2\frac{dy}{dx}\right)-9y^8\frac{dy}{dx}=3,$$
+$$x^2\frac{dy}{dx}-9y^8\frac{dy}{dx}=3-6x^2-2xy$$
+$$\left(x^2-9y^8\right)\frac{dy}{dx}=3-6x^2-2xy$$
+$$\frac{dy}{dx}=\frac{3-6x^2-2xy}{x^2-9y^8}.$$
+\end{solution}
+
+In the previous examples we had functions involving $x$ and $y$, and we
+thought of $y$ as a function of $x$.  In these problems we
+differentiated with respect to $x$. So when faced with $x$'s in the
+function we differentiated as usual, but when faced with $y$'s we
+differentiated as usual except we multiplied by a $\frac{dy}{dx}$ for
+that term because we were using Chain Rule.
+
+In the following example we will assume that both $x$ and $y$ are
+functions of $t$ and want to differentiate the equation with respect
+to $t$.  This means that every time we differentiate an $x$ we will be
+using the Chain Rule, so we must multiply by $\frac{dx}{dt}$, and
+whenever we differentiate a $y$ we multiply by $\frac{dy}{dt}$.
+
+\begin{example}{Derivative of Function of an Additional Variable}{FunctionAdditionalVariable}
+Thinking of $x$ and $y$ as functions of $t$, differentiate the following equation with respect to $t$:
+$$x^2+y^2=100.$$
+\vspace{-0.5cm}
+\end{example}
+
+\begin{solution} 
+Using the Chain Rule we have:
+$$2x\frac{dx}{dt}+2y\frac{dy}{dt}=0.$$
+\end{solution}
+
+\begin{example}{Derivative of Function of an Additional Variable}{FunctionAdditionalVariable2}
+If $y=x^3+5x$ and $\ds\frac{dx}{dt}=7$, find $\ds\frac{dy}{dt}$ when $x=1$.
+\end{example}
+
+\begin{solution} 
+Differentiating each side of the equation $y=x^3+5x$ with respect to $t$ gives:
+$$\frac{dy}{dt}=3x^2\frac{dx}{dt}+5\frac{dx}{dt}.$$
+When $x=1$ and $\frac{dx}{dt}=7$ we have:
+$$\frac{dy}{dt}=3(1^2)(7)+5(7)=21+35=56.$$
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Logarithmic Differentiation}
+Previously we've seen how to do the derivative of a number to a function $(a^{f(x)})'$, and also a function to a number $[(f(x))^n]'$.
+But what about the derivative of a function to a function $[(f(x))^{g(x)}]'$?
+
+In this case, we use a procedure known as \dfont{logarithmic differentiation}.
+
+\begin{formulabox}[Steps for Logarithmic Differentiation]
+\begin{itemize}
+\item Take $\ln$ of both sides of $y=f(x)$ to get $\ln y=\ln f(x)$ and simplify using logarithm properties,
+\item Differentiate implicitly with respect to $x$ and solve for $\ds\frac{dy}{dx}$,
+\item Replace $y$ with its function of $x$ (i.e., $f(x)$).
+\end{itemize}
+\end{formulabox}
+
+\begin{example}{Logarithmic Differentiation}{LogarithmicDifferentiation}
+Differentiate $y=x^x$.
+\end{example}
+
+\begin{solution} 
+We take $\ln$ of both sides:
+$$\ln y=\ln x^x.$$
+Using log properties we have:
+$$\ln y = x\ln x.$$
+Differentiating implicitly gives:
+$$\frac{y'}{y}=(1)\ln x+x\frac{1}{x}.$$
+$$\frac{y'}{y}=\ln x+1.$$
+Solving for $y'$ gives:
+$$y'=y(1+\ln x).$$
+Replace $y=x^x$ gives:
+$$y'=x^x(1+\ln x).$$
+
+Another method to find this derivative is as follows:
+\begin{eqnarray*}
+\frac{d}{dx}x^x&=&\frac{d}{dx}e^{x\ln x}\\
+&=&\left(\frac{d}{dx}x\ln x\right)e^{x\ln x}\\
+&=&(x\frac{1}{x}+\ln x)x^x\\
+&=&(1+\ln x)x^x
+\end{eqnarray*}
+\end{solution}
+
+In fact, logarithmic differentiation can be used on more complicated
+products and quotients (not just when dealing with functions to the
+power of functions).
+
+\begin{example}{Logarithmic Differentiation}{LogarithmicDifferentiation2}
+Differentiate (assuming $x>0$):
+$$y=\frac{(x+2)^3(2x+1)^9}{x^8(3x+1)^4}.$$
+\vspace{-0.5cm}
+\end{example}
+
+\begin{solution} 
+Using product \& quotient rules for this problem is a complete nightmare!
+Let's apply logarithmic differentiation instead.
+Take $\ln$ of both sides:
+$$\ln y=\ln\left(\frac{(x+2)^3(2x+1)^9}{x^8(3x+1)^4}\right).$$
+Applying log properties:
+$$\ln y=\ln\left((x+2)^3(2x+1)^9\right)-\ln\left(x^8(3x+1)^4\right).$$
+$$\ln y=\ln\left((x+2)^3\right)+\ln\left((2x+1)^9\right)-\left[\ln\left(x^8\right)+\ln\left((3x+1)^4\right)\right].$$
+$$\ln y=3\ln(x+2)+9\ln(2x+1)-8\ln x-4\ln(3x+1).$$
+Now, differentiating implicitly with respect to $x$ gives:
+$$\frac{y'}{y}=\frac{3}{x+2}+\frac{18}{2x+1}-\frac{8}{x}-\frac{12}{3x+1}.$$
+Solving for $y'$ gives:
+$$y'=y\left(\frac{3}{x+2}+\frac{18}{2x+1}-\frac{8}{x}-\frac{12}{3x+1}\right).$$
+Replace $y=\frac{(x+2)^3(2x+1)^9}{x^8(3x+1)^4}$ gives:
+$$y'=\frac{(x+2)^3(2x+1)^9}{x^8(3x+1)^4}\left(\frac{3}{x+2}+\frac{18}{2x+1}-\frac{8}{x}-\frac{12}{3x+1}\right).$$
+\end{solution}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for Section \ref{sec:ImplicitDiff}}
+
+\begin{enumialphparenastyle}
+
+%%%%%%%%%%
+\begin{ex} 
+Find a formula for the derivative $y'$ at the point $(x,y)$:
+\begin{multicols}{2}
+\begin{enumerate}
+	\item	$\ds y^2=1+x^2$
+	\item	$\ds x^2+xy+y^2=7$
+	\item	$\ds x^3+xy^2=y^3+yx^2$
+	\item	$\ds 4\cos x \sin y = 1$
+	\item	$\ds\sqrt{x} + \sqrt{y} = 9$
+	\item	$\ds \tan(x/y) = x+ y$
+	\item	$\ds \sin (x+y ) =xy$
+	\item	$\ds\frac{1}{x} + \frac{1}{y} = 7$
+\end{enumerate}
+\end{multicols}
+\begin{sol}
+\begin{enumerate}
+	\item	$\ds x/y$
+	\item	$\ds -(2x+y)/(x+2y)$
+	\item	$\ds (2xy-3x^2-y^2)/(2xy-3y^2-x^2)$
+	\item	$\ds \sin(x)\sin(y)/(\cos(x)\cos(y))$
+	\item	$\ds-\sqrt{y}/\sqrt{x}$
+	\item	$\ds (y\sec^2(x/y)-y^2)/(x\sec^2(x/y)+y^2)$
+	\item	$\ds (y-\cos(x+y))/(\cos(x+y)-x)$
+	\item	$\ds -y^2/x^2$
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+A hyperbola passing through $(8,6)$ consists of all points whose distance
+from the origin is a constant more than its distance from the point (5,2).
+Find the slope of the tangent line to the hyperbola at $(8,6)$.
+\begin{sol}
+	$1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+The graph of the equation $\ds x^2 - xy + y^2 = 9$ is an ellipse.
+Find the lines tangent to this curve at the two
+ points where it intersects the $x$-axis. Show that these lines are
+ parallel.
+\begin{sol}
+	$y=2x\pm6$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Repeat the previous problem for the points at which the
+ ellipse intersects the $y$-axis.
+\begin{sol}
+	$y=x/2\pm3$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+	If $\ds y=\log_a x$ then $\ds a^y=x$. Use implicit
+	differentiation to find $\ds y'$.
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Find the points on the ellipse from the previous two problems
+ where the slope is horizontal and where it is vertical.
+\begin{sol}
+	$\ds (\sqrt3,2\sqrt3)$, $\ds (-\sqrt3,-2\sqrt3)$, $\ds (2\sqrt3,\sqrt3)$,
+$\ds (-2\sqrt3,-\sqrt3)$ 
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Find an equation for the tangent line to 
+$\ds x^4 = y^2 + x^2$ at $\ds (2, \sqrt{12})$. 
+(This curve is the \dfont{kampyle of Eudoxus}.)
+\begin{sol}
+	$\ds y=7x/\sqrt3-8/\sqrt3$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Find an equation for the tangent line to $\ds x^{2/3} +
+y^{2/3} = a^{2/3}$ at a point $\ds (x_1 ,y_1)$ on the curve, 
+with $\ds x_1 \neq 0$ and $\ds y_1 \neq 0$. (This curve is an {\dfont astroid}.)
+\begin{sol}
+	$\ds y=(-y_1^{1/3}x+y_1^{1/3}x_1+x_1^{1/3}y_1)/x_1^{1/3}$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Find an equation for the tangent line to $\ds (x^2 +y^2 )^2 =x^2
+-y^2$ at a point $\ds (x_1 , y_1)$ on the curve, with $\ds x_1 \neq 0, -1, 1$.
+(This curve is a \dfont{lemniscate}.)
+\begin{sol}
+	$\ds (y-y_1)/(x-x_1)=(2x_1^3+2x_1y_1^2-x_1)/(2y_1^3+2y_1x_1^2+y_1)$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex}  
+Two curves are \dfont{orthogonal} if at each point of intersection,
+the angle between their tangent lines is $\pi/2$. Two
+families of curves, $\cal{A}$ and $\cal{B}$, are
+\dfont{orthogonal trajectories} of each other if given any curve $C$
+in $\cal{A}$ and any curve $D$ in $\cal{B}$ the curves $C$
+and $D$ are orthogonal.
+For example, the family of horizontal lines in the plane is
+orthogonal to the family of vertical lines in the plane.
+\begin{enumerate}
+	\item	Show that $\ds x^2 -y^2 =5$ is orthogonal to $\ds 4x^2 +9y^2
+	=72$. (Hint: You need to find the intersection points of the two
+	curves and then show that the product of the derivatives at each
+	intersection point is $-1$.)
+	\item	Show that $\ds x^2 +y^2 = r^2$ is orthogonal to
+	$y=mx$. Conclude that the family of circles centered at the origin is
+	an orthogonal trajectory of the family of lines that pass through the
+	origin.
+	
+	Note that there is a technical issue when $m=0$. The circles fail to
+	be differentiable when they cross the $x$-axis. However, the circles
+	are orthogonal to the $x$-axis. Explain why. Likewise, the vertical
+	line through the origin requires a separate argument.
+	\item	For $k\not= 0$ and $c \neq 0$ show that $\ds y^2 -x^2 =k$ is orthogonal to
+	$yx =c$. In the case where $k$ and $c$ are both zero, the curves
+	intersect at the origin. Are the curves $\ds y^2 -x^2 =0$ and $yx=0$
+	orthogonal to each other?
+	\item	Suppose that $m\neq 0$. Show that the family of curves
+	$\ds \{y=mx+b \mid b\in \R \}$ is orthogonal to the
+	family of curves $\ds \{y=-(x/m)+c \mid c \in \R\}$.
+\end{enumerate}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+Differentiate the function $\ds y={(x-1)^8 (x-23)^{1/2}\over 27 x^6(4x-6)^8 }$
+\end{ex}
+
+\begin{ex}
+Differentiate the function $\ds f(x)=(x+1)^{\sin x}$.
+\end{ex}
+
+\begin{ex}
+Differentiate the function $\ds g(x)=\frac{e^x(\cos x+2)^3}{\sqrt{x^2+4}}$.
+\end{ex}
+
+\end{enumialphparenastyle}

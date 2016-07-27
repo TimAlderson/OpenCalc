@@ -1,0 +1,967 @@
+\section{L'H\^opital's Rule}\label{sec:LH}\label{sec:lhopitals_rule}
+
+This section is concerned with a technique of evaluating certain limits that will be useful for determining asymptotes, and also in the following chapters, where integration is discussed.
+
+Our treatment of limits exposed us to ``$ 0/0 $'', an indeterminate form. If $\ds \lim_{x\to c}f(x)=0$ and $\ds \lim_{x\to c} g(x) =0$, we do not conclude that $\ds \lim_{x\to c} f(x)/g(x)$ is $0/0$; rather, we use $0/0$ as notation to describe the fact that both the numerator and denominator approach $ 0 $. The expression $ 0/0 $ has no numeric value; other work must be done to evaluate the limit.
+
+
+Other indeterminate forms exist; they are: %Limits may seeming evaluate to
+ $\infty/\infty$, $0\cdot\infty$, $\infty-\infty$, $0^0$, $1^\infty$ and $\infty^0$. %, expressions which have no inherent value. 
+ Just as ``$ 0/0 $'' does not mean ``divide $ 0 $ by $ 0 $,'' the expression ``$\infty/\infty$'' does not mean ``divide infinity by infinity.'' Instead, it means ``a quantity is growing without bound and is being divided by another quantity that is growing without bound.'' We cannot determine from such a statement what value, if any, results in the limit. Likewise, ``$0\cdot \infty$'' does not mean ``multiply zero by infinity.'' Instead, it means ``one quantity is shrinking to zero, and is being multiplied by a quantity that is growing without bound.'' We cannot determine from such a description what the result of such a limit will be.
+
+This section introduces l'H\^opital's Rule, a method of resolving limits that produce the indeterminate forms $ 0/0 $ and $\infty/\infty$. We'll also show how algebraic manipulation can be used to convert other indeterminate expressions into one of these two forms so that our new rule can be applied.
+
+\begin{theorem}{L'H\^opital's Rule, Part 1}{LHR}
+{Let $\ds \lim_{x\to c}f(x) = 0$ and $\ds \lim_{x\to c}g(x)=0$, where $f$ and $g$ are differentiable functions on an open interval $I$ containing $c$, and $g\primeskip'(x)\neq 0$ on $I$ except possibly at $c$. Then \index{limit!L'H\^opital's Rule}\index{L'H\^opital's Rule}
+$$ \lim_{x\to c} \frac{f(x)}{g(x)} = \lim_{x\to c} \frac{\fp(x)}{g\primeskip'(x)}.$$
+}
+\end{theorem}
+
+We demonstrate the use of l'H\^opital's Rule in the following examples; we will often use ``LHR'' as an abbreviation of ``l'H\^opital's Rule.''\\
+
+
+\begin{example}{Using l'H\^opital's Rule}{ex_lhr1}
+{
+Evaluate the following limits, using l'H\^opital's Rule as needed.
+
+\noindent%
+\begin{minipage}[t]{.5\textwidth}
+\begin{enumerate}
+\item		$\ds \lim_{x\to0}\frac{\sin x}x$
+\item		$\ds \lim_{x\to 1}\frac{\sqrt{x+3}-2}{1-x}$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+\begin{enumerate}\addtocounter{enumi}{2}
+\item		$\ds \lim_{x\to0}\frac{x^2}{1-\cos x}$
+\item		$\ds \lim_{x\to 2}\frac{x^2+x-6}{x^2-3x+2}$
+\end{enumerate}
+\end{minipage}
+}
+
+\end{example}
+
+
+\begin{solution}
+{\begin{enumerate}
+\item		We could solve this using the Squeeze Theorem, but l'H\^opital's Rule is much simpler to apply:
+$$\lim_{x\to0}\frac{\sin x}x \;\;\;\;\left(\to \frac00\right)\stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to0} \frac{\cos x}{1}=1.$$
+
+\item	\hfill $\ds \lim_{x\to 1}\frac{\sqrt{x+3}-2}{1-x} \;\;\;\;\left(\to \frac00\right)	 \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x \to 1} \frac{\frac12(x+3)^{-1/2}}{-1} =-\frac 14.$\hfill\null 
+
+\item		\hfill $\ds \lim_{x\to 0}\frac{x^2}{1-\cos x} \;\;\;\;\left(\to \frac00\right) \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=}  \lim_{x\to 0} \frac{2x}{\sin x}.$ \hfill\null
+
+This latter limit also evaluates to the $ 0/0 $ indeterminate form. To evaluate it, we apply l'H\^opital's Rule again.
+
+\hfill $\ds  \lim_{x\to 0} \frac{2x}{\sin x}  \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \frac{2}{\cos x} = 2 .$ \hfill\null
+
+Thus $\ds \lim_{x\to0}\frac{x^2}{1-\cos x}=2.$
+
+\item		We already know how to evaluate this limit; first factor the numerator and denominator. We then have: 
+$$\lim_{x\to 2}\frac{x^2+x-6}{x^2-3x+2} = \lim_{x\to 2}\frac{(x-2)(x+3)}{(x-2)(x-1)} = \lim_{x\to 2}\frac{x+3}{x-1} = 5.$$
+We now show how to solve this using l'H\^opital's Rule.
+
+$$\lim_{x\to 2}\frac{x^2+x-6}{x^2-3x+2} \;\;\;\;\left(\to \frac00\right)\stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=}  \lim_{x\to 2}\frac{2x+1}{2x-3} = 5.$$
+\end{enumerate}
+\vskip-\baselineskip
+}
+\end{solution}
+
+
+%
+Note that at each step where l'H\^opital's Rule was applied, it was \emph{needed}: the initial limit returned the indeterminate form of ``$0/0$.'' If the initial limit returns, for example, $ 1/2 $, then l'H\^opital's Rule does not apply.
+
+The following theorem extends our initial version of l'H\^opital's Rule in two ways. It allows the technique to be applied to the indeterminate form $\infty/\infty$ and to limits where $x$ approaches $\pm\infty$.
+
+\begin{theorem}{L'H\^opital's Rule, Part 2}{thm:LHR2}
+{\begin{enumerate}
+\item		Let $\ds\lim_{x\to a}f(x) = \pm\infty$ and $\ds\lim_{x\to a}g(x)=\pm \infty$, where $f$ and $g$ are differentiable on an open interval $I$ containing $a$. Then \index{limit!L'H\^opital's Rule}\index{L'H\^opital's Rule}
+$$\lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a}\frac{\fp(x)}{g\primeskip'(x)}.$$
+
+\item		Let $f$ and $g$ be differentiable functions on the open interval $(a,\infty)$ for some value $a$, where $g\primeskip'(x)\neq 0$ on $(a,\infty)$ and $\ds\lim_{x\to\infty} f(x)/g(x)$ returns either 0/0 or $\infty/\infty$. Then
+$$\lim_{x\to \infty} \frac{f(x)}{g(x)} = \lim_{x\to \infty}\frac{\fp(x)}{g\primeskip'(x)}.$$
+A similar statement can be made for limits where $x$ approaches $-\infty$.
+\end{enumerate}
+}
+\end{theorem}
+
+
+\begin{example}{Using l'H\^opital's Rule with limits involving $\infty$}{ex_LHR2}
+{
+Evaluate the following limits.\\
+
+$\ds 1.\ \lim_{x\to\infty} \frac{3x^2-100x+2}{4x^2+5x-1000} \qquad\qquad 2. \ \lim_{x\to \infty}\frac{e^x}{x^3}.$
+}
+
+\end{example}
+
+
+\begin{solution}
+{\begin{enumerate}
+\item		We can evaluate this limit already using other techniques%Theorem \ref{thm:lim_rational_fn_at_infty}
+; the answer is $ 3/4 $. We apply l'H\^opital's Rule to demonstrate its applicability.
+$$\lim_{x\to\infty} \frac{3x^2-100x+2}{4x^2+5x-1000} \;\;\;\;\left(\to \frac\infty\infty \right) \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to\infty} \frac{6x-100}{8x+5} \;\;\;\;\left(\to \frac\infty\infty \right) \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to\infty} \frac68 = \frac34.$$
+
+\item		$\ds \lim_{x\to \infty}\frac{e^x}{x^3} \;\;\;\;\left(\to \frac\infty\infty \right) \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to\infty} \frac{e^x}{3x^2} \;\;\;\;\left(\to \frac\infty\infty \right) \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to\infty} \frac{e^x}{6x} \;\;\;\;\left(\to \frac\infty\infty \right) \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to\infty} \frac{e^x}{6} = \infty.$
+
+Recall that this means that the limit does not exist; as $x$ approaches $\infty$, the expression $e^x/x^3$ grows without bound. We can infer from this that $e^x$ grows ``faster'' than $x^3$; as $x$ gets large, $e^x$ is far larger than $x^3$. (This has important implications in computing when considering efficiency of algorithms.)
+\end{enumerate}
+}
+\end{solution}
+
+
+
+\subsection*{Indeterminate Forms $0\cdot\infty$ and $\infty-\infty$}
+
+
+L'H\^opital's Rule can only be applied to ratios of functions. When faced with an indeterminate form such as $0\cdot\infty$ or $\infty-\infty$, we can sometimes apply algebra to rewrite the limit so that l'H\^opital's Rule can be applied. We demonstrate the general idea in the next example.
+\index{limit!indeterminate form}\index{indeterminate form}\\
+
+
+
+\begin{example}{L'H\^opital's Rule}{LHRule3}
+Compute the following limits:\\
+\noindent
+\begin{minipage}[t]{.5\textwidth}
+\begin{enumerate}
+\item		$\ds \lim_{x\to0^+} x\cdot e^{1/x}$
+\item		$\ds \lim_{x\to0^-} x\cdot e^{1/x}$
+\item       $\ds\lim_{x\to 0^+} x\ln x$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+\begin{enumerate}\addtocounter{enumi}{3}
+\item		$\ds \lim_{x\to\infty} \ln(x+1)-\ln x$
+\item		$\ds \lim_{x\to\infty} x^2-e^x$
+\end{enumerate}
+\end{minipage}
+\end{example}
+
+
+\begin{solution}
+{\begin{enumerate}
+\item		As $x\rightarrow 0^+$, $x\rightarrow 0$ and $e^{1/x}\rightarrow \infty$. Thus we have the indeterminate form $0\cdot\infty$. We rewrite the expression $x\cdot e^{1/x}$ as $\ds\frac{e^{1/x}}{1/x}$; now, as $x\rightarrow 0^+$, we get the indeterminate form $\infty/\infty$ to which l'H\^opital's Rule can be applied. 
+$$ \lim_{x\to0^+} x\cdot e^{1/x} = \lim_{x\to 0^+} \frac{e^{1/x}}{1/x} \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to 0^+}\frac{(-1/x^2)e^{1/x}}{-1/x^2} =\lim_{x\to 0^+}e^{1/x} =\infty.$$
+
+Interpretation: $e^{1/x}$ grows ``faster'' than $x$ shrinks to zero, meaning their product grows without bound.
+
+\item		As $x\rightarrow 0^-$, $x\rightarrow 0$ and $e^{1/x}\rightarrow e^{-\infty}\rightarrow 0$. The the limit evaluates to $0\cdot 0$ which is not an indeterminate form. We conclude then that $$\lim_{x\to 0^-}x\cdot e^{1/x} = 0.$$
+
+\item As $x\to 0^+$, $\ln x\to -\infty$, so the product is indeterminate of the form $\pm 0\cdot\infty $.
+ So we can  apply L'H\^opital's Rule after re-writing it in the form $\frac{\infty }{\infty }$:
+$$x\ln x = \frac{\ln x}{1/x}=\frac{\ln x}{x^{-1}}.$$
+Now as $x$ approaches zero, both the numerator and denominator
+approach infinity (one $-\infty$ and one $+\infty$, but only the size
+is important). Using  L'H\^opital's Rule:
+$$\lim_{x\to 0^+} {\ln x\over x^{-1}}\stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=}
+\lim_{x\to 0^+} {1/x\over -x^{-2}} =\lim_{x\to 0^+} -x = 0.$$
+Interpretation: $x$ approaches zero much faster than the $\ln x$ approaches $-\infty$.
+\item		This limit initially evaluates to the indeterminate form $\infty-\infty$. By applying a logarithmic rule, we can rewrite the limit as 
+$$ \lim_{x\to\infty} \ln(x+1)-\ln x = \lim_{x\to \infty} \ln \left(\frac{x+1}x\right).$$
+
+As $x\rightarrow \infty$, the argument of the $\ln$ term approaches $\infty/\infty$, to which we can apply l'H\^opital's Rule.
+$$\lim_{x\to\infty} \frac{x+1}x \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \frac11=1.$$
+
+Since $x\rightarrow \infty$ implies $\ds\frac{x+1}x\rightarrow 1$, it follows that 
+$$x\rightarrow \infty \quad \text{ implies }\quad \ln\left(\frac{x+1}x\right)\rightarrow \ln 1=0.$$
+
+Thus $$ \lim_{x\to\infty} \ln(x+1)-\ln x = \lim_{x\to \infty} \ln \left(\frac{x+1}x\right)=0.$$
+Interpretation: since this limit evaluates to 0, it means that for large $x$, there is essentially no difference between $\ln (x+1)$ and $\ln x$; their difference is essentially 0.
+
+\item		The limit $\ds \lim_{x\to\infty} x^2-e^x$ initially returns the indeterminate form $\infty-\infty$. We can rewrite the expression by factoring out $x^2$; $\ds x^2-e^x = x^2\left(1-\frac{e^x}{x^2}\right).$ We need to evaluate how $e^x/x^2$ behaves as $x\rightarrow \infty$:
+$$\lim_{x\to\infty}\frac{e^x}{x^2} \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to\infty} \frac{e^x}{2x} \stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=} \lim_{x\to\infty} \frac{e^x}{2} = \infty.$$
+
+Thus $\lim_{x\to\infty}x^2(1-e^x/x^2)$ evaluates to $\infty\cdot(-\infty)$, which is not an indeterminate form; rather, $\infty\cdot(-\infty)$ evaluates to $-\infty$. We conclude that 
+$\ds \lim_{x\to\infty} x^2-e^x = -\infty.$
+
+Interpretation: as $x$ gets large, the difference between $x^2$ and $e^x$ grows very large.
+\end{enumerate}
+}
+\end{solution}
+
+
+
+
+\subsection*{Indeterminate Forms\ \ $0^0$, $1^\infty$ and $\infty^0$}
+
+
+When faced with an indeterminate form that involves a power, it often helps to employ the natural logarithmic function. The following Key Idea expresses the concept, which is followed by an example that demonstrates its use.
+
+
+\begin{formulabox}[Limits Involving Indeterminate Powers] %Forms $0^0$, $1^\infty$ and $\infty^0$
+{\label{idea:LHRpower}
+If $\ds \lim_{x\to c} \ln\big(f(x)\big) = L$, then 
+$\ds \lim_{x\to c} f(x) = \lim_{x\to c} e^{\ln(f(x))} = e\,^L.$ 
+\index{limit!indeterminate form}\index{indeterminate form}
+}
+\end{formulabox}
+
+
+
+%
+
+
+\begin{example}{Using l'H\^opital's Rule with indeterminate forms involving exponents }{ex_LHR4}
+{Evaluate the following limits.
+\begin{enumerate}
+\item $\ds \lim_{x\to\infty} \left(1+\frac1x\right)^x  $ 
+\item  $ \ds \lim_{x\to0^+} x^x$
+\item $\ds{\lim_{x\to 1^+}x^{1/(x-1)}}.$
+\end{enumerate}
+}
+\end{example}
+
+
+\begin{solution}
+{\begin{enumerate}
+\item		%This equivalent to a special limit given in Theorem \ref{thm:lim_continuous}; 
+This limit has important applications within mathematics and finance. Note that the exponent approaches $\infty$ while the base approaches $ 1 $, leading to the indeterminate form $1^\infty$. Let $f(x) = (1+1/x)^x$; the problem asks to evaluate $\ds\lim_{x\to\infty}f(x)$. Let's first evaluate $\ds \lim_{x\to\infty}\ln\big(f(x)\big)$.
+\begin{align*}
+\lim_{x\to\infty}\ln\big(f(x)\big) & = \lim_{x\to\infty} \ln \left(1+\frac1x\right)^x \\
+			&= \lim_{x\to\infty} x\ln\left(1+\frac1x\right)\\
+			&=  \lim_{x\to\infty} \frac{\ln\left(1+\frac1x\right)}{1/x}\\
+			\intertext{This produces the indeterminate form 0/0, so we apply l'H\^opital's Rule.}
+			&\stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=}	\lim_{x\to\infty} \frac{\frac{1}{1+1/x}\cdot(-1/x^2)}{(-1/x^2)} \\
+			&= \lim_{x\to\infty}\frac{1}{1+1/x}\\
+			&= 1.
+\end{align*}
+Thus $\ds\lim_{x\to\infty} \ln \big(f(x)\big) = 1.$ We return to the original limit and apply Key Idea \ref{idea:LHRpower}.
+
+$$\lim_{x\to\infty}\left(1+\frac1x\right)^x = \lim_{x\to\infty} f(x) =  \lim_{x\to\infty}e^{\ln (f(x))} = e^1 = e.$$
+
+
+\item		This limit leads to the indeterminate form $0^0$. Let $f(x) = x^x$ and consider first $\ds\lim_{x\to0^+} \ln\big(f(x)\big)$. 
+\begin{align*}
+\lim_{x\to0^+} \ln\big(f(x)\big) &= \lim_{x\to0^+} \ln\left(x^x\right) \\
+			&= \lim_{x\to0^+} x\ln x \\
+			&= \lim_{x\to0^+} \frac{\ln x}{1/x}.\\
+			\intertext{This produces the indeterminate form $-\infty/\infty$ so we apply l'H\^opital's Rule.}
+			&\stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=}	\lim_{x\to0^+} \frac{1/x}{-1/x^2} \\
+			&= \lim_{x\to0^+} -x \\
+			&= 0.
+\end{align*}
+Thus $\ds\lim_{x\to0^+} \ln\big(f(x)\big) =0$. We return to the original limit and apply Key Idea \ref{idea:LHRpower}.
+$$\lim_{x\to0^+} x^x = \lim_{x\to0^+} f(x) = \lim_{x\to0^+} e^{\ln(f(x))} = e^0 = 1.$$
+This result is supported by the graph of $f(x)=x^x$ given in Figure \ref{fig:LHR4}.
+
+\mfigure{.8}{A graph of $f(x)=x^x$ supporting the fact that as $x\to 0^+$, $f(x)\to 1$.}{fig:LHR4}{\begin{tikzpicture}
+\begin{axis}[width=.6\textwidth,%
+tick label style={font=\scriptsize},axis y line=middle,axis x line=middle,name=myplot,axis on top,%
+			%x=.37\marginparwidth,
+			%y=.37\marginparwidth,
+%			xtick=\empty,% 
+%			extra x ticks={.5,3},
+%			extra x tick labels={$a$,$b$},
+			ytick={1,2,3,4},
+%			yticklabels={$-0.002$,$0.002$,$0.004$},
+			%minor y tick num=1,
+%			extra y ticks={0.001},%
+%			minor x tick num=4,
+			ymin=-.4,ymax=4.5,%
+			xmin=-.1,xmax=2.2,%
+			scaled ticks=false
+]
+
+\addplot [{\colorone},thick,smooth] coordinates {(0.01,0.955)(0.02,0.9247)(0.03,0.9001)(0.04,0.8792)(0.05,0.8609)(0.06,0.8447)(0.07,0.8302)(0.08,0.817)(0.09,0.8052)(0.1,0.7943)(0.2,0.7248)(0.3,0.6968)(0.4,0.6931)(0.5,0.7071)(0.6,0.736)(0.7,0.7791)(0.8,0.8365)(0.9,0.9095)(1.,1.)(1.1,1.111)(1.2,1.245)(1.3,1.406)(1.4,1.602)(1.5,1.837)(1.6,2.121)(1.7,2.465)(1.8,2.881)(1.9,3.386)(2.,4.)
+};
+
+\draw (axis cs:1,1) node [below right] {\scriptsize $f(x)=x^x$};
+
+
+
+%\draw (axis cs:2.4,-0.002) node {\scriptsize $f(x)$};
+\end{axis}
+
+\node [right] at (myplot.right of origin) {\scriptsize $x$};
+\node [above] at (myplot.above origin) {\scriptsize $y$};
+\end{tikzpicture}
+\item 
+This limit is of the type $\mathquotes{1^\infty}$.
+To deal with this type of limit we will again use logarithms.
+Let
+$$L=\lim_{x\to 1^+}x^{1/(x-1)}.$$
+Now, take the natural log of both sides:
+$$\ln L=\lim_{x\to 1^+}\ln\left(x^{1/(x-1)}\right).$$
+Using log properties we have:
+$$\ln L=\lim_{x\to 1^+}\frac{\ln x}{x-1}.$$
+The right side limit is now of the type $0/0$, therefore, we can apply L'H\^opital's Rule:
+$$\ln L=\lim_{x\to 1^+}\frac{\ln x}{x-1}\stackrel{\ \text{ by LHR \rule[-5pt]{0pt}{3pt}} \ }{=}\lim_{x\to 1^+}\frac{1/x}{1}=1$$
+Thus, $\ln L=1$ and hence, our original limit (denoted by $L$) is: $L=e^1=e$. That is,
+$$L=\lim_{x\to 1^+}x^{1/(x-1)}=e.$$
+In this case, even though our limit had a type of $\mathquotes{1^\infty}$, it actually had a value of $e$.
+}
+\end{enumerate}
+}
+\end{solution}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%Our brief revisit of limits will be rewarded in the next section where we consider \textit{improper integration.} So far, we have only considered definite integrals where the bounds are finite numbers, such as $\ds \int_0^1 f(x)\ dx$. Improper integration considers integrals where one, or both, of the bounds are ``infinity.'' Such integrals have many uses and applications, in addition to generating ideas that are enlightening.
+
+
+%The following application of derivatives allows us to compute certain limits.
+%
+%\begin{definition}{Limits of the Indeterminate Forms $\frac{0}{0}$ and $\frac{\infty}{\infty}$}{IndeterminateLimits}
+%A limit of a quotient $\lim\limits_{x\rightarrow a}\frac{f\left( x\right) }{%
+%	g\left( x\right) }$ is said to be an \textbf{indeterminate form of the type }%
+%$\frac{0}{0}$ if both $f\left( x\right) \rightarrow 0$ and $g\left( x\right)
+%\rightarrow 0$ as $x\rightarrow a.$ Likewise, it is said to be an \textbf{%
+%	indeterminate form of the type} $\frac{\infty }{\infty }$ if both $f\left(
+%x\right) \rightarrow \pm \infty $ and $g\left( x\right) \rightarrow \pm
+%\infty $ as $x\rightarrow a$ (Here, the two $\pm $ signs are independent of
+%each other).
+%\end{definition}
+%
+%\begin{theorem}{L'H\^opital's Rule}{LHRule}
+%For a limit $\lim\limits_{x\rightarrow a}\frac{f\left( x\right) }{g\left(
+%	x\right) }$ of the indeterminate form $\frac{0}{0}$ or $\frac{\infty }{%
+%	\infty },$ $\lim\limits_{x\rightarrow a}\frac{f\left( x\right) }{g\left(
+%	x\right) }=\lim\limits_{x\rightarrow a}\frac{f^{\prime }\left( x\right) }{%
+%	g^{\prime }\left( x\right) }$ if $\lim\limits_{x\rightarrow a}\frac{%
+%	f^{\prime }\left( x\right) }{g^{\prime }\left( x\right) }$ exists or equals $%
+%\infty $ or $-\infty$.
+%\end{theorem}
+%
+%This theorem is somewhat difficult to prove, in part because it
+%incorporates so many different possibilities, so we will not prove it
+%here.
+%
+%We should also note that there may be instances where we would need to apply L'H\^opital's Rule multiple times, but we must confirm that $\lim_{x\to a}\frac{f'(x)}{g'(x)}$ is still indeterminate before we attempt to apply L'H\^opital's Rule again. Finally, we want to mention that L'H\^opital's rule is also valid for one-sided limits and limits at infinity.
+%
+%\begin{example}{L'H\^opital's Rule}{lhrule0}
+%Compute $\ds\lim_{x\to \pi}\frac{x^2-\pi^2}{\sin x}$.
+%\end{example}
+%
+%\begin{solution} 
+%We use L'H\^opital's Rule: Since the numerator and denominator
+%both approach zero,
+%$$\lim_{x\to \pi}\frac{x^2-\pi^2}{\sin x}=
+%\lim_{x\to \pi}\frac{2x}{\cos x},$$
+%provided the latter exists. But in fact this is an easy limit, since
+%the denominator now approaches $-1$, so 
+%$$\lim_{x\to \pi}\frac{x^2-\pi^2}{\sin x}=\frac{2\pi}{-1} = -2\pi.$$
+%\end{solution}
+%
+%\begin{example}{L'H\^opital's Rule}{LHRule1}
+%Compute $\ds\lim_{x\to \infty}{2x^2-3x+7\over
+%x^2+47x+1}$.
+%\end{example}
+%
+%\begin{solution} 
+%As $x$ goes to infinity, both the numerator and denominator go to
+%infinity, so we may apply L'H\^opital's Rule:
+%$$\lim_{x\to \infty}\frac{2x^2-3x+7}{x^2+47x+1}=
+%\lim_{x\to \infty}\frac{4x-3}{2x+47}.$$
+%In the second quotient, it is still the case that the numerator and
+%denominator both go to infinity, so we are allowed to use
+%L'H\^opital's Rule again:
+%$$\lim_{x\to \infty}\frac{4x-3}{2x+47}=\lim_{x\to \infty}\frac{4}{2}=2.$$
+%So the original limit is 2 as well.
+%\end{solution}
+%
+%\begin{example} {L'H\^opital's Rule}{LHRule2}
+%Compute $\ds\lim_{x\to 0}\frac{\sec x - 1}{\sin x}$.
+%\end{example}
+%
+%\begin{solution} 
+%Both the numerator and denominator approach zero, so applying 
+%L'H\^opital's Rule:
+%$$\lim_{x\to 0}\frac{\sec x - 1}{\sin x}=
+%\lim_{x\to 0}\frac{\sec x\tan x}{\cos x}=\frac{1\cdot 0}{1}=0.$$
+%\end{solution}
+%
+%L'H\^{o}pital's rule concerns limits of a quotient that are indeterminate forms. But not all
+%functions are given in the form of a quotient. But all the same, nothing
+%prevents us from re-writing a given function in the form of a quotient.
+%Indeed, some functions whose given form involve either a product $f\left(
+%x\right) g\left( x\right) $ or a power $f\left( x\right) ^{g\left( x\right)
+%} $ carry indeterminacies such as $0\cdot \pm \infty $ and $1^{\pm \infty }.$
+%Something small times something numerically large (positive or negative)
+%could be anything. It depends on how small and how large each piece turns
+%out to be. A number close to 1 raised to a numerically large (positive or
+%negative) power could be anything. It depends on how close to 1 the base is,
+%whether the base is larger than or smaller than 1, and how large the
+%exponent is (and its sign). We can use suitable algebraic manipulations to
+%relate them to indeterminate quotients. We will illustrate with two
+%examples, first a product and then a power.
+%
+%\begin{example}{L'H\^opital's Rule}{LHRule3}
+%Compute $\ds\lim_{x\to 0^+} x\ln x$.
+%\end{example}
+%
+%\begin{solution} 
+%This doesn't appear to be suitable for L'H\^opital's Rule, but it also
+%is not ``obvious''. As $x$ approaches zero, $\ln x$ goes to $-\infty$,
+%so the product looks like:
+%$$(\hbox{something very small})\cdot(\hbox{something very large and negative}).$$
+%This could be anything: it depends on {\it how small} and
+%{\it how large} each piece of the function turns out to be. 
+%As defined earlier, this is a type of $\pm\mathquotes{0\cdot\infty}$, which is
+%indeterminate. So we can in fact apply L'H\^opital's Rule after re-writing
+%it in the form $\frac{\infty }{\infty }$:
+%$$x\ln x = \frac{\ln x}{1/x}=\frac{\ln x}{x^{-1}}.$$
+%Now as $x$ approaches zero, both the numerator and denominator
+%approach infinity (one $-\infty$ and one $+\infty$, but only the size
+%is important). Using  L'H\^opital's Rule:
+%$$\lim_{x\to 0^+} {\ln x\over x^{-1}}=
+%\lim_{x\to 0^+} {1/x\over -x^{-2}} =\lim_{x\to 0^+} {1\over x}(-x^2)=
+%\lim_{x\to 0^+} -x = 0.$$
+%One way to interpret this is that since $\ds\lim_{x\to
+%  0^+}x\ln x = 0$, the $x$ approaches zero much faster than the $\ln x$
+%approaches $-\infty$.
+%\end{solution}
+%
+%Finally, we illustrate how a limit of the type $\mathquotes{1^\infty}$ can be indeterminate.
+%
+%\begin{example} {L'H\^opital's Rule}{LHRule4}
+%Evaluate $\ds{\lim_{x\to 1^+}x^{1/(x-1)}}.$
+%\end{example}
+%
+%\begin{solution} 
+%Plugging in $x=1$ (from the right) gives a limit of the type $\mathquotes{1^\infty}$.
+%To deal with this type of limit we will use logarithms.
+%Let
+%$$L=\lim_{x\to 1^+}x^{1/(x-1)}.$$
+%Now, take the natural log of both sides:
+%$$\ln L=\lim_{x\to 1^+}\ln\left(x^{1/(x-1)}\right).$$
+%Using log properties we have:
+%$$\ln L=\lim_{x\to 1^+}\frac{\ln x}{x-1}.$$
+%The right side limit is now of the type $0/0$, therefore, we can apply L'H\^opital's Rule:
+%$$\ln L=\lim_{x\to 1^+}\frac{\ln x}{x-1}=\lim_{x\to 1^+}\frac{1/x}{1}=1$$
+%Thus, $\ln L=1$ and hence, our original limit (denoted by $L$) is: $L=e^1=e$. That is,
+%$$L=\lim_{x\to 1^+}x^{1/(x-1)}=e.$$
+%In this case, even though our limit had a type of $\mathquotes{1^\infty}$, it actually had a value of $e$.
+%\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:LH}}
+
+Compute the following limits.
+
+\begin{multicols}{2}[]
+
+\begin{enumialphparenastyle}
+
+
+
+%%%%%%%%%%
+\begin{ex} 
+$\ds\lim_{x\to 0} {\cos x -1\over \sin x}$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+$\ds\lim_{x\to \infty} {e^x\over x^3}$
+\begin{sol}
+ $\infty$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+$\ds\lim_{x\to \infty} {\ln x\over x}$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+$\ds\lim_{x\to \infty} {\ln x\over \sqrt{x}}$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+$\ds\lim_{x\to0}{\sqrt{9+x}-3\over x}$
+\begin{sol}
+ $1/6$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+$\ds\lim_{x\to2}{2-\sqrt{x+2}\over 4-x^2}$
+\begin{sol}
+ $1/16$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to1}{\sqrt{x}-1\over \sqrt[3]{x}-1}$
+\begin{sol}
+ $3/2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{(1-x)^{1/4}-1\over x}$
+\begin{sol}
+ $-1/4$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{t\to 0}{\left(t+{1\over t}\right)((4-t)^{3/2}-8)}$
+\begin{sol}
+ $-3$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{t\to 0^+}\left({1\over t}+{1\over\sqrt{t}}\right)
+(\sqrt{t+1}-1)$
+\begin{sol}
+ $1/2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to 0}{x^2\over\sqrt{2x+1}-1}$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{u\to 1}{(u-1)^3\over (1/u)-u^2+3/u-3}$
+\begin{sol}
+ $-1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to 0}{2+(1/x)\over 3-(2/x)}$
+\begin{sol}
+ $-1/2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to 0^+}{1+5/\sqrt{x}\over 2+1/\sqrt{x}}$
+\begin{sol}
+ $5$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to\pi/2}{\cos x\over (\pi/2)-x}$
+\begin{sol}
+ $1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{e^x-1\over x}$
+\begin{sol}
+ $1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{x^2\over e^x-x-1}$
+\begin{sol}
+ $2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to1}{\ln x\over x-1}$
+\begin{sol}
+ $1$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{\ln(x^2+1)\over x}$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to1}{x\ln x\over x^2-1}$
+\begin{sol}
+ $1/2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{\sin(2x)\over\ln(x+1)}$
+\begin{sol}
+ $2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to1}{x^{1/4}-1\over x}$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to1}{\sqrt{x}-1\over x-1}$
+\begin{sol}
+ $1/2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{3x^2+x+2\over x-4}$
+\begin{sol}
+ $-1/2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{\sqrt{x+1}-1\over \sqrt{x+4}-2}$
+\begin{sol}
+ $2$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{\sqrt{x+1}-1\over \sqrt{x+2}-2}$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0^+}{\sqrt{x+1}+1\over\sqrt{x+1}-1}$
+\begin{sol}
+ $\infty$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to0}{\sqrt{x^2+1}-1\over\sqrt{x+1}-1}$
+\begin{sol}
+ $0$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to1}{(x+5)\left({1\over 2x}+{1\over x+2}\right)}$
+\begin{sol}
+ $5$
+\end{sol}
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ $\ds\lim_{x\to2}{x^3-6x-2\over x^3+4}$
+\begin{sol}
+ $-1/2$
+\end{sol}
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to \pi} \frac{\sin x}{x-\pi}$}
+
+\begin{sol}
+  {$-1$}
+\end{sol}
+
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to \pi/4} \frac{\sin x-\cos x}{\cos (2x)}$}
+ 
+\begin{sol}
+ {$-\sqrt{2}/2$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to 0} \frac{\sin (5x)}{x}$}
+
+\begin{sol}
+  {$5$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to 0^+} \frac{e^x-1}{x^2}$}
+ 
+\begin{sol}
+ {$\infty$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to 0^+} \frac{e^x-x-1}{x^2}$}
+
+\begin{sol}
+  {$1/2$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to 0^+} \frac{x-\sin x}{x^3-x^2}$}
+
+\begin{sol}
+  {$0$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to \infty} \frac{\Big(\ln x\Big)^2}{x}$}
+
+\begin{sol}
+  {$0$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to \infty} x^3-x^2$}
+ 
+\begin{sol}
+ {$\infty$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to \infty} \sqrt{x}-\ln x$}
+
+\begin{sol}
+ {$\infty$} 
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to -\infty} xe^x$}
+
+\begin{sol}
+ {$0$} 
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to 0^+} (\sin x)^{x}$ \\ Hint: use the Squeeze Theorem.}
+
+\begin{sol}
+ {$1$} 
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to 1^+} (1-x)^{1-x}$}
+ 
+\begin{sol}
+ {$1$}
+\end{sol}
+
+\end{ex}
+
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to \infty} (x)^{1/x}$}
+
+\begin{sol}
+ {$1$} 
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to 1^+} (\ln x)^{1-x}$}
+ 
+\begin{sol}
+ {$1$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to \infty} (1+x)^{1/x}$}
+ 
+\begin{sol}
+{$1$} 
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to \infty} (1+x^2)^{1/x}$}
+
+\begin{sol}
+ {$1$} 
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to \pi/2} \tan x\cos x$}
+
+\begin{sol}
+  {$1$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to \pi/2} \tan x\sin (2x)$}
+ 
+\begin{sol}
+ {$2$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to 1^+} \frac{1}{\ln x} - \frac{1}{x-1}$}
+
+\begin{sol}
+{$1/2$}  
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to 3^+} \frac{5}{x^2-9} - \frac{x}{x-3}$}
+ 
+\begin{sol}
+{$-\infty$} 
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to \infty} x\tan (1/x)$}
+
+\begin{sol}
+{$1$}  
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to \infty} \frac{(\ln x)^3}{x}$}
+ 
+\begin{sol}
+{$0$} 
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+ {$\ds \lim_{x\to 1} \frac{x^2+x-2}{\ln x}$}
+
+\begin{sol}
+  {$3$}
+\end{sol}
+
+\end{ex}
+
+%%%%%%%%%%
+\begin{ex} 
+{$\ds \lim_{x\to 0^+} xe^{1/x}$}
+
+\begin{sol}
+ {$\infty$} 
+\end{sol}
+
+\end{ex}
+
+
+
+\begin{ex}
+Discuss what happens if we try to use L'H\^{o}pital's rule to find the limit $\lim\limits_{x\rightarrow \infty}\dfrac{x+\sin x}{x+1}$.
+\end{ex}
+
+\end{enumialphparenastyle}
+
+\end{multicols}
+\clearpage
