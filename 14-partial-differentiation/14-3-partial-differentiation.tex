@@ -1,0 +1,496 @@
+\section{Partial Differentiation}\label{sec:PartialDifferentiation}
+
+The derivative of a function of a single variable tells us how quickly
+the value of the function changes as the value of the independent variable
+changes. Intuitively, it tells us how ``steep'' the graph of the function is.
+We might wonder if there is a similar idea for graphs of functions
+of two variables, that is, surfaces. It is
+not clear that this has a simple answer, nor how we might proceed. We
+will start with what seem to be very small steps toward the goal.
+Surprisingly, it turns out that these simple ideas hold the keys to a
+more general understanding.
+
+\begin{figure}[H]
+%\texonly
+\centerline{
+\vbox{\beginpicture
+\normalgraphs
+%\ninepoint
+\setcoordinatesystem units <3truecm,3truecm>
+\setplotarea x from 0 to 1.1, y from 0 to 1.1
+\put {\hbox{\epsfxsize8cm\epsfbox{images/parabolic_crosssection.eps}}} at 0 0
+\endpicture}}
+%\endtexonly
+\caption{The intersection of a plane $x+y=1$ and the surface $f(x,y)=x^2+y^2$}
+\label{fig:parabolic bowl cross-section}
+\end{figure}
+
+The derivative of a single-variable function $f(x)$ tells us how much $f(x)$
+changes as $x$ increases. The obvious analogue for a function of two
+variables $g(x,y)$ would be something that tells us how quickly $g(x,y)$
+increases as $x$ and $y$ increase. However, in most cases this will depend on
+how quickly $x$ and $y$ are changing relative to each other.
+
+\begin{example}{}{}
+Analyze $f(x,y)=y^2$.
+\end{example}
+\begin{solution}
+If we look at a point $(x,y,y^2)$ on this surface, the value of a function
+does not change at all if we fix $y$ and let $x$ increase, but increases like $y^2$
+if we fix $x$ and let $y$ increase.
+\end{solution}
+
+Now let us consider what happens to $f(x,y)$ when both $x$ and $y$ are
+increasing, perhaps at different rates. We can think of this as being a
+movement in a certain direction of a point in the $x,y$-plane. A point and a
+direction defines a line in the $x,y$-plane, and so we are asking how the function
+changes as we move along this line.
+
+Let us then imagine a plane perpendicular to the $x,y$-plane that intersects
+the the $x,y$-plane along this line. This plane will intersect the surface of
+$f$ in a curve, so we can just look at the behaviour of this curve in the given plane.
+
+Figure~\ref{fig:parabolic bowl cross-section} shows the plane $x+y=1$, which
+is the plane perpendicular to the line $x+y=1$ in the $x,y$-plane.
+Observe that its intersection with the surface of $f$ is a curve, in fact, a parabola.
+We will refer to such a curve as the cross-section of the surface above the line in
+the $x,y$-plane.
+
+We can now look at the rate of change (or slope) of $f$ in a particular
+direction by looking at the slope of a curve in a plane --- something we
+already have experience with.
+
+Let's start by looking at some particularly
+easy lines: Those parallel to the $x$ or $y$ axis. Suppose we are
+interested in the cross-section of $f(x,y)$ above the line $y=b$. If
+we substitute $b$ for $y$ in $f(x,y)$, we get a function in one
+variable, describing the height of the cross-section as a function of
+$x$. Because $y=b$ is parallel to the $x$-axis, if we view it from a
+vantage point on the negative $y$-axis, we will see what appears to be
+simply an ordinary curve in the $x$-$z$ plane.
+
+\begin{figure}[H]
+%\texonly
+\centerline{
+\vbox{\beginpicture
+\normalgraphs
+%\ninepoint
+\setcoordinatesystem units <3truecm,3truecm>
+\setplotarea x from 0 to 4, y from 0 to 1
+\put {\hbox{\epsfxsize8cm\epsfbox{images/parabolic_crosssection2.eps}}} at 0 0
+\put {\hbox{\epsfxsize5cm\epsfbox{images/parabolic_crosssection3.eps}}} at 2.5 0
+\endpicture}}
+%\endtexonly
+\caption{$f(x,y)=x^2 + y^2$, cut by the plane $y=2$}
+\label{fig:parabolic bowl cross-section two}
+\end{figure}
+
+Consider again the parabolic surface $f(x,y)=x^2+y^2$. The
+cross-section above the line $y=2$ consists of all points
+$(x,2,x^2+4)$. Looking at this cross-section we see what appears to be just the curve
+$f(x)=x^2+4$. At any point on the cross-section, $(a,2,a^2+4)$, the
+slope of the surface \emph{in the direction of the line} $y=2$ is
+  simply the slope of the curve $f(x)=x^2+4$, namely $2x$.
+Figure~\ref{fig:parabolic bowl cross-section two} shows the same
+parabolic surface as before, but now cut by the plane $y=2$. The left
+graph shows the cut-off surface, the right shows just the
+cross-section. 
+
+If, for example, we're interested in the point $(-1,2,5)$ on the surface, then
+the slope in the direction of the line $y=2$ is $2x=2(-1)=-2$. This
+means that starting at $(-1,2,5)$ and moving on the surface, above the
+line $y=2$, in the direction of increasing $x$ values, the surface
+goes down; of course moving in the opposite direction, toward
+decreasing $x$ values, the surface will rise.
+
+If we're interested in some other line $y=k$, there is really no
+change in the computation. The equation of the cross-section above
+$y=k$ is $x^2+k^2$ with derivative $2x$. We can save ourselves the
+effort, small as it is, of substituting $k$ for $y$: all we are in
+effect doing is temporarily assuming that $y$ is some constant. With
+this assumption, the derivative ${d\over dx}(x^2+y^2)=2x$. To
+emphasize that we are only temporarily assuming $y$ is constant, we
+use a slightly different notation: ${\partial\over \partial
+  x}(x^2+y^2)=2x$; the ``$\partial$'' reminds us that there are more
+variables than $x$, but that only $x$ is being treated as a variable.
+We read the equation as ``the partial derivative of $(x^2+y^2)$ with
+respect to $x$ is $2x$.'' A convenient alternate notation for the
+partial derivative of $f(x,y)$ with respect to $x$ is
+is $f_x(x,y)$.
+
+\begin{example}{Partial Derivative with respect to $x$}{PartialDerOne}
+Find the partial derivative with respect to $x$ of $x^3+3xy$.
+\end{example}
+\begin{solution}
+The partial derivative with respect to $x$ of 
+$x^3+3xy$ is $3x^2+3y$. Note that the partial derivative includes the
+variable $y$, unlike the example $x^2+y^2$. It is somewhat unusual for
+the partial derivative to depend on a single variable; this example is
+more typical.
+\end{solution}
+
+Of course, we can do the same sort of calculation for lines parallel
+to the $y$-axis. We temporarily hold $x$ constant, which gives us the
+equation of the cross-section above a line $x=k$. We can then compute
+the derivative with respect to $y$; this will measure the slope of
+the curve in the $y$ direction.
+
+\begin{example}{Partial Derivative with respect to $y$}{PartialDerTwo}
+Find the partial derivative with respect to $y$ of $f(x,y)=\sin(xy)+3xy$.
+\end{example}
+\begin{solution}
+The partial derivative with respect to $y$ of 
+$f(x,y)=\sin(xy)+3xy$ is 
+$$f_y(x,y)={\partial\over\partial y}\sin(xy)+3xy=\cos(xy){\partial\over\partial
+  y}(xy)+ 3x=x\cos(xy)+3x.
+$$
+\end{solution}
+
+So far, using no new techniques, we have succeeded in measuring the
+slope of a surface in two quite special directions. For functions of
+one variable, the derivative is closely linked to the notion of
+tangent line. For surfaces, the analogous idea is the tangent
+plane---a plane that just touches a surface at a point, and has the
+same slope as the surface in all directions. Even though we
+haven't yet figured out how to compute the slope in all directions, we
+have enough information to find tangent planes. Suppose we want the
+plane tangent to a surface at a particular point $(a,b,c)$. If we compute the
+two partial derivatives of the function for that point, we get enough
+information to determine two lines tangent to the surface, both 
+through $(a,b,c)$ and both tangent to the surface in their respective
+directions. These two lines determine a plane, that is, there is
+exactly one plane containing the two lines: the tangent
+plane. Figure~\ref{fig:sphere with tangent plane} 
+shows (part of) two tangent lines at a point,
+and the tangent plane containing them. 
+
+\begin{figure}[H]
+%\texonly
+\centerline{
+\vbox{\beginpicture
+\normalgraphs
+%\ninepoint
+\setcoordinatesystem units <3truecm,3truecm>
+\setplotarea x from -1 to 3, y from 0 to 1
+\put {\hbox{\epsfxsize4cm\epsfbox{images/tangent_vectors.eps}}} at 0 -0.15
+\put {\hbox{\epsfxsize5.8cm\epsfbox{images/tangent_plane.eps}}} at 2.5 0
+\endpicture}}
+%\endtexonly
+\caption{Tangent vectors and tangent plane.}
+\label{fig:sphere with tangent plane}
+\end{figure}
+
+How can we discover an equation for this tangent plane? We know a
+point on the plane, $(a,b,c)$; we need a vector normal to the
+plane. If we can find two vectors, one parallel to each of the tangent
+lines we know how to find, then the cross product of these vectors
+will give the desired normal vector.
+
+\begin{figure}[H]
+%\texonly
+\centerline{
+\vbox{\beginpicture
+\normalgraphs
+%\ninepoint
+\setcoordinatesystem units <1.5truecm,1.5truecm>
+\setplotarea x from 0 to 4.1, y from 0 to 3.1
+\axis left ticks numbered from 0 to 3 by 1 /
+\axis bottom ticks numbered from 0 to 4 by 1 /
+\put {$z$} [b] <0pt,3pt> at 0 3.1
+\put {$x$} [l] <3pt,0pt> at 4.1 0
+\put {$f_x(2,b)$} [l] <3pt,0pt> at 3 1.35
+\putrule from 2 1.17 to 3 1.17
+\putrule from 3 1.17 to 3 1.5
+\setlinear
+%\plot 2 1.17 3 1.5 /
+\arrow <5pt> [0.17, 0.5] from 2 1.17 to 3 1.5
+\setquadratic
+\plot 0.000 1.167 0.100 1.135 0.200 1.107 0.300 1.082 0.400 1.060 
+0.500 1.042 0.600 1.027 0.700 1.015 0.800 1.007 0.900 1.002 
+1.000 1.000 1.100 1.002 1.200 1.007 1.300 1.015 1.400 1.027 
+1.500 1.042 1.600 1.060 1.700 1.082 1.800 1.107 1.900 1.135 
+2.000 1.167 2.100 1.202 2.200 1.240 2.300 1.282 2.400 1.327 
+2.500 1.375 2.600 1.427 2.700 1.482 2.800 1.540 2.900 1.602 
+3.000 1.667 3.100 1.735 3.200 1.807 3.300 1.882 3.400 1.960 
+3.500 2.042 3.600 2.127 3.700 2.215 3.800 2.307 3.900 2.402 
+4.000 2.500 /
+%0.000 1.333 0.100 1.270 0.200 1.213 0.300 1.163 0.400 1.120 
+%0.500 1.083 0.600 1.053 0.700 1.030 0.800 1.013 0.900 1.003 
+%1.000 1.000 1.100 1.003 1.200 1.013 1.300 1.030 1.400 1.053 
+%1.500 1.083 1.600 1.120 1.700 1.163 1.800 1.213 1.900 1.270 
+%2.000 1.333 2.100 1.403 2.200 1.480 2.300 1.563 2.400 1.653 
+%2.500 1.750 2.600 1.853 2.700 1.963 2.800 2.080 2.900 2.203 
+%3.000 2.333 3.100 2.470 3.200 2.613 3.300 2.763 3.400 2.920 
+%3.500 3.083 3.600 3.253 3.700 3.430 3.800 3.613 3.900 3.803 
+%4.000 4.000 / 
+\endpicture}}
+%\endtexonly
+\caption{A tangent vector.}
+\label{fig:tangent vector}
+\end{figure}
+
+How can we find vectors parallel to the tangent lines? Consider first
+the line tangent to the surface above the line $y=b$. A vector
+$\langle u,v,w\rangle$ parallel to this tangent line must have $y$
+component $v=0$, and we may as well take the $x$ component to be
+$u=1$. The ratio of the $z$ component to the $x$ component is the
+slope of the tangent line, precisely what we know how to compute. The
+slope of the tangent line is $f_x(a,b)$, so
+$$ f_x(a,b)={w\over u} ={w\over1} = w.$$
+In other words, a vector parallel to this tangent line is
+$\langle 1,0,f_x(a,b)\rangle$, as shown in Figure~\ref{fig:tangent vector}. 
+If we repeat the reasoning for the
+tangent line above $x=a$, we get the vector $\langle
+0,1,f_y(a,b)\rangle$.
+
+Now to find the desired normal vector we compute the cross product,
+$\langle 0,1,f_y\rangle\times\langle 1,0,f_x\rangle=
+\langle f_x,f_y,-1\rangle$. From our earlier discussion of planes, we
+can write down the equation we seek: $f_x(a,b)x+f_y(a,b)y-z=k$, and
+$k$ as usual can be computed by substituting a known point:
+$f_x(a,b)(a)+f_y(a,b)(b)-c=k$. There are various more-or-less nice
+ways to write the result:
+\begin{align*}
+&f_x(a,b)x+f_y(a,b)y-z=f_x(a,b)a+f_y(a,b)b-c	\\
+&f_x(a,b)x+f_y(a,b)y-f_x(a,b)a-f_y(a,b)b+c=z	\\
+&f_x(a,b)(x-a)+f_y(a,b)(y-b)+c=z	\\
+&f_x(a,b)(x-a)+f_y(a,b)(y-b)+f(a,b)=z	\\
+\end{align*}
+
+\begin{example}{Tangent Plane to a Sphere}{TangentPlaneSphere}
+Find the plane tangent to $x^2+y^2+z^2=4$ at
+$(1,1,\sqrt2)$.
+\end{example}
+\begin{solution}
+The point $(1,1,\sqrt2)$ is on the upper hemisphere, so 
+we use $\ds f(x,y)=\sqrt{4-x^2-y^2}$. Then 
+$\ds f_x(x,y)=-x(4-x^2-y^2)^{-1/2}$ and $\ds
+f_y(x,y)=-y(4-x^2-y^2)^{-1/2}$, so $f_x(1,1)=f_y(1,1)=-1/\sqrt2$
+and the equation of the plane is 
+$$z=-{1\over\sqrt2}(x-1)-{1\over\sqrt2}(y-1)+\sqrt2.$$
+The hemisphere and this tangent plane are pictured in
+Figure~\ref{fig:sphere with tangent plane}.
+\end{solution}
+
+So it appears that to find a tangent plane, we need only find two
+quite simple ordinary derivatives, namely $f_x$ and $f_y$. This is
+true {\em if the tangent plane exists}. It is, unfortunately, not
+always the
+case that if $f_x$ and $f_y$ exist there is a tangent plane. 
+Consider the function  $xy^2/(x^2+y^4)$ with $f(0,0)$ defined to be 0, pictured in 
+Figure~\ref{fig:weird limit}. This function has value 0 when $x=0$
+or $y=0$. Now it's clear that $f_x(0,0)=f_y(0,0)=0$, because in the
+$x$ and $y$ directions the surface is simply a horizontal line. But
+it's also clear from the picture that this surface does not have
+anything that deserves to be called a tangent plane at the origin,
+certainly not the $x$-$y$ plane containing these two tangent lines.
+
+When does a surface have a tangent plane at a particular point? What
+we really want from a tangent plane, as from a tangent line, is that
+the plane be a ``good'' approximation of the surface near the
+point. Here is how we can make this precise:
+
+\begin{definition}{Tangent Plane}{TangentPlaneDefinition}
+Let $\Delta x=x-x_0$, $\Delta y=y-y_0$, and $\Delta z=z-z_0$
+where $z_0=f(x_0,y_0)$. The
+function $z=f(x,y)$ is differentiable\index{differentiable} at
+$(x_0,y_0)$ if
+$$\Delta z=f_x(x_0,y_0)\Delta x+f_y(x_0,y_0)\Delta y+\epsilon_1\Delta
+x + \epsilon_2\Delta y,$$ where both $\epsilon_1$ and $\epsilon_2$
+approach 0 as $(x,y)$ approaches $(x_0,y_0)$.
+\end{definition}
+
+This definition takes a bit of absorbing. Let's rewrite the central
+equation a bit:
+\begin{equation}\label{eq:f is differentiable}
+z=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)+f(x_0,y_0)+
+\epsilon_1\Delta x + \epsilon_2\Delta y.
+\end{equation}
+The first three terms on
+the right are the equation of the tangent plane, that is,
+$$f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)+f(x_0,y_0)$$
+ is the $z$-value
+of the point on the plane above $(x,y)$. 
+Equation~\ref{eq:f is differentiable} says that
+the $z$-value of a point on the surface is equal to the $z$-value of a
+point on the plane plus a ``little bit,'' namely $\epsilon_1\Delta x +
+\epsilon_2\Delta y$. As $(x,y)$ approaches $(x_0,y_0)$, both $\Delta
+x$ and $\Delta y$ approach 0, so this little bit $\epsilon_1\Delta x +
+\epsilon_2\Delta y$ also approaches 0, and the $z$-values on the
+surface and the plane get close to each other. But that by itself is
+not very interesting: since the surface and the plane both contain the
+point $(x_0,y_0,z_0)$, the $z$ values will approach $z_0$ and hence
+get close to each other whether the tangent plane is ``tangent'' to
+the surface or not. The extra condition in the definition says that as
+$(x,y)$ approaches $(x_0,y_0)$, the $\epsilon$ values approach
+0---this means that $\epsilon_1\Delta x + \epsilon_2\Delta y$
+approaches 0 much, much faster, because $\epsilon_1\Delta x$ is much
+smaller than either $\epsilon_1$ or $\Delta x$. It is this extra
+condition that makes the plane a tangent plane.
+
+We can see that the extra condition on $\epsilon_1$ and $\epsilon_2$
+is just what is needed if we look at partial derivatives. Suppose we
+temporarily fix $y=y_0$, so $\Delta y=0$. Then the equation from the
+definition becomes
+$$\Delta z=f_x(x_0,y_0)\Delta x+\epsilon_1\Delta x$$
+or
+$${\Delta z\over\Delta x}=f_x(x_0,y_0)+\epsilon_1.$$
+Now taking the limit of the two sides as $\Delta x$ approaches 0, the
+left side turns into the partial derivative of $z$ with respect to
+$x$ at $(x_0,y_0)$, or in other words $f_x(x_0,y_0)$, and the right
+side does the same, because as $(x,y)$ approaches $(x_0,y_0)$,
+$\epsilon_1$ approaches 0. Essentially the same calculation works for 
+$f_y$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:PartialDifferentiation}}
+
+\begin{enumialphparenastyle}
+
+\begin{ex}
+Find $f_x$ and $f_y$ where $\ds f(x,y)=\cos(x^2y)+y^3$.
+\begin{sol}
+$-2xy\sin(x^2y)$, $-x^2\sin(x^2y)+3y^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find $f_x$ and $f_y$ where $\ds f(x,y)={xy\over x^2+y}$.
+\begin{sol}
+$(y^2-x^2y)/(x^2+y)^2$, $x^3/(x^2+y)^2$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find $f_x$ and $f_y$ where $\ds f(x,y)=e^{x^2+y^2}$.
+\begin{sol}
+$2xe^{x^2+y^2}$, $2ye^{x^2+y^2}$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find $f_x$ and $f_y$ where $\ds f(x,y)=xy\ln(xy)$.
+\begin{sol}
+$y\ln(xy)+y$, $x\ln(xy)+x$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find $f_x$ and $f_y$ where $\ds f(x,y)=\sqrt{1-x^2-y^2}$.
+\begin{sol}
+$-x/\sqrt{1-x^2-y^2}$, $-y/\sqrt{1-x^2-y^2}$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find $f_x$ and $f_y$ where $\ds f(x,y)=x\tan(y)$.
+\begin{sol}
+$\tan y$, $x\sec^2 y$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find $f_x$ and $f_y$ where $\ds f(x,y)={1\over xy}$.
+\begin{sol}
+$-1/(x^2y)$, $-1/(xy^2)$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find an equation for the plane tangent to 
+$\ds 2x^2+3y^2-z^2=4$ at
+$(1,1,-1)$. 
+\begin{sol}
+$z=-2(x-1)-3(y-1)-1$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find an equation for the plane tangent to 
+$\ds f(x,y)=\sin(xy)$ at
+$(\pi,1/2,1)$. 
+\begin{sol}
+$z=1$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find an equation for the plane tangent to 
+$\ds f(x,y)=x^2+y^3$ at
+$(3,1,10)$. 
+\begin{sol}
+$z=6(x-3)+3(y-1)+10$
+\end{sol}
+\end{ex}
+
+\begin{ex}\label{ex:ln tan plane}
+Find an equation for the plane tangent to 
+$\ds f(x,y)=x\ln(xy)$ at
+$(2,1/2,0)$. 
+\begin{sol}
+$z=(x-2)+4(y-1/2)$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find an equation for the line normal to 
+$\ds x^2+4y^2=2z$ at
+$(2,1,4)$. 
+\begin{sol}
+${\bf r}(t)=\langle 2,1,4\rangle+t\langle 2,4,-1\rangle$
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Explain in your own words why, when taking a partial derivative
+of a function of multiple variables, we can treat the variables not
+being differentiated as constants.
+\end{ex}
+
+\begin{ex}
+Consider a differentiable function, $f(x,y)$.  Give physical
+  interpretations of the meanings of $f_x(a,b)$ and $f_y(a,b)$ as they
+  relate to the graph of $f$.
+\end{ex}
+
+\begin{ex}
+In much the same way that we used the tangent line to
+  approximate the value of a function from single variable calculus,
+  we can use the tangent plane to approximate a function from
+  multivariable calculus.  Consider the tangent plane found in
+  Exercise~\ref{ex:ln tan plane}. Use this plane to approximate
+  $f(1.98, 0.4)$.
+\end{ex}
+
+\begin{ex}
+	The volume of a cylinder is given by $V=\pi r^2 h$.
+	Suppose that the current values of $r$ and $h$ are $r=7$ cm and $h=3$ cm. Is
+	the volume more sensitive to a small change in radius or the same amount of
+	change in height? Why?
+	\begin{sol}
+		height
+	\end{sol}
+\end{ex}
+
+\begin{ex}
+Suppose that one of your colleagues has calculated the partial
+  derivatives of a given function, and reported to you that
+  $f_x(x,y)=2x+3y$ and that $f_y(x,y)=4x+6y$.  Do you believe them?
+  Why or why not?  If not, what answer might you have accepted for
+  $f_y$?
+\end{ex}
+
+\begin{ex}
+Suppose $f(t)$ and $g(t)$ are single variable differentiable
+  functions.  Find $\partial z/\partial x$ and
+  $\partial z/\partial y$ for each of the following two variable functions.
+\begin{enumerate}
+	\item $z=f(x)g(y)$
+	\item $z=f(xy)$
+	\item $z=f(x/y)$
+\end{enumerate}
+\end{ex}
+
+\end{enumialphparenastyle}

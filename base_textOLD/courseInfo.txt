@@ -1,0 +1,5 @@
+\newcommand{\institution}{LYRYX LEARNING}
+\newcommand{\courseCode}{MATHEMATICS}
+\newcommand{\courseName}{CALCULUS}
+\newcommand{\courseSession}{BASE TEXT}
+\newcommand{\courseSection}{Version 2015\,\, -- \,\,Revision A}

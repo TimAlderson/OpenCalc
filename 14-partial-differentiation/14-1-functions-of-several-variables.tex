@@ -1,0 +1,237 @@
+\section{Functions of Several Variables}\label{sec:FunctionsSeveralVariables}
+
+In single-variable calculus we were concerned with functions that map
+the real numbers $\mathbb{R}$ to $\mathbb{R}$, sometimes called ``real functions of
+one variable'', meaning the ``input'' is a single real number and the
+``output'' is likewise a single real number. Now we turn to functions of several
+variables, where several input variables are mapped to one value: functions
+$f\colon\mathbb{R}^n\to\mathbb{R}$. We will deal primarily with $n=2$ and to a lesser
+extent $n=3$; in fact many of the techniques we discuss can be applied
+to larger values of $n$ as well.
+
+A function $f\colon\mathbb{R}^2\to\mathbb{R}$ maps a pair of values $(x,y)$ to a
+single real number. The three-dimensional coordinate system we have
+already used is a convenient way to visualize such functions: above
+each point $(x,y)$ in the $x$-$y$ plane we graph the point $(x,y,z)$,
+where of course $z=f(x,y)$. 
+
+\begin{example}{Plane}{PlaneFunction}
+Describe the function $f(x,y)=3x+4y-5$.
+\end{example}
+\begin{solution}
+Writing this as 
+$z=3x+4y-5$ and then $3x+4y-z=5$ we recognize the equation of a
+plane. In the form $f(x,y)=3x+4y-5$ the emphasis has shifted: we now
+think of $x$ and $y$ as independent variables and $z$ as a variable
+dependent on them, but the geometry is unchanged.
+\end{solution}
+
+\begin{example}{Sphere}{SphereEquation}
+Describe the equation $x^2+y^2+z^2=4$.
+\end{example}
+\begin{solution}
+We have seen that $x^2+y^2+z^2=4$ represents a sphere of radius
+2. We cannot write this in the form $f(x,y)$, since for
+each $x$ and $y$ in the disk $x^2+y^2<4$ there are two corresponding
+points on the sphere. As with the equation of a circle, we can resolve
+this equation into two functions, $\ds f_1(x,y)=\sqrt{4-x^2-y^2}$ and 
+$\ds f_2(x,y)=-\sqrt{4-x^2-y^2}$, representing the upper and lower
+hemispheres, respectively. Each of these is an example of a function with a
+restricted domain: only certain values of $x$ and $y$ make sense
+(namely, those for which $x^2+y^2\le 4$) and the graphs of these
+functions are limited to a small region of the plane.
+\end{solution}
+
+\begin{example}{Square Root}{MultivariateSquareRootFunction}
+Describe the function $f(x,y)=\sqrt x+\sqrt y$.
+\end{example}
+\begin{solution}
+This function is defined only when
+both $x$ and $y$ are non-negative. When $y=0$ we get $f(x,y)=\sqrt x$,
+the familiar square root function in the $x$-$z$ plane, and when $x=0$
+we get the same curve in the $y$-$z$ plane. Generally speaking, we see
+that starting from $f(0,0)=0$ this function gets larger in every direction
+in roughly the same way that the square root function gets
+larger. For example, if we restrict attention to the line $x=y$, we
+get $f(x,y)=2\sqrt x$ and along the line $y=2x$ we have $f(x,y)=\sqrt
+x+\sqrt{2x}=(1+\sqrt2)\sqrt x$.
+\end{solution}
+
+\begin{figure}[H]
+%\texonly
+\centerline{
+\vbox{\beginpicture
+\normalgraphs
+%\ninepoint
+\setcoordinatesystem units <3truecm,3truecm>
+\setplotarea x from 0 to 1.1, y from 0 to 1.1
+\put {\hbox{\epsfxsize5cm\epsfbox{images/square_root.eps}}} at 0 0
+\endpicture}}
+%\endtexonly
+\caption{$f(x,y)=\sqrt{x}+\sqrt{y}$}
+\label{fig:double square root}
+\end{figure}
+
+A computer program that plots such surfaces can be very useful, as it
+is often difficult to get a good idea of what they look like. Still,
+it is valuable to be able to visualize relatively simple surfaces
+without such aids. As in the previous example, it is often a good idea
+to examine the function on restricted subsets of the plane, especially
+lines. It can also be useful to identify those points $(x,y)$ that
+share a common $z$-value.
+
+\begin{example}{Elliptic Paraboloid}{EllipticParaboloidFunction}
+Describe the graph of $f(x,y)=x^2+y^2$.
+\end{example}
+\begin{solution}
+When $x=0$ this becomes
+$f=y^2$, a parabola in the $y$-$z$ plane; when $y=0$ we get the
+``same'' parabola $f=x^2$ in the $x$-$z$ plane. 
+
+Finally, picking a value $z=k$, at what points does
+$f(x,y)=k$? This means $x^2+y^2=k$, which we recognize as the equation
+of a circle of radius $\sqrt k$. So the graph of $f(x,y)$ has
+parabolic cross-sections, and the same height everywhere on concentric
+circles with center at the origin. This fits with what we have already
+discovered. 
+\end{solution}
+
+\begin{figure}[H]
+%\texonly
+\centerline{
+\vbox{\beginpicture
+\normalgraphs
+%\ninepoint
+\setcoordinatesystem units <3truecm,3truecm>
+\setplotarea x from 0 to 1.1, y from 0 to 1.1
+\put {\hbox{\epsfxsize5cm\epsfbox{images/parabolic_bowl.eps}}} at 0 0
+\put {\hbox{\epsfxsize4cm\epsfbox{images/parabolic_level_curves.eps}}} at 2 0
+\endpicture}}
+%\endtexonly
+\caption{$f(x,y)=x^2 + y^2$}
+\label{fig:parabolic bowl}
+\end{figure}
+
+As in this example, the points $(x,y)$ such that $f(x,y)=k$ usually
+form a curve, called a \dfont{level curve} of the
+function. A graph of some level curves can give a good idea of the
+shape of the surface; it looks much like a topographic map of the
+surface. In Figure~\ref{fig:parabolic bowl} both the surface and
+its associated level curves are shown. Note that, as with a
+topographic map, the heights corresponding to the level curves are
+evenly spaced, so that where curves are closer together the surface is
+steeper.
+
+Functions $f\colon\mathbb{R}^n\to\mathbb{R}$ behave much like functions of two
+variables; we will on occasion discuss functions of three variables.
+The principal difficulty with such functions is visualizing them, as
+they do not ``fit'' in the three dimensions we are familiar with. For
+three variables there are various ways to interpret functions that
+make them easier to understand. For example, $f(x,y,z)$ could
+represent the temperature at the point $(x,y,z)$, or the pressure, or
+the strength of a magnetic field.  It remains useful to consider those
+points at which $f(x,y,z)=k$, where $k$ is some constant value. If
+$f(x,y,z)$ is temperature, the set of points $(x,y,z)$ such that
+$f(x,y,z)=k$ is the collection of points in space with temperature $k$;
+in general this is called a \dfont{level set}; for
+three variables, a level set is typically a surface, called a \dfont{level surface}.
+
+\begin{example}{Level Surfaces}{LevelSurfacesExample}
+Suppose the temperature at $(x,y,z)$ is 
+$T(x,y,z)=e^{-(x^2+y^2+z^2)}$. This function has a maximum value of 1
+at the origin, and tends to 0 in all directions. If $k$ is positive
+and at most 1,
+the set of points for which $T(x,y,z)=k$ is those points satisfying
+$x^2+y^2+z^2=-\ln k$, a sphere centered at the origin. The level
+surfaces are the concentric spheres centered at the origin.
+\end{example}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Opensolutionfile{solutions}[ex]
+\section*{Exercises for \ref{sec:FunctionsSeveralVariables}}
+
+\begin{enumialphparenastyle}
+
+\begin{ex}
+Let $f(x,y)=(x-y)^2$. 
+Determine the equations and shapes of the cross-sections when
+$x=0$, $y=0$, $x=y$, and describe the level curves.
+Use a three-dimensional graphing tool to graph the surface.
+\begin{sol}
+$z=y^2$, $z=x^2$, $z=0$, lines of slope 1
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Let $f(x,y)=|x|+|y|$. 
+Determine the equations and shapes of the cross-sections when
+$x=0$, $y=0$, $x=y$, and describe the level curves.
+Use a three-dimensional graphing tool to graph the surface.
+\begin{sol}
+$z=|y|$, $z=|x|$, $z=2|x|$, diamonds
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Let $f(x,y)=e^{-(x^2+y^2)}\sin(x^2+y^2)$. 
+Determine the equations and shapes of the cross-sections when
+$x=0$, $y=0$, $x=y$, and describe the level curves.
+Use a three-dimensional graphing tool to graph the surface.
+\begin{sol}
+$z=e^{-y^2}\sin(y^2)$, $z=e^{-x^2}\sin(x^2)$, 
+$z=e^{-2x^2}\sin(2x^2)$, circles
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Let $f(x,y)=\sin(x-y)$. 
+Determine the equations and shapes of the cross-sections when
+$x=0$, $y=0$, $x=y$, and describe the level curves.
+Use a three-dimensional graphing tool to graph the surface.
+\begin{sol}
+$z=-\sin(y)$, $z=\sin(x)$, 
+$z=0$, lines of slope 1
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Let $f(x,y)=(x^2-y^2)^2$. 
+Determine the equations and shapes of the cross-sections when
+$x=0$, $y=0$, $x=y$, and describe the level curves.
+Use a three-dimensional graphing tool to graph the surface.
+\begin{sol}
+$z=y^4$, $z=x^4$, 
+$z=0$, hyperbolas
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Find the domain of each of the following functions of two variables:
+\begin{enumerate}
+	\item	$\ds\sqrt{9-x^2}+\sqrt{y^2-4}$
+	\item	$\arcsin(x^2+y^2-2)$
+	\item	$\ds\sqrt{16-x^2-4y^2}$
+\end{enumerate}
+\begin{sol}
+\begin{enumerate}
+	\item	$\{(x,y)\mid |x|\le3\ \hbox{and}\ |y|\ge2\}$
+	\item	$\{(x,y)\mid 1\le x^2+y^2\le3\}$
+	\item	$\{(x,y)\mid x^2+4y^2\le16\}$
+\end{enumerate}
+\end{sol}
+\end{ex}
+
+\begin{ex}
+Below are two sets of level curves.  One is for a cone, one
+is for a paraboloid.  Which is which? Explain.
+
+%\texonly
+\nobreak
+\hbox to \hsize{\hfill\epsfxsize4cm\epsfbox{images/parabolic_level_curves_2.eps}
+\hfill\epsfxsize4cm\epsfbox{images/conical_level_curves.eps}\hfill}
+%\endtexonly
+%\htmlfigure{Partial_Differentiation_two_level_curve_graphs.html}
+\end{ex}
+
+\end{enumialphparenastyle}
