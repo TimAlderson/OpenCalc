@@ -1,0 +1,129 @@
+% % % % % % % % % % % % %
+% % % % % % % %
+% %
+% % Style for Calculus textbook
+% %
+% % % % % % % %
+% % % % % % % % % % % % %
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C O L O U R S ! ! ! ! ! ! !
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %
+
+% Title page colours
+\definecolor{titletextcolour}{HTML}{027878}
+\definecolor{subtitletextcolour}{HTML}{F8E5C2}
+\definecolor{cctextcolour}{HTML}{F8E5C2}
+\definecolor{titlemainbgcolour}{HTML}{E2970A}
+\definecolor{titlemainboxcolour}{HTML}{F1AF34}
+\definecolor{sampletextcolour}{HTML}{B18B45}
+
+% LSCS page text colour
+\definecolor{lscshdrboxcolour}{HTML}{E2970A}
+\definecolor{lscstextcolour}{HTML}{027878}
+
+% Chapter, Section & Subsection titles
+\definecolor{chaptertitlecolour}{HTML}{801638}
+\definecolor{sectiontitlecolour}{HTML}{C22326}
+\definecolor{subsectiontitlecolour}{HTML}{027878}
+\definecolor{subsubsectiontitlecolour}{HTML}{F5AE2A}
+
+% Example, Definition, Formula & Theorem box colours
+\definecolor{theoremcolour}{HTML}{801638}
+\definecolor{definitioncolour}{HTML}{C22326}
+\definecolor{examplecolour}{HTML}{027878}
+\definecolor{formulacolour}{HTML}{F37338}
+
+% %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% . . . End of Colours . . . 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Boxes and environments for Definitions, Examples, Formulas & Theorems
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% % Counters for Theorems, Examples, Definitions & Corollaries. Independent counters so that each type of environment starts at 1 in a new chapter.
+\newcounter{TheoremCounter}[chapter]
+\def\theTheoremCounter{\thechapter.\arabic{TheoremCounter}}
+
+\newcounter{ExampleCounter}[chapter]
+\def\theExampleCounter{\thechapter.\arabic{ExampleCounter}}
+
+\newcounter{DefinitionCounter}[chapter]
+\def\theDefinitionCounter{\thechapter.\arabic{DefinitionCounter}}
+
+\newcounter{CorollaryCounter}[chapter]
+\def\theCorollaryCounter{\thechapter.\arabic{CorollaryCounter}}
+
+% Style and setup of Definition, Theorem and Example environments
+\tcbset{
+	defstyle/.style={fonttitle=\bfseries\upshape, fontupper=\slshape,
+		colback=definitioncolour!5,colframe=definitioncolour,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm},
+	theostyle/.style={fonttitle=\bfseries\upshape, fontupper=\slshape,
+		colback=chaptertitlecolour!5,colframe=chaptertitlecolour,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm},
+	examstyle/.style={fonttitle=\bfseries\upshape, fontupper=\slshape,
+		colback=examplecolour!5,colframe=examplecolour,breakable,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm}
+}
+\tcbmaketheorem{definition}{Definition}{defstyle}{DefinitionCounter}{def}
+\tcbmaketheorem{theorem}{Theorem}{theostyle}{TheoremCounter}{thm}
+\tcbmaketheorem{corollary}{Corollary}{theostyle}{CorollaryCounter}{cor}
+\tcbmaketheorem{example}{Example}{examstyle}{ExampleCounter}{exa}
+
+% Boxed environment for special formulas. These boxes are not numbered (unlike Examples, Theorems, Definitions & Corollaries).
+\def\formulabox[#1]{\begin{tcolorbox}[colback=formulacolour!5!white,colframe=formulacolour,fonttitle=\bfseries,title=#1,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm]}
+	\def\endformulabox{\end{tcolorbox}}
+
+% This bit of code allows the clubsuit ♣ in the Solution & Proof environment to be on the bottom right of the page
+\newcommand\xqed[1]{%
+	\leavevmode\unskip\penalty9999 \hbox{}\nobreak\hfill
+	\quad\hbox{#1}}
+
+% Solution environment for Examples
+\def\solution{\par\noindent{\green{\bf{\underline{Solution.}}}} \ignorespaces}
+\def\endsolution{\green{\bf\xqed{$\clubsuit$}}\par\medskip}
+
+% Proof environment for Theorems
+\def\proof{\par\noindent{\red{\bf{\underline{Proof.}}}} \ignorespaces}
+\def\endproof{\red{\bf\xqed{$\clubsuit$}}\par\medskip}
+
+% Proof environment for Formula Boxes (differs from Theorem Proof environments only in the font and clubsuit colour)
+\def\formulaproof{\par\noindent{\ffont{\bf{\underline{Proof.}}}} \ignorespaces}
+\def\endformulaproof{\ffont{\bf\xqed{$\clubsuit$}}\par\medskip}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Special commands and shorthand commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Standard LateX commands do not exist for hyperbolic secant and cosecant
+\def\sech{{\rm sech}} 
+\def\csch{{\rm csch}}
+
+% For quotations around fractions (used in l'hopitals rule)
+\newsavebox{\mathbox}\newsavebox{\mathquote}
+\newcommand{\mathquotes}[1]{% \mathquotes{<stuff>}
+	\savebox{\mathquote}{\text{`` }}% Save quotes
+	\savebox{\mathbox}{$\displaystyle #1$}% Save <stuff>
+	\raisebox{\dimexpr\ht\mathbox-\ht\mathquote\relax}{``}#1\raisebox{\dimexpr\ht\mathbox-\ht\mathquote\relax}{''}
+}
+
+% Bold coloured text used in the respective environments (OLD, will be phased out)
+\def\red#1{{{\textcolor{theoremcolour}{#1}}}}
+\def\blue#1{{{\textcolor{definitioncolour}{#1}}}}
+\def\green#1{{{\textcolor{examplecolour}{#1}}}}
+
+% Bold coloured text used in the respective environments (NEW, will be phased in)
+\def\thmfont#1{{{\bf{\textcolor{theoremcolour}{#1}}}}}
+\def\deffont#1{{{\bf{\textcolor{definitioncolour}{#1}}}}}
+\def\exfont#1{{{\bf{\textcolor{examplecolour}{#1}}}}}
+\def\ffont#1{{{\bf{\textcolor{formulacolour}{#1}}}}}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

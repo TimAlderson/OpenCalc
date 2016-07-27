@@ -1,0 +1,18 @@
+SETUP:
+Both directories "text" and "styles" should at the same directory level.
+
+To compile adaptations:
+
+1: Edit courseInfo.txt
+Contains specific course and institution information to be displayed on title page
+
+2: Edit courseSetup.tex
+Contains specific course content for the book:
+	 remove content by commenting with '%' at the beginning of line
+	 reorder material
+
+To run, type 'make'
+
+To clean directory and remove unnecessary files after compiling, type 'make clean'
+
+There are other options that can been used through the Makefile for special versions of the text.

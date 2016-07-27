@@ -1,0 +1,33 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Makes page on left
+\cleartoleftpage
+
+%%%Background colour
+\newpagecolor{titlemainbgcolour}
+\thispagestyle{empty}
+
+{\tikz[overlay,remember picture]
+	\fill[lyryxcolour]
+	([yshift=3cm]current page.north west) rectangle 
+	([yshift=-1.55cm] current page.north east);}
+\begin{tikzpicture}[overlay,remember picture,scale=0.5]
+% Main Lyryx logo with website address (on back cover)
+\node[white] at ([xshift=8.5in,yshift=2in]current page.west) {\Huge UNB Saint John};
+% Lyryx icons in banner of back cover
+% Left icon with 'adapted open text'
+%\node at ([xshift=4in,yshift=6.45in]current page.west) {\includegraphics[scale=.22]{images/component-book.eps}};
+\node[componentnode, white] at ([xshift=3.86in,yshift=10.25in]current page.west) {\Huge ADAPTED\\OPEN TEXT};
+% Mid-left icon with 'formative online assessment'
+%\node at ([xshift=7in,yshift=11.45in]current page.west) {\includegraphics[scale=.22]{images/component-assess.eps}};
+%\node[componentnode] at ([xshift=7in,yshift=10.25in]current page.west) {FORMATIVE ONLINE\\ASSESSMENT};
+%% Mid-right icon with 'course supplements'
+%\node at ([xshift=10in,yshift=11.45in]current page.west) {\includegraphics[scale=.22]{images/component-supplement.eps}};
+%\node[componentnode] at ([xshift=10in,yshift=10.25in]current page.west) {COURSE\\SUPPLEMENTS};
+%% Right icon with 'course logistics & support'
+%\node at ([xshift=13in,yshift=11.45in]current page.west) {\includegraphics[scale=.22]{images/component-support.eps}};
+%\node[componentnode] at ([xshift=13in,yshift=10.25in]current page.west) {COURSE LOGISTICS\\\& SUPPORT};
+\end{tikzpicture}
+
+\afterpage{\restorepagecolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	

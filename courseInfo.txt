@@ -1,0 +1,5 @@
+\newcommand{\institution}{YOUR INSTITUTION}
+\newcommand{\courseCode}{CODE}
+\newcommand{\courseName}{YOUR CALCULUS I \& II COURSE}
+\newcommand{\courseSession}{SESSION}
+\newcommand{\courseSection}{SECTION}
