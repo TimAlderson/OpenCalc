@@ -3,144 +3,207 @@
 \BOOKMARK [0][-]{chapter.1}{Review}{}% 3
 \BOOKMARK [1][-]{section.1.1}{Algebra}{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.1.1}{Sets and Number Systems}{section.1.1}% 5
-\BOOKMARK [2][-]{subsection.1.1.2}{Law of Exponents}{section.1.1}% 6
-\BOOKMARK [2][-]{subsection.1.1.3}{The Quadratic Formula and Completing the Square}{section.1.1}% 7
-\BOOKMARK [2][-]{subsection.1.1.4}{Inequalities, Intervals and Solving Basic Inequalities}{section.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.2}{Inequalities, Intervals and Solving Basic Inequalities}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.3}{Law of Exponents}{section.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.4}{The Quadratic Formula and Completing the Square}{section.1.1}% 8
 \BOOKMARK [2][-]{subsection.1.1.5}{The Absolute Value}{section.1.1}% 9
 \BOOKMARK [2][-]{subsection.1.1.6}{Solving Inequalities that Contain Absolute Values}{section.1.1}% 10
 \BOOKMARK [1][-]{section.1.2}{Analytic Geometry}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.2.1}{Lines}{section.1.2}% 12
-\BOOKMARK [2][-]{subsection.1.2.2}{Distance between Two Points and Midpoints}{section.1.2}% 13
-\BOOKMARK [2][-]{subsection.1.2.3}{Conics}{section.1.2}% 14
-\BOOKMARK [1][-]{section.1.3}{Trigonometry}{chapter.1}% 15
-\BOOKMARK [2][-]{subsection.1.3.1}{Angles and Sectors of Circles}{section.1.3}% 16
-\BOOKMARK [2][-]{subsection.1.3.2}{Trigonometric Functions}{section.1.3}% 17
-\BOOKMARK [2][-]{subsection.1.3.3}{Computing Exact Trigonometric Ratios}{section.1.3}% 18
-\BOOKMARK [2][-]{subsection.1.3.4}{Graphs of Trigonometric Functions}{section.1.3}% 19
-\BOOKMARK [2][-]{subsection.1.3.5}{Trigonometric Identities}{section.1.3}% 20
-\BOOKMARK [1][-]{section.1.4}{Additional Exercises}{chapter.1}% 21
-\BOOKMARK [0][-]{chapter.2}{Functions}{}% 22
-\BOOKMARK [1][-]{section.2.1}{What is a Function?}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.2}{Transformations and Compositions}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.1}{Tranformations}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.2}{Combining Two Functions}{section.2.2}% 26
-\BOOKMARK [1][-]{section.2.3}{Exponential Functions}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.4}{Inverse Functions}{chapter.2}% 28
-\BOOKMARK [1][-]{section.2.5}{Logarithms}{chapter.2}% 29
-\BOOKMARK [1][-]{section.2.6}{Inverse Trigonometric Functions}{chapter.2}% 30
-\BOOKMARK [1][-]{section.2.7}{Hyperbolic Functions}{chapter.2}% 31
-\BOOKMARK [1][-]{section.2.8}{Additional Exercises}{chapter.2}% 32
-\BOOKMARK [0][-]{chapter.3}{Limits}{}% 33
-\BOOKMARK [1][-]{section.3.1}{The tangent problem}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.2}{The Limit}{chapter.3}% 35
-\BOOKMARK [2][-]{subsection.3.2.1}{Limits of Difference Quotients}{section.3.2}% 36
-\BOOKMARK [1][-]{section.3.3}{Precise Definition of a Limit}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.4}{Computing Limits: Limit Laws}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.5}{The Squeeze Theorem And Some Special Limits}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.6}{Continuity}{chapter.3}% 40
-\BOOKMARK [1][-]{section.3.7}{Infinite Limits and Limits at Infinity}{chapter.3}% 41
-\BOOKMARK [2][-]{subsection.3.7.1}{Vertical Asymptotes}{section.3.7}% 42
-\BOOKMARK [2][-]{subsection.3.7.2}{Horizontal Asymptotes}{section.3.7}% 43
-\BOOKMARK [2][-]{subsection.3.7.3}{Slant Asymptotes}{section.3.7}% 44
-\BOOKMARK [2][-]{subsection.3.7.4}{End Behaviour and Comparative Growth Rates}{section.3.7}% 45
-\BOOKMARK [0][-]{chapter.4}{Derivatives}{}% 46
-\BOOKMARK [1][-]{section.4.1}{The Rate of Change of a Function}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.2}{The Derivative Function}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.2.1}{Differentiable}{section.4.2}% 49
-\BOOKMARK [2][-]{subsection.4.2.2}{Second and Other Derivatives}{section.4.2}% 50
-\BOOKMARK [2][-]{subsection.4.2.3}{Velocities}{section.4.2}% 51
-\BOOKMARK [1][-]{section.4.3}{Derivative Rules}{chapter.4}% 52
-\BOOKMARK [1][-]{section.4.4}{Derivative Rules for Trigonometric Functions}{chapter.4}% 53
-\BOOKMARK [1][-]{section.4.5}{The Chain Rule}{chapter.4}% 54
-\BOOKMARK [1][-]{section.4.6}{Derivatives of Exponential \046 Logarithmic Functions}{chapter.4}% 55
-\BOOKMARK [1][-]{section.4.7}{Implicit Differentiation}{chapter.4}% 56
-\BOOKMARK [1][-]{section.4.8}{Derivatives of Inverse Functions}{chapter.4}% 57
-\BOOKMARK [2][-]{subsection.4.8.1}{Derivatives of Inverse Trigonometric Functions}{section.4.8}% 58
-\BOOKMARK [2][-]{subsection.4.8.2}{Glossary of Derivatives of Elementary Functions}{section.4.8}% 59
-\BOOKMARK [1][-]{section.4.9}{Additional Exercises}{chapter.4}% 60
-\BOOKMARK [0][-]{chapter.5}{Applications of Derivatives}{}% 61
-\BOOKMARK [1][-]{section.5.1}{Related Rates}{chapter.5}% 62
-\BOOKMARK [1][-]{section.5.2}{Extrema of a Function}{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.2.1}{Local Extrema}{section.5.2}% 64
-\BOOKMARK [2][-]{subsection.5.2.2}{Absolute Extrema}{section.5.2}% 65
-\BOOKMARK [1][-]{section.5.3}{The Mean Value Theorem}{chapter.5}% 66
-\BOOKMARK [1][-]{section.5.4}{Linear and Higher Order Approximations}{chapter.5}% 67
-\BOOKMARK [2][-]{subsection.5.4.1}{Linear Approximations}{section.5.4}% 68
-\BOOKMARK [2][-]{subsection.5.4.2}{Differentials}{section.5.4}% 69
-\BOOKMARK [2][-]{subsection.5.4.3}{Taylor Polynomials}{section.5.4}% 70
-\BOOKMARK [2][-]{subsection.5.4.4}{Newton's Method}{section.5.4}% 71
-\BOOKMARK [1][-]{section.5.5}{L'H\364pital's Rule}{chapter.5}% 72
-\BOOKMARK [1][-]{section.5.6}{Curve Sketching}{chapter.5}% 73
-\BOOKMARK [2][-]{subsection.5.6.1}{Intervals of Increase/Decrease, and the First Derivative Test}{section.5.6}% 74
-\BOOKMARK [2][-]{subsection.5.6.2}{The Second Derivative Test}{section.5.6}% 75
-\BOOKMARK [2][-]{subsection.5.6.3}{Concavity and Inflection Points}{section.5.6}% 76
-\BOOKMARK [2][-]{subsection.5.6.4}{Asymptotes and Other Things to Look For}{section.5.6}% 77
-\BOOKMARK [2][-]{subsection.5.6.5}{Summary of Curve Sketching}{section.5.6}% 78
-\BOOKMARK [1][-]{section.5.7}{Optimization Problems}{chapter.5}% 79
-\BOOKMARK [1][-]{section.5.8}{Antiderivatives and Indefinite Integration}{chapter.5}% 80
-\BOOKMARK [0][-]{chapter.6}{Integration}{}% 81
-\BOOKMARK [1][-]{section.6.1}{Antiderivatives and Indefinite Integration}{chapter.6}% 82
-\BOOKMARK [1][-]{section.6.2}{Displacement and Area}{chapter.6}% 83
-\BOOKMARK [2][-]{subsection.6.2.1}{Sigma Notation}{section.6.2}% 84
-\BOOKMARK [2][-]{subsection.6.2.2}{Approximating the Area of a Plane Region}{section.6.2}% 85
-\BOOKMARK [2][-]{subsection.6.2.3}{Riemann Sums}{section.6.2}% 86
-\BOOKMARK [2][-]{subsection.6.2.4}{The Definite Integral}{section.6.2}% 87
-\BOOKMARK [1][-]{section.6.3}{The Fundamental Theorem of Calculus}{chapter.6}% 88
-\BOOKMARK [2][-]{subsection.6.3.1}{The net change theorem}{section.6.3}% 89
-\BOOKMARK [2][-]{subsection.6.3.2}{Functions defined by integrals}{section.6.3}% 90
-\BOOKMARK [2][-]{subsection.6.3.3}{FTC 2}{section.6.3}% 91
-\BOOKMARK [2][-]{subsection.6.3.4}{More on Differentiating Integral Functions}{section.6.3}% 92
-\BOOKMARK [0][-]{chapter.7}{Techniques of Integration}{}% 93
-\BOOKMARK [1][-]{section.7.1}{Substitution Rule}{chapter.7}% 94
-\BOOKMARK [2][-]{subsection.7.1.1}{Integrals Involving Trigonometric Functions}{section.7.1}% 95
-\BOOKMARK [2][-]{subsection.7.1.2}{ Simplifying the Integrand}{section.7.1}% 96
-\BOOKMARK [2][-]{subsection.7.1.3}{Substitution and Inverse Trigonometric Functions}{section.7.1}% 97
-\BOOKMARK [2][-]{subsection.7.1.4}{Substitution and Definite Integrals}{section.7.1}% 98
-\BOOKMARK [1][-]{section.7.2}{Powers of Trigonometric Functions}{chapter.7}% 99
-\BOOKMARK [1][-]{section.7.3}{Trigonometric Substitutions}{chapter.7}% 100
-\BOOKMARK [1][-]{section.7.4}{Integration by Parts}{chapter.7}% 101
-\BOOKMARK [1][-]{section.7.5}{Rational Functions and Partial Fractions}{chapter.7}% 102
-\BOOKMARK [2][-]{subsection.7.5.1}{Partial Fraction Decomposition}{section.7.5}% 103
-\BOOKMARK [1][-]{section.7.6}{Numerical Integration}{chapter.7}% 104
-\BOOKMARK [2][-]{subsection.7.6.1}{The Trapezoidal Rule}{section.7.6}% 105
-\BOOKMARK [2][-]{subsection.7.6.2}{ Simpson's Rule}{section.7.6}% 106
-\BOOKMARK [2][-]{subsection.7.6.3}{Summary and Error Analysis}{section.7.6}% 107
-\BOOKMARK [1][-]{section.7.7}{Improper Integrals}{chapter.7}% 108
-\BOOKMARK [1][-]{section.7.8}{Hyperbolic Functions Revisited}{chapter.7}% 109
-\BOOKMARK [1][-]{section.7.9}{Additional exercises}{chapter.7}% 110
-\BOOKMARK [0][-]{chapter.8}{Applications of Integration}{}% 111
-\BOOKMARK [1][-]{section.8.1}{Distance, Velocity, Acceleration}{chapter.8}% 112
-\BOOKMARK [1][-]{section.8.2}{Area Between Curves}{chapter.8}% 113
-\BOOKMARK [1][-]{section.8.3}{Volume}{chapter.8}% 114
-\BOOKMARK [1][-]{section.8.4}{The Mean Value Theorem for Integrals and Average Value}{chapter.8}% 115
-\BOOKMARK [1][-]{section.8.5}{Work}{chapter.8}% 116
-\BOOKMARK [1][-]{section.8.6}{Center of Mass}{chapter.8}% 117
-\BOOKMARK [1][-]{section.8.7}{Arc Length}{chapter.8}% 118
-\BOOKMARK [1][-]{section.8.8}{Surface Area}{chapter.8}% 119
-\BOOKMARK [0][-]{chapter.9}{Sequences and Series}{}% 120
-\BOOKMARK [1][-]{section.9.1}{Sequences}{chapter.9}% 121
-\BOOKMARK [1][-]{section.9.2}{Series}{chapter.9}% 122
-\BOOKMARK [1][-]{section.9.3}{The Integral Test}{chapter.9}% 123
-\BOOKMARK [1][-]{section.9.4}{Alternating Series}{chapter.9}% 124
-\BOOKMARK [1][-]{section.9.5}{Comparison Tests}{chapter.9}% 125
-\BOOKMARK [1][-]{section.9.6}{Absolute Convergence}{chapter.9}% 126
-\BOOKMARK [1][-]{section.9.7}{The Ratio and Root Tests}{chapter.9}% 127
-\BOOKMARK [1][-]{section.9.8}{Power Series}{chapter.9}% 128
-\BOOKMARK [1][-]{section.9.9}{Calculus with Power Series}{chapter.9}% 129
-\BOOKMARK [1][-]{section.9.10}{Taylor Polynomials}{chapter.9}% 130
-\BOOKMARK [2][-]{subsection.9.10.1}{Taylor's Theorem}{section.9.10}% 131
-\BOOKMARK [1][-]{section.9.11}{Taylor Series}{chapter.9}% 132
-\BOOKMARK [0][-]{chapter.10}{Differential Equations}{}% 133
-\BOOKMARK [1][-]{section.10.1}{First Order Differential Equations}{chapter.10}% 134
-\BOOKMARK [2][-]{subsection.10.1.1}{Separable Differential Equations}{section.10.1}% 135
-\BOOKMARK [2][-]{subsection.10.1.2}{Exponential Growth and Decay}{section.10.1}% 136
-\BOOKMARK [1][-]{section.10.2}{First Order Homogeneous Linear Equations}{chapter.10}% 137
-\BOOKMARK [1][-]{section.10.3}{First Order Linear Equations}{chapter.10}% 138
-\BOOKMARK [1][-]{section.10.4}{Approximation}{chapter.10}% 139
-\BOOKMARK [1][-]{section.10.5}{Second Order Homogeneous Equations}{chapter.10}% 140
-\BOOKMARK [1][-]{section.10.6}{Second Order Linear Equations - Method of Undetermined Coefficients}{chapter.10}% 141
-\BOOKMARK [1][-]{section.10.7}{Second Order Linear Equations - Variation of Parameters}{chapter.10}% 142
-\BOOKMARK [0][-]{chapter*.195}{Selected Exercise Answers}{}% 143
-\BOOKMARK [0][-]{chapter*.196}{Inside Cover Material}{}% 144
-\BOOKMARK [0][-]{chapter*.197}{Index}{}% 145
-\BOOKMARK [0][-]{chapter*.197}{Index}{}% 146
+\BOOKMARK [2][-]{subsection.1.2.1}{Cartesian Coordinate Plane}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.2}{Relations}{section.1.2}% 13
+\BOOKMARK [2][-]{subsection.1.2.3}{Lines}{section.1.2}% 14
+\BOOKMARK [2][-]{subsection.1.2.4}{Distance between Two Points and Midpoints}{section.1.2}% 15
+\BOOKMARK [2][-]{subsection.1.2.5}{Conics}{section.1.2}% 16
+\BOOKMARK [1][-]{section.1.3}{Trigonometry}{chapter.1}% 17
+\BOOKMARK [2][-]{subsection.1.3.1}{Angles and Sectors of Circles}{section.1.3}% 18
+\BOOKMARK [2][-]{subsection.1.3.2}{Trigonometric Functions}{section.1.3}% 19
+\BOOKMARK [2][-]{subsection.1.3.3}{Computing Exact Trigonometric Ratios}{section.1.3}% 20
+\BOOKMARK [2][-]{subsection.1.3.4}{Graphs of Trigonometric Functions}{section.1.3}% 21
+\BOOKMARK [2][-]{subsection.1.3.5}{Trigonometric Identities}{section.1.3}% 22
+\BOOKMARK [1][-]{section.1.4}{Additional Exercises}{chapter.1}% 23
+\BOOKMARK [0][-]{chapter.2}{Functions}{}% 24
+\BOOKMARK [1][-]{section.2.1}{Introduction to Functions}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.1.1}{Function Notation and Domain}{section.2.1}% 26
+\BOOKMARK [2][-]{subsection.2.1.2}{Modeling with Functions}{section.2.1}% 27
+\BOOKMARK [1][-]{section.2.2}{Function Arithmetic}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.3}{Composite Functions}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.4}{Graphs of Functions}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.4.1}{Functional Symmetry}{section.2.4}% 31
+\BOOKMARK [2][-]{subsection.2.4.2}{General Function Behaviour}{section.2.4}% 32
+\BOOKMARK [1][-]{section.2.5}{Transformations}{chapter.2}% 33
+\BOOKMARK [1][-]{section.2.6}{Linear, Quadratic, and Polynomial Functions}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.6.1}{Linear Functions}{section.2.6}% 35
+\BOOKMARK [2][-]{subsection.2.6.2}{Quadratic Functions}{section.2.6}% 36
+\BOOKMARK [2][-]{subsection.2.6.3}{Polynomial Functions}{section.2.6}% 37
+\BOOKMARK [1][-]{section.2.7}{Exponential Functions}{chapter.2}% 38
+\BOOKMARK [1][-]{section.2.8}{Inverse Functions}{chapter.2}% 39
+\BOOKMARK [1][-]{section.2.9}{Logarithms}{chapter.2}% 40
+\BOOKMARK [1][-]{section.2.10}{Inverse Trigonometric Functions}{chapter.2}% 41
+\BOOKMARK [1][-]{section.2.11}{Hyperbolic Functions}{chapter.2}% 42
+\BOOKMARK [1][-]{section.2.12}{Additional Exercises}{chapter.2}% 43
+\BOOKMARK [0][-]{chapter.3}{Limits}{}% 44
+\BOOKMARK [1][-]{section.3.1}{The tangent problem}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.2}{The Limit}{chapter.3}% 46
+\BOOKMARK [2][-]{subsection.3.2.1}{Limits of Difference Quotients}{section.3.2}% 47
+\BOOKMARK [1][-]{section.3.3}{Precise Definition of a Limit}{chapter.3}% 48
+\BOOKMARK [1][-]{section.3.4}{Computing Limits: Graphically}{chapter.3}% 49
+\BOOKMARK [1][-]{section.3.5}{Computing Limits: Limit Laws}{chapter.3}% 50
+\BOOKMARK [1][-]{section.3.6}{The Squeeze Theorem And Some Special Limits}{chapter.3}% 51
+\BOOKMARK [1][-]{section.3.7}{Continuity}{chapter.3}% 52
+\BOOKMARK [1][-]{section.3.8}{Infinite Limits and Limits at Infinity}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.8.1}{Vertical Asymptotes}{section.3.8}% 54
+\BOOKMARK [2][-]{subsection.3.8.2}{Horizontal Asymptotes}{section.3.8}% 55
+\BOOKMARK [2][-]{subsection.3.8.3}{Slant Asymptotes}{section.3.8}% 56
+\BOOKMARK [2][-]{subsection.3.8.4}{End Behaviour and Comparative Growth Rates}{section.3.8}% 57
+\BOOKMARK [0][-]{chapter.4}{Derivatives}{}% 58
+\BOOKMARK [1][-]{section.4.1}{The Rate of Change of a Function}{chapter.4}% 59
+\BOOKMARK [1][-]{section.4.2}{The Derivative Function}{chapter.4}% 60
+\BOOKMARK [2][-]{subsection.4.2.1}{Differentiable}{section.4.2}% 61
+\BOOKMARK [2][-]{subsection.4.2.2}{Second and Other Derivatives}{section.4.2}% 62
+\BOOKMARK [2][-]{subsection.4.2.3}{Velocities}{section.4.2}% 63
+\BOOKMARK [1][-]{section.4.3}{Derivative Rules}{chapter.4}% 64
+\BOOKMARK [1][-]{section.4.4}{Derivative Rules for Trigonometric Functions}{chapter.4}% 65
+\BOOKMARK [1][-]{section.4.5}{The Chain Rule}{chapter.4}% 66
+\BOOKMARK [1][-]{section.4.6}{Derivatives of Exponential \046 Logarithmic Functions}{chapter.4}% 67
+\BOOKMARK [1][-]{section.4.7}{Implicit Differentiation}{chapter.4}% 68
+\BOOKMARK [1][-]{section.4.8}{Derivatives of Inverse Functions}{chapter.4}% 69
+\BOOKMARK [2][-]{subsection.4.8.1}{Derivatives of Inverse Trigonometric Functions}{section.4.8}% 70
+\BOOKMARK [2][-]{subsection.4.8.2}{Glossary of Derivatives of Elementary Functions}{section.4.8}% 71
+\BOOKMARK [1][-]{section.4.9}{Hyperbolic Functions}{chapter.4}% 72
+\BOOKMARK [1][-]{section.4.10}{Additional Exercises}{chapter.4}% 73
+\BOOKMARK [0][-]{chapter.5}{Applications of Derivatives}{}% 74
+\BOOKMARK [1][-]{section.5.1}{Related Rates}{chapter.5}% 75
+\BOOKMARK [1][-]{section.5.2}{Extrema of a Function}{chapter.5}% 76
+\BOOKMARK [2][-]{subsection.5.2.1}{Local Extrema}{section.5.2}% 77
+\BOOKMARK [2][-]{subsection.5.2.2}{Absolute Extrema}{section.5.2}% 78
+\BOOKMARK [1][-]{section.5.3}{The Mean Value Theorem}{chapter.5}% 79
+\BOOKMARK [1][-]{section.5.4}{Linear and Higher Order Approximations}{chapter.5}% 80
+\BOOKMARK [2][-]{subsection.5.4.1}{Linear Approximations}{section.5.4}% 81
+\BOOKMARK [2][-]{subsection.5.4.2}{Differentials}{section.5.4}% 82
+\BOOKMARK [2][-]{subsection.5.4.3}{Taylor Polynomials}{section.5.4}% 83
+\BOOKMARK [2][-]{subsection.5.4.4}{Newton's Method}{section.5.4}% 84
+\BOOKMARK [1][-]{section.5.5}{L'H\364pital's Rule}{chapter.5}% 85
+\BOOKMARK [1][-]{section.5.6}{Curve Sketching}{chapter.5}% 86
+\BOOKMARK [2][-]{subsection.5.6.1}{Intervals of Increase/Decrease, and the First Derivative Test}{section.5.6}% 87
+\BOOKMARK [2][-]{subsection.5.6.2}{The Second Derivative Test}{section.5.6}% 88
+\BOOKMARK [2][-]{subsection.5.6.3}{Concavity and Inflection Points}{section.5.6}% 89
+\BOOKMARK [2][-]{subsection.5.6.4}{Asymptotes and Other Things to Look For}{section.5.6}% 90
+\BOOKMARK [2][-]{subsection.5.6.5}{Summary of Curve Sketching}{section.5.6}% 91
+\BOOKMARK [1][-]{section.5.7}{Optimization Problems}{chapter.5}% 92
+\BOOKMARK [1][-]{section.5.8}{Antiderivatives and Indefinite Integration}{chapter.5}% 93
+\BOOKMARK [0][-]{chapter.6}{Integration}{}% 94
+\BOOKMARK [1][-]{section.6.1}{Antiderivatives and Indefinite Integration}{chapter.6}% 95
+\BOOKMARK [1][-]{section.6.2}{Displacement and Area}{chapter.6}% 96
+\BOOKMARK [2][-]{subsection.6.2.1}{Sigma Notation}{section.6.2}% 97
+\BOOKMARK [2][-]{subsection.6.2.2}{Approximating the Area of a Plane Region}{section.6.2}% 98
+\BOOKMARK [2][-]{subsection.6.2.3}{Riemann Sums}{section.6.2}% 99
+\BOOKMARK [2][-]{subsection.6.2.4}{The Definite Integral}{section.6.2}% 100
+\BOOKMARK [1][-]{section.6.3}{The Fundamental Theorem of Calculus}{chapter.6}% 101
+\BOOKMARK [2][-]{subsection.6.3.1}{The net change theorem}{section.6.3}% 102
+\BOOKMARK [2][-]{subsection.6.3.2}{Functions defined by integrals}{section.6.3}% 103
+\BOOKMARK [2][-]{subsection.6.3.3}{FTC 2}{section.6.3}% 104
+\BOOKMARK [2][-]{subsection.6.3.4}{More on Differentiating Integral Functions}{section.6.3}% 105
+\BOOKMARK [1][-]{section.6.4}{Indefinite Integrals}{chapter.6}% 106
+\BOOKMARK [0][-]{chapter.7}{Techniques of Integration}{}% 107
+\BOOKMARK [1][-]{section.7.1}{Substitution Rule}{chapter.7}% 108
+\BOOKMARK [2][-]{subsection.7.1.1}{Integrals Involving Trigonometric Functions}{section.7.1}% 109
+\BOOKMARK [2][-]{subsection.7.1.2}{ Simplifying the Integrand}{section.7.1}% 110
+\BOOKMARK [2][-]{subsection.7.1.3}{Substitution and Inverse Trigonometric Functions}{section.7.1}% 111
+\BOOKMARK [2][-]{subsection.7.1.4}{Substitution and Definite Integrals}{section.7.1}% 112
+\BOOKMARK [1][-]{section.7.2}{Powers of Trigonometric Functions}{chapter.7}% 113
+\BOOKMARK [1][-]{section.7.3}{Trigonometric Substitutions}{chapter.7}% 114
+\BOOKMARK [1][-]{section.7.4}{Integration by Parts}{chapter.7}% 115
+\BOOKMARK [1][-]{section.7.5}{Rational Functions and Partial Fractions}{chapter.7}% 116
+\BOOKMARK [2][-]{subsection.7.5.1}{Partial Fraction Decomposition}{section.7.5}% 117
+\BOOKMARK [1][-]{section.7.6}{Numerical Integration}{chapter.7}% 118
+\BOOKMARK [2][-]{subsection.7.6.1}{The Trapezoidal Rule}{section.7.6}% 119
+\BOOKMARK [2][-]{subsection.7.6.2}{ Simpson's Rule}{section.7.6}% 120
+\BOOKMARK [2][-]{subsection.7.6.3}{Summary and Error Analysis}{section.7.6}% 121
+\BOOKMARK [1][-]{section.7.7}{Improper Integrals}{chapter.7}% 122
+\BOOKMARK [1][-]{section.7.8}{Hyperbolic Functions Revisited}{chapter.7}% 123
+\BOOKMARK [1][-]{section.7.9}{Additional exercises}{chapter.7}% 124
+\BOOKMARK [0][-]{chapter.8}{Applications of Integration}{}% 125
+\BOOKMARK [1][-]{section.8.1}{Distance, Velocity, Acceleration}{chapter.8}% 126
+\BOOKMARK [1][-]{section.8.2}{Area Between Curves}{chapter.8}% 127
+\BOOKMARK [1][-]{section.8.3}{Volume}{chapter.8}% 128
+\BOOKMARK [1][-]{section.8.4}{The Mean Value Theorem for Integrals and Average Value}{chapter.8}% 129
+\BOOKMARK [1][-]{section.8.5}{Work}{chapter.8}% 130
+\BOOKMARK [1][-]{section.8.6}{Center of Mass}{chapter.8}% 131
+\BOOKMARK [1][-]{section.8.7}{Arc Length}{chapter.8}% 132
+\BOOKMARK [1][-]{section.8.8}{Surface Area}{chapter.8}% 133
+\BOOKMARK [0][-]{chapter.9}{Sequences and Series}{}% 134
+\BOOKMARK [1][-]{section.9.1}{Sequences}{chapter.9}% 135
+\BOOKMARK [1][-]{section.9.2}{Series}{chapter.9}% 136
+\BOOKMARK [1][-]{section.9.3}{The Integral Test}{chapter.9}% 137
+\BOOKMARK [1][-]{section.9.4}{Alternating Series}{chapter.9}% 138
+\BOOKMARK [1][-]{section.9.5}{Comparison Tests}{chapter.9}% 139
+\BOOKMARK [1][-]{section.9.6}{Absolute Convergence}{chapter.9}% 140
+\BOOKMARK [1][-]{section.9.7}{The Ratio and Root Tests}{chapter.9}% 141
+\BOOKMARK [1][-]{section.9.8}{Power Series}{chapter.9}% 142
+\BOOKMARK [1][-]{section.9.9}{Calculus with Power Series}{chapter.9}% 143
+\BOOKMARK [1][-]{section.9.10}{Taylor Polynomials}{chapter.9}% 144
+\BOOKMARK [2][-]{subsection.9.10.1}{Taylor's Theorem}{section.9.10}% 145
+\BOOKMARK [1][-]{section.9.11}{Taylor Series}{chapter.9}% 146
+\BOOKMARK [0][-]{chapter.10}{Differential Equations}{}% 147
+\BOOKMARK [1][-]{section.10.1}{First Order Differential Equations}{chapter.10}% 148
+\BOOKMARK [2][-]{subsection.10.1.1}{Separable Differential Equations}{section.10.1}% 149
+\BOOKMARK [2][-]{subsection.10.1.2}{Exponential Growth and Decay}{section.10.1}% 150
+\BOOKMARK [1][-]{section.10.2}{First Order Homogeneous Linear Equations}{chapter.10}% 151
+\BOOKMARK [1][-]{section.10.3}{First Order Linear Equations}{chapter.10}% 152
+\BOOKMARK [1][-]{section.10.4}{Approximation}{chapter.10}% 153
+\BOOKMARK [1][-]{section.10.5}{Second Order Homogeneous Equations}{chapter.10}% 154
+\BOOKMARK [1][-]{section.10.6}{Second Order Linear Equations - Method of Undetermined Coefficients}{chapter.10}% 155
+\BOOKMARK [1][-]{section.10.7}{Second Order Linear Equations - Variation of Parameters}{chapter.10}% 156
+\BOOKMARK [0][-]{chapter.11}{Polar Coordinates, Parametric Equations}{}% 157
+\BOOKMARK [1][-]{section.11.1}{Polar Coordinates}{chapter.11}% 158
+\BOOKMARK [1][-]{section.11.2}{Slopes in Polar Coordinates}{chapter.11}% 159
+\BOOKMARK [1][-]{section.11.3}{Areas in Polar Coordinates}{chapter.11}% 160
+\BOOKMARK [1][-]{section.11.4}{Parametric Equations}{chapter.11}% 161
+\BOOKMARK [1][-]{section.11.5}{Calculus with Parametric Equations}{chapter.11}% 162
+\BOOKMARK [1][-]{section.11.6}{Conics in Polar Coordinates}{chapter.11}% 163
+\BOOKMARK [0][-]{chapter.12}{Three Dimensions}{}% 164
+\BOOKMARK [1][-]{section.12.1}{The Coordinate System}{chapter.12}% 165
+\BOOKMARK [1][-]{section.12.2}{Vectors}{chapter.12}% 166
+\BOOKMARK [1][-]{section.12.3}{The Dot Product}{chapter.12}% 167
+\BOOKMARK [1][-]{section.12.4}{The Cross Product}{chapter.12}% 168
+\BOOKMARK [1][-]{section.12.5}{Lines and Planes}{chapter.12}% 169
+\BOOKMARK [1][-]{section.12.6}{Other Coordinate Systems}{chapter.12}% 170
+\BOOKMARK [0][-]{chapter.13}{Partial Differentiation}{}% 171
+\BOOKMARK [1][-]{section.13.1}{Functions of Several Variables}{chapter.13}% 172
+\BOOKMARK [1][-]{section.13.2}{Limits and Continuity}{chapter.13}% 173
+\BOOKMARK [1][-]{section.13.3}{Partial Differentiation}{chapter.13}% 174
+\BOOKMARK [1][-]{section.13.4}{The Chain Rule}{chapter.13}% 175
+\BOOKMARK [1][-]{section.13.5}{Directional Derivatives}{chapter.13}% 176
+\BOOKMARK [1][-]{section.13.6}{Higher Order Derivatives}{chapter.13}% 177
+\BOOKMARK [1][-]{section.13.7}{Maxima and Minima}{chapter.13}% 178
+\BOOKMARK [1][-]{section.13.8}{Lagrange Multipliers}{chapter.13}% 179
+\BOOKMARK [0][-]{chapter.14}{Multiple Integration}{}% 180
+\BOOKMARK [1][-]{section.14.1}{Volume and Average Height}{chapter.14}% 181
+\BOOKMARK [1][-]{section.14.2}{Double Integrals in Polar Coordinates}{chapter.14}% 182
+\BOOKMARK [1][-]{section.14.3}{Moment and Center of Mass}{chapter.14}% 183
+\BOOKMARK [1][-]{section.14.4}{Surface Area}{chapter.14}% 184
+\BOOKMARK [1][-]{section.14.5}{Triple Integrals}{chapter.14}% 185
+\BOOKMARK [1][-]{section.14.6}{Cylindrical and Spherical Coordinates}{chapter.14}% 186
+\BOOKMARK [1][-]{section.14.7}{Change of Variables}{chapter.14}% 187
+\BOOKMARK [0][-]{chapter.15}{Vector Functions}{}% 188
+\BOOKMARK [1][-]{section.15.1}{Curves of Vector Functions}{chapter.15}% 189
+\BOOKMARK [1][-]{section.15.2}{Calculus with Vector Functions}{chapter.15}% 190
+\BOOKMARK [1][-]{section.15.3}{Arc Length}{chapter.15}% 191
+\BOOKMARK [1][-]{section.15.4}{Curvature}{chapter.15}% 192
+\BOOKMARK [1][-]{section.15.5}{Acceleration Vectors}{chapter.15}% 193
+\BOOKMARK [0][-]{chapter.16}{Vector Calculus}{}% 194
+\BOOKMARK [1][-]{section.16.1}{Vector Fields}{chapter.16}% 195
+\BOOKMARK [1][-]{section.16.2}{Divergence and Curl}{chapter.16}% 196
+\BOOKMARK [1][-]{section.16.3}{Line Integrals}{chapter.16}% 197
+\BOOKMARK [2][-]{subsection.16.3.1}{Line Integrals of a Function}{section.16.3}% 198
+\BOOKMARK [2][-]{subsection.16.3.2}{Line Integrals of a Vector Field}{section.16.3}% 199
+\BOOKMARK [2][-]{subsection.16.3.3}{The Fundamental Theorem of Line Integrals}{section.16.3}% 200
+\BOOKMARK [1][-]{section.16.4}{Green's Theorem}{chapter.16}% 201
+\BOOKMARK [1][-]{section.16.5}{The Divergence Theorem}{chapter.16}% 202
+\BOOKMARK [1][-]{section.16.6}{Vector Functions for Surfaces}{chapter.16}% 203
+\BOOKMARK [1][-]{section.16.7}{Surface Integrals}{chapter.16}% 204
+\BOOKMARK [1][-]{section.16.8}{Stokes' Theorem}{chapter.16}% 205
+\BOOKMARK [0][-]{chapter*.312}{Selected Exercise Answers}{}% 206
+\BOOKMARK [0][-]{chapter*.313}{Inside Cover Material}{}% 207
+\BOOKMARK [0][-]{chapter*.314}{Index}{}% 208
+\BOOKMARK [0][-]{chapter*.314}{Index}{}% 209

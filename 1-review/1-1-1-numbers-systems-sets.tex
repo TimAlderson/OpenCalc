@@ -1,70 +1,121 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sets and Number Systems}
 
-A \dfont{set} can be thought of as any collection of \ifont{distinct} objects 
-considered as a whole. Typically, sets are represented using 
+A \dfont{set} can be thought of as any collection of \ifont{distinct} objects, called {\bf{elements}} of the set.\\
+
+In general, there are three ways to describe sets.  
+
+	
+\begin{formulabox}[Ways to Describe Sets]
+	
+	\begin{enumerate}
+		
+		\item \textbf{Verbally:} Use a sentence to define a set.\index{set ! verbal description}
+		
+		\item \textbf{Roster Notation:}  Begin with a left brace `$\{$', list each element of the set \textit{only once} and then end with a right brace `$\}$'.\index{set ! roster method}
+		
+		\item \textbf{Set-Builder Notation:} A combination of verbal and roster notation using a ``dummy variable'' such as $x$.\index{set ! set-builder notation}\index{set-builder notation}
+	\end{enumerate}
+\end{formulabox} 	
+
+
+\begin{example}{Roster Notation for Sets}{Sets}
+	The collection $\{a,b,1,2\}$ is a set. It consists of the collection of
+	four distinct objects, namely, $a$, $b$, $1$ and $2$. The order of the elements doesn't matter, so the same set could be described as $\{2,a,1,b\}$. 
+\end{example}
+
+Typically, sets are represented using 
 \dfont{set-builder notation} and are surrounded by braces.
 Recall that $(,)$ are called \dfont{parentheses} or \dfont{round brackets};
 $[,]$ are called \dfont{square brackets}; and $\{,\}$ are called \dfont{braces} or \dfont{curly brackets}. \\
 
-\begin{example}{Sets}{Sets}
-The collection $\{a,b,1,2\}$ is a set. It consists of the collection of
-four distinct objects, namely, $a$, $b$, $1$ and $2$.
-\end{example}
+\begin{example}{Set-Builder Notation for Sets}{SetBuilder}
+The expression $\displaystyle{ \{x \, \ssep  x \geq 0 \} }$ can be read as the set of all elements $x$ such that $x$ is greater than or equal to zero.  The vertical bar $\ssep$, which can also be written as a colon $:$, is a separator that can be read as "such that", "for which", or "with the property that". 
+\end{example}	
 
 Let $S$ be any set. We use the notation $\dfont{x\in S}$ to mean that $x$ 
 is an element \ifont{inside} of the set $S$, and the notation $\dfont{x\not\in S}$ to mean that $x$ is \ifont{not} an element of the set $S$. \\
+
 
 \begin{example}{Set Membership}{SetMembership}
 If $S=\{a,b,c\}$, then $a\in S$ but $d\not\in S$.
 \end{example}
 
-The \dfont{intersection} between two sets $S$ and $T$ is denoted 
-by $S\cap T$ and is the collection of all elements that belong to 
-\ifont{both} $S$ and $T$. The \dfont{union} between two sets $S$ 
-and $T$ is denoted by $S\cup T$ and is the collection of all elements 
-that belong to \ifont{either} $S$ or $T$ (or both). \\
-
-\begin{example}{Union and Intersection}{UnionIntersection}
-Let $S=\{a,b,c\}$ and $T=\{b,d\}$.
-Then $S\cap T=\{b\}$ and $S\cup T=\{a,b,c,d\}$. 
-Note that we do \ifont{not} write the element $b$ twice in $S\cup T$ even 
-though $b$ is in both $S$ and $T$.
-\end{example}
+%The \dfont{intersection} between two sets $S$ and $T$ is denoted 
+%by $S\cap T$ and is the collection of all elements that belong to 
+%\ifont{both} $S$ and $T$. The \dfont{union} between two sets $S$ 
+%and $T$ is denoted by $S\cup T$ and is the collection of all elements 
+%that belong to \ifont{either} $S$ or $T$ (or both). \\
+%
+%\begin{example}{Union and Intersection}{UnionIntersection}
+%Let $S=\{a,b,c\}$ and $T=\{b,d\}$.
+%Then $S\cap T=\{b\}$ and $S\cup T=\{a,b,c,d\}$. 
+%Note that we do \ifont{not} write the element $b$ twice in $S\cup T$ even 
+%though $b$ is in both $S$ and $T$.
+%\end{example}
 
 Numbers can be classified into sets called \dfont{number systems}.
 
-\begin{center}
-  \begin{tabular}{| c || c | c |}
-    \hline
-    $\mathbb{N}$ & the \dfont{natural} numbers 
-    		& $\{1, 2, 3,\ldots\}$ \\ \hline
-    $\mathbb{Z}$ & the \dfont{integers} 
-    		& $\{\dots,-3,-2, -1, 0, 1, 2, 3,\dots\}$ \\ \hline
-    $\mathbb{Q}$ & the \dfont{rational} numbers 
-    		& Ratios of integers: $\left\{\frac{p}{q}\,:\,p,q\in\mathbb{Z},q\not=0\right\}$ \\ \hline
-    $\mathbb{R}$ & the \dfont{real} numbers 
-    		& Can be written using a finite or infinite \ifont{decimal expansion} \\ \hline
-    $\mathbb{C}$ & the \dfont{complex} numbers 
-    		& These allow us to solve equations such as $x^2+1=0$ \\
-    \hline
-  \end{tabular}
-\end{center}
 
-In the table, the set of rational numbers is written using
-set-builder notation. The colon, $:$, used in this manner means \ifont{such that}.
-Often times, a vertical bar $|$ may also be used to mean \ifont{such that}.
-The expression $\left\{\frac{p}{q}\,:\,p,q\in\mathbb{Z},q\not=0\right\}$ can be read out loud as
-\ifont{the set of all fractions $p$ over $q$ such that $p$ and $q$ are both integers and $q$ is not equal to zero}. \\
+\begin{formulabox}[Sets of Numbers]
+
+\begin{enumerate}
+	
+	\item The \textbf{Empty Set}:\index{set ! empty}\index{empty set} $\emptyset=\{ \}=\{x\,|\,\mbox{$x
+		\neq x$}\}$.  This is the set with no elements.  Like the number `$0$,' it  plays a vital role in mathematics.
+	
+	\item The \textbf{Natural Numbers}:\index{natural number ! set of}\index{natural number ! definition of} $\mathbb N= \{ 1, 2, 3,  \ldots\}$ The periods of ellipsis here indicate that the natural numbers contain $1$, $2$, $3$, `and so forth'.
+	
+	\item The \textbf{Whole Numbers}:\index{whole number ! set of}\index{whole number ! definition of} $\mathbb W = \{ 0, 1, 2, \ldots \}$
+	
+	\item The \textbf{Integers}:\index{integer ! set of}\index{integer ! definition of} $\mathbb Z=\{ \ldots, -1, -2, -1, 0, 1, 2, 3, \ldots \}$
+	
+	\item The \textbf{Rational Numbers}:\index{rational number ! set of}\index{rational number ! definition of} $\mathbb Q=\left\{\frac{a}{b} \, | \, a \in \mathbb Z \, \mbox{and} \, b \in \mathbb Z \right\}$.  \underline{Ratio}nal numbers are the \underline{ratio}s of integers (provided the denominator is not zero!)  It turns out that another way to describe the rational numbers is: \[\mathbb Q=\{x\,|\,\mbox{$x$ possesses a repeating or terminating decimal representation.}\}\]
+	
+	\item The \textbf{Real Numbers}:\index{real number ! set of}\index{real number ! definition of} $\mathbb R = \{ x\,|\,\mbox{$x$ possesses a decimal representation.}\}$
+	
+	\item The \textbf{Irrational Numbers}:\index{irrational number ! set of}\index{irrational number ! definition of} $\mathbb P = \{x\,|\,\mbox{$x$ is a non-rational real number.}\}$  Said another way, an \underline{ir}rational number is a decimal which neither repeats nor terminates.
+	
+	\item The \textbf{Complex Numbers}:\index{complex number ! set of}\index{complex number ! definition of} $\mathbb C=\{a+bi\,|\,\mbox{$a$,$b \in \mathbb R$ and $i=\sqrt{-1}$}\}$  Despite their importance, the complex numbers play only a minor role in the text.
+	
+\end{enumerate}
+\end{formulabox}
+
+It is important to note that every natural number is a whole number, which, in turn, is an integer.   Each integer is a rational number (take $b =1$ in the above definition for $\mathbb Q$) and the rational numbers are all real numbers, since they possess decimal representations.   If we take $b=0$ in the above definition of $\mathbb C$, we see that every real number is a complex number.  In this sense, the sets $\mathbb N$, $\mathbb W$, $\mathbb Z$, $\mathbb Q$, $\mathbb R$, and $\mathbb C$ are nested.
+
+
+
+%\begin{center}
+%  \begin{tabular}{| c || c | c |}
+%    \hline
+%    $\mathbb{N}$ & the \dfont{natural} numbers 
+%    		& $\{1, 2, 3,\ldots\}$ \\ \hline
+%    $\mathbb{Z}$ & the \dfont{integers} 
+%    		& $\{\dots,-3,-2, -1, 0, 1, 2, 3,\dots\}$ \\ \hline
+%    $\mathbb{Q}$ & the \dfont{rational} numbers 
+%    		& Ratios of integers: $\left\{\frac{p}{q}\, \ssep\,p,q\in\mathbb{Z},q\not=0\right\}$ \\ \hline
+%    $\mathbb{R}$ & the \dfont{real} numbers 
+%    		& Can be written using a finite or infinite \ifont{decimal expansion} \\ \hline
+%    $\mathbb{C}$ & the \dfont{complex} numbers 
+%    		& These allow us to solve equations such as $x^2+1=0$ \\
+%    \hline
+%  \end{tabular}
+%\end{center}
+
+%In the table, the set of rational numbers is written using
+%set-builder notation. The vertical bar $\ssep$, which can also be written as a colon $:$, is a separator that can be read as "such that", "for which", or "with the property that". 
+%The expression $\left\{\frac{p}{q}\, \ssep\,p,q\in\mathbb{Z},q\not=0\right\}$ can be read out loud as
+%\ifont{the set of all fractions $p$ over $q$ such that $p$ and $q$ are both integers and $q$ is not equal to zero}. 
+%\\
 
 \begin{example}{Rational Numbers}{RationalNumbers}
 The numbers $-\frac{3}{4}$, $2.647$, $17$, $0.\bar{7}$ are all rational numbers. 
 You can think of rational numbers as \ifont{fractions} of one integer over another. 
 Note that 2.647 can be written as a fraction: 
-\[ 2.647=2.647\times\frac{1000}{1000}=\frac{2647}{1000}. \]
+\[ 2.647=2.647\times\frac{1000}{1000}=\frac{2647}{1000} \]
 Also note that in the expression $0.\bar{7}$, the bar over the $7$ indicates 
 that the $7$ is repeated forever: 
-\[ 0.77777777\ldots=\frac{7}{9}.\]
+\[ 0.77777777\ldots=\frac{7}{9}\]
 \vspace{-0.5cm}
 \end{example} 
 
@@ -72,6 +123,8 @@ All rational numbers are real numbers with the property that
 their decimal expansion either \ifont{terminates} after a finite number 
 of digits or begins to \ifont{repeat} the same finite sequence of digits over and over.
 Real numbers that are not rational are called \dfont{irrational}. \\
+
+
 
 \begin{example}{Irrational Numbers}{IrrationalNumbers}
 Some of the most common irrational numbers include:
@@ -92,7 +145,9 @@ a subset of $T$ but not equal to $T$, we often write $S\subset T$.
 The five sets of numbers in the table give an increasing sequence of sets:
 \[ \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}. \]
 
-That is, all natural numbers are also integers, all integers are also rational numbers, all rational numbers are also real numbers, and all real numbers are also complex numbers.
+That is, all natural numbers are also integers, all integers are also rational numbers, all rational numbers are also real numbers, and all real numbers are also complex numbers.\\
+
+For the most part, this textbook focuses on sets whose elements come from the real numbers $\mathbb R$.  Recall that we may visualize $\mathbb R$ as a line. Segments of this line are called \textbf{intervals}\index{interval ! definition of} of numbers. Below is a summary of the so-called \textbf{interval notation}\index{interval ! notation for} associated with given sets of numbers.  For intervals with finite endpoints, we list the left endpoint, then the right endpoint.  We use square brackets, `$[$' or `$]$', if the endpoint is included in the interval and use a filled-in or `closed' dot to indicate membership in the interval. Otherwise, we use parentheses, `$($' or `$)$' and an `open' circle to indicate that the endpoint is not part of the set.  If the interval does not have finite endpoints, we use the symbols $-\infty$ to indicate that the interval extends indefinitely to the left and $\infty$ to indicate that the interval extends indefinitely to the right.  Since infinity is a concept, and not a number, we always use parentheses when using these symbols in interval notation, and use an appropriate arrow to indicate that the interval extends indefinitely in one (or both) directions.\\
 
 
 

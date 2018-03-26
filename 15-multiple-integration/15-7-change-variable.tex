@@ -8,7 +8,7 @@ coordinates to another coordinate system is helpful, and this too
 changes the variables. This is certainly a more complicated change,
 since instead of changing one variable for another we change an entire
 suite of variables, but as it turns out it is really very similar to
-the kinds of change of variables we already know as substitution.
+the kinds of change of variables we already know as substitution.\index{integration!change of variables}
 
 \begin{figure}[H]
 \hbox to \hsize{\hfill
@@ -245,15 +245,14 @@ $\theta$ and letting the other variable range over a small interval.
 In Figure~\ref{fig:correspondingareas}, for example, the upper right
 edge of the region is formed by fixing $\theta=2\pi/3$ and letting $r$
 run from $0.5$ to $0.75$. In other words, we have a vector function
-${\bf v}(r)=\langle r\cos\theta_0, r\sin\theta_0, 0\rangle$, and we
+$\vect{v}(r)=\langle r\cos\theta_0, r\sin\theta_0, 0\rangle$, and we
 are interested in a restricted set of values for $r$. A vector tangent
-to this path is given by the derivative ${\bf v}'(r)=\langle
+to this path is given by the derivative $\vect{v}'(r)=\langle
 \cos\theta_0, \sin\theta_0, 0\rangle$, and a small tangent vector,
 with length approximately equal to the side of the region, is $\langle
 \cos\theta_0, \sin\theta_0, 0\rangle\,dr$. Likewise, if we fix
-$r=r_0=0.5$, we get the vector function ${\bf w}(\theta)=\langle
-r_0\cos\theta, r_0\sin\theta, 0\rangle$ with derivative ${\bf
-  w}(\theta)=\langle -r_0\sin\theta, r_0\cos\theta, 0\rangle$ and a
+$r=r_0=0.5$, we get the vector function $\vect{w}(\theta)=\langle
+r_0\cos\theta, r_0\sin\theta, 0\rangle$ with derivative $\vect{w}(\theta)=\langle -r_0\sin\theta, r_0\cos\theta, 0\rangle$ and a
 small tangent vector $\langle -r_0\sin\theta_0, r_0\cos\theta_0,
 0\rangle\,d\theta$ when $\theta=\theta_0$ (at the corner we're
 focusing on). These vectors are shown in 
@@ -294,7 +293,7 @@ particularly good approximation to the true area.
 The area of this parallelogram is the length of the cross product:
 \begin{align*}
 \langle -r_0\sin\theta_0, r_0\cos\theta_0, 0\rangle\,d\theta\times\langle\cos\theta_0, \sin\theta_0, 0\rangle\,dr
-&= \left|\begin{matrix}	\mathbf{i}			&	\mathbf{j}		&	\mathbf{k}	\\
+&= \left|\begin{matrix}	\vect{i}			&	\vect{j}		&	\vect{k}	\\
 						-r_0\sin\theta_0	&	r_0\cos\theta_0	&	0			\\
 						\cos\theta_0		&	\sin\theta_0	&	0
 		 \end{matrix}\right|\,d\theta\,dr	\\
@@ -319,7 +318,7 @@ The cross product of these is $\langle
 $|f_ug_v-g_uf_v|\,du\,dv$. The quantity $|f_ug_v-g_uf_v|$ is usually
 denoted
 $$\left|{\partial(x,y)\over\partial(u,v)}\right|=|f_ug_v-g_uf_v|$$
-and called the \dfont{Jacobian}.
+and called the \dfont{Jacobian}\index{Jacobian}.
 Note that this is the absolute value of the two by two determinant
 \[\left|\begin{matrix}	f_u	&	g_u	\\
 						f_v	&	g_v
@@ -405,8 +404,8 @@ $y=g(u,v,w)$, and $z=h(u,v,w)$.  The Jacobian determinant is now
 \]
 Then the integral is transformed in a similar fashion:
 \[
-  \int\!\int\!\int_R F(x,y,z) \, dV = 
-  \int\!\int\!\int_S F(f(u,v,w),g(u,v,w),h(u,v,w)) 
+  \iiint_R F(x,y,z) \, dV = 
+  \iiint_S F(f(u,v,w),g(u,v,w),h(u,v,w)) 
   \left|{\partial(x,y,z)\over\partial(u,v,w)}\right| \,du\,dv\,dw,
 \]
 where of course the region $S$ in $uvw$ space corresponds to the

@@ -28,24 +28,43 @@ Using the technique of Substitution, we see the integral $\int \sin x\cos x\ dx$
 We generalize this integral and consider integrals of the form $\int \sin^mx\cos^nx\ dx$, where $m,n$ are nonnegative integers. Our strategy for evaluating these integrals is to use the Pythagorean identity $\cos^2x+\sin^2x=1$ to convert high powers of one trigonometric function into the other, leaving a single sine or cosine term in the integrand. We summarize the general technique in the following
 
 
-\begin{formulabox}[Integrals Involving Powers of Sine and Cosine]
-	Consider $\ds \int \sin^mx\cos^nx\ dx$, where $m,n$ are nonnegative integers.\index{integration!of trig. powers}
-		\begin{enumerate}
-		\item		If $m$ is odd, then $m=2k+1$ for some integer $k$. Rewrite \small
-				$$ \sin^mx = \sin^{2k+1}x = \sin^{2k}x\sin x = (\sin^2x)^k\sin x = (1-\cos^2x)^k\sin x.$$\normalsize
-				Then \small
-				$$\int \sin^mx\cos^nx\ dx = \int (1-\cos^2x)^k\sin x\cos^nx\ dx = -\int (1-u^2)^ku^n\ du,$$\normalsize
-				where $u = \cos x$ and $du = -\sin x\ dx$. 
-		\item		If $n$ is odd, then using substitutions similar to that outlined above we have
-				\small
-				$$ \int \sin^mx\cos^nx\ dx = \int u^m(1-u^2)^k\ du,$$ \normalsize
-				where $u = \sin x$ and $du = \cos x\ dx$.
-		\item		If both $m$ and $n$ are even, use the power--reducing identities
-			\small$$  \cos^2x = \frac{1+\cos (2x)}{2} \quad \text{and}\quad \sin^2x = \frac{1-\cos(2x)}2$$\normalsize
-		to reduce the degree of the integrand. Expand the result and try again.
-		\end{enumerate}
-%	NOTE: The integral will become more tedious as $m$ and $n$ get large, since multiple steps will be needed.
+
+\begin{formulabox}[Products of Sine and Cosine]
+	When evaluating $\ds\int\sin^mx \cos^nx\,dx$:  
+	\begin{enumerate}
+	\item \ffont{The power of sine is odd ($m$ odd):}\\  
+		(a) Use $u=\cos x$ and $du=-\sin x\,dx$.\\  
+		(b) Replace $dx$ using (a), thus cancelling one power of $\sin x$ by the substitution of $du$, and be left with an even number of sine powers.\\  
+		(c) Use $\sin^2x=1-\cos^2x~(=1-u^2)$ to replace the leftover sines.  
+	\item \ffont{The power of cosine is odd ($n$ odd):}\\  
+		(a) Use $u=\sin x$ and $du=\cos x\,dx$.\\  
+		(b) Replace $dx$ using (a), thus cancelling one power of $\cos x$ by the substitution of $du$, and be left with an even number of cosine powers.\\  
+		(c) Use $\cos^2x=1-\sin^2x~(=1-u^2)$ to replace the leftover cosines.	  
+	\item \ffont{Both $m$ and $n$ are odd}:\\ Use either $1$ or $2$ (both will work).  
+	\item \ffont{Both $m$ and $n$ are even}:\\  
+	 Use $\cos^2x=\frac{1}{2}\left(1+\cos(2x)\right)$ and/or $\sin^2x=\frac{1}{2}\left(1-\cos(2x)\right)$ to reduce to a form that can be integrated.
+	\end{enumerate}
+	NOTE: As $m$ and $n$ get large, multiple steps will be needed.
 \end{formulabox}
+
+%\begin{formulabox}[Integrals Involving Powers of Sine and Cosine]
+%	Consider $\ds \int \sin^mx\cos^nx\ dx$, where $m,n$ are nonnegative integers.\index{integration!of trig. powers}
+%		\begin{enumerate}
+%		\item		If $m$ is odd, then $m=2k+1$ for some integer $k$. Rewrite \small
+%				$$ \sin^mx = \sin^{2k+1}x = \sin^{2k}x\sin x = (\sin^2x)^k\sin x = (1-\cos^2x)^k\sin x.$$\normalsize
+%				Then \small
+%				$$\int \sin^mx\cos^nx\ dx = \int (1-\cos^2x)^k\sin x\cos^nx\ dx = -\int (1-u^2)^ku^n\ du,$$\normalsize
+%				where $u = \cos x$ and $du = -\sin x\ dx$. 
+%		\item		If $n$ is odd, then using substitutions similar to that outlined above we have
+%				\small
+%				$$ \int \sin^mx\cos^nx\ dx = \int u^m(1-u^2)^k\ du,$$ \normalsize
+%				where $u = \sin x$ and $du = \cos x\ dx$.
+%		\item		If both $m$ and $n$ are even, use the power--reducing identities
+%			\small$$  \cos^2x = \frac{1+\cos (2x)}{2} \quad \text{and}\quad \sin^2x = \frac{1-\cos(2x)}2$$\normalsize
+%		to reduce the degree of the integrand. Expand the result and try again.
+%		\end{enumerate}
+%%	NOTE: The integral will become more tedious as $m$ and $n$ get large, since multiple steps will be needed.
+%\end{formulabox}
 
 
 
@@ -157,7 +176,7 @@ This final integral is not difficult to evaluate, giving
 
 
 \begin{example}{Product of Even Powers of Sine and Cosine}{Product of Even Powers of Sine and Cosine}\label{Product of Even Powers of Sine and Cosine}
-Evaluate $\ds\int\! \sin^2x\cos^2x\,dx$. 
+Evaluate $\ds\int \sin^2x\cos^2x\,dx$. 
 \end{example}
 
 \begin{solution} 
@@ -382,30 +401,49 @@ If the integrand can be manipulated to separate a $\sec^2x$ term with the remain
 %$$\int \sec^2x\,dx = \tan x+C\qquad\qquad\int\sec x\tan x\,dx=\sec x+C$$
 
 
-\begin{formulabox}[Integrals Involving Powers of Tangent and Secant]
-Consider $\ds\int\tan^mx\sec^nx\ dx$, where $m,n$ are nonnegative integers.\index{integration!of trig. powers}
-\begin{enumerate}
-\item		If $n$ is even, then $n=2k$ for some integer $k$. Rewrite $\sec^nx$ as 
-$$\sec^nx = \sec^{2k}x = \sec^{2k-2}x\sec^2x = (1+\tan^2x)^{k-1}\sec^2x.$$
-Then
-$$\int\tan^mx\sec^nx\ dx=\int\tan^mx(1+\tan^2x)^{k-1}\sec^2x\ dx = \int u^m(1+u^2)^{k-1}\ du,$$
-where $u = \tan x$ and $du = \sec^2x\ dx$.
-
-\item		If $m$ is odd, then $m=2k+1$ for some integer $k$. Rewrite $\tan^mx\sec^nx$ as
-$$\tan^mx\sec^nx = \tan^{2k+1}x\sec^nx = \tan^{2k}x\sec^{n-1}x\sec x\tan x = (\sec^2x-1)^k\sec^{n-1}x\sec x\tan x.$$
-Then
-$$\int\tan^mx\sec^nx\ dx=\int(\sec^2x-1)^k\sec^{n-1}x\sec x\tan x\ dx = \int(u^2-1)^ku^{n-1}\ du,$$
-where $u = \sec x$ and $du = \sec x\tan x\ dx$.
-
-\item If $n$ is odd and $m$ is even, then $m=2k$ for some integer $k$. Convert $\tan^mx $ to $(\sec^2x-1)^k$. Expand the new integrand and use Integration By Parts, with $dv = \sec^2x\ dx$.
-
-\item		If $m$ is even and $n=0$, rewrite $\tan^mx$ as
-$$\tan^mx = \tan^{m-2}x\tan^2x = \tan^{m-2}x(\sec^2x-1) = \tan^{m-2}\sec^2x-\tan^{m-2}x.$$
-So
-$$\int\tan^mx\ dx = \underbrace{\int\tan^{m-2}\sec^2x\ dx}_{\text{\small apply rule \#1}}\quad - \underbrace{\int\tan^{m-2}x\ dx}_{\text{\small apply rule \#4 again}}.$$
-
-\end{enumerate}
+\index{integration!products of secant and tangent}
+\begin{formulabox}[Products of Secant and Tangent]
+	When evaluating $\ds\int\sec^mx \tan^nx\,dx$:  
+	\begin{enumerate}
+	\item \ffont{The power of secant is even ($m$ even):}\\  
+		(a) Use $u=\tan x$ and $du=\sec^2 x\,dx$.\\  
+		(b) Cancel $\sec^2 x$ by the substitution of $dx$, and be left with an even number of secants.\\  
+		(c) Use $\sec^2x=1+\tan^2x~(=1+u^2)$ to replace the leftover secants.  
+	\item \ffont{The power of tangent is odd ($n$ odd):}\\  
+		(a) Use $u=\sec x$ and $du=\sec x\tan x\,dx$.\\  
+		(b) Cancel one $\sec x$ and one $\tan x$ by the substitution of $dx$.\\  
+		\quad~~The number of remaining tangents is even.\\  
+		(c) Use $\tan^2x=\sec^2x-1~(=u^2-1)$ to replace the leftover tangents.  
+	\item \ffont{$m$ is even or $n$ is odd}:\\ Use either $1$ or $2$ (both will work).  
+	\item \ffont{The power of secant is odd and the power of tangent is even}:\\  
+	 No guidelines. Remember that $\ds\int\sec x\,dx$ and $\ds\int\sec^3 x\,dx$ can usually be looked up.
+	\end{enumerate}
 \end{formulabox}
+
+%\begin{formulabox}[Integrals Involving Powers of Tangent and Secant]
+%Consider $\ds\int\tan^mx\sec^nx\ dx$, where $m,n$ are nonnegative integers.\index{integration!of trig. powers}
+%\begin{enumerate}
+%\item		If $n$ is even, then $n=2k$ for some integer $k$. Rewrite $\sec^nx$ as 
+%$$\sec^nx = \sec^{2k}x = \sec^{2k-2}x\sec^2x = (1+\tan^2x)^{k-1}\sec^2x.$$
+%Then
+%$$\int\tan^mx\sec^nx\ dx=\int\tan^mx(1+\tan^2x)^{k-1}\sec^2x\ dx = \int u^m(1+u^2)^{k-1}\ du,$$
+%where $u = \tan x$ and $du = \sec^2x\ dx$.
+%
+%\item		If $m$ is odd, then $m=2k+1$ for some integer $k$. Rewrite $\tan^mx\sec^nx$ as
+%$$\tan^mx\sec^nx = \tan^{2k+1}x\sec^nx = \tan^{2k}x\sec^{n-1}x\sec x\tan x = (\sec^2x-1)^k\sec^{n-1}x\sec x\tan x.$$
+%Then
+%$$\int\tan^mx\sec^nx\ dx=\int(\sec^2x-1)^k\sec^{n-1}x\sec x\tan x\ dx = \int(u^2-1)^ku^{n-1}\ du,$$
+%where $u = \sec x$ and $du = \sec x\tan x\ dx$.
+%
+%\item If $n$ is odd and $m$ is even, then $m=2k$ for some integer $k$. Convert $\tan^mx $ to $(\sec^2x-1)^k$. Expand the new integrand and use Integration By Parts, with $dv = \sec^2x\ dx$.
+%
+%\item		If $m$ is even and $n=0$, rewrite $\tan^mx$ as
+%$$\tan^mx = \tan^{m-2}x\tan^2x = \tan^{m-2}x(\sec^2x-1) = \tan^{m-2}\sec^2x-\tan^{m-2}x.$$
+%So
+%$$\int\tan^mx\ dx = \underbrace{\int\tan^{m-2}\sec^2x\ dx}_{\text{\small apply rule \#1}}\quad - \underbrace{\int\tan^{m-2}x\ dx}_{\text{\small apply rule \#4 again}}.$$
+%
+%\end{enumerate}
+%\end{formulabox}
 
 The techniques described in items 1 and 2 are relatively straightforward, but the techniques in items 3 and 4 can be rather tedious. A few examples will help with these methods.\\
 

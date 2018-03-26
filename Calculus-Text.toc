@@ -3,144 +3,208 @@
 \contentsline {chapter}{\numberline {1}Review}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Algebra}{3}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Sets and Number Systems}{3}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Law of Exponents}{5}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}The Quadratic Formula and Completing the Square}{6}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Inequalities, Intervals and Solving Basic Inequalities}{8}{subsection.1.1.4}
-\contentsline {subsection}{\numberline {1.1.5}The Absolute Value}{14}{subsection.1.1.5}
-\contentsline {subsection}{\numberline {1.1.6}Solving Inequalities that Contain Absolute Values}{16}{subsection.1.1.6}
-\contentsline {section}{\numberline {1.2}Analytic Geometry}{18}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Lines}{21}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Distance between Two Points and Midpoints}{26}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Conics}{27}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Trigonometry}{34}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Angles and Sectors of Circles}{34}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Trigonometric Functions}{36}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Computing Exact Trigonometric Ratios}{37}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Graphs of Trigonometric Functions}{42}{subsection.1.3.4}
-\contentsline {subsection}{\numberline {1.3.5}Trigonometric Identities}{42}{subsection.1.3.5}
-\contentsline {section}{\numberline {1.4}Additional Exercises}{45}{section.1.4}
-\contentsline {chapter}{\numberline {2}Functions}{47}{chapter.2}
-\contentsline {section}{\numberline {2.1}What is a Function?}{47}{section.2.1}
-\contentsline {section}{\numberline {2.2}Transformations and Compositions}{52}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Tranformations}{52}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Combining Two Functions}{53}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Exponential Functions}{56}{section.2.3}
-\contentsline {section}{\numberline {2.4}Inverse Functions}{59}{section.2.4}
-\contentsline {section}{\numberline {2.5}Logarithms}{62}{section.2.5}
-\contentsline {section}{\numberline {2.6}Inverse Trigonometric Functions}{65}{section.2.6}
-\contentsline {section}{\numberline {2.7}Hyperbolic Functions}{71}{section.2.7}
-\contentsline {section}{\numberline {2.8}Additional Exercises}{76}{section.2.8}
-\contentsline {chapter}{\numberline {3}Limits}{79}{chapter.3}
-\contentsline {section}{\numberline {3.1}The tangent problem}{79}{section.3.1}
-\contentsline {section}{\numberline {3.2}The Limit}{82}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Limits of Difference Quotients}{90}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Precise Definition of a Limit}{102}{section.3.3}
-\contentsline {section}{\numberline {3.4}Computing Limits: Limit Laws}{112}{section.3.4}
-\contentsline {section}{\numberline {3.5}The Squeeze Theorem And Some Special Limits}{122}{section.3.5}
-\contentsline {section}{\numberline {3.6}Continuity}{128}{section.3.6}
-\contentsline {section}{\numberline {3.7}Infinite Limits and Limits at Infinity}{145}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Vertical Asymptotes}{148}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Horizontal Asymptotes}{148}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}Slant Asymptotes}{149}{subsection.3.7.3}
-\contentsline {subsection}{\numberline {3.7.4}End Behaviour and Comparative Growth Rates}{150}{subsection.3.7.4}
-\contentsline {chapter}{\numberline {4}Derivatives}{157}{chapter.4}
-\contentsline {section}{\numberline {4.1}The Rate of Change of a Function}{157}{section.4.1}
-\contentsline {section}{\numberline {4.2}The Derivative Function}{162}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Differentiable}{167}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Second and Other Derivatives}{169}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Velocities}{169}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Derivative Rules}{172}{section.4.3}
-\contentsline {section}{\numberline {4.4}Derivative Rules for Trigonometric Functions}{176}{section.4.4}
-\contentsline {section}{\numberline {4.5}The Chain Rule}{178}{section.4.5}
-\contentsline {section}{\numberline {4.6}Derivatives of Exponential \& Logarithmic Functions}{183}{section.4.6}
-\contentsline {section}{\numberline {4.7}Implicit Differentiation}{188}{section.4.7}
-\contentsline {section}{\numberline {4.8}Derivatives of Inverse Functions}{196}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Derivatives of Inverse Trigonometric Functions}{197}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Glossary of Derivatives of Elementary Functions}{200}{subsection.4.8.2}
-\contentsline {section}{\numberline {4.9}Additional Exercises}{202}{section.4.9}
-\contentsline {chapter}{\numberline {5}Applications of Derivatives}{205}{chapter.5}
-\contentsline {section}{\numberline {5.1}Related Rates}{205}{section.5.1}
-\contentsline {section}{\numberline {5.2}Extrema of a Function}{211}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Local Extrema}{211}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Absolute Extrema}{215}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}The Mean Value Theorem}{219}{section.5.3}
-\contentsline {section}{\numberline {5.4}Linear and Higher Order Approximations}{225}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Linear Approximations}{226}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Differentials}{228}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Taylor Polynomials}{229}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Newton's Method}{231}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}L'H\^opital's Rule}{235}{section.5.5}
-\contentsline {section}{\numberline {5.6}Curve Sketching}{244}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Intervals of Increase/Decrease, and the First Derivative Test}{244}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}The Second Derivative Test}{246}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Concavity and Inflection Points}{248}{subsection.5.6.3}
-\contentsline {subsection}{\numberline {5.6.4}Asymptotes and Other Things to Look For}{250}{subsection.5.6.4}
-\contentsline {subsection}{\numberline {5.6.5}Summary of Curve Sketching}{251}{subsection.5.6.5}
-\contentsline {section}{\numberline {5.7}Optimization Problems}{254}{section.5.7}
-\contentsline {section}{\numberline {5.8}Antiderivatives and Indefinite Integration}{262}{section.5.8}
-\contentsline {chapter}{\numberline {6}Integration}{273}{chapter.6}
-\contentsline {section}{\numberline {6.1}Antiderivatives and Indefinite Integration}{273}{section.6.1}
-\contentsline {section}{\numberline {6.2}Displacement and Area}{282}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Sigma Notation}{285}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Approximating the Area of a Plane Region}{287}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Riemann Sums}{290}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}The Definite Integral}{298}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}The Fundamental Theorem of Calculus}{308}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}The net change theorem}{313}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Functions defined by integrals}{316}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}FTC 2}{317}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}More on Differentiating Integral Functions}{320}{subsection.6.3.4}
-\contentsline {chapter}{\numberline {7}Techniques of Integration}{323}{chapter.7}
-\contentsline {section}{\numberline {7.1}Substitution Rule}{323}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Integrals Involving Trigonometric Functions}{332}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2} Simplifying the Integrand}{334}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Substitution and Inverse Trigonometric Functions}{336}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Substitution and Definite Integrals}{340}{subsection.7.1.4}
-\contentsline {section}{\numberline {7.2}Powers of Trigonometric Functions}{346}{section.7.2}
-\contentsline {section}{\numberline {7.3}Trigonometric Substitutions}{360}{section.7.3}
-\contentsline {section}{\numberline {7.4}Integration by Parts}{367}{section.7.4}
-\contentsline {section}{\numberline {7.5}Rational Functions and Partial Fractions}{378}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Partial Fraction Decomposition}{380}{subsection.7.5.1}
-\contentsline {section}{\numberline {7.6}Numerical Integration}{388}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}The Trapezoidal Rule}{392}{subsection.7.6.1}
-\contentsline {subsection}{\numberline {7.6.2} Simpson's Rule}{395}{subsection.7.6.2}
-\contentsline {subsection}{\numberline {7.6.3}Summary and Error Analysis}{399}{subsection.7.6.3}
-\contentsline {section}{\numberline {7.7}Improper Integrals}{407}{section.7.7}
-\contentsline {section}{\numberline {7.8}Hyperbolic Functions Revisited}{424}{section.7.8}
-\contentsline {section}{\numberline {7.9}Additional exercises}{433}{section.7.9}
-\contentsline {chapter}{\numberline {8}Applications of Integration}{437}{chapter.8}
-\contentsline {section}{\numberline {8.1}Distance, Velocity, Acceleration}{437}{section.8.1}
-\contentsline {section}{\numberline {8.2}Area Between Curves}{440}{section.8.2}
-\contentsline {section}{\numberline {8.3}Volume}{455}{section.8.3}
-\contentsline {section}{\numberline {8.4}The Mean Value Theorem for Integrals and Average Value}{469}{section.8.4}
-\contentsline {section}{\numberline {8.5}Work}{473}{section.8.5}
-\contentsline {section}{\numberline {8.6}Center of Mass}{477}{section.8.6}
-\contentsline {section}{\numberline {8.7}Arc Length}{483}{section.8.7}
-\contentsline {section}{\numberline {8.8}Surface Area}{490}{section.8.8}
-\contentsline {chapter}{\numberline {9}Sequences and Series}{495}{chapter.9}
-\contentsline {section}{\numberline {9.1}Sequences}{496}{section.9.1}
-\contentsline {section}{\numberline {9.2}Series}{503}{section.9.2}
-\contentsline {section}{\numberline {9.3}The Integral Test}{508}{section.9.3}
-\contentsline {section}{\numberline {9.4}Alternating Series}{512}{section.9.4}
-\contentsline {section}{\numberline {9.5}Comparison Tests}{515}{section.9.5}
-\contentsline {section}{\numberline {9.6}Absolute Convergence}{517}{section.9.6}
-\contentsline {section}{\numberline {9.7}The Ratio and Root Tests}{519}{section.9.7}
-\contentsline {section}{\numberline {9.8}Power Series}{522}{section.9.8}
-\contentsline {section}{\numberline {9.9}Calculus with Power Series}{526}{section.9.9}
-\contentsline {section}{\numberline {9.10}Taylor Polynomials}{528}{section.9.10}
-\contentsline {subsection}{\numberline {9.10.1}Taylor's Theorem}{534}{subsection.9.10.1}
-\contentsline {section}{\numberline {9.11}Taylor Series}{546}{section.9.11}
-\contentsline {chapter}{\numberline {10}Differential Equations}{559}{chapter.10}
-\contentsline {section}{\numberline {10.1}First Order Differential Equations}{559}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Separable Differential Equations}{560}{subsection.10.1.1}
-\contentsline {subsection}{\numberline {10.1.2}Exponential Growth and Decay}{565}{subsection.10.1.2}
-\contentsline {section}{\numberline {10.2}First Order Homogeneous Linear Equations}{572}{section.10.2}
-\contentsline {section}{\numberline {10.3}First Order Linear Equations}{574}{section.10.3}
-\contentsline {section}{\numberline {10.4}Approximation}{579}{section.10.4}
-\contentsline {section}{\numberline {10.5}Second Order Homogeneous Equations}{583}{section.10.5}
-\contentsline {section}{\numberline {10.6}Second Order Linear Equations - Method of Undetermined Coefficients}{587}{section.10.6}
-\contentsline {section}{\numberline {10.7}Second Order Linear Equations - Variation of Parameters}{591}{section.10.7}
-\contentsline {chapter}{Selected Exercise Answers}{595}{chapter*.195}
-\contentsline {chapter}{Inside Cover Material}{659}{chapter*.196}
-\contentsline {chapter}{Index}{669}{chapter*.197}
-\contentsline {chapter}{Index}{670}{chapter*.197}
+\contentsline {subsection}{\numberline {1.1.2}Inequalities, Intervals and Solving Basic Inequalities}{6}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Law of Exponents}{15}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}The Quadratic Formula and Completing the Square}{16}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}The Absolute Value}{18}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}Solving Inequalities that Contain Absolute Values}{19}{subsection.1.1.6}
+\contentsline {section}{\numberline {1.2}Analytic Geometry}{22}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Cartesian Coordinate Plane}{22}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Relations}{26}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Lines}{29}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Distance between Two Points and Midpoints}{33}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Conics}{36}{subsection.1.2.5}
+\contentsline {section}{\numberline {1.3}Trigonometry}{44}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Angles and Sectors of Circles}{44}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Trigonometric Functions}{45}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Computing Exact Trigonometric Ratios}{47}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Graphs of Trigonometric Functions}{51}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Trigonometric Identities}{52}{subsection.1.3.5}
+\contentsline {section}{\numberline {1.4}Additional Exercises}{54}{section.1.4}
+\contentsline {chapter}{\numberline {2}Functions}{57}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction to Functions}{57}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Function Notation and Domain}{60}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Modeling with Functions}{64}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Function Arithmetic}{72}{section.2.2}
+\contentsline {section}{\numberline {2.3}Composite Functions}{83}{section.2.3}
+\contentsline {section}{\numberline {2.4}Graphs of Functions}{86}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Functional Symmetry}{89}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}General Function Behaviour}{96}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Transformations}{104}{section.2.5}
+\contentsline {section}{\numberline {2.6}Linear, Quadratic, and Polynomial Functions}{124}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Linear Functions}{124}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Quadratic Functions}{136}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Polynomial Functions}{151}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Exponential Functions}{157}{section.2.7}
+\contentsline {section}{\numberline {2.8}Inverse Functions}{161}{section.2.8}
+\contentsline {section}{\numberline {2.9}Logarithms}{163}{section.2.9}
+\contentsline {section}{\numberline {2.10}Inverse Trigonometric Functions}{166}{section.2.10}
+\contentsline {section}{\numberline {2.11}Hyperbolic Functions}{172}{section.2.11}
+\contentsline {section}{\numberline {2.12}Additional Exercises}{177}{section.2.12}
+\contentsline {chapter}{\numberline {3}Limits}{179}{chapter.3}
+\contentsline {section}{\numberline {3.1}The tangent problem}{179}{section.3.1}
+\contentsline {section}{\numberline {3.2}The Limit}{183}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Limits of Difference Quotients}{190}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Precise Definition of a Limit}{202}{section.3.3}
+\contentsline {section}{\numberline {3.4}Computing Limits: Graphically}{212}{section.3.4}
+\contentsline {section}{\numberline {3.5}Computing Limits: Limit Laws}{214}{section.3.5}
+\contentsline {section}{\numberline {3.6}The Squeeze Theorem And Some Special Limits}{224}{section.3.6}
+\contentsline {section}{\numberline {3.7}Continuity}{230}{section.3.7}
+\contentsline {section}{\numberline {3.8}Infinite Limits and Limits at Infinity}{247}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Vertical Asymptotes}{250}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Horizontal Asymptotes}{251}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Slant Asymptotes}{252}{subsection.3.8.3}
+\contentsline {subsection}{\numberline {3.8.4}End Behaviour and Comparative Growth Rates}{253}{subsection.3.8.4}
+\contentsline {chapter}{\numberline {4}Derivatives}{259}{chapter.4}
+\contentsline {section}{\numberline {4.1}The Rate of Change of a Function}{259}{section.4.1}
+\contentsline {section}{\numberline {4.2}The Derivative Function}{264}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Differentiable}{269}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Second and Other Derivatives}{270}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Velocities}{271}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Derivative Rules}{273}{section.4.3}
+\contentsline {section}{\numberline {4.4}Derivative Rules for Trigonometric Functions}{278}{section.4.4}
+\contentsline {section}{\numberline {4.5}The Chain Rule}{280}{section.4.5}
+\contentsline {section}{\numberline {4.6}Derivatives of Exponential \& Logarithmic Functions}{285}{section.4.6}
+\contentsline {section}{\numberline {4.7}Implicit Differentiation}{290}{section.4.7}
+\contentsline {section}{\numberline {4.8}Derivatives of Inverse Functions}{297}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Derivatives of Inverse Trigonometric Functions}{299}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Glossary of Derivatives of Elementary Functions}{302}{subsection.4.8.2}
+\contentsline {section}{\numberline {4.9}Hyperbolic Functions}{303}{section.4.9}
+\contentsline {section}{\numberline {4.10}Additional Exercises}{304}{section.4.10}
+\contentsline {chapter}{\numberline {5}Applications of Derivatives}{307}{chapter.5}
+\contentsline {section}{\numberline {5.1}Related Rates}{307}{section.5.1}
+\contentsline {section}{\numberline {5.2}Extrema of a Function}{313}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Local Extrema}{313}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Absolute Extrema}{317}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}The Mean Value Theorem}{321}{section.5.3}
+\contentsline {section}{\numberline {5.4}Linear and Higher Order Approximations}{326}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Linear Approximations}{327}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Differentials}{329}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Taylor Polynomials}{330}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Newton's Method}{332}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}L'H\^opital's Rule}{336}{section.5.5}
+\contentsline {section}{\numberline {5.6}Curve Sketching}{345}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Intervals of Increase/Decrease, and the First Derivative Test}{345}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}The Second Derivative Test}{347}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Concavity and Inflection Points}{349}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}Asymptotes and Other Things to Look For}{351}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.5}Summary of Curve Sketching}{352}{subsection.5.6.5}
+\contentsline {section}{\numberline {5.7}Optimization Problems}{355}{section.5.7}
+\contentsline {section}{\numberline {5.8}Antiderivatives and Indefinite Integration}{363}{section.5.8}
+\contentsline {chapter}{\numberline {6}Integration}{373}{chapter.6}
+\contentsline {section}{\numberline {6.1}Antiderivatives and Indefinite Integration}{373}{section.6.1}
+\contentsline {section}{\numberline {6.2}Displacement and Area}{382}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Sigma Notation}{385}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Approximating the Area of a Plane Region}{387}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Riemann Sums}{390}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}The Definite Integral}{398}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}The Fundamental Theorem of Calculus}{408}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}The net change theorem}{412}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Functions defined by integrals}{416}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}FTC 2}{417}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}More on Differentiating Integral Functions}{420}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Indefinite Integrals}{423}{section.6.4}
+\contentsline {chapter}{\numberline {7}Techniques of Integration}{429}{chapter.7}
+\contentsline {section}{\numberline {7.1}Substitution Rule}{429}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Integrals Involving Trigonometric Functions}{438}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2} Simplifying the Integrand}{440}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Substitution and Inverse Trigonometric Functions}{442}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Substitution and Definite Integrals}{446}{subsection.7.1.4}
+\contentsline {section}{\numberline {7.2}Powers of Trigonometric Functions}{451}{section.7.2}
+\contentsline {section}{\numberline {7.3}Trigonometric Substitutions}{465}{section.7.3}
+\contentsline {section}{\numberline {7.4}Integration by Parts}{473}{section.7.4}
+\contentsline {section}{\numberline {7.5}Rational Functions and Partial Fractions}{484}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Partial Fraction Decomposition}{485}{subsection.7.5.1}
+\contentsline {section}{\numberline {7.6}Numerical Integration}{493}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}The Trapezoidal Rule}{497}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2} Simpson's Rule}{500}{subsection.7.6.2}
+\contentsline {subsection}{\numberline {7.6.3}Summary and Error Analysis}{504}{subsection.7.6.3}
+\contentsline {section}{\numberline {7.7}Improper Integrals}{512}{section.7.7}
+\contentsline {section}{\numberline {7.8}Hyperbolic Functions Revisited}{529}{section.7.8}
+\contentsline {section}{\numberline {7.9}Additional exercises}{538}{section.7.9}
+\contentsline {chapter}{\numberline {8}Applications of Integration}{541}{chapter.8}
+\contentsline {section}{\numberline {8.1}Distance, Velocity, Acceleration}{541}{section.8.1}
+\contentsline {section}{\numberline {8.2}Area Between Curves}{544}{section.8.2}
+\contentsline {section}{\numberline {8.3}Volume}{559}{section.8.3}
+\contentsline {section}{\numberline {8.4}The Mean Value Theorem for Integrals and Average Value}{573}{section.8.4}
+\contentsline {section}{\numberline {8.5}Work}{577}{section.8.5}
+\contentsline {section}{\numberline {8.6}Center of Mass}{581}{section.8.6}
+\contentsline {section}{\numberline {8.7}Arc Length}{587}{section.8.7}
+\contentsline {section}{\numberline {8.8}Surface Area}{594}{section.8.8}
+\contentsline {chapter}{\numberline {9}Sequences and Series}{599}{chapter.9}
+\contentsline {section}{\numberline {9.1}Sequences}{600}{section.9.1}
+\contentsline {section}{\numberline {9.2}Series}{607}{section.9.2}
+\contentsline {section}{\numberline {9.3}The Integral Test}{611}{section.9.3}
+\contentsline {section}{\numberline {9.4}Alternating Series}{616}{section.9.4}
+\contentsline {section}{\numberline {9.5}Comparison Tests}{618}{section.9.5}
+\contentsline {section}{\numberline {9.6}Absolute Convergence}{621}{section.9.6}
+\contentsline {section}{\numberline {9.7}The Ratio and Root Tests}{623}{section.9.7}
+\contentsline {section}{\numberline {9.8}Power Series}{626}{section.9.8}
+\contentsline {section}{\numberline {9.9}Calculus with Power Series}{630}{section.9.9}
+\contentsline {section}{\numberline {9.10}Taylor Polynomials}{632}{section.9.10}
+\contentsline {subsection}{\numberline {9.10.1}Taylor's Theorem}{638}{subsection.9.10.1}
+\contentsline {section}{\numberline {9.11}Taylor Series}{650}{section.9.11}
+\contentsline {chapter}{\numberline {10}Differential Equations}{663}{chapter.10}
+\contentsline {section}{\numberline {10.1}First Order Differential Equations}{663}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Separable Differential Equations}{664}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Exponential Growth and Decay}{669}{subsection.10.1.2}
+\contentsline {section}{\numberline {10.2}First Order Homogeneous Linear Equations}{675}{section.10.2}
+\contentsline {section}{\numberline {10.3}First Order Linear Equations}{678}{section.10.3}
+\contentsline {section}{\numberline {10.4}Approximation}{683}{section.10.4}
+\contentsline {section}{\numberline {10.5}Second Order Homogeneous Equations}{686}{section.10.5}
+\contentsline {section}{\numberline {10.6}Second Order Linear Equations - Method of Undetermined Coefficients}{690}{section.10.6}
+\contentsline {section}{\numberline {10.7}Second Order Linear Equations - Variation of Parameters}{695}{section.10.7}
+\contentsline {chapter}{\numberline {11}Polar Coordinates, Parametric Equations}{699}{chapter.11}
+\contentsline {section}{\numberline {11.1}Polar Coordinates}{699}{section.11.1}
+\contentsline {section}{\numberline {11.2}Slopes in Polar Coordinates}{703}{section.11.2}
+\contentsline {section}{\numberline {11.3}Areas in Polar Coordinates}{705}{section.11.3}
+\contentsline {section}{\numberline {11.4}Parametric Equations}{709}{section.11.4}
+\contentsline {section}{\numberline {11.5}Calculus with Parametric Equations}{711}{section.11.5}
+\contentsline {section}{\numberline {11.6}Conics in Polar Coordinates}{713}{section.11.6}
+\contentsline {chapter}{\numberline {12}Three Dimensions}{719}{chapter.12}
+\contentsline {section}{\numberline {12.1}The Coordinate System}{719}{section.12.1}
+\contentsline {section}{\numberline {12.2}Vectors}{723}{section.12.2}
+\contentsline {section}{\numberline {12.3}The Dot Product}{728}{section.12.3}
+\contentsline {section}{\numberline {12.4}The Cross Product}{734}{section.12.4}
+\contentsline {section}{\numberline {12.5}Lines and Planes}{738}{section.12.5}
+\contentsline {section}{\numberline {12.6}Other Coordinate Systems}{745}{section.12.6}
+\newpage 
+\contentsline {chapter}{\numberline {13}Partial Differentiation}{751}{chapter.13}
+\contentsline {section}{\numberline {13.1}Functions of Several Variables}{751}{section.13.1}
+\contentsline {section}{\numberline {13.2}Limits and Continuity}{754}{section.13.2}
+\contentsline {section}{\numberline {13.3}Partial Differentiation}{758}{section.13.3}
+\contentsline {section}{\numberline {13.4}The Chain Rule}{765}{section.13.4}
+\contentsline {section}{\numberline {13.5}Directional Derivatives}{768}{section.13.5}
+\contentsline {section}{\numberline {13.6}Higher Order Derivatives}{773}{section.13.6}
+\contentsline {section}{\numberline {13.7}Maxima and Minima}{774}{section.13.7}
+\contentsline {section}{\numberline {13.8}Lagrange Multipliers}{780}{section.13.8}
+\contentsline {chapter}{\numberline {14}Multiple Integration}{787}{chapter.14}
+\contentsline {section}{\numberline {14.1}Volume and Average Height}{787}{section.14.1}
+\contentsline {section}{\numberline {14.2}Double Integrals in Polar Coordinates}{796}{section.14.2}
+\contentsline {section}{\numberline {14.3}Moment and Center of Mass}{801}{section.14.3}
+\contentsline {section}{\numberline {14.4}Surface Area}{804}{section.14.4}
+\contentsline {section}{\numberline {14.5}Triple Integrals}{806}{section.14.5}
+\contentsline {section}{\numberline {14.6}Cylindrical and Spherical Coordinates}{809}{section.14.6}
+\contentsline {section}{\numberline {14.7}Change of Variables}{813}{section.14.7}
+\contentsline {chapter}{\numberline {15}Vector Functions}{821}{chapter.15}
+\contentsline {section}{\numberline {15.1}Curves of Vector Functions}{821}{section.15.1}
+\contentsline {section}{\numberline {15.2}Calculus with Vector Functions}{824}{section.15.2}
+\contentsline {section}{\numberline {15.3}Arc Length}{832}{section.15.3}
+\contentsline {section}{\numberline {15.4}Curvature}{834}{section.15.4}
+\contentsline {section}{\numberline {15.5}Acceleration Vectors}{838}{section.15.5}
+\contentsline {chapter}{\numberline {16}Vector Calculus}{841}{chapter.16}
+\contentsline {section}{\numberline {16.1}Vector Fields}{841}{section.16.1}
+\contentsline {section}{\numberline {16.2}Divergence and Curl}{842}{section.16.2}
+\contentsline {section}{\numberline {16.3}Line Integrals}{845}{section.16.3}
+\contentsline {subsection}{\numberline {16.3.1}Line Integrals of a Function}{845}{subsection.16.3.1}
+\contentsline {subsection}{\numberline {16.3.2}Line Integrals of a Vector Field}{847}{subsection.16.3.2}
+\contentsline {subsection}{\numberline {16.3.3}The Fundamental Theorem of Line Integrals}{850}{subsection.16.3.3}
+\contentsline {section}{\numberline {16.4}Green's Theorem}{853}{section.16.4}
+\contentsline {section}{\numberline {16.5}The Divergence Theorem}{858}{section.16.5}
+\contentsline {section}{\numberline {16.6}Vector Functions for Surfaces}{862}{section.16.6}
+\contentsline {section}{\numberline {16.7}Surface Integrals}{867}{section.16.7}
+\contentsline {section}{\numberline {16.8}Stokes' Theorem}{871}{section.16.8}
+\contentsline {chapter}{Selected Exercise Answers}{875}{chapter*.312}
+\contentsline {chapter}{Inside Cover Material}{929}{chapter*.313}
+\contentsline {chapter}{Index}{939}{chapter*.314}
+\contentsline {chapter}{Index}{940}{chapter*.314}

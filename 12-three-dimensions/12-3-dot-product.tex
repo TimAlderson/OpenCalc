@@ -1,15 +1,13 @@
 \section{The Dot Product}\label{sec:3Ddotproduct}
 
-Here's a question whose answer turns out to be very useful: Given two
+The goal of this section is to answer the following question. Given two
 vectors, what is the angle between them?
 
-It may not be immediately clear that the question makes sense, but
-it's not hard to turn it into a question that does. Since vectors have
-no position, we are as usual free to place vectors wherever we
+Since vectors have no position, we are free to place vectors wherever we
 like. If the two vectors are placed tail-to-tail, there is now a
 reasonable interpretation of the question: we seek the measure of the
 smallest angle between the two vectors, in the plane in which they lie.
-Figure~\ref{fig:angle between vectors} illustrates the situation.
+Figure~\ref{fig:angle between vectors} illustrates the situation.\index{vector!angle between}
 
 \begin{figure}[H]
 \centerline{
@@ -21,59 +19,63 @@ Figure~\ref{fig:angle between vectors} illustrates the situation.
 \arrow <4pt> [0.35, 1] from 0 0 to 7 3
 \setdashes
 \plot 3 4 7 3 /
-\put {\bf A} [b] <0pt,3pt> at 3 4
-\put {\bf B} [l] <3pt,0pt> at 7 3
+\put {$\vect{v}$} [b] <0pt,3pt> at 3 4
+\put {$\vect{w}$} [l] <3pt,0pt> at 7 3
 \put {$\theta$} [bl] <11pt,8pt> at 0 0
 \endpicture}}
-\caption{The angle between vectors ${\bf A}$ and ${\bf B}$. \label{fig:angle between vectors}}
+\caption{The angle between vectors $\vect{v}$ and $\vect{w}$. \label{fig:angle between vectors}}
 \end{figure}
 
 Since the angle $\theta$ lies in a triangle, we can compute it using a
-bit of trigonometry, namely, the law of cosines. The lengths of the sides of the
-triangle in Figure~\ref{fig:angle between vectors} are $|{\bf A}|$,
-$|{\bf B}|$, and $|{\bf A}-{\bf B}|$. Let ${\bf A}=\langle
-a_1,a_2,a_3\rangle$ and ${\bf B}=\langle b_1,b_2,b_3\rangle$; then
+bit of trigonometry, namely, the law of cosines. Remember that the law of cosines states $c^2 = a^2 + b^2 - 2ab \cos C$. 
+
+The lengths of the sides of the
+triangle in Figure~\ref{fig:angle between vectors} are $|\vect{v}|$,
+$|\vect{w}|$, and $|\vect{v}-\vect{w}|$. Let $\vect{v}=\langle v_1,v_2,v_3\rangle$ and $\vect{w}=\langle w_1,w_2,w_3\rangle$; then
 \begin{align*}
-  |{\bf A}-{\bf B}|^2&=|{\bf A}|^2+|{\bf B}|^2-2|{\bf A}||{\bf B}|\cos\theta	\\
-  2|{\bf A}||{\bf B}|\cos\theta&=|{\bf A}|^2+|{\bf B}|^2-|{\bf A}-{\bf B}|^2	\\
-  &=a_1^2+a_2^2+a_3^2+b_1^2+b_2^2+b_3^2-(a_1-b_1)^2-(a_2-b_2)^2-(a_3-b_3)^2	\\
-  &=a_1^2+a_2^2+a_3^2+b_1^2+b_2^2+b_3^2	\\
-  &\qquad-(a_1^2-2a_1b_1+b_1^2)
-  -(a_2^2-2a_2b_2+b_2^2)-(a_3^2-2a_3b_3+b_3^2)	\\
-  &=2a_1b_1+2a_2b_2+2a_3b_3	\\
-  |{\bf A}||{\bf B}|\cos\theta&=a_1b_1+a_2b_2+a_3b_3	\\
-  \cos\theta&=(a_1b_1+a_2b_2+a_3b_3)/(|{\bf A}||{\bf B}|)
+  |\vect{v}-\vect{w}|^2&=|\vect{v}|^2+|\vect{w}|^2-2|\vect{v}||\vect{w}|\cos\theta	\\
+  2|\vect{v}||\vect{w}|\cos\theta&=|\vect{v}|^2+|\vect{w}|^2-|\vect{v}-\vect{w}|^2	\\
+  &=v_1^2+v_2^2+v_3^2+w_1^2+w_2^2+w_3^2-(v_1-w_1)^2-(v_2-w_2)^2-(v_3-w_3)^2	\\
+  &=v_1^2+v_2^2+v_3^2+w_1^2+w_2^2+w_3^2	\\
+  &\qquad-(v_1^2-2v_1w_1+w_1^2)
+  -(v_2^2-2v_2w_2+w_2^2)-(v_3^2-2v_3w_3+w_3^2)	\\
+  &=2v_1w_1+2v_2w_2+2v_3w_3	\\
+  |\vect{v}||\vect{w}|\cos\theta&=v_1w_1+v_2w_2+v_3w_3	\\
+  \cos\theta&=(v_1w_1+v_2w_2+v_3w_3)/(|\vect{v}||\vect{w}|)
 \end{align*}
-So a bit of simple arithmetic with the coordinates of $\bf A$ and $\bf
-B$ allows us to compute the cosine of the angle between them. If
+A bit of simple arithmetic with the coordinates of $\vect{v}$ and $\vect{w}$ allows us to compute the cosine of the angle between them. If
 necessary we can use the arccosine to get $\theta$, but in many
 problems $\cos\theta$ turns out to be all we really need.
 
 The numerator of the fraction that gives us $\cos\theta$ turns up a
 lot, so we give it a name and more compact notation: we call it
-the \dfont{dot  product}, and write it as
-$${\bf A}\cdot{\bf B} = a_1b_1+a_2b_2+a_3b_3.$$
+the \dfont{dot  product}\index{dot product}, and write it as
+\[
+\vect{v}\cdot\vect{w} = v_1w_1+v_2w_2+v_3w_3
+\]
 This is the same symbol we use for ordinary multiplication, but there
 should never be any confusion; you can tell from context whether we
 are ``multiplying'' vectors or numbers. (We might also use the dot for
-scalar multiplication: $a\cdot{\bf V}=a{\bf V}$; again, it is clear
+scalar multiplication: $a\cdot\vect{v}=a\vect{v}$; again, it is clear
 what is meant from context.)
 
 \begin{example}{}{}
-Find the angle between the vectors ${\bf A}=\langle 1,2,1\rangle$ and
-${\bf B}=\langle 3,1,-5\rangle$.
+Find the angle between the vectors $\vect{v}=\langle 1,2,1\rangle$ and
+$\vect{w}=\langle 3,1,-5\rangle$.
 \end{example}
+
 \begin{solution}
 We know that
-$\cos\theta={\bf A}\cdot{\bf B}/(|{\bf A}||{\bf B}|)=
-(1\cdot3 + 2\cdot1 + 1\cdot(-5))/(|{\bf A}||{\bf B}|)=0$, so
+$\cos\theta=\vect{v}\cdot\vect{w}/(|\vect{v}||\vect{w}|)=
+(1\cdot3 + 2\cdot1 + 1\cdot(-5))/(|\vect{v}||\vect{w}|)=0$, so
 $\theta=\pi/2$, that is, the vectors are perpendicular.
 \end{solution}
 
 \begin{example}{}{}
-Find the angle between the vectors ${\bf A}=\langle 3,3,0\rangle$ and
-${\bf B}=\langle 1,0,0\rangle$.
+Find the angle between the vectors $\vect{v}=\langle 3,3,0\rangle$ and
+$\vect{w}=\langle 1,0,0\rangle$.
 \end{example}
+
 \begin{solution}
 We compute
 \begin{align*}
@@ -83,53 +85,64 @@ We compute
 so $\theta=\pi/4$.
 \end{solution}
 
+The following are some special cases worth looking at. 
+
 \begin{example}{}{}
-Some special cases are worth looking at: Find the angles
-between ${\bf A}$ and ${\bf A}$; ${\bf A}$ and ${\bf -A}$;  ${\bf A}$
-and ${\bf 0}=\langle 0,0,0\rangle$.
+Find the angles between:
+\begin{enumerate}
+\item $\vect{v}$ and $\vect{v}$
+\item $\vect{v}$ and $-\vect{v}$
+\item $\vect{v}$ and $\vect{0}=\langle 0,0,0\rangle$
+\end{enumerate}
+\end{example}
 
-$\ds \cos\theta= {\bf A}\cdot{\bf A}/(|{\bf A}||{\bf A}|)=(a_1^2+a_2^2+a_3^2)/
-(\sqrt{a_1^2+a_2^2+a_3^2}\sqrt{a_1^2+a_2^2+a_3^2})=1$, so the angle
-between ${\bf A}$ and itself is zero, which of course is correct.
+\begin{solution}
+\begin{enumerate}
+\item
+$\ds \cos\theta= \vect{v}\cdot\vect{v}/(|\vect{v}||\vect{v}|)=(v_1^2+v_2^2+v_3^2)/
+(\sqrt{v_1^2+v_2^2+v_3^2}\sqrt{v_1^2+v_2^2+v_3^2})=1$, so the angle
+between $\vect{v}$ and itself is zero, which of course is correct.
 
-$\ds\cos\theta={\bf A}\cdot{\bf -A}/(|{\bf A}||{\bf -A}|)=(-a_1^2-a_2^2-a_3^2)/
-(\sqrt{a_1^2+a_2^2+a_3^2}\sqrt{a_1^2+a_2^2+a_3^2})=-1$, so the angle
+\item
+$\ds\cos\theta=\vect{v}\cdot-\vect{v}/(|\vect{v}||-\vect{v}|)=(-v_1^2-v_2^2-v_3^2)/
+(\sqrt{v_1^2+v_2^2+v_3^2}\sqrt{v_1^2+v_2^2+v_3^2})=-1$, so the angle
 is $\pi$, that is, the vectors point in opposite directions, as of
 course we already knew.
 
-$\ds \cos\theta= {\bf A}\cdot{\bf 0}/(|{\bf A}||{\bf 0}|)=(0+0+0)/
-(\sqrt{a_1^2+a_2^2+a_3^2}\sqrt{0^2+0^2+0^2})$, which is undefined.
-On the other hand, note that since ${\bf A}\cdot{\bf 0}=0$ it looks
+\item
+$\ds \cos\theta= \vect{v}\cdot\vect{0}/(|\vect{v}||\vect{0}|)=(0+0+0)/
+(\sqrt{v_1^2+v_2^2+v_3^2}\sqrt{0^2+0^2+0^2})$, which is undefined.
+On the other hand, note that since $\vect{v}\cdot\vect{0}=0$ it looks
 at first as if $\cos\theta$ will be zero, which as we have seen means
 that vectors are perpendicular; only when we notice that the
 denominator is also zero do we run into trouble. One way to ``fix''
-this is to adopt the convention that the zero vector ${\bf 0}$ is
+this is to adopt the convention that the zero vector $\vect{0}$ is
 perpendicular to all vectors; then we can say in general that if
-${\bf A}\cdot{\bf B}=0$, $\bf A$ and $\bf B$ are perpendicular.
-\end{example}
+$\vect{v}\cdot\vect{w}=0$, $\vect{v}$ and $\vect{w}$ are perpendicular.
+\end{enumerate}
+\end{solution}
 
 Generalizing the examples, note the following useful facts:
-\begin{enumerate}
-	\item	If $\bf A$ is parallel or anti-parallel to $\bf B$ then
-	${\bf A}\cdot{\bf B}/(|{\bf A}||{\bf B}|)=\pm1$, and conversely, if
-	${\bf A}\cdot{\bf B}/(|{\bf A}||{\bf B}|)=1$, $\bf A$ and $\bf B$
-	are parallel, while if ${\bf A}\cdot{\bf B}/(|{\bf A}||{\bf
-	B}|)=-1$, $\bf A$ and $\bf B$ are anti-parallel. (Vectors are
-	parallel if they point in the same direction,
-	anti-parallel if they point in opposite directions.)
-	\item	If $\bf A$ is perpendicular to $\bf B$ then 
-	${\bf A}\cdot{\bf B}/(|{\bf A}||{\bf B}|)=0$, and conversely if 
-	${\bf A}\cdot{\bf B}/(|{\bf A}||{\bf B}|)=0$ then 
-	$\bf A$ and $\bf B$ are perpendicular.
-\end{enumerate}
 
-Given two vectors, it is often useful to find the \dfont{projection} 
+\begin{itemize}
+	\item	If $\vect{v}$ is parallel or anti-parallel to $\vect{w}$ then
+	$\vect{v}\cdot\vect{w}/(|\vect{v}||\vect{w}|)=\pm1$, and conversely, if
+	$\vect{v}\cdot\vect{w}/(|\vect{v}||\vect{w}|)=1$, $\vect{v}$ and $\vect{w}$	are parallel, while if $\vect{v}\cdot\vect{w}/(|\vect{v}||\vect{w}|)=-1$, $\vect{v}$ and $\vect{w}$ are anti-parallel. (Vectors are
+	parallel if they point in the same direction,
+	anti-parallel if they point in opposite directions.) \index{vector!parallel}\index{vector!anti-parallel}
+	\item	If $\vect{v}$ is perpendicular to $\vect{w}$ then 
+	$\vect{v}\cdot\vect{w}/(|\vect{v}||\vect{w}|)=0$, and conversely if 
+	$\vect{v}\cdot\vect{w}/(|\vect{v}||\vect{w}|)=0$ then 
+	$\vect{v}$ and $\vect{w}$ are perpendicular. \index{vector!perpendicular}
+\end{itemize}
+
+Given two vectors, it is often useful to find the \dfont{projection}\index{vector!projection} 
 of one vector onto the other, because this turns out to have important
-meaning in many circumstances. More precisely, given ${\bf A}$ and
-${\bf B}$, we seek a vector parallel to $\bf B$ but with length
-determined by $\bf A$ in a natural way, as shown in
-Figure~\ref{fig:vector projection}. $\bf V$ is chosen so that the
-triangle formed by $\bf A$, $\bf V$, and ${\bf A}-{\bf V}$
+meaning in many circumstances. More precisely, given $\vect{v}$ and
+$\vect{w}$, we seek a vector parallel to $\vect{w}$ but with length
+determined by $\vect{v}$ in a natural way, as shown in
+Figure~\ref{fig:vector projection}. $\vect{p}$ is chosen so that the
+triangle formed by $\vect{v}$, $\vect{p}$, and $\vect{v}-\vect{p}$
 is a right triangle.
 
 \begin{figure}[H]
@@ -143,43 +156,42 @@ is a right triangle.
 \setdashes
 \arrow <4pt> [0.35, 1] from 0 0 to 7 3
 \plot 3 4 3.98 1.71 /
-\put {\bf A} [b] <0pt,3pt> at 3 4
-\put {\bf B} [l] <3pt,0pt> at 7 3
-\put {\bf V} [tl] <3pt,-3pt> at 3.98 1.71
+\put {$\vect{v}$} [b] <0pt,3pt> at 3 4
+\put {$\vect{w}$} [l] <3pt,0pt> at 7 3
+\put {$\vect{p}$} [tl] <3pt,-3pt> at 3.98 1.71
 \put {$\theta$} [bl] <11pt,8pt> at 0 0
 \endpicture}}
-\caption{$\bf V$ is the projection of $\bf A$ onto $\bf B$. \label{fig:vector projection}}
+\caption{$\vect{p}$ is the projection of $\vect{v}$ onto $\vect{w}$. \label{fig:vector projection}}
 \end{figure}
 
 Using a little trigonometry, we see that 
 $$
-  |{\bf V}|=|{\bf A}|\cos\theta= 
-  |{\bf A}|{{\bf A}\cdot{\bf B}\over|{\bf A}||{\bf B}|}=
-  {{\bf A}\cdot{\bf B}\over|{\bf B}|};
+  |\vect{p}|=|\vect{v}|\cos\theta= 
+  |\vect{v}|{\vect{v}\cdot\vect{w}\over|\vect{v}||\vect{w}|}=
+  {\vect{v}\cdot\vect{w}\over|\vect{w}|};
 $$
-this is sometimes called the 
-\dfont{scalar projection of $\bf A$ onto $\bf B$}. To get $\bf V$
+this is sometimes called the \dfont{scalar projection of $\vect{v}$ onto $\vect{w}$}\index{vector!scalar projection}. To get $\vect{p}$
 itself, we multiply this length by a vector of length one parallel to
-$\bf B$: 
+$\vect{w}$: 
 $$
-  {\bf V}= {{\bf A}\cdot{\bf B}\over|{\bf B}|}{{\bf B}\over|{\bf B}|}=
-  {{\bf A}\cdot{\bf B}\over|{\bf B}|^2}{\bf B}.
+  \vect{p}= {\vect{v}\cdot\vect{w}\over|\vect{w}|}{\vect{w}\over|\vect{w}|}=
+  {\vect{v}\cdot\vect{w}\over|\vect{w}|^2}\vect{w}.
 $$
-Be sure that you understand why ${\bf B}/|{\bf B}|$ is a vector of
+Be sure that you understand why $\vect{w}/|\vect{w}|$ is a vector of
 length one (also called a 
-\dfont{unit vector}) parallel to $\bf B$.
+\dfont{unit vector}\index{unit vector}) parallel to $\vect{w}$.
 
 The discussion so far implicitly assumed that $0\le\theta\le\pi/2$.
 If $\pi/2<\theta\le\pi$, the picture is like 
 Figure~\ref{fig:obtuse vector projection}.
-In this case ${\bf A}\cdot {\bf B}$ is negative, so the vector
-$${{\bf A}\cdot{\bf B}\over|{\bf B}|^2}{\bf B}$$
-is anti-parallel to $\bf B$, and its length is 
-$$\left|{{\bf A}\cdot{\bf B}\over|{\bf B}|}\right|.$$
-So in general, the scalar projection of $\bf A$ onto $\bf B$
+In this case $\vect{v}\cdot \vect{w}$ is negative, so the vector
+$${\vect{v}\cdot\vect{w}\over|\vect{w}|^2}\vect{w}$$
+is anti-parallel to $\vect{w}$, and its length is 
+$$\left|{\vect{v}\cdot\vect{w}\over|\vect{w}|}\right|.$$
+In general, the scalar projection of $\vect{v}$ onto $\vect{w}$
 may be positive or negative. If
 it is negative, it means that the projection vector is anti-parallel
-to $\bf B$ and that the length of the projection vector is the
+to $\vect{w}$ and that the length of the projection vector is the
 absolute value of the scalar projection. Of course, you can also
 compute the length of the projection vector as usual, by applying the
 distance formula to the vector.
@@ -195,18 +207,18 @@ distance formula to the vector.
 \setdashes
 \arrow <4pt> [0.35, 1] from 0 0 to 7 3
 \plot -4.966 0.586 -3.98 -1.71 /
-\put {\bf A} [b] <0pt,3pt> at -4.966 0.586
-\put {\bf B} [l] <3pt,0pt> at 7 3
-\put {\bf V} [tl] <3pt,-3pt> at -3.98 -1.71
+\put {$\vect{v}$} [b] <0pt,3pt> at -4.966 0.586
+\put {$\vect{w}$} [l] <3pt,0pt> at 7 3
+\put {$\vect{p}$} [tl] <3pt,-3pt> at -3.98 -1.71
 \put {$\theta$} [b] <0pt,3pt> at 0 0
 \endpicture}}
-\caption{$\bf V$ is the projection of $\bf A$ onto $\bf B$. \label{fig:obtuse vector projection}}
+\caption{$\vect{p}$ is the projection of $\vect{v}$ onto $\vect{w}$. \label{fig:obtuse vector projection}}
 \end{figure}
 
-Note that the phrase ``projection onto $\bf B$'' is a bit misleading
-if taken literally; all that $\bf B$ provides is a direction; the
-length of $\bf B$ has no impact on the final vector. In
-Figure~\ref{fig:short projection}, for example, $\bf B$ is shorter than
+Note that the phrase ``projection onto $\vect{w}$'' is a bit misleading
+if taken literally; all that $\vect{w}$ provides is a direction; the
+length of $\vect{w}$ has no impact on the final vector. In
+Figure~\ref{fig:short projection}, for example, $\vect{w}$ is shorter than
 the projection vector, but this is perfectly acceptable.
 
 \begin{figure}[H]
@@ -218,8 +230,8 @@ the projection vector, but this is perfectly acceptable.
 \arrow <4pt> [0.35, 1] from 0 0 to 3 4
 \setdashes
 \arrow <4pt> [0.35, 1] from 0 0 to 2.3333 1
-\put {\bf A} [b] <0pt,3pt> at 3 4
-\put {\bf B} [t] <0pt,-5pt> at 2.3333 1
+\put {$\vect{v}$} [b] <0pt,3pt> at 3 4
+\put {$\vect{w}$} [t] <0pt,-5pt> at 2.3333 1
 \put {$\theta$} [bl] <11pt,8pt> at 0 0
 \setcoordinatesystem units <6truemm,6truemm> point at -9 0
 \setplotarea x from 0 to 7, y from 0 to 4
@@ -229,32 +241,36 @@ the projection vector, but this is perfectly acceptable.
 \setdashes
 \arrow <4pt> [0.35, 1] from 0 0 to 2.3333 1
 \plot 3 4 3.98 1.71 /
-\put {\bf A} [b] <0pt,3pt> at 3 4
-\put {\bf B} [t] <0pt,-5pt> at 2.3333 1
-\put {\bf V} [tl] <3pt,-3pt> at 3.98 1.71
+\put {$\vect{v}$} [b] <0pt,3pt> at 3 4
+\put {$\vect{w}$} [t] <0pt,-5pt> at 2.3333 1
+\put {$\vect{p}$} [tl] <3pt,-3pt> at 3.98 1.71
 \put {$\theta$} [bl] <11pt,8pt> at 0 0
 \endpicture}}
-\caption{$\bf V$ is the projection of $\bf A$ onto $\bf B$. \label{fig:short projection}}
+\caption{$\vect{p}$ is the projection of $\vect{v}$ onto $\vect{w}$. \label{fig:short projection}}
 \end{figure}
 
-\begin{example}{Components of Force Vector}{components of force vector}
 Physical force is a vector quantity. It is often necessary to compute
 the ``component'' of a force acting in a different direction than the
-force is being applied. For example, suppose a ten pound weight is
-resting on an inclined plane---a pitched roof, for example. Gravity
+force is being applied.
+
+\begin{example}{Components of Force Vector}{components of force vector}
+Suppose a ten pound weight is resting on an inclined plane---a pitched roof, for example. Gravity
 exerts a force of ten pounds on the object, directed straight down. It
 is useful to think of the component of this force directed down and
 parallel to the roof, and the component down and directly into the
 roof. These forces are the projections of the force vector onto
 vectors parallel and perpendicular to the roof. Suppose the roof is
-tilted at a $30^\circ$ angle, as in Figure~\ref{fig:components of force}.
+tilted at a $30^\circ$ angle, as in Figure~\ref{fig:components of force}. Compute the component of the force directed down the roof and the component of the force directed into the roof. 
+\end{example}
+
+\begin{solution}
 A vector parallel to the roof is $\langle-\sqrt3,-1\rangle$,
 and a vector perpendicular to the roof is
-$\langle 1,-\sqrt3\rangle$.  The force vector is ${\bf F}=\langle
+$\langle 1,-\sqrt3\rangle$.  The force vector is $\vect{F}=\langle
 0,-10\rangle$. The component of the force directed down the roof is
 then
 \begin{align*}
-  {\bf F}_1&={{\bf F}\cdot
+  \vect{F}_1&={\vect{F}\cdot
   \langle-\sqrt3,-1\rangle\over|\langle-\sqrt3,-1\rangle|^2}
   \langle-\sqrt3,-1\rangle
   ={10\over 2}{\langle-\sqrt3,-1\rangle\over2}=
@@ -262,7 +278,7 @@ then
 \end{align*}
 with length 5.  The component of the force directed into the roof is
 \begin{align*}
-  {\bf F}_2&={{\bf F}\cdot
+  \vect{F}_2&={\vect{F}\cdot
   \langle1,-\sqrt3\rangle\over|\langle1,-\sqrt3\rangle|^2}
   \langle1,-\sqrt3\rangle
 ={10\sqrt3\over 2}{\langle1,-\sqrt3\rangle\over2}=
@@ -271,7 +287,7 @@ with length 5.  The component of the force directed into the roof is
 with length $5\sqrt3$. Thus, a force of 5 pounds is pulling the object
 down the roof, while a force of $5\sqrt3$ pounds is pulling the object
 into the roof.
-\end{example}
+\end{solution}
 
 \begin{figure}[H]
 \centerline{
@@ -284,9 +300,9 @@ into the roof.
 \arrow <4pt> [0.35, 1] from 2.5 1.443 to 2.067 1.193
 \arrow <4pt> [0.35, 1] from 2.5 1.443 to 2.5 0.443
 \arrow <4pt> [0.35, 1] from 2.5 1.443 to 2.933 0.683
-\put {${\bf F}$} [t] <0pt,-5pt> at 2.5 0.443
-\put {${\bf F}_2$} [tl] <3pt,-3pt> at 2.933 0.683
-\put {${\bf F}_1$} [br] <-3pt,3pt> at 2.067 1.193
+\put {$\vect{F}$} [t] <0pt,-5pt> at 2.5 0.443
+\put {$\vect{F}_2$} [tl] <3pt,-3pt> at 2.933 0.683
+\put {$\vect{F}_1$} [br] <-3pt,3pt> at 2.067 1.193
 \endpicture}}
 \caption{Components of a force. \label{fig:components of force}}
 \end{figure}
@@ -298,16 +314,16 @@ calculations; subsequently it can be easier to use the properties
 instead of calculating with coordinates.
 
 \begin{theorem}{Dot Product Properties}{dot product properties}
-If ${\bf u}$, ${\bf v}$, and ${\bf w}$ are vectors and $a$ is a real
+If $\vect{u}$, $\vect{v}$, and $\vect{w}$ are vectors and $a$ is a real
 number, then
 \begin{enumerate}
-	\item	$\ds {\bf u}\cdot{\bf u} = |{\bf u}|^2$
-	\item	${\bf u}\cdot{\bf v} = {\bf v}\cdot{\bf u}$
-	\item	${\bf u}\cdot({\bf v}+{\bf w}) = 
-	{\bf u}\cdot{\bf v}+{\bf u}\cdot{\bf w}$
-	\item	$(a{\bf u})\cdot{\bf v}=a({\bf u}\cdot{\bf v})
-	={\bf u}\cdot(a{\bf v})$
-\end{enumerate}
+	\item	$\ds \vect{u}\cdot\vect{u} = |\vect{u}|^2$
+	\item	$\vect{u}\cdot\vect{v} = \vect{v}\cdot\vect{u}$
+	\item	$\vect{u}\cdot(\vect{v}+\vect{w}) = 
+	\vect{u}\cdot\vect{v}+\vect{u}\cdot\vect{w}$
+	\item	$(a\vect{u})\cdot\vect{v}=a(\vect{u}\cdot\vect{v})
+	=\vect{u}\cdot(a\vect{v})$
+\end{enumerate}\index{dot product!properties}
 \end{theorem}
 
 
@@ -441,7 +457,7 @@ the ground.
 \plot 6 1.5 8 2.655 /
 %\setplotsymbol ({\twelvepoint.})
 \arrow <4pt> [0.35, 1] from 8.5 2.943 to 10 3.81
-\put {${\bf F}$} [bl] <3pt,3pt> at 10 3.81
+\put {$\vect{F}$} [bl] <3pt,3pt> at 10 3.81
 \endpicture}}
 \caption{Pulling a wagon. \label{fig:pulling a wagon}}
 \end{figure}
@@ -458,18 +474,17 @@ the ground.
 \end{ex}
 
 \begin{ex}
-Use the dot product to find a non-zero vector ${\bf w}$
-perpendicular to both ${\bf u}=\langle 1,2,-3\rangle$ and 
-${\bf v}=\langle 2,0,1\rangle$.
+Use the dot product to find a non-zero vector $\vect{w}$
+perpendicular to both $\vect{u}=\langle 1,2,-3\rangle$ and 
+$\vect{v}=\langle 2,0,1\rangle$.
 \begin{sol}
 	Any vector of the form $\langle a, -7a/2, -2a\rangle$
 \end{sol}
 \end{ex}
 
 \begin{ex}
-Let ${\bf x}=\langle 1,1,0 \rangle$ and ${\bf y}=\langle
-2,4,2 \rangle$.  Find a unit vector that is perpendicular to both $\bf
-x$ and $\bf y$.
+Let $\vect{x}=\langle 1,1,0 \rangle$ and $\vect{y}=\langle
+2,4,2 \rangle$.  Find a unit vector that is perpendicular to both $\vect{x}$ and $\vect{y}$.
 \begin{sol}
 	$\langle 1/\sqrt3,-1/\sqrt3,1/\sqrt3\rangle$
 \end{sol}
@@ -492,14 +507,12 @@ form a right triangle?
 \end{ex}
 
 \begin{ex}
-Show that $|{\bf A}\cdot{\bf B}|\le|{\bf A}||{\bf B}|$
+Show that $|\vect{v}\cdot\vect{w}|\le|\vect{v}||\vect{w}|$
 \end{ex}
 
 \begin{ex}
-Let $\bf x$ and $\bf y$ be perpendicular vectors.  Use
-Theorem~\ref{thm:dot product properties} to prove that $|{\bf
-  x}|^2+|{\bf y}|^2=|{\bf x}+{\bf y}|^2$.  What is this result better
-known as?
+Let $\vect{x}$ and $\vect{y}$ be perpendicular vectors.  Use
+Theorem~\ref{thm:dot product properties} to prove that $|\vect{x}|^2+|\vect{y}|^2=|\vect{x}+\vect{y}|^2$.  What is this result better known as?
 \end{ex}
 
 \begin{ex}
@@ -507,9 +520,9 @@ Prove that the diagonals of a rhombus intersect at right angles.
 \end{ex}
 
 \begin{ex}
-Suppose that ${\bf z}=|{\bf x}| {\bf y} + |{\bf y}| {\bf x}$
-where $\bf x$, $\bf y$, and $\bf z$ are all nonzero vectors.  Prove
-that $\bf z$ bisects the angle between $\bf x$ and $\bf y$.
+Suppose that $\vect{z}=|\vect{x}| \vect{y} + |\vect{y}| \vect{x}$
+where $\vect{x}$, $\vect{y}$, and $\vect{z}$ are all nonzero vectors.  Prove
+that $\vect{z}$ bisects the angle between $\vect{x}$ and $\vect{y}$.
 \end{ex}
 
 \begin{ex}

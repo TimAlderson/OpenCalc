@@ -4,21 +4,21 @@ Lines and planes are perhaps the simplest of curves and surfaces in
 three dimensional space. They also will prove important as we seek to
 understand more complicated curves and surfaces. 
 
-The equation of a line in two dimensions is $ax+by=c$; it is
+You may recall that the equation of a line in two dimensions is $ax+by=c$; it is
 reasonable to expect that a line in three dimensions is
-given by $ax + by +cz = d$; reasonable, but wrong---it turns out that
-this is the equation of a plane.
+given by $ax + by +cz = d$. However it turns out that
+this is the equation of a plane. We will turn our attention to a study of planes and return to consider lines later in this section. 
 
 A plane does not have an obvious ``direction'' as does a line. It is
 possible to associate a plane with a direction in a very useful way,
 however: there are exactly two directions perpendicular to a
-plane. Any vector with one of these two directions is called \dfont{normal} to the plane.
-So while there are many normal vectors to a given plane, they are all
+plane. Any vector with one of these two directions is called \dfont{normal}\index{normal vector}\index{plane!normal vector} to the plane.
+While there are many normal vectors to a given plane, they are all
 parallel or anti-parallel to each other.
 
 Suppose two points $(v_1,v_2,v_3)$ and $(w_1,w_2,w_3)$ are in a plane;
 then the vector $\langle w_1-v_1,w_2-v_2,w_3-v_3\rangle$ is parallel
-to the plane; in particular, if this vector is placed with its tail at
+to the plane. In particular, if this vector is placed with its tail at
 $(v_1,v_2,v_3)$ then its head is at $(w_1,w_2,w_3)$ and it lies in the
 plane. As a result, any vector perpendicular to the plane is
 perpendicular to $\langle w_1-v_1,w_2-v_2,w_3-v_3\rangle$. In fact, it
@@ -70,14 +70,23 @@ Thus, given a vector $\langle a,b,c\rangle$ we know that all planes
 perpendicular to this vector have the form $ax+by+cz=d$, and any surface
 of this form is a plane perpendicular to $\langle a,b,c\rangle$.
 
+\begin{formulabox}[Standard Form of a Plane]
+Any plane can be written in the form
+\[
+ax + by + cz = d
+\]
+where $a, b, c, d$ are constants and not all $a, b, c$ are zero. 
+
+This plane is perpendicular to the vector $\langle a,b,c \rangle$. \index{plane!standard form}
+\end{formulabox}
+
 \begin{example}{Perpendicular Plane}{perpplaneexample}
 Find an equation for the plane perpendicular to $\langle 1,2,3\rangle$
 and containing the point $(5,0,7)$.
 \end{example}
 \begin{solution}
-Using the derivation above, 
-the plane is $1x+2y+3z=1\cdot5+2\cdot0+3\cdot7=26$. Alternately, we
-know that the plane is $x+2y+3z=d$, and to find $d$ we may substitute
+Using the formula above, 
+the plane is $1x+2y+3z=d$. To find $d$ we may substitute
 the known point on the plane to get $5+2\cdot0+3\cdot7=d$, so $d=26$.
 \end{solution}
 
@@ -111,7 +120,9 @@ desired plane is to contain a certain line, $\langle
 a,b,c\rangle$ must be perpendicular to any vector parallel to this
 line. Since $\langle
 a,b,c\rangle$ must be perpendicular to two vectors, we may find it by
-computing the cross product of the two. So we need a vector parallel
+computing the cross product of the two. 
+
+Therefore we need a vector parallel
 to the line of intersection of the given planes. For this, it suffices
 to know two points on the line. To find two points on this line, we
 must find two points that are simultaneously on the two planes, 
@@ -120,29 +131,30 @@ $x-z=1$ and $y+2z=3$. It is easy to find values for $x$ and $z$
 satisfying the first, such as $x=1, z=0$ and $x=2, z=1$. Then
 we can find corresponding values for $y$ using the second equation,
 namely $y=3$ and $y=1$, so
-$(1,3,0)$ and $(2,1,1)$ are both on the line
-of intersection because both are on both planes. Now 
+$(1,3,0)$ and $(2,1,1)$ are two such points. They are both on the line
+of intersection since they are contained in both planes. 
+
+Now 
 $\langle 2-1,1-3,1-0\rangle=\langle 1,-2,1\rangle$ is parallel to the
 line. Finally, we may choose $\langle a,b,c\rangle=\langle
 1,1,-2\rangle\times \langle 1,-2,1\rangle=\langle -3,-3,-3\rangle$.
 While this vector will do perfectly well, any vector parallel or
-anti-parallel to it will work as well, so for example we might choose
-$\langle 1,1,1\rangle$ which is anti-parallel to it. 
+anti-parallel to it will work as well. For example we might choose
+$\langle 1,1,1\rangle$ which is anti-parallel to it, and easier to work with. 
 
 Now we know that $\langle 1,1,1\rangle$ is normal to the desired plane
-and $(2,1,1)$ is a point on the plane. Therefore an equation of the
+and $(2,1,1)$ is a point on the plane. This gives an equation of $(1)x + (1)y + (1)z = d$. Substituting the value of the point into the equation gives $d = 4$, and therefore an equation of the
 plane is $x+y+z=4$. As a quick check, since $(1,3,0)$ is also on the
 line, it should be on the plane; since $1+3+0=4$, we see that this is
 indeed the case.
 
 Note that had we used $\langle -3,-3,-3\rangle$ as the normal, we
-would have discovered the equation $-3x-3y-3z=-12$, then we might well
+would have discovered the equation $-3x-3y-3z=-12$. Then we might well
 have noticed that we could divide both sides by $-3$ to get the
 equivalent $x+y+z=4$.
 \end{solution}
 
-So we now understand equations of planes; let us turn to
-lines. Unfortunately, it turns out to be quite inconvenient to
+We will now turn our attention to a study of lines. Unfortunately, it turns out to be quite inconvenient to
 represent a typical line with a single equation; we need to approach
 lines in a different way.
 
@@ -191,14 +203,34 @@ Figure~\ref{fig:vector line}.
 
 In other words, as $t$ runs through all possible real values, the
 vector $\langle v_1,v_2,v_3\rangle+t\langle a,b,c\rangle$ points to
-every point on the line when its tail is placed at the origin. Another
-common way to write this is as a set of 
-\dfont{parametric equations}:
-$$ x= v_1+ta\qquad y=v_2+tb \qquad z=v_3+tc.$$
-It is occasionally useful to use this form of a line even in two
+every point on the line when its tail is placed at the origin. It is occasionally useful to use this form of a line even in two
 dimensions; a vector form for a line in the $x$-$y$ plane is
 $\langle v_1,v_2\rangle+t\langle a,b\rangle$, which is the same as
 $\langle v_1,v_2,0\rangle+t\langle a,b,0\rangle$.
+
+\begin{formulabox}[Vector Equation of a Line]
+An equation for a line passing through point $(v_1, v_2, v_3)$ and parallel to the vector$\langle a, b, c\rangle$ is
+\[
+\langle v_1,v_2,v_3\rangle+t\langle a,b,c\rangle
+\]\index{line!vector equation}
+\end{formulabox}
+
+The vector $\langle a, b, c\rangle$ is called the \dfont{direction vector}\index{direction vector}\index{line!direction vector} for the line. 
+
+Another
+common way to write this is as a set of 
+\dfont{parametric equations}\index{parametric equations}:
+$$ x= v_1+ta\qquad y=v_2+tb \qquad z=v_3+tc.$$
+
+\begin{formulabox}[Parametric Equations of a Line]
+A line in space can be described as 
+\begin{align*}
+x = v_1 + ta \\
+y = v_2 + tb \\
+z = v_3 + tc
+\end{align*}
+where $(v_1, v_2, v_3)$ is a point on the line and $\langle a, b, c \rangle$ is parallel to the line.\index{line!parametric equations}
+\end{formulabox}
 
 \begin{example}{Vector Expression}{vectorexpexample}
 Find a vector expression for the line through $(6,1,-3)$ and
@@ -224,7 +256,7 @@ In this case, since the direction vectors for the lines are not
 parallel or anti-parallel we know the lines are not parallel.
 If they intersect, there must be two values $a$ and $b$ so that
 $\langle 1,1,1\rangle+a\langle 1,2,-1\rangle=
-\langle 3,2,1\rangle+b\langle -1,-5,3\rangle$, that is, 
+\langle 3,2,1\rangle+b\langle -1,-5,3\rangle$. That is, the following must have a solution: 
 \begin{align*}
   1+a&=3-b	\\
   1+2a&=2-5b	\\
@@ -232,8 +264,8 @@ $\langle 1,1,1\rangle+a\langle 1,2,-1\rangle=
 \end{align*}
 This gives three equations in two unknowns, so there may or may not be
 a solution in general. In this case, it is easy to discover that $a=3$
-and $b=-1$ satisfies all three equations, so the lines do intersect at
-the point $(4,7,-2)$.
+and $b=-1$ satisfies all three equations. Substituting these values into $\langle 1,1,1\rangle+a\langle 1,2,-1\rangle=
+\langle 3,2,1\rangle+b\langle -1,-5,3\rangle$, the point of intersection is $(4,7,-2)$.
 \end{solution}
 
 \begin{example}{Distance from a Point to a Plane}{distancepointplaneexample}
@@ -247,7 +279,7 @@ distance measured from $P$ perpendicular to the plane; see
 Figure~\ref{fig:point to plane}. This distance 
 is the absolute value of the scalar projection of 
 $\overrightarrow{\strut QP}$
-onto a normal vector $\bf n$, where $Q$ is any point on the plane.
+onto a normal vector $\vect{n}$, where $Q$ is any point on the plane.
 It is easy to find a point on the plane, say $(1,0,1)$.
 Thus the distance is
 $$
@@ -263,7 +295,7 @@ $$
 \setcoordinatesystem units <6truemm,6truemm>
 \setplotarea x from -2 to 4, y from -3.5 to 4.5
 \put {$P$} [b] <0pt,3pt> at 1 4
-\put {$\bf n$} [b] <0pt,3pt> at -1.5 2
+\put {$\vect{n}$} [b] <0pt,3pt> at -1.5 2
 \put {$Q$} [t] <0pt,-3pt> at 0 0
 \multiput {$\bullet$} at 0 0 1 4 /
 \arrow <4pt> [0.35, 1] from 0 0 to 1 4
@@ -285,10 +317,10 @@ measured perpendicular to the line, as indicated in
 Figure~\ref{fig:point to line}. The desired distance is 
 $$
   |\overrightarrow{\strut QP}|\sin\theta=
-  {|\overrightarrow{\strut QP}\times{\bf A}|\over|{\bf A}|},
+  {|\overrightarrow{\strut QP}\times\vect{v}|\over|\vect{v}|},
 $$
-where $\bf A$ is any vector parallel to the line. From the equation of
-the line, we can use $Q=(1,1,1)$ and ${\bf A}=\langle 2,3,-1\rangle$, so
+where $\vect{v}$ is any vector parallel to the line. From the equation of
+the line, we can use $Q=(1,1,1)$ and $\vect{v}=\langle 2,3,-1\rangle$ along with $P = (-1,2,1)$, so
 the distance is 
 $$
   {|\langle -2,1,0\rangle\times\langle2,3,-1\rangle|\over\sqrt{14}}=
@@ -305,7 +337,7 @@ $$
 \put {$P$} [b] <0pt,3pt> at 2 4
 \put {$\theta$} [b] <3pt,3pt> at -0.5 -0.25
 \put {$Q$} [t] <0pt,-3pt> at -1 -0.5
-\put {$\bf A$} [t] <0pt,-3pt> at 1 0.5
+\put {$\vect{v}$} [t] <0pt,-3pt> at 1 0.5
 \put {$|\overrightarrow{\vrule height8pt width 0pt QP}|\sin\theta$}
      [bl] <3pt,3pt> at 2.6 2.8
 \multiput {$\bullet$} at -1 -0.5 2 4 /

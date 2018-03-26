@@ -1,6 +1,6 @@
 \section{Vectors}\label{sec:3Dvectors}
 
-A \dfont{vector} is a quantity consisting of a
+A \dfont{vector}\index{vector}, denoted $\vect{v}$, is a quantity consisting of a
 non-negative magnitude and a direction. We could represent a vector in
 two dimensions as $(m,\theta)$, where $m$ is the magnitude and
 $\theta$ is the direction, measured as an angle from some agreed upon
@@ -47,7 +47,9 @@ vector has magnitude approximately 4.62 and direction $21.43^\circ$,
 so walking 4.62 km in the direction $21.43^\circ$
 north of east (approximately ENE) would get your grandfather to
 school. This sort of calculation is so common, we dignify it with a
-name: we say that the third vector is the \dfont{sum} of the other two vectors. There is
+name: we say that the third vector is the \dfont{sum}\index{vector!sum} of the other two vectors. 
+
+There is
 another common way to picture the sum of two vectors. Put the vectors
 tail to tail and then complete the parallelogram they indicate; the
 sum of the two vectors is the diagonal of the parallelogram:
@@ -69,19 +71,18 @@ $$\vbox{\beginpicture
 This is a more natural representation in some circumstances. For
 example, if the two original vectors represent forces acting on an
 object, the sum of the two vectors is the net or effective force on
-the object, and it is nice to draw all three with their tails at the
+the object, and it is convenient to draw all three with their tails at the
 location of the object.
 
-We also define \dfont{scalar multiplication} for
-vectors: if $\bf A$ is a vector $(m,\theta)$ and $a\ge 0$ is a real
-number, the vector $a\bf A$ is $(am,\theta)$, namely, it points in
-the same direction but has $a$ times the magnitude. If $a<0$, $a\bf
-A$ is $(|a|m,\theta+\pi)$, with $|a|$ times the magnitude and
+We also define \dfont{scalar multiplication}\index{vector!scalar multiplication} for
+vectors: if $\vect{v}$ is a vector $(m,\theta)$ and $a\ge 0$ is a real
+number, the vector $a\vect{v}$ is $(am,\theta)$, namely, it points in
+the same direction but has $a$ times the magnitude. If $a<0$, $a\vect{v}$ is $(|a|m,\theta+\pi)$, with $|a|$ times the magnitude and
 pointing in the opposite direction (unless we specify otherwise,
 angles are measured in radians).
 
 Now we can understand subtraction of vectors: 
-${\bf A}-{\bf B}={\bf A}+(-1){\bf B}$:
+$\vect{v}-\vect{w}=\vect{v}+(-1)\vect{w}$:
 
 \begin{figure}[H]
 $$\vbox{\beginpicture
@@ -91,21 +92,21 @@ $$\vbox{\beginpicture
 \arrow <4pt> [0.35, 1] from 0 0 to 3.54 3.54
 \arrow <4pt> [0.35, 1] from 0 0 to 4.3 1.69
 \arrow <4pt> [0.35, 1] from 4.3 1.69 to 3.54 3.54
-\put {$\bf A$} [br] <-2pt,2pt> at 1.72 1.72
-\put {$\bf B$} [tl] <2pt,-2pt> at 2.15 0.84
-\put {${\bf A}-\bf B$} [bl] <2pt,2pt> at 3.92 2.615
+\put {$\vect{v}$} [br] <-2pt,2pt> at 1.72 1.72
+\put {$\vect{w}$} [tl] <2pt,-2pt> at 2.15 0.84
+\put {$\vect{v}-\vect{w}$} [bl] <2pt,2pt> at 3.92 2.615
 \setcoordinatesystem units <7truemm,7truemm> point at -6 0
 \setplotarea x from 0 to 5, y from 0 to 3.6
 \arrow <4pt> [0.35, 1] from 0 0 to 3.54 3.54
 \arrow <4pt> [0.35, 1] from 4.3 1.69 to 0 0
 \arrow <4pt> [0.35, 1] from 4.3 1.69 to 3.54 3.54
-\put {$\bf A$} [br] <-2pt,2pt> at 1.72 1.72
-\put {$-\bf B$} [tl] <2pt,-2pt> at 2.15 0.84
-\put {${\bf A}-\bf B$} [bl] <2pt,2pt> at 3.92 2.615
+\put {$\vect{v}$} [br] <-2pt,2pt> at 1.72 1.72
+\put {$-\vect{w}$} [tl] <2pt,-2pt> at 2.15 0.84
+\put {$\vect{v}-\vect{w}$} [bl] <2pt,2pt> at 3.92 2.615
 \endpicture}$$
 \end{figure}
 
-Note that as you would expect, ${\bf B} + ({\bf A}-{\bf B}) = {\bf A}$.
+Note that as you would expect, $\vect{w} + (\vect{v}-\vect{w}) = \vect{v}$.
 
 We can represent a vector in ways other than $(m,\theta)$, and in fact
 $(m,\theta)$ is not generally used at all. How else could we describe
@@ -197,7 +198,7 @@ av,aw\rangle$ and $\ds \langle v_1,w_1\rangle - \langle v_2,w_2\rangle
 magnitude of the vector $\langle v,w\rangle$ is still the length of
 the corresponding arrow representation; this is the distance from the
 origin to the point $(v,w)$, namely, the distance from the tail to the
-head of the arrow. We know how to compute distances, so the magnitude of
+head of the arrow. Using the familiar distance formula the magnitude of
 the vector is simply $\ds \sqrt{v^2+w^2}$, which we also denote with
 absolute value bars: $\ds |\langle v,w\rangle|=\sqrt{v^2+w^2}$.
 
@@ -209,17 +210,30 @@ sense in three dimensions as in two. By $\langle 1,2,3\rangle$ we mean
 the vector whose head is at $(1,2,3)$ if its tail is at the origin. As
 before, we can place the vector anywhere we want; if it has its tail
 at $(4,5,6)$ then its head is at $(5,7,9)$. It remains true that
-arithmetic is easy to do with vectors in this form:
-\begin{align*}
-  &a\langle v_1,v_2,v_3\rangle=\langle av_1,av_2,av_3\rangle	\\
-  &\langle v_1,v_2,v_3\rangle + \langle w_1,w_2,w_3\rangle
-  =\langle v_1+w_1,v_2+w_2,v_3+w_3\rangle	\\
-  &\langle v_1,v_2,v_3\rangle - \langle w_1,w_2,w_3\rangle
+arithmetic is easy to do with vectors in this form.
+
+\begin{formulabox}[Arithmetic of Vectors]
+\textbf{Sum} of vectors:
+\[ 
+ \langle v_1,v_2,v_3\rangle + \langle w_1,w_2,w_3\rangle
+  =\langle v_1+w_1,v_2+w_2,v_3+w_3\rangle
+\]
+
+\textbf{Scalar Multiplication} of vectors:
+\[
+ a\langle v_1,v_2,v_3\rangle=\langle av_1,av_2,av_3\rangle
+\]
+
+\textbf{Subtraction} of vectors:
+\[
+  \langle v_1,v_2,v_3\rangle - \langle w_1,w_2,w_3\rangle
   =\langle v_1-w_1,v_2-w_2,v_3-w_3\rangle
-\end{align*}
-The magnitude of the vector is again the distance from the origin to
-the head of the arrow, or 
+\]
+
+The \textbf{magnitude} of the vector is the distance from the origin to
+the head of the vector, or 
 $\ds |\langle v_1,v_2,v_3\rangle|=\sqrt{v_1^2+v_2^2+v_3^2}$.
+\end{formulabox}
 
 \begin{figure}[H]
 \centerline{
@@ -252,30 +266,30 @@ $\ds |\langle v_1,v_2,v_3\rangle|=\sqrt{v_1^2+v_2^2+v_3^2}$.
 \end{figure}
 
 Three particularly simple vectors turn out to be quite useful: 
-${\bf i}=\langle1,0,0\rangle$, ${\bf j}=\langle0,1,0\rangle$, and 
-${\bf k}=\langle0,0,1\rangle$. These play much the same role for
+$\vect{i}=\langle1,0,0\rangle$, $\vect{j}=\langle0,1,0\rangle$, and 
+$\vect{k}=\langle0,0,1\rangle$. These play much the same role for
 vectors that the axes play for points. In particular, notice that
 \begin{align*}
   \langle v_1,v_2,v_3\rangle &= \langle v_1,0,0\rangle + \langle
   0,v_2,0\rangle + \langle 0,0,v_3\rangle	\\
   &=v_1\langle1,0,0\rangle + v_2\langle0,1,0\rangle + v_3\langle0,0,1\rangle	\\
-  &= v_1{\bf i} + v_2{\bf j} + v_3{\bf k}
+  &= v_1\vect{i} + v_2\vect{j} + v_3\vect{k}
 \end{align*}
 
-We will frequently want to produce a vector that points from one point
+Thus far, we have focused our discussion on vectors which begin at the origin and end at a point. However we will frequently want to produce a vector that points from one point
 to another. That is, if $P$ and $Q$ are points, we seek the vector
-$\bf x$ such that when the tail of $\bf x$ is placed at $P$, its head
+$\vect{x}$ such that when the tail of $\vect{x}$ is placed at $P$, its head
 is at $Q$; we refer to this vector as 
-$\ds \overrightarrow{\strut PQ}$. 
+$\ds \longvect{\strut PQ}$. 
 If we know the coordinates of $P$ and $Q$,
 the coordinates of the vector are easy to find.
 
 \begin{example}{}{}
 Suppose $P=(1,-2,4)$ and $Q=(-2,1,3)$. The vector
-$\ds \overrightarrow{\strut PQ}$ 
+$\ds \longvect{\strut PQ}$ 
 is
 $\langle -2-1,1--2,3-4\rangle=\langle -3,3,-1\rangle$ and
-$\ds \overrightarrow{\strut QP}=\langle 3,-3,1\rangle$.
+$\ds \longvect{\strut QP}=\langle 3,-3,1\rangle$.
 \end{example}
 
 
@@ -297,30 +311,30 @@ origin.
 \end{ex}
 
 \begin{ex}
-Let ${\bf A}$ be the vector with tail at the origin and head
-at $(1,2)$; let ${\bf B}$ be the vector with tail at the origin and head
-at $(3,1)$. Draw ${\bf A}$ and ${\bf B}$ and a vector ${\bf C}$ with 
-tail at $(1,2)$ and head at $(3,1)$. Draw $\bf C$ with its tail at the origin.
+Let $\vect{v}$ be the vector with tail at the origin and head
+at $(1,2)$; let $\vect{w}$ be the vector with tail at the origin and head
+at $(3,1)$. Draw $\vect{v}$ and $\vect{w}$ and a vector $\vect{u}$ with 
+tail at $(1,2)$ and head at $(3,1)$. Draw $\vect{u}$ with its tail at the origin.
 \end{ex}
 
 \begin{ex}
-Let ${\bf A}$ be the vector with tail at the origin and head
-at $(-1,2)$; let ${\bf B}$ be the vector with tail at the origin and head
-at $(3,3)$. Draw ${\bf A}$ and ${\bf B}$ and a vector ${\bf C}$ with 
-tail at $(-1,2)$ and head at $(3,3)$. Draw $\bf C$ with its tail at the origin.
+Let $\vect{v}$ be the vector with tail at the origin and head
+at $(-1,2)$; let $\vect{ w}$ be the vector with tail at the origin and head
+at $(3,3)$. Draw $\vect{v}$ and $\vect{w}$ and a vector $\vect{u}$ with 
+tail at $(-1,2)$ and head at $(3,3)$. Draw $\vect{u}$ with its tail at the origin.
 \end{ex}
 
 \begin{ex}
-Let ${\bf A}$ be the vector with tail at the origin and head
-at $(5,2)$; let ${\bf B}$ be the vector with tail at the origin and head
-at $(1,5)$. Draw ${\bf A}$ and ${\bf B}$ and a vector ${\bf C}$ with 
-tail at $(5,2)$ and head at $(1,5)$. Draw $\bf C$ with its tail at the origin.
+Let $\vect{v}$ be the vector with tail at the origin and head
+at $(5,2)$; let $\vect{w}$ be the vector with tail at the origin and head
+at $(1,5)$. Draw $\vect{v}$ and $\vect{w}$ and a vector $\vect{u}$ with 
+tail at $(5,2)$ and head at $(1,5)$. Draw $\vect{u}$ with its tail at the origin.
 \end{ex}
 
 \begin{ex}
-Find $|{\bf v}|$, ${\bf v}+{\bf w}$, ${\bf v}-{\bf w}$,
-$|{\bf v}+{\bf w}|$, $|{\bf v}-{\bf w}|$ and $-2{\bf v}$ for
-${\bf v} = \langle 1,3\rangle$ and ${\bf w} = \langle -1,-5\rangle$.
+Find $|\vect{v}|$, $\vect{v}+\vect{w}$, $\vect{v}-\vect{w}$,
+$|\vect{v}+\vect{w}|$, $|\vect{v}-\vect{w}|$ and $-2\vect{v}$ for
+$\vect{v} = \langle 1,3\rangle$ and $\vect{w} = \langle -1,-5\rangle$.
 \begin{sol}
 $\ds \sqrt{10}$, $\langle 0,-2\rangle$, $\langle 2,8\rangle$
 2, $\ds 2\sqrt{17}$, $\langle -2,-6\rangle$
@@ -328,9 +342,9 @@ $\ds \sqrt{10}$, $\langle 0,-2\rangle$, $\langle 2,8\rangle$
 \end{ex}
 
 \begin{ex}
-Find $|{\bf v}|$, ${\bf v}+{\bf w}$, ${\bf v}-{\bf w}$,
-$|{\bf v}+{\bf w}|$, $|{\bf v}-{\bf w}|$ and $-2{\bf v}$ for
-${\bf v} = \langle 1,2,3\rangle$ and ${\bf w} = \langle -1,2,-3\rangle$.
+Find $|\vect{v}|$, $\vect{v}+\vect{w}$, $\vect{v}-\vect{w}$,
+$|\vect{v}+\vect{w}|$, $|\vect{v}-\vect{w}|$ and $-2\vect{v}$ for
+$\vect{v} = \langle 1,2,3\rangle$ and $\vect{w} = \langle -1,2,-3\rangle$.
 \begin{sol}
 $\ds \sqrt{14}$, $\langle 0,4,0\rangle$, $\langle 2,0,6\rangle$
 4, $\ds 2\sqrt{10}$, $\langle -2,-4,-6\rangle$
@@ -338,9 +352,9 @@ $\ds \sqrt{14}$, $\langle 0,4,0\rangle$, $\langle 2,0,6\rangle$
 \end{ex}
 
 \begin{ex}
-Find $|{\bf v}|$, ${\bf v}+{\bf w}$, ${\bf v}-{\bf w}$,
-$|{\bf v}+{\bf w}|$, $|{\bf v}-{\bf w}|$ and $-2{\bf v}$ for
-${\bf v} = \langle 1,0,1\rangle$ and ${\bf w} = \langle -1,-2,2 \rangle$.
+Find $|\vect{v}|$, $\vect{v}+\vect{w}$, $\vect{v}-\vect{w}$,
+$|\vect{v}+\vect{w}|$, $|\vect{v}-\vect{w}|$ and $-2\vect{v}$ for
+$\vect{v} = \langle 1,0,1\rangle$ and $\vect{w} = \langle -1,-2,2 \rangle$.
 \begin{sol}
 $\ds \sqrt{2}$, $\langle 0,-2,3\rangle$, $\langle 2,2,-1\rangle$
 $\ds \sqrt{13}$, $3$, $\langle -2, 0, -2\rangle$
@@ -348,9 +362,9 @@ $\ds \sqrt{13}$, $3$, $\langle -2, 0, -2\rangle$
 \end{ex}
 
 \begin{ex}
-Find $|{\bf v}|$, ${\bf v}+{\bf w}$, ${\bf v}-{\bf w}$,
-$|{\bf v}+{\bf w}|$, $|{\bf v}-{\bf w}|$ and $-2{\bf v}$ for
-${\bf v} = \langle 1,-1,1\rangle$ and ${\bf w} = \langle 0,0,3\rangle$.
+Find $|\vect{v}|$, $\vect{v}+\vect{w}$, $\vect{v}-\vect{w}$,
+$|\vect{v}+\vect{w}|$, $|\vect{v}-\vect{w}|$ and $-2\vect{v}$ for
+$\vect{v} = \langle 1,-1,1\rangle$ and $\vect{w} = \langle 0,0,3\rangle$.
 \begin{sol}
 $\ds \sqrt{3}$, $\langle 1,-1,4\rangle$, $\langle 1,-1,-2\rangle$
 $\ds 3\sqrt{2}$, $\ds \sqrt{6}$, $\langle -2, 2, -2\rangle$
@@ -358,9 +372,9 @@ $\ds 3\sqrt{2}$, $\ds \sqrt{6}$, $\langle -2, 2, -2\rangle$
 \end{ex}
 
 \begin{ex}
-Find $|{\bf v}|$, ${\bf v}+{\bf w}$, ${\bf v}-{\bf w}$,
-$|{\bf v}+{\bf w}|$, $|{\bf v}-{\bf w}|$ and $-2{\bf v}$ for
-${\bf v} = \langle 3,2,1\rangle$ and ${\bf w} = \langle -1,-1,-1\rangle$.
+Find $|\vect{v}|$, $\vect{v}+\vect{w}$, $\vect{v}-\vect{w}$,
+$|\vect{v}+\vect{w}|$, $|\vect{v}-\vect{w}|$ and $-2\vect{v}$ for
+$\vect{v} = \langle 3,2,1\rangle$ and $\vect{w} = \langle -1,-1,-1\rangle$.
 \begin{sol}
 $\ds \sqrt{14}$, $\langle 2,1,0\rangle$, $\langle 4,3,2\rangle$
 $\ds \sqrt{5}$, $\ds \sqrt{29}$, $\langle -6,-4, -2\rangle$
@@ -369,10 +383,10 @@ $\ds \sqrt{5}$, $\ds \sqrt{29}$, $\langle -6,-4, -2\rangle$
 
 \begin{ex}
 Let $P=(4,5,6)$, $Q=(1,2,-5)$. Find 
-$\ds \overrightarrow{\strut PQ}$. Find a vector with
-the same direction as $\ds \overrightarrow{\strut PQ}$
+$\ds \longvect{\strut PQ}$. Find a vector with
+the same direction as $\ds \longvect{\strut PQ}$
 but with length 1. Find a vector with
-the same direction as $\ds \overrightarrow{\strut PQ}$
+the same direction as $\ds \longvect{\strut PQ}$
 but with length 4.
 \begin{sol}
 $\langle -3, -3, -11\rangle$,
@@ -383,9 +397,9 @@ $\langle -12/\sqrt{139},-12/\sqrt{139},-44/\sqrt{139}\rangle$
 
 \begin{ex}
 If $A, B$, and $C$ are three points, find
-$\ds \overrightarrow{\strut AB}+
-\overrightarrow{\strut BC}+
-\overrightarrow{\strut CA}$.
+$\ds \longvect{\strut AB}+
+\longvect{\strut BC}+
+\longvect{\strut CA}$.
 \begin{sol}
 $\langle 0,0,0\rangle$
 \end{sol}
@@ -398,21 +412,21 @@ the sum of these vectors?  What if we remove the vector corresponding
 to 4 o'clock?  What if, instead, all vectors have their
 tails at 12 o'clock, and their heads on the remaining digits?
 \begin{sol}
-$\bf 0$; $\langle -r\sqrt3/2,r/2\rangle$; $\langle
+$\vect{0}$; $\langle -r\sqrt3/2,r/2\rangle$; $\langle
 0,-12r\rangle$; where $r$ is the radius of the clock
 \end{sol}
 \end{ex}
 
 \begin{ex}
-Let $\bf a$ and $\bf b$ be nonzero vectors in two dimensions
+Let $\vect{a}$ and $\vect{b}$ be nonzero vectors in two dimensions
 that are not parallel or anti-parallel.  Show, algebraically, that if
-$\bf c$ is any two dimensional vector, there are scalars $s$ and $t$
-such that ${\bf c}=s{\bf a}+t{\bf b}$.
+$\vect{c}$ is any two dimensional vector, there are scalars $s$ and $t$
+such that $\vect{c}=s\vect{a}+t\vect{b}$.
 \end{ex}
 
 \begin{ex}
 Does the statement in the previous exercise hold if the vectors
-$\bf a$, $\bf b$, and $\bf c$ are three dimensional vectors? Explain.
+$\vect{a}$, $\vect{b}$, and $\vect{c}$ are three dimensional vectors? Explain.
 \end{ex}
 
 \end{enumialphparenastyle}

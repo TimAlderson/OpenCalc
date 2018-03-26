@@ -7,37 +7,28 @@
 % % % % % % % % % % % % %
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% C O L O U R S ! ! ! ! ! ! !
+% COLOURS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %
 
 % Title page colours
+\definecolor{titletextcolour}{HTML}{086A87}
+\definecolor{subtitletextcolour}{HTML}{F8E5C2}
+\definecolor{cctextcolour}{HTML}{F8E5C2}
+\definecolor{titlemainbgcolour}{HTML}{5882FA}
+\definecolor{titlemainboxcolour}{HTML}{5882FA}
+\definecolor{sampletextcolour}{HTML}{B18B45}
+
+%% Title page colours - original
 %\definecolor{titletextcolour}{HTML}{027878}
 %\definecolor{subtitletextcolour}{HTML}{F8E5C2}
 %\definecolor{cctextcolour}{HTML}{F8E5C2}
 %\definecolor{titlemainbgcolour}{HTML}{E2970A}
-%\definecolor{titlemainboxcolour}{HTML}{F1AF34}
+%\definecolor{titlemainboxcolour}{HTML}{F5C56B}
 %\definecolor{sampletextcolour}{HTML}{B18B45}
 
-%\definecolor{titletextcolour}{HTML}{027878}
-%\definecolor{subtitletextcolour}{HTML}{F8E5C2}
-%\definecolor{cctextcolour}{HTML}{F8E5C2}
-%\definecolor{titlemainbgcolour}{HTML}{0101DF}
-%\definecolor{titlemainboxcolour}{HTML}{0080FF}
-%\definecolor{sampletextcolour}{HTML}{B18B45}
-
-
-\definecolor{titletextcolour}{cmyk}{100, 69, 0, 4}
-\definecolor{subtitletextcolour}{HTML}{F8E5C2}
-\definecolor{cctextcolour}{HTML}{F8E5C2}
-\definecolor{titlemainbgcolour}{cmyk}{0,91,76,0}
-\definecolor{titlemainboxcolour}{RGB}{0,68,165}
-\definecolor{sampletextcolour}{HTML}{B18B45}
-
-% LSCS page text colour
+% Lyryx with Open texts page colours
 \definecolor{lscshdrboxcolour}{HTML}{E2970A}
 \definecolor{lscstextcolour}{HTML}{027878}
 
@@ -63,26 +54,22 @@
 % Boxes and environments for Definitions, Examples, Formulas & Theorems
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-
-%Theorem without numbering
-\newtheorem*{theorem*}{Theorem}
 % % Counters for Theorems, Examples, Definitions & Corollaries. Independent counters so that each type of environment starts at 1 in a new chapter.
+%\newcounter{TheoremCounter}[chapter]
+%\def\theTheoremCounter{\thechapter.\arabic{TheoremCounter}}
+
+%\newcounter{ExampleCounter}[chapter]
+%\def\theExampleCounter{\thechapter.\arabic{ExampleCounter}}
+
+%\newcounter{DefinitionCounter}[chapter]
+%\def\theDefinitionCounter{\thechapter.\arabic{DefinitionCounter}}
+
+%\newcounter{CorollaryCounter}[chapter]
+%\def\theCorollaryCounter{\thechapter.\arabic{CorollaryCounter}}
+
+%%Counters to have continuous numbering
 \newcounter{TheoremCounter}[chapter]
 \def\theTheoremCounter{\thechapter.\arabic{TheoremCounter}}
-
-\newcounter{ExampleCounter}[chapter]
-\def\theExampleCounter{\thechapter.\arabic{ExampleCounter}}
-
-\newcounter{DefinitionCounter}[chapter]
-\def\theDefinitionCounter{\thechapter.\arabic{DefinitionCounter}}
-
-\newcounter{CorollaryCounter}[chapter]
-\def\theCorollaryCounter{\thechapter.\arabic{CorollaryCounter}}
-
-%%%%%%%%%%%%%NEW
-\newcounter{formulaboxCounter}[section]
-\renewcommand{\theformulaboxCounter}{\thesection.\arabic{formulaboxCounter}}
-%%%%%%%%%%%%%NEW
 
 % Style and setup of Definition, Theorem and Example environments
 \tcbset{
@@ -91,17 +78,28 @@
 	theostyle/.style={fonttitle=\bfseries\upshape, fontupper=\slshape,
 		colback=chaptertitlecolour!5,colframe=chaptertitlecolour,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm},
 	examstyle/.style={fonttitle=\bfseries\upshape, fontupper=\slshape,
-		colback=examplecolour!5,colframe=examplecolour,breakable,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm}
+		colback=examplecolour!5,colframe=examplecolour,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm}
 }
-\tcbmaketheorem{definition}{Definition}{defstyle}{DefinitionCounter}{def}
+%%To have each type follow its own numbering
+%\tcbmaketheorem{definition}{Definition}{defstyle}{DefinitionCounter}{def}
+%\tcbmaketheorem{theorem}{Theorem}{theostyle}{TheoremCounter}{thm}
+%\tcbmaketheorem{corollary}{Corollary}{theostyle}{CorollaryCounter}{cor}
+%\tcbmaketheorem{example}{Example}{examstyle}{ExampleCounter}{exa}
+
+%%To have continuous numbering
+\tcbmaketheorem{definition}{Definition}{defstyle}{TheoremCounter}{def}
 \tcbmaketheorem{theorem}{Theorem}{theostyle}{TheoremCounter}{thm}
-\tcbmaketheorem{corollary}{Corollary}{theostyle}{CorollaryCounter}{cor}
-\tcbmaketheorem{example}{Example}{examstyle}{ExampleCounter}{exa}
+\tcbmaketheorem{corollary}{Corollary}{theostyle}{TheoremCounter}{cor}
+\tcbmaketheorem{example}{Example}{examstyle}{TheoremCounter}{exa}
+
 
 % Boxed environment for special formulas. These boxes are not numbered (unlike Examples, Theorems, Definitions & Corollaries).
-
-\def\formulabox[#1]{\begin{tcolorbox}[colback=formulacolour!5!white,colframe=formulacolour,fonttitle=\bfseries,title=Key Idea \theformulaboxCounter : #1,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm]}
+\def\formulabox[#1]{\begin{tcolorbox}[colback=formulacolour!5!white,colframe=formulacolour,fonttitle=\bfseries,title=#1,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm]}
 	\def\endformulabox{\end{tcolorbox}}
+
+% Outcomes
+\newtcolorbox{copyrightbox}{fonttitle=\bfseries\upshape,fontupper=\slshape,
+	colback=white,colframe=gray,before={\par\bigskip\pagebreak[0]\parindent=0pt},after={\par\bigskip},top=1mm,bottom=1mm,title=Copyright Notice}
 
 % This bit of code allows the clubsuit ♣ in the Solution & Proof environment to be on the bottom right of the page
 \newcommand\xqed[1]{%
@@ -130,6 +128,12 @@
 % Standard LateX commands do not exist for hyperbolic secant and cosecant
 \def\sech{{\rm sech}} 
 \def\csch{{\rm csch}}
+
+% Vector Notation Options
+%\newcommand{\vect}{\vec}
+\newcommand{\vect}{\textbf}
+\newcommand{\longvect}{\overrightarrow}
+%\newcommand{\longvect}{\textbf}
 
 % For quotations around fractions (used in l'hopitals rule)
 \newsavebox{\mathbox}\newsavebox{\mathquote}

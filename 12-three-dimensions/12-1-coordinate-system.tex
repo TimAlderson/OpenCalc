@@ -1,10 +1,9 @@
 \section{The Coordinate System}\label{sec:3Dcoordinatesystem}
 
-So far we have been investigating functions of the form $y=f(x)$, with
+Throughout the text thus far we have focused investigating functions of the form $y=f(x)$, with
 one independent and one dependent variable. Such functions can be
 represented in two dimensions, using two numerical axes that allow us
-to identify every point in the plane with two numbers. We now want to
-talk about three-dimensional space; to identify every point in three
+to identify every point in the plane with two numbers. We now shift our focus to three-dimensional space; to identify every point in three
 dimensions we require three numerical values. The obvious way to make
 this association is to add one new axis, perpendicular to the $x$ and
 $y$ axes we already understand. We could, for example, add a third
@@ -32,7 +31,7 @@ You must then imagine that the $z$ axis is perpendicular to the other
 two. Just as we have investigated functions of the form $y=f(x)$ in
 two dimensions, we will investigate three dimensions largely by
 considering functions; now the functions will (typically) have the
-form $z=f(x,y)$. Because we are used to having the result of a
+form $z=f(x,y)$. Due to the fact that we are used to having the result of a
 function graphed in the vertical direction, it is somewhat easier to
 maintain that convention in three dimensions. To accomplish this, we
 normally rotate the axes so that $z$ points up; the result is then:
@@ -93,12 +92,11 @@ Figure~\ref{fig:plane}.
 \caption{The plane $x=1$. \label{fig:plane}}
 \end{figure}
 
-Recall the very useful distance formula in two dimensions: the
+Recall the very useful distance formula in two dimensions which comes directly from the Pythagorean Theorem: the
 distance between points $(x_1,y_1)$ and $(x_2,y_2)$ is
-$\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$; this comes directly from the
-Pythagorean theorem. What is the distance between two points
+$\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$\index{distance formula}. What is the distance between two points
 $(x_1,y_1,z_1)$ and $(x_2,y_2,z_2)$ in three dimensions?
-Geometrically, we want the length of the long diagonal labeled $c$ in
+Geometrically, we want the length of the long diagonal labelled $c$ in
 the ``box'' in Figure~\ref{fig:3d distance formula}. Since $a$,
 $b$, $c$ form a right triangle, $a^2+b^2=c^2$. $b$ is the vertical
 distance between $(x_1,y_1,z_1)$ and $(x_2,y_2,z_2)$, so
@@ -115,6 +113,19 @@ two points in either two or three dimensions is sometimes denoted by
 $d$, so for example the formula for the distance between $P_1(x_1,y_1,z_1)$
 and $P_2(x_2,y_2,z_2)$ might be expressed as
 $$d(P_1,P_2)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2+(z_1-z_2)^2}.$$
+
+\begin{formulabox}[Distance]
+The distance between points  $P_1(x_1,y_1)$ and $P_2(x_2,y_2)$ in two dimensions is
+\[
+d(P_1,P_2) = \sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
+\]
+
+\medskip
+
+The distance between points $P_1(x_1,y_1,z_1)$ and $P_2(x_2,y_2,z_2)$ in three dimensions is \[
+d(P_1,P_2)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2+(z_1-z_2)^2}
+\]
+\end{formulabox}
 
 \begin{figure}[H]
 \centerline{
@@ -255,7 +266,7 @@ $\ds\left({x_1+x_2\over 2},{y_1+y_2\over 2},{z_1+z_2\over 2}\right)$.
 \begin{ex}
 Any three points $P_1(x_1,y_1,z_1)$, $P_2(x_2,y_2,z_2)$,
 $P_3(x_3,y_3,z_3)$, lie in a plane and form a triangle.  The \dfont{triangle inequality}
-says that $\d(P_1,P_3)\le d(P_1,P_2)+d(P_2,P_3)$.  Prove the triangle inequality
+says that $ d(P_1,P_3)\le d(P_1,P_2)+d(P_2,P_3)$.  Prove the triangle inequality
 using either algebra (messy) or the law of cosines (less messy).
 \end{ex}
 

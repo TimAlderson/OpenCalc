@@ -1,7 +1,7 @@
 \section{Vector Fields}\label{sec:VectorFields}
 
 This chapter is concerned with applying calculus in the context of 
-\dfont{vector fields}. A two-dimensional vector
+\dfont{vector fields}\index{vector field}. A two-dimensional vector
 field is a function $f$ that maps each point $(x,y)$ in $\R^2$ to a
 two-dimensional vector $\langle u,v\rangle$, and similarly a
 three-dimensional vector field maps $(x,y,z)$ to $\langle
@@ -33,14 +33,14 @@ represent the strength of some force (gravity, electricity, magnetism) or
 a velocity (wind speed or the velocity of some other fluid). 
 
 We have already seen a particularly important kind of vector
-field---the gradient. Given a function $f(x,y)$, recall that the
-gradient is $\langle f_x(x,y),f_y(x,y)\rangle$, a vector that depends
+field---the gradient\index{gradient}. Given a function $f(x,y)$, recall that the
+gradient is $\vect{f} = \nabla f  = \langle f_x(x,y),f_y(x,y)\rangle$, a vector that depends
 on (is a function of) $x$ and $y$. We usually picture the gradient
 vector with its tail at $(x,y)$, pointing in the direction of maximum
 increase. Vector fields that are gradients have some particularly nice
 properties, as we will see.
 An important example is 
-$${\bf F}=
+$$\vect{f}=
 \left
 \langle {-x\over (x^2+y^2+z^2)^{3/2}},{-y\over (x^2+y^2+z^2)^{3/2}},{-z\over
   (x^2+y^2+z^2)^{3/2}}\right\rangle,$$
@@ -48,11 +48,11 @@ which points from the point $(x,y,z)$ toward the origin and has length
 $${\sqrt{x^2+y^2+z^2}\over(x^2+y^2+z^2)^{3/2}}=
 {1\over(\sqrt{x^2+y^2+z^2})^2},$$
 which is the reciprocal of the square of the distance from $(x,y,z)$
-to the origin---in other words, ${\bf F}$ is an ``inverse square
+to the origin---in other words, $\vect{f}$ is an ``inverse square
 law''.
-The vector $\bf F$ is a gradient:
+The vector $\vect{f}$ is a gradient:
 \begin{equation}\label{eq:inverse square field as gradient}
-{\bf F} = \nabla {1\over\sqrt{x^2+y^2+z^2} }
+\vect{f} = \nabla {1\over\sqrt{x^2+y^2+z^2} }
 \end{equation}
 which turns out to be extremely useful.
 
@@ -63,22 +63,19 @@ which turns out to be extremely useful.
 
 \begin{enumialphparenastyle}
 
-\begin{ex} $\langle x,y\rangle$ 
+\begin{ex} Investigate the vector field $\langle x,y\rangle$ 
 \end{ex}
 
-\begin{ex} $\langle -x, -y\rangle$ 
+\begin{ex} Investigate the vector field $\langle -x, -y\rangle$ 
 \end{ex}
 
-\begin{ex} $\langle x,-y\rangle$ 
+\begin{ex} Investigate the vector field $\langle x,-y\rangle$ 
 \end{ex}
 
-\begin{ex} $\langle \sin x,\cos y\rangle$ 
+\begin{ex} Investigate the vector field $\langle \sin x,\cos y\rangle$ 
 \end{ex}
 
-\begin{ex} $\langle y,1/x\rangle$ 
-\end{ex}
-
-\begin{ex} $\langle x+1,x+3\rangle$ 
+\begin{ex} Investigate the vector field $\langle x+1,x+3\rangle$ 
 \end{ex}
 
 \begin{ex} Verify Equation~\ref{eq:inverse square field as gradient}.

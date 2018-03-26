@@ -16,14 +16,16 @@ boundary (the endpoints) that involves one fewer integrations, namely,
 no integrations at all.
 
 \begin{theorem}{Green's Theorem}{greens theorem}
-If the vector field ${\bf F}=\langle
-P,Q\rangle$ and the region $D$ are sufficiently nice, and if $C$ is
+If the vector field $\vect{f}=\langle
+f_1,f_2\rangle$ and the region $D$ are sufficiently nice, and if $C$ is
 the boundary of $D$ ($C$ is a closed curve), then
-$$\iint_D {\partial Q\over\partial x}
--{\partial P\over\partial y} \,dA = \int_C P\,dx +Q\,dy ,$$
+$$\iint_D {\partial f_2\over\partial x}
+-{\partial f_1\over\partial y} \,dA = \int_C f_1\,dx +f_@\,dy ,$$
 provided the integration on the right is done counter-clockwise around
-$C$.
+$C$.\index{Green's theorem}
 \end{theorem}
+
+The proof of Green's Theorem will follow a discussion and several examples.
 
 To indicate that an integral $\ds\int_C$ is being done over a closed
 curve in the counter-clockwise direction, we usually write
@@ -33,59 +35,58 @@ counterclockwise direction. With this notation,
 $\ds\oint_C=\int_{\partial D}$.
 
 We already know one case, not particularly interesting, in which this
-theorem is true: If $\bf F$ is conservative, we know that the integral
-$\ds\oint_C {\bf F}\cdot d{\bf r}=0$, because any integral of a
+theorem is true: If $\vect{f}$ is conservative, we know that the integral
+$\ds\oint_C \vect{f}\cdot d\vect{r}=0$, because any integral of a
 conservative vector field around a closed curve is zero. We also know
-in this case that $\partial P/\partial y=\partial Q/\partial x$, so
+in this case that $\partial f_1 /\partial y=\partial f_2 /\partial x$, so
 the double integral  in the theorem is simply the integral of the zero
-function, namely, 0. So in the case that $\bf F$ is conservative, the
+function, namely, 0. So in the case that $\vect{f}$ is conservative, the
 theorem says simply that $0=0$. 
 
-\begin{example}{}{}
+\begin{example}{}{greenseg}
 We illustrate the theorem by computing both sides of
-$$\int_{\partial D} x^4\,dx + xy\,dy=\iint_D y-0\,dA,$$
+$$\int_{\partial D} x^3\,dx + xy^2\,dy=\iint_D y-0\,dA,$$
 where $D$ is the triangular region with corners $(0,0)$, $(1,0)$,
-$(0,1)$.
+$(0,-1)$.
 \end{example}
 \begin{solution}
 Starting with the double integral:
-$$\iint_D y-0\,dA=\int_0^1\int_0^{1-x} y\,dy\,dx=
+$$\iint_D y^2-0\,dA=\int_0^1\int_0^{-1+x} y^2\,dy\,dx=
 \int_0^1
-{(1-x)^2\over2}\,dx=\left.-{(1-x)^3\over6}\right|_0^1={1\over6}.$$
+{(-1+x)^3\over3}\,dx=\left.{(-1+x)^4\over12}\right|_0^1=-{1\over12}.$$
 
 There is no single formula to describe the boundary of $D$, so to
 compute the left side directly we need to compute three separate
 integrals corresponding to the three sides of the triangle, and each
 of these integrals we break into two integrals, the ``$dx$'' part and
 the ``$dy$'' part.
-The three sides are described by $y=0$, $y=1-x$, and $x=0$. The
+The three sides are described by $y=0$, $y=-1+x$, and $x=0$. The
 integrals are then
 \begin{align*}
-\int_{\partial D}\!\!\! x^4\,dx + xy\,dy&=
-\int_0^1 x^4\,dx+\int_0^0 0\,dy+\int_1^0 x^4\,dx+\int_0^1 (1-y)y\,dy+
-\int_0^0 0\,dx+\int_1^0 0\,dy	\\
-&={1\over5}+0-{1\over5}+{1\over6}+0+0={1\over6}.
+\int_{\partial D}\> \> x^3\,dx + xy^2\,dy&=
+\int_0^1 x^3\,dx+\int_0^0 0\,dy+\int_1^0 x^3\,dx+\int_0^{-1} (y+1)y^2\,dy+
+\int_0^0 0\,dx+\int_0^{-1} 0\,dy	\\
+&={1\over4}+0-{1\over4}+-{1\over12}+0+0=-{1\over12}.
 \end{align*}
 
 Alternately, we could describe the three sides in vector form as
-$\langle t,0\rangle$, $\langle 1-t,t\rangle$, and $\langle
-0,1-t\rangle$. Note that in each case, as $t$ ranges from 0 to 1, we
+$\langle t,0\rangle$ for $t$ from $0$ to $1$, $\langle t+1,t\rangle$ for $t$ from $0$ to $-1$, and $\langle 0,-1+t\rangle$ for $t$ from $0$ to $1$. Note that in each case, as $t$ ranges from lower to upper bound, we
 follow the corresponding side in the correct direction. Now
 \begin{align*}
-\int_{\partial D} x^4\,dx + xy\,dy&=
-\int_0^1 t^4 + t\cdot 0\,dt + \int_0^1 -(1-t)^4 + (1-t)t\,dt
-+\int_0^1 0 + 0\,dt	\\
-&=\int_0^1 t^4\,dt + \int_0^1 -(1-t)^4 + (1-t)t\,dt
-={1\over6}.
+\int_{\partial D} x^3\,dx + xy^2\,dy&=
+\int_0^1 t^3 + t\cdot 0^2\,dt + \int_0^{-1} (t+1)^3 + (t+1)t^2\,dt
++\int_0^1 0 + 0(-1+t)\,dt	\\
+&=\int_0^1 t^3\,dt + \int_0^{-1} (t+1)^3 + (t+1)t^2 \,dt
+=-{1\over12}.
 \end{align*}
 % The three integrals on the right in the first line deserve a
 % bit of explanation. The first arises from
-% $$\int_C {\bf F}\cdot d{\bf r},$$
-% where $C$ is given by ${\bf r}=\langle t,0\rangle$, that is, by
+% $$\int_C \vect{f}\cdot d\vect{r},$$
+% where $C$ is given by $\vect{r}=\langle t,0\rangle$, that is, by
 % $x=t$ and $y=0$. This implies that $dx=dt$ and $dy=0\cdot dt$. 
 % Now substituting into $x^4\,dx + xy\,dy$ gives
 % $t^4\,dt+t\cdot0\cdot0\,dt$. In the second integral we have 
-% ${\bf r}=\langle 1-t,t\rangle$, so $x=1-t$, $y=t$,
+% $\vect{r}=\langle 1-t,t\rangle$, so $x=1-t$, $y=t$,
 % $dx=-dt$, and $dy=dt$. Substitution gives the integral shown. The
 % third integral arises in the same way.
 %
@@ -104,11 +105,11 @@ is best.
 Here is a clever use of Green's Theorem: We know that areas can be
 computed using double integrals, namely,
 $$\iint_D 1\,dA$$
-computes the area of region $D$. If we can find $P$ and $Q$ so that
-$\partial Q/\partial x-\partial P/\partial y=1$, then the area is also
-$$\int_{\partial D} P\,dx+Q\,dy.$$
-It is quite easy to do this: $P=0,Q=x$ works, as do
-$P=-y, Q=0$ and $P=-y/2,Q=x/2$. 
+computes the area of region $D$. If we can find $f_1$ and $f_2$ so that
+$\partial f_2 /\partial x-\partial f_1 /\partial y=1$, then the area is also
+$$\int_{\partial D} f_1\,dx+f_2\,dy.$$
+It is quite easy to do this: $f_1=0,f_2=x$ works, as do
+$f_1=-y, f_2=0$ and $f_1=-y/2,f_2=x/2$. 
 
 \begin{example}{}{}
 An ellipse centered at the origin, with its two principal axes
@@ -126,7 +127,7 @@ can easily verify this by substitution:
 $${x^2\over a^2}+{y^2\over b^2}=
 {a^2\cos^2 t\over a^2}+{b^2\sin^2t\over b^2}=
 \cos^2t+\sin^2t=1.$$
-Let's consider the three possibilities for $P$ and $Q$ above:
+Let's consider the three possibilities for $f_1$ and $f_2$ above:
 Using 0 and $x$ gives
 $$\oint_C 0\,dx+x\,dy=\int_0^{2\pi} a\cos(t)b\cos(t)\,dt=
 \int_0^{2\pi} ab\cos^2(t)\,dt.$$
@@ -142,7 +143,7 @@ Finally, using $-y/2$ and $x/2$ gives
 \int_0^{2\pi} {ab\over2}\,dt=\pi ab.
 \end{align*}
 The first two integrals are not particularly difficult, but the third
-is very easy, though the choice of $P$ and $Q$ seems more complicated.
+is very easy, though the choice of $f_1$ and $f_2$ seems more complicated.
 \end{solution}
 
 \begin{figure}[H]
@@ -165,26 +166,26 @@ Now we look at the proof of Green's Theorem.
 
 \begin{proof}
 We cannot here prove Green's Theorem in general, but we can do a
-special case. We seek to prove that 
-$$\oint_C P\,dx +Q\,dy = \iint_{D} {\partial Q\over\partial x}
--{\partial P\over\partial y} \,dA.$$
+special case. We seek to prove that for a vector field $\vect{f} = \langle f_1, f_2 \rangle$
+$$\oint_C f_1 \,dx + f_2\,dy = \iint_{D} {\partial f_2\over\partial x}
+-{\partial f_1\over\partial y} \,dA.$$
 It is sufficient to show that
-$$\oint_C P\,dx=\iint_{D}-{\partial P\over\partial y} \,dA\qquad\hbox{and}
-\qquad\oint_C Q\,dy=\iint_{D} {\partial Q\over\partial x}\,dA,$$
+$$\oint_C f_1 \,dx=\iint_{D}-{\partial f_1 \over\partial y} \,dA\qquad\hbox{and}
+\qquad\oint_C f_2 \,dy=\iint_{D} {\partial f_2 \over\partial x}\,dA,$$
 which we can do if we can compute the double integral in both possible
 ways, that is, using $dA=dy\,dx$ and $dA=dx\,dy$.
 
 For the first equation, we start with
-$$\iint_{D}{\partial P\over\partial y}\,dA=
-\int_a^b\int_{g_1(x)}^{g_2(x)} {\partial P\over \partial y}\,dy\,dx=
-\int_a^b P(x,g_2(x))-P(x,g_1(x))\,dx.$$
+$$\iint_{D}{\partial f_1\over\partial y}\,dA=
+\int_a^b\int_{g_1(x)}^{g_2(x)} {\partial f_1\over \partial y}\,dy\,dx=
+\int_a^b f_1(x,g_2(x))-f_1(x,g_1(x))\,dx.$$
 Here we have simply used the ordinary Fundamental Theorem of Calculus,
 since for the inner integral we are integrating a derivative with
-respect to $y$: an antiderivative of $\partial P/\partial y$ with
-respect to $y$ is simply $P(x,y)$, and then we substitute $g_1$ and
+respect to $y$: an antiderivative of $\partial f_1/\partial y$ with
+respect to $y$ is simply $f_1(x,y)$, and then we substitute $g_1$ and
 $g_2$ for $y$ and subtract.
 
-Now we need to manipulate $\oint_C P\,dx$. The boundary of region $D$
+Now we need to manipulate $\oint_C f_1\,dx$. The boundary of region $D$
 consists of 4 parts, given by the equations $y=g_1(x)$, $x=b$,
 $y=g_2(x)$, and $x=a$. On the portions $x=b$ and $x=a$, $dx=0\,dt$, so
 the corresponding integrals are zero. For the other two portions, we
@@ -193,15 +194,81 @@ $x=t$, $y=g_2(t)$, letting $t$ range from $b$ to $a$, since we are
 integrating counter-clockwise around the boundary.
 The resulting integrals give us
 \begin{align*}
-\oint_C P\,dx = \int_a^b P(t,g_1(t))\,dt+\int_b^a P(t,g_2(t))\,dt
-&=\int_a^b P(t,g_1(t))\,dt-\int_a^b P(t,g_2(t))\,dt	\\
-&=\int_a^b P(t,g_1(t))-P(t,g_2(t))\,dt
+\oint_C f_1\,dx = \int_a^b f_1(t,g_1(t))\,dt+\int_b^a f_1(t,g_2(t))\,dt
+&=\int_a^b f_1(t,g_1(t))\,dt-\int_a^b f_1(t,g_2(t))\,dt	\\
+&=\int_a^b f_1(t,g_1(t))-f_1(t,g_2(t))\,dt
 \end{align*}
 which is the result of the double integral times $-1$, as desired.
 
-The equation involving $Q$ is essentially the same, and left as an
+The equation involving $f_2$ is essentially the same, and left as an
 exercise.
 \end{proof}
+
+We can now rewrite Green's Theorem using the concepts of divergence and curl; these rewritten
+versions in turn are closer to some later theorems we will see.
+
+Suppose we write a two dimensional vector field in the
+form $\vect{f}=\langle f_1,f_2,0\rangle$, where $f_1$ and $f_2$ are functions
+of $x$ and $y$. Then 
+$$\nabla\times \vect{f} =
+\left|
+\begin{matrix}
+\vect{i}	&	\vect{j}	&	\vect{k}	\\
+{\partial \over\partial x}	&	{\partial\over\partial y}	&	{\partial \over\partial z}	\\
+f_1	&	f_2	&	0
+\end{matrix}
+\right|=
+\langle 0,0,{\partial f_2\over\partial x}-{\partial f_1\over\partial y}\rangle,$$
+and so $(\nabla\times \vect{f})\cdot\vect{k}=\langle 0,0,{\partial f_2\over\partial x}-{\partial f_1\over\partial y}\rangle\cdot
+\langle 0,0,1\rangle = {\partial f_2\over\partial x}-{\partial f_1\over\partial y}$. So Green's Theorem says
+\begin{equation}\label{eq:greens theorem second form}
+\int_{\partial D} \vect{f}\cdot d\vect{r}=
+\int_{\partial D} f_1\,dx +f_2dy = \iint_{D} {\partial f_2\over\partial x}   - {\partial f_1\over\partial y}   \,dA
+=\iint_{D}(\nabla\times \vect{f})\cdot\vect{k}\,dA.
+\end{equation}
+Roughly speaking, the right-most integral adds up the curl (tendency
+to swirl) at each point in the region; the left-most integral adds up
+the tangential components of the vector field around the entire
+boundary. Green's Theorem says these are equal, or roughly, that the
+sum of the ``microscopic'' swirls over the region is the same as the
+``macroscopic'' swirl around the boundary.
+
+Next, suppose that the boundary $\partial D$ has a vector form
+$\vect{r}(t)$, so that $\vect{r}'(t)$ is tangent to the boundary, and
+$\vect{T}=\vect{r}'(t)/|\vect{r}'(t)|$ is the usual unit tangent vector.
+Writing $\vect{r}=\langle x(t),y(t)\rangle$ we get
+$$\vect{T}={\langle x',y'\rangle\over|\vect{r}'(t)|}$$
+and then
+$$\vect{N}={\langle y',-x'\rangle\over|\vect{r}'(t)|}$$
+is a unit vector perpendicular to $\vect{T}$, that is, a unit normal to
+the boundary. 
+Now
+\begin{align*}
+\int_{\partial D} \vect{f}\cdot\vect{N}\,ds&=
+\int_{\partial D} \langle f_1, f_2\rangle\cdot{\langle
+  y',-x'\rangle\over|\vect{r}'(t)|} |\vect{r}'(t)|dt=
+\int_{\partial D} f_1 y'\,dt - f_2 x'\,dt	\\
+&=\int_{\partial D} f_1 \,dy - f_2 \,dx
+=\int_{\partial D} - f_2 \,dx+ f_1\,dy.
+\end{align*}
+So far, we've just rewritten the original integral using alternate
+notation. The last integral looks just like the left side of Green's
+Theorem (\ref{thm:greens theorem}) except that $f_1$ and $f_2$ have
+traded places and $f_2$ has acquired a negative sign. Then applying
+Green's Theorem we get 
+$$
+\int_{\partial D} - f_2\,dx+f_1\,dy=\iint_{D} {\partial f_1\over\partial x}+{\partial f_2\over\partial y}\,dA=
+\iint_{D} \nabla\cdot\vect{f}\,dA.$$
+Summarizing the long string of equalities, 
+\begin{equation}\label{eq:greens theorem third form}
+\int_{\partial D} \vect{f}\cdot\vect{N}\,ds=\iint_{D} \nabla\cdot\vect{f}\,dA.
+\end{equation}
+Roughly speaking, the first integral adds up the flow across the
+boundary of the region, from inside to out, and the second sums the
+divergence (tendency to spread) at each point in the interior. The
+theorem roughly says that the sum of the ``microscopic'' spreads is
+the same as the total spread across the boundary and out of the region.
+
 
 
 
@@ -318,7 +385,7 @@ $(1,0)$, and $(1,2)$ oriented counter-clockwise.
 
 \begin{ex}
 Finish our proof of Green's Theorem by showing that
-$\ds\oint_C Q\,dy=\iint_{D} {\partial Q\over\partial x}\,dA$.
+$\ds\oint_C f_2\,dy=\iint_{D} {\partial f_2\over\partial x}\,dA$.
 \end{ex}
 
 \end{enumialphparenastyle}

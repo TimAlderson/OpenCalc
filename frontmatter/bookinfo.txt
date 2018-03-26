@@ -1,7 +1,7 @@
 \newcommand{\booktitle}{Calculus}
 \newcommand{\booksubtitle}{Early Transcendentals}
 \newcommand{\booksubject}{CALCULUS}
-\newcommand{\bookauthor}{David Guichard, Gregory Hartman, Et al. }
+\newcommand{\bookauthor}{David Guichard }
 
 \newcommand{\version}{2016}
 \newcommand{\revision}{A}

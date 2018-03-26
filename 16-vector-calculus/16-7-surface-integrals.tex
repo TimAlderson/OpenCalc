@@ -1,8 +1,8 @@
 \section{Surface Integrals}\label{sec:SurfaceIntegrals}
 
-In the integral for surface area,
-$$\int_a^b\int_c^d |{\bf r}_u\times{\bf r}_v|\,du\,dv,$$
-the integrand $|{\bf r}_u\times{\bf r}_v|\,du\,dv$
+In the integral for surface area, from Equation \ref{eq:surfaceareaintegral},
+$$\int_a^b\int_c^d |\vect{r}_u\times\vect{r}_v|\,du\,dv,$$
+the integrand $|\vect{r}_u\times\vect{r}_v|\,du\,dv$
 is the area of a tiny parallelogram, that is, a very small surface
 area, so it is reasonable to abbreviate it $dS$; then a shortened
 version of the integral is
@@ -19,10 +19,9 @@ $$\iint_{D} f(x,y)\, dA,$$
 so we can compute integrals over surfaces in space, using
 $$\iint_{D} f(x,y,z)\, dS.$$
 In practice this means that we have a vector function
-${\bf r}(u,v)=\langle x(u,v),y(u,v),z(u,v)\rangle$ for the surface,
+$\vect{r}(u,v)=\langle x(u,v),y(u,v),z(u,v)\rangle$ for the surface,
 and the integral we compute is
-$$\int_a^b\int_c^d f(x(u,v),y(u,v),z(u,v))|{\bf r}_u\times{\bf
-  r}_v|\,du\,dv.$$ 
+$$\int_a^b\int_c^d f(x(u,v),y(u,v),z(u,v))|\vect{r}_u\times\vect{r}_v|\,du\,dv.$$ 
 That is, we express everything in terms of $u$ and $v$, and then we
 can do an ordinary double integral.
 
@@ -34,17 +33,17 @@ object. (Note that the object is just a thin shell; it does not occupy
 the interior of the hemisphere.)
 \end{example}
 \begin{solution}
-We write the hemisphere as ${\bf r}(\phi,\theta)=
+We write the hemisphere as $\vect{r}(\phi,\theta)=
 \langle \cos\theta\sin\phi, \sin\theta\sin\phi, \cos\phi\rangle$,
 $0\le\phi\le \pi/2$ and $0\le\theta\le 2\pi$. So
-${\bf r}_\theta = \langle -\sin\theta\sin\phi, \cos\theta\sin\phi, 0\rangle$
+$\vect{r}_\theta = \langle -\sin\theta\sin\phi, \cos\theta\sin\phi, 0\rangle$
 and 
-${\bf r}_\phi =\langle \cos\theta\cos\phi, \sin\theta\cos\phi, -\sin\phi\rangle$.
+$\vect{r}_\phi =\langle \cos\theta\cos\phi, \sin\theta\cos\phi, -\sin\phi\rangle$.
 Then
-$${\bf r}_\theta\times{\bf r}_\phi =
+$$\vect{r}_\theta\times\vect{r}_\phi =
 \langle -\cos\theta\sin^2\phi,-\sin\theta\sin^2\phi,-\cos\phi\sin\phi\rangle$$
 and
-$$ |{\bf r}_\theta\times{\bf r}_\phi| = |\sin\phi| = \sin\phi,$$
+$$ |\vect{r}_\theta\times\vect{r}_\phi| = |\sin\phi| = \sin\phi,$$
 since we are interested only in $0\le\phi\le \pi/2$.
 Finally, the density is $z=\cos\phi$ and the integral for mass is
 $$\int_0^{2\pi}\int_0^{\pi/2} \cos\phi\sin\phi\,d\phi\,d\theta=\pi.$$
@@ -58,33 +57,33 @@ $$\int_0^{2\pi}\int_0^{\pi/2} z\cos\phi\sin\phi\,d\phi\,d\theta
 so the center of mass is at $(0,0,2/3)$.
 \end{solution}
 
-Now suppose that ${\bf F}$ is a vector field; imagine that it
+Now suppose that $\vect{f}$ is a vector field; imagine that it
 represents the velocity of some fluid at each point in space. We would
 like to measure how much fluid is passing through a surface $D$, the
-\dfont{flux} across $D$. As usual, we imagine computing
+\dfont{flux}\index{flux} across $D$. As usual, we imagine computing
 the flux across a very small section of the surface, with area $dS$,
 and then adding up all such small fluxes over $D$ with an
-integral. Suppose that vector $\bf N$ is a unit normal to the surface
-at a point; ${\bf F}\cdot{\bf N}$ is the scalar projection of $\bf F$
-onto the direction of $\bf N$, so it measures how fast the fluid is
+integral. Suppose that vector $\vect{N}$ is a unit normal to the surface
+at a point; $\vect{f}\cdot\vect{N}$ is the scalar projection of $\vect{f}$
+onto the direction of $\vect{N}$, so it measures how fast the fluid is
 moving across the surface. In one unit of time the fluid moving across
-the surface will fill a volume of ${\bf F}\cdot{\bf N}\,dS$, which is
+the surface will fill a volume of $\vect{f}\cdot\vect{N}\,dS$, which is
 therefore the rate at which the fluid is moving across a small patch
 of the surface. Thus, the total flux across $D$ is
-$$\iint_{D} {\bf F}\cdot{\bf N}\,dS=\iint_{D} {\bf F}\cdot\,d{\bf S},$$
-defining $d{\bf S}={\bf N}\,dS$.
+$$\iint_{D} \vect{f}\cdot\vect{N}\,dS=\iint_{D} \vect{f}\cdot\,d\vect{S},$$
+defining $d\vect{S}=\vect{N}\,dS$.
 
 As usual, certain conditions must be met for this to work out; chief
 among them is the nature of the surface. As we integrate over the
-surface, we must choose the normal vectors $\bf N$ in such a way that
+surface, we must choose the normal vectors $\vect{N}$ in such a way that
 they point ``the same way'' through the surface. For example, if the
 surface is roughly horizontal in orientation, we might want to measure
 the flux in the ``upwards'' direction, or if the surface is closed,
 like a sphere, we might want to measure the flux ``outwards'' across
-the surface. In the first case we would choose $\bf N$ to have
-positive $z$ component, in the second we would make sure that $\bf N$
+the surface. In the first case we would choose $\vect{N}$ to have
+positive $z$ component, in the second we would make sure that $\vect{N}$
 points away from the origin. Unfortunately, there are surfaces that
-are not \dfont{orientable}: they have
+are not \dfont{orientable}\index{orientable surface}: they have
 only one side, so that it is not possible to choose the normal vectors
 to point in the ``same way'' through the surface. The most famous such
 surface is the M\"obius strip shown in Figure~\ref{fig:moebius}. It
@@ -107,34 +106,34 @@ vectors very close to each other pointing in opposite directions.
 \end{figure}
 
 Assuming that the quantities involved are well behaved, however, the
-flux of the vector field across the surface ${\bf r}(u,v)$ is
-$$\iint_{D} {\bf F}\cdot{\bf N}\,dS
-=\iint_{D}{\bf F}\cdot 
- {{\bf r}_u\times{\bf r}_v\over|{\bf r}_u\times{\bf r}_v|}
- |{\bf r}_u\times{\bf r}_v|\,dA
-=\iint_{D}{\bf F}\cdot ({\bf r}_u\times{\bf r}_v)\,dA.$$
-In practice, we may have to use ${\bf r}_v\times{\bf r}_u$
+flux of the vector field across the surface $\vect{r}(u,v)$ is
+$$\iint_{D} \vect{f}\cdot\vect{N}\,dS
+=\iint_{D}\vect{f}\cdot 
+ {\vect{r}_u\times\vect{r}_v\over|\vect{r}_u\times\vect{r}_v|}
+ |\vect{r}_u\times\vect{r}_v|\,dA
+=\iint_{D}\vect{f}\cdot (\vect{r}_u\times\vect{r}_v)\,dA.$$
+In practice, we may have to use $\vect{r}_v\times\vect{r}_u$
 or even something a bit more complicated to make sure that the normal
 vector points in the desired direction.
 
 \begin{example}{Flux}{}
-Compute the flux of ${\bf F}=\langle x,y,z^4\rangle$ across the
-cone $z=\sqrt{x^2+y^2}$, $0\le z\le 1$, in the downward direction.
+Compute the flux of $\vect{f}=\langle x,y,z^2\rangle$ across the
+cone $z=\sqrt{x^2+y^2}$, $0\le z\le 2$, in the downward direction.
 \end{example}
 \begin{solution}
-We write the cone as a vector function: ${\bf r}=\langle v\cos u, v\sin u,
-v\rangle$, $0\le u\le 2\pi$ and $0\le v\le 1$.
-Then ${\bf r}_u=\langle -v\sin u, v\cos u,0\rangle$ and 
-${\bf r}_v=\langle \cos u, \sin u, 1\rangle$ and
-${\bf r}_u\times{\bf r}_v=\langle v\cos u,v\sin u,-v\rangle$.
+We write the cone as a vector function: $\vect{r}=\langle v\cos u, v\sin u,
+v\rangle$, $0\le u\le 2\pi$ and $0\le v\le 2$.
+Then $\vect{r}_u=\langle -v\sin u, v\cos u,0\rangle$ and 
+$\vect{r}_v=\langle \cos u, \sin u, 1\rangle$ and
+$\vect{r}_u\times\vect{r}_v=\langle v\cos u,v\sin u,-v\rangle$.
 The third coordinate $-v$ is negative, which is exactly what we
 desire, that is, the normal vector points down through the
 surface. Then 
 \begin{align*}
-\int_0^{2\pi}\int_0^1 \langle x,y,z^4\rangle\cdot\langle v\cos u,v\sin u,-v\rangle \,dv\,du
-&=\int_0^{2\pi}\int_0^1 xv\cos u+yv\sin u-z^4v\,dv\,du	\\
-&=\int_0^{2\pi}\int_0^1 v^2\cos^2 u+ v^2\sin^2 u-v^5\,dv\,du	\\
-&=\int_0^{2\pi}\int_0^1 v^2-v^5\,dv\,du={\pi\over3}.
+\int_0^{2\pi}\int_0^2 \langle x,y,z^2\rangle\cdot\langle v\cos u,v\sin u,-v\rangle \,dv\,du
+&=\int_0^{2\pi}\int_0^2 xv\cos u+yv\sin u-z^2v\,dv\,du	\\
+&=\int_0^{2\pi}\int_0^2 v^2\cos^2 u+ v^2\sin^2 u-v^3\,dv\,du	\\
+&=\int_0^{2\pi}\int_0^2 v^2-v^3\,dv\,du=-\frac{8\pi}{3}.
 \end{align*}
 \end{solution}
 
@@ -178,8 +177,7 @@ height $h$ and base radius $r$, not including the base.
 \end{ex}
 
 \begin{ex}
-Evaluate $\ds \iint_{D} \langle 2,-3,4\rangle\cdot {\bf
-  N}\,dS$, where $D$ is given by $z=x^2+y^2$, $-1\le x\le 1$, $-1\le
+Evaluate $\ds \iint_{D} \langle 2,-3,4\rangle\cdot \vect{N}\,dS$, where $D$ is given by $z=x^2+y^2$, $-1\le x\le 1$, $-1\le
 y\le 1$, oriented up.
 \begin{sol}
 	$16$
@@ -187,8 +185,7 @@ y\le 1$, oriented up.
 \end{ex}
 
 \begin{ex}
-Evaluate $\ds \iint_{D} \langle x,y,3\rangle\cdot {\bf
-  N}\,dS$, where $D$ is given by $z=3x-5y$, $1\le x\le 2$, $0\le
+Evaluate $\ds \iint_{D} \langle x,y,3\rangle\cdot\vect{N}\,dS$, where $D$ is given by $z=3x-5y$, $1\le x\le 2$, $0\le
 y\le 2$, oriented up.
 \begin{sol}
 	$7$
@@ -196,8 +193,7 @@ y\le 2$, oriented up.
 \end{ex}
 
 \begin{ex}
-Evaluate $\ds \iint_{D} \langle x,y,-2\rangle\cdot {\bf
-  N}\,dS$, where $D$ is given by $z=1-x^2-y^2$, $x^2+y^2\le1$,
+Evaluate $\ds \iint_{D} \langle x,y,-2\rangle\cdot \vect{N}\,dS$, where $D$ is given by $z=1-x^2-y^2$, $x^2+y^2\le1$,
 oriented up.
 \begin{sol}
 	$-\pi$
@@ -205,17 +201,7 @@ oriented up.
 \end{ex}
 
 \begin{ex}
-Evaluate $\ds \iint_{D} \langle xy, yz,zx\rangle\cdot {\bf
-  N}\,dS$, where $D$ is given by $z=x+y^2+2$, $0\le x\le 1$, $x\le
-y\le 1$, oriented up.
-\begin{sol}
-	$-137/120$
-\end{sol}
-\end{ex}
-
-\begin{ex}
-Evaluate $\ds \iint_{D} \langle e^x, e^y,z\rangle\cdot {\bf
-  N}\,dS$, where $D$ is given by $z=xy$, $0\le x\le 1$, $-x\le
+Evaluate $\ds \iint_{D} \langle e^x, e^y,z\rangle\cdot\vect{N}\,dS$, where $D$ is given by $z=xy$, $0\le x\le 1$, $-x\le
 y\le x$, oriented up.
 \begin{sol}
 	$-2/e$
@@ -223,8 +209,7 @@ y\le x$, oriented up.
 \end{ex}
 
 \begin{ex}
-Evaluate $\ds \iint_{D} \langle xz,yz,z\rangle\cdot {\bf
-N}\,dS$, where $D$ is given by $z=a^2-x^2-y^2$, $x^2+y^2\le b^2$, 
+Evaluate $\ds \iint_{D} \langle xz,yz,z\rangle\cdot\vect{N}\,dS$, where $D$ is given by $z=a^2-x^2-y^2$, $x^2+y^2\le b^2$, 
 oriented up.
 \begin{sol}
 	$\pi b^2(-4b^4-3b^2+6a^2b^2+6a^2)/6$
@@ -232,9 +217,9 @@ oriented up.
 \end{ex}
 
 \begin{ex}
-A fluid has density 870 kg/m$^3$ and flows with velocity ${\bf v} =
+A fluid has density 870 kg/m$^3$ and flows with velocity $\vect{v} =
  \langle z,y^2,x^2\rangle$, where distances are in meters and the
- components of ${\bf v}$ are in meters per second.  Find the rate of flow
+ components of $\vect{v}$ are in meters per second.  Find the rate of flow
  outward through the portion of the cylinder $x^2+y^2 = 4$, $0\leq
  z\leq 1$ for which $y>0$.
 \begin{sol}
@@ -245,13 +230,13 @@ A fluid has density 870 kg/m$^3$ and flows with velocity ${\bf v} =
 \begin{ex}
 Gauss's Law says that the net charge, $Q$,
 enclosed by a closed surface, $S$, is 
-$$Q=\epsilon_0 \iint {\bf E}\cdot {\bf N}\,dS$$ 
-where ${\bf E}$ is an electric field and $\epsilon_0$ (the
-permittivity of free space) is a known constant; $\bf N$ is oriented
+$$Q=\epsilon_0 \iint \vect{e}\cdot \vect{N}\,dS$$ 
+where $\vect{e}$ is an electric field and $\epsilon_0$ (the
+permittivity of free space) is a known constant; $\vect{N}$ is oriented
 outward. 
 Use Gauss's Law to find the charge contained in the cube with vertices
 $(\pm 1, \pm 1, \pm 1)$ if the electric field is 
-${\bf E} = \langle x,y,z\rangle$.
+$\vect{e} = \langle x,y,z\rangle$.
 \begin{sol}
 	$24\epsilon_0$
 \end{sol}

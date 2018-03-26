@@ -1,34 +1,33 @@
 \section{The Cross Product}\label{sec:3Dcrossproduct}
 
-Another useful operation: Given two vectors, find a third vector
+Suppose we are given two vectors. In many cases it is useful to find a third vector
 perpendicular to the first two. There are of course an infinite number
 of such vectors of different lengths. Nevertheless, let us find one.
-Suppose ${\bf A}=\langle
-a_1,a_2,a_3\rangle$ and ${\bf B}=\langle b_1,b_2,b_3\rangle$. We want
-to find a vector ${\bf v} = \langle v_1,v_2,v_3\rangle$ with
-${\bf v}\cdot{\bf A}={\bf v}\cdot{\bf B}=0$, or
+Suppose $\vect{v}=\langle v_1,v_2,v_3\rangle$ and $\vect{w}=\langle w_1,w_2,w_3\rangle$. We want
+to find a vector $\vect{c} = \langle c_1,c_2,c_3\rangle$ with
+$\vect{c}\cdot\vect{v}=\vect{c}\cdot\vect{ w}=0$, or
 \begin{align*}
-  a_1v_1+a_2v_2+a_3v_3&=0,	\\
-  b_1v_1+b_2v_2+b_3v_3&=0.
+  v_1c_1+v_2c_2+v_3c_3&=0,	\\
+  w_1c_1+w_2c_2+w_3c_3&=0.
 \end{align*}
-Multiply the first equation by $b_3$ and the second by $a_3$ and
+Multiply the first equation by $w_3$ and the second by $v_3$ and
 subtract to get
 \begin{align*}
-  b_3a_1v_1+b_3a_2v_2+b_3a_3v_3&=0	\\
-  a_3b_1v_1+a_3b_2v_2+a_3b_3v_3&=0	\\
-  (a_1b_3-b_1a_3)v_1 + (a_2b_3-b_2a_3)v_2&=0
+  w_3v_1c_1+w_3v_2c_2+w_3v_3c_3&=0	\\
+  v_3w_1c_1+v_3w_2c_2+v_3w_3c_3&=0	\\
+  (v_1w_3-w_1v_3)c_1 + (v_2w_3-w_2v_3)c_2&=0
 \end{align*}
 Of course, this equation in two variables has many solutions; a
-particularly easy one to see is $v_1=a_2b_3-b_2a_3$,
-$v_2=b_1a_3-a_1b_3$. Substituting back into either of the original
-equations and solving for $ v_3$ gives $v_3=a_1b_2-b_1a_2$.
+particularly easy one to see is $c_1=v_2w_3-w_2v_3$,
+$c_2=w_1v_3-v_1w_3$. Substituting back into either of the original
+equations and solving for $ c_3$ gives $c_3=v_1w_2-w_1v_2$.
 
 This particular answer to the problem turns out to have some nice
 properties, and it is dignified with a name: the 
-\dfont{cross product}:
+\dfont{cross product}\index{cross product}:
 $$
-  {\bf A}\times{\bf B} = \langle
-  a_2b_3-b_2a_3,b_1a_3-a_1b_3,a_1b_2-b_1a_2\rangle.
+  \vect{v}\times\vect{w} = \langle
+  v_2w_3-w_2v_3,w_1v_3-v_1w_3,v_1w_2-w_1v_2\rangle.
 $$
 While there is a nice pattern to this vector, it can be a bit
 difficult to memorize;  here is a convenient mnemonic.
@@ -44,29 +43,29 @@ This is extended to the determinant of a three by three matrix:
   \left|
   \begin{matrix}
   x	&	y	&	z	\\
-  a_1	&	a_2	&	a_3	\\
-  b_1	&	b_2	&	b_3
+  v_1	&	v_2	&	v_3	\\
+  w_1	&	w_2	&	w_3
   \end{matrix}\right|
   &=x\left|
   \begin{matrix}
-  a_2	&	a_3	\\
-  b_2	&	b_3
+  v_2	&	v_3	\\
+  w_2	&	w_3
   \end{matrix}
   \right|
   -y\left|
   \begin{matrix}
-  a_1	&	a_3	\\
-  b_1	&	b_3
+  v_1	&	v_3	\\
+  w_1	&	w_3
   \end{matrix}
   \right|
   +z\left|
   \begin{matrix}
-  a_1	&	a_2	\\
-  b_1	&	b_2
+  v_1	&	v_2	\\
+  w_1	&	w_2
   \end{matrix}
   \right|	\\
-  &=x(a_2b_3-b_2a_3)-y(a_1b_3-b_1a_3)+z(a_1b_2-b_1a_2)	\\
-  &=x(a_2b_3-b_2a_3)+y(b_1a_3-a_1b_3)+z(a_1b_2-b_1a_2).
+  &=x(v_2w_3-w_2v_3)-y(v_1w_3-w_1v_3)+z(v_1w_2-w_1v_2)	\\
+  &=x(v_2w_3-w_2v_3)+y(w_1v_3-v_1w_3)+z(v_1w_2-w_1v_2).
 \end{align*}
 Each of the two by two matrices is formed by deleting the top row and
 one column of the three by three matrix; the subtraction of the middle
@@ -75,63 +74,61 @@ of the determinant; suffice it to say that determinants are
 extraordinarily useful and important. Here we want to use it merely as
 a mnemonic device. You will have noticed that the three expressions in
 parentheses on the last line are precisely the three coordinates of
-the cross product; replacing $x$, $y$, $z$ by $\bf i$, $\bf j$, $\bf
-k$ gives us
+the cross product; replacing $x$, $y$, $z$ by $\vect{i}$, $\vect{j}$, $\vect{k}$ gives us
 \begin{align*}
   \left|
   \begin{matrix}
-  {\bf i}	&	{\bf j}	&	{\bf k}	\\
-  a_1	&	a_2	&	a_3	\\
-  b_1	&	b_2	&	b_3
+  \vect{i}	&	\vect{j}	&	\vect{k}	\\
+  v_1	&	v_2	&	v_3	\\
+  w_1	&	w_2	&	w_3
   \end{matrix}
   \right|
-  &=(a_2b_3-b_2a_3){\bf i}-(a_1b_3-b_1a_3){\bf j}+(a_1b_2-b_1a_2){\bf k}	\\
-  &=(a_2b_3-b_2a_3){\bf i}+(b_1a_3-a_1b_3){\bf j}+(a_1b_2-b_1a_2){\bf k}	\\
-  &=\langle a_2b_3-b_2a_3,b_1a_3-a_1b_3,a_1b_2-b_1a_2\rangle	\\
-  &={\bf A}\times{\bf B}.
+  &=(v_2w_3-w_2v_3)\vect{i}-(v_1w_3-w_1v_3)\vect{j}+(v_1w_2-w_1v_2)\vect{k}	\\
+  &=(v_2w_3-w_2v_3)\vect{i}+(w_1v_3-v_1w_3)\vect{j}+(v_1w_2-w_1v_2)\vect{k}	\\
+  &=\langle v_2w_3-w_2v_3,w_1v_3-v_1w_3,v_1w_2-w_1v_2\rangle	\\
+  &=\vect{v}\times\vect{w}.
 \end{align*}
 
-Given $\bf A$ and $\bf B$, there are typically two possible directions and an
+Given $\vect{v}$ and $\vect{w}$, there are typically two possible directions and an
 infinite number of magnitudes that will give a vector perpendicular to
-both $\bf A$ and $\bf B$. As we have picked a particular one, we
+both $\vect{v}$ and $\vect{w}$. As we have picked a particular one, we
 should investigate the magnitude and direction.
 
-We know how to compute the magnitude of ${\bf A}\times{\bf B}$; it's a
+We know how to compute the magnitude of $\vect{v}\times\vect{w}$; it's a
 bit messy but not difficult. It is somewhat easier to work initially
 with the square of the magnitude, so as to avoid the square root:
 \begin{align*}
-  |{\bf A}\times{\bf B}|^2&=
-  (a_2b_3-b_2a_3)^2+(b_1a_3-a_1b_3)^2+(a_1b_2-b_1a_2)^2	\\
-  &=a_2^2b_3^2-2a_2b_3b_2a_3+b_2^2a_3^2+b_1^2a_3^2-2b_1a_3a_1b_3+a_1^2b_3^2+a_1^2b_2^2-2a_1b_2b_1a_2+b_1^2a_2^2
+  |\vect{v}\times \vect{w}|^2&=
+  (v_2w_3-w_2v_3)^2+(w_1v_3-v_1w_3)^2+(v_1w_2-w_1v_2)^2	\\
+  &=v_2^2w_3^2-2v_2w_3w_2v_3+w_2^2v_3^2+w_1^2v_3^2-2w_1v_3v_1w_3+v_1^2w_3^2+v_1^2w_2^2-2v_1w_2w_1v_2+w_1^2v_2^2
 \end{align*}
 While it is far from obvious, this nasty looking expression can be
 simplified: 
 \begin{align*}
-  |{\bf A}\times{\bf B}|^2&=
-  (a_1^2+a_2^2+a_3^2)(b_1^2+b_2^2+b_3^2)-(a_1b_1+a_2b_2+a_3b_3)^2	\\
-  &=|{\bf A}|^2|{\bf B}|^2-({\bf A}\cdot{\bf B})^2	\\
-  &=|{\bf A}|^2|{\bf B}|^2-|{\bf A}|^2|{\bf B}|^2\cos^2\theta	\\
-  &=|{\bf A}|^2|{\bf B}|^2(1-\cos^2\theta)	\\
-  &=|{\bf A}|^2|{\bf B}|^2\sin^2\theta	\\
-  |{\bf A}\times{\bf B}|&=|{\bf A}||{\bf B}|\sin\theta
+  |\vect{v}\times\vect{w}|^2&=
+  (v_1^2+v_2^2+v_3^2)(w_1^2+w_2^2+w_3^2)-(v_1w_1+v_2w_2+v_3w_3)^2	\\
+  &=|\vect{v}|^2|\vect{w}|^2-(\vect{v}\cdot\vect{w})^2	\\
+  &=|\vect{v}|^2|\vect{w}|^2-|\vect{v}|^2|\vect{w}|^2\cos^2\theta	\\
+  &=|\vect{v}|^2|\vect{w}|^2(1-\cos^2\theta)	\\
+  &=|\vect{v}|^2|\vect{w}|^2\sin^2\theta	\\
+  |\vect{v}\times\vect{w}|&=|\vect{v}||\vect{w}|\sin\theta
 \end{align*}
-The magnitude of ${\bf A}\times{\bf B}$ is thus very similar to the dot
-product. In particular, notice that if $\bf A$ is parallel to $\bf B$,
+The magnitude of $\vect{v}\times\vect{w}$ is thus very similar to the dot
+product. In particular, notice that if $\vect{v}$ is parallel to $\vect{w}$,
 the angle between them is zero, so $\sin\theta=0$, so 
-$|{\bf A}\times{\bf B}|=0$, and likewise if they are anti-parallel, 
+$|\vect{v}\times\vect{w}|=0$, and likewise if they are anti-parallel, 
 $\sin\theta=0$, and
-$|{\bf A}\times{\bf B}|=0$. Conversely, if $|{\bf A}\times{\bf B}|=0$
-and $|{\bf A}|$ and $|{\bf B}|$ are not zero, it must be that
-$\sin\theta=0$, so $\bf A$ is parallel or anti-parallel to $\bf B$. 
+$|\vect{v}\times\vect{w}|=0$. Conversely, if $|\vect{v}\times\vect{w}|=0$
+and $|\vect{v}|$ and $|\vect{w}|$ are not zero, it must be that
+$\sin\theta=0$, so $\vect{v}$ is parallel or anti-parallel to $\vect{w}$. 
 
 \label{page:parallelogram area} Here is a curious fact about this
 quantity that turns out to be quite useful later on: Given two
 vectors, we can put them tail to tail and form a
 parallelogram, as in Figure~\ref{fig:area of parallelogram}. The
-height of the parallelogram, $h$, is $|{\bf A}|\sin\theta$, and the
-base is $|{\bf B}|$, so the area of the
-parallelogram is $|{\bf A}||{\bf
-B}|\sin\theta$, exactly the magnitude of $|{\bf A}\times{\bf B}|$.
+height of the parallelogram, $h$, is $|\vect{v}|\sin\theta$, and the
+base is $|\vect{w}|$, so the area of the
+parallelogram is $|\vect{v}||\vect{w}|\sin\theta$, exactly the magnitude of $|\vect{v}\times\vect{w}|$.
 
 \begin{figure}[H]
 \centerline{
@@ -143,8 +140,8 @@ B}|\sin\theta$, exactly the magnitude of $|{\bf A}\times{\bf B}|$.
 \arrow <4pt> [0.35, 1] from 0 0 to 2 3
 \setdashes
 \plot 5 0 7 3 2 3 2 0 /
-\put {$\bf A$} [br] <-3pt,3pt> at 1 1.5
-\put {$\bf B$} [t] <0pt,-3pt> at 2.5 0
+\put {$\vect{v}$} [br] <-3pt,3pt> at 1 1.5
+\put {$\vect{w}$} [t] <0pt,-3pt> at 2.5 0
 \put {$h$} [l] <3pt,0pt> at 2 1.5
 \put {$\theta$} [bl] <7pt,4pt> at 0 0
 \endpicture}}
@@ -153,15 +150,15 @@ B}|\sin\theta$, exactly the magnitude of $|{\bf A}\times{\bf B}|$.
 
 What about the direction of the cross product? Remarkably, there is a
 simple rule that describes the direction. Let's look at a simple
-example: Let ${\bf A}=\langle a,0,0\rangle$, ${\bf B}=\langle 
+example: Let $\vect{v}=\langle a,0,0\rangle$, $\vect{w}=\langle 
 b,c,0\rangle$. If the vectors are placed with tails at the origin,
-$\bf A$ lies along the $x$-axis and $\bf B$ lies in the $x$-$y$ plane,
+$\vect{v}$ lies along the $x$-axis and $\vect{w}$ lies in the $x$-$y$ plane,
 so we know the cross product will point either up or down. The cross
 product is 
 \begin{align*}
-  {\bf A}\times {\bf B}=\left|
+  \vect{v}\times \vect{w}=\left|
   \begin{matrix}
-  {\bf i}	&	{\bf j}	&	{\bf k}	\\
+  \vect{i}	&	\vect{j}	&	\vect{k}	\\
   a	&	0	&	0	\\
   b	&	c	&	0
   \end{matrix}
@@ -174,38 +171,34 @@ $c>0$, $ac>0$ and the vector points up; if $c<0$, the vector points
 down. On the other hand, if $a<0$ and $c>0$, the vector points down,
 while if $a<0$ and $c<0$, the vector points up. Here is how to
 interpret these facts with a single rule: Imagine rotating vector
-$\bf A$ until it points in the same direction as $\bf B$; there are
+$\vect{v}$ until it points in the same direction as $\vect{w}$; there are
 two ways to do this---use the rotation that goes through the smaller
 angle. If $a>0$ and $c>0$, or $a<0$ and $c<0$, the rotation will be
-counter-clockwise when viewed from above; in the other two cases, $\bf
-A$ must be rotated clockwise to reach $\bf B$. The rule is:
-counter-clockwise means up, clockwise means down. If $\bf A$ and $\bf
-B$ are any vectors in the $x$-$y$ plane, the same rule applies---$\bf
-A$ need not be parallel to the $x$-axis.
+counter-clockwise when viewed from above; in the other two cases, $\vect{v}$ must be rotated clockwise to reach $\vect{w}$. The rule is:
+counter-clockwise means up, clockwise means down. If $\vect{v}$ and $\vect{w}$ are any vectors in the $x$-$y$ plane, the same rule applies---$\vect{v}$ need not be parallel to the $x$-axis.
 
 Although it is somewhat difficult computationally to see how this
 plays out for any two starting vectors, the rule is essentially the
-same. Place $\bf A$ and $\bf B$ tail to tail. The plane in which $\bf
-A$ and $\bf B$ lie may be viewed from two sides; view it from the side
-for which $\bf A$ must rotate counter-clockwise to reach $\bf B$; then
-the vector ${\bf A}\times{\bf B}$ points toward you.
+same. Place $\vect{v}$ and $\vect{w}$ tail to tail. The plane in which $\vect{v}$ and $\vect{w}$ lie may be viewed from two sides; view it from the side
+for which $\vect{v}$ must rotate counter-clockwise to reach $\vect{w}$; then
+the vector $\vect{v}\times\vect{w}$ points toward you.
 
 This rule is usually called the \dfont{right hand rule}.
 Imagine placing the heel of your right hand at the point where the tails are
 joined, so that your slightly curled fingers indicate the direction of
-rotation from $\bf A$ to $\bf B$. Then your thumb points in the
-direction of the cross product ${\bf A}\times{\bf B}$.
+rotation from $\vect{v}$ to $\vect{w}$. Then your thumb points in the
+direction of the cross product $\vect{v}\times\vect{w}$.
 
 One immediate consequence of these facts is that 
-${\bf A}\times{\bf B}\not={\bf B}\times{\bf A}$, because the two
+$\vect{v}\times\vect{w}\not=\vect{w}\times\vect{v}$, because the two
 cross products point in the opposite direction. On the other hand,
 since 
 $$
-  |{\bf A}\times{\bf B}|=|{\bf A}||{\bf B}|\sin\theta
-  =|{\bf B}||{\bf A}|\sin\theta=|{\bf B}\times{\bf A}|,
+  |\vect{v}\times\vect{w}|=|\vect{v}||\vect{ w}|\sin\theta
+  =|\vect{w}||\vect{v}|\sin\theta=|\vect{w}\times\vect{v}|,
 $$
 the lengths of the two cross products are equal, so
-we know that ${\bf A}\times{\bf B}=-({\bf B}\times{\bf A})$.
+we know that $\vect{v}\times\vect{w}=-(\vect{w}\times\vect{v})$.
 
 The cross product has some familiar-looking properties that will be
 useful later, so we list them here. As with the dot product, these can
@@ -214,20 +207,20 @@ after which we may sometimes avoid such calculations by using the
 properties. 
 
 \begin{theorem}{Cross Product Properties}{cross product properties}
-If ${\bf u}$, ${\bf v}$, and ${\bf w}$ are vectors and $a$ is a real
+If $\vect{u}$, $\vect{v}$, and $\vect{w}$ are vectors and $a$ is a real
 number, then
 \begin{enumerate}
-	\item	${\bf u}\times({\bf v}+{\bf w}) = 
-	{\bf u}\times{\bf v}+{\bf u}\times{\bf w}$
-	\item	$({\bf v}+{\bf w})\times{\bf u} = 
-	{\bf v}\times{\bf u}+{\bf w}\times{\bf u}$
-	\item	$(a{\bf u})\times{\bf v}=a({\bf u}\times{\bf v})
-	={\bf u}\times(a{\bf v})$
-	\item	${\bf u}\cdot({\bf v}\times{\bf w}) = 
-	({\bf u}\times{\bf v})\cdot{\bf w}$
-	\item	${\bf u}\times({\bf v}\times{\bf w}) =
-	({\bf u}\cdot{\bf w}){\bf v}-({\bf u}\cdot{\bf v}){\bf w}$
-\end{enumerate}
+	\item	$\vect{u}\times(\vect{v}+\vect{w}) = 
+	\vect{u}\times\vect{v}+\vect{u}\times\vect{w}$
+	\item	$(\vect{v}+\vect{w})\times\vect{u} = 
+	\vect{v}\times\vect{u}+\vect{w}\times\vect{u}$
+	\item	$(a\vect{u})\times\vect{v}=a(\vect{u}\times\vect{v})
+	=\vect{u}\times(a\vect{v})$
+	\item	$\vect{u}\cdot(\vect{v}\times\vect{w}) = 
+	(\vect{u}\times\vect{v})\cdot\vect{w}$
+	\item	$\vect{u}\times(\vect{v}\times\vect{w}) =
+	(\vect{u}\cdot\vect{w})\vect{v}-(\vect{u}\cdot\vect{v})\vect{w}$
+\end{enumerate}\index{cross product!properties}
 \end{theorem}
 
 
@@ -270,18 +263,17 @@ $\langle 0,0,1\rangle$.
 \end{ex}
 
 \begin{ex}
-Two vectors ${\bf u}$ and ${\bf v}$ are separated by an
-angle of $\pi/6$, and $|{\bf u}|=2$ and $|{\bf v}|=3$. Find 
-$|{\bf u}\times{\bf v}|$.
+Two vectors $\vect{u}$ and $\vect{v}$ are separated by an
+angle of $\pi/6$, and $|\vect{u}|=2$ and $|\vect{v}|=3$. Find $|\vect{u}\times\vect{v}|$.
 \begin{sol}
 	$3$
 \end{sol}
 \end{ex}
 
 \begin{ex}
-Two vectors ${\bf u}$ and ${\bf v}$ are separated by an
-angle of $\pi/4$, and $|{\bf u}|=3$ and $|{\bf v}|=7$. Find 
-$|{\bf u}\times{\bf v}|$.
+Two vectors $\vect{u}$ and $\vect{v}$ are separated by an
+angle of $\pi/4$, and $|\vect{u}|=3$ and $|\vect{v}|=7$. Find 
+$|\vect{u}\times\vect{v}|$.
 \begin{sol}
 	$21\sqrt2/2$
 \end{sol}
@@ -296,13 +288,13 @@ $(3,7)$, and $(2,5)$.
 \end{ex}
 
 \begin{ex}
-Find and explain the value of $({\bf i} \times {\bf j})
-\times {\bf k}$ and $({\bf i} + {\bf j}) \times ({\bf i} - {\bf j})$.
+Find and explain the value of $(\vect{i} \times \vect{j})
+\times \vect{k}$ and $(\vect{i} + \vect{j}) \times (\vect{i} - \vect{j})$.
 \end{ex}
 
 \begin{ex}
-Prove that for all vectors ${\bf u}$ and ${\bf v}$,
-$({\bf u}\times{\bf v})\cdot{\bf v}=0$.
+Prove that for all vectors $\vect{u}$ and $\vect{v}$,
+$(\vect{u}\times\vect{v})\cdot\vect{v}=0$.
 \end{ex}
 
 \begin{ex}
@@ -310,12 +302,11 @@ Prove Theorem~\ref{thm:cross product properties}.
 \end{ex}
 
 \begin{ex}
-Define the triple product of three vectors, ${\bf x}$,
-${\bf y}$, and ${\bf z}$, to be the scalar ${\bf x} \cdot ({\bf y} \times
-{\bf z})$.  Show that three vectors lie in the same plane if and only if
+Define the triple product of three vectors, $\vect{x}$,
+$\vect{y}$, and $\vect{z}$, to be the scalar $\vect{x} \cdot (\vect{y} \times
+\vect{z})$.  Show that three vectors lie in the same plane if and only if
 their triple product is zero. Verify that $\langle 1, 5, -2 \rangle$,
-$\langle 4, 3, 0 \rangle$ and $\langle 6, 13, -4 \rangle$ are
-coplanar.
+$\langle 4, 3, 0 \rangle$ and $\langle 6, 13, -4 \rangle$ all lie in the same plane.
 \end{ex}
 
 \end{enumialphparenastyle}

@@ -55,122 +55,66 @@ $$\nabla f=\left\langle{\partial \over\partial x},{\partial
   f\over\partial y},{\partial f\over\partial z}\right\rangle,$$
 that is, we simply multiply the $f$ into the vector.
 
-The divergence and curl can now be defined in terms of this same odd
+The divergence and curl can now be defined in terms of this same
 vector $\nabla$ by using the cross product and dot product.
-The divergence of a vector field ${\bf F}=\langle f,g,h\rangle$ is
-$$\nabla \cdot {\bf F} =
+
+\begin{formulabox}[Divergence]
+The divergence of a vector field $\vect{f}=\langle f_1, f_2, f_3 \rangle$ is
+$$\nabla \cdot \vect{f} =
 \left\langle{\partial \over\partial x},{\partial
   \over\partial y},{\partial \over\partial z}\right\rangle\cdot
-\langle f,g,h\rangle
-= {\partial f\over\partial x}+{\partial
-  g\over\partial y}+{\partial h\over\partial z}.$$
-The curl of $\bf F$ is
-$$\nabla\times{\bf F} = \left|
+\langle f_1,f_2,f_3\rangle
+= {\partial f_1 \over\partial x}+{\partial
+  f_2 \over\partial y}+{\partial f_3\over\partial z}.$$\index{divergence}\index{vector field!divergence}
+\end{formulabox}
+
+\begin{formulabox}[Curl]
+The curl of $\vect{f}$ is
+$$\nabla\times\vect{f} = \left|
 \begin{matrix}
-{\bf i}	&	{\bf j}	&	{\bf k}	\\
+\vect{i}	&	\vect{j}	&	\vect{k}	\\
 {\partial \over\partial x}	&	{\partial \over\partial y}	&	{\partial \over\partial z}	\\
-f	&	g	&	h
+f_1	&	f_2	&	f_3
 \end{matrix}
 \right| = 
-\left\langle {\partial h\over\partial y}-{\partial g\over\partial z},
-{\partial f\over\partial z}-{\partial h\over\partial x},
-{\partial g\over\partial x}-{\partial f\over\partial y}\right\rangle.$$
+\left\langle {\partial f_3\over\partial y}-{\partial f_2\over\partial z},
+{\partial f_1\over\partial z}-{\partial f_3\over\partial x},
+{\partial f_2\over\partial x}-{\partial f_1\over\partial y}\right\rangle.$$\index{curl}\index{vector field!curl}
+\end{formulabox}
 
 Here are two simple but useful facts about divergence and curl.
 
 \begin{theorem}{Divergence of Curl is Zero}{div of curl is zero}
-$\nabla\cdot(\nabla\times{\bf F})=0$.
+$\nabla\cdot(\nabla\times\vect{f})=0$.
 \end{theorem}
 
 In words, this says that the divergence of the curl is zero.
 
 \begin{theorem}{Curl of Gradient is Zero}{curl of gradient is zero}
-$\nabla\times(\nabla f) = {\bf 0}$.
+$\nabla\times(\nabla f) = \vect{0}$.
 \end{theorem}
 
 That is, the curl of a gradient is the zero vector. Recalling that
 gradients are conservative vector fields, this says that the curl of a
 conservative vector field is the zero vector. Under suitable
-conditions, it is also true that if the curl of $\bf F$ is $\bf 0$
-then $\bf F$ is conservative. (Note that this is exactly the same test
-that we discussed on Page~\ref{page:test for conservative vector field}.)
+conditions, it is also true that if the curl of $\vect{f}$ is $\vect{0}$
+then $\vect{f}$ is conservative. (Note that this is exactly the same test
+that we discussed at the end of Section ~\ref{page:test for conservative vector field}.)
 
-\begin{example}{}{}
-Let ${\bf F} = \langle e^z,1,xe^z\rangle$. Then 
-$\nabla\times{\bf F} = \langle 0,e^z-e^z,0\rangle = {\bf 0}$.
-Thus, $\bf F$ is conservative, and we can exhibit this directly by
-finding the corresponding $f$.
-
-Since $f_x=e^z$, $f=xe^z+g(y,z)$. Since $f_y=1$, it must be that
-$g_y=1$, so $g(y,z)=y+h(z)$. Thus $f=xe^z+y+h(z)$ and
-$$xe^z = f_z xe^z + 0 + h'(z),$$
-so $h'(z)=0$, i.e., $h(z)=C$, and $f=xe^z+y+C$.
+\begin{example}{}{conservative}
+Let $\vect{f} = \langle 2e^x - y, -x ,e^z\rangle$. Show that $\vect{f}$ is conservative and find the function $f$ such that $\vect{f} = \langle f_x, f_y, f_z \rangle$. 
 \end{example}
 
-We can rewrite Green's Theorem using these new ideas; these rewritten
-versions in turn are closer to some later theorems we will see.
+\begin{solution}
+If $\vect{f} = \langle 2e^x - y, -x ,e^z \rangle$ then $\nabla\times\vect{f} = \langle 0, 0, (-1)-(-1) \rangle = \vect{0}$.
+Thus, $\vect{f}$ is conservative, and we can exhibit this directly by
+finding the corresponding $f$.
 
-Suppose we write a two dimensional vector field in the
-form ${\bf F}=\langle P,Q,0\rangle$, where $P$ and $Q$ are functions
-of $x$ and $y$. Then 
-$$\nabla\times {\bf F} =
-\left|
-\begin{matrix}
-{\bf i}	&	{\bf j}	&	{\bf k}	\\
-{\partial \over\partial x}	&	{\partial\over\partial y}	&	{\partial \over\partial z}	\\
-P	&	Q	&	0
-\end{matrix}
-\right|=
-\langle 0,0,Q_x-P_y\rangle,$$
-and so $(\nabla\times {\bf F})\cdot{\bf k}=\langle 0,0,Q_x-P_y\rangle\cdot
-\langle 0,0,1\rangle = Q_x-P_y$. So Green's Theorem says
-\begin{equation}\label{eq:greens theorem second form}
-\int_{\partial D} {\bf F}\cdot d{\bf r}=
-\int_{\partial D} P\,dx +Q\,dy = \iint_{D} Q_x-P_y \,dA
-=\iint_{D}(\nabla\times {\bf F})\cdot{\bf k}\,dA.
-\end{equation}
-Roughly speaking, the right-most integral adds up the curl (tendency
-to swirl) at each point in the region; the left-most integral adds up
-the tangential components of the vector field around the entire
-boundary. Green's Theorem says these are equal, or roughly, that the
-sum of the ``microscopic'' swirls over the region is the same as the
-``macroscopic'' swirl around the boundary.
-
-Next, suppose that the boundary $\partial D$ has a vector form
-${\bf r}(t)$, so that ${\bf r}'(t)$ is tangent to the boundary, and
-${\bf T}={\bf r}'(t)/|{\bf r}'(t)|$ is the usual unit tangent vector.
-Writing ${\bf r}=\langle x(t),y(t)\rangle$ we get
-$${\bf T}={\langle x',y'\rangle\over|{\bf r}'(t)|}$$
-and then
-$${\bf N}={\langle y',-x'\rangle\over|{\bf r}'(t)|}$$
-is a unit vector perpendicular to $\bf T$, that is, a unit normal to
-the boundary. 
-Now
-\begin{align*}
-\int_{\partial D} {\bf F}\cdot{\bf N}\,ds&=
-\int_{\partial D} \langle P,Q\rangle\cdot{\langle
-  y',-x'\rangle\over|{\bf r}'(t)|} |{\bf r}'(t)|dt=
-\int_{\partial D} Py'\,dt - Qx'\,dt	\\
-&=\int_{\partial D} P\,dy - Q\,dx
-=\int_{\partial D} - Q\,dx+P\,dy.
-\end{align*}
-So far, we've just rewritten the original integral using alternate
-notation. The last integral looks just like the left side of Green's
-Theorem (\ref{thm:greens theorem}) except that $P$ and $Q$ have
-traded places and $Q$ has acquired a negative sign. Then applying
-Green's Theorem we get 
-$$
-\int_{\partial D} - Q\,dx+P\,dy=\iint_{D} P_x+Q_y\,dA=
-\iint_{D} \nabla\cdot{\bf F}\,dA.$$
-Summarizing the long string of equalities, 
-\begin{equation}\label{eq:greens theorem third form}
-\int_{\partial D} {\bf F}\cdot{\bf N}\,ds=\iint_{D} \nabla\cdot{\bf F}\,dA.
-\end{equation}
-Roughly speaking, the first integral adds up the flow across the
-boundary of the region, from inside to out, and the second sums the
-divergence (tendency to spread) at each point in the interior. The
-theorem roughly says that the sum of the ``microscopic'' spreads is
-the same as the total spread across the boundary and out of the region.
+Since $f_x=2e^x-y$, $f=2e^x-xy+g(y,z)$. Since $f_y=-x$, it must be that
+$g_y=0$, so $g(y,z)= C + h(z)$. Thus $f=2e^x-xy+ C + h(z)$ and 
+$$f_z = h'(z) = e^z,$$
+so $h(z)=e^z$. This leaves $f=2e^x -xy + e^z + C$.
+\end{solution}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,60 +124,60 @@ the same as the total spread across the boundary and out of the region.
 \begin{enumialphparenastyle}
 
 \begin{ex}
-Let ${\bf F}=\langle xy,-xy\rangle$ and 
+Let $\vect{f}=\langle xy,-xy\rangle$ and 
 let $D$ be given by $0\le x\le 1$, $0\le y\le 1$.
-Compute $\ds\int_{\partial D} {\bf F}\cdot d{\bf r}$ and
-$\ds\int_{\partial D} {\bf F}\cdot{\bf N}\,ds$.
+Compute $\ds\int_{\partial D} \vect{f}\cdot d\vect{r}$ and
+$\ds\int_{\partial D} \vect{f}\cdot\vect{N}\,ds$.
 \begin{sol}
 	$-1$, $0$
 \end{sol}
 \end{ex}
 
 \begin{ex}
-Let ${\bf F}=\langle ax^2,by^2\rangle$ and 
+Let $\vect{f}=\langle ax^2,by^2\rangle$ and 
 let $D$ be given by $0\le x\le 1$, $0\le y\le 1$.
-Compute $\ds\int_{\partial D} {\bf F}\cdot d{\bf r}$ and
-$\ds\int_{\partial D} {\bf F}\cdot{\bf N}\,ds$.
+Compute $\ds\int_{\partial D} \vect{f}\cdot d\vect{r}$ and
+$\ds\int_{\partial D} \vect{f}\cdot\vect{N}\,ds$.
 \begin{sol}
 	$0$, $a+b$
 \end{sol}
 \end{ex}
 
 \begin{ex}
-Let ${\bf F}=\langle ay^2,bx^2\rangle$ and 
+Let $\vect{f}=\langle ay^2,bx^2\rangle$ and 
 let $D$ be given by $0\le x\le 1$, $0\le y\le x$.
-Compute $\ds\int_{\partial D} {\bf F}\cdot d{\bf r}$ and
-$\ds\int_{\partial D} {\bf F}\cdot{\bf N}\,ds$.
+Compute $\ds\int_{\partial D} \vect{f}\cdot d\vect{r}$ and
+$\ds\int_{\partial D} \vect{f}\cdot\vect{N}\,ds$.
 \begin{sol}
 	$(2b-a)/3$, $0$
 \end{sol}
 \end{ex}
 
 \begin{ex}
-Let ${\bf F}=\langle \sin x\cos y,\cos x\sin y\rangle$ and 
+Let $\vect{f}=\langle \sin x\cos y,\cos x\sin y\rangle$ and 
 let $D$ be given by $0\le x\le \pi/2$, $0\le y\le x$.
-Compute $\ds\int_{\partial D} {\bf F}\cdot d{\bf r}$ and
-$\ds\int_{\partial D} {\bf F}\cdot{\bf N}\,ds$.
+Compute $\ds\int_{\partial D} \vect{f}\cdot d\vect{r}$ and
+$\ds\int_{\partial D} \vect{f}\cdot\vect{N}\,ds$.
 \begin{sol}
 	$0$, $1$
 \end{sol}
 \end{ex}
 
 \begin{ex}
-Let ${\bf F}=\langle y,-x\rangle$ and 
+Let $\vect{f}=\langle y,-x\rangle$ and 
 let $D$ be given by $x^2+y^2\le 1$.
-Compute $\ds\int_{\partial D} {\bf F}\cdot d{\bf r}$ and
-$\ds\int_{\partial D} {\bf F}\cdot{\bf N}\,ds$.
+Compute $\ds\int_{\partial D} \vect{f}\cdot d\vect{r}$ and
+$\ds\int_{\partial D} \vect{f}\cdot\vect{N}\,ds$.
 \begin{sol}
 	$-2\pi$, $0$
 \end{sol}
 \end{ex}
 
 \begin{ex}
-Let ${\bf F}=\langle x,y\rangle$ and 
+Let $\vect{f}=\langle x,y\rangle$ and 
 let $D$ be given by $x^2+y^2\le 1$.
-Compute $\ds\int_{\partial D} {\bf F}\cdot d{\bf r}$ and
-$\ds\int_{\partial D} {\bf F}\cdot{\bf N}\,ds$.
+Compute $\ds\int_{\partial D} \vect{f}\cdot d\vect{r}$ and
+$\ds\int_{\partial D} \vect{f}\cdot\vect{N}\,ds$.
 \begin{sol}
 	$0$, $2\pi$
 \end{sol}
@@ -248,8 +192,8 @@ Prove Theorem~\ref{thm:curl of gradient is zero}.
 \end{ex}
 
 \begin{ex}
-If $\nabla \cdot F=0$, $F$ is said to be \dfont{incompressible}.  Show that any vector field
-of the form $F(x,y,z) = \langle f(y,z),g(x,z),h(x,y)\rangle$ is
+If $\nabla \cdot \vect{f}=0$, $\vect{f}$ is said to be \dfont{incompressible}.  Show that any vector field
+of the form $\vect{f}(x,y,z) = \langle f(y,z),g(x,z),h(x,y)\rangle$ is
 incompressible.  Give a non-trivial example.
 \end{ex}
 

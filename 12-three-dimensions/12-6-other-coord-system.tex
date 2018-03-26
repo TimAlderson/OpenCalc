@@ -4,7 +4,7 @@ Coordinate systems are tools that let us use algebraic methods to
 understand geometry. While the \dfont{rectangular} (also called
 \dfont{Cartesian}) coordinates that we
 have been discussing are the most common, some problems are easier to
-analyze in alternate coordinate systems.
+analyze in alternate coordinate systems.\index{Cartesian coordinates}
 
 A coordinate system is a scheme that allows us to identify any point
 in the plane or in three-dimensional space by a set of numbers. In
@@ -12,9 +12,9 @@ rectangular coordinates these numbers are interpreted, roughly
 speaking, as the lengths of the sides of a rectangular ``box.''
 
 In two dimensions you may already be familiar with an alternative,
-called \dfont{polar coordinates}. In this system, each
+called \dfont{polar coordinates}\index{polar coordinates}. In this system, each
 point in the plane is identified by a pair of numbers $(r,\theta)$.
-The number $\theta$ measures the angle between the positive
+The number $\theta$ measures the counter-clockwise angle between the positive
 $x$-axis and a vector with tail at the origin and head at the
 point, as shown in Figure~\ref{fig:polar coordinates}; the number
 $r$ measures the distance from the origin to the
@@ -23,6 +23,32 @@ the angle is measured clockwise from the positive
 $x$-axis instead of counter-clockwise, and a negative $r$ indicates
 the point at distance $|r|$ in the opposite of the direction given by
 $\theta$. 
+
+The relationship between polar and rectangular coordinates is given by\index{polar coordinates!convert to rectangular}
+\begin{align*}
+x = r \cos \theta \\
+y = r \sin \theta 
+\end{align*}
+and
+\begin{align*}
+r = \sqrt{x^2 + y^2} \\
+\tan \theta = \frac{y}{x} 
+\end{align*}
+
+\begin{example}{Rectangular to Polar Coordinates}{}
+Convert the point $(x,y) = (1, \sqrt3)$ into polar coordinates.
+\end{example}
+
+\begin{solution}
+First calculate $r$:
+\[
+r = \sqrt{x^2 + y^2} = \sqrt{ 1 + 3} = 2
+\]
+Now find $\theta$ such that $\tan \theta = \frac{\sqrt{3}}{1}$. The required $\theta$ is $\frac{\pi}{3}$. 
+
+The polar coordinates are $(2, \frac{\pi}{3})$. 
+\end{solution}
+
 Figure~\ref{fig:polar coordinates} also shows the point with
 rectangular coordinates $(1,\sqrt3)$ and polar coordinates 
 $(2,\pi/3)$, 2 units from the origin and $\pi/3$ radians from the
@@ -68,7 +94,7 @@ the point with rectangular coordinates $(1,\sqrt3)$. \label{fig:polar coordinate
 \end{figure}
 
 We can extend polar coordinates to three dimensions simply by adding a
-$z$ coordinate; this is called \dfont{cylindrical coordinates}.
+$z$ coordinate; this is called \dfont{cylindrical coordinates}\index{cylindrical coordinates}.
 Each point in three-dimensional space is represented by three
 coordinates $(r,\theta,z)$ in the obvious way: this point is $z$ units
 above or below the point $(r,\theta)$ in the $x$-$y$ plane,
@@ -142,7 +168,7 @@ the rectangular coordinates of the same point are
 $(r\cos\theta,r\sin\theta)$, and so the point $(r,\theta,z)$ in
 cylindrical coordinates is $(r\cos\theta,r\sin\theta,z)$ in
 rectangular coordinates. This means it is usually easy to convert any
-equation from rectangular to cylindrical coordinates: simply substitute
+equation from rectangular to cylindrical coordinates: simply substitute\index{cylindrical coordinates!convert to rectangular}
 \begin{align*}
   x&=r\cos\theta	\\
   y&=r\sin\theta
@@ -176,10 +202,10 @@ degrees, east or west; $\theta$ can be any positive or negative angle,
 and we use radians except in informal circumstances. 
 Earth latitude is measured north or south
 from the equator; $\phi$ is measured from the north pole down.) This
-system is called \dfont{spherical coordinates}; 
+system is called \dfont{spherical coordinates}\index{spherical coordinates}; 
 the coordinates are listed in the order
 $(\rho,\theta,\phi)$, where $\rho$ is the distance from the
-origin, and like $r$ in cylindrical coordinates it may be negative. 
+origin, and like $r$ in polar and cylindrical coordinates it may be negative. 
 The general case and an
 example are pictured in Figure~\ref{fig:spherical coordinates}; the
 length marked $r$ is the $r$ of cylindrical coordinates.
@@ -246,9 +272,8 @@ above, as shown in the right hand graph. The hypotenuse of the
 triangle in the right hand graph
 is $r=\rho\sin\phi$, so the sides of the triangle, as shown,
 are $x=r\cos\theta=\rho\sin\phi\cos\theta$ and 
-$y=r\sin\theta=\rho\sin\phi\sin\theta$. So the
-upshot is that to convert from rectangular to spherical coordinates,
-we make these substitutions:
+$y=r\sin\theta=\rho\sin\phi\sin\theta$. Therefore to convert from rectangular to spherical coordinates,
+we make these substitutions:\index{spherical coordinates!convert to rectangular}
 \begin{align*}
   x&=\rho\sin\phi\cos\theta	\\
   y&=\rho\sin\phi\sin\theta	\\
@@ -304,10 +329,15 @@ we make these substitutions:
 \caption{Converting from rectangular to spherical coordinates. \label{fig:rectangular to spherical coordinates}}
 \end{figure}
 
-\begin{example}{}{}
 As the cylinder had a simple equation in cylindrical coordinates, so
-does the sphere in spherical coordinates: $\rho=2$ is the sphere of
-radius 2. If we start with the
+does the sphere in spherical coordinates. 
+
+\begin{example}{}{}
+Find an equation for the sphere of radius $2$ in spherical coordinates. 
+\end{example}
+
+\begin{solution}
+If we start with the
 Cartesian equation of the sphere and substitute, we get the spherical
 equation: 
 \begin{align*}
@@ -320,7 +350,10 @@ equation:
   \rho^2&=2^2	\\
   \rho&=2
 \end{align*}
-\end{example}
+Therefore, in spherical coordinates, a sphere of radius $2$ is expressed $\rho=2$.
+\end{solution}
+
+Although not as simple as with cylindrical coordinates, we can use spherical coordinates to describe the equation of a cylinder.
 
 \begin{example}{Cylinder Equation in Spherical Coordinates}{}
 Find an equation for the cylinder $x^2+y^2=4$ in spherical
@@ -350,10 +383,10 @@ Proceeding as in the previous example:
 Convert the following points in rectangular coordinates to
 cylindrical and spherical coordinates:
 \begin{enumerate}
-\item{a.} $(1,1,1)$
-\item{b.} $(7,-7,5)$
-\item{c.} $(\cos(1),\sin(1),1)$
-\item{d.} $(0,0,-\pi)$
+\item $(1,1,1)$
+\item $(7,-7,5)$
+\item $(\cos(1),\sin(1),1)$
+\item $(0,0,-\pi)$
 \end{enumerate}
 \begin{sol}
 \begin{enumerate}

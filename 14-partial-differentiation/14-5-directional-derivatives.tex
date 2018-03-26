@@ -21,11 +21,11 @@ $y$; and finally we can simply take the derivative.
 So we need to somehow ``mark off'' units on the line, and we need a
 convenient way to refer to the line in calculations. It turns out that
 we can accomplish both by using the vector form of a line. Suppose
-that ${\bf u}$ is a unit vector $\langle u_1,u_2\rangle$ in the
+that $\vect{u}$ is a unit vector $\langle u_1,u_2\rangle$ in the
 direction of interest. A vector equation for the line through
-$(x_0,y_0)$ in this direction is ${\bf v}(t)=\langle
+$(x_0,y_0)$ in this direction is $\vect{v}(t)=\langle
 u_1t+x_0,u_2t+y_0\rangle$. The height of the surface above the point 
-$(u_1t+x_0,u_2t+y_0)$ is $g(t)=f(u_1t+x_0,u_2t+y_0)$. Because $\bf u$
+$(u_1t+x_0,u_2t+y_0)$ is $g(t)=f(u_1t+x_0,u_2t+y_0)$. Because $\vect{u}$
 is a unit vector, the value of $t$ is precisely the distance along the
 line from $(x_0,y_0)$ to $(u_1t+x_0,u_2t+y_0)$; this means that the
 line is effectively a $t$ axis, with origin at the point $(x_0,y_0)$,
@@ -33,15 +33,15 @@ so the slope we seek is
 \begin{align*}
 g'(0)&=\langle f_x(x_0,y_0),f_y(x_0,y_0)\rangle\cdot
 \langle u_1,u_2\rangle	\\
-&=\langle f_x,f_y\rangle\cdot{\bf u}	\\
-&=\nabla f\cdot {\bf u}	\\
+&=\langle f_x,f_y\rangle\cdot\vect{u}	\\
+&=\nabla f\cdot \vect{u}	\\
 \end{align*}
 Here we have used the chain rule and the derivatives
 ${d\over dt}(u_1t+x_0)=u_1$ and ${d\over dt}(u_2t+y_0)=u_2$.
 The vector $\langle f_x,f_y\rangle$ is very useful, so it has its own
 symbol, $\nabla f$, pronounced ``del f''\index{del ($\nabla$)}; 
 it is also called the
-\dfont{gradient} of $f$.
+\dfont{gradient} of $f$.\index{gradient}
 
 \begin{example}{Slope}{SlopeEllipticParaboloid}
 Find the slope of $z=x^2+y^2$ at $(1,2)$ in the direction of the
@@ -76,20 +76,20 @@ on as the third component.)
 \end{solution}
 
 The slope of a surface given by $z=f(x,y)$ in the direction of a
-(two-dimensional) vector $\bf u$ is called the \dfont{directional
-  derivative} of $f$, written $D_{\bf u}f$.
+(two-dimensional) vector $\vect{u}$ is called the \dfont{directional
+  derivative}\index{directional derivative} of $f$, written $D_{\vect{u}}f$.
 The directional derivative immediately provides us with some
 additional information. We know that 
-$$D_{\bf u}f=\nabla f\cdot {\bf u}=|\nabla f||{\bf u}|\cos\theta=
+$$D_{\vect{u}}f=\nabla f\cdot \vect{u}=|\nabla f||\vect{u}|\cos\theta=
 |\nabla f|\cos\theta$$
-if $\bf u$ is a unit vector; $\theta$ is the angle between $\nabla f$
-and $\bf u$. This tells us immediately that the largest value of
-$D_{\bf u}f$ occurs when $\cos\theta=1$, namely, when $\theta=0$, so 
-$\nabla f$ is parallel to $\bf u$. In other words, the gradient
+if $\vect{u}$ is a unit vector; $\theta$ is the angle between $\nabla f$
+and $\vect{u}$. This tells us immediately that the largest value of
+$D_{\vect{u}}f$ occurs when $\cos\theta=1$, namely, when $\theta=0$, so 
+$\nabla f$ is parallel to $\vect{u}$. In other words, the gradient
 $\nabla f$ points in the direction of steepest ascent of the surface, and 
 $|\nabla f|$ is the slope in that direction. Likewise, the smallest value of
-$D_{\bf u}f$ occurs when $\cos\theta=-1$, namely, when $\theta=\pi$, so 
-$\nabla f$ is anti-parallel to $\bf u$. In other words, 
+$D_{\vect{u}}f$ occurs when $\cos\theta=-1$, namely, when $\theta=\pi$, so 
+$\nabla f$ is anti-parallel to $\vect{u}$. In other words, 
 $-\nabla f$ points in the direction of steepest descent of the surface, and 
 $-|\nabla f|$ is the slope in that direction.
 
@@ -109,8 +109,8 @@ the origin, and tangent vectors in all directions are parallel to the
 $x$-$y$ plane.
 \end{solution}
 
-If $\nabla f$ is perpendicular to $\bf u$, 
-$D_{\bf u}f=|\nabla f|\cos(\pi/2)=0$, since $\cos(\pi/2)=0$.
+If $\nabla f$ is perpendicular to $\vect{u}$, 
+$D_{\vect{u}}f=|\nabla f|\cos(\pi/2)=0$, since $\cos(\pi/2)=0$.
 This means that in either of the two directions perpendicular to
 $\nabla f$, the slope of the surface is 0; this implies that a vector in
 either of these directions is tangent to the level curve at that
@@ -120,8 +120,8 @@ $\langle -f_y,f_x\rangle$ will work.
 
 If $f(x,y,z)$ is a function of three variables, all the calculations
 proceed in essentially the same way. The rate at which $f$ changes in
-a particular direction is $\nabla f\cdot{\bf u}$, where now
-$\nabla f=\langle f_x,f_y,f_z\rangle$ and ${\bf u}=\langle
+a particular direction is $\nabla f\cdot\vect{u}$, where now
+$\nabla f=\langle f_x,f_y,f_z\rangle$ and $\vect{u}=\langle
 u_1,u_2,u_3\rangle$ is a unit vector. Again $\nabla f$ points in the
 direction of maximum rate of increase, $-\nabla f$ points in the
 direction of maximum rate of decrease, and any vector perpendicular to
@@ -190,8 +190,8 @@ and $\ds\left(-{3\sqrt2\over5},{\sqrt2\over10},-{\sqrt2\over
 \begin{enumialphparenastyle}
 
 \begin{ex}
-Find $D_{\bf u} f$ for 
-$\ds f=x^2+xy+y^2$ in the direction of ${\bf u}=\langle 2,1\rangle$ 
+Find $D_{\vect{u}} f$ for 
+$\ds f=x^2+xy+y^2$ in the direction of $\vect{u}=\langle 2,1\rangle$ 
 at the point $(1,1)$.
 \begin{sol}
 $9\sqrt5/5$
@@ -199,8 +199,8 @@ $9\sqrt5/5$
 \end{ex}
 
 \begin{ex}
-Find $D_{\bf u} f$ for 
-$\ds f=\sin(xy)$ in the direction of ${\bf u}=\langle -1,1\rangle$ 
+Find $D_{\vect{u}} f$ for 
+$\ds f=\sin(xy)$ in the direction of $\vect{u}=\langle -1,1\rangle$ 
 at the point $(3,1)$.
 \begin{sol}
 $\sqrt2\cos3$
@@ -208,7 +208,7 @@ $\sqrt2\cos3$
 \end{ex}
 
 \begin{ex}
-Find $D_{\bf u} f$ for 
+Find $D_{\vect{u}} f$ for 
 $\ds f=e^x\cos(y)$ in the direction 30 degrees from the positive $x$ axis
 at the point $(1,\pi/4)$.
 \begin{sol}
@@ -335,7 +335,7 @@ $\langle 0,1\rangle$, $\langle 4/5,-3/5\rangle$
 
 \begin{ex}
 Show that the curve 
-${\bf r}(t) = \langle\ln(t),t\ln(t),t\rangle$
+$\vect{r}(t) = \langle\ln(t),t\ln(t),t\rangle$
 is tangent to the surface $xz^2-yz+\cos(xy) = 1$ at the point
 $(0,0,1)$.
 \end{ex}

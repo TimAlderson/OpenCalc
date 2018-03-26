@@ -11,6 +11,7 @@
 
 \usepackage[EULERGREEK]{sansmath}
 
+
 % Allows files from different parent directories to be included, and is used in making adaptations.
 \usepackage{import}
 \providecommand{\mybuildpath}{./}
@@ -28,11 +29,16 @@
 % For colouring various things
 \usepackage{xcolor}
 
+\usepackage{textcomp} % to use \textcent to make cent symbol
+\def\cents{\makebox[0cm][l]{\rule{.47ex}{0mm}\rule[-.3ex]{.15mm}{1.6ex}}c}
+
 % Simple arithmetic
 \usepackage{calc}
 
 % Conditional statements
 \usepackage{ifthen}
+
+ 
 
 % Page layout
 \ifthenelse{\equal{\detokenize{interior}}{\jobname}}{
@@ -88,6 +94,8 @@
 % To remove headers and footers from truly empty pages
 \usepackage{emptypage}
 
+\usepackage{longtable}
+
 % Draw images and figures
 \usepackage{tikz}
 \usetikzlibrary{arrows,3d,calc,intersections,shapes.callouts}
@@ -123,6 +131,21 @@
 }
 \makeatother
 
+% Overwrite a term in an equation with a comment
+\newlength{\overwritelength}
+\newlength{\minimumoverwritelength}
+\setlength{\minimumoverwritelength}{1cm}
+\newcommand{\overwrite}[3][red]{%
+	\settowidth{\overwritelength}{$#2$}%
+	\ifdim\overwritelength<\minimumoverwritelength%
+	\setlength{\overwritelength}{\minimumoverwritelength}\fi%
+	\stackrel
+	{%
+		\begin{minipage}{\overwritelength}%
+			\color{#1}\centering\small #3\\%
+			\rule{1pt}{9pt}%
+		\end{minipage}}
+		{\colorbox{#1!50}{\color{black}$\displaystyle#2$}}}
 
 
 % For fancy headers!
@@ -133,6 +156,9 @@
 
 % fancy section headers
 \usepackage[explicit,sc]{titlesec}
+
+% to use strike through arrow
+\usepackage{cancel} 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -148,7 +174,7 @@
 \captionsetup[subfigure]{subrefformat=simple,labelformat=simple}
 \renewcommand\thesubfigure{(\alph{subfigure})}
 
-
+\usepackage{wrapfig}
 
 \usepackage{epstopdf}
 \epstopdfsetup{update} % only regenerate pdf files when eps file is newer
@@ -291,9 +317,9 @@
 
 % Inputs information regarding Institution,Course Code, Name, Session and Section (for adapted text)
 %\input{courseInfo.txt}
-\newcommand{\institution}{University of New Brunswick Saint John}
+\newcommand{\institution}{University of\\ New Brunswick Saint John}
 \newcommand{\courseCode}{}
-\newcommand{\courseName}{Math1003, Math 1013 \& Math 2513}
+\newcommand{\courseName}{MATH $1003$, MATH $1013$, \& MATH $2513$ }
 \newcommand{\courseSession}{}
 \newcommand{\courseSection}{}
 
@@ -358,10 +384,12 @@
 
 
 \begin{document}
+	
+\newcommand{\ssep}{\mid} % set builder notation - vertical bar (separator)  	
 
 \ifthenelse{\equal{\detokenize{print-cover-lulu}}{\jobname}}{
 	\pagestyle{empty}
-	\subimport{\mybuildpath}{frontmatter/titlepage-lulu}
+	\subimport{frontmatter/titlepage-lulu}
 }{	
 \ifthenelse{\equal{\detokenize{print-cover}}{\jobname}}{
 	\pagestyle{empty}
@@ -399,7 +427,7 @@
 	\cleardoublepage
 
 	\mainmatter
-
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Contents!!
 	\subimport{\mybuildpath}{content}
@@ -417,4 +445,5 @@
 }
 }
 
-\end{document}
+
+ \end{document}

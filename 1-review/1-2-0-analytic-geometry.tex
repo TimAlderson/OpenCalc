@@ -1,68 +1,7 @@
 \section{Analytic Geometry}\label{sec:AnalyticGeometry}
 
-In what follows, we use the notation $(x_1,y_1)$ to represent a point in
-the $(x,y)$ coordinate system, also called the $(x,y)$-plane.
-Previously, we used $(a,b)$ to represent
-an open interval. Notation often gets reused and abused in mathematics, 
-but thankfully, it is usually clear from the context what we mean.
+\input{1-review/1-2-new-cartesian-coordinate-plane} 
 
-In the $(x,y)$ coordinate system we normally write the $x$-axis
-horizontally, with positive numbers to the right of the origin, and
-the $y$-axis vertically, with positive numbers above the origin.  That
-is, unless stated otherwise, we take ``rightward'' to be the positive
-$x$-direction and ``upward'' to be the positive $y$-direction.  In a
-purely mathematical situation, we normally choose the same scale for
-the $x$- and $y$-axes.  For example, the line joining the origin to
-the point $(a,a)$ makes an angle of 45${}^\circ$ with the $x$-axis
-(and also with the $y$-axis).
-
-In applications, often letters other than $x$ and $y$ are used, and
-often different scales are chosen in the horizontal and vertical
-directions.
-
-\begin{example}{Data Plot}{DataPlot}
-	Suppose you drop a coin from a window, and you want to study how 
-	its height above the ground changes from second to second.
-	It is natural to let the letter $t$ denote the time
-	(the number of seconds since the object was released) and to let the
-	letter $h$ denote the height.  For each $t$ (say, at one-second
-	intervals) you have a corresponding height $h$.  This information can
-	be tabulated, and then plotted on the $(t,h)$ coordinate plane, as
-	shown in figure~\ref{fig:data plot}.
-\end{example}
-
-\figure[!ht]
-\vbox{
-	$$\begin{array}{|r|ccccc|}
-	\hline
-	seconds & 0 & 1 & 2 & 3 & 4\\
-	\hline
-	meters & 80 & 75.1 & 60.4 & 35.9 & 1.6\\
-	\hline
-	\end{array}$$ 
-	
-	\centerline{\vbox{\beginpicture
-			\normalgraphs
-			%\ninepoint
-			\setcoordinatesystem units <2truecm,0.5truemm>
-			\setplotarea x from 0 to 4.2, y from 0 to 90
-			\axis left shiftedto x=0 ticks numbered from 20 to 80 by 20 /
-			\axis bottom shiftedto y=0 ticks numbered from 0 to 4 by 1 /
-			\put {$t$} [l] <3pt,0pt> at 4.2 0
-			\put {$h$} [l] <3pt,0pt> at 0 90
-			\setquadratic
-			\plot 0 80 1 75.1 2 60.4 3 35.9 4 1.6 /
-			\multiput {$\bullet$} at 0 80 1 75.1 2 60.4 3 35.9 4 1.6 /
-			\endpicture}}}
-\caption{A data plot, height versus time. \label{fig:data plot}}
-\endfigure
-
-We use the word ``quadrant'' for each of the four regions into which
-the plane is divided by the axes: the first quadrant is where points
-have both coordinates positive, or the ``northeast'' portion of the
-plot, and the second, third, and fourth quadrants are counted off
-counterclockwise, so the second quadrant is the northwest, the third
-is the southwest, and the fourth is the southeast.
 
 Suppose we have two points $A$ and $B$ in the $(x,y)$-plane.
 We often want to know the change in $x$-coordinate (also called the
@@ -79,7 +18,7 @@ two points. It is the vertical distance you have to move in going from $A$ to $B
 	If $A=(2,1)$ and $B=(3,3)$ the change in $x$ is
 	$$\Delta x=3-2=1$$
 	while the change in $y$ is
-	$$\Delta y= 3-1=2.$$
+	$$\Delta y= 3-1=2$$
 	\vspace{-0.5cm}
 \end{example}
 
@@ -88,9 +27,68 @@ between a point $(x_1,y_1)$ and a point $(x_2,y_2)$ are:
 $$
 \Delta x=x_2-x_1,\qquad\qquad\Delta y=y_2-y_1.
 $$
-Note that either or both of these might be negative.
+Note that either or both of these might be negative.\\
+
+%%%%%%%%%% APPLICATION
+%%%%%%%%%%%%%%%%%%%%%
+%In applications, often letters other than $x$ and $y$ are used, and
+%often different scales are chosen in the horizontal and vertical
+%directions.
+%
+%\pagebreak 
+%\begin{example}{Data Plot}{DataPlot}
+%	Suppose you drop a coin from a window, and you want to study how 
+%	its height above the ground changes from second to second.
+%	It is natural to let the letter $t$ denote the time
+%	(the number of seconds since the object was released) and to let the
+%	letter $h$ denote the height.  For each $t$ (say, at one-second
+%	intervals) you have a corresponding height $h$.  This information can
+%	be tabulated, and then plotted on the $(t,h)$ coordinate plane, as
+%	shown in Figure~\ref{fig:data plot}.
+%\end{example}
+%\begin{solution}
+%
+%\hspace{1cm}	\begin{tabular}{c|c}
+%	Time, $t$ & Height, $h$  \\ \hline
+%	0 & 80 \\
+%	1 & 75.1 \\
+%	2 & 60.4 \\
+%	3 & 35.9 \\
+%	4 & 1.6 \\ 
+%	\end{tabular} 
+%	
+%	\vspace{-2cm}
+%	
+%	\figure[h]	
+%		\hspace{70mm}	\beginpicture
+%			\normalgraphs
+%			%\ninepoint
+%			\setcoordinatesystem units <2truecm,0.5truemm>
+%			\setplotarea x from 0 to 4.2, y from 0 to 90
+%			\axis left shiftedto x=0 ticks numbered from 20 to 80 by 20 /
+%			\axis bottom shiftedto y=0 ticks numbered from 0 to 4 by 1 /
+%		%	\put {$t$} [l] <3pt,0pt> at 4.2 0
+%		%	\put {$h$} [l] <3pt,0pt> at 0 90
+%			\setquadratic
+%			\plot 0 80 1 75.1 2 60.4 3 35.9 4 1.6 /
+%			\multiput {$\bullet$} at 0 80 1 75.1 2 60.4 3 35.9 4 1.6 /
+%			\endpicture 
+%		
+%
+%
+%\vspace{-4.4cm} \hspace{63mm} \rotatebox{90}{\textcolor{black}{Height, $h$ (meters)}}
+%
+%\vspace{8.6mm} \hspace{95mm} Time, $t$(seconds) \\
+%
+%\caption{A data plot, height versus time. \label{fig:data plot}}
+%\endfigure
+%\end{solution}
+
+
+
 
 % Input each subsection
+\input{1-review/1-2-new-relations}
 \input{1-review/1-2-1-lines}
 \input{1-review/1-2-2-distances-and-midpoints}
 \input{1-review/1-2-3-conics}
@@ -102,6 +100,7 @@ Note that either or both of these might be negative.
 
 \begin{enumialphparenastyle}
 
+\begin{multicols}{2}
 %%%%%%%%%%
 \begin{ex}
 Find the equation of the line in the form $y=mx+b$:
@@ -231,27 +230,144 @@ $(2/25)x-(16/5)$
 \end{sol}
 \end{ex}
 
-%%%%%%%%%%
+%%%%%%%%%%%
+%\begin{ex}
+%Find the distance between the pairs of points:
+%\begin{enumerate}
+%	\item	$(-1,1)$ and $(1,1)$.
+%	\item	$(5,3)$ and $(-7,-2)$.
+%	\item	$(1,1)$ and the origin.
+%\end{enumerate}
+%\begin{sol}
+%\begin{enumerate}
+%	\item	$2$
+%	\item	$\sqrt{2}$
+%	\item	$\sqrt{2}$
+%\end{enumerate}
+%\end{sol}
+%\end{ex}
+%
+%%%%%%%%%%%
+%\begin{ex}
+%Find the midpoint of the line segment joining the point $(20,-10)$ to the origin.
+%\end{ex}
+
+%%%%%%%%%%%%%%%%%%%%
 \begin{ex}
-Find the distance between the pairs of points:
-\begin{enumerate}
-	\item	$(-1,1)$ and $(1,1)$.
-	\item	$(5,3)$ and $(-7,-2)$.
-	\item	$(1,1)$ and the origin.
+Find the distance $d$ between the points and the midpoint $M$ of the line segment which connects them.\\
+\begin{enumerate} 
+ \item \hspace{2mm} $(1,2)$, $(-3,5)$ \\
+ \item  \hspace{2mm} $(3, -10)$, $(-1, 2)$ \\ 
+ \item 	\hspace{2mm} $\left( \dfrac{1}{2}, 4\right)$, $\left(\dfrac{3}{2}, -1\right)$ \\
+ \item  \hspace{2mm}	 $\left(- \dfrac{2}{3}, \dfrac{3}{2} \right)$, $\left(\dfrac{7}{3}, 2\right)$ \\
+ \item  \hspace{2mm} $\left( \dfrac{24}{5}, \dfrac{6}{5} \right)$, $\left( -\dfrac{11}{5}, -\dfrac{19}{5} \right)$ \\
+ \item  \hspace{2mm}	 $\left(\sqrt{2}, \sqrt{3}\right)$, $\left(-\sqrt{8}, -\sqrt{12}\right)$ \vphantom{$\left( \dfrac{6}{5} \right)$} \\
+ \item  \hspace{2mm} $\left(2 \sqrt{45}, \sqrt{12} \right)$, $\left(\sqrt{20}, \sqrt{27} \right)$\\
+ \item  \hspace{2mm} $(0, 0)$, $(x, y)$ \\
 \end{enumerate}
 \begin{sol}
-\begin{enumerate}
-	\item	$2$
-	\item	$\sqrt{2}$
-	\item	$\sqrt{2}$
+	\begin{enumerate} 
+\item $d = 5$, $M = \left(-1, \frac{7}{2} \right)$
+\item $d = 4 \sqrt{10}$, $M = \left(1, -4 \right)$
+\item $d = \sqrt{26}$, $M = \left(1, \frac{3}{2} \right)$
+\item $d= \frac{\sqrt{37}}{2}$, $M = \left(\frac{5}{6}, \frac{7}{4} \right)$
+\item  $d = \sqrt{74}$, $M = \left(\frac{13}{10}, -\frac{13}{10} \right)$ \vphantom{$\left( \frac{\sqrt{3}}{2} \right)$}
+\item $d= 3\sqrt{5}$, $M = \left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{3}}{2} \right)$
+\item  $d = \sqrt{83}$, $M = \left(4 \sqrt{5}, \frac{5 \sqrt{3}}{2} \right)$
+\item $d = \sqrt{x^2 + y^2}$, $M = \left( \frac{x}{2}, \frac{y}{2}\right)$ \vphantom{$\left( \frac{\sqrt{3}}{2} \right)$}
 \end{enumerate}
+\end{sol}	
+\end{ex}
+
+\begin{ex}
+Find all of the points of the form $(x, -1)$ which are $4$ units from the point $(3,2)$.
+\begin{sol}
+$(3 + \sqrt{7}, -1)$, $(3-\sqrt{7}, -1)$	
+\end{sol}	
+\end{ex}
+
+\begin{ex}
+Find all of the points on the $y$-axis which are $5$ units from the point $(-5,3)$.
+\begin{sol}
+	$(0,3)$
+\end{sol}	
+\end{ex}
+
+\begin{ex}
+Find all of the points on the $x$-axis which are $2$ units from the point $(-1,1)$.
+\begin{sol}
+$(-1+\sqrt{3},0)$, $(-1-\sqrt{3},0)$ \vphantom{$\left( \frac{\sqrt{3}}{2} \right)$}	
+\end{sol}	
+\end{ex}
+
+\begin{ex}
+Find all of the points of the form $(x,-x)$ which are $1$ unit from the origin.
+\begin{sol}
+	$\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2} \right)$, $\left(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)$
+\end{sol}	
+\end{ex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ex}
+ Let's assume for a moment that we are standing at the origin and the positive $y$-axis points due North while the positive $x$-axis points due East.  Our Sasquatch-o-meter tells us that Sasquatch is 3 km West and 4 km South of our current position.  What are the coordinates of his position?  How far away is he from us?  If he runs 7 km due East what would his new position be?
+ \begin{sol}
+ 	$(-3,-4), \, 5 \,\, km, \,\, (4, -4)$
+ \end{sol}
+ \end{ex}	
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ex}
+Verify the Distance Formula  for the cases when:
+ 
+\begin{enumerate}
+ 	
+ 	\item The points are arranged vertically.  (Hint: Use $P(a, y_{\mbox{\tiny$0$}})$ and $Q(a, y_{\mbox{\tiny$1$}})$.)
+ 	\item The points are arranged horizontally. (Hint: Use $P(x_{\mbox{\tiny$0$}}, b)$ and $Q(x_{\mbox{\tiny$1$}}, b)$.)
+ 	\item The points are actually the same point. 
+ 	
+ \end{enumerate}
+\begin{sol}
+	
+	
 \end{sol}
 \end{ex}
 
-%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
 \begin{ex}
-Find the midpoint of the line segment joining the point $(20,-10)$ to the origin.
+Verify the Midpoint Formula by showing the distance between $P(x_{\mbox{\tiny$1$}}, y_{\mbox{\tiny$1$}})$ and $M$ and the distance between $M$ and $Q(x_{\mbox{\tiny$2$}}, y_{\mbox{\tiny$2$}})$ are both half of the distance between $P$ and $Q$. 
+\begin{sol}
+	
+\end{sol}
 \end{ex}
+	 
+%%%%%%%%%%%%%%%%%%%%
+\begin{ex}
+Show that the points $A$, $\;B$ and $C$ below are the vertices of a right triangle.
+\begin{enumerate}
+	
+	\item  $A(-3,2)$, $\;B(-6,4)$, and $C(1,8)$
+	
+	\item   $A(-3, 1)$, $\;B(4, 0)$ and $C(0, -3)$
+	
+	
+\end{enumerate}
+\begin{sol}
+	(a) The distance from $A$ to $B$ is $|AB| = \sqrt{13}$, the distance from $A$ to $C$ is $|AC| = \sqrt{52}$, and the distance from $B$ to $C$ is $|BC| = \sqrt{65}$.  Since $\left(\sqrt{13}\right)^2 + \left( \sqrt{52} \right)^2 = \left( \sqrt{65} \right)^2$, we are guaranteed by the \href{http://en.wikipedia.org/wiki/Pythagorean_theorem#Converse}{\underline{converse of the Pythagorean Theorem}} that the triangle is a right triangle.\\
+	(b) Show that $|AC|^{2} + |BC|^{2} = |AB|^{2}$.
+\end{sol}
+\end{ex}
+	 
+ 
+%%%%%%%%%%%%%%%%%%%
+\begin{ex}
+Find a point $D(x, y)$ such that the points $A(-3, 1)$, $\;B(4, 0)$, $\;C(0, -3)$ and $D$ are the corners of a square.  Justify your answer.
+\begin{sol}
+	
+\end{sol}
+\end{ex}		
+	
+
 
 %%%%%%%%%%
 \begin{ex}
@@ -289,7 +405,7 @@ the circle with center at $A$ that goes through $B$.
 
 %%%%%%%%%%
 \begin{ex}
-Determine the type of conic and sketch it.
+Determine the type of conic section and sketch it.
 \begin{enumerate}
 	\item	$x^2+y^2+10y=0$
 	\item	$9x^2-90x+y^2+81=0$
@@ -314,5 +430,7 @@ Find the standard equation of the circle passing through $(-2,1)$
 $(x+2/7)^2+(y-41/7)^2=1300/49$
 \end{sol}
 \end{ex}
+
+\end{multicols}
 
 \end{enumialphparenastyle}
